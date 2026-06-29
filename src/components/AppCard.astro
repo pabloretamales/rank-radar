@@ -1,0 +1,35 @@
+---
+import type { Dictionary } from '@/i18n';
+
+interface Props {
+  app: {
+    rank: number;
+    app_id: number;
+    app_name: string;
+    total_tokens_human: string;
+    total_requests_human: string;
+  };
+  dict: Dictionary;
+  compact?: boolean;
+}
+const { app, dict, compact = false } = Astro.props;
+const rankClass = app.rank === 1 ? 'gold' : app.rank === 2 ? 'silver' : app.rank === 3 ? 'bronze' : '';
+---
+
+<a href={`https://openrouter.ai/apps`} target="_blank" rel="noopener" class={`card block ${compact ? 'p-3' : 'p-4'}`}>
+  <div class="flex items-start gap-3">
+    <div class={`rank-badge ${rankClass} shrink-0`}>#{app.rank}</div>
+    <div class="flex-1 min-w-0">
+      <div class="flex items-baseline gap-2 flex-wrap">
+        <span class="font-semibold truncate">{app.app_name}</span>
+        {app.rank <= 3 && (
+          <span class="text-xs" style="color: var(--text-muted);">{dict.openrouter.rankings.popular} #{app.rank}</span>
+        )}
+      </div>
+      <div class="flex items-center gap-4 mt-2 text-xs" style="color: var(--text-muted);">
+        <span>🪙 <span class="tabular-nums font-semibold" style="color: var(--text);">{app.total_tokens_human}</span> {dict.openrouter.tokens}</span>
+        <span class="hidden sm:inline">📊 <span class="tabular-nums font-semibold" style="color: var(--text);">{app.total_requests_human}</span> {dict.openrouter.requests}</span>
+      </div>
+    </div>
+  </div>
+</a>

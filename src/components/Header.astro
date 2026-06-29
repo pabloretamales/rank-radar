@@ -1,0 +1,76 @@
+---
+import { defaultLocale, oppositeLocale, localizedPath, type Locale } from '@/i18n';
+import type { Dictionary } from '@/i18n';
+
+interface Props {
+  locale: Locale;
+  dict: Dictionary;
+  currentPath: string;
+}
+const { locale, dict, currentPath } = Astro.props;
+const opposite = oppositeLocale(locale);
+const isDefault = locale === defaultLocale;
+const altBase = isDefault ? `/en${currentPath === '/' ? '/' : currentPath}` : currentPath.replace(/^\/en/, '') || '/';
+const navItems = [
+  { href: localizedPath(locale, '/'), key: 'home' },
+  { href: localizedPath(locale, '/github/'), key: 'github' },
+  { href: localizedPath(locale, '/models/'), key: 'models' },
+  { href: localizedPath(locale, '/openrouter/'), key: 'openrouter' },
+];
+---
+
+<header class="border-b backdrop-blur-md sticky top-0 z-50" style="border-color: var(--border); background: var(--bg-card);">
+  <div class="container-page flex h-14 items-center justify-between gap-4">
+    <a href={localizedPath(locale, '/')} class="flex items-center gap-2 font-bold text-lg">
+      <span class="text-2xl">📡</span>
+      <span>{dict.site.shortName}</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-1">
+      {navItems.map((item) => {
+        const isActive = (item.key === 'home' && currentPath === '/') || (item.key !== 'home' && currentPath.startsWith(`/${item.key}`));
+        return (
+          <a href={item.href} class={`btn-tab ${isActive ? 'active' : ''}`}>
+            {dict.nav[item.key]}
+          </a>
+        );
+      })}
+    </nav>
+    <div class="flex items-center gap-2">
+      <button id="theme-toggle" class="btn-tab" aria-label={dict.nav.toggleTheme} title={dict.nav.toggleTheme}>
+        <span id="theme-icon">🌙</span>
+      </button>
+      <a id="lang-toggle" href={altBase} class="btn-tab" title={`Switch to ${opposite.toUpperCase()}`}>
+        {dict.nav.toggleLang}
+      </a>
+    </div>
+  </div>
+  <nav class="md:hidden container-page flex items-center gap-1 pb-2 overflow-x-auto">
+    {navItems.map((item) => {
+      const isActive = (item.key === 'home' && currentPath === '/') || (item.key !== 'home' && currentPath.startsWith(`/${item.key}`));
+      return (
+        <a href={item.href} class={`btn-tab ${isActive ? 'active' : ''}`}>
+          {dict.nav[item.key]}
+        </a>
+      );
+    })}
+  </nav>
+</header>
+<script is:inline>
+  function applyThemeIcon() {
+    const isDark = document.documentElement.classList.contains('dark');
+    const icon = document.getElementById('theme-icon');
+    if (icon) icon.textContent = isDark ? '🌙' : '☀️';
+  }
+  applyThemeIcon();
+  document.getElementById('theme-toggle')?.addEventListener('click', () => {
+    const isDark = document.documentElement.classList.contains('dark');
+    if (isDark) {
+      document.documentElement.classList.remove('dark');
+      localStorage.setItem('theme', 'light');
+    } else {
+      document.documentElement.classList.add('dark');
+      localStorage.setItem('theme', 'dark');
+    }
+    applyThemeIcon();
+  });
+</script>

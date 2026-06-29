@@ -1,0 +1,62 @@
+---
+import type { Dictionary } from '@/i18n';
+
+interface Props {
+  repo: {
+    rank: number;
+    full_name: string;
+    description: string | null;
+    html_url: string;
+    stargazers_count: number;
+    forks_count: number;
+    language: string | null;
+    topics: string[];
+    open_issues_count: number;
+  };
+  dict: Dictionary;
+  compact?: boolean;
+}
+const { repo, dict, compact = false } = Astro.props;
+const rankClass = repo.rank === 1 ? 'gold' : repo.rank === 2 ? 'silver' : repo.rank === 3 ? 'bronze' : '';
+const langColor = languageColor(repo.language);
+const stars = repo.stargazers_count ?? 0;
+const starsHuman = stars >= 1000 ? (stars / 1000).toFixed(1) + 'k' : String(stars);
+
+function languageColor(lang) {
+  if (!lang) return '#9ca3af';
+  const colors = {
+    'JavaScript': '#f1e05a', 'TypeScript': '#3178c6', 'Python': '#3572A5',
+    'Rust': '#dea584', 'Go': '#00ADD8', 'Java': '#b07219', 'C++': '#f34b7d',
+    'C#': '#178600', 'Ruby': '#701516', 'PHP': '#4F5D95', 'Swift': '#FA7343',
+    'Kotlin': '#A97BFF', 'Markdown': '#083fa1', 'HTML': '#e34c26',
+  };
+  return colors[lang] ?? '#9ca3af';
+}
+---
+
+<a href={repo.html_url} target="_blank" rel="noopener" class={`card block ${compact ? 'p-3' : 'p-4'}`}>
+  <div class="flex items-start gap-3">
+    <div class={`rank-badge ${rankClass} shrink-0`}>#{repo.rank}</div>
+    <div class="flex-1 min-w-0">
+      <div class="flex items-baseline gap-2 flex-wrap">
+        <span class="font-semibold truncate">{repo.full_name}</span>
+        <span class="text-xs" style="color: var(--text-muted);">★ {starsHuman}</span>
+      </div>
+      {!compact && repo.description && (
+        <p class="text-sm mt-1 line-clamp-2" style="color: var(--text-muted);">{repo.description}</p>
+      )}
+      {!compact && (
+        <div class="flex items-center gap-3 mt-2 text-xs" style="color: var(--text-muted);">
+          {repo.language && (
+            <span class="flex items-center gap-1">
+              <span class="w-2 h-2 rounded-full inline-block" style={`background: ${langColor}`}></span>
+              {repo.language}
+            </span>
+          )}
+          <span>⑂ {repo.forks_count}</span>
+          {repo.open_issues_count > 0 && <span>◯ {repo.open_issues_count}</span>}
+        </div>
+      )}
+    </div>
+  </div>
+</a>

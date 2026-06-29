@@ -1,0 +1,17 @@
+---
+import type { Locale } from '@/i18n';
+import type { Dictionary } from '@/i18n';
+
+interface Props {
+  locale: Locale;
+  dict: Dictionary;
+}
+const { dict } = Astro.props;
+---
+
+<footer class="border-t mt-12 py-6" style="border-color: var(--border);">
+  <div class="container-page flex flex-col sm:flex-row items-center justify-between gap-2 text-sm" style="color: var(--text-muted);">
+    <span>{dict.footer.madeBy} · {dict.footer.company}</span>
+    <span class="text-xs">{dict.site.poweredBy}</span>
+  </div>
+</footer>

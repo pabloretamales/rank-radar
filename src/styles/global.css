@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-base: #0a0a0a;
+  --bg-card: rgba(20, 20, 30, 0.7);
+  --border: rgba(255, 255, 255, 0.08);
+  --text: #e5e7eb;
+  --text-muted: #9ca3af;
+  --accent: #60a5fa;
+  color-scheme: dark;
+}
+
+html:not(.dark) {
+  --bg-base: #f9fafb;
+  --bg-card: rgba(255, 255, 255, 0.85);
+  --border: rgba(0, 0, 0, 0.08);
+  --text: #111827;
+  --text-muted: #6b7280;
+  --accent: #2563eb;
+  color-scheme: light;
+}
+
+html, body { background: var(--bg-base); color: var(--text); }
+
+@layer components {
+  .container-page { @apply mx-auto px-4 sm:px-6 max-w-7xl; }
+  .card {
+    @apply rounded-xl border backdrop-blur-md transition-all duration-200;
+    background: var(--bg-card);
+    border-color: var(--border);
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+  }
+  .badge {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-xs font-medium;
+    background: rgba(96, 165, 250, 0.12);
+    color: var(--accent);
+  }
+  .btn-tab {
+    @apply px-3 py-1.5 rounded-md text-sm font-medium transition-colors;
+    color: var(--text-muted);
+  }
+  .btn-tab:hover {
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text);
+  }
+  .btn-tab.active {
+    background: var(--accent);
+    color: white;
+  }
+  .rank-badge {
+    @apply inline-flex items-center justify-center w-7 h-7 rounded-md text-sm font-bold;
+    background: rgba(96, 165, 250, 0.15);
+    color: var(--accent);
+  }
+  .rank-badge.gold { background: rgba(250, 204, 21, 0.18); color: #fbbf24; }
+  .rank-badge.silver { background: rgba(148, 163, 184, 0.18); color: #cbd5e1; }
+  .rank-badge.bronze { background: rgba(217, 119, 6, 0.18); color: #fb923c; }
+}
+
+/* Compact number formatting */
+.tabular-nums { font-variant-numeric: tabular-nums; }

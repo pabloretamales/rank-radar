@@ -1,0 +1,60 @@
+---
+import Base from '@/layouts/Base.astro';
+import { getDict } from '@/i18n';
+import ModelCard from '@components/ModelCard.astro';
+import aaData from '../../../public/data/aa-models.json';
+
+const locale = 'en' as const;
+const dict = getDict(locale);
+
+const METRICS = Object.keys(aaData?.rankings ?? {});
+const tier = aaData?.tier ?? 'free';
+const total = aaData?.total_models ?? 0;
+---
+
+<Base locale={locale} dict={dict}>
+  <header class="mb-8">
+    <h1 class="text-3xl font-bold mb-2">{dict.models.title}</h1>
+    <p class="text-base max-w-3xl" style="color: var(--text-muted);">{dict.models.subtitle}</p>
+    <p class="text-xs mt-2" style="color: var(--text-muted);">
+      {total} models · AA tier <span class="badge ml-1">{tier.toUpperCase()}</span>
+    </p>
+  </header>
+
+  <div class="flex flex-wrap gap-2 mb-6 border-b pb-3 overflow-x-auto" style="border-color: var(--border);">
+    {METRICS.map((m, i) => (
+      <button data-metric={m} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
+        {dict.models.metrics[m] ?? m}
+      </button>
+    ))}
+  </div>
+
+  <div id="models-panels">
+    {METRICS.map((m, i) => {
+      const models = aaData?.rankings?.[m] ?? [];
+      return (
+        <div data-panel={m} class={i === 0 ? '' : 'hidden'}>
+          {models.length === 0 ? (
+            <p style="color: var(--text-muted);">{dict.common.none}</p>
+          ) : (
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
+              {models.map((model) => <ModelCard model={model} metric={m} dict={dict} />)}
+            </div>
+          )}
+        </div>
+      );
+    })}
+  </div>
+</Base>
+
+<script is:inline>
+  document.querySelectorAll('[data-metric]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const target = btn.getAttribute('data-metric');
+      document.querySelectorAll('[data-metric]').forEach((b) => b.classList.toggle('active', b === btn));
+      document.querySelectorAll('[data-panel]').forEach((p) => {
+        p.classList.toggle('hidden', p.getAttribute('data-panel') !== target);
+      });
+    });
+  });
+</script>

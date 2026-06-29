@@ -1,0 +1,50 @@
+---
+import '@/styles/global.css';
+import { getDict, detectLocaleFromUrl, defaultLocale, type Locale } from '@/i18n';
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  locale?: Locale;
+}
+
+const url = Astro.url;
+const locale = (Astro.props.locale ?? detectLocaleFromUrl(url)) as Locale;
+const dict = getDict(locale);
+const title = Astro.props.title ?? dict.site.name;
+const description = Astro.props.description ?? dict.site.tagline;
+const isDefaultLocale = locale === defaultLocale;
+---
+
+<!doctype html>
+<html lang={locale} class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="robots" content={isDefaultLocale ? "index,follow" : "noindex,follow"} />
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" hreflang="es" href={new URL(url.pathname.replace(/^\/en/, ''), Astro.site)} />
+    <link rel="alternate" hreflang="en" href={new URL(`/en${url.pathname.replace(/^\/en/, '')}`, Astro.site)} />
+    <script is:inline>
+      // Apply saved theme before paint to avoid FOUC
+      const saved = localStorage.getItem('theme');
+      if (saved === 'light') {
+        document.documentElement.classList.remove('dark');
+      } else {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+  </head>
+  <body class="min-h-screen antialiased">
+    <Header locale={locale} dict={dict} currentPath={url.pathname} />
+    <main class="container-page py-8">
+      <slot />
+    </main>
+    <Footer locale={locale} dict={dict} />
+  </body>
+</html>

@@ -1,0 +1,95 @@
+{
+  "site": {
+    "name": "RankRadar",
+    "tagline": "Real-time visibility of GitHub trending, AI models, and OpenRouter consumption",
+    "poweredBy": "Powered by GitHub Search, Artificial Analysis & OpenRouter",
+    "shortName": "RankRadar"
+  },
+  "nav": {
+    "home": "Home",
+    "github": "GitHub",
+    "models": "AI Models",
+    "openrouter": "OpenRouter",
+    "toggleTheme": "Toggle theme",
+    "toggleLang": "ES"
+  },
+  "home": {
+    "intro": "Three rankings in one view. Data refreshed daily from official APIs.",
+    "sectionGithub": "GitHub Top 20",
+    "sectionGithubDesc": "Top-starred repos by time window (1d / 7d / 30d / 90d / all-time).",
+    "sectionModels": "Top 20 AI Models",
+    "sectionModelsDesc": "Rankings by intelligence, coding, math, speed, pricing (543 models on Artificial Analysis).",
+    "sectionOpenRouter": "Top 20 OpenRouter Apps",
+    "sectionOpenRouterDesc": "Most-used apps by tokens and requests — popular and trending.",
+    "openGithub": "Open GitHub rankings",
+    "openModels": "Open models rankings",
+    "openOpenRouter": "Open OpenRouter rankings",
+    "lastUpdated": "Last updated"
+  },
+  "github": {
+    "title": "GitHub Top by Window",
+    "subtitle": "Top-starred repos — 1d, 7d, 30d, 90d, and all-time windows.",
+    "windows": {
+      "1d": "Today",
+      "7d": "7 days",
+      "30d": "30 days",
+      "90d": "90 days",
+      "all": "All-time"
+    },
+    "caveat": "\"Top new by window\" measures popularity among newly-created repos — not trending with deltas (that would need historical snapshots in DB). Same as github.com/trending.",
+    "stars": "stars",
+    "forks": "forks",
+    "issues": "issues",
+    "language": "Language",
+    "noResults": "No results for this window"
+  },
+  "models": {
+    "title": "Top AI Models",
+    "subtitle": "543 models ranked by Artificial Analysis benchmarks (FREE tier detected).",
+    "metric": "Metric",
+    "metrics": {
+      "by_intelligence": "Intelligence Index",
+      "by_coding": "Coding Index",
+      "by_math": "Math Index",
+      "by_mmlu_pro": "MMLU-Pro",
+      "by_gpqa": "GPQA",
+      "by_livecodebench": "LiveCodeBench",
+      "by_hle": "HLE",
+      "by_speed": "Speed (tok/s)",
+      "by_ttft": "TTFT (lower = better)",
+      "by_cheapest_blended": "Cheapest (blended)",
+      "by_cheapest_input": "Cheapest (input)"
+    },
+    "price": "Price",
+    "per1m": "/1M tokens",
+    "tokPerSec": "tok/s",
+    "creator": "Creator",
+    "release": "Released",
+    "speed": "Speed"
+  },
+  "openrouter": {
+    "title": "Top OpenRouter Apps",
+    "subtitle": "Apps with most tokens consumed and most trending — official public data.",
+    "ranking": "Ranking",
+    "rankings": {
+      "popular": "Popular",
+      "trending": "Trending",
+      "by_tokens": "By tokens"
+    },
+    "tokens": "Tokens",
+    "requests": "Requests",
+    "noResults": "No data for this ranking"
+  },
+  "footer": {
+    "madeBy": "Made by",
+    "company": "DinamIA Labs",
+    "dataRefresh": "Data refreshed daily via cron"
+  },
+  "common": {
+    "rank": "#",
+    "loading": "Loading…",
+    "error": "Error",
+    "none": "—",
+    "viewOn": "View on"
+  }
+}

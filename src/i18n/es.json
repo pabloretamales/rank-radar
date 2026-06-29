@@ -1,0 +1,95 @@
+{
+  "site": {
+    "name": "RankRadar",
+    "tagline": "Visibilidad en tiempo real de GitHub trending, modelos de IA y apps de OpenRouter",
+    "poweredBy": "Powered by GitHub Search, Artificial Analysis & OpenRouter",
+    "shortName": "RankRadar"
+  },
+  "nav": {
+    "home": "Inicio",
+    "github": "GitHub",
+    "models": "Modelos IA",
+    "openrouter": "OpenRouter",
+    "toggleTheme": "Cambiar tema",
+    "toggleLang": "EN"
+  },
+  "home": {
+    "intro": "Tres rankings en una sola vista. Datos actualizados diariamente desde las APIs oficiales.",
+    "sectionGithub": "Top 20 GitHub",
+    "sectionGithubDesc": "Repos con más estrellas por ventana de tiempo (1d / 7d / 30d / 90d / histórico).",
+    "sectionModels": "Top 20 Modelos IA",
+    "sectionModelsDesc": "Rankings por intelligence, coding, math, speed, precio (543 modelos en Artificial Analysis).",
+    "sectionOpenRouter": "Top 20 Apps OpenRouter",
+    "sectionOpenRouterDesc": "Apps más usadas por tokens y por requests — popular y trending.",
+    "openGithub": "Ver rankings GitHub",
+    "openModels": "Ver rankings modelos",
+    "openOpenRouter": "Ver rankings OpenRouter",
+    "lastUpdated": "Última actualización"
+  },
+  "github": {
+    "title": "Top GitHub por ventana",
+    "subtitle": "Repos con más estrellas — ventanas de 1 día, 7 días, 30 días, 90 días e histórico.",
+    "windows": {
+      "1d": "Hoy",
+      "7d": "7 días",
+      "30d": "30 días",
+      "90d": "90 días",
+      "all": "Histórico"
+    },
+    "caveat": "\"Top nuevos por ventana\" mide lo más popular entre repos recién creados — no trending con deltas (eso requeriría snapshots históricos en DB). Es lo mismo que github.com/trending.",
+    "stars": "estrellas",
+    "forks": "forks",
+    "issues": "issues",
+    "language": "Lenguaje",
+    "noResults": "Sin resultados en esta ventana"
+  },
+  "models": {
+    "title": "Top modelos IA",
+    "subtitle": "543 modelos rankeados por benchmarks de Artificial Analysis (tier FREE detectado).",
+    "metric": "Métrica",
+    "metrics": {
+      "by_intelligence": "Intelligence Index",
+      "by_coding": "Coding Index",
+      "by_math": "Math Index",
+      "by_mmlu_pro": "MMLU-Pro",
+      "by_gpqa": "GPQA",
+      "by_livecodebench": "LiveCodeBench",
+      "by_hle": "HLE",
+      "by_speed": "Velocidad (tok/s)",
+      "by_ttft": "TTFT (más bajo = mejor)",
+      "by_cheapest_blended": "Más baratos (blended)",
+      "by_cheapest_input": "Más baratos (input)"
+    },
+    "price": "Precio",
+    "per1m": "/1M tokens",
+    "tokPerSec": "tok/s",
+    "creator": "Creador",
+    "release": "Lanzamiento",
+    "speed": "Velocidad"
+  },
+  "openrouter": {
+    "title": "Top apps OpenRouter",
+    "subtitle": "Apps con más tokens consumidos y más trending — datos oficiales públicos.",
+    "ranking": "Ranking",
+    "rankings": {
+      "popular": "Popular",
+      "trending": "Trending",
+      "by_tokens": "Por tokens"
+    },
+    "tokens": "Tokens",
+    "requests": "Requests",
+    "noResults": "Sin datos para este ranking"
+  },
+  "footer": {
+    "madeBy": "Hecho por",
+    "company": "DinamIA Labs",
+    "dataRefresh": "Datos refrescados diariamente vía cron"
+  },
+  "common": {
+    "rank": "#",
+    "loading": "Cargando…",
+    "error": "Error",
+    "none": "—",
+    "viewOn": "Ver en"
+  }
+}

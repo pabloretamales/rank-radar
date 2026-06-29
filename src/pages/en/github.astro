@@ -1,0 +1,59 @@
+---
+import Base from '@/layouts/Base.astro';
+import { getDict } from '@/i18n';
+import RepoCard from '@components/RepoCard.astro';
+import githubData from '../../../public/data/github-windows.json';
+
+const locale = 'en' as const;
+const dict = getDict(locale);
+const WINDOWS = ['1d', '7d', '30d', '90d', 'all'];
+const windows = githubData?.windows ?? [];
+const totalItems = windows.reduce((s, w) => s + (w.items?.length ?? 0), 0);
+---
+
+<Base locale={locale} dict={dict}>
+  <header class="mb-8">
+    <h1 class="text-3xl font-bold mb-2">{dict.github.title}</h1>
+    <p class="text-base max-w-3xl" style="color: var(--text-muted);">{dict.github.subtitle}</p>
+    <p class="text-xs mt-3 italic" style="color: var(--text-muted);">ℹ️ {dict.github.caveat}</p>
+    <p class="text-xs mt-1" style="color: var(--text-muted);">{totalItems} repos · {windows.length} windows</p>
+  </header>
+
+  <div class="flex flex-wrap gap-2 mb-6 border-b pb-3" style="border-color: var(--border);">
+    {WINDOWS.map((w) => {
+      const window = windows.find(x => x.label === w);
+      return (
+        <button data-window={w} class={`btn-tab ${w === '7d' ? 'active' : ''}`}>
+          {dict.github.windows[w]}
+          {window && <span class="ml-1 opacity-50 text-xs">({window.items.length})</span>}
+        </button>
+      );
+    })}
+  </div>
+
+  <div id="github-panels">
+    {WINDOWS.map((w) => {
+      const window = windows.find(x => x.label === w);
+      return (
+        <div data-panel={w} class={w === '7d' ? '' : 'hidden'}>
+          {window?.items?.length === 0 && <p style="color: var(--text-muted);">{dict.github.noResults}</p>}
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
+            {(window?.items ?? []).map((repo) => <RepoCard repo={repo} dict={dict} />)}
+          </div>
+        </div>
+      );
+    })}
+  </div>
+</Base>
+
+<script is:inline>
+  document.querySelectorAll('[data-window]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const target = btn.getAttribute('data-window');
+      document.querySelectorAll('[data-window]').forEach((b) => b.classList.toggle('active', b === btn));
+      document.querySelectorAll('[data-panel]').forEach((p) => {
+        p.classList.toggle('hidden', p.getAttribute('data-panel') !== target);
+      });
+    });
+  });
+</script>

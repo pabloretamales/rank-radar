@@ -1,0 +1,72 @@
+---
+import Base from '@/layouts/Base.astro';
+import { getDict } from '@/i18n';
+import RepoCard from '@components/RepoCard.astro';
+import ModelCard from '@components/ModelCard.astro';
+import AppCard from '@components/AppCard.astro';
+import githubData from '../../../public/data/github-windows.json';
+import aaData from '../../../public/data/aa-models.json';
+import openrouterData from '../../../public/data/openrouter.json';
+import manifest from '../../../public/data/manifest.json';
+
+const locale = 'en' as const;
+const dict = getDict(locale);
+
+const githubTop = githubData?.windows?.find(w => w.label === '7d')?.items?.slice(0, 6) ?? [];
+const modelsTop = aaData?.rankings?.by_intelligence?.slice(0, 6) ?? [];
+const orTop = openrouterData?.rankings?.popular?.slice(0, 6) ?? [];
+const lastUpdated = manifest?.generated_at;
+---
+
+<Base locale={locale} dict={dict}>
+  <section class="mb-12">
+    <h1 class="text-3xl sm:text-4xl font-bold mb-3">{dict.site.tagline}</h1>
+    <p class="text-lg max-w-3xl" style="color: var(--text-muted);">{dict.home.intro}</p>
+    {lastUpdated && (
+      <p class="text-xs mt-4" style="color: var(--text-muted);">
+        {dict.home.lastUpdated}: <time class="tabular-nums">{new Date(lastUpdated).toLocaleString('en-US')}</time>
+      </p>
+    )}
+  </section>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <section>
+      <header class="mb-4">
+        <h2 class="text-xl font-semibold">{dict.home.sectionGithub}</h2>
+        <p class="text-sm" style="color: var(--text-muted);">{dict.home.sectionGithubDesc}</p>
+      </header>
+      <div class="space-y-2">
+        {githubTop.length === 0 && <p class="text-sm" style="color: var(--text-muted);">{dict.common.none}</p>}
+        {githubTop.map((repo) => <RepoCard repo={repo} dict={dict} compact />)}
+      </div>
+      <a href="/en/github/" class="btn-tab mt-4 inline-block">{dict.home.openGithub} →</a>
+    </section>
+
+    <section>
+      <header class="mb-4">
+        <h2 class="text-xl font-semibold">{dict.home.sectionModels}</h2>
+        <p class="text-sm" style="color: var(--text-muted);">
+          {dict.home.sectionModelsDesc}
+          {aaData?.tier && <span class="badge ml-2">{aaData.tier.toUpperCase()}</span>}
+        </p>
+      </header>
+      <div class="space-y-2">
+        {modelsTop.length === 0 && <p class="text-sm" style="color: var(--text-muted);">{dict.common.none}</p>}
+        {modelsTop.map((m) => <ModelCard model={m} metric="by_intelligence" dict={dict} />)}
+      </div>
+      <a href="/en/models/" class="btn-tab mt-4 inline-block">{dict.home.openModels} →</a>
+    </section>
+
+    <section>
+      <header class="mb-4">
+        <h2 class="text-xl font-semibold">{dict.home.sectionOpenRouter}</h2>
+        <p class="text-sm" style="color: var(--text-muted);">{dict.home.sectionOpenRouterDesc}</p>
+      </header>
+      <div class="space-y-2">
+        {orTop.length === 0 && <p class="text-sm" style="color: var(--text-muted);">{dict.common.none}</p>}
+        {orTop.map((app) => <AppCard app={app} dict={dict} compact />)}
+      </div>
+      <a href="/en/openrouter/" class="btn-tab mt-4 inline-block">{dict.home.openOpenRouter} →</a>
+    </section>
+  </div>
+</Base>

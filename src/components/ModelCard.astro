@@ -1,0 +1,59 @@
+---
+import type { Dictionary } from '@/i18n';
+
+interface Props {
+  model: {
+    rank: number;
+    name: string;
+    creator: string | null;
+    release_date: string | null;
+    score: number | null;
+    pricing?: { input: number | null; output: number | null; blended: number | null };
+    perf?: { tokens_per_sec: number | null; ttft_seconds: number | null };
+  };
+  metric: string;
+  dict: Dictionary;
+}
+const { model, metric, dict } = Astro.props;
+const rankClass = model.rank === 1 ? 'gold' : model.rank === 2 ? 'silver' : model.rank === 3 ? 'bronze' : '';
+
+function formatScore(metric, score) {
+  if (score == null) return dict.common.none;
+  if (metric === 'by_speed') return `${score.toFixed(0)} ${dict.models.tokPerSec}`;
+  if (metric === 'by_ttft') return `${score.toFixed(2)}s`;
+  if (metric.startsWith('by_cheapest')) return `$${score.toFixed(2)}/M`;
+  return score.toFixed(1);
+}
+
+function formatPrice(p) {
+  if (!p) return dict.common.none;
+  const parts = [];
+  if (p.input != null) parts.push(`$${p.input.toFixed(2)}↑`);
+  if (p.output != null) parts.push(`$${p.output.toFixed(2)}↓`);
+  return parts.join(' / ');
+}
+---
+
+<a href={`https://artificialanalysis.ai/models/${model.slug || model.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`} target="_blank" rel="noopener" class="card block p-4">
+  <div class="flex items-start gap-3">
+    <div class={`rank-badge ${rankClass} shrink-0`}>#{model.rank}</div>
+    <div class="flex-1 min-w-0">
+      <div class="flex items-baseline gap-2 flex-wrap">
+        <span class="font-semibold truncate">{model.name}</span>
+        <span class="text-xs px-2 py-0.5 rounded" style="background: rgba(96, 165, 250, 0.15); color: var(--accent);">{formatScore(metric, model.score)}</span>
+      </div>
+      <div class="flex items-center gap-3 mt-1 text-xs flex-wrap" style="color: var(--text-muted);">
+        {model.creator && <span>{model.creator}</span>}
+        {model.release_date && <span>{model.release_date}</span>}
+      </div>
+      <div class="flex items-center gap-4 mt-2 text-xs" style="color: var(--text-muted);">
+        {model.pricing && (
+          <span>💰 {formatPrice(model.pricing)}</span>
+        )}
+        {model.perf?.tokens_per_sec != null && (
+          <span>⚡ {model.perf.tokens_per_sec.toFixed(0)} tok/s</span>
+        )}
+      </div>
+    </div>
+  </div>
+</a>

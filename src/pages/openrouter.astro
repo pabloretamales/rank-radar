@@ -1,0 +1,60 @@
+---
+import Base from '@/layouts/Base.astro';
+import { getDict, detectLocaleFromUrl } from '@/i18n';
+import AppCard from '@components/AppCard.astro';
+import openrouterData from '../../public/data/openrouter.json';
+
+const locale = detectLocaleFromUrl(Astro.url);
+const dict = getDict(locale);
+const RANKINGS = Object.keys(openrouterData?.rankings ?? {});
+const meta = openrouterData?.meta ?? {};
+---
+
+<Base locale={locale} dict={dict}>
+  <header class="mb-8">
+    <h1 class="text-3xl font-bold mb-2">{dict.openrouter.title}</h1>
+    <p class="text-base max-w-3xl" style="color: var(--text-muted);">{dict.openrouter.subtitle}</p>
+    {meta?.start_date && (
+      <p class="text-xs mt-2" style="color: var(--text-muted);">
+        Ventana: {meta.start_date} → {meta.end_date} · v{meta.version}
+      </p>
+    )}
+  </header>
+
+  <div class="flex flex-wrap gap-2 mb-6 border-b pb-3" style="border-color: var(--border);">
+    {RANKINGS.map((r, i) => (
+      <button data-ranking={r} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
+        {dict.openrouter.rankings[r] ?? r}
+      </button>
+    ))}
+  </div>
+
+  <div id="or-panels">
+    {RANKINGS.map((r, i) => {
+      const apps = openrouterData?.rankings?.[r] ?? [];
+      return (
+        <div data-panel={r} class={i === 0 ? '' : 'hidden'}>
+          {apps.length === 0 ? (
+            <p style="color: var(--text-muted);">{dict.openrouter.noResults}</p>
+          ) : (
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
+              {apps.map((app) => <AppCard app={app} dict={dict} />)}
+            </div>
+          )}
+        </div>
+      );
+    })}
+  </div>
+</Base>
+
+<script is:inline>
+  document.querySelectorAll('[data-ranking]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const target = btn.getAttribute('data-ranking');
+      document.querySelectorAll('[data-ranking]').forEach((b) => b.classList.toggle('active', b === btn));
+      document.querySelectorAll('[data-panel]').forEach((p) => {
+        p.classList.toggle('hidden', p.getAttribute('data-panel') !== target);
+      });
+    });
+  });
+</script>

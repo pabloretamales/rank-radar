@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-06-29T20:46:16.901Z",
+  "oldest_source_fetch": "2026-06-29T20:46:13.759Z",
+  "sources": {
+    "github": {
+      "fetched_at": "2026-06-29T20:46:13.759Z",
+      "windows": 5
+    },
+    "aa": {
+      "tier": "free",
+      "total_models": 543,
+      "fetched_at": "2026-06-29T20:46:14.311Z"
+    },
+    "openrouter": {
+      "fetched_at": "2026-06-29T20:46:16.802Z"
+    }
+  },
+  "paths": {
+    "github": "/data/github-windows.json",
+    "aa": "/data/aa-models.json",
+    "openrouter": "/data/openrouter.json"
+  }
+}
