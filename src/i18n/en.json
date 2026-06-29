@@ -81,7 +81,11 @@
       "models_vs_apps": "OpenRouter exposes public rankings at the app level, not the model level. An app (e.g. Kilo Code, OpenClaw, Hermes Agent) consumes tokens from many models at once. Rankings of individual models by token usage or trending are not publicly available via API — they could only be estimated by aggregating each app's consumption to its models, which OpenRouter does not expose.",
       "popular_vs_trending": "Popular = all-time cumulative total. Trending = fastest-growing apps/models in the recent window (~1 month). By tokens = absolute ranking by total tokens consumed. All three measure different dimensions.",
       "recent_note": "Most recent = newest models in the public OpenRouter catalog, ordered by creation date. Not a usage ranking; an honest derived view from the /v1/models endpoint.",
-      "official_link": "Official model rankings (not public via API):"
+      "models_by_tokens_note": "By token usage = top 20 models by total_tokens aggregated over the last 30 days, via /api/v1/datasets/rankings-daily. The only model-by-usage ranking OR exposes via API.",
+      "official_link": "Official model rankings (not public via API — LLM Leaderboard, Top by task, Market Share, Fastest):",
+      "credit": {
+        "openrouter": "OpenRouter attribution (required when republishing)"
+      }
     }
   },
   "compare": {
@@ -120,7 +124,8 @@
   "footer": {
     "madeBy": "Made by",
     "company": "DinamIA Labs",
-    "dataRefresh": "Data refreshed daily via cron"
+    "dataRefresh": "Data refreshed daily via cron",
+    "credits": "Data provided by GitHub Search, Artificial Analysis, OpenRouter, and OpenClaw."
   },
   "common": {
     "rank": "#",

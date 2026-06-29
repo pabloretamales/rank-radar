@@ -207,8 +207,9 @@ async function main() {
 
   // Rankings-daily: agregamos por modelo y matcheamos con el catálogo.
   let modelsByTokens = [];
+  let rdJson = null;
   try {
-    const rdJson = await fetchModelsByTokens(30);
+    rdJson = await fetchModelsByTokens(30);
     const daily = rdJson.data ?? [];
     const totalsByPerma = new Map();
     for (const e of daily) {
@@ -268,6 +269,7 @@ async function main() {
     source: 'OpenRouter',
     api: { apps: APP_ENDPOINT, models: MODELS_ENDPOINT },
     apps_meta: popular.meta ?? {},
+    rankings_meta: rdJson?.meta ?? {},
     top_n: TOP_N,
     rankings: {
       // Apps (rankings públicos oficiales)

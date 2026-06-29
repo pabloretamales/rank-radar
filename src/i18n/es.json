@@ -82,7 +82,10 @@
       "popular_vs_trending": "Popular = acumulado total de todos los tiempos. Trending = creciendo más rápido en la ventana reciente (~1 mes). Por tokens = ranking absoluto por total de tokens consumidos. Los tres miden dimensiones distintas.",
       "recent_note": "Más recientes = los modelos más nuevos del catálogo oficial de OpenRouter, ordenados por fecha de creación. No es un ranking de uso; es un derivado honesto del endpoint /v1/models.",
       "models_by_tokens_note": "Por uso de tokens = top 20 modelos por total_tokens agregados en los últimos 30 días, vía /api/v1/datasets/rankings-daily. Es el único ranking de modelos por uso que OR expone vía API.",
-      "official_link": "Rankings oficiales de modelos (no públicos via API — LLM Leaderboard, Top by task, Market Share, Fastest):"
+      "official_link": "Rankings oficiales de modelos (no públicos via API — LLM Leaderboard, Top by task, Market Share, Fastest):",
+      "credit": {
+        "openrouter": "Atribución OpenRouter (requerida al republicar)"
+      }
     }
   },
   "compare": {
@@ -95,7 +98,8 @@
   "footer": {
     "madeBy": "Hecho por",
     "company": "DinamIA Labs",
-    "dataRefresh": "Datos refrescados diariamente vía cron"
+    "dataRefresh": "Datos refrescados diariamente vía cron",
+    "credits": "Datos provistos por GitHub Search, Artificial Analysis, OpenRouter y OpenClaw."
   },
   "common": {
     "rank": "#",

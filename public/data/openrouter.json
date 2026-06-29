@@ -1,12 +1,18 @@
 {
-  "fetched_at": "2026-06-29T23:06:26.188Z",
+  "fetched_at": "2026-06-29T23:16:08.570Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-06-29T23:06:22.676Z",
+    "as_of": "2026-06-29T23:15:18.895Z",
+    "version": "v1",
+    "start_date": "2026-05-30",
+    "end_date": "2026-06-28"
+  },
+  "rankings_meta": {
+    "as_of": "2026-06-29T23:16:08.217Z",
     "version": "v1",
     "start_date": "2026-05-30",
     "end_date": "2026-06-28"
@@ -71,7 +77,7 @@
       {
         "rank": 7,
         "app_id": 3356965,
-        "app_name": "Pioneer (development)",
+        "app_name": "Pioneer (production)",
         "total_tokens": "1250208839636",
         "total_tokens_human": "1.25T",
         "total_requests": 19154454,
@@ -134,7 +140,7 @@
       {
         "rank": 14,
         "app_id": 3296290,
-        "app_name": "Mira is the leading AI agent inside Telegram",
+        "app_name": "Mira",
         "total_tokens": "480008492749",
         "total_tokens_human": "480.01B",
         "total_requests": 33104740,
@@ -226,7 +232,7 @@
       {
         "rank": 4,
         "app_id": 3356965,
-        "app_name": "Pioneer (development)",
+        "app_name": "Pioneer (production)",
         "total_tokens": "1250208839636",
         "total_tokens_human": "1.25T",
         "total_requests": 19154454,
@@ -280,7 +286,7 @@
       {
         "rank": 10,
         "app_id": 3296290,
-        "app_name": "Mira is the leading AI agent inside Telegram",
+        "app_name": "Mira",
         "total_tokens": "480008492749",
         "total_tokens_human": "480.01B",
         "total_requests": 33104740,
@@ -334,7 +340,7 @@
       {
         "rank": 16,
         "app_id": 3744553,
-        "app_name": "llmv:sentiment",
+        "app_name": "llmv:competitors",
         "total_tokens": "238159093534",
         "total_tokens_human": "238.16B",
         "total_requests": 98105544,
@@ -435,7 +441,7 @@
       {
         "rank": 7,
         "app_id": 3356965,
-        "app_name": "Pioneer (development)",
+        "app_name": "Pioneer (production)",
         "total_tokens": "1250208839636",
         "total_tokens_human": "1.25T",
         "total_requests": 19154454,
@@ -498,7 +504,7 @@
       {
         "rank": 14,
         "app_id": 3296290,
-        "app_name": "Mira is the leading AI agent inside Telegram",
+        "app_name": "Mira",
         "total_tokens": "480008492749",
         "total_tokens_human": "480.01B",
         "total_requests": 33104740,
