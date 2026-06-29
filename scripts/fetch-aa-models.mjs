@@ -112,20 +112,40 @@ async function main() {
   const models = dataJson.data ?? [];
   console.log(`   data/llms/models: ${models.length} modelos`);
 
-  // 2) Subset "free" que trae los 3 índices principales (incluye agentic)
+  // 2) Subset "free" paginado — endpoint principal de los 3 índices (incluye agentic).
+  // El endpoint tiene paginación: 200 por página, hasta 3 páginas (ej: 518 modelos).
+  // Sin seguir la paginación, solo se ven 24 modelos con agentic_index;
+  // siguiendo las 3 páginas se llega a 70+.
   let agenticBySlug = new Map();
   try {
-    const idxJson = await fetchJson(ENDPOINT_INDEXES, 'language/models/free');
-    const idxModels = idxJson.data ?? [];
-    let withAgentic = 0;
-    for (const m of idxModels) {
-      const v = m.evaluations?.artificial_analysis_agentic_index;
-      if (v != null && Number.isFinite(v)) {
-        agenticBySlug.set(m.slug, v);
-        withAgentic++;
+    let page = 1;
+    let totalSeen = 0;
+    while (true) {
+      const idxJson = await fetchJson(`${ENDPOINT_INDEXES}?page=${page}`, `language/models/free page ${page}`);
+      const idxModels = idxJson.data ?? [];
+      if (idxModels.length === 0) break;
+      let withAgenticThisPage = 0;
+      for (const m of idxModels) {
+        const v = m.evaluations?.artificial_analysis_agentic_index;
+        if (v != null && Number.isFinite(v)) {
+          // dedupe por slug (puede haber duplicados entre páginas)
+          if (!agenticBySlug.has(m.slug)) {
+            agenticBySlug.set(m.slug, v);
+            withAgenticThisPage++;
+          }
+        }
+      }
+      totalSeen += idxModels.length;
+      console.log(`   language/models/free page ${page}: ${idxModels.length} modelos · ${withAgenticThisPage} nuevos con agentic_index`);
+      const pagination = idxJson.pagination ?? {};
+      if (!pagination.has_more) break;
+      page++;
+      if (page > 10) {
+        console.warn(`   ⚠️  Paranoia cutoff: abortando después de 10 páginas`);
+        break;
       }
     }
-    console.log(`   language/models/free: ${idxModels.length} modelos · ${withAgentic} con agentic_index`);
+    console.log(`   language/models/free: ${totalSeen} modelos totales · ${agenticBySlug.size} únicos con agentic_index`);
   } catch (e) {
     console.warn(`   ⚠️  language/models/free falló: ${e.message} — by_agentic quedará vacío`);
   }
