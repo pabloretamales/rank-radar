@@ -201,65 +201,145 @@ async function main() {
   });
 
   // Derivados: apps + recientes (catálogo) + ranking por uso (rankings-daily).
-  // Pablo confirmó 2026-06-29 que /api/v1/datasets/rankings-daily existe
-  // y devuelve top 50 modelos por total_tokens diario. Lo agregamos.
+  // Pablo (2026-06-29): el dashboard se centra en modelos por uso de tokens,
+  // con 4 ventanas: hoy (1d), semana (7d), mes (30d), trending (delta 7d).
   const byRecent = rankModels(catalog, (m) => m.created ?? null, TOP_N);
 
-  // Rankings-daily: agregamos por modelo y matcheamos con el catálogo.
-  let modelsByTokens = [];
-  let rdJson = null;
-  try {
-    rdJson = await fetchModelsByTokens(30);
-    const daily = rdJson.data ?? [];
-    const totalsByPerma = new Map();
+  // Func helper para cross-match con catálogo de OR
+  function crossMatch(perma) {
+    if (!perma) return null;
+    let match = catalogByIdGlobal.get(perma);
+    if (!match) {
+      const stripped = perma.replace(/-\d{8}$/, '');
+      match = catalogByIdGlobal.get(stripped);
+    }
+    if (!match) {
+      for (const m of catalog) {
+        if (m.id && perma.replace(/-\d{8}$/, '').startsWith(m.id)) {
+          match = m; break;
+        }
+      }
+    }
+    return match;
+  }
+  function buildModelsByTokensRow(perma, total, i, meta) {
+    const match = crossMatch(perma);
+    return {
+      rank: i + 1,
+      id: match?.id ?? perma,
+      name: match?.name ?? perma,
+      slug: match?.canonical_slug ?? null,
+      total_tokens: total,
+      total_tokens_human: formatTokens(total),
+      perma,
+      url: match?.url ?? `https://openrouter.ai/models/${perma}`,
+      modalities: match?.modalities ?? [],
+      context_length: match?.context_length ?? null,
+      pricing_prompt: match?.pricing_prompt ?? null,
+      pricing_completion: match?.pricing_completion ?? null,
+      window: meta,
+    };
+  }
+  async function tokensInWindow(days) {
+    const j = await fetchModelsByTokens(days);
+    const daily = j?.data ?? [];
+    const totals = new Map();
     for (const e of daily) {
       const slug = e.model_permaslug;
       const t = Number(e.total_tokens);
       if (!Number.isFinite(t) || !slug) continue;
-      totalsByPerma.set(slug, (totalsByPerma.get(slug) ?? 0) + t);
+      totals.set(slug, (totals.get(slug) ?? 0) + t);
     }
-    // Catálogo indexado por id (sin sufijo de fecha) y por canonical_slug completo
-    const catalogById = new Map();
-    for (const m of catalog) catalogById.set(m.id, m);
+    return { totals, meta: j?.meta ?? {} };
+  }
 
-    const sorted = [...totalsByPerma.entries()]
-      .sort((a, b) => b[1] - a[1])
-      .slice(0, TOP_N);
-    modelsByTokens = sorted.map(([perma, total], i) => {
-      // perma = "provider/model-YYYYMMDD" o "provider/model"
-      // intentamos matchear con catalog.id (provider/model sin fecha)
-      const matchById = catalogById.get(perma) ?? null;
-      let match = matchById;
-      if (!match) {
-        // quitar sufijo -YYYYMMDD
-        const stripped = perma.replace(/-\d{8}$/, '');
-        match = catalogById.get(stripped) ?? null;
-      }
-      if (!match) {
-        // intentar match por prefijo (provider + stem)
-        for (const m of catalog) {
-          if (m.id && perma.replace(/-\d{8}$/, '').startsWith(m.id)) {
-            match = m;
-            break;
-          }
-        }
-      }
+  const catalogByIdGlobal = new Map();
+  for (const m of catalog) catalogByIdGlobal.set(m.id, m);
+
+  const WINDOW_TODAY   = { key: 'today',    days: 1,  i18n: 'today'    };
+  const WINDOW_WEEK    = { key: 'week',     days: 7,  i18n: 'week'     };
+  const WINDOW_MONTH   = { key: 'month',    days: 30, i18n: 'month'    };
+  // Para trending: 7d recientes vs 7d anteriores.
+  const WINDOW_TREND_CUR  = { key: 'trend_cur',  days: 7,  i18n: 'trend_cur'  };
+  const WINDOW_TREND_PREV = { key: 'trend_prev', days: 14, i18n: 'trend_prev' }; // se agregan los últimos 14d pero descartando los 7 ya usados como "current"
+
+  let modelsByTokens = { today: [], week: [], month: [], trending: [], meta: {} };
+  let lastMeta = {};
+  try {
+    // Hacemos las 4 fetches en serie (poco volumen).
+    const today = await tokensInWindow(WINDOW_TODAY.days);
+    lastMeta = today.meta;
+    const todayTop = [...today.totals.entries()]
+      .sort((a, b) => b[1] - a[1]).slice(0, TOP_N)
+      .map(([p, t], i) => buildModelsByTokensRow(p, t, i, 'today'));
+    const week   = await tokensInWindow(WINDOW_WEEK.days);
+    const weekTop = [...week.totals.entries()]
+      .sort((a, b) => b[1] - a[1]).slice(0, TOP_N)
+      .map(([p, t], i) => buildModelsByTokensRow(p, t, i, 'week'));
+    const month  = await tokensInWindow(WINDOW_MONTH.days);
+    const monthTop = [...month.totals.entries()]
+      .sort((a, b) => b[1] - a[1]).slice(0, TOP_N)
+      .map(([p, t], i) => buildModelsByTokensRow(p, t, i, 'month'));
+    // Trending = (semana actual) - (semana anterior).
+    // Para la semana anterior, fetch de 14d y descartamos los 7 más recientes.
+    const recent14 = await tokensInWindow(14);
+    const sumLast7 = new Map();
+    const sumPrev7 = new Map();
+    if (recent14.meta?.end_date) {
+      const endDate = new Date(recent14.meta.end_date + 'T00:00:00Z');
+      const todayMs = endDate.getTime();
+      for (const e of recent14.meta?.data ?? []) {}
+    }
+    // Recalcular con split por fecha:
+    const recent14Json = await fetchModelsByTokens(14);
+    const splitEndDate = new Date(recent14Json.meta?.end_date + 'T00:00:00Z');
+    const startDateMs = splitEndDate.getTime() - 6 * 24 * 3600 * 1000; // inclusive de los 7 días más recientes
+    for (const e of recent14Json.data ?? []) {
+      const dt = new Date(e.date + 'T00:00:00Z').getTime();
+      const map = dt > startDateMs ? sumLast7 : sumPrev7;
+      const slug = e.model_permaslug;
+      const t = Number(e.total_tokens);
+      if (!Number.isFinite(t) || !slug) continue;
+      map.set(slug, (map.get(slug) ?? 0) + t);
+    }
+    const trending = [];
+    for (const [slug, recent7] of sumLast7.entries()) {
+      const prev7 = sumPrev7.get(slug) ?? 0;
+      const excess = recent7 - prev7;
+      if (excess > 0) trending.push({ slug, recent7, prev7, excess });
+    }
+    trending.sort((a, b) => b.excess - a.excess);
+    const trendingTop = trending.slice(0, TOP_N).map((t, i) => {
+      const match = crossMatch(t.slug);
       return {
         rank: i + 1,
-        id: match?.id ?? perma,
-        name: match?.name ?? perma,
+        id: match?.id ?? t.slug,
+        name: match?.name ?? t.slug,
         slug: match?.canonical_slug ?? null,
-        total_tokens: total,
-        total_tokens_human: formatTokens(total),
-        perma,
-        url: match?.url ?? `https://openrouter.ai/models/${perma}`,
+        total_tokens: t.excess, // mostramos el excess como el valor principal
+        total_tokens_human: formatTokens(t.excess),
+        recent7: t.recent7,
+        recent7_human: formatTokens(t.recent7),
+        prev7: t.prev7,
+        prev7_human: formatTokens(t.prev7),
+        perma: t.slug,
+        url: match?.url ?? `https://openrouter.ai/models/${t.slug}`,
         modalities: match?.modalities ?? [],
         context_length: match?.context_length ?? null,
-        pricing_prompt: match?.pricing_prompt ?? null,
-        pricing_completion: match?.pricing_completion ?? null,
+        window: 'trending',
       };
     });
-    console.log(`   rankings-daily: ${daily.length} entries · ${totalsByPerma.size} modelos únicos · top ${modelsByTokens.length}`);
+
+    modelsByTokens = {
+      today: todayTop,
+      week: weekTop,
+      month: monthTop,
+      trending: trendingTop,
+      meta: lastMeta,
+    };
+    console.log(
+      `   models_by_tokens: today=${todayTop.length} week=${weekTop.length} month=${monthTop.length} trending=${trendingTop.length}`
+    );
   } catch (e) {
     console.warn(`   ⚠️  rankings-daily falló: ${e.message}`);
   }
@@ -269,7 +349,7 @@ async function main() {
     source: 'OpenRouter',
     api: { apps: APP_ENDPOINT, models: MODELS_ENDPOINT },
     apps_meta: popular.meta ?? {},
-    rankings_meta: rdJson?.meta ?? {},
+    rankings_meta: lastMeta,
     top_n: TOP_N,
     rankings: {
       // Apps (rankings públicos oficiales)
@@ -282,8 +362,8 @@ async function main() {
       ),
       // Modelos: derivado honesto del catálogo (no es ranking de uso oficial)
       by_recent: byRecent,
-      // Modelos por uso (rankings-daily, 30 días)
-      models_by_tokens: modelsByTokens,
+      // Modelos por uso (rankings-daily) en 4 ventanas
+      ...modelsByTokens,
     },
     models_total: catalog.length,
     catalog: catalogSlim,
@@ -295,7 +375,7 @@ async function main() {
   const r = payload.rankings;
   console.log(
     `   apps: ${r.apps_popular.length}/${r.apps_trending.length}/${r.by_tokens.length}` +
-      ` | by_recent: ${r.by_recent.length} | models_by_tokens: ${r.models_by_tokens.length}`
+      ` | by_recent: ${r.by_recent.length} | mbt: today=${r.today.length} week=${r.week.length} month=${r.month.length} trending=${r.trending.length}`
   );
 }
 

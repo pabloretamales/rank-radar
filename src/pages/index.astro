@@ -3,7 +3,6 @@ import Base from '@/layouts/Base.astro';
 import { getDict, detectLocaleFromUrl } from '@/i18n';
 import RepoCard from '@components/RepoCard.astro';
 import ModelCard from '@components/ModelCard.astro';
-import AppCard from '@components/AppCard.astro';
 import githubData from '../../public/data/github-windows.json';
 import aaData from '../../public/data/aa-models.json';
 import openrouterData from '../../public/data/openrouter.json';
@@ -14,8 +13,7 @@ const dict = getDict(locale);
 
 const githubTop = githubData?.windows?.find(w => w.label === '7d')?.items?.slice(0, 6) ?? [];
 const modelsTop = aaData?.rankings?.by_intelligence?.slice(0, 6) ?? [];
-const orTop = openrouterData?.rankings?.apps_popular?.slice(0, 6) ?? [];
-
+const orTop = openrouterData?.rankings?.week?.slice(0, 6) ?? [];
 const lastUpdated = manifest?.generated_at;
 ---
 
@@ -54,9 +52,7 @@ const lastUpdated = manifest?.generated_at;
         <h2 class="text-xl font-semibold">{dict.home.sectionModels}</h2>
         <p class="text-sm" style="color: var(--text-muted);">
           {dict.home.sectionModelsDesc}
-          {aaData?.tier && (
-            <span class="badge ml-2">{aaData.tier.toUpperCase()}</span>
-          )}
+          {aaData?.tier && <span class="badge ml-2">{aaData.tier.toUpperCase()}</span>}
         </p>
       </header>
       <div class="space-y-2">
@@ -68,7 +64,7 @@ const lastUpdated = manifest?.generated_at;
       </a>
     </section>
 
-    <!-- OpenRouter widget -->
+    <!-- OpenRouter widget: muestra MODELOS POR USO DE TOKENS (week) -->
     <section class="lg:col-span-1">
       <header class="mb-4">
         <h2 class="text-xl font-semibold">{dict.home.sectionOpenRouter}</h2>
@@ -76,7 +72,19 @@ const lastUpdated = manifest?.generated_at;
       </header>
       <div class="space-y-2">
         {orTop.length === 0 && <p class="text-sm" style="color: var(--text-muted);">{dict.common.none}</p>}
-        {orTop.map((app) => <AppCard app={app} dict={dict} compact />)}
+        {orTop.map((m) => (
+          <a href={m.url} target="_blank" rel="noopener" class="card block p-3">
+            <div class="flex items-start gap-3">
+              <div class={`rank-badge ${m.rank === 1 ? 'gold' : m.rank === 2 ? 'silver' : m.rank === 3 ? 'bronze' : ''} shrink-0 text-sm`}>#{m.rank}</div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-baseline gap-2 flex-wrap">
+                  <span class="font-semibold text-sm truncate">{m.name}</span>
+                  <span class="text-xs" style="color: var(--text-muted);">🪙 {m.total_tokens_human}</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        ))}
       </div>
       <a href={(locale === 'es' ? '' : '/en') + '/openrouter/'} class="btn-tab mt-4 inline-block">
         {dict.home.openOpenRouter} →

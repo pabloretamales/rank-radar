@@ -3,7 +3,6 @@ import Base from '@/layouts/Base.astro';
 import { getDict } from '@/i18n';
 import RepoCard from '@components/RepoCard.astro';
 import ModelCard from '@components/ModelCard.astro';
-import AppCard from '@components/AppCard.astro';
 import githubData from '../../../public/data/github-windows.json';
 import aaData from '../../../public/data/aa-models.json';
 import openrouterData from '../../../public/data/openrouter.json';
@@ -14,7 +13,7 @@ const dict = getDict(locale);
 
 const githubTop = githubData?.windows?.find(w => w.label === '7d')?.items?.slice(0, 6) ?? [];
 const modelsTop = aaData?.rankings?.by_intelligence?.slice(0, 6) ?? [];
-const orTop = openrouterData?.rankings?.apps_popular?.slice(0, 6) ?? [];
+const orTop = openrouterData?.rankings?.week?.slice(0, 6) ?? [];
 const lastUpdated = manifest?.generated_at;
 ---
 
@@ -30,19 +29,25 @@ const lastUpdated = manifest?.generated_at;
   </section>
 
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-    <section>
-      <header class="mb-4">
-        <h2 class="text-xl font-semibold">{dict.home.sectionGithub}</h2>
-        <p class="text-sm" style="color: var(--text-muted);">{dict.home.sectionGithubDesc}</p>
+    <!-- GitHub widget -->
+    <section class="lg:col-span-1">
+      <header class="mb-4 flex items-baseline justify-between">
+        <div>
+          <h2 class="text-xl font-semibold">{dict.home.sectionGithub}</h2>
+          <p class="text-sm" style="color: var(--text-muted);">{dict.home.sectionGithubDesc}</p>
+        </div>
       </header>
       <div class="space-y-2">
         {githubTop.length === 0 && <p class="text-sm" style="color: var(--text-muted);">{dict.common.none}</p>}
         {githubTop.map((repo) => <RepoCard repo={repo} dict={dict} compact />)}
       </div>
-      <a href="/en/github/" class="btn-tab mt-4 inline-block">{dict.home.openGithub} →</a>
+      <a href="/en/github/" class="btn-tab mt-4 inline-block">
+        {dict.home.openGithub} →
+      </a>
     </section>
 
-    <section>
+    <!-- Models widget -->
+    <section class="lg:col-span-1">
       <header class="mb-4">
         <h2 class="text-xl font-semibold">{dict.home.sectionModels}</h2>
         <p class="text-sm" style="color: var(--text-muted);">
@@ -54,19 +59,36 @@ const lastUpdated = manifest?.generated_at;
         {modelsTop.length === 0 && <p class="text-sm" style="color: var(--text-muted);">{dict.common.none}</p>}
         {modelsTop.map((m) => <ModelCard model={m} metric="by_intelligence" dict={dict} />)}
       </div>
-      <a href="/en/models/" class="btn-tab mt-4 inline-block">{dict.home.openModels} →</a>
+      <a href="/en/models/" class="btn-tab mt-4 inline-block">
+        {dict.home.openModels} →
+      </a>
     </section>
 
-    <section>
+    <!-- OpenRouter widget: muestra MODELOS POR USO DE TOKENS (week) -->
+    <section class="lg:col-span-1">
       <header class="mb-4">
         <h2 class="text-xl font-semibold">{dict.home.sectionOpenRouter}</h2>
         <p class="text-sm" style="color: var(--text-muted);">{dict.home.sectionOpenRouterDesc}</p>
       </header>
       <div class="space-y-2">
         {orTop.length === 0 && <p class="text-sm" style="color: var(--text-muted);">{dict.common.none}</p>}
-        {orTop.map((app) => <AppCard app={app} dict={dict} compact />)}
+        {orTop.map((m) => (
+          <a href={m.url} target="_blank" rel="noopener" class="card block p-3">
+            <div class="flex items-start gap-3">
+              <div class={`rank-badge ${m.rank === 1 ? 'gold' : m.rank === 2 ? 'silver' : m.rank === 3 ? 'bronze' : ''} shrink-0 text-sm`}>#{m.rank}</div>
+              <div class="flex-1 min-w-0">
+                <div class="flex items-baseline gap-2 flex-wrap">
+                  <span class="font-semibold text-sm truncate">{m.name}</span>
+                  <span class="text-xs" style="color: var(--text-muted);">🪙 {m.total_tokens_human}</span>
+                </div>
+              </div>
+            </div>
+          </a>
+        ))}
       </div>
-      <a href="/en/openrouter/" class="btn-tab mt-4 inline-block">{dict.home.openOpenRouter} →</a>
+      <a href="/en/openrouter/" class="btn-tab mt-4 inline-block">
+        {dict.home.openOpenRouter} →
+      </a>
     </section>
   </div>
 </Base>

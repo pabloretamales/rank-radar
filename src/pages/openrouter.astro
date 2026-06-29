@@ -8,48 +8,30 @@ import openrouterData from '../../public/data/openrouter.json';
 const locale = detectLocaleFromUrl(Astro.url);
 const dict = getDict(locale);
 const r = openrouterData?.rankings ?? {};
-const RANKINGS = ['apps_popular', 'apps_trending', 'by_tokens', 'by_recent', 'models_by_tokens'];
-const APP_RANKINGS = ['apps_popular', 'apps_trending', 'by_tokens'];
-const MODEL_TOKEN_RANKINGS = ['models_by_tokens'];
+const RANKINGS = ['today', 'week', 'month', 'trending'];
+const APP_RANKINGS = ['apps_popular', 'apps_trending', 'by_tokens', 'by_recent'];
+const MODEL_TOKEN_RANKINGS = ['today', 'week', 'month', 'trending'];
 const isApp = (rk) => APP_RANKINGS.includes(rk);
 const isModelTokens = (rk) => MODEL_TOKEN_RANKINGS.includes(rk);
 const meta = openrouterData?.apps_meta ?? {};
 const rankingsMeta = openrouterData?.rankings_meta ?? {};
 const creditLocale = locale === 'es' ? 'es-CL' : 'en-US';
+
+function formatNum(n: number) {
+  if (n == null) return '—';
+  if (n >= 1e12) return (n / 1e12).toFixed(2) + 'T';
+  if (n >= 1e9) return (n / 1e9).toFixed(2) + 'B';
+  if (n >= 1e6) return (n / 1e6).toFixed(2) + 'M';
+  if (n >= 1e3) return (n / 1e3).toFixed(2) + 'K';
+  return String(n);
+}
 ---
 
 <Base locale={locale} dict={dict}>
   <header class="mb-6">
     <h1 class="text-3xl font-bold mb-2">{dict.openrouter.title}</h1>
     <p class="text-base max-w-3xl" style="color: var(--text-muted);">{dict.openrouter.subtitle}</p>
-    {meta?.start_date && (
-      <p class="text-xs mt-2" style="color: var(--text-muted);">
-        Ventana apps: {meta.start_date} → {meta.end_date} · v{meta.version}
-      </p>
-    )}
   </header>
-
-  <aside class="card p-4 mb-4 text-sm" style="background: var(--bg-card);">
-    <h2 class="font-semibold mb-2">💡 {dict.openrouter.explainer.heading}</h2>
-    <p class="mb-2" style="color: var(--text-muted);">{dict.openrouter.explainer.models_vs_apps}</p>
-    <p style="color: var(--text-muted);">{dict.openrouter.explainer.popular_vs_trending}</p>
-    <p class="mt-2" style="color: var(--text-muted);">{dict.openrouter.explainer.recent_note}</p>
-    <p class="mt-2" style="color: var(--text-muted);">{dict.openrouter.explainer.models_by_tokens_note}</p>
-    <p class="mt-3 text-xs">
-      {dict.openrouter.explainer.official_link}
-      <a class="badge ml-1" href="https://openrouter.ai/rankings/models" target="_blank" rel="noopener">openrouter.ai/rankings/models</a>
-    </p>
-  </aside>
-
-  <aside class="card p-3 mb-6 text-sm" style="background: var(--bg-card); border-left: 3px solid var(--accent);">
-    <p class="font-semibold text-xs uppercase tracking-wider mb-1" style="color: var(--text-muted);">
-      {dict.openrouter.explainer.credit.openrouter}
-    </p>
-    <p class="text-sm">
-      Source: <a href="https://openrouter.ai/rankings" class="badge ml-1" target="_blank" rel="noopener">OpenRouter</a> (openrouter.ai/rankings), as of <time class="tabular-nums font-semibold">{rankingsMeta.as_of ? new Date(rankingsMeta.as_of).toLocaleString(creditLocale) : meta.as_of ? new Date(meta.as_of).toLocaleString(creditLocale) : 'N/A'}</time>
-      <span class="opacity-60 ml-2">· {rankingsMeta.version ?? meta.version ?? 'v1'} · ventana {rankingsMeta.start_date ?? meta.start_date ?? '?'} → {rankingsMeta.end_date ?? meta.end_date ?? '?'}</span>
-    </p>
-  </aside>
 
   <div class="flex flex-wrap gap-2 mb-6 border-b pb-3" style="border-color: var(--border);">
     {RANKINGS.map((rk, i) => (
@@ -66,38 +48,54 @@ const creditLocale = locale === 'es' ? 'es-CL' : 'en-US';
         <div data-panel={rk} class={i === 0 ? '' : 'hidden'}>
           {items.length === 0 ? (
             <p style="color: var(--text-muted);">{dict.openrouter.noResults}</p>
-          ) : isApp(rk) ? (
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
-              {items.map((app) => <AppCard app={app} dict={dict} />)}
-            </div>
-          ) : isModelTokens(rk) ? (
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
-              {items.map((m) => (
-                <a href={m.url} target="_blank" rel="noopener" class="card block p-4">
-                  <div class="flex items-start gap-3">
-                    <div class={`rank-badge ${m.rank === 1 ? 'gold' : m.rank === 2 ? 'silver' : m.rank === 3 ? 'bronze' : ''} shrink-0`}>#{m.rank}</div>
-                    <div class="flex-1 min-w-0">
-                      <div class="flex items-baseline gap-2 flex-wrap">
-                        <span class="font-semibold truncate">{m.name}</span>
-                        <span class="badge whitespace-nowrap">🪙 {m.total_tokens_human}</span>
-                      </div>
-                      {m.context_length != null && (
-                        <p class="text-xs mt-1" style="color: var(--text-muted);">📐 {(m.context_length >= 1e6 ? (m.context_length/1e6).toFixed(1) + 'M' : m.context_length >= 1e3 ? (m.context_length/1e3).toFixed(0) + 'K' : m.context_length)} ctx · {m.id}</p>
-                      )}
-                    </div>
-                  </div>
-                </a>
-              ))}
-            </div>
           ) : (
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
-              {items.map((model) => <ORModelCard model={model} ranking={rk} dict={dict} />)}
-            </div>
+            <>
+              {rk === 'trending' && (
+                <p class="text-xs mb-3 opacity-70">
+                  {dict.openrouter.trendingNote}
+                </p>
+              )}
+              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
+                {items.map((m) => (
+                  <a href={m.url} target="_blank" rel="noopener" class="card block p-4">
+                    <div class="flex items-start gap-3">
+                      <div class={`rank-badge ${m.rank === 1 ? 'gold' : m.rank === 2 ? 'silver' : m.rank === 3 ? 'bronze' : ''} shrink-0`}>#{m.rank}</div>
+                      <div class="flex-1 min-w-0">
+                        <div class="flex items-baseline gap-2 flex-wrap">
+                          <span class="font-semibold truncate">{m.name}</span>
+                          <span class="badge whitespace-nowrap">🪙 {m.total_tokens_human}</span>
+                        </div>
+                        {rk === 'trending' && m.recent7_human && (
+                          <p class="text-xs mt-1" style="color: var(--text-muted);">
+                            <span class="text-green-400">{m.recent7_human}</span> <span class="opacity-50">vs</span> <span class="text-red-400">{m.prev7_human}</span>
+                          </p>
+                        )}
+                        {m.context_length != null && (
+                          <p class="text-xs mt-1" style="color: var(--text-muted);">
+                            📐 {formatNum(m.context_length)} ctx · {m.id}
+                          </p>
+                        )}
+                      </div>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </>
           )}
         </div>
       );
     })}
   </div>
+
+  <aside class="card p-3 mt-8 text-sm" style="background: var(--bg-card); border-left: 3px solid var(--accent);">
+    <p class="font-semibold text-xs uppercase tracking-wider mb-1" style="color: var(--text-muted);">
+      {dict.openrouter.explainer.credit.openrouter}
+    </p>
+    <p class="text-sm">
+      Source: <a href="https://openrouter.ai/rankings" class="badge ml-1" target="_blank" rel="noopener">OpenRouter</a> (openrouter.ai/rankings), as of <time class="tabular-nums font-semibold">{rankingsMeta.as_of ? new Date(rankingsMeta.as_of).toLocaleString(creditLocale) : 'N/A'}</time>
+      <span class="opacity-60 ml-2">· {rankingsMeta.version ?? meta.version ?? 'v1'} · ventana {rankingsMeta.start_date ?? meta.start_date ?? '?'} → {rankingsMeta.end_date ?? meta.end_date ?? '?'}</span>
+    </p>
+  </aside>
 </Base>
 
 <script is:inline>
