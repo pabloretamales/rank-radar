@@ -6,8 +6,11 @@ import githubData from '../../public/data/github-windows.json';
 
 const locale = detectLocaleFromUrl(Astro.url);
 const dict = getDict(locale);
-const WINDOWS = ['1d', '7d', '30d', '90d', 'all'];
-const windows = githubData?.windows ?? [];
+const ALL_WINDOWS = ['1d', '7d', '30d', '90d', 'all'];
+// Filtrar ventanas sin items (si 1d no trajo nada, no se muestra la pestaña)
+const ALL = githubData?.windows ?? [];
+const windows = ALL.filter((w) => (w.items?.length ?? 0) > 0);
+const visibleLabels = windows.map((w) => w.label);
 const totalItems = windows.reduce((s, w) => s + (w.items?.length ?? 0), 0);
 ---
 
@@ -20,29 +23,24 @@ const totalItems = windows.reduce((s, w) => s + (w.items?.length ?? 0), 0);
   </header>
 
   <div class="flex flex-wrap gap-2 mb-6 border-b pb-3" style="border-color: var(--border);">
-    {WINDOWS.map((w) => {
-      const window = windows.find(x => x.label === w);
-      return (
-        <button data-window={w} class={`btn-tab ${w === '7d' ? 'active' : ''}`}>
-          {dict.github.windows[w]}
-          {window && <span class="ml-1 opacity-50 text-xs">({window.items.length})</span>}
-        </button>
-      );
-    })}
+    {windows.length === 0 ? (
+      <p class="text-sm" style="color: var(--text-muted);">{dict.github.noResults}</p>
+    ) : windows.map((w, i) => (
+      <button data-window={w.label} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
+        {dict.github.windows[w.label]}
+        <span class="ml-1 opacity-50 text-xs">({w.items.length})</span>
+      </button>
+    ))}
   </div>
 
   <div id="github-panels">
-    {WINDOWS.map((w) => {
-      const window = windows.find(x => x.label === w);
-      return (
-        <div data-panel={w} class={w === '7d' ? '' : 'hidden'}>
-          {window?.items?.length === 0 && <p style="color: var(--text-muted);">{dict.github.noResults}</p>}
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
-            {(window?.items ?? []).map((repo) => <RepoCard repo={repo} dict={dict} />)}
-          </div>
+    {windows.length === 0 ? null : windows.map((w, i) => (
+      <div data-panel={w.label} class={i === 0 ? '' : 'hidden'}>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
+          {w.items.map((repo) => <RepoCard repo={repo} dict={dict} />)}
         </div>
-      );
-    })}
+      </div>
+    ))}
   </div>
 </Base>
 

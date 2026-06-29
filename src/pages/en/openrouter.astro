@@ -2,12 +2,16 @@
 import Base from '@/layouts/Base.astro';
 import { getDict } from '@/i18n';
 import AppCard from '@components/AppCard.astro';
+import ORModelCard from '@components/ORModelCard.astro';
 import openrouterData from '../../../public/data/openrouter.json';
 
 const locale = 'en' as const;
 const dict = getDict(locale);
-const RANKINGS = Object.keys(openrouterData?.rankings ?? {});
-const meta = openrouterData?.meta ?? {};
+const r = openrouterData?.rankings ?? {};
+const APP_RANKINGS = ['apps_popular', 'apps_trending', 'by_tokens'];
+const MODEL_RANKINGS = ['by_context', 'by_recent', 'by_cheapest', 'by_multimodal'];
+const ALL_RANKINGS = [...APP_RANKINGS, ...MODEL_RANKINGS];
+const meta = openrouterData?.apps_meta ?? {};
 ---
 
 <Base locale={locale} dict={dict}>
@@ -16,29 +20,45 @@ const meta = openrouterData?.meta ?? {};
     <p class="text-base max-w-3xl" style="color: var(--text-muted);">{dict.openrouter.subtitle}</p>
     {meta?.start_date && (
       <p class="text-xs mt-2" style="color: var(--text-muted);">
-        Window: {meta.start_date} → {meta.end_date} · v{meta.version}
+        Apps window: {meta.start_date} → {meta.end_date} · v{meta.version} · {openrouterData?.models_total ?? 0} models in catalog
       </p>
     )}
   </header>
 
   <div class="flex flex-wrap gap-2 mb-6 border-b pb-3" style="border-color: var(--border);">
-    {RANKINGS.map((r, i) => (
-      <button data-ranking={r} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
-        {dict.openrouter.rankings[r] ?? r}
+    {ALL_RANKINGS.map((rk, i) => (
+      <button data-ranking={rk} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
+        {dict.openrouter.rankings[rk] ?? rk}
       </button>
     ))}
   </div>
 
   <div id="or-panels">
-    {RANKINGS.map((r, i) => {
-      const apps = openrouterData?.rankings?.[r] ?? [];
+    {APP_RANKINGS.map((rk, i) => {
+      const apps = r[rk] ?? [];
       return (
-        <div data-panel={r} class={i === 0 ? '' : 'hidden'}>
+        <div data-panel={rk} class={i === 0 ? '' : 'hidden'}>
+          <h2 class="text-sm uppercase tracking-wider font-semibold mb-3" style="color: var(--text-muted);">{dict.openrouter.sectionApps}</h2>
           {apps.length === 0 ? (
             <p style="color: var(--text-muted);">{dict.openrouter.noResults}</p>
           ) : (
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
               {apps.map((app) => <AppCard app={app} dict={dict} />)}
+            </div>
+          )}
+        </div>
+      );
+    })}
+    {MODEL_RANKINGS.map((rk, i) => {
+      const models = r[rk] ?? [];
+      return (
+        <div data-panel={rk} class="hidden">
+          <h2 class="text-sm uppercase tracking-wider font-semibold mb-3" style="color: var(--text-muted);">{dict.openrouter.sectionModels}</h2>
+          {models.length === 0 ? (
+            <p style="color: var(--text-muted);">{dict.openrouter.noResults}</p>
+          ) : (
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
+              {models.map((model) => <ORModelCard model={model} ranking={rk} dict={dict} />)}
             </div>
           )}
         </div>

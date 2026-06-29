@@ -1,0 +1,91 @@
+---
+import type { Dictionary } from '@/i18n';
+
+interface Props {
+  model: {
+    rank: number;
+    id: string;
+    name: string;
+    description: string;
+    context_length: number | null;
+    modalities: string[];
+    n_inputs: number;
+    n_outputs: number;
+    created_human: string | null;
+    pricing_prompt: number | null;
+    pricing_completion: number | null;
+    score: number | null;
+    url: string;
+  };
+  ranking: string; // 'by_context' | 'by_recent' | 'by_cheapest' | 'by_multimodal'
+  dict: Dictionary;
+}
+const { model, ranking, dict } = Astro.props;
+const rankClass = model.rank === 1 ? 'gold' : model.rank === 2 ? 'silver' : model.rank === 3 ? 'bronze' : '';
+
+function fmtInt(n) {
+  if (n == null) return dict.common.none;
+  if (n >= 1e6) return (n / 1e6).toFixed(1) + 'M';
+  if (n >= 1e3) return (n / 1e3).toFixed(0) + 'K';
+  return n.toLocaleString();
+}
+
+function fmtPrice(p) {
+  if (p == null) return dict.common.none;
+  if (p < 0.01) return `$${p.toExponential(1)}`;
+  return `$${p.toFixed(2)}/M`;
+}
+
+function fmtMod(m: string) {
+  // Map to short icons
+  if (m === 'text') return '📝';
+  if (m === 'image') return '🖼';
+  if (m === 'audio') return '🎵';
+  if (m === 'video') return '🎬';
+  if (m === 'file') return '📎';
+  if (m.startsWith('→')) return '';
+  return '🔹';
+}
+
+const primary =
+  ranking === 'by_context' ? `ctx ${fmtInt(model.context_length)}` :
+  ranking === 'by_recent' ? (model.created_human ?? '') :
+  ranking === 'by_cheapest' ? fmtPrice(model.pricing_prompt) :
+  ranking === 'by_multimodal' ? `${model.n_inputs} in · ${model.n_outputs} out` :
+  '';
+---
+
+<a href={model.url} target="_blank" rel="noopener" class="card block p-4">
+  <div class="flex items-start gap-3">
+    <div class={`rank-badge ${rankClass} shrink-0`}>#{model.rank}</div>
+    <div class="flex-1 min-w-0">
+      <div class="flex items-baseline gap-2 flex-wrap">
+        <span class="font-semibold truncate">{model.name}</span>
+        {primary && (
+          <span class="badge whitespace-nowrap">{primary}</span>
+        )}
+      </div>
+      {model.description && (
+        <p class="text-sm mt-1 line-clamp-2" style="color: var(--text-muted);">{model.description}</p>
+      )}
+      <div class="flex items-center gap-3 mt-2 text-xs flex-wrap" style="color: var(--text-muted);">
+        {model.modalities?.length > 0 && (
+          <span class="flex items-center gap-1">
+            {model.modalities.slice(0, 6).map((m) => (
+              <span class="px-1" title={m}>{fmtMod(m)}</span>
+            ))}
+          </span>
+        )}
+        {model.context_length != null && ranking !== 'by_context' && (
+          <span>📐 {fmtInt(model.context_length)} ctx</span>
+        )}
+        {model.pricing_prompt != null && ranking !== 'by_cheapest' && (
+          <span>💰 {fmtPrice(model.pricing_prompt)}/M</span>
+        )}
+        {model.created_human && ranking !== 'by_recent' && (
+          <span>📅 {model.created_human}</span>
+        )}
+      </div>
+    </div>
+  </div>
+</a>

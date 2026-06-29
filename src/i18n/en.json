@@ -55,6 +55,7 @@
       "by_gpqa": "GPQA",
       "by_livecodebench": "LiveCodeBench",
       "by_hle": "HLE",
+      "by_agentic": "Agentic (τ² bench)",
       "by_speed": "Speed (tok/s)",
       "by_ttft": "TTFT (lower = better)",
       "by_cheapest_blended": "Cheapest (blended)",
@@ -68,13 +69,19 @@
     "speed": "Speed"
   },
   "openrouter": {
-    "title": "Top OpenRouter Apps",
-    "subtitle": "Apps with most tokens consumed and most trending — official public data.",
+    "title": "Top OpenRouter Apps & Models",
+    "subtitle": "Apps with most tokens consumed and most trending + rankings from the public model catalog.",
     "ranking": "Ranking",
+    "sectionApps": "Apps",
+    "sectionModels": "Catalog models",
     "rankings": {
-      "popular": "Popular",
-      "trending": "Trending",
-      "by_tokens": "By tokens"
+      "apps_popular": "Apps · Popular",
+      "apps_trending": "Apps · Trending",
+      "by_tokens": "Apps · By tokens",
+      "by_context": "Models · Largest context",
+      "by_recent": "Models · Most recent",
+      "by_cheapest": "Models · Cheapest input",
+      "by_multimodal": "Models · Most multimodal"
     },
     "tokens": "Tokens",
     "requests": "Requests",

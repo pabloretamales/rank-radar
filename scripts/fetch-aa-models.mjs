@@ -119,6 +119,8 @@ async function main() {
     by_gpqa: rankBy(models, evalField('gpqa'), TOP_N),
     by_livecodebench: rankBy(models, evalField('livecodebench'), TOP_N),
     by_hle: rankBy(models, evalField('hle'), TOP_N),
+    // Agentic — τ² Bench (tau2) de Sierra Research; benchmark agentic abierto más usado
+    by_agentic: rankBy(models, evalField('tau2'), TOP_N),
     // Performance — campos top-level, no están en evaluations
     by_speed: rankBy(models, topLevel('median_output_tokens_per_second'), TOP_N),
     by_ttft: rankBy(models, topLevel('median_time_to_first_token_seconds'), TOP_N, false, { minScore: 0 }), // excluye ttft=0 ("no medido")
@@ -149,6 +151,7 @@ async function main() {
       gpqa: m.evaluations?.gpqa,
       hle: m.evaluations?.hle,
       livecodebench: m.evaluations?.livecodebench,
+      agentic: m.evaluations?.tau2,
       price_input: m.pricing?.price_1m_input_tokens,
       price_output: m.pricing?.price_1m_output_tokens,
       tokens_per_sec: m.median_output_tokens_per_second,
