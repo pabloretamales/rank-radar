@@ -173,8 +173,12 @@ async function main() {
     };
   });
 
-  // Derivados: solo rankings de apps (los rankings de modelos quedan en la
-  // página explicativa — los endpoints públicos de OR para modelos no existen)
+  // Derivados: apps + 1 derivado de catálogo (by_recent: modelos más recientes
+  // ordenados por fecha de creación, info REAL del endpoint /v1/models).
+  // Los rankings oficiales de modelos por uso o trending no existen como
+  // endpoints públicos, por eso la página tiene un explainer al respecto.
+  const byRecent = rankModels(catalog, (m) => m.created ?? null, TOP_N);
+
   const payload = {
     fetched_at: new Date().toISOString(),
     source: 'OpenRouter',
@@ -182,7 +186,7 @@ async function main() {
     apps_meta: popular.meta ?? {},
     top_n: TOP_N,
     rankings: {
-      // Solo apps (rankings públicos disponibles)
+      // Apps (rankings públicos oficiales)
       apps_popular: normalizeApps(popular.data ?? []).slice(0, TOP_N),
       apps_trending: normalizeApps(trending.data ?? []).slice(0, TOP_N),
       by_tokens: normalizeApps(
@@ -190,6 +194,8 @@ async function main() {
           .sort((a, b) => Number(b.total_tokens || 0) - Number(a.total_tokens || 0))
           .slice(0, TOP_N)
       ),
+      // Modelos: derivado honesto del catálogo (no es ranking de uso oficial)
+      by_recent: byRecent,
     },
     models_total: catalog.length,
     catalog: catalogSlim,
@@ -201,7 +207,7 @@ async function main() {
   const r = payload.rankings;
   console.log(
     `   apps: ${r.apps_popular.length}/${r.apps_trending.length}/${r.by_tokens.length}` +
-      ` | catalog: ${catalogSlim.length} modelos (slim)`
+      ` | by_recent: ${r.by_recent.length} modelos recientes`
   );
 }
 

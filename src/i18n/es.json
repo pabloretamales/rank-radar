@@ -69,7 +69,8 @@
     "rankings": {
       "apps_popular": "Apps · Popular",
       "apps_trending": "Apps · Trending",
-      "by_tokens": "Apps · Por tokens"
+      "by_tokens": "Apps · Por tokens",
+      "by_recent": "Modelos · Más recientes"
     },
     "tokens": "Tokens",
     "requests": "Requests",
@@ -78,6 +79,7 @@
       "heading": "Por qué apps, no modelos",
       "models_vs_apps": "OpenRouter expone rankings públicos a nivel de app, no de modelo. Una app (ej: Kilo Code, OpenClaw, Hermes Agent) consume tokens de muchos modelos en simultáneo. Por eso los rankings de modelos individuales por uso de tokens o trending no están disponibles via API — solo se pueden estimar agregando el consumo de cada app a sus modelos, lo cual OpenRouter no expone.",
       "popular_vs_trending": "Popular = acumulado total de todos los tiempos. Trending = modelos/apps creciendo más rápido en la ventana reciente (~1 mes). Por tokens = ranking absoluto por total de tokens consumidos. Los tres miden dimensiones distintas.",
+      "recent_note": "Más recientes = los modelos más nuevos del catálogo oficial de OpenRouter, ordenados por fecha de creación. No es un ranking de uso; es un derivado honesto del endpoint /v1/models.",
       "official_link": "Rankings oficiales de modelos (no públicos via API):"
     }
   },
