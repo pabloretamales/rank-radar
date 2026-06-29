@@ -47,12 +47,15 @@
   },
   "models": {
     "title": "Top modelos IA",
-    "subtitle": "Los tres índices principales de Artificial Analysis: Inteligencia, Coding y Agentic.",
+    "subtitle": "Los tres índices principales de Artificial Analysis (Intelligence, Coding, Agentic) más derivados extendidos del mismo dataset oficial (LLM Leaderboard, Top by Task, Fastest).",
     "metric": "Métrica",
     "metrics": {
       "by_intelligence": "Intelligence Index",
       "by_coding": "Coding Index",
-      "by_agentic": "Agentic Index"
+      "by_agentic": "Agentic Index",
+      "by_intelligence_extended": "LLM Leaderboard (top 50)",
+      "by_coding_extended": "Top by Task · Coding (top 50)",
+      "by_speed": "Fastest Models"
     },
     "price": "Precio",
     "per1m": "/1M tokens",

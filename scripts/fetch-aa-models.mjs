@@ -45,6 +45,7 @@ if (!TOKEN) {
 const ENDPOINT_DATA = 'https://artificialanalysis.ai/api/v2/data/llms/models';
 const ENDPOINT_INDEXES = 'https://artificialanalysis.ai/api/v2/language/models/free';
 const TOP_N = 20;
+const TOP_N_EXTENDED = 50;
 
 /**
  * Ordena modelos por una métrica y devuelve el top N con rank.
@@ -165,12 +166,23 @@ async function main() {
   const modelsWithAgentic = models.filter((m) => m.evaluations?.artificial_analysis_agentic_index != null).length;
   console.log(`   modelos con agentic_index en el dataset final: ${modelsWithAgentic}`);
 
-  // Construir rankings solo por las 3 métricas principales (Pablo, 2026-06-29):
-  // Intelligence, Coding, Agentic — los otros benchmarks son complementarios pero no core.
+  // Construir rankings:
+  //  3 principales (top 20 cada uno): Intelligence, Coding, Agentic
+  //  3 adicionales en honor a lo que Pablo vio en la UI de AA (top 50 / top 20):
+  //    - LLM Leaderboard = top 50 Intelligence
+  //    - Top by Task · Coding = top 50 Coding
+  //    - Fastest Models = top 20 por median_output_tokens_per_second
+  //  Market Share NO se incluye — requiere endpoint dedicado que no existe
+  //  público en tier FREE.
+  const PRIMARY_COUNT = 3;
+  const EXTENDED_COUNT = 3;
   const rankings = {
     by_intelligence: rankBy(models, evalField('artificial_analysis_intelligence_index'), TOP_N),
     by_coding: rankBy(models, evalField('artificial_analysis_coding_index'), TOP_N),
     by_agentic: rankBy(models, evalField('artificial_analysis_agentic_index'), TOP_N),
+    by_intelligence_extended: rankBy(models, evalField('artificial_analysis_intelligence_index'), TOP_N_EXTENDED),
+    by_coding_extended: rankBy(models, evalField('artificial_analysis_coding_index'), TOP_N_EXTENDED),
+    by_speed: rankBy(models, topLevel('median_output_tokens_per_second'), TOP_N, true, { minScore: 1 }),
   };
 
   const payload = {
@@ -202,7 +214,7 @@ async function main() {
   writeFileSync(CACHE, JSON.stringify(payload, null, 2));
   writeFileSync(OUT, JSON.stringify(payload, null, 2));
   console.log(`💾 Saved: ${OUT}`);
-  console.log(`   rankings: ${Object.keys(rankings).length} | top ${TOP_N} cada uno`);
+  console.log(`   rankings: ${Object.keys(rankings).length} | ${PRIMARY_COUNT} top ${TOP_N} · ${EXTENDED_COUNT} top ${TOP_N_EXTENDED}`);
 }
 
 main().catch((e) => {

@@ -7,7 +7,10 @@ import aaData from '../../public/data/aa-models.json';
 const locale = detectLocaleFromUrl(Astro.url);
 const dict = getDict(locale);
 
-const METRICS = Object.keys(aaData?.rankings ?? {});
+// 3 principales + 3 extendidos (Pablo, 2026-06-29)
+const PRIMARY = ['by_intelligence', 'by_coding', 'by_agentic'];
+const EXTENDED = ['by_intelligence_extended', 'by_coding_extended', 'by_speed'];
+const METRICS = [...PRIMARY, ...EXTENDED];
 const tier = aaData?.tier ?? 'free';
 const total = aaData?.total_models ?? 0;
 ---
@@ -15,9 +18,7 @@ const total = aaData?.total_models ?? 0;
 <Base locale={locale} dict={dict}>
   <header class="mb-8">
     <h1 class="text-3xl font-bold mb-2">{dict.models.title}</h1>
-    <p class="text-base max-w-3xl" style="color: var(--text-muted);">
-      {dict.models.subtitle}
-    </p>
+    <p class="text-base max-w-3xl" style="color: var(--text-muted);">{dict.models.subtitle}</p>
     <p class="text-xs mt-2" style="color: var(--text-muted);">
       {total} modelos · AA tier <span class="badge ml-1">{tier.toUpperCase()}</span>
     </p>
