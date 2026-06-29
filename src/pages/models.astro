@@ -7,10 +7,8 @@ import aaData from '../../public/data/aa-models.json';
 const locale = detectLocaleFromUrl(Astro.url);
 const dict = getDict(locale);
 
-// 3 principales + 3 extendidos (Pablo, 2026-06-29)
-const PRIMARY = ['by_intelligence', 'by_coding', 'by_agentic'];
-const EXTENDED = ['by_intelligence_extended', 'by_coding_extended', 'by_speed'];
-const METRICS = [...PRIMARY, ...EXTENDED];
+// Solo los 3 principales (Pablo, 2026-06-29)
+const METRICS = ['by_intelligence', 'by_coding', 'by_agentic'];
 const tier = aaData?.tier ?? 'free';
 const total = aaData?.total_models ?? 0;
 ---

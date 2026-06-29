@@ -52,10 +52,7 @@
     "metrics": {
       "by_intelligence": "Intelligence Index",
       "by_coding": "Coding Index",
-      "by_agentic": "Agentic Index",
-      "by_intelligence_extended": "LLM Leaderboard (top 50)",
-      "by_coding_extended": "Top by Task · Coding (top 50)",
-      "by_speed": "Fastest Models"
+      "by_agentic": "Agentic Index"
     },
     "price": "Precio",
     "per1m": "/1M tokens",

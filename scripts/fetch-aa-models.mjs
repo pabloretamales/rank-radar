@@ -166,23 +166,17 @@ async function main() {
   const modelsWithAgentic = models.filter((m) => m.evaluations?.artificial_analysis_agentic_index != null).length;
   console.log(`   modelos con agentic_index en el dataset final: ${modelsWithAgentic}`);
 
-  // Construir rankings:
-  //  3 principales (top 20 cada uno): Intelligence, Coding, Agentic
-  //  3 adicionales en honor a lo que Pablo vio en la UI de AA (top 50 / top 20):
-  //    - LLM Leaderboard = top 50 Intelligence
-  //    - Top by Task · Coding = top 50 Coding
-  //    - Fastest Models = top 20 por median_output_tokens_per_second
-  //  Market Share NO se incluye — requiere endpoint dedicado que no existe
-  //  público en tier FREE.
+  // Construir rankings: solo los 3 principales (Pablo, 2026-06-29).
+  // Pablo originalmente vio 'LLM Leaderboard', 'Top Models', 'Top by task',
+  // 'Market Share', 'Fastest models' en la UI de OpenRouter — no en AA.
+  // Esos 5 rankings de OR no existen como endpoints públicos (probados 19+).
+  // Ver explicación en /openrouter/.
   const PRIMARY_COUNT = 3;
-  const EXTENDED_COUNT = 3;
+  const EXTENDED_COUNT = 0;
   const rankings = {
     by_intelligence: rankBy(models, evalField('artificial_analysis_intelligence_index'), TOP_N),
     by_coding: rankBy(models, evalField('artificial_analysis_coding_index'), TOP_N),
     by_agentic: rankBy(models, evalField('artificial_analysis_agentic_index'), TOP_N),
-    by_intelligence_extended: rankBy(models, evalField('artificial_analysis_intelligence_index'), TOP_N_EXTENDED),
-    by_coding_extended: rankBy(models, evalField('artificial_analysis_coding_index'), TOP_N_EXTENDED),
-    by_speed: rankBy(models, topLevel('median_output_tokens_per_second'), TOP_N, true, { minScore: 1 }),
   };
 
   const payload = {

@@ -7,9 +7,7 @@ import aaData from '../../../public/data/aa-models.json';
 const locale = 'en' as const;
 const dict = getDict(locale);
 
-const PRIMARY = ['by_intelligence', 'by_coding', 'by_agentic'];
-const EXTENDED = ['by_intelligence_extended', 'by_coding_extended', 'by_speed'];
-const METRICS = [...PRIMARY, ...EXTENDED];
+const METRICS = ['by_intelligence', 'by_coding', 'by_agentic'];
 const tier = aaData?.tier ?? 'free';
 const total = aaData?.total_models ?? 0;
 ---
