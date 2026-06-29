@@ -10,15 +10,17 @@
     "github": "GitHub",
     "models": "Modelos IA",
     "openrouter": "OpenRouter",
+    "compare": "Comparar",
     "toggleTheme": "Cambiar tema",
     "toggleLang": "EN"
   },
   "home": {
     "intro": "Tres rankings en una sola vista. Datos actualizados diariamente desde las APIs oficiales.",
+    "sectionCompare": "Comparar Modelos",
     "sectionGithub": "Top 20 GitHub",
     "sectionGithubDesc": "Repos con más estrellas por ventana de tiempo (1d / 7d / 30d / 90d / histórico).",
     "sectionModels": "Top 20 Modelos IA",
-    "sectionModelsDesc": "Rankings por intelligence, coding, math, speed, precio (543 modelos en Artificial Analysis).",
+    "sectionModelsDesc": "Los 3 índices principales de Artificial Analysis: Intelligence, Coding y Agentic.",
     "sectionOpenRouter": "Top 20 Apps OpenRouter",
     "sectionOpenRouterDesc": "Apps más usadas por tokens y por requests — popular y trending.",
     "openGithub": "Ver rankings GitHub",
@@ -45,21 +47,12 @@
   },
   "models": {
     "title": "Top modelos IA",
-    "subtitle": "543 modelos rankeados por benchmarks de Artificial Analysis (tier FREE detectado).",
+    "subtitle": "Los tres índices principales de Artificial Analysis: Inteligencia, Coding y Agentic.",
     "metric": "Métrica",
     "metrics": {
       "by_intelligence": "Intelligence Index",
       "by_coding": "Coding Index",
-      "by_math": "Math Index",
-      "by_mmlu_pro": "MMLU-Pro",
-      "by_gpqa": "GPQA",
-      "by_livecodebench": "LiveCodeBench",
-      "by_hle": "HLE",
-      "by_agentic": "Agentic Index",
-      "by_speed": "Velocidad (tok/s)",
-      "by_ttft": "TTFT (más bajo = mejor)",
-      "by_cheapest_blended": "Más baratos (blended)",
-      "by_cheapest_input": "Más baratos (input)"
+      "by_agentic": "Agentic Index"
     },
     "price": "Precio",
     "per1m": "/1M tokens",
@@ -86,6 +79,13 @@
     "tokens": "Tokens",
     "requests": "Requests",
     "noResults": "Sin datos para este ranking"
+  },
+  "compare": {
+    "title": "Comparar modelos",
+    "subtitle": "Elegí hasta 3 modelos y compará inteligencia, coding, agentic, precio y context window lado a lado.",
+    "btnCompare": "Comparar",
+    "btnClear": "Limpiar",
+    "empty": "Elegí hasta 3 modelos arriba y hacé click en Comparar."
   },
   "footer": {
     "madeBy": "Hecho por",

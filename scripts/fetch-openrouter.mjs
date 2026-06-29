@@ -150,6 +150,29 @@ async function main() {
   const catalog = await fetchModelsCatalog();
   console.log(`   catalog modelos: ${catalog.length}`);
 
+  // Slimeado para cross-match con AA (mantiene slug, context, modalities, pricing)
+  const catalogSlim = catalog.map((m) => {
+    const arch = m.architecture ?? {};
+    return {
+      id: m.id,
+      canonical_slug: m.canonical_slug ?? null,
+      name: m.name ?? m.id,
+      context_length: m.context_length ?? null,
+      modalities: [
+        ...(arch.input_modalities ?? []),
+        ...(arch.output_modalities ?? []).map((x) => `→${x}`),
+      ],
+      n_inputs: (arch.input_modalities ?? []).length,
+      n_outputs: (arch.output_modalities ?? []).length,
+      pricing_prompt: Number(m.pricing?.prompt ?? 0) || null,
+      pricing_completion: Number(m.pricing?.completion ?? 0) || null,
+      created_human: m.created ? new Date(m.created * 1000).toISOString().slice(0, 10) : null,
+      url: m.hugging_face_id
+        ? `https://huggingface.co/${m.hugging_face_id}`
+        : `https://openrouter.ai/models/${m.canonical_slug ?? m.id}`,
+    };
+  });
+
   // Derivados
   const byContext = rankModels(catalog, (m) => m.context_length ?? null, TOP_N);
   const byRecent = rankModels(catalog, (m) => m.created ?? null, TOP_N);
@@ -190,6 +213,7 @@ async function main() {
       by_multimodal: byMultimodal,
     },
     models_total: catalog.length,
+    catalog: catalogSlim,
   };
 
   writeFileSync(CACHE, JSON.stringify(payload, null, 2));

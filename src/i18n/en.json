@@ -10,11 +10,13 @@
     "github": "GitHub",
     "models": "AI Models",
     "openrouter": "OpenRouter",
+    "compare": "Compare",
     "toggleTheme": "Toggle theme",
     "toggleLang": "ES"
   },
   "home": {
     "intro": "Three rankings in one view. Data refreshed daily from official APIs.",
+    "sectionCompare": "Compare Models",
     "sectionGithub": "GitHub Top 20",
     "sectionGithubDesc": "Top-starred repos by time window (1d / 7d / 30d / 90d / all-time).",
     "sectionModels": "Top 20 AI Models",
@@ -45,21 +47,12 @@
   },
   "models": {
     "title": "Top AI Models",
-    "subtitle": "543 models ranked by Artificial Analysis benchmarks (FREE tier detected).",
+    "subtitle": "The three primary indices from Artificial Analysis: Intelligence, Coding, and Agentic.",
     "metric": "Metric",
     "metrics": {
       "by_intelligence": "Intelligence Index",
       "by_coding": "Coding Index",
-      "by_math": "Math Index",
-      "by_mmlu_pro": "MMLU-Pro",
-      "by_gpqa": "GPQA",
-      "by_livecodebench": "LiveCodeBench",
-      "by_hle": "HLE",
-      "by_agentic": "Agentic Index",
-      "by_speed": "Speed (tok/s)",
-      "by_ttft": "TTFT (lower = better)",
-      "by_cheapest_blended": "Cheapest (blended)",
-      "by_cheapest_input": "Cheapest (input)"
+      "by_agentic": "Agentic Index"
     },
     "price": "Price",
     "per1m": "/1M tokens",
@@ -86,6 +79,39 @@
     "tokens": "Tokens",
     "requests": "Requests",
     "noResults": "No data for this ranking"
+  },
+  "compare": {
+    "title": "Compare models",
+    "subtitle": "Pick up to 3 models and compare intelligence, coding, agentic, pricing and context window side-by-side.",
+    "placeholder1": "Model 1 (e.g. Claude Fable 5)",
+    "placeholder2": "Model 2 (e.g. GPT-5.5 xhigh)",
+    "placeholder3": "Model 3 (optional)",
+    "btnCompare": "Compare",
+    "btnClear": "Clear",
+    "empty": "Pick up to 3 models above and click Compare.",
+    "notFound": "Model not found. Try another name or slug.",
+    "metric": "Metric",
+    "labels": {
+      "intelligence": "Intelligence Index",
+      "coding": "Coding Index",
+      "agentic": "Agentic Index",
+      "creator": "Creator",
+      "release": "Released",
+      "tokens_per_sec": "Speed",
+      "ttft": "TTFT",
+      "price_input": "Input price",
+      "price_output": "Output price",
+      "context": "Context window",
+      "modalities": "Modalities",
+      "or_url": "View on OpenRouter"
+    }
+  },
+  "compare": {
+    "title": "Compare models",
+    "subtitle": "Pick up to 3 models and compare intelligence, coding, agentic, pricing and context window side-by-side.",
+    "btnCompare": "Compare",
+    "btnClear": "Clear",
+    "empty": "Pick up to 3 models above and click Compare."
   },
   "footer": {
     "madeBy": "Made by",

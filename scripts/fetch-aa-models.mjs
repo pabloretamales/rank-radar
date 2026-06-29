@@ -165,22 +165,12 @@ async function main() {
   const modelsWithAgentic = models.filter((m) => m.evaluations?.artificial_analysis_agentic_index != null).length;
   console.log(`   modelos con agentic_index en el dataset final: ${modelsWithAgentic}`);
 
-  // Construir rankings por las métricas más valiosas
+  // Construir rankings solo por las 3 métricas principales (Pablo, 2026-06-29):
+  // Intelligence, Coding, Agentic — los otros benchmarks son complementarios pero no core.
   const rankings = {
     by_intelligence: rankBy(models, evalField('artificial_analysis_intelligence_index'), TOP_N),
     by_coding: rankBy(models, evalField('artificial_analysis_coding_index'), TOP_N),
     by_agentic: rankBy(models, evalField('artificial_analysis_agentic_index'), TOP_N),
-    by_math: rankBy(models, evalField('artificial_analysis_math_index'), TOP_N),
-    by_mmlu_pro: rankBy(models, evalField('mmlu_pro'), TOP_N),
-    by_gpqa: rankBy(models, evalField('gpqa'), TOP_N),
-    by_livecodebench: rankBy(models, evalField('livecodebench'), TOP_N),
-    by_hle: rankBy(models, evalField('hle'), TOP_N),
-    // Performance — campos top-level, no están en evaluations
-    by_speed: rankBy(models, topLevel('median_output_tokens_per_second'), TOP_N),
-    by_ttft: rankBy(models, topLevel('median_time_to_first_token_seconds'), TOP_N, false, { minScore: 0 }), // excluye ttft=0 ("no medido")
-    // Pricing — filtrar precios no listados (=0)
-    by_cheapest_blended: rankBy(models, (m) => m.pricing?.price_1m_blended_3_to_1, TOP_N, false, { minScore: 0 }),
-    by_cheapest_input: rankBy(models, (m) => m.pricing?.price_1m_input_tokens, TOP_N, false, { minScore: 0 }),
   };
 
   const payload = {
@@ -202,11 +192,6 @@ async function main() {
       intelligence: m.evaluations?.artificial_analysis_intelligence_index,
       coding: m.evaluations?.artificial_analysis_coding_index,
       agentic: m.evaluations?.artificial_analysis_agentic_index,
-      math: m.evaluations?.artificial_analysis_math_index,
-      mmlu_pro: m.evaluations?.mmlu_pro,
-      gpqa: m.evaluations?.gpqa,
-      hle: m.evaluations?.hle,
-      livecodebench: m.evaluations?.livecodebench,
       price_input: m.pricing?.price_1m_input_tokens,
       price_output: m.pricing?.price_1m_output_tokens,
       tokens_per_sec: m.median_output_tokens_per_second,
