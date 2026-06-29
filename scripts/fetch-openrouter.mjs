@@ -74,6 +74,33 @@ async function fetchModelsCatalog() {
   return json.data ?? [];
 }
 
+/**
+ * Top modelos por total_tokens en una ventana (default 30 días).
+ * Devuelve ranking diario desde /api/v1/datasets/rankings-daily; agregamos
+ * por model_permaslug y ordenamos desc. Cross-match con el catálogo para
+ * enriquecer con name/modalities/etc.
+ */
+async function fetchModelsByTokens(days = 30) {
+  const end = new Date();
+  const start = new Date(end);
+  start.setUTCDate(start.getUTCDate() - days);
+  const startStr = start.toISOString().slice(0, 10);
+  const endStr = end.toISOString().slice(0, 10);
+  const url = `${APP_ENDPOINT.replace('app-rankings', 'rankings-daily')}?start_date=${startStr}&end_date=${endStr}`;
+  const res = await fetch(url, {
+    headers: {
+      Authorization: `Bearer ${TOKEN}`,
+      Accept: 'application/json',
+      'User-Agent': 'rankradar',
+    },
+  });
+  if (!res.ok) {
+    const text = await res.text().catch(() => '');
+    throw new Error(`rankings-daily ${res.status}: ${text.slice(0, 200)}`);
+  }
+  return res.json();
+}
+
 function normalizeApps(apps) {
   return apps
     .filter((a) => a && a.app_name)
@@ -173,11 +200,68 @@ async function main() {
     };
   });
 
-  // Derivados: apps + 1 derivado de catálogo (by_recent: modelos más recientes
-  // ordenados por fecha de creación, info REAL del endpoint /v1/models).
-  // Los rankings oficiales de modelos por uso o trending no existen como
-  // endpoints públicos, por eso la página tiene un explainer al respecto.
+  // Derivados: apps + recientes (catálogo) + ranking por uso (rankings-daily).
+  // Pablo confirmó 2026-06-29 que /api/v1/datasets/rankings-daily existe
+  // y devuelve top 50 modelos por total_tokens diario. Lo agregamos.
   const byRecent = rankModels(catalog, (m) => m.created ?? null, TOP_N);
+
+  // Rankings-daily: agregamos por modelo y matcheamos con el catálogo.
+  let modelsByTokens = [];
+  try {
+    const rdJson = await fetchModelsByTokens(30);
+    const daily = rdJson.data ?? [];
+    const totalsByPerma = new Map();
+    for (const e of daily) {
+      const slug = e.model_permaslug;
+      const t = Number(e.total_tokens);
+      if (!Number.isFinite(t) || !slug) continue;
+      totalsByPerma.set(slug, (totalsByPerma.get(slug) ?? 0) + t);
+    }
+    // Catálogo indexado por id (sin sufijo de fecha) y por canonical_slug completo
+    const catalogById = new Map();
+    for (const m of catalog) catalogById.set(m.id, m);
+
+    const sorted = [...totalsByPerma.entries()]
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, TOP_N);
+    modelsByTokens = sorted.map(([perma, total], i) => {
+      // perma = "provider/model-YYYYMMDD" o "provider/model"
+      // intentamos matchear con catalog.id (provider/model sin fecha)
+      const matchById = catalogById.get(perma) ?? null;
+      let match = matchById;
+      if (!match) {
+        // quitar sufijo -YYYYMMDD
+        const stripped = perma.replace(/-\d{8}$/, '');
+        match = catalogById.get(stripped) ?? null;
+      }
+      if (!match) {
+        // intentar match por prefijo (provider + stem)
+        for (const m of catalog) {
+          if (m.id && perma.replace(/-\d{8}$/, '').startsWith(m.id)) {
+            match = m;
+            break;
+          }
+        }
+      }
+      return {
+        rank: i + 1,
+        id: match?.id ?? perma,
+        name: match?.name ?? perma,
+        slug: match?.canonical_slug ?? null,
+        total_tokens: total,
+        total_tokens_human: formatTokens(total),
+        perma,
+        url: match?.url ?? `https://openrouter.ai/models/${perma}`,
+        modalities: match?.modalities ?? [],
+        context_length: match?.context_length ?? null,
+        pricing_prompt: match?.pricing_prompt ?? null,
+        pricing_completion: match?.pricing_completion ?? null,
+      };
+    });
+    console.log(`   rankings-daily: ${daily.length} entries · ${totalsByPerma.size} modelos únicos · top ${modelsByTokens.length}`);
+  } catch (e) {
+    console.warn(`   ⚠️  rankings-daily falló: ${e.message}`);
+  }
 
   const payload = {
     fetched_at: new Date().toISOString(),
@@ -196,6 +280,8 @@ async function main() {
       ),
       // Modelos: derivado honesto del catálogo (no es ranking de uso oficial)
       by_recent: byRecent,
+      // Modelos por uso (rankings-daily, 30 días)
+      models_by_tokens: modelsByTokens,
     },
     models_total: catalog.length,
     catalog: catalogSlim,
@@ -207,7 +293,7 @@ async function main() {
   const r = payload.rankings;
   console.log(
     `   apps: ${r.apps_popular.length}/${r.apps_trending.length}/${r.by_tokens.length}` +
-      ` | by_recent: ${r.by_recent.length} modelos recientes`
+      ` | by_recent: ${r.by_recent.length} | models_by_tokens: ${r.models_by_tokens.length}`
   );
 }
 

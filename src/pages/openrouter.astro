@@ -8,9 +8,11 @@ import openrouterData from '../../public/data/openrouter.json';
 const locale = detectLocaleFromUrl(Astro.url);
 const dict = getDict(locale);
 const r = openrouterData?.rankings ?? {};
-const RANKINGS = ['apps_popular', 'apps_trending', 'by_tokens', 'by_recent'];
+const RANKINGS = ['apps_popular', 'apps_trending', 'by_tokens', 'by_recent', 'models_by_tokens'];
 const APP_RANKINGS = ['apps_popular', 'apps_trending', 'by_tokens'];
+const MODEL_TOKEN_RANKINGS = ['models_by_tokens'];
 const isApp = (rk) => APP_RANKINGS.includes(rk);
+const isModelTokens = (rk) => MODEL_TOKEN_RANKINGS.includes(rk);
 const meta = openrouterData?.apps_meta ?? {};
 ---
 
@@ -54,6 +56,25 @@ const meta = openrouterData?.apps_meta ?? {};
           ) : isApp(rk) ? (
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
               {items.map((app) => <AppCard app={app} dict={dict} />)}
+            </div>
+          ) : isModelTokens(rk) ? (
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
+              {items.map((m) => (
+                <a href={m.url} target="_blank" rel="noopener" class="card block p-4">
+                  <div class="flex items-start gap-3">
+                    <div class={`rank-badge ${m.rank === 1 ? 'gold' : m.rank === 2 ? 'silver' : m.rank === 3 ? 'bronze' : ''} shrink-0`}>#{m.rank}</div>
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-baseline gap-2 flex-wrap">
+                        <span class="font-semibold truncate">{m.name}</span>
+                        <span class="badge whitespace-nowrap">🪙 {m.total_tokens_human}</span>
+                      </div>
+                      {m.context_length != null && (
+                        <p class="text-xs mt-1" style="color: var(--text-muted);">📐 {(m.context_length >= 1e6 ? (m.context_length/1e6).toFixed(1) + 'M' : m.context_length >= 1e3 ? (m.context_length/1e3).toFixed(0) + 'K' : m.context_length)} ctx · {m.id}</p>
+                      )}
+                    </div>
+                  </div>
+                </a>
+              ))}
             </div>
           ) : (
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
