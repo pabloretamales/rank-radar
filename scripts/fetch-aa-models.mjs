@@ -3,15 +3,21 @@
  * fetch-aa-models.mjs
  *
  * Trae TODOS los modelos de Artificial Analysis y los rankea.
- * Endpoint: GET https://artificialanalysis.ai/api/v2/data/llms/models
+ *
+ * Endpoints:
+ *  - GET https://artificialanalysis.ai/api/v2/data/llms/models
+ *      → 543 modelos con 17 benchmarks detallados (MMLU-Pro, GPQA, HLE,
+ *        LiveCodeBench, scicode, math_500, AIME, AIME-25, ifbench, lcr,
+ *        terminalbench hard/v2.1, tau2, tau_banking) + pricing + perf.
+ *        NO expone artificial_analysis_agentic_index.
+ *
+ *  - GET https://artificialanalysis.ai/api/v2/language/models/free
+ *      → 200 modelos con los 3 índices principales: Intelligence,
+ *        Coding, Agentic. Subset exacto del endpoint anterior (100%
+ *        overlap por slug). Lo usamos SOLO para enriquecer con
+ *        artificial_analysis_agentic_index los modelos del dataset grande.
  *
  * Tier detectado: FREE (sin openrouter_api_id, sin context_window).
- * Igual trae 543 modelos con benchmarks riquísimos:
- *   - intelligence_index, coding_index, math_index
- *   - mmlu_pro, gpqa, hle, livecodebench, scicode, math_500, aime, aime_25
- *   - ifbench, lcr, terminalbench (hard/v2.1), tau2, tau_banking
- *   - pricing (input/output/blended USD por millón de tokens)
- *   - median_output_tokens_per_second, ttft, ttfa
  *
  * Output:
  *   - .cache/aa-models.json (raw)
@@ -36,7 +42,8 @@ if (!TOKEN) {
   process.exit(1);
 }
 
-const ENDPOINT = 'https://artificialanalysis.ai/api/v2/data/llms/models';
+const ENDPOINT_DATA = 'https://artificialanalysis.ai/api/v2/data/llms/models';
+const ENDPOINT_INDEXES = 'https://artificialanalysis.ai/api/v2/language/models/free';
 const TOP_N = 20;
 
 /**
@@ -85,35 +92,64 @@ function rankBy(models, field, topN, descending = true, { minScore = null } = {}
 const evalField = (k) => (m) => m.evaluations?.[k];
 const topLevel = (k) => (m) => m[k];
 
+async function fetchJson(url, label) {
+  const res = await fetch(url, {
+    headers: { 'x-api-key': TOKEN, Accept: 'application/json', 'User-Agent': 'rankradar' },
+  });
+  if (!res.ok) {
+    const text = await res.text().catch(() => '');
+    throw new Error(`AA ${label} ${res.status}: ${text.slice(0, 300)}`);
+  }
+  return res.json();
+}
+
 async function main() {
   if (!existsSync(dirname(CACHE))) mkdirSync(dirname(CACHE), { recursive: true });
 
-  console.log('📡 Fetching Artificial Analysis — todos los modelos…');
-  const res = await fetch(ENDPOINT, {
-    headers: {
-      'x-api-key': TOKEN,
-      Accept: 'application/json',
-      'User-Agent': 'rankradar',
-    },
-  });
+  console.log('📡 Fetching Artificial Analysis — 2 endpoints…');
+  // 1) Dataset grande (17 benchmarks)
+  const dataJson = await fetchJson(ENDPOINT_DATA, 'data/llms/models');
+  const models = dataJson.data ?? [];
+  console.log(`   data/llms/models: ${models.length} modelos`);
 
-  if (!res.ok) {
-    const text = await res.text().catch(() => '');
-    throw new Error(`AA models ${res.status}: ${text.slice(0, 300)}`);
+  // 2) Subset "free" que trae los 3 índices principales (incluye agentic)
+  let agenticBySlug = new Map();
+  try {
+    const idxJson = await fetchJson(ENDPOINT_INDEXES, 'language/models/free');
+    const idxModels = idxJson.data ?? [];
+    let withAgentic = 0;
+    for (const m of idxModels) {
+      const v = m.evaluations?.artificial_analysis_agentic_index;
+      if (v != null && Number.isFinite(v)) {
+        agenticBySlug.set(m.slug, v);
+        withAgentic++;
+      }
+    }
+    console.log(`   language/models/free: ${idxModels.length} modelos · ${withAgentic} con agentic_index`);
+  } catch (e) {
+    console.warn(`   ⚠️  language/models/free falló: ${e.message} — by_agentic quedará vacío`);
   }
 
-  const json = await res.json();
-  const models = json.data ?? [];
-  console.log(`   modelos recibidos: ${models.length}`);
+  // Enriquecer modelos con agentic_index del subset "free"
+  for (const m of models) {
+    if (m.evaluations == null) m.evaluations = {};
+    if (m.evaluations.artificial_analysis_agentic_index == null) {
+      const v = agenticBySlug.get(m.slug);
+      if (v != null) m.evaluations.artificial_analysis_agentic_index = v;
+    }
+  }
 
   // Detectar tier mediante ausencia de campos Pro
   const isPro = models.some((m) => m.openrouter_api_id || m.context_window || m.modalities);
   console.log(`   tier detectado: ${isPro ? 'PRO 🟢' : 'FREE 🟡'}`);
+  const modelsWithAgentic = models.filter((m) => m.evaluations?.artificial_analysis_agentic_index != null).length;
+  console.log(`   modelos con agentic_index en el dataset final: ${modelsWithAgentic}`);
 
   // Construir rankings por las métricas más valiosas
   const rankings = {
     by_intelligence: rankBy(models, evalField('artificial_analysis_intelligence_index'), TOP_N),
     by_coding: rankBy(models, evalField('artificial_analysis_coding_index'), TOP_N),
+    by_agentic: rankBy(models, evalField('artificial_analysis_agentic_index'), TOP_N),
     by_math: rankBy(models, evalField('artificial_analysis_math_index'), TOP_N),
     by_mmlu_pro: rankBy(models, evalField('mmlu_pro'), TOP_N),
     by_gpqa: rankBy(models, evalField('gpqa'), TOP_N),
@@ -130,8 +166,9 @@ async function main() {
   const payload = {
     fetched_at: new Date().toISOString(),
     source: 'Artificial Analysis',
-    api: ENDPOINT,
+    api: { data: ENDPOINT_DATA, indexes: ENDPOINT_INDEXES },
     tier: isPro ? 'pro' : 'free',
+    models_with_agentic: modelsWithAgentic,
     total_models: models.length,
     rankings,
     // Todos los modelos para vistas tipo "explore" o filtros custom
@@ -144,6 +181,7 @@ async function main() {
       release_date: m.release_date,
       intelligence: m.evaluations?.artificial_analysis_intelligence_index,
       coding: m.evaluations?.artificial_analysis_coding_index,
+      agentic: m.evaluations?.artificial_analysis_agentic_index,
       math: m.evaluations?.artificial_analysis_math_index,
       mmlu_pro: m.evaluations?.mmlu_pro,
       gpqa: m.evaluations?.gpqa,

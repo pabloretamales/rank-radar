@@ -55,6 +55,7 @@
       "by_gpqa": "GPQA",
       "by_livecodebench": "LiveCodeBench",
       "by_hle": "HLE",
+      "by_agentic": "Agentic Index",
       "by_speed": "Velocidad (tok/s)",
       "by_ttft": "TTFT (más bajo = mejor)",
       "by_cheapest_blended": "Más baratos (blended)",
