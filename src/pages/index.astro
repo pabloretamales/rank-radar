@@ -14,7 +14,7 @@ const dict = getDict(locale);
 
 const githubTop = githubData?.windows?.find(w => w.label === '7d')?.items?.slice(0, 6) ?? [];
 const modelsTop = aaData?.rankings?.by_intelligence?.slice(0, 6) ?? [];
-const orTop = openrouterData?.rankings?.popular?.slice(0, 6) ?? [];
+const orTop = openrouterData?.rankings?.apps_popular?.slice(0, 6) ?? [];
 
 const lastUpdated = manifest?.generated_at;
 ---
