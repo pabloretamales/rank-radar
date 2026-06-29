@@ -47,9 +47,10 @@ Los JSON en `public/data/` son **generados y commiteados**:
 
 ## Setup local
 
+Creá tu propio `.env` en la raíz con las tres variables que listamos abajo (no commitear nunca), y después:
+
 ```bash
 npm install
-cp .env.example .env   # completar con tus keys
 npm run fetch:github
 npm run fetch:aa
 npm run fetch:openrouter
@@ -66,11 +67,11 @@ npm run pipeline
 
 ## Variables de entorno (NUNCA commitear)
 
-```env
-ARTIFICIAL_ANALYSIS_API_KEY=   # tier FREE detecta ~543 modelos sin openrouter_api_id
-GITHUB_TOKEN=                  # read+write para /search/repositories (rate limit 5000/h)
-OPENROUTER_API_KEY=            # cualquier key, incluso con 0 crédito
-```
+El archivo `.env` debe vivir solo en tu máquina. **No** se commitea — `.gitignore` lo excluye explícitamente. Necesitás estas tres vars para los fetchers:
+
+- **`ARTIFICIAL_ANALYSIS_API_KEY`** — el script `fetch-aa-models.mjs` la envía como header `x-api-key`. Con el tier **FREE** actual detecta ~543 modelos y devuelve los benchmarks principales (intelligence/coding/math/speed/precio). Si en algún momento subís a PRO, vas a ver además `openrouter_api_id`, `context_window` y `modalities`.
+- **`GITHUB_TOKEN`** — el script `fetch-github-trending.mjs` la envía como `Authorization: Bearer`. Necesita scope de `public_repo` para `/search/repositories`. Rate limit autenticado: 5000 req/h.
+- **`OPENROUTER_API_KEY`** — el script `fetch-openrouter.mjs` la envía como `Authorization: Bearer` contra `/api/v1/datasets/app-rankings`. Sirve cualquier key, incluso con 0 crédito, porque el endpoint no consume tokens de inferencia. Rate limit: 30 req/min, 500 req/día.
 
 ## Pipeline automático
 
