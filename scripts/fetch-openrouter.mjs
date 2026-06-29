@@ -173,24 +173,8 @@ async function main() {
     };
   });
 
-  // Derivados
-  const byContext = rankModels(catalog, (m) => m.context_length ?? null, TOP_N);
-  const byRecent = rankModels(catalog, (m) => m.created ?? null, TOP_N);
-  const byCheapest = rankModels(
-    catalog,
-    (m) => {
-      const p = Number(m.pricing?.prompt ?? NaN);
-      return Number.isFinite(p) && p > 0 ? p : null;
-    },
-    TOP_N,
-    false
-  );
-  const byMultimodal = rankModels(
-    catalog,
-    (m) => (m.architecture?.input_modalities?.length ?? 0) + (m.architecture?.output_modalities?.length ?? 0) * 0.5,
-    TOP_N
-  );
-
+  // Derivados: solo rankings de apps (los rankings de modelos quedan en la
+  // página explicativa — los endpoints públicos de OR para modelos no existen)
   const payload = {
     fetched_at: new Date().toISOString(),
     source: 'OpenRouter',
@@ -198,7 +182,7 @@ async function main() {
     apps_meta: popular.meta ?? {},
     top_n: TOP_N,
     rankings: {
-      // Apps
+      // Solo apps (rankings públicos disponibles)
       apps_popular: normalizeApps(popular.data ?? []).slice(0, TOP_N),
       apps_trending: normalizeApps(trending.data ?? []).slice(0, TOP_N),
       by_tokens: normalizeApps(
@@ -206,11 +190,6 @@ async function main() {
           .sort((a, b) => Number(b.total_tokens || 0) - Number(a.total_tokens || 0))
           .slice(0, TOP_N)
       ),
-      // Modelos (catálogo)
-      by_context: byContext,
-      by_recent: byRecent,
-      by_cheapest: byCheapest,
-      by_multimodal: byMultimodal,
     },
     models_total: catalog.length,
     catalog: catalogSlim,
@@ -222,7 +201,7 @@ async function main() {
   const r = payload.rankings;
   console.log(
     `   apps: ${r.apps_popular.length}/${r.apps_trending.length}/${r.by_tokens.length}` +
-      ` | modelos: ${r.by_context.length}/${r.by_recent.length}/${r.by_cheapest.length}/${r.by_multimodal.length}`
+      ` | catalog: ${catalogSlim.length} modelos (slim)`
   );
 }
 

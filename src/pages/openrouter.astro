@@ -2,32 +2,38 @@
 import Base from '@/layouts/Base.astro';
 import { getDict, detectLocaleFromUrl } from '@/i18n';
 import AppCard from '@components/AppCard.astro';
-import ORModelCard from '@components/ORModelCard.astro';
 import openrouterData from '../../public/data/openrouter.json';
 
 const locale = detectLocaleFromUrl(Astro.url);
 const dict = getDict(locale);
 const r = openrouterData?.rankings ?? {};
-// Orden fijo: primero 3 tabs de apps, después 4 de modelos catálogo
-const APP_RANKINGS = ['apps_popular', 'apps_trending', 'by_tokens'];
-const MODEL_RANKINGS = ['by_context', 'by_recent', 'by_cheapest', 'by_multimodal'];
-const ALL_RANKINGS = [...APP_RANKINGS, ...MODEL_RANKINGS];
+const RANKINGS = ['apps_popular', 'apps_trending', 'by_tokens'];
 const meta = openrouterData?.apps_meta ?? {};
 ---
 
 <Base locale={locale} dict={dict}>
-  <header class="mb-8">
+  <header class="mb-6">
     <h1 class="text-3xl font-bold mb-2">{dict.openrouter.title}</h1>
     <p class="text-base max-w-3xl" style="color: var(--text-muted);">{dict.openrouter.subtitle}</p>
     {meta?.start_date && (
       <p class="text-xs mt-2" style="color: var(--text-muted);">
-        Ventana apps: {meta.start_date} → {meta.end_date} · v{meta.version} · {openrouterData?.models_total ?? 0} modelos en catálogo
+        Ventana apps: {meta.start_date} → {meta.end_date} · v{meta.version}
       </p>
     )}
   </header>
 
+  <aside class="card p-4 mb-6 text-sm" style="background: var(--bg-card);">
+    <h2 class="font-semibold mb-2">💡 {dict.openrouter.explainer.heading}</h2>
+    <p class="mb-2" style="color: var(--text-muted);">{dict.openrouter.explainer.models_vs_apps}</p>
+    <p style="color: var(--text-muted);">{dict.openrouter.explainer.popular_vs_trending}</p>
+    <p class="mt-3 text-xs">
+      {dict.openrouter.explainer.official_link}
+      <a class="badge ml-1" href="https://openrouter.ai/rankings/models" target="_blank" rel="noopener">openrouter.ai/rankings/models</a>
+    </p>
+  </aside>
+
   <div class="flex flex-wrap gap-2 mb-6 border-b pb-3" style="border-color: var(--border);">
-    {ALL_RANKINGS.map((rk, i) => (
+    {RANKINGS.map((rk, i) => (
       <button data-ranking={rk} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
         {dict.openrouter.rankings[rk] ?? rk}
       </button>
@@ -35,33 +41,15 @@ const meta = openrouterData?.apps_meta ?? {};
   </div>
 
   <div id="or-panels">
-    {/* Apps */}
-    {APP_RANKINGS.map((rk, i) => {
+    {RANKINGS.map((rk, i) => {
       const apps = r[rk] ?? [];
       return (
         <div data-panel={rk} class={i === 0 ? '' : 'hidden'}>
-          <h2 class="text-sm uppercase tracking-wider font-semibold mb-3" style="color: var(--text-muted);">{dict.openrouter.sectionApps}</h2>
           {apps.length === 0 ? (
             <p style="color: var(--text-muted);">{dict.openrouter.noResults}</p>
           ) : (
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
               {apps.map((app) => <AppCard app={app} dict={dict} />)}
-            </div>
-          )}
-        </div>
-      );
-    })}
-    {/* Models */}
-    {MODEL_RANKINGS.map((rk, i) => {
-      const models = r[rk] ?? [];
-      return (
-        <div data-panel={rk} class={i === 0 ? 'hidden' : 'hidden'}>
-          <h2 class="text-sm uppercase tracking-wider font-semibold mb-3" style="color: var(--text-muted);">{dict.openrouter.sectionModels}</h2>
-          {models.length === 0 ? (
-            <p style="color: var(--text-muted);">{dict.openrouter.noResults}</p>
-          ) : (
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
-              {models.map((model) => <ORModelCard model={model} ranking={rk} dict={dict} />)}
             </div>
           )}
         </div>
