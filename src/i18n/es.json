@@ -70,7 +70,7 @@
       "apps_popular": "Apps · Popular",
       "apps_trending": "Apps · Trending",
       "by_tokens": "Apps · Por tokens",
-      "by_recent": "Modelos · Más recientes",
+      "by_recent": "Apps · Más recientes",
       "today": "Hoy",
       "week": "Esta semana",
       "month": "Este mes",
@@ -85,6 +85,10 @@
       "credit": {
         "openrouter": "Atribución OpenRouter (requerida al republicar)"
       }
+    },
+    "sections": {
+      "models": "Top 20 Modelos",
+      "apps": "Top 20 Apps"
     }
   },
   "compare": {

@@ -2,17 +2,16 @@
 import Base from '@/layouts/Base.astro';
 import { getDict, detectLocaleFromUrl } from '@/i18n';
 import AppCard from '@components/AppCard.astro';
-import ORModelCard from '@components/ORModelCard.astro';
 import openrouterData from '../../public/data/openrouter.json';
 
 const locale = detectLocaleFromUrl(Astro.url);
 const dict = getDict(locale);
 const r = openrouterData?.rankings ?? {};
-const RANKINGS = ['today', 'week', 'month', 'trending'];
-const APP_RANKINGS = ['apps_popular', 'apps_trending', 'by_tokens', 'by_recent'];
-const MODEL_TOKEN_RANKINGS = ['today', 'week', 'month', 'trending'];
-const isApp = (rk) => APP_RANKINGS.includes(rk);
-const isModelTokens = (rk) => MODEL_TOKEN_RANKINGS.includes(rk);
+
+// Dos secciones: Modelos y Apps, cada una con sus 4 pestañas.
+const MODEL_TABS = ['today', 'week', 'month', 'trending'];
+const APP_TABS   = ['apps_popular', 'apps_trending', 'by_tokens', 'by_recent'];
+
 const meta = openrouterData?.apps_meta ?? {};
 const rankingsMeta = openrouterData?.rankings_meta ?? {};
 const creditLocale = locale === 'es' ? 'es-CL' : 'en-US';
@@ -33,59 +32,88 @@ function formatNum(n: number) {
     <p class="text-base max-w-3xl" style="color: var(--text-muted);">{dict.openrouter.subtitle}</p>
   </header>
 
-  <div class="flex flex-wrap gap-2 mb-6 border-b pb-3" style="border-color: var(--border);">
-    {RANKINGS.map((rk, i) => (
-      <button data-ranking={rk} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
-        {dict.openrouter.rankings[rk] ?? rk}
-      </button>
-    ))}
-  </div>
-
-  <div id="or-panels">
-    {RANKINGS.map((rk, i) => {
-      const items = r[rk] ?? [];
-      return (
-        <div data-panel={rk} class={i === 0 ? '' : 'hidden'}>
-          {items.length === 0 ? (
-            <p style="color: var(--text-muted);">{dict.openrouter.noResults}</p>
-          ) : (
-            <>
-              {rk === 'trending' && (
-                <p class="text-xs mb-3 opacity-70">
-                  {dict.openrouter.trendingNote}
-                </p>
-              )}
-              <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
-                {items.map((m) => (
-                  <a href={m.url} target="_blank" rel="noopener" class="card block p-4">
-                    <div class="flex items-start gap-3">
-                      <div class={`rank-badge ${m.rank === 1 ? 'gold' : m.rank === 2 ? 'silver' : m.rank === 3 ? 'bronze' : ''} shrink-0`}>#{m.rank}</div>
-                      <div class="flex-1 min-w-0">
-                        <div class="flex items-baseline gap-2 flex-wrap">
-                          <span class="font-semibold truncate">{m.name}</span>
-                          <span class="badge whitespace-nowrap">🪙 {m.total_tokens_human}</span>
+  <!-- ========== SECCIÓN MODELOS ========== -->
+  <section class="mb-10">
+    <h2 class="text-xl font-bold mb-3">{dict.openrouter.sections.models}</h2>
+    <div class="flex flex-wrap gap-2 mb-4 border-b pb-3" style="border-color: var(--border);">
+      {MODEL_TABS.map((rk, i) => (
+        <button data-section="models" data-ranking={rk} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
+          {dict.openrouter.rankings[rk] ?? rk}
+        </button>
+      ))}
+    </div>
+    <div data-section-panels="models">
+      {MODEL_TABS.map((rk, i) => {
+        const items = r[rk] ?? [];
+        return (
+          <div data-panel={`models-${rk}`} class={i === 0 ? '' : 'hidden'}>
+            {items.length === 0 ? (
+              <p style="color: var(--text-muted);">{dict.openrouter.noResults}</p>
+            ) : (
+              <>
+                {rk === 'trending' && (
+                  <p class="text-xs mb-3 opacity-70">{dict.openrouter.trendingNote}</p>
+                )}
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
+                  {items.map((m) => (
+                    <a href={m.url} target="_blank" rel="noopener" class="card block p-4">
+                      <div class="flex items-start gap-3">
+                        <div class={`rank-badge ${m.rank === 1 ? 'gold' : m.rank === 2 ? 'silver' : m.rank === 3 ? 'bronze' : ''} shrink-0`}>#{m.rank}</div>
+                        <div class="flex-1 min-w-0">
+                          <div class="flex items-baseline gap-2 flex-wrap">
+                            <span class="font-semibold truncate">{m.name}</span>
+                            <span class="badge whitespace-nowrap">🪙 {m.total_tokens_human}</span>
+                          </div>
+                          {rk === 'trending' && m.recent7_human && (
+                            <p class="text-xs mt-1" style="color: var(--text-muted);">
+                              <span class="text-green-400">{m.recent7_human}</span> <span class="opacity-50">vs</span> <span class="text-red-400">{m.prev7_human}</span>
+                            </p>
+                          )}
+                          {m.context_length != null && (
+                            <p class="text-xs mt-1" style="color: var(--text-muted);">
+                              📐 {formatNum(m.context_length)} ctx · {m.id}
+                            </p>
+                          )}
                         </div>
-                        {rk === 'trending' && m.recent7_human && (
-                          <p class="text-xs mt-1" style="color: var(--text-muted);">
-                            <span class="text-green-400">{m.recent7_human}</span> <span class="opacity-50">vs</span> <span class="text-red-400">{m.prev7_human}</span>
-                          </p>
-                        )}
-                        {m.context_length != null && (
-                          <p class="text-xs mt-1" style="color: var(--text-muted);">
-                            📐 {formatNum(m.context_length)} ctx · {m.id}
-                          </p>
-                        )}
                       </div>
-                    </div>
-                  </a>
-                ))}
+                    </a>
+                  ))}
+                </div>
+              </>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- ========== SECCIÓN APPS ========== -->
+  <section class="mb-10">
+    <h2 class="text-xl font-bold mb-3">{dict.openrouter.sections.apps}</h2>
+    <div class="flex flex-wrap gap-2 mb-4 border-b pb-3" style="border-color: var(--border);">
+      {APP_TABS.map((rk, i) => (
+        <button data-section="apps" data-ranking={rk} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
+          {dict.openrouter.rankings[rk] ?? rk}
+        </button>
+      ))}
+    </div>
+    <div data-section-panels="apps">
+      {APP_TABS.map((rk, i) => {
+        const items = r[rk] ?? [];
+        return (
+          <div data-panel={`apps-${rk}`} class={i === 0 ? '' : 'hidden'}>
+            {items.length === 0 ? (
+              <p style="color: var(--text-muted);">{dict.openrouter.noResults}</p>
+            ) : (
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {items.map((app) => <AppCard app={app} dict={dict} compact />)}
               </div>
-            </>
-          )}
-        </div>
-      );
-    })}
-  </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  </section>
 
   <aside class="card p-3 mt-8 text-sm" style="background: var(--bg-card); border-left: 3px solid var(--accent);">
     <p class="font-semibold text-xs uppercase tracking-wider mb-1" style="color: var(--text-muted);">
@@ -99,13 +127,18 @@ function formatNum(n: number) {
 </Base>
 
 <script is:inline>
-  document.querySelectorAll('[data-ranking]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const target = btn.getAttribute('data-ranking');
-      document.querySelectorAll('[data-ranking]').forEach((b) => b.classList.toggle('active', b === btn));
-      document.querySelectorAll('[data-panel]').forEach((p) => {
-        p.classList.toggle('hidden', p.getAttribute('data-panel') !== target);
+  function setupTabs(section) {
+    const btns = document.querySelectorAll(`[data-section="${section}"][data-ranking]`);
+    btns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const target = btn.getAttribute('data-ranking');
+        btns.forEach((b) => b.classList.toggle('active', b === btn));
+        document.querySelectorAll(`[data-panel^="${section}-"]`).forEach((p) => {
+          p.classList.toggle('hidden', p.getAttribute('data-panel') !== `${section}-${target}`);
+        });
       });
     });
-  });
+  }
+  setupTabs('models');
+  setupTabs('apps');
 </script>

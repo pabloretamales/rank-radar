@@ -70,7 +70,7 @@
       "apps_popular": "Apps · Popular",
       "apps_trending": "Apps · Trending",
       "by_tokens": "Apps · By tokens",
-      "by_recent": "Models · Most recent",
+      "by_recent": "Apps · Most recent",
       "today": "Today",
       "week": "This week",
       "month": "This month",
@@ -85,32 +85,10 @@
       "credit": {
         "openrouter": "OpenRouter attribution (required when republishing)"
       }
-    }
-  },
-  "compare": {
-    "title": "Compare models",
-    "subtitle": "Pick up to 3 models and compare intelligence, coding, agentic, pricing and context window side-by-side.",
-    "placeholder1": "Model 1 (e.g. Claude Fable 5)",
-    "placeholder2": "Model 2 (e.g. GPT-5.5 xhigh)",
-    "placeholder3": "Model 3 (optional)",
-    "btnCompare": "Compare",
-    "btnClear": "Clear",
-    "empty": "Pick up to 3 models above and click Compare.",
-    "notFound": "Model not found. Try another name or slug.",
-    "metric": "Metric",
-    "labels": {
-      "intelligence": "Intelligence Index",
-      "coding": "Coding Index",
-      "agentic": "Agentic Index",
-      "creator": "Creator",
-      "release": "Released",
-      "tokens_per_sec": "Speed",
-      "ttft": "TTFT",
-      "price_input": "Input price",
-      "price_output": "Output price",
-      "context": "Context window",
-      "modalities": "Modalities",
-      "or_url": "View on OpenRouter"
+    },
+    "sections": {
+      "models": "Top 20 Models",
+      "apps": "Top 20 Apps"
     }
   },
   "compare": {
