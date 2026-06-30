@@ -8,15 +8,22 @@ const locale = detectLocaleFromUrl(Astro.url);
 const dict = getDict(locale);
 const r = openrouterData?.rankings ?? {};
 
-// Dos secciones: Modelos y Apps, cada una con sus 4 pestañas.
+// Modelos: 4 pestañas (Hoy / Esta semana / Este mes / Trending)
+// Apps: 3 pestañas (Hoy / Una semana / Un mes) — Global Ranking.
 const MODEL_TABS = ['today', 'week', 'month', 'trending'];
-const APP_TABS   = ['apps_popular', 'apps_trending', 'by_tokens', 'by_recent'];
+const APP_TABS   = ['apps_today', 'apps_week', 'apps_month'];
 
 const meta = openrouterData?.apps_meta ?? {};
+const appsWindowed = openrouterData?.apps_meta_windowed ?? {};
 const rankingsMeta = openrouterData?.rankings_meta ?? {};
 const creditLocale = locale === 'es' ? 'es-CL' : 'en-US';
 
-function formatNum(n: number) {
+function fmtWindow(start, end) {
+  if (!start || !end) return '';
+  return `${start} → ${end}`;
+}
+
+function formatNum(n) {
   if (n == null) return '—';
   if (n >= 1e12) return (n / 1e12).toFixed(2) + 'T';
   if (n >= 1e9) return (n / 1e9).toFixed(2) + 'B';
@@ -31,6 +38,39 @@ function formatNum(n: number) {
     <h1 class="text-3xl font-bold mb-2">{dict.openrouter.title}</h1>
     <p class="text-base max-w-3xl" style="color: var(--text-muted);">{dict.openrouter.subtitle}</p>
   </header>
+
+  <!-- ========== SECCIÓN APPS — Global Ranking ========== -->
+  <section class="mb-10">
+    <h2 class="text-xl font-bold mb-3">{dict.openrouter.sections.apps}</h2>
+    <div class="flex flex-wrap gap-2 mb-4 border-b pb-3" style="border-color: var(--border);">
+      {APP_TABS.map((rk, i) => (
+        <button data-section="apps" data-ranking={rk} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
+          {dict.openrouter.rankings[rk] ?? rk}
+        </button>
+      ))}
+    </div>
+    <div data-section-panels="apps">
+      {APP_TABS.map((rk, i) => {
+        const items = r[rk] ?? [];
+        const winMeta = appsWindowed[rk.replace('apps_','')] ?? {};
+        const winLabel = fmtWindow(winMeta.start_date, winMeta.end_date);
+        return (
+          <div data-panel={`apps-${rk}`} class={i === 0 ? '' : 'hidden'}>
+            <p class="text-xs mb-3 opacity-60">
+              {dict.openrouter.windowNote?.replace('{start}', winMeta.start_date ?? '?').replace('{end}', winMeta.end_date ?? '?') ?? winLabel}
+            </p>
+            {items.length === 0 ? (
+              <p style="color: var(--text-muted);">{dict.openrouter.noResults}</p>
+            ) : (
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {items.map((app) => <AppCard app={app} dict={dict} compact />)}
+              </div>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  </section>
 
   <!-- ========== SECCIÓN MODELOS ========== -->
   <section class="mb-10">
@@ -80,34 +120,6 @@ function formatNum(n: number) {
                   ))}
                 </div>
               </>
-            )}
-          </div>
-        );
-      })}
-    </div>
-  </section>
-
-  <!-- ========== SECCIÓN APPS ========== -->
-  <section class="mb-10">
-    <h2 class="text-xl font-bold mb-3">{dict.openrouter.sections.apps}</h2>
-    <div class="flex flex-wrap gap-2 mb-4 border-b pb-3" style="border-color: var(--border);">
-      {APP_TABS.map((rk, i) => (
-        <button data-section="apps" data-ranking={rk} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
-          {dict.openrouter.rankings[rk] ?? rk}
-        </button>
-      ))}
-    </div>
-    <div data-section-panels="apps">
-      {APP_TABS.map((rk, i) => {
-        const items = r[rk] ?? [];
-        return (
-          <div data-panel={`apps-${rk}`} class={i === 0 ? '' : 'hidden'}>
-            {items.length === 0 ? (
-              <p style="color: var(--text-muted);">{dict.openrouter.noResults}</p>
-            ) : (
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {items.map((app) => <AppCard app={app} dict={dict} compact />)}
-              </div>
             )}
           </div>
         );

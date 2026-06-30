@@ -46,8 +46,10 @@ function formatTokens(n) {
   return String(num);
 }
 
-async function fetchApps(sort) {
-  const url = `${APP_ENDPOINT}?sort=${sort}&limit=${MAX_FETCH}`;
+async function fetchApps(sort, startDate, endDate) {
+  let url = `${APP_ENDPOINT}?sort=${sort}&limit=${MAX_FETCH}`;
+  if (startDate) url += `&start_date=${startDate}`;
+  if (endDate) url += `&end_date=${endDate}`;
   const res = await fetch(url, {
     headers: {
       Authorization: `Bearer ${TOKEN}`,
@@ -60,6 +62,29 @@ async function fetchApps(sort) {
     throw new Error(`apps/${sort} ${res.status}: ${text.slice(0, 200)}`);
   }
   return res.json();
+}
+
+// Helper: fetch 3 modes (popular, trending, by-tokens) for a window
+async function fetchAppsByWindow(startDate, endDate) {
+  const [pop, trend] = await Promise.all([
+    fetchApps('popular', startDate, endDate),
+    fetchApps('trending', startDate, endDate).catch((e) => {
+      console.warn(`     ⚠️  trending (${startDate}..${endDate}) falló: ${e.message}`);
+      return { data: [] };
+    }),
+  ]);
+  await new Promise((r) => setTimeout(r, 250));
+  // Por tokens = mismo set reordenado por tokens (mismo endpoint, distinto sort interno).
+  const byTokensData = pop.data ?? [];
+  const meta = pop.meta ?? trend.meta ?? {};
+  return {
+    popular: normalizeApps(pop.data ?? []).slice(0, TOP_N),
+    trending: normalizeApps(trend.data ?? []).slice(0, TOP_N),
+    by_tokens: normalizeApps(
+      [...byTokensData].sort((a, b) => Number(b.total_tokens || 0) - Number(a.total_tokens || 0))
+    ).slice(0, TOP_N),
+    meta,
+  };
 }
 
 async function fetchModelsCatalog() {
@@ -160,18 +185,28 @@ function rankModels(models, scoreFn, topN, descending = true) {
 async function main() {
   if (!existsSync(dirname(CACHE))) mkdirSync(dirname(CACHE), { recursive: true });
 
-  console.log('📡 Fetching OpenRouter: apps + catalog…');
+  console.log('📡 Fetching OpenRouter: apps (3 windows) + catalog…');
 
-  // Apps
-  const popular = await fetchApps('popular');
-  console.log(`   apps popular: ${popular.data?.length ?? 0}`);
-  await new Promise((r) => setTimeout(r, 250));
+  // Apps — 3 ventanas tipo UI oficial de OR: Hoy / Una semana / Un mes.
+  // Pablo 2026-06-29 20:21 CLT: la UI de OpenRouter muestra los mismos rankings
+  // de apps pero con esos 3 periodos. Cada ventana es un único ranking
+  // (popular/trending devuelven mismo set en ventana corta, by-tokens es el
+  // mismo set reordenado — Pablo pidió un solo "Global Ranking").
+  const today = new Date();
+  today.setUTCDate(today.getUTCDate() - 1); // OR suele tener datos hasta ayer
+  const yyyymmdd = (d) => d.toISOString().slice(0, 10);
+  const dayEnd = yyyymmdd(today);
+  const dayStart = yyyymmdd(today);
+  const weekStart = yyyymmdd(new Date(today.getTime() - 6 * 24 * 3600 * 1000));
+  const monthStart = yyyymmdd(new Date(today.getTime() - 29 * 24 * 3600 * 1000));
 
-  const trending = await fetchApps('trending').catch((e) => {
-    console.warn(`   ⚠️  trending falló: ${e.message}`);
-    return { data: [] };
-  });
-  console.log(`   apps trending: ${trending.data?.length ?? 0}`);
+  console.log(`   apps: day=${dayStart} week=${weekStart}..${dayEnd} month=${monthStart}..${dayEnd}`);
+  // Cada ventana trae 1 ranking (popular). trending y by-tokens se mantienen
+  // en el JSON por compatibilidad pero no se exponen en UI (eran idénticos).
+  const apps1d = await fetchAppsByWindow(dayStart, dayEnd);
+  const apps7d = await fetchAppsByWindow(weekStart, dayEnd);
+  const apps30d = await fetchAppsByWindow(monthStart, dayEnd);
+  console.log(`     1d=${apps1d.popular.length} 7d=${apps7d.popular.length} 30d=${apps30d.popular.length}`);
 
   // Models catalog (público, sin auth)
   const catalog = await fetchModelsCatalog();
@@ -348,22 +383,23 @@ async function main() {
     fetched_at: new Date().toISOString(),
     source: 'OpenRouter',
     api: { apps: APP_ENDPOINT, models: MODELS_ENDPOINT },
-    apps_meta: popular.meta ?? {},
+    apps_meta: apps30d.meta ?? {},
     rankings_meta: lastMeta,
     top_n: TOP_N,
     rankings: {
-      // Apps (rankings públicos oficiales)
-      apps_popular: normalizeApps(popular.data ?? []).slice(0, TOP_N),
-      apps_trending: normalizeApps(trending.data ?? []).slice(0, TOP_N),
-      by_tokens: normalizeApps(
-        [...(popular.data ?? [])]
-          .sort((a, b) => Number(b.total_tokens || 0) - Number(a.total_tokens || 0))
-          .slice(0, TOP_N)
-      ),
+      // Apps: Global Ranking con 3 periodos (Hoy / Esta semana / Este mes).
+      apps_today:  apps1d.popular,
+      apps_week:   apps7d.popular,
+      apps_month:  apps30d.popular,
       // Modelos: derivado honesto del catálogo (no es ranking de uso oficial)
       by_recent: byRecent,
       // Modelos por uso (rankings-daily) en 4 ventanas
       ...modelsByTokens,
+    },
+    apps_meta_windowed: {
+      today:  apps1d.meta,
+      week:   apps7d.meta,
+      month:  apps30d.meta,
     },
     models_total: catalog.length,
     catalog: catalogSlim,
@@ -374,8 +410,9 @@ async function main() {
   console.log(`💾 Saved: ${OUT}`);
   const r = payload.rankings;
   console.log(
-    `   apps: ${r.apps_popular.length}/${r.apps_trending.length}/${r.by_tokens.length}` +
-      ` | by_recent: ${r.by_recent.length} | mbt: today=${r.today.length} week=${r.week.length} month=${r.month.length} trending=${r.trending.length}`
+    `   apps: today=${r.apps_today.length} week=${r.apps_week.length} month=${r.apps_month.length}` +
+      ` | by_recent: ${r.by_recent.length}` +
+      ` | mbt: today=${r.today.length} week=${r.week.length} month=${r.month.length} trending=${r.trending.length}`
   );
 }
 

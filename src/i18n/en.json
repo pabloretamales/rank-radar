@@ -62,15 +62,14 @@
     "speed": "Speed"
   },
   "openrouter": {
-    "title": "TOP 20 Models · By token usage",
-    "subtitle": "OpenRouter models ranked by tokens consumed. Same public endpoint as the official UI.",
+    "title": "Top OpenRouter — Apps and Models",
+    "subtitle": "Public OpenRouter rankings: apps by token usage (Today / This week / This month) and models by consumption.",
     "ranking": "Ranking",
     "sectionApps": "Apps",
     "rankings": {
-      "apps_popular": "Apps · Popular",
-      "apps_trending": "Apps · Trending",
-      "by_tokens": "Apps · By tokens",
-      "by_recent": "Apps · Most recent",
+      "apps_today": "Today",
+      "apps_week": "This week",
+      "apps_month": "This month",
       "today": "Today",
       "week": "This week",
       "month": "This month",
@@ -88,7 +87,7 @@
     },
     "sections": {
       "models": "Top 20 Models",
-      "apps": "Top 20 Apps"
+      "apps": "Top 20 Apps — Global Ranking"
     }
   },
   "compare": {
