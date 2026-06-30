@@ -21,8 +21,8 @@
     "sectionGithubDesc": "Top-starred repos by time window (1d / 7d / 30d / 90d / all-time).",
     "sectionModels": "Top 20 AI Models",
     "sectionModelsDesc": "Rankings by intelligence, coding, math, speed, pricing (543 models on Artificial Analysis).",
-    "sectionOpenRouter": "Top 20 OpenRouter Apps",
-    "sectionOpenRouterDesc": "Most-used apps by tokens and requests — popular and trending.",
+    "sectionOpenRouter": "TOP 20 Models · By token usage",
+    "sectionOpenRouterDesc": "OpenRouter models ranked by tokens consumed (selected window).",
     "openGithub": "Open GitHub rankings",
     "openModels": "Open models rankings",
     "openOpenRouter": "Open OpenRouter rankings",
@@ -30,7 +30,7 @@
   },
   "github": {
     "title": "GitHub Top by Window",
-    "subtitle": "Top-starred repos — 1d, 7d, 30d, 90d, and all-time windows.",
+    "subtitle": "Top-starred repos - 1d, 7d, 30d, 90d, and all-time windows.",
     "windows": {
       "1d": "Today",
       "7d": "7 days",
@@ -38,7 +38,7 @@
       "90d": "90 days",
       "all": "All-time"
     },
-    "caveat": "\"Top new by window\" measures popularity among newly-created repos — not trending with deltas (that would need historical snapshots in DB). Same as github.com/trending.",
+    "caveat": "\"Top new by window\" measures popularity among newly-created repos - not trending with deltas (that would need historical snapshots in DB). Same as github.com/trending.",
     "stars": "stars",
     "forks": "forks",
     "issues": "issues",
@@ -80,7 +80,7 @@
     "requests": "Requests",
     "noResults": "No data for this ranking",
     "windowNote": "Window: {start} → {end}",
-    "trendingNote": "Excess: (last week) − (previous week)",
+    "trendingNote": "Excess: (last week) - (previous week)",
     "explainer": {
       "credit": {
         "openrouter": "OpenRouter attribution (required when republishing)"
@@ -128,9 +128,9 @@
   },
   "common": {
     "rank": "#",
-    "loading": "Loading…",
+    "loading": "Loading...",
     "error": "Error",
-    "none": "—",
+    "none": "-",
     "viewOn": "View on"
   }
 }

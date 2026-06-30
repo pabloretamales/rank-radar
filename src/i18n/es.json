@@ -21,8 +21,8 @@
     "sectionGithubDesc": "Repos con más estrellas por ventana de tiempo (1d / 7d / 30d / 90d / histórico).",
     "sectionModels": "Top 20 Modelos IA",
     "sectionModelsDesc": "Los 3 índices principales de Artificial Analysis: Intelligence, Coding y Agentic.",
-    "sectionOpenRouter": "Top 20 Apps OpenRouter",
-    "sectionOpenRouterDesc": "Apps más usadas por tokens y por requests — popular y trending.",
+    "sectionOpenRouter": "TOP 20 Modelos · Por uso de tokens",
+    "sectionOpenRouterDesc": "Modelos de OpenRouter rankeados por volumen de tokens consumidos (ventana seleccionada).",
     "openGithub": "Ver rankings GitHub",
     "openModels": "Ver rankings modelos",
     "openOpenRouter": "Ver rankings OpenRouter",
@@ -30,7 +30,7 @@
   },
   "github": {
     "title": "Top GitHub por ventana",
-    "subtitle": "Repos con más estrellas — ventanas de 1 día, 7 días, 30 días, 90 días e histórico.",
+    "subtitle": "Repos con más estrellas - ventanas de 1 día, 7 días, 30 días, 90 días e histórico.",
     "windows": {
       "1d": "Hoy",
       "7d": "7 días",
@@ -38,7 +38,7 @@
       "90d": "90 días",
       "all": "Histórico"
     },
-    "caveat": "\"Top nuevos por ventana\" mide lo más popular entre repos recién creados — no trending con deltas (eso requeriría snapshots históricos en DB). Es lo mismo que github.com/trending.",
+    "caveat": "\"Top nuevos por ventana\" mide lo más popular entre repos recién creados - no trending con deltas (eso requeriría snapshots históricos en DB). Es lo mismo que github.com/trending.",
     "stars": "estrellas",
     "forks": "forks",
     "issues": "issues",
@@ -80,7 +80,7 @@
     "requests": "Requests",
     "noResults": "Sin datos para este ranking",
     "windowNote": "Ventana: {start} → {end}",
-    "trendingNote": "Excess: (última semana) − (semana anterior)",
+    "trendingNote": "Excess: (última semana) - (semana anterior)",
     "explainer": {
       "credit": {
         "openrouter": "Atribución OpenRouter (requerida al republicar)"
@@ -102,9 +102,9 @@
   },
   "common": {
     "rank": "#",
-    "loading": "Cargando…",
+    "loading": "Cargando...",
     "error": "Error",
-    "none": "—",
+    "none": "-",
     "viewOn": "Ver en"
   }
 }
