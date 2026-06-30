@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-06-30T00:28:15.321Z",
+  "fetched_at": "2026-06-30T02:45:57.987Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-06-30T00:28:10.936Z",
+    "as_of": "2026-06-30T02:45:54.454Z",
     "version": "v1",
     "start_date": "2026-05-31",
     "end_date": "2026-06-29"
   },
   "rankings_meta": {
-    "as_of": "2026-06-30T00:28:11.932Z",
+    "as_of": "2026-06-30T02:45:55.443Z",
     "version": "v1",
     "start_date": "2026-06-29",
     "end_date": "2026-06-29"
@@ -186,9 +186,9 @@
         "rank": 19,
         "app_id": 2524738,
         "app_name": "LangChain",
-        "total_tokens": "10926070088",
+        "total_tokens": "10926248020",
         "total_tokens_human": "10.93B",
-        "total_requests": 1287198,
+        "total_requests": 1287199,
         "total_requests_human": "1.29M"
       },
       {
@@ -368,9 +368,9 @@
         "rank": 19,
         "app_id": 2524738,
         "app_name": "LangChain",
-        "total_tokens": "68134812484",
+        "total_tokens": "68134990416",
         "total_tokens_human": "68.13B",
-        "total_requests": 7372240,
+        "total_requests": 7372241,
         "total_requests_human": "7.37M"
       },
       {
@@ -995,8 +995,8 @@
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash",
         "slug": "deepseek/deepseek-v4-flash-20260423",
-        "total_tokens": 727905502837,
-        "total_tokens_human": "727.91B",
+        "total_tokens": 727922126022,
+        "total_tokens_human": "727.92B",
         "perma": "deepseek/deepseek-v4-flash-20260423",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-flash-20260423",
         "modalities": [],
@@ -1070,7 +1070,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 413243286351,
+        "total_tokens": 413244930947,
         "total_tokens_human": "413.24B",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1100,7 +1100,7 @@
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro",
         "slug": "deepseek/deepseek-v4-pro-20260423",
-        "total_tokens": 311058898618,
+        "total_tokens": 311059036289,
         "total_tokens_human": "311.06B",
         "perma": "deepseek/deepseek-v4-pro-20260423",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-20260423",
@@ -1297,7 +1297,7 @@
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash",
         "slug": "deepseek/deepseek-v4-flash-20260423",
-        "total_tokens": 4720906382096,
+        "total_tokens": 4720923005281,
         "total_tokens_human": "4.72T",
         "perma": "deepseek/deepseek-v4-flash-20260423",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-flash-20260423",
@@ -1372,7 +1372,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 2704894505575,
+        "total_tokens": 2704896150171,
         "total_tokens_human": "2.70T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1417,7 +1417,7 @@
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro",
         "slug": "deepseek/deepseek-v4-pro-20260423",
-        "total_tokens": 2077880412936,
+        "total_tokens": 2077880550607,
         "total_tokens_human": "2.08T",
         "perma": "deepseek/deepseek-v4-pro-20260423",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-20260423",
@@ -1599,7 +1599,7 @@
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash",
         "slug": "deepseek/deepseek-v4-flash-20260423",
-        "total_tokens": 18810097701954,
+        "total_tokens": 18810114325139,
         "total_tokens_human": "18.81T",
         "perma": "deepseek/deepseek-v4-flash-20260423",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-flash-20260423",
@@ -1659,7 +1659,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 11907532278284,
+        "total_tokens": 11907533922880,
         "total_tokens_human": "11.91T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1704,7 +1704,7 @@
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro",
         "slug": "deepseek/deepseek-v4-pro-20260423",
-        "total_tokens": 8703268429726,
+        "total_tokens": 8703268567397,
         "total_tokens_human": "8.70T",
         "perma": "deepseek/deepseek-v4-pro-20260423",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-20260423",
@@ -2071,9 +2071,9 @@
         "id": "nvidia/nemotron-3-ultra-550b-a55b",
         "name": "NVIDIA: Nemotron 3 Ultra",
         "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-        "total_tokens": 16960966000,
+        "total_tokens": 16961126192,
         "total_tokens_human": "16.96B",
-        "recent7": 16960966000,
+        "recent7": 16961126192,
         "recent7_human": "16.96B",
         "prev7": 0,
         "prev7_human": "0",
@@ -2153,7 +2153,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-06-30T00:28:11.932Z",
+      "as_of": "2026-06-30T02:45:55.443Z",
       "version": "v1",
       "start_date": "2026-06-29",
       "end_date": "2026-06-29"
@@ -2161,19 +2161,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-06-30T00:28:08.555Z",
+      "as_of": "2026-06-30T02:45:52.556Z",
       "version": "v1",
       "start_date": "2026-06-29",
       "end_date": "2026-06-29"
     },
     "week": {
-      "as_of": "2026-06-30T00:28:10.053Z",
+      "as_of": "2026-06-30T02:45:53.487Z",
       "version": "v1",
       "start_date": "2026-06-23",
       "end_date": "2026-06-29"
     },
     "month": {
-      "as_of": "2026-06-30T00:28:10.936Z",
+      "as_of": "2026-06-30T02:45:54.454Z",
       "version": "v1",
       "start_date": "2026-05-31",
       "end_date": "2026-06-29"
