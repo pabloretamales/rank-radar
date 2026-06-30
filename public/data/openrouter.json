@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-06-30T02:45:57.987Z",
+  "fetched_at": "2026-06-30T12:05:52.418Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-06-30T02:45:54.454Z",
+    "as_of": "2026-06-30T12:05:46.595Z",
     "version": "v1",
     "start_date": "2026-05-31",
     "end_date": "2026-06-29"
   },
   "rankings_meta": {
-    "as_of": "2026-06-30T02:45:55.443Z",
+    "as_of": "2026-06-30T12:05:47.757Z",
     "version": "v1",
     "start_date": "2026-06-29",
     "end_date": "2026-06-29"
@@ -995,7 +995,7 @@
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash",
         "slug": "deepseek/deepseek-v4-flash-20260423",
-        "total_tokens": 727922126022,
+        "total_tokens": 727922211542,
         "total_tokens_human": "727.92B",
         "perma": "deepseek/deepseek-v4-flash-20260423",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-flash-20260423",
@@ -1053,14 +1053,14 @@
       {
         "rank": 5,
         "id": "openrouter/owl-alpha",
-        "name": "Owl Alpha",
-        "slug": "openrouter/owl-alpha",
+        "name": "openrouter/owl-alpha",
+        "slug": null,
         "total_tokens": 544029789691,
         "total_tokens_human": "544.03B",
         "perma": "openrouter/owl-alpha",
         "url": "https://openrouter.ai/models/openrouter/owl-alpha",
         "modalities": [],
-        "context_length": 1048756,
+        "context_length": null,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "today"
@@ -1297,7 +1297,7 @@
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash",
         "slug": "deepseek/deepseek-v4-flash-20260423",
-        "total_tokens": 4720923005281,
+        "total_tokens": 4720923090801,
         "total_tokens_human": "4.72T",
         "perma": "deepseek/deepseek-v4-flash-20260423",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-flash-20260423",
@@ -1340,14 +1340,14 @@
       {
         "rank": 4,
         "id": "openrouter/owl-alpha",
-        "name": "Owl Alpha",
-        "slug": "openrouter/owl-alpha",
+        "name": "openrouter/owl-alpha",
+        "slug": null,
         "total_tokens": 3547514852948,
         "total_tokens_human": "3.55T",
         "perma": "openrouter/owl-alpha",
         "url": "https://openrouter.ai/models/openrouter/owl-alpha",
         "modalities": [],
-        "context_length": 1048756,
+        "context_length": null,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "week"
@@ -1599,7 +1599,7 @@
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash",
         "slug": "deepseek/deepseek-v4-flash-20260423",
-        "total_tokens": 18810114325139,
+        "total_tokens": 18810114410659,
         "total_tokens_human": "18.81T",
         "perma": "deepseek/deepseek-v4-flash-20260423",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-flash-20260423",
@@ -1672,14 +1672,14 @@
       {
         "rank": 6,
         "id": "openrouter/owl-alpha",
-        "name": "Owl Alpha",
-        "slug": "openrouter/owl-alpha",
+        "name": "openrouter/owl-alpha",
+        "slug": null,
         "total_tokens": 11271448803915,
         "total_tokens_human": "11.27T",
         "perma": "openrouter/owl-alpha",
         "url": "https://openrouter.ai/models/openrouter/owl-alpha",
         "modalities": [],
-        "context_length": 1048756,
+        "context_length": null,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "month"
@@ -2018,8 +2018,8 @@
       {
         "rank": 8,
         "id": "openrouter/owl-alpha",
-        "name": "Owl Alpha",
-        "slug": "openrouter/owl-alpha",
+        "name": "openrouter/owl-alpha",
+        "slug": null,
         "total_tokens": 31652516738,
         "total_tokens_human": "31.65B",
         "recent7": 3139694661472,
@@ -2029,7 +2029,7 @@
         "perma": "openrouter/owl-alpha",
         "url": "https://openrouter.ai/models/openrouter/owl-alpha",
         "modalities": [],
-        "context_length": 1048756,
+        "context_length": null,
         "window": "trending"
       },
       {
@@ -2153,7 +2153,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-06-30T02:45:55.443Z",
+      "as_of": "2026-06-30T12:05:47.757Z",
       "version": "v1",
       "start_date": "2026-06-29",
       "end_date": "2026-06-29"
@@ -2161,25 +2161,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-06-30T02:45:52.556Z",
+      "as_of": "2026-06-30T12:05:44.147Z",
       "version": "v1",
       "start_date": "2026-06-29",
       "end_date": "2026-06-29"
     },
     "week": {
-      "as_of": "2026-06-30T02:45:53.487Z",
+      "as_of": "2026-06-30T12:05:45.324Z",
       "version": "v1",
       "start_date": "2026-06-23",
       "end_date": "2026-06-29"
     },
     "month": {
-      "as_of": "2026-06-30T02:45:54.454Z",
+      "as_of": "2026-06-30T12:05:46.595Z",
       "version": "v1",
       "start_date": "2026-05-31",
       "end_date": "2026-06-29"
     }
   },
-  "models_total": 338,
+  "models_total": 337,
   "catalog": [
     {
       "id": "sakana/fugu-ultra",
@@ -2684,22 +2684,6 @@
       "pricing_completion": 0.0000075,
       "created_human": "2026-04-30",
       "url": "https://openrouter.ai/models/mistralai/mistral-medium-3.5-20260430"
-    },
-    {
-      "id": "openrouter/owl-alpha",
-      "canonical_slug": "openrouter/owl-alpha",
-      "name": "Owl Alpha",
-      "context_length": 1048756,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
-      "created_human": "2026-04-28",
-      "url": "https://openrouter.ai/models/openrouter/owl-alpha"
     },
     {
       "id": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -7311,6 +7295,22 @@
       "url": "https://huggingface.co/TheDrummer/Rocinante-12B-v1.1"
     },
     {
+      "id": "meta-llama/llama-3.2-1b-instruct",
+      "canonical_slug": "meta-llama/llama-3.2-1b-instruct",
+      "name": "Meta: Llama 3.2 1B Instruct",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 2.7e-8,
+      "pricing_completion": 2.01e-7,
+      "created_human": "2024-09-25",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
+    },
+    {
       "id": "meta-llama/llama-3.2-3b-instruct:free",
       "canonical_slug": "meta-llama/llama-3.2-3b-instruct",
       "name": "Meta: Llama 3.2 3B Instruct (free)",
@@ -7341,22 +7341,6 @@
       "pricing_completion": 3.35e-7,
       "created_human": "2024-09-25",
       "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct"
-    },
-    {
-      "id": "meta-llama/llama-3.2-1b-instruct",
-      "canonical_slug": "meta-llama/llama-3.2-1b-instruct",
-      "name": "Meta: Llama 3.2 1B Instruct",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 2.7e-8,
-      "pricing_completion": 2.01e-7,
-      "created_human": "2024-09-25",
-      "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
     },
     {
       "id": "meta-llama/llama-3.2-11b-vision-instruct",
@@ -7570,24 +7554,6 @@
       "url": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407"
     },
     {
-      "id": "openai/gpt-4o-mini",
-      "canonical_slug": "openai/gpt-4o-mini",
-      "name": "OpenAI: GPT-4o-mini",
-      "context_length": 128000,
-      "modalities": [
-        "text",
-        "image",
-        "file",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 1.5e-7,
-      "pricing_completion": 6e-7,
-      "created_human": "2024-07-18",
-      "url": "https://openrouter.ai/models/openai/gpt-4o-mini"
-    },
-    {
       "id": "openai/gpt-4o-mini-2024-07-18",
       "canonical_slug": "openai/gpt-4o-mini-2024-07-18",
       "name": "OpenAI: GPT-4o-mini (2024-07-18)",
@@ -7604,6 +7570,24 @@
       "pricing_completion": 6e-7,
       "created_human": "2024-07-18",
       "url": "https://openrouter.ai/models/openai/gpt-4o-mini-2024-07-18"
+    },
+    {
+      "id": "openai/gpt-4o-mini",
+      "canonical_slug": "openai/gpt-4o-mini",
+      "name": "OpenAI: GPT-4o-mini",
+      "context_length": 128000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 1.5e-7,
+      "pricing_completion": 6e-7,
+      "created_human": "2024-07-18",
+      "url": "https://openrouter.ai/models/openai/gpt-4o-mini"
     },
     {
       "id": "google/gemma-2-27b-it",
@@ -7758,22 +7742,6 @@
       "url": "https://openrouter.ai/models/mistralai/mistral-large"
     },
     {
-      "id": "openai/gpt-4-turbo-preview",
-      "canonical_slug": "openai/gpt-4-turbo-preview",
-      "name": "OpenAI: GPT-4 Turbo Preview",
-      "context_length": 128000,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 0.00001,
-      "pricing_completion": 0.00003,
-      "created_human": "2024-01-25",
-      "url": "https://openrouter.ai/models/openai/gpt-4-turbo-preview"
-    },
-    {
       "id": "openai/gpt-3.5-turbo-0613",
       "canonical_slug": "openai/gpt-3.5-turbo-0613",
       "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
@@ -7788,6 +7756,22 @@
       "pricing_completion": 0.000002,
       "created_human": "2024-01-25",
       "url": "https://openrouter.ai/models/openai/gpt-3.5-turbo-0613"
+    },
+    {
+      "id": "openai/gpt-4-turbo-preview",
+      "canonical_slug": "openai/gpt-4-turbo-preview",
+      "name": "OpenAI: GPT-4 Turbo Preview",
+      "context_length": 128000,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 0.00001,
+      "pricing_completion": 0.00003,
+      "created_human": "2024-01-25",
+      "url": "https://openrouter.ai/models/openai/gpt-4-turbo-preview"
     },
     {
       "id": "openrouter/auto",
