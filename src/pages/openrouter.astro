@@ -39,39 +39,6 @@ function formatNum(n) {
     <p class="text-base max-w-3xl" style="color: var(--text-muted);">{dict.openrouter.subtitle}</p>
   </header>
 
-  <!-- ========== SECCIÓN APPS — Global Ranking ========== -->
-  <section class="mb-10">
-    <h2 class="text-xl font-bold mb-3">{dict.openrouter.sections.apps}</h2>
-    <div class="flex flex-wrap gap-2 mb-4 border-b pb-3" style="border-color: var(--border);">
-      {APP_TABS.map((rk, i) => (
-        <button data-section="apps" data-ranking={rk} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
-          {dict.openrouter.rankings[rk] ?? rk}
-        </button>
-      ))}
-    </div>
-    <div data-section-panels="apps">
-      {APP_TABS.map((rk, i) => {
-        const items = r[rk] ?? [];
-        const winMeta = appsWindowed[rk.replace('apps_','')] ?? {};
-        const winLabel = fmtWindow(winMeta.start_date, winMeta.end_date);
-        return (
-          <div data-panel={`apps-${rk}`} class={i === 0 ? '' : 'hidden'}>
-            <p class="text-xs mb-3 opacity-60">
-              {dict.openrouter.windowNote?.replace('{start}', winMeta.start_date ?? '?').replace('{end}', winMeta.end_date ?? '?') ?? winLabel}
-            </p>
-            {items.length === 0 ? (
-              <p style="color: var(--text-muted);">{dict.openrouter.noResults}</p>
-            ) : (
-              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-                {items.map((app) => <AppCard app={app} dict={dict} compact />)}
-              </div>
-            )}
-          </div>
-        );
-      })}
-    </div>
-  </section>
-
   <!-- ========== SECCIÓN MODELOS ========== -->
   <section class="mb-10">
     <h2 class="text-xl font-bold mb-3">{dict.openrouter.sections.models}</h2>
@@ -120,6 +87,39 @@ function formatNum(n) {
                   ))}
                 </div>
               </>
+            )}
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- ========== SECCIÓN APPS — Global Ranking ========== -->
+  <section class="mb-10">
+    <h2 class="text-xl font-bold mb-3">{dict.openrouter.sections.apps}</h2>
+    <div class="flex flex-wrap gap-2 mb-4 border-b pb-3" style="border-color: var(--border);">
+      {APP_TABS.map((rk, i) => (
+        <button data-section="apps" data-ranking={rk} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
+          {dict.openrouter.rankings[rk] ?? rk}
+        </button>
+      ))}
+    </div>
+    <div data-section-panels="apps">
+      {APP_TABS.map((rk, i) => {
+        const items = r[rk] ?? [];
+        const winMeta = appsWindowed[rk.replace('apps_','')] ?? {};
+        const winLabel = fmtWindow(winMeta.start_date, winMeta.end_date);
+        return (
+          <div data-panel={`apps-${rk}`} class={i === 0 ? '' : 'hidden'}>
+            <p class="text-xs mb-3 opacity-60">
+              {dict.openrouter.windowNote?.replace('{start}', winMeta.start_date ?? '?').replace('{end}', winMeta.end_date ?? '?') ?? winLabel}
+            </p>
+            {items.length === 0 ? (
+              <p style="color: var(--text-muted);">{dict.openrouter.noResults}</p>
+            ) : (
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                {items.map((app) => <AppCard app={app} dict={dict} compact />)}
+              </div>
             )}
           </div>
         );
