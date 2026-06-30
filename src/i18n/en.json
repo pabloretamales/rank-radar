@@ -2,7 +2,6 @@
   "site": {
     "name": "RankRadar",
     "tagline": "Real-time visibility of GitHub trending, AI models, and OpenRouter consumption",
-    "poweredBy": "Powered by GitHub Search, Artificial Analysis & OpenRouter",
     "shortName": "RankRadar"
   },
   "nav": {
@@ -102,7 +101,8 @@
     "madeBy": "Made by",
     "company": "DinamIA Labs",
     "dataRefresh": "Data refreshed daily via cron",
-    "credits": "Data provided by GitHub Search, Artificial Analysis, OpenRouter, and OpenClaw."
+    "credits": "Data provided by GitHub Search, Artificial Analysis, OpenRouter, and OpenClaw.",
+    "builtWith": "Built with OpenClaw · MiniMax-M3"
   },
   "common": {
     "rank": "#",
