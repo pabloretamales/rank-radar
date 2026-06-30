@@ -1,7 +1,7 @@
 ---
 /**
  * RankedBarChart — top-N horizontal bar chart with rank, label, magnitude bar, and value.
- * Plain CSS, no JS, no charting libs. The bar length encodes the value relative to the max.
+ * Pure CSS, no JS, no charting libs. The bar length encodes the value relative to the max.
  */
 interface Item {
   rank: number;
@@ -16,7 +16,7 @@ interface Props {
   rankLabel?: string;
   color?: string; // CSS color for the bar fill
   trackColor?: string; // CSS color for the empty track
-  numberUnit?: string; // e.g. "B" or "T" — currently unused, just info
+  numberUnit?: string;
 }
 const { items, topN = 10, rankLabel = '#', color = 'var(--accent, #7c3aed)', trackColor = 'var(--bg-muted, #e5e7eb)' } = Astro.props;
 const sliced = (items ?? []).slice(0, topN);
@@ -30,24 +30,27 @@ const max = Math.max(1, ...sliced.map((it) => Number(it.value) || 0));
     <ol class="space-y-1.5">
       {sliced.map((it) => {
         const v = Number(it.value) || 0;
-        const pct = Math.max(2, Math.round((v / max) * 100)); // min 2% so 0 isn't invisible
-        const Wrapper = it.url ? 'a' : 'div';
-        const wrapperProps = it.url
-          ? { href: it.url, target: '_blank', rel: 'noopener', class: 'flex items-center gap-3 group hover:opacity-90 transition' }
-          : { class: 'flex items-center gap-3 group' };
+        const pct = Math.max(2, Math.round((v / max) * 100));
         return (
-          <li class="flex items-center gap-3 text-sm">
-            <span class="text-xs tabular-nums w-5 text-right shrink-0" style="color: var(--text-muted);">{rankLabel}{it.rank}</span>
-            <Wrapper {...wrapperProps}>
-              <span class="w-28 sm:w-32 truncate shrink-0" style="color: var(--text);" title={it.name}>{it.name}</span>
-              <span class="flex-1 relative h-2.5 rounded-full overflow-hidden" style={`background:${trackColor};`}>
-                <span
-                  class="absolute inset-y-0 left-0 rounded-full transition-all"
-                  style={`width:${pct}%;background:${color};`}
-                />
+          <li class="ranked-bar-row">
+            <span class="ranked-bar-rank">{rankLabel}{it.rank}</span>
+            {it.url ? (
+              <a href={it.url} target="_blank" rel="noopener" class="ranked-bar-link">
+                <span class="ranked-bar-name" title={it.name}>{it.name}</span>
+                <span class="ranked-bar-track" style={`background:${trackColor};`}>
+                  <span class="ranked-bar-fill" style={`width:${pct}%;background:${color};`}></span>
+                </span>
+                <span class="ranked-bar-value">{it.valueHuman}</span>
+              </a>
+            ) : (
+              <span class="ranked-bar-link">
+                <span class="ranked-bar-name" title={it.name}>{it.name}</span>
+                <span class="ranked-bar-track" style={`background:${trackColor};`}>
+                  <span class="ranked-bar-fill" style={`width:${pct}%;background:${color};`}></span>
+                </span>
+                <span class="ranked-bar-value">{it.valueHuman}</span>
               </span>
-              <span class="tabular-nums text-xs w-16 text-right shrink-0" style="color: var(--text-muted);">{it.valueHuman}</span>
-            </Wrapper>
+            )}
           </li>
         );
       })}
@@ -57,5 +60,56 @@ const max = Math.max(1, ...sliced.map((it) => Number(it.value) || 0));
 
 <style>
   .ranked-bar-chart ol { list-style: none; padding: 0; margin: 0; }
-  .ranked-bar-chart li { line-height: 1.2; }
+  .ranked-bar-row { display: flex; align-items: center; gap: 0.75rem; font-size: 0.875rem; line-height: 1.2; }
+  .ranked-bar-rank {
+    font-size: 0.75rem;
+    width: 2.25rem;
+    text-align: right;
+    flex-shrink: 0;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .ranked-bar-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1;
+    min-width: 0;
+    text-decoration: none;
+    color: inherit;
+  }
+  .ranked-bar-link:hover { opacity: 0.85; }
+  .ranked-bar-name {
+    width: 8rem;
+    flex-shrink: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--text);
+  }
+  @media (min-width: 640px) {
+    .ranked-bar-name { width: 9rem; }
+  }
+  .ranked-bar-track {
+    flex: 1;
+    height: 0.625rem;
+    border-radius: 9999px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+  }
+  .ranked-bar-fill {
+    display: block;
+    height: 100%;
+    border-radius: 9999px;
+    transition: width 0.4s ease;
+  }
+  .ranked-bar-value {
+    font-size: 0.75rem;
+    width: 4.5rem;
+    text-align: right;
+    flex-shrink: 0;
+    color: var(--text-muted);
+    font-variant-numeric: tabular-nums;
+  }
 </style>
