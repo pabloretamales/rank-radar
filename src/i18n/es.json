@@ -26,7 +26,8 @@
     "openGithub": "Ver rankings GitHub",
     "openModels": "Ver rankings modelos",
     "openOpenRouter": "Ver rankings OpenRouter",
-    "lastUpdated": "Última actualización"
+    "lastUpdated": "Última actualización",
+    "viewFullList": "Ver lista completa"
   },
   "github": {
     "title": "Top GitHub por ventana",

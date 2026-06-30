@@ -3,6 +3,7 @@ import Base from '@/layouts/Base.astro';
 import { getDict, detectLocaleFromUrl } from '@/i18n';
 import RepoCard from '@components/RepoCard.astro';
 import ModelCard from '@components/ModelCard.astro';
+import RankedBarChart from '@components/RankedBarChart.astro';
 import githubData from '../../public/data/github-windows.json';
 import aaData from '../../public/data/aa-models.json';
 import openrouterData from '../../public/data/openrouter.json';
@@ -11,10 +12,38 @@ import manifest from '../../public/data/manifest.json';
 const locale = detectLocaleFromUrl(Astro.url);
 const dict = getDict(locale);
 
-const githubTop = githubData?.windows?.find(w => w.label === '7d')?.items?.slice(0, 6) ?? [];
-const modelsTop = aaData?.rankings?.by_intelligence?.slice(0, 6) ?? [];
-const orTop = openrouterData?.rankings?.week?.slice(0, 6) ?? [];
+const githubTop10 = githubData?.windows?.find(w => w.label === '7d')?.items?.slice(0, 10) ?? [];
+const modelsTop10 = aaData?.rankings?.by_intelligence?.slice(0, 10) ?? [];
+const orTop10 = openrouterData?.rankings?.week?.slice(0, 10) ?? [];
 const lastUpdated = manifest?.generated_at;
+
+// Datos para los bar charts (top 10).
+function humanStars(n) {
+  if (n == null) return '—';
+  if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
+  return String(n);
+}
+const ghBars = githubTop10.map((r) => ({
+  rank: r.rank,
+  name: r.full_name?.split('/')[1] ?? r.full_name,
+  value: r.stargazers_count ?? 0,
+  valueHuman: humanStars(r.stargazers_count) + ' ⭐',
+  url: r.html_url,
+}));
+const modelsBars = modelsTop10.map((m) => ({
+  rank: m.rank,
+  name: m.name,
+  value: m.score ?? 0,
+  valueHuman: (m.score ?? 0).toFixed(1) + ' pts',
+  url: `https://artificialanalysis.ai/models/${m.slug || m.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
+}));
+const orBars = orTop10.map((m) => ({
+  rank: m.rank,
+  name: m.name,
+  value: Number(m.total_tokens ?? 0),
+  valueHuman: '🪙 ' + (m.total_tokens_human ?? '0'),
+  url: m.url,
+}));
 ---
 
 <Base locale={locale} dict={dict}>
@@ -31,16 +60,20 @@ const lastUpdated = manifest?.generated_at;
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
     <!-- GitHub widget -->
     <section class="lg:col-span-1">
-      <header class="mb-4 flex items-baseline justify-between">
-        <div>
-          <h2 class="text-xl font-semibold">{dict.home.sectionGithub}</h2>
-          <p class="text-sm" style="color: var(--text-muted);">{dict.home.sectionGithubDesc}</p>
-        </div>
+      <header class="mb-4">
+        <h2 class="text-xl font-semibold">{dict.home.sectionGithub}</h2>
+        <p class="text-sm" style="color: var(--text-muted);">{dict.home.sectionGithubDesc}</p>
       </header>
-      <div class="space-y-2">
-        {githubTop.length === 0 && <p class="text-sm" style="color: var(--text-muted);">{dict.common.none}</p>}
-        {githubTop.map((repo) => <RepoCard repo={repo} dict={dict} compact />)}
+      <div class="card p-4 mb-3">
+        <RankedBarChart items={ghBars} topN={10} color="#22c55e" />
       </div>
+      <details class="text-xs" style="color: var(--text-muted);">
+        <summary class="cursor-pointer hover:opacity-80">{dict.home.viewFullList}</summary>
+        <div class="space-y-2 mt-3">
+          {githubTop10.length === 0 && <p>{dict.common.none}</p>}
+          {githubTop10.map((repo) => <RepoCard repo={repo} dict={dict} compact />)}
+        </div>
+      </details>
       <a href={(locale === 'es' ? '' : '/en') + '/github/'} class="btn-tab mt-4 inline-block">
         {dict.home.openGithub} →
       </a>
@@ -55,10 +88,16 @@ const lastUpdated = manifest?.generated_at;
           {aaData?.tier && <span class="badge ml-2">{aaData.tier.toUpperCase()}</span>}
         </p>
       </header>
-      <div class="space-y-2">
-        {modelsTop.length === 0 && <p class="text-sm" style="color: var(--text-muted);">{dict.common.none}</p>}
-        {modelsTop.map((m) => <ModelCard model={m} metric="by_intelligence" dict={dict} />)}
+      <div class="card p-4 mb-3">
+        <RankedBarChart items={modelsBars} topN={10} color="#7c3aed" />
       </div>
+      <details class="text-xs" style="color: var(--text-muted);">
+        <summary class="cursor-pointer hover:opacity-80">{dict.home.viewFullList}</summary>
+        <div class="space-y-2 mt-3">
+          {modelsTop10.length === 0 && <p>{dict.common.none}</p>}
+          {modelsTop10.map((m) => <ModelCard model={m} metric="by_intelligence" dict={dict} />)}
+        </div>
+      </details>
       <a href={(locale === 'es' ? '' : '/en') + '/models/'} class="btn-tab mt-4 inline-block">
         {dict.home.openModels} →
       </a>
@@ -70,22 +109,28 @@ const lastUpdated = manifest?.generated_at;
         <h2 class="text-xl font-semibold">{dict.home.sectionOpenRouter}</h2>
         <p class="text-sm" style="color: var(--text-muted);">{dict.home.sectionOpenRouterDesc}</p>
       </header>
-      <div class="space-y-2">
-        {orTop.length === 0 && <p class="text-sm" style="color: var(--text-muted);">{dict.common.none}</p>}
-        {orTop.map((m) => (
-          <a href={m.url} target="_blank" rel="noopener" class="card block p-3">
-            <div class="flex items-start gap-3">
-              <div class={`rank-badge ${m.rank === 1 ? 'gold' : m.rank === 2 ? 'silver' : m.rank === 3 ? 'bronze' : ''} shrink-0 text-sm`}>#{m.rank}</div>
-              <div class="flex-1 min-w-0">
-                <div class="flex items-baseline gap-2 flex-wrap">
-                  <span class="font-semibold text-sm truncate">{m.name}</span>
-                  <span class="text-xs" style="color: var(--text-muted);">🪙 {m.total_tokens_human}</span>
+      <div class="card p-4 mb-3">
+        <RankedBarChart items={orBars} topN={10} color="#3b82f6" />
+      </div>
+      <details class="text-xs" style="color: var(--text-muted);">
+        <summary class="cursor-pointer hover:opacity-80">{dict.home.viewFullList}</summary>
+        <div class="space-y-2 mt-3">
+          {orTop10.length === 0 && <p>{dict.common.none}</p>}
+          {orTop10.map((m) => (
+            <a href={m.url} target="_blank" rel="noopener" class="card block p-3">
+              <div class="flex items-start gap-3">
+                <div class={`rank-badge ${m.rank === 1 ? 'gold' : m.rank === 2 ? 'silver' : m.rank === 3 ? 'bronze' : ''} shrink-0 text-sm`}>#{m.rank}</div>
+                <div class="flex-1 min-w-0">
+                  <div class="flex items-baseline gap-2 flex-wrap">
+                    <span class="font-semibold text-sm truncate">{m.name}</span>
+                    <span class="text-xs" style="color: var(--text-muted);">🪙 {m.total_tokens_human}</span>
+                  </div>
                 </div>
               </div>
-            </div>
-          </a>
-        ))}
-      </div>
+            </a>
+          ))}
+        </div>
+      </details>
       <a href={(locale === 'es' ? '' : '/en') + '/openrouter/'} class="btn-tab mt-4 inline-block">
         {dict.home.openOpenRouter} →
       </a>
