@@ -16,11 +16,11 @@
   "home": {
     "intro": "Three rankings in one view. Data refreshed daily from official APIs.",
     "sectionCompare": "Compare Models",
-    "sectionGithub": "GitHub Top 20",
+    "sectionGithub": "GitHub Top",
     "sectionGithubDesc": "Top-starred repos by time window (1d / 7d / 30d / 90d / all-time).",
-    "sectionModels": "Top 20 AI Models",
+    "sectionModels": "Top AI Models",
     "sectionModelsDesc": "Rankings by intelligence, coding, math, speed, pricing (543 models on Artificial Analysis).",
-    "sectionOpenRouter": "TOP 20 Models · By token usage",
+    "sectionOpenRouter": "Top Models · By token usage",
     "sectionOpenRouterDesc": "OpenRouter models ranked by tokens consumed (selected window).",
     "openGithub": "Open GitHub rankings",
     "openModels": "Open models rankings",
@@ -86,8 +86,8 @@
       }
     },
     "sections": {
-      "models": "Top 20 Models",
-      "apps": "Top 20 Apps — Global Ranking"
+      "models": "Top Models",
+      "apps": "Top Apps — Global Ranking"
     }
   },
   "compare": {

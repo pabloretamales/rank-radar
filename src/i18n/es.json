@@ -16,11 +16,11 @@
   "home": {
     "intro": "Tres rankings en una sola vista. Datos actualizados diariamente desde las APIs oficiales.",
     "sectionCompare": "Comparar Modelos",
-    "sectionGithub": "Top 20 GitHub",
+    "sectionGithub": "Top GitHub",
     "sectionGithubDesc": "Repos con más estrellas por ventana de tiempo (1d / 7d / 30d / 90d / histórico).",
-    "sectionModels": "Top 20 Modelos IA",
+    "sectionModels": "Top Modelos IA",
     "sectionModelsDesc": "Los 3 índices principales de Artificial Analysis: Intelligence, Coding y Agentic.",
-    "sectionOpenRouter": "TOP 20 Modelos · Por uso de tokens",
+    "sectionOpenRouter": "Top Modelos · Por uso de tokens",
     "sectionOpenRouterDesc": "Modelos de OpenRouter rankeados por volumen de tokens consumidos (ventana seleccionada).",
     "openGithub": "Ver rankings GitHub",
     "openModels": "Ver rankings modelos",
@@ -86,8 +86,8 @@
       }
     },
     "sections": {
-      "models": "Top 20 Modelos",
-      "apps": "Top 20 Apps — Global Ranking"
+      "models": "Top Modelos",
+      "apps": "Top Apps — Global Ranking"
     }
   },
   "compare": {
