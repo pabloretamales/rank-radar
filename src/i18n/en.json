@@ -43,7 +43,9 @@
     "forks": "forks",
     "issues": "issues",
     "language": "Language",
-    "noResults": "No results for this window"
+    "noResults": "No results for this window",
+    "chartTitle": "Top repos by stars",
+    "chartUnit": "⭐"
   },
   "models": {
     "title": "Top AI Models",

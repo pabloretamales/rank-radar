@@ -2,6 +2,7 @@
 import Base from '@/layouts/Base.astro';
 import { getDict, detectLocaleFromUrl } from '@/i18n';
 import RepoCard from '@components/RepoCard.astro';
+import BarChart from '@components/BarChart.astro';
 import githubData from '../../public/data/github-windows.json';
 
 const locale = detectLocaleFromUrl(Astro.url);
@@ -12,6 +13,15 @@ const ALL = githubData?.windows ?? [];
 const windows = ALL.filter((w) => (w.items?.length ?? 0) > 0);
 const visibleLabels = windows.map((w) => w.label);
 const totalItems = windows.reduce((s, w) => s + (w.items?.length ?? 0), 0);
+
+// Chart: top 20 repos por stars en la ventana principal (la que tiene tabs por default)
+const defaultWindow = windows.find((w) => w.label === '7d') ?? windows[0];
+const chartItems = (defaultWindow?.items ?? []).slice(0, 20).map((r) => ({
+  label: r.full_name,
+  value: r.stargazers_count ?? 0,
+  sublabel: `${(r.stargazers_count ?? 0).toLocaleString()} ⭐ · ${r.language ?? '—'}`,
+  href: r.html_url,
+}));
 ---
 
 <Base locale={locale} dict={dict}>
@@ -21,6 +31,12 @@ const totalItems = windows.reduce((s, w) => s + (w.items?.length ?? 0), 0);
     <p class="text-xs mt-3 italic" style="color: var(--text-muted);">ℹ️ {dict.github.caveat}</p>
     <p class="text-xs mt-1" style="color: var(--text-muted);">{totalItems} repos · {windows.length} ventanas</p>
   </header>
+
+  <BarChart
+    title={dict.github.chartTitle?.replace('{window}', defaultWindow?.label ?? '')}
+    items={chartItems}
+    valueLabel={dict.github.chartUnit}
+  />
 
   <div class="flex flex-wrap gap-2 mb-6 border-b pb-3" style="border-color: var(--border);">
     {windows.length === 0 ? (

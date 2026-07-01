@@ -43,7 +43,9 @@
     "forks": "forks",
     "issues": "issues",
     "language": "Lenguaje",
-    "noResults": "Sin resultados en esta ventana"
+    "noResults": "Sin resultados en esta ventana",
+    "chartTitle": "Top repos por estrellas",
+    "chartUnit": "⭐"
   },
   "models": {
     "title": "Top modelos IA",
@@ -59,7 +61,9 @@
     "tokPerSec": "tok/s",
     "creator": "Creador",
     "release": "Lanzamiento",
-    "speed": "Velocidad"
+    "speed": "Velocidad",
+    "chartTitle": "Top Modelos IA — Intelligence Index",
+    "chartUnit": "score"
   },
   "openrouter": {
     "title": "Top OpenRouter — Apps y Modelos",
@@ -88,7 +92,10 @@
     "sections": {
       "models": "Top Modelos",
       "apps": "Top Apps — Global Ranking"
-    }
+    },
+    "chartModelsTitle": "Top Modelos — Por uso de tokens (Hoy)",
+    "chartAppsTitle": "Top Apps — Global Ranking (Hoy)",
+    "chartUnit": "tokens"
   },
   "compare": {
     "title": "Comparar modelos",

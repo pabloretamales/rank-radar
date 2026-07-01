@@ -2,6 +2,7 @@
 import Base from '@/layouts/Base.astro';
 import { getDict } from '@/i18n';
 import AppCard from '@components/AppCard.astro';
+import BarChart from '@components/BarChart.astro';
 import openrouterData from '../../../public/data/openrouter.json';
 
 const locale = 'en' as const;
@@ -23,6 +24,18 @@ function formatNum(n) {
   if (n >= 1e3) return (n / 1e3).toFixed(2) + 'K';
   return String(n);
 }
+
+const chartModels = (r.today ?? []).slice(0, 20).map((m) => ({
+  label: m.name,
+  value: m.total_tokens ?? 0,
+  sublabel: m.total_tokens_human,
+  href: m.url,
+}));
+const chartApps = (r.apps_today ?? []).slice(0, 20).map((a) => ({
+  label: a.app_name,
+  value: a.total_tokens ?? 0,
+  sublabel: a.total_tokens_human,
+}));
 ---
 
 <Base locale={locale} dict={dict}>
@@ -30,6 +43,13 @@ function formatNum(n) {
     <h1 class="text-3xl font-bold mb-2">{dict.openrouter.title}</h1>
     <p class="text-base max-w-3xl" style="color: var(--text-muted);">{dict.openrouter.subtitle}</p>
   </header>
+
+  <BarChart
+    title={dict.openrouter.chartModelsTitle}
+    items={chartModels}
+    formatValue={formatNum}
+    valueLabel={dict.openrouter.chartUnit}
+  />
 
   <!-- MODELS section -->
   <section class="mb-10">
@@ -85,6 +105,13 @@ function formatNum(n) {
       })}
     </div>
   </section>
+
+  <BarChart
+    title={dict.openrouter.chartAppsTitle}
+    items={chartApps}
+    formatValue={formatNum}
+    valueLabel={dict.openrouter.chartUnit}
+  />
 
   <!-- APPS section -->
   <section class="mb-10">

@@ -1,0 +1,76 @@
+---
+/**
+ * BarChart — horizontal bar chart for quick visual comparison.
+ * No external libs, pure CSS bars, responsive.
+ *
+ * Props:
+ *  - title?: string           (e.g. "Top 20 modelos por inteligencia")
+ *  - items: Array<{ label, value, sublabel?, href? }>
+ *  - valueLabel?: string      (e.g. "score", "tokens", "stars")
+ *  - max?: number             (defaults to max(items.value))
+ *  - formatValue?: (n: number) => string  (override default toLocaleString)
+ *  - limit?: number           (defaults to 20; max bars to show)
+ */
+export interface BarItem {
+  label: string;
+  value: number;
+  sublabel?: string;
+  href?: string;
+}
+
+export interface Props {
+  title?: string;
+  items: BarItem[];
+  valueLabel?: string;
+  max?: number;
+  formatValue?: (n: number) => string;
+  limit?: number;
+}
+
+const { title, items, valueLabel, max, formatValue, limit = 20 } = Astro.props;
+const list = (items ?? []).slice(0, limit);
+const maxVal = max ?? Math.max(...list.map((i) => i.value), 1);
+const fmt = formatValue ?? ((n: number) => n.toLocaleString());
+---
+
+<section class="card p-4 mb-6">
+  {title && (
+    <h3 class="text-base font-semibold mb-3 flex items-center gap-2">
+      <span>{title}</span>
+      <span class="text-xs opacity-50 font-normal">({list.length})</span>
+    </h3>
+  )}
+  {list.length === 0 ? (
+    <p class="text-sm opacity-60">—</p>
+  ) : (
+    <ol class="space-y-1.5">
+      {list.map((it, idx) => {
+        const pct = Math.max(2, Math.min(100, (it.value / maxVal) * 100));
+        return (
+          <li class="flex items-center gap-3 text-sm">
+            <span class="w-7 text-right tabular-nums opacity-50 shrink-0 font-mono text-xs">#{idx + 1}</span>
+            <div class="flex-1 min-w-0">
+              <div class="flex items-baseline justify-between gap-2 mb-1">
+                {it.href ? (
+                  <a href={it.href} target="_blank" rel="noopener" class="truncate font-medium hover:underline">{it.label}</a>
+                ) : (
+                  <span class="truncate font-medium">{it.label}</span>
+                )}
+                <span class="tabular-nums text-xs font-semibold opacity-90 whitespace-nowrap">
+                  {fmt(it.value)}{valueLabel ? <span class="opacity-60 font-normal ml-1">{valueLabel}</span> : null}
+                </span>
+              </div>
+              <div class="h-2 rounded-full overflow-hidden" style="background: var(--bg-bar-track);">
+                <div
+                  class="h-full rounded-full transition-all"
+                  style={`width: ${pct}%; background: linear-gradient(90deg, var(--accent), color-mix(in srgb, var(--accent) 70%, white));`}
+                ></div>
+              </div>
+              {it.sublabel && <p class="text-xs opacity-60 truncate mt-0.5">{it.sublabel}</p>}
+            </div>
+          </li>
+        );
+      })}
+    </ol>
+  )}
+</section>

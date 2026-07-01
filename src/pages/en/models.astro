@@ -2,6 +2,7 @@
 import Base from '@/layouts/Base.astro';
 import { getDict } from '@/i18n';
 import ModelCard from '@components/ModelCard.astro';
+import BarChart from '@components/BarChart.astro';
 import aaData from '../../../public/data/aa-models.json';
 
 const locale = 'en' as const;
@@ -10,6 +11,12 @@ const dict = getDict(locale);
 const METRICS = ['by_intelligence', 'by_coding', 'by_agentic'];
 const tier = aaData?.tier ?? 'free';
 const total = aaData?.total_models ?? 0;
+
+const chartItems = (aaData?.rankings?.by_intelligence ?? []).slice(0, 20).map((m) => ({
+  label: m.name,
+  value: m.score,
+  sublabel: m.creator,
+}));
 ---
 
 <Base locale={locale} dict={dict}>
@@ -20,6 +27,12 @@ const total = aaData?.total_models ?? 0;
       {total} models · AA tier <span class="badge ml-1">{tier.toUpperCase()}</span>
     </p>
   </header>
+
+  <BarChart
+    title={dict.models.chartTitle}
+    items={chartItems}
+    valueLabel={dict.models.chartUnit}
+  />
 
   <div class="flex flex-wrap gap-2 mb-6 border-b pb-3 overflow-x-auto" style="border-color: var(--border);">
     {METRICS.map((m, i) => (
