@@ -14,14 +14,18 @@ const windows = ALL.filter((w) => (w.items?.length ?? 0) > 0);
 const visibleLabels = windows.map((w) => w.label);
 const totalItems = windows.reduce((s, w) => s + (w.items?.length ?? 0), 0);
 
-// Chart: top 20 repos por stars en la ventana principal (la que tiene tabs por default)
-const defaultWindow = windows.find((w) => w.label === '7d') ?? windows[0];
-const chartItems = (defaultWindow?.items ?? []).slice(0, 20).map((r) => ({
-  label: r.full_name,
-  value: r.stargazers_count ?? 0,
-  sublabel: `${(r.stargazers_count ?? 0).toLocaleString()} ⭐ · ${r.language ?? '—'}`,
-  href: r.html_url,
-}));
+// Charts: uno por ventana, sincronizado con tabs vía data-panel={w.label}
+const chartsByWindow = Object.fromEntries(
+  windows.map((w) => [
+    w.label,
+    (w.items ?? []).slice(0, 20).map((repo) => ({
+      label: repo.full_name,
+      value: repo.stargazers_count ?? 0,
+      sublabel: `${(repo.stargazers_count ?? 0).toLocaleString()} ⭐ · ${repo.language ?? '—'}`,
+      href: repo.html_url,
+    })),
+  ])
+);
 ---
 
 <Base locale={locale} dict={dict}>
@@ -32,11 +36,15 @@ const chartItems = (defaultWindow?.items ?? []).slice(0, 20).map((r) => ({
     <p class="text-xs mt-1" style="color: var(--text-muted);">{totalItems} repos · {windows.length} ventanas</p>
   </header>
 
-  <BarChart
-    title={dict.github.chartTitle?.replace('{window}', defaultWindow?.label ?? '')}
-    items={chartItems}
-    valueLabel={dict.github.chartUnit}
-  />
+  {windows.map((w, i) => (
+    <BarChart
+      title={dict.github.chartTitle?.replace('{window}', dict.github.windows[w.label] ?? w.label)}
+      items={chartsByWindow[w.label]}
+      valueLabel={dict.github.chartUnit}
+      panelId={w.label}
+      class={i === 0 ? '' : 'hidden'}
+    />
+  ))}
 
   <div class="flex flex-wrap gap-2 mb-6 border-b pb-3" style="border-color: var(--border);">
     {windows.length === 0 ? (

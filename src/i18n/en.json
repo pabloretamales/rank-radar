@@ -90,7 +90,10 @@
     "sections": {
       "models": "Top Models",
       "apps": "Top Apps — Global Ranking"
-    }
+    },
+    "chartModelsTitle": "Top Models — By token usage ({period})",
+    "chartAppsTitle": "Top Apps — Global Ranking ({period})",
+    "chartUnit": "tokens"
   },
   "compare": {
     "title": "Compare models",

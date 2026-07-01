@@ -13,12 +13,17 @@ const METRICS = ['by_intelligence', 'by_coding', 'by_agentic'];
 const tier = aaData?.tier ?? 'free';
 const total = aaData?.total_models ?? 0;
 
-// Chart: top 20 por intelligence (métrica principal visible por default)
-const chartItems = (aaData?.rankings?.by_intelligence ?? []).slice(0, 20).map((m) => ({
-  label: m.name,
-  value: m.score,
-  sublabel: m.creator,
-}));
+// Charts: uno por métrica, sincronizado con las tabs existentes vía data-panel
+const chartsByMetric = Object.fromEntries(
+  METRICS.map((m) => [
+    m,
+    (aaData?.rankings?.[m] ?? []).slice(0, 20).map((model) => ({
+      label: model.name,
+      value: model.score,
+      sublabel: model.creator,
+    })),
+  ])
+);
 ---
 
 <Base locale={locale} dict={dict}>
@@ -30,11 +35,15 @@ const chartItems = (aaData?.rankings?.by_intelligence ?? []).slice(0, 20).map((m
     </p>
   </header>
 
-  <BarChart
-    title={dict.models.chartTitle}
-    items={chartItems}
-    valueLabel={dict.models.chartUnit}
-  />
+  {METRICS.map((m, i) => (
+    <BarChart
+      title={dict.models.chartTitle?.replace('{metric}', dict.models.metrics[m] ?? m)}
+      items={chartsByMetric[m]}
+      valueLabel={dict.models.chartUnit}
+      panelId={m}
+      class={i === 0 ? '' : 'hidden'}
+    />
+  ))}
 
   <div class="flex flex-wrap gap-2 mb-6 border-b pb-3 overflow-x-auto" style="border-color: var(--border);">
     {METRICS.map((m, i) => (

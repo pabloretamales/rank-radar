@@ -25,15 +25,19 @@ export interface Props {
   max?: number;
   formatValue?: (n: number) => string;
   limit?: number;
+  /** If set, root <section> gets data-panel={panelId} so existing tab scripts toggle visibility. */
+  panelId?: string;
+  /** Extra class for the root <section> (e.g. 'hidden' to start hidden). */
+  class?: string;
 }
 
-const { title, items, valueLabel, max, formatValue, limit = 20 } = Astro.props;
+const { title, items, valueLabel, max, formatValue, limit = 20, panelId, class: extraClass } = Astro.props;
 const list = (items ?? []).slice(0, limit);
 const maxVal = max ?? Math.max(...list.map((i) => i.value), 1);
 const fmt = formatValue ?? ((n: number) => n.toLocaleString());
 ---
 
-<section class="card p-4 mb-6">
+<section class={`card p-4 mb-6 ${extraClass ?? ''}`} {...(panelId ? { 'data-panel': panelId } : {})} >
   {title && (
     <h3 class="text-base font-semibold mb-3 flex items-center gap-2">
       <span>{title}</span>

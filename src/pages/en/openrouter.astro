@@ -25,17 +25,27 @@ function formatNum(n) {
   return String(n);
 }
 
-const chartModels = (r.today ?? []).slice(0, 20).map((m) => ({
-  label: m.name,
-  value: m.total_tokens ?? 0,
-  sublabel: m.total_tokens_human,
-  href: m.url,
-}));
-const chartApps = (r.apps_today ?? []).slice(0, 20).map((a) => ({
-  label: a.app_name,
-  value: a.total_tokens ?? 0,
-  sublabel: a.total_tokens_human,
-}));
+const chartsByModel = Object.fromEntries(
+  MODEL_TABS.map((rk) => [
+    rk,
+    (r[rk] ?? []).slice(0, 20).map((m) => ({
+      label: m.name,
+      value: m.total_tokens ?? 0,
+      sublabel: m.total_tokens_human,
+      href: m.url,
+    })),
+  ])
+);
+const chartsByApp = Object.fromEntries(
+  APP_TABS.map((rk) => [
+    rk,
+    (r[rk] ?? []).slice(0, 20).map((a) => ({
+      label: a.app_name,
+      value: a.total_tokens ?? 0,
+      sublabel: a.total_tokens_human,
+    })),
+  ])
+);
 ---
 
 <Base locale={locale} dict={dict}>
@@ -44,12 +54,16 @@ const chartApps = (r.apps_today ?? []).slice(0, 20).map((a) => ({
     <p class="text-base max-w-3xl" style="color: var(--text-muted);">{dict.openrouter.subtitle}</p>
   </header>
 
-  <BarChart
-    title={dict.openrouter.chartModelsTitle}
-    items={chartModels}
-    formatValue={formatNum}
-    valueLabel={dict.openrouter.chartUnit}
-  />
+  {MODEL_TABS.map((rk, i) => (
+    <BarChart
+      title={dict.openrouter.chartModelsTitle?.replace('{period}', dict.openrouter.rankings[rk] ?? rk)}
+      items={chartsByModel[rk]}
+      formatValue={formatNum}
+      valueLabel={dict.openrouter.chartUnit}
+      panelId={`models-${rk}`}
+      class={i === 0 ? '' : 'hidden'}
+    />
+  ))}
 
   <!-- MODELS section -->
   <section class="mb-10">
@@ -106,12 +120,16 @@ const chartApps = (r.apps_today ?? []).slice(0, 20).map((a) => ({
     </div>
   </section>
 
-  <BarChart
-    title={dict.openrouter.chartAppsTitle}
-    items={chartApps}
-    formatValue={formatNum}
-    valueLabel={dict.openrouter.chartUnit}
-  />
+  {APP_TABS.map((rk, i) => (
+    <BarChart
+      title={dict.openrouter.chartAppsTitle?.replace('{period}', dict.openrouter.rankings[rk] ?? rk)}
+      items={chartsByApp[rk]}
+      formatValue={formatNum}
+      valueLabel={dict.openrouter.chartUnit}
+      panelId={`apps-${rk}`}
+      class={i === 0 ? '' : 'hidden'}
+    />
+  ))}
 
   <!-- APPS section -->
   <section class="mb-10">

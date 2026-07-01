@@ -44,7 +44,7 @@
     "issues": "issues",
     "language": "Lenguaje",
     "noResults": "Sin resultados en esta ventana",
-    "chartTitle": "Top repos por estrellas",
+    "chartTitle": "Top repos por estrellas — {window}",
     "chartUnit": "⭐"
   },
   "models": {
@@ -62,7 +62,7 @@
     "creator": "Creador",
     "release": "Lanzamiento",
     "speed": "Velocidad",
-    "chartTitle": "Top Modelos IA — Intelligence Index",
+    "chartTitle": "Top Modelos IA — {metric}",
     "chartUnit": "score"
   },
   "openrouter": {
@@ -93,8 +93,8 @@
       "models": "Top Modelos",
       "apps": "Top Apps — Global Ranking"
     },
-    "chartModelsTitle": "Top Modelos — Por uso de tokens (Hoy)",
-    "chartAppsTitle": "Top Apps — Global Ranking (Hoy)",
+    "chartModelsTitle": "Top Modelos — Por uso de tokens ({period})",
+    "chartAppsTitle": "Top Apps — Global Ranking ({period})",
     "chartUnit": "tokens"
   },
   "compare": {
