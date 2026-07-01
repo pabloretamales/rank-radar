@@ -35,6 +35,14 @@ const chartsByMetric = Object.fromEntries(
     </p>
   </header>
 
+  <div class="flex flex-wrap gap-2 mb-6 border-b pb-3 overflow-x-auto" style="border-color: var(--border);">
+    {METRICS.map((m, i) => (
+      <button data-metric={m} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
+        {dict.models.metrics[m] ?? m}
+      </button>
+    ))}
+  </div>
+
   {METRICS.map((m, i) => (
     <BarChart
       title={dict.models.chartTitle?.replace('{metric}', dict.models.metrics[m] ?? m)}
@@ -44,14 +52,6 @@ const chartsByMetric = Object.fromEntries(
       class={i === 0 ? '' : 'hidden'}
     />
   ))}
-
-  <div class="flex flex-wrap gap-2 mb-6 border-b pb-3 overflow-x-auto" style="border-color: var(--border);">
-    {METRICS.map((m, i) => (
-      <button data-metric={m} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
-        {dict.models.metrics[m] ?? m}
-      </button>
-    ))}
-  </div>
 
   <div id="models-panels">
     {METRICS.map((m, i) => {

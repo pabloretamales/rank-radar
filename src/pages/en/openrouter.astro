@@ -54,6 +54,14 @@ const chartsByApp = Object.fromEntries(
     <p class="text-base max-w-3xl" style="color: var(--text-muted);">{dict.openrouter.subtitle}</p>
   </header>
 
+  <div class="flex flex-wrap gap-2 mb-4 border-b pb-3" style="border-color: var(--border);">
+    {MODEL_TABS.map((rk, i) => (
+      <button data-section="models" data-ranking={rk} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
+        {dict.openrouter.rankings[rk] ?? rk}
+      </button>
+    ))}
+  </div>
+
   {MODEL_TABS.map((rk, i) => (
     <BarChart
       title={dict.openrouter.chartModelsTitle?.replace('{period}', dict.openrouter.rankings[rk] ?? rk)}
@@ -68,13 +76,6 @@ const chartsByApp = Object.fromEntries(
   <!-- MODELS section -->
   <section class="mb-10">
     <h2 class="text-xl font-bold mb-3">{dict.openrouter.sections.models}</h2>
-    <div class="flex flex-wrap gap-2 mb-4 border-b pb-3" style="border-color: var(--border);">
-      {MODEL_TABS.map((rk, i) => (
-        <button data-section="models" data-ranking={rk} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
-          {dict.openrouter.rankings[rk] ?? rk}
-        </button>
-      ))}
-    </div>
     <div data-section-panels="models">
       {MODEL_TABS.map((rk, i) => {
         const items = r[rk] ?? [];
@@ -120,6 +121,14 @@ const chartsByApp = Object.fromEntries(
     </div>
   </section>
 
+  <div class="flex flex-wrap gap-2 mb-4 border-b pb-3" style="border-color: var(--border);">
+    {APP_TABS.map((rk, i) => (
+      <button data-section="apps" data-ranking={rk} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
+        {dict.openrouter.rankings[rk] ?? rk}
+      </button>
+    ))}
+  </div>
+
   {APP_TABS.map((rk, i) => (
     <BarChart
       title={dict.openrouter.chartAppsTitle?.replace('{period}', dict.openrouter.rankings[rk] ?? rk)}
@@ -134,13 +143,6 @@ const chartsByApp = Object.fromEntries(
   <!-- APPS section -->
   <section class="mb-10">
     <h2 class="text-xl font-bold mb-3">{dict.openrouter.sections.apps}</h2>
-    <div class="flex flex-wrap gap-2 mb-4 border-b pb-3" style="border-color: var(--border);">
-      {APP_TABS.map((rk, i) => (
-        <button data-section="apps" data-ranking={rk} class={`btn-tab ${i === 0 ? 'active' : ''}`}>
-          {dict.openrouter.rankings[rk] ?? rk}
-        </button>
-      ))}
-    </div>
     <div data-section-panels="apps">
       {APP_TABS.map((rk, i) => {
         const items = r[rk] ?? [];

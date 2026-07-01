@@ -33,16 +33,6 @@ const chartsByWindow = Object.fromEntries(
     <p class="text-xs mt-1" style="color: var(--text-muted);">{totalItems} repos · {windows.length} windows</p>
   </header>
 
-  {windows.map((w, i) => (
-    <BarChart
-      title={dict.github.chartTitle?.replace('{window}', dict.github.windows[w.label] ?? w.label)}
-      items={chartsByWindow[w.label]}
-      valueLabel={dict.github.chartUnit}
-      panelId={w.label}
-      class={i === 0 ? '' : 'hidden'}
-    />
-  ))}
-
   <div class="flex flex-wrap gap-2 mb-6 border-b pb-3" style="border-color: var(--border);">
     {windows.length === 0 ? (
       <p class="text-sm" style="color: var(--text-muted);">{dict.github.noResults}</p>
@@ -53,6 +43,16 @@ const chartsByWindow = Object.fromEntries(
       </button>
     ))}
   </div>
+
+  {windows.map((w, i) => (
+    <BarChart
+      title={dict.github.chartTitle?.replace('{window}', dict.github.windows[w.label] ?? w.label)}
+      items={chartsByWindow[w.label]}
+      valueLabel={dict.github.chartUnit}
+      panelId={w.label}
+      class={i === 0 ? '' : 'hidden'}
+    />
+  ))}
 
   <div id="github-panels">
     {windows.length === 0 ? null : windows.map((w, i) => (
