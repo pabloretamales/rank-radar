@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-01T12:05:56.773Z",
+  "fetched_at": "2026-07-01T19:00:21.848Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-01T12:05:48.752Z",
+    "as_of": "2026-07-01T19:00:18.140Z",
     "version": "v1",
     "start_date": "2026-06-01",
     "end_date": "2026-06-30"
   },
   "rankings_meta": {
-    "as_of": "2026-07-01T12:05:50.441Z",
+    "as_of": "2026-07-01T19:00:19.411Z",
     "version": "v1",
     "start_date": "2026-06-30",
     "end_date": "2026-06-30"
@@ -773,35 +773,13 @@
         "n_outputs": 1,
         "created_ts": 1781029944,
         "created_human": "2026-06-09",
-        "pricing_prompt": 0.00001,
-        "pricing_completion": 0.00005,
+        "pricing_prompt": -1,
+        "pricing_completion": -1,
         "score": 1781029944,
         "url": "https://openrouter.ai/models/~anthropic/claude-fable-latest"
       },
       {
         "rank": 11,
-        "id": "anthropic/claude-fable-5",
-        "slug": "anthropic/claude-5-fable-20260609",
-        "name": "Anthropic: Claude Fable 5",
-        "description": "Claude Fable 5 is a Mythos-class model from Anthropic, built for autonomous knowledge work and coding. It supports text, image, and file inputs with text output, with reasoning support and...",
-        "context_length": 1000000,
-        "modalities": [
-          "text",
-          "image",
-          "file",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1781007515,
-        "created_human": "2026-06-09",
-        "pricing_prompt": 0.00001,
-        "pricing_completion": 0.00005,
-        "score": 1781007515,
-        "url": "https://openrouter.ai/models/anthropic/claude-5-fable-20260609"
-      },
-      {
-        "rank": 12,
         "id": "nex-agi/nex-n2-pro",
         "slug": "nex-agi/nex-n2-pro",
         "name": "Nex AGI: Nex-N2-Pro",
@@ -822,7 +800,7 @@
         "url": "https://huggingface.co/nex-agi/Nex-N2-Pro"
       },
       {
-        "rank": 13,
+        "rank": 12,
         "id": "nvidia/nemotron-3.5-content-safety:free",
         "slug": "nvidia/nemotron-3.5-content-safety-20260604",
         "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
@@ -843,7 +821,7 @@
         "url": "https://huggingface.co/nvidia/Nemotron-3.5-Content-Safety"
       },
       {
-        "rank": 14,
+        "rank": 13,
         "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
         "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
@@ -863,7 +841,7 @@
         "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
       },
       {
-        "rank": 15,
+        "rank": 14,
         "id": "nvidia/nemotron-3-ultra-550b-a55b",
         "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
         "name": "NVIDIA: Nemotron 3 Ultra",
@@ -883,7 +861,7 @@
         "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
       },
       {
-        "rank": 16,
+        "rank": 15,
         "id": "qwen/qwen3.7-plus",
         "slug": "qwen/qwen3.7-plus-20260602",
         "name": "Qwen: Qwen3.7 Plus",
@@ -904,7 +882,7 @@
         "url": "https://openrouter.ai/models/qwen/qwen3.7-plus-20260602"
       },
       {
-        "rank": 17,
+        "rank": 16,
         "id": "minimax/minimax-m3",
         "slug": "minimax/minimax-m3-20260531",
         "name": "MiniMax: MiniMax M3",
@@ -926,7 +904,7 @@
         "url": "https://huggingface.co/MiniMaxAI/Minimax-M3"
       },
       {
-        "rank": 18,
+        "rank": 17,
         "id": "stepfun/step-3.7-flash",
         "slug": "stepfun/step-3.7-flash-20260528",
         "name": "StepFun: Step 3.7 Flash",
@@ -948,7 +926,7 @@
         "url": "https://huggingface.co/stepfun-ai/Step-3.7-Flash"
       },
       {
-        "rank": 19,
+        "rank": 18,
         "id": "anthropic/claude-opus-4.8-fast",
         "slug": "anthropic/claude-4.8-opus-fast-20260528",
         "name": "Anthropic: Claude Opus 4.8 (Fast)",
@@ -970,7 +948,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-4.8-opus-fast-20260528"
       },
       {
-        "rank": 20,
+        "rank": 19,
         "id": "anthropic/claude-opus-4.8",
         "slug": "anthropic/claude-4.8-opus-20260528",
         "name": "Anthropic: Claude Opus 4.8",
@@ -990,6 +968,26 @@
         "pricing_completion": 0.000025,
         "score": 1779905091,
         "url": "https://openrouter.ai/models/anthropic/claude-4.8-opus-20260528"
+      },
+      {
+        "rank": 20,
+        "id": "qwen/qwen3.7-max",
+        "slug": "qwen/qwen3.7-max-20260520",
+        "name": "Qwen: Qwen3.7 Max",
+        "description": "Qwen3.7-Max is the flagship model in Alibaba's Qwen3.7 series. It supports text input and output and is designed for agent-centric workloads, with particular strengths in coding, office and productivity tasks,...",
+        "context_length": 1000000,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1779376861,
+        "created_human": "2026-05-21",
+        "pricing_prompt": 0.00000125,
+        "pricing_completion": 0.00000375,
+        "score": 1779376861,
+        "url": "https://openrouter.ai/models/qwen/qwen3.7-max-20260520"
       }
     ],
     "today": [
@@ -2190,7 +2188,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-01T12:05:50.441Z",
+      "as_of": "2026-07-01T19:00:19.411Z",
       "version": "v1",
       "start_date": "2026-06-30",
       "end_date": "2026-06-30"
@@ -2198,25 +2196,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-01T12:05:45.717Z",
+      "as_of": "2026-07-01T19:00:14.880Z",
       "version": "v1",
       "start_date": "2026-06-30",
       "end_date": "2026-06-30"
     },
     "week": {
-      "as_of": "2026-07-01T12:05:47.287Z",
+      "as_of": "2026-07-01T19:00:16.198Z",
       "version": "v1",
       "start_date": "2026-06-24",
       "end_date": "2026-06-30"
     },
     "month": {
-      "as_of": "2026-07-01T12:05:48.752Z",
+      "as_of": "2026-07-01T19:00:18.140Z",
       "version": "v1",
       "start_date": "2026-06-01",
       "end_date": "2026-06-30"
     }
   },
-  "models_total": 338,
+  "models_total": 337,
   "catalog": [
     {
       "id": "anthropic/claude-sonnet-5",
@@ -2385,28 +2383,10 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.00001,
-      "pricing_completion": 0.00005,
+      "pricing_prompt": -1,
+      "pricing_completion": -1,
       "created_human": "2026-06-09",
       "url": "https://openrouter.ai/models/~anthropic/claude-fable-latest"
-    },
-    {
-      "id": "anthropic/claude-fable-5",
-      "canonical_slug": "anthropic/claude-5-fable-20260609",
-      "name": "Anthropic: Claude Fable 5",
-      "context_length": 1000000,
-      "modalities": [
-        "text",
-        "image",
-        "file",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 0.00001,
-      "pricing_completion": 0.00005,
-      "created_human": "2026-06-09",
-      "url": "https://openrouter.ai/models/anthropic/claude-5-fable-20260609"
     },
     {
       "id": "nex-agi/nex-n2-pro",
@@ -3121,8 +3101,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 9.8e-8,
-      "pricing_completion": 1.96e-7,
+      "pricing_prompt": 9e-8,
+      "pricing_completion": 1.8e-7,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
@@ -4366,8 +4346,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 2.9e-7,
-      "pricing_completion": 9.5e-7,
+      "pricing_prompt": 3e-7,
+      "pricing_completion": 0.0000012,
       "created_human": "2025-12-23",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.1"
     },
@@ -4949,7 +4929,7 @@
       "n_inputs": 1,
       "n_outputs": 1,
       "pricing_prompt": 2.55e-7,
-      "pricing_completion": 0.000001,
+      "pricing_completion": 0.00000102,
       "created_human": "2025-10-23",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2"
     },
@@ -5538,8 +5518,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8e-8,
-      "pricing_completion": 4e-7,
+      "pricing_prompt": 1.3e-7,
+      "pricing_completion": 0.00000156,
       "created_human": "2025-08-28",
       "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507"
     },
@@ -6383,8 +6363,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 5e-8,
-      "pricing_completion": 4e-7,
+      "pricing_prompt": 1.17e-7,
+      "pricing_completion": 4.55e-7,
       "created_human": "2025-04-28",
       "url": "https://huggingface.co/Qwen/Qwen3-8B"
     },
@@ -6589,8 +6569,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 2e-7,
-      "pricing_completion": 7.7e-7,
+      "pricing_prompt": 2.4e-7,
+      "pricing_completion": 9e-7,
       "created_human": "2025-03-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3-0324"
     },
