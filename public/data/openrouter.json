@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-01T19:00:21.848Z",
+  "fetched_at": "2026-07-01T19:05:58.745Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-01T19:00:18.140Z",
+    "as_of": "2026-07-01T19:05:54.007Z",
     "version": "v1",
     "start_date": "2026-06-01",
     "end_date": "2026-06-30"
   },
   "rankings_meta": {
-    "as_of": "2026-07-01T19:00:19.411Z",
+    "as_of": "2026-07-01T19:05:55.257Z",
     "version": "v1",
     "start_date": "2026-06-30",
     "end_date": "2026-06-30"
@@ -2188,7 +2188,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-01T19:00:19.411Z",
+      "as_of": "2026-07-01T19:05:55.257Z",
       "version": "v1",
       "start_date": "2026-06-30",
       "end_date": "2026-06-30"
@@ -2196,19 +2196,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-01T19:00:14.880Z",
+      "as_of": "2026-07-01T19:05:51.796Z",
       "version": "v1",
       "start_date": "2026-06-30",
       "end_date": "2026-06-30"
     },
     "week": {
-      "as_of": "2026-07-01T19:00:16.198Z",
+      "as_of": "2026-07-01T19:05:52.773Z",
       "version": "v1",
       "start_date": "2026-06-24",
       "end_date": "2026-06-30"
     },
     "month": {
-      "as_of": "2026-07-01T19:00:18.140Z",
+      "as_of": "2026-07-01T19:05:54.007Z",
       "version": "v1",
       "start_date": "2026-06-01",
       "end_date": "2026-06-30"
