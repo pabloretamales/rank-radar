@@ -1,12 +1,12 @@
 {
-  "fetched_at": "2026-07-02T19:05:41.725Z",
+  "fetched_at": "2026-07-02T19:06:06.109Z",
   "source": "Artificial Analysis",
   "api": {
     "data": "https://artificialanalysis.ai/api/v2/data/llms/models",
     "indexes": "https://artificialanalysis.ai/api/v2/language/models/free"
   },
   "tier": "free",
-  "models_with_agentic": 99,
+  "models_with_agentic": 98,
   "total_models": 550,
   "rankings": {
     "by_intelligence": [
@@ -3887,7 +3887,6 @@
       "release_date": "2025-12-15",
       "intelligence": 17.3,
       "coding": 21,
-      "agentic": 1.8,
       "price_input": 0,
       "price_output": 0,
       "tokens_per_sec": 0,

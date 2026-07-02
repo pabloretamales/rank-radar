@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-02T19:05:39.654Z",
+  "fetched_at": "2026-07-02T19:06:01.712Z",
   "source": "GitHub Search API",
   "api": "https://api.github.com/search/repositories",
   "top_n": 20,
@@ -9,12 +9,12 @@
       "query": "created:>2026-07-02",
       "total_count": 0,
       "items": [],
-      "fetched_at": "2026-07-02T19:05:34.820Z"
+      "fetched_at": "2026-07-02T19:05:56.551Z"
     },
     {
       "label": "7d",
       "query": "created:>2026-06-25",
-      "total_count": 2128369,
+      "total_count": 2128436,
       "items": [
         {
           "rank": 1,
@@ -443,12 +443,12 @@
           "private": false
         }
       ],
-      "fetched_at": "2026-07-02T19:05:35.813Z"
+      "fetched_at": "2026-07-02T19:05:57.542Z"
     },
     {
       "label": "30d",
       "query": "created:>2026-06-02",
-      "total_count": 9377804,
+      "total_count": 9377868,
       "items": [
         {
           "rank": 1,
@@ -936,12 +936,12 @@
           "private": false
         }
       ],
-      "fetched_at": "2026-07-02T19:05:36.994Z"
+      "fetched_at": "2026-07-02T19:05:58.896Z"
     },
     {
       "label": "90d",
       "query": "created:>2026-04-03",
-      "total_count": 25898699,
+      "total_count": 25898754,
       "items": [
         {
           "rank": 1,
@@ -950,7 +950,7 @@
           "owner": "JuliusBrussee",
           "description": "🪨 why use many token when few token do trick — Claude Code skill that cuts 65% of tokens by talking like caveman",
           "html_url": "https://github.com/JuliusBrussee/caveman",
-          "stargazers_count": 80453,
+          "stargazers_count": 80454,
           "forks_count": 4511,
           "language": "JavaScript",
           "topics": [
@@ -967,10 +967,10 @@
           ],
           "created_at": "2026-04-04T10:03:00Z",
           "pushed_at": "2026-06-12T13:51:06Z",
-          "updated_at": "2026-07-02T19:05:13Z",
+          "updated_at": "2026-07-02T19:05:49Z",
           "license": "MIT",
           "open_issues_count": 355,
-          "watchers_count": 80453,
+          "watchers_count": 80454,
           "archived": false,
           "private": false
         },
@@ -1073,7 +1073,7 @@
           "owner": "santifer",
           "description": "AI-powered job search system built on Claude Code. 14 skill modes, Go dashboard, PDF generation, batch processing.",
           "html_url": "https://github.com/santifer/career-ops",
-          "stargazers_count": 57651,
+          "stargazers_count": 57652,
           "forks_count": 11369,
           "language": "JavaScript",
           "topics": [
@@ -1096,10 +1096,10 @@
           ],
           "created_at": "2026-04-04T18:21:18Z",
           "pushed_at": "2026-07-02T18:43:16Z",
-          "updated_at": "2026-07-02T19:01:44Z",
+          "updated_at": "2026-07-02T19:05:57Z",
           "license": "MIT",
           "open_issues_count": 109,
-          "watchers_count": 57651,
+          "watchers_count": 57652,
           "archived": false,
           "private": false
         },
@@ -1488,7 +1488,7 @@
           "private": false
         }
       ],
-      "fetched_at": "2026-07-02T19:05:38.282Z"
+      "fetched_at": "2026-07-02T19:06:00.412Z"
     },
     {
       "label": "all",
@@ -2089,7 +2089,7 @@
           "private": false
         }
       ],
-      "fetched_at": "2026-07-02T19:05:39.404Z"
+      "fetched_at": "2026-07-02T19:06:01.462Z"
     }
   ]
 }
