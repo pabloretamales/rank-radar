@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-02T12:00:29.114Z",
+  "fetched_at": "2026-07-02T19:05:50.316Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-02T12:00:25.123Z",
+    "as_of": "2026-07-02T19:05:45.357Z",
     "version": "v1",
     "start_date": "2026-06-02",
     "end_date": "2026-07-01"
   },
   "rankings_meta": {
-    "as_of": "2026-07-02T12:00:26.478Z",
+    "as_of": "2026-07-02T19:05:46.351Z",
     "version": "v1",
     "start_date": "2026-07-01",
     "end_date": "2026-07-01"
@@ -568,6 +568,46 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "poolside/laguna-xs-2.1:free",
+        "slug": "poolside/laguna-xs-2.1-20260625",
+        "name": "Poolside: Laguna XS 2.1 (free)",
+        "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
+        "context_length": 262144,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1783002429,
+        "created_human": "2026-07-02",
+        "pricing_prompt": 0,
+        "pricing_completion": 0,
+        "score": 1783002429,
+        "url": "https://huggingface.co/poolside/Laguna-XS-2.1"
+      },
+      {
+        "rank": 2,
+        "id": "poolside/laguna-xs-2.1",
+        "slug": "poolside/laguna-xs-2.1-20260625",
+        "name": "Poolside: Laguna XS 2.1",
+        "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
+        "context_length": 262144,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1783002429,
+        "created_human": "2026-07-02",
+        "pricing_prompt": 6e-8,
+        "pricing_completion": 1.2e-7,
+        "score": 1783002429,
+        "url": "https://huggingface.co/poolside/Laguna-XS-2.1"
+      },
+      {
+        "rank": 3,
         "id": "anthropic/claude-sonnet-5",
         "slug": "anthropic/claude-sonnet-5-20260630",
         "name": "Anthropic: Claude Sonnet 5",
@@ -589,7 +629,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-sonnet-5-20260630"
       },
       {
-        "rank": 2,
+        "rank": 4,
         "id": "google/gemini-3.1-flash-lite-image",
         "slug": "google/gemini-3.1-flash-lite-image-20260630",
         "name": "Google: Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
@@ -611,7 +651,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.1-flash-lite-image-20260630"
       },
       {
-        "rank": 3,
+        "rank": 5,
         "id": "sakana/fugu-ultra",
         "slug": "sakana/fugu-ultra-20260615",
         "name": "Sakana: Fugu Ultra",
@@ -632,7 +672,7 @@
         "url": "https://openrouter.ai/models/sakana/fugu-ultra-20260615"
       },
       {
-        "rank": 4,
+        "rank": 6,
         "id": "google/gemini-3.1-flash-image",
         "slug": "google/gemini-3.1-flash-image-20260528",
         "name": "Google: Nano Banana 2 (Gemini 3.1 Flash Image)",
@@ -654,7 +694,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.1-flash-image-20260528"
       },
       {
-        "rank": 5,
+        "rank": 7,
         "id": "google/gemini-3-pro-image",
         "slug": "google/gemini-3-pro-image-20260528",
         "name": "Google: Nano Banana Pro (Gemini 3 Pro Image)",
@@ -676,7 +716,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3-pro-image-20260528"
       },
       {
-        "rank": 6,
+        "rank": 8,
         "id": "cohere/north-mini-code:free",
         "slug": "cohere/north-mini-code-20260617",
         "name": "Cohere: North Mini Code (free)",
@@ -696,7 +736,7 @@
         "url": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0"
       },
       {
-        "rank": 7,
+        "rank": 9,
         "id": "z-ai/glm-5.2",
         "slug": "z-ai/glm-5.2-20260616",
         "name": "Z.ai: GLM 5.2",
@@ -716,7 +756,7 @@
         "url": "https://huggingface.co/zai-org/GLM-5.2"
       },
       {
-        "rank": 8,
+        "rank": 10,
         "id": "openrouter/fusion",
         "slug": "openrouter/fusion",
         "name": "OpenRouter: Fusion",
@@ -736,7 +776,7 @@
         "url": "https://openrouter.ai/models/openrouter/fusion"
       },
       {
-        "rank": 9,
+        "rank": 11,
         "id": "moonshotai/kimi-k2.7-code",
         "slug": "moonshotai/kimi-k2.7-code-20260612",
         "name": "MoonshotAI: Kimi K2.7 Code",
@@ -757,7 +797,7 @@
         "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code"
       },
       {
-        "rank": 10,
+        "rank": 12,
         "id": "~anthropic/claude-fable-latest",
         "slug": "~anthropic/claude-fable-latest",
         "name": "Anthropic: Claude Fable Latest",
@@ -779,7 +819,7 @@
         "url": "https://openrouter.ai/models/~anthropic/claude-fable-latest"
       },
       {
-        "rank": 11,
+        "rank": 13,
         "id": "anthropic/claude-fable-5",
         "slug": "anthropic/claude-5-fable-20260609",
         "name": "Anthropic: Claude Fable 5",
@@ -801,7 +841,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-5-fable-20260609"
       },
       {
-        "rank": 12,
+        "rank": 14,
         "id": "nex-agi/nex-n2-pro",
         "slug": "nex-agi/nex-n2-pro",
         "name": "Nex AGI: Nex-N2-Pro",
@@ -822,7 +862,7 @@
         "url": "https://huggingface.co/nex-agi/Nex-N2-Pro"
       },
       {
-        "rank": 13,
+        "rank": 15,
         "id": "nvidia/nemotron-3.5-content-safety:free",
         "slug": "nvidia/nemotron-3.5-content-safety-20260604",
         "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
@@ -843,7 +883,7 @@
         "url": "https://huggingface.co/nvidia/Nemotron-3.5-Content-Safety"
       },
       {
-        "rank": 14,
+        "rank": 16,
         "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
         "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
@@ -863,7 +903,7 @@
         "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
       },
       {
-        "rank": 15,
+        "rank": 17,
         "id": "nvidia/nemotron-3-ultra-550b-a55b",
         "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
         "name": "NVIDIA: Nemotron 3 Ultra",
@@ -883,7 +923,7 @@
         "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
       },
       {
-        "rank": 16,
+        "rank": 18,
         "id": "qwen/qwen3.7-plus",
         "slug": "qwen/qwen3.7-plus-20260602",
         "name": "Qwen: Qwen3.7 Plus",
@@ -904,7 +944,7 @@
         "url": "https://openrouter.ai/models/qwen/qwen3.7-plus-20260602"
       },
       {
-        "rank": 17,
+        "rank": 19,
         "id": "minimax/minimax-m3",
         "slug": "minimax/minimax-m3-20260531",
         "name": "MiniMax: MiniMax M3",
@@ -926,7 +966,7 @@
         "url": "https://huggingface.co/MiniMaxAI/Minimax-M3"
       },
       {
-        "rank": 18,
+        "rank": 20,
         "id": "stepfun/step-3.7-flash",
         "slug": "stepfun/step-3.7-flash-20260528",
         "name": "StepFun: Step 3.7 Flash",
@@ -946,50 +986,6 @@
         "pricing_completion": 0.00000115,
         "score": 1779985069,
         "url": "https://huggingface.co/stepfun-ai/Step-3.7-Flash"
-      },
-      {
-        "rank": 19,
-        "id": "anthropic/claude-opus-4.8-fast",
-        "slug": "anthropic/claude-4.8-opus-fast-20260528",
-        "name": "Anthropic: Claude Opus 4.8 (Fast)",
-        "description": "Fast-mode variant of [Opus 4.8](/anthropic/claude-opus-4.8) - identical capabilities with higher output speed at 2x pricing relative to regular Opus 4.8.\n\nLearn more in Anthropic's docs: https://platform.claude.com/docs/en/build-with-claude/fast-mode",
-        "context_length": 1000000,
-        "modalities": [
-          "text",
-          "image",
-          "file",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1779913703,
-        "created_human": "2026-05-27",
-        "pricing_prompt": 0.00001,
-        "pricing_completion": 0.00005,
-        "score": 1779913703,
-        "url": "https://openrouter.ai/models/anthropic/claude-4.8-opus-fast-20260528"
-      },
-      {
-        "rank": 20,
-        "id": "anthropic/claude-opus-4.8",
-        "slug": "anthropic/claude-4.8-opus-20260528",
-        "name": "Anthropic: Claude Opus 4.8",
-        "description": "Claude Opus 4.8 is Anthropic's most capable generally available model in the Opus family. It supports text, image, and file inputs with text output, with reasoning support and a 1M-token...",
-        "context_length": 1000000,
-        "modalities": [
-          "text",
-          "image",
-          "file",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1779905091,
-        "created_human": "2026-05-27",
-        "pricing_prompt": 0.000005,
-        "pricing_completion": 0.000025,
-        "score": 1779905091,
-        "url": "https://openrouter.ai/models/anthropic/claude-4.8-opus-20260528"
       }
     ],
     "today": [
@@ -2173,7 +2169,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-02T12:00:26.478Z",
+      "as_of": "2026-07-02T19:05:46.351Z",
       "version": "v1",
       "start_date": "2026-07-01",
       "end_date": "2026-07-01"
@@ -2181,26 +2177,58 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-02T12:00:23.044Z",
+      "as_of": "2026-07-02T19:05:42.643Z",
       "version": "v1",
       "start_date": "2026-07-01",
       "end_date": "2026-07-01"
     },
     "week": {
-      "as_of": "2026-07-02T12:00:24.140Z",
+      "as_of": "2026-07-02T19:05:43.971Z",
       "version": "v1",
       "start_date": "2026-06-25",
       "end_date": "2026-07-01"
     },
     "month": {
-      "as_of": "2026-07-02T12:00:25.123Z",
+      "as_of": "2026-07-02T19:05:45.357Z",
       "version": "v1",
       "start_date": "2026-06-02",
       "end_date": "2026-07-01"
     }
   },
-  "models_total": 338,
+  "models_total": 340,
   "catalog": [
+    {
+      "id": "poolside/laguna-xs-2.1:free",
+      "canonical_slug": "poolside/laguna-xs-2.1-20260625",
+      "name": "Poolside: Laguna XS 2.1 (free)",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
+      "created_human": "2026-07-02",
+      "url": "https://huggingface.co/poolside/Laguna-XS-2.1"
+    },
+    {
+      "id": "poolside/laguna-xs-2.1",
+      "canonical_slug": "poolside/laguna-xs-2.1-20260625",
+      "name": "Poolside: Laguna XS 2.1",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 6e-8,
+      "pricing_completion": 1.2e-7,
+      "created_human": "2026-07-02",
+      "url": "https://huggingface.co/poolside/Laguna-XS-2.1"
+    },
     {
       "id": "anthropic/claude-sonnet-5",
       "canonical_slug": "anthropic/claude-sonnet-5-20260630",
@@ -2892,8 +2920,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 5.5e-7,
-      "pricing_completion": 0.0000032,
+      "pricing_prompt": 6.6e-7,
+      "pricing_completion": 0.00000341,
       "created_human": "2026-04-27",
       "url": "https://openrouter.ai/models/~moonshotai/kimi-latest"
     },
@@ -3257,8 +3285,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 5.5e-7,
-      "pricing_completion": 0.0000032,
+      "pricing_prompt": 6.6e-7,
+      "pricing_completion": 0.00000341,
       "created_human": "2026-04-20",
       "url": "https://huggingface.co/moonshotai/Kimi-K2.6"
     },
@@ -7287,22 +7315,6 @@
       "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
     },
     {
-      "id": "inflection/inflection-3-pi",
-      "canonical_slug": "inflection/inflection-3-pi",
-      "name": "Inflection: Inflection 3 Pi",
-      "context_length": 8000,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 0.0000025,
-      "pricing_completion": 0.00001,
-      "created_human": "2024-10-11",
-      "url": "https://openrouter.ai/models/inflection/inflection-3-pi"
-    },
-    {
       "id": "inflection/inflection-3-productivity",
       "canonical_slug": "inflection/inflection-3-productivity",
       "name": "Inflection: Inflection 3 Productivity",
@@ -7319,6 +7331,22 @@
       "url": "https://openrouter.ai/models/inflection/inflection-3-productivity"
     },
     {
+      "id": "inflection/inflection-3-pi",
+      "canonical_slug": "inflection/inflection-3-pi",
+      "name": "Inflection: Inflection 3 Pi",
+      "context_length": 8000,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 0.0000025,
+      "pricing_completion": 0.00001,
+      "created_human": "2024-10-11",
+      "url": "https://openrouter.ai/models/inflection/inflection-3-pi"
+    },
+    {
       "id": "thedrummer/rocinante-12b",
       "canonical_slug": "thedrummer/rocinante-12b",
       "name": "TheDrummer: Rocinante 12B",
@@ -7333,6 +7361,38 @@
       "pricing_completion": 5e-7,
       "created_human": "2024-09-30",
       "url": "https://huggingface.co/TheDrummer/Rocinante-12B-v1.1"
+    },
+    {
+      "id": "meta-llama/llama-3.2-3b-instruct:free",
+      "canonical_slug": "meta-llama/llama-3.2-3b-instruct",
+      "name": "Meta: Llama 3.2 3B Instruct (free)",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
+      "created_human": "2024-09-25",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct"
+    },
+    {
+      "id": "meta-llama/llama-3.2-3b-instruct",
+      "canonical_slug": "meta-llama/llama-3.2-3b-instruct",
+      "name": "Meta: Llama 3.2 3B Instruct",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 5.09e-8,
+      "pricing_completion": 3.35e-7,
+      "created_human": "2024-09-25",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct"
     },
     {
       "id": "meta-llama/llama-3.2-1b-instruct",
@@ -7366,38 +7426,6 @@
       "pricing_completion": 3.45e-7,
       "created_human": "2024-09-25",
       "url": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct"
-    },
-    {
-      "id": "meta-llama/llama-3.2-3b-instruct:free",
-      "canonical_slug": "meta-llama/llama-3.2-3b-instruct",
-      "name": "Meta: Llama 3.2 3B Instruct (free)",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
-      "created_human": "2024-09-25",
-      "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct"
-    },
-    {
-      "id": "meta-llama/llama-3.2-3b-instruct",
-      "canonical_slug": "meta-llama/llama-3.2-3b-instruct",
-      "name": "Meta: Llama 3.2 3B Instruct",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 5.09e-8,
-      "pricing_completion": 3.35e-7,
-      "created_human": "2024-09-25",
-      "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct"
     },
     {
       "id": "qwen/qwen-2.5-72b-instruct",
@@ -7594,24 +7622,6 @@
       "url": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407"
     },
     {
-      "id": "openai/gpt-4o-mini-2024-07-18",
-      "canonical_slug": "openai/gpt-4o-mini-2024-07-18",
-      "name": "OpenAI: GPT-4o-mini (2024-07-18)",
-      "context_length": 128000,
-      "modalities": [
-        "text",
-        "image",
-        "file",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 1.5e-7,
-      "pricing_completion": 6e-7,
-      "created_human": "2024-07-18",
-      "url": "https://openrouter.ai/models/openai/gpt-4o-mini-2024-07-18"
-    },
-    {
       "id": "openai/gpt-4o-mini",
       "canonical_slug": "openai/gpt-4o-mini",
       "name": "OpenAI: GPT-4o-mini",
@@ -7630,6 +7640,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-4o-mini"
     },
     {
+      "id": "openai/gpt-4o-mini-2024-07-18",
+      "canonical_slug": "openai/gpt-4o-mini-2024-07-18",
+      "name": "OpenAI: GPT-4o-mini (2024-07-18)",
+      "context_length": 128000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 1.5e-7,
+      "pricing_completion": 6e-7,
+      "created_human": "2024-07-18",
+      "url": "https://openrouter.ai/models/openai/gpt-4o-mini-2024-07-18"
+    },
+    {
       "id": "google/gemma-2-27b-it",
       "canonical_slug": "google/gemma-2-27b-it",
       "name": "Google: Gemma 2 27B",
@@ -7644,24 +7672,6 @@
       "pricing_completion": 6.5e-7,
       "created_human": "2024-07-13",
       "url": "https://huggingface.co/google/gemma-2-27b-it"
-    },
-    {
-      "id": "openai/gpt-4o-2024-05-13",
-      "canonical_slug": "openai/gpt-4o-2024-05-13",
-      "name": "OpenAI: GPT-4o (2024-05-13)",
-      "context_length": 128000,
-      "modalities": [
-        "text",
-        "image",
-        "file",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 0.000005,
-      "pricing_completion": 0.000015,
-      "created_human": "2024-05-13",
-      "url": "https://openrouter.ai/models/openai/gpt-4o-2024-05-13"
     },
     {
       "id": "openai/gpt-4o",
@@ -7680,6 +7690,24 @@
       "pricing_completion": 0.00001,
       "created_human": "2024-05-13",
       "url": "https://openrouter.ai/models/openai/gpt-4o"
+    },
+    {
+      "id": "openai/gpt-4o-2024-05-13",
+      "canonical_slug": "openai/gpt-4o-2024-05-13",
+      "name": "OpenAI: GPT-4o (2024-05-13)",
+      "context_length": 128000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000005,
+      "pricing_completion": 0.000015,
+      "created_human": "2024-05-13",
+      "url": "https://openrouter.ai/models/openai/gpt-4o-2024-05-13"
     },
     {
       "id": "meta-llama/llama-3-8b-instruct",
@@ -7915,22 +7943,6 @@
       "url": "https://huggingface.co/Gryphe/MythoMax-L2-13b"
     },
     {
-      "id": "openai/gpt-3.5-turbo",
-      "canonical_slug": "openai/gpt-3.5-turbo",
-      "name": "OpenAI: GPT-3.5 Turbo",
-      "context_length": 16385,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 5e-7,
-      "pricing_completion": 0.0000015,
-      "created_human": "2023-05-28",
-      "url": "https://openrouter.ai/models/openai/gpt-3.5-turbo"
-    },
-    {
       "id": "openai/gpt-4",
       "canonical_slug": "openai/gpt-4",
       "name": "OpenAI: GPT-4",
@@ -7945,6 +7957,22 @@
       "pricing_completion": 0.00006,
       "created_human": "2023-05-28",
       "url": "https://openrouter.ai/models/openai/gpt-4"
+    },
+    {
+      "id": "openai/gpt-3.5-turbo",
+      "canonical_slug": "openai/gpt-3.5-turbo",
+      "name": "OpenAI: GPT-3.5 Turbo",
+      "context_length": 16385,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 5e-7,
+      "pricing_completion": 0.0000015,
+      "created_human": "2023-05-28",
+      "url": "https://openrouter.ai/models/openai/gpt-3.5-turbo"
     }
   ]
 }
