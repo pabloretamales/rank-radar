@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-03T12:05:51.618Z",
+  "fetched_at": "2026-07-03T19:00:28.131Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-03T12:05:46.112Z",
+    "as_of": "2026-07-03T19:00:24.558Z",
     "version": "v1",
     "start_date": "2026-06-03",
     "end_date": "2026-07-02"
   },
   "rankings_meta": {
-    "as_of": "2026-07-03T12:05:47.670Z",
+    "as_of": "2026-07-03T19:00:25.668Z",
     "version": "v1",
     "start_date": "2026-07-02",
     "end_date": "2026-07-02"
@@ -140,7 +140,7 @@
       {
         "rank": 14,
         "app_id": 3296290,
-        "app_name": "Mira",
+        "app_name": "Mira is the leading AI agent inside Telegram",
         "total_tokens": "15024295678",
         "total_tokens_human": "15.02B",
         "total_requests": 843948,
@@ -331,7 +331,7 @@
       {
         "rank": 15,
         "app_id": 3296290,
-        "app_name": "Mira",
+        "app_name": "Mira is the leading AI agent inside Telegram",
         "total_tokens": "91101667809",
         "total_tokens_human": "91.10B",
         "total_requests": 5377818,
@@ -495,7 +495,7 @@
       {
         "rank": 13,
         "app_id": 3296290,
-        "app_name": "Mira",
+        "app_name": "Mira is the leading AI agent inside Telegram",
         "total_tokens": "456471566818",
         "total_tokens_human": "456.47B",
         "total_requests": 30191198,
@@ -2135,7 +2135,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-03T12:05:47.670Z",
+      "as_of": "2026-07-03T19:00:25.668Z",
       "version": "v1",
       "start_date": "2026-07-02",
       "end_date": "2026-07-02"
@@ -2143,19 +2143,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-03T12:05:44.060Z",
+      "as_of": "2026-07-03T19:00:22.411Z",
       "version": "v1",
       "start_date": "2026-07-02",
       "end_date": "2026-07-02"
     },
     "week": {
-      "as_of": "2026-07-03T12:05:45.060Z",
+      "as_of": "2026-07-03T19:00:23.274Z",
       "version": "v1",
       "start_date": "2026-06-26",
       "end_date": "2026-07-02"
     },
     "month": {
-      "as_of": "2026-07-03T12:05:46.112Z",
+      "as_of": "2026-07-03T19:00:24.558Z",
       "version": "v1",
       "start_date": "2026-06-03",
       "end_date": "2026-07-02"
