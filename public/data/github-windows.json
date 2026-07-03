@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-03T19:02:17.592Z",
+  "fetched_at": "2026-07-03T19:02:36.252Z",
   "source": "GitHub Search API",
   "api": "https://api.github.com/search/repositories",
   "top_n": 20,
@@ -9,12 +9,12 @@
       "query": "created:>2026-07-03",
       "total_count": 0,
       "items": [],
-      "fetched_at": "2026-07-03T19:02:12.815Z"
+      "fetched_at": "2026-07-03T19:02:31.500Z"
     },
     {
       "label": "7d",
       "query": "created:>2026-06-26",
-      "total_count": 2144492,
+      "total_count": 2144652,
       "items": [
         {
           "rank": 1,
@@ -176,8 +176,8 @@
           "language": "Python",
           "topics": [],
           "created_at": "2026-06-30T10:55:02Z",
-          "pushed_at": "2026-07-02T12:23:31Z",
-          "updated_at": "2026-07-03T18:47:02Z",
+          "pushed_at": "2026-07-03T19:02:13Z",
+          "updated_at": "2026-07-03T19:02:17Z",
           "license": "MIT",
           "open_issues_count": 0,
           "watchers_count": 494,
@@ -448,12 +448,12 @@
           "private": false
         }
       ],
-      "fetched_at": "2026-07-03T19:02:13.913Z"
+      "fetched_at": "2026-07-03T19:02:32.540Z"
     },
     {
       "label": "30d",
       "query": "created:>2026-06-03",
-      "total_count": 9385307,
+      "total_count": 9385454,
       "items": [
         {
           "rank": 1,
@@ -754,7 +754,7 @@
           "owner": "BuilderIO",
           "description": "Skills for coding agents",
           "html_url": "https://github.com/BuilderIO/skills",
-          "stargazers_count": 3338,
+          "stargazers_count": 3339,
           "forks_count": 162,
           "language": "JavaScript",
           "topics": [
@@ -762,10 +762,10 @@
           ],
           "created_at": "2026-06-10T16:04:20Z",
           "pushed_at": "2026-07-03T16:14:22Z",
-          "updated_at": "2026-07-03T18:52:23Z",
+          "updated_at": "2026-07-03T19:02:15Z",
           "license": "MIT",
           "open_issues_count": 4,
-          "watchers_count": 3338,
+          "watchers_count": 3339,
           "archived": false,
           "private": false
         },
@@ -942,12 +942,12 @@
           "private": false
         }
       ],
-      "fetched_at": "2026-07-03T19:02:15.061Z"
+      "fetched_at": "2026-07-03T19:02:33.672Z"
     },
     {
       "label": "90d",
       "query": "created:>2026-04-04",
-      "total_count": 26001256,
+      "total_count": 26001407,
       "items": [
         {
           "rank": 1,
@@ -1466,7 +1466,7 @@
           "private": false
         }
       ],
-      "fetched_at": "2026-07-03T19:02:16.407Z"
+      "fetched_at": "2026-07-03T19:02:34.958Z"
     },
     {
       "label": "all",
@@ -1507,7 +1507,7 @@
           "owner": "sindresorhus",
           "description": "😎 Awesome lists about all kinds of interesting topics",
           "html_url": "https://github.com/sindresorhus/awesome",
-          "stargazers_count": 481177,
+          "stargazers_count": 481176,
           "forks_count": 35659,
           "language": null,
           "topics": [
@@ -1519,10 +1519,10 @@
           ],
           "created_at": "2014-07-11T13:42:37Z",
           "pushed_at": "2026-06-30T18:21:16Z",
-          "updated_at": "2026-07-03T18:53:38Z",
+          "updated_at": "2026-07-03T19:02:25Z",
           "license": "CC0-1.0",
           "open_issues_count": 88,
-          "watchers_count": 481177,
+          "watchers_count": 481176,
           "archived": false,
           "private": false
         },
@@ -1557,7 +1557,7 @@
           "pushed_at": "2026-07-03T14:34:51Z",
           "updated_at": "2026-07-03T18:16:43Z",
           "license": "BSD-3-Clause",
-          "open_issues_count": 215,
+          "open_issues_count": 216,
           "watchers_count": 450990,
           "archived": false,
           "private": false
@@ -1763,7 +1763,7 @@
           "owner": "vinta",
           "description": "An opinionated list of Python frameworks, libraries, tools, and resources",
           "html_url": "https://github.com/vinta/awesome-python",
-          "stargazers_count": 306110,
+          "stargazers_count": 306109,
           "forks_count": 28210,
           "language": "Python",
           "topics": [
@@ -1776,10 +1776,10 @@
           ],
           "created_at": "2014-06-27T21:00:06Z",
           "pushed_at": "2026-07-01T06:52:30Z",
-          "updated_at": "2026-07-03T18:53:41Z",
+          "updated_at": "2026-07-03T19:02:24Z",
           "license": "NOASSERTION",
           "open_issues_count": 22,
-          "watchers_count": 306110,
+          "watchers_count": 306109,
           "archived": false,
           "private": false
         },
@@ -1790,7 +1790,7 @@
           "owner": "awesome-selfhosted",
           "description": "A list of Free Software network services and web applications which can be hosted on your own servers",
           "html_url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
-          "stargazers_count": 302580,
+          "stargazers_count": 302579,
           "forks_count": 14094,
           "language": null,
           "topics": [
@@ -1805,10 +1805,10 @@
           ],
           "created_at": "2015-06-01T02:33:17Z",
           "pushed_at": "2026-07-02T21:57:34Z",
-          "updated_at": "2026-07-03T18:55:42Z",
+          "updated_at": "2026-07-03T19:02:25Z",
           "license": "NOASSERTION",
           "open_issues_count": 0,
-          "watchers_count": 302580,
+          "watchers_count": 302579,
           "archived": false,
           "private": false
         },
@@ -1944,7 +1944,7 @@
           "owner": "trimstray",
           "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.",
           "html_url": "https://github.com/trimstray/the-book-of-secret-knowledge",
-          "stargazers_count": 231460,
+          "stargazers_count": 231459,
           "forks_count": 13824,
           "language": null,
           "topics": [
@@ -1970,10 +1970,10 @@
           ],
           "created_at": "2018-06-23T10:43:14Z",
           "pushed_at": "2024-11-19T14:00:38Z",
-          "updated_at": "2026-07-03T18:53:46Z",
+          "updated_at": "2026-07-03T19:02:25Z",
           "license": "MIT",
           "open_issues_count": 157,
-          "watchers_count": 231460,
+          "watchers_count": 231459,
           "archived": false,
           "private": false
         },
@@ -2067,7 +2067,7 @@
           "private": false
         }
       ],
-      "fetched_at": "2026-07-03T19:02:17.343Z"
+      "fetched_at": "2026-07-03T19:02:36.002Z"
     }
   ]
 }
