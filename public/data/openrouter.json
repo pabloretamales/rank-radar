@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-05T12:00:19.148Z",
+  "fetched_at": "2026-07-05T19:02:25.801Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-05T12:00:15.852Z",
+    "as_of": "2026-07-05T19:02:20.858Z",
     "version": "v1",
     "start_date": "2026-06-05",
     "end_date": "2026-07-04"
   },
   "rankings_meta": {
-    "as_of": "2026-07-05T12:00:16.806Z",
+    "as_of": "2026-07-05T19:02:22.234Z",
     "version": "v1",
     "start_date": "2026-07-04",
     "end_date": "2026-07-04"
@@ -131,7 +131,7 @@
       {
         "rank": 13,
         "app_id": 3296290,
-        "app_name": "Mira is the leading AI agent inside Telegram",
+        "app_name": "Mira",
         "total_tokens": "14082971195",
         "total_tokens_human": "14.08B",
         "total_requests": 864636,
@@ -322,7 +322,7 @@
       {
         "rank": 14,
         "app_id": 3296290,
-        "app_name": "Mira is the leading AI agent inside Telegram",
+        "app_name": "Mira",
         "total_tokens": "95795887979",
         "total_tokens_human": "95.80B",
         "total_requests": 5699814,
@@ -495,7 +495,7 @@
       {
         "rank": 13,
         "app_id": 3296290,
-        "app_name": "Mira is the leading AI agent inside Telegram",
+        "app_name": "Mira",
         "total_tokens": "448541349099",
         "total_tokens_human": "448.54B",
         "total_requests": 28795678,
@@ -750,8 +750,8 @@
         "n_outputs": 1,
         "created_ts": 1781631930,
         "created_human": "2026-06-16",
-        "pricing_prompt": 6.86e-7,
-        "pricing_completion": 0.000002156,
+        "pricing_prompt": 5.74e-7,
+        "pricing_completion": 0.000001804,
         "score": 1781631930,
         "url": "https://huggingface.co/zai-org/GLM-5.2"
       },
@@ -2135,7 +2135,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-05T12:00:16.806Z",
+      "as_of": "2026-07-05T19:02:22.234Z",
       "version": "v1",
       "start_date": "2026-07-04",
       "end_date": "2026-07-04"
@@ -2143,19 +2143,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-05T12:00:13.466Z",
+      "as_of": "2026-07-05T19:02:18.709Z",
       "version": "v1",
       "start_date": "2026-07-04",
       "end_date": "2026-07-04"
     },
     "week": {
-      "as_of": "2026-07-05T12:00:14.753Z",
+      "as_of": "2026-07-05T19:02:19.999Z",
       "version": "v1",
       "start_date": "2026-06-28",
       "end_date": "2026-07-04"
     },
     "month": {
-      "as_of": "2026-07-05T12:00:15.852Z",
+      "as_of": "2026-07-05T19:02:20.858Z",
       "version": "v1",
       "start_date": "2026-06-05",
       "end_date": "2026-07-04"
@@ -2311,8 +2311,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 6.86e-7,
-      "pricing_completion": 0.000002156,
+      "pricing_prompt": 5.74e-7,
+      "pricing_completion": 0.000001804,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
