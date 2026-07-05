@@ -55,9 +55,6 @@ const orBars = orTop10.map((m) => ({
 ---
 
 <Base locale={locale} dict={dict}>
-  <div style="background: #10b981; color: white; padding: 12px 16px; text-align: center; font-weight: 700; font-size: 15px; margin-bottom: 16px; border-radius: 6px;" data-deploy-canary>
-    🚀 PULSE IA v2 — DEPLOY CHECK 2026-07-05 18:21 CLT — Si ves este banner en producción, Vercel triggereó correctamente. Build SHA: f7644ce. {newsTop6.length} news cards cargadas.
-  </div>
   <section class="mb-12">
     <h1 class="text-3xl sm:text-4xl font-bold mb-3">{tagline}</h1>
     <p class="text-lg max-w-3xl" style="color: var(--text-muted);">{dict.home.intro}</p>
@@ -69,37 +66,35 @@ const orBars = orTop10.map((m) => ({
   </section>
 
   {newsTop6.length > 0 && (
-    <section class="mb-10 p-5 rounded-lg" style="background: linear-gradient(135deg, #fef3c7 0%, #fffbeb 100%); border: 1px solid #fde68a;">
+    <section class="mb-10">
       <header class="mb-4 flex items-baseline justify-between flex-wrap gap-2">
         <div>
-          <h2 class="text-xl font-bold flex items-center gap-2">
-            <span>📰</span>
-            <span>Pulse IA — {locale === 'es' ? 'Hoy' : 'Today'}</span>
+          <h2 class="text-xl font-semibold flex items-center gap-2">
+            <span>Pulse IA</span>
+            <span class="text-xs font-normal px-2 py-0.5 rounded" style="background: var(--bg-tag, #27272a); color: var(--text-muted, #a1a1aa);">
+              {locale === 'es' ? 'Hoy' : 'Today'}
+            </span>
           </h2>
-          <p class="text-sm" style="color: #92400e;">
+          <p class="text-sm" style="color: var(--text-muted, #a1a1aa);">
             {locale === 'es'
-              ? 'Top 6 noticias curadas, resumidas por IA en español — actualizadas 2×/día.'
-              : 'Top 6 curated news, AI-summarized in Spanish — refreshed 2x/day.'}
+              ? `${newsTop6.length} noticias curadas, resumidas por IA en español — actualizadas 2×/día.`
+              : `${newsTop6.length} curated news, AI-summarized in Spanish — refreshed 2x/day.`}
           </p>
         </div>
-        <a href={`/news/${newsTop6[0].id}`} class="text-sm font-semibold" style="color: #d97706;">
-          {locale === 'es' ? 'Ver detalle →' : 'See details →'}
+        <a href="/about" class="text-sm font-semibold" style="color: var(--accent, #2563eb);">
+          {locale === 'es' ? 'Ver todas / metodología →' : 'See all / methodology →'}
         </a>
       </header>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
         {newsTop6.map((it) => <NewsCard item={it} locale={locale} />)}
       </div>
-      <div class="mt-4 flex gap-3 text-xs flex-wrap">
-        <a href="/about" class="underline" style="color: #92400e;">
-          {locale === 'es' ? '📋 Metodología' : '📋 Methodology'}
-        </a>
-        {newsData?.items?.filter((it) => it.confirmed_by > 1).length > 0 && (
-          <span style="color: #059669;">
-            ✓ {newsData.items.filter((it) => it.confirmed_by > 1).length}
-            {locale === 'es' ? 'items confirmados por 2+ fuentes' : 'items confirmed by 2+ sources'}
-          </span>
-        )}
-      </div>
+      {newsData?.items?.filter((it) => it.confirmed_by > 1).length > 0 && (
+        <p class="text-xs mt-3" style="color: var(--text-muted, #71717a);">
+          {locale === 'es'
+            ? `✓ ${newsData.items.filter((it) => it.confirmed_by > 1).length} items confirmados por 2+ fuentes.`
+            : `✓ ${newsData.items.filter((it) => it.confirmed_by > 1).length} items confirmed by 2+ sources.`}
+        </p>
+      )}
     </section>
   )}
 
