@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-05T19:02:10.046Z",
+  "fetched_at": "2026-07-05T19:02:58.423Z",
   "source": "GitHub Search API",
   "api": "https://api.github.com/search/repositories",
   "top_n": 20,
@@ -9,12 +9,12 @@
       "query": "created:>2026-07-05",
       "total_count": 0,
       "items": [],
-      "fetched_at": "2026-07-05T19:02:05.266Z"
+      "fetched_at": "2026-07-05T19:02:53.443Z"
     },
     {
       "label": "7d",
       "query": "created:>2026-06-28",
-      "total_count": 2176059,
+      "total_count": 2176211,
       "items": [
         {
           "rank": 1,
@@ -23,7 +23,7 @@
           "owner": "elder-plinius",
           "description": "autonomous red teaming platform; multi-agent offensive-security meta-harness",
           "html_url": "https://github.com/elder-plinius/T3MP3ST",
-          "stargazers_count": 1354,
+          "stargazers_count": 1355,
           "forks_count": 358,
           "language": "TypeScript",
           "topics": [
@@ -35,10 +35,10 @@
           ],
           "created_at": "2026-07-02T17:53:55Z",
           "pushed_at": "2026-07-05T18:48:53Z",
-          "updated_at": "2026-07-05T19:01:45Z",
+          "updated_at": "2026-07-05T19:02:30Z",
           "license": "AGPL-3.0",
           "open_issues_count": 7,
-          "watchers_count": 1354,
+          "watchers_count": 1355,
           "archived": false,
           "private": false
         },
@@ -349,16 +349,16 @@
           "owner": "HKUDS",
           "description": "OpenOPC: Build Your Personal AI-Native Company — Self-Built, Self-Run, Self-Grown",
           "html_url": "https://github.com/HKUDS/OpenOPC",
-          "stargazers_count": 337,
+          "stargazers_count": 338,
           "forks_count": 39,
           "language": "Python",
           "topics": [],
           "created_at": "2026-07-01T10:17:37Z",
           "pushed_at": "2026-07-05T05:00:27Z",
-          "updated_at": "2026-07-05T19:00:46Z",
+          "updated_at": "2026-07-05T19:02:36Z",
           "license": null,
           "open_issues_count": 1,
-          "watchers_count": 337,
+          "watchers_count": 338,
           "archived": false,
           "private": false
         },
@@ -485,12 +485,12 @@
           "private": false
         }
       ],
-      "fetched_at": "2026-07-05T19:02:06.196Z"
+      "fetched_at": "2026-07-05T19:02:54.395Z"
     },
     {
       "label": "30d",
       "query": "created:>2026-06-05",
-      "total_count": 9330031,
+      "total_count": 9330181,
       "items": [
         {
           "rank": 1,
@@ -499,8 +499,8 @@
           "owner": "DietrichGebert",
           "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
           "html_url": "https://github.com/DietrichGebert/ponytail",
-          "stargazers_count": 74644,
-          "forks_count": 3929,
+          "stargazers_count": 74645,
+          "forks_count": 3930,
           "language": "JavaScript",
           "topics": [
             "agent-skills",
@@ -516,10 +516,10 @@
           ],
           "created_at": "2026-06-12T00:52:37Z",
           "pushed_at": "2026-07-01T23:34:52Z",
-          "updated_at": "2026-07-05T19:02:03Z",
+          "updated_at": "2026-07-05T19:02:28Z",
           "license": "MIT",
           "open_issues_count": 153,
-          "watchers_count": 74644,
+          "watchers_count": 74645,
           "archived": false,
           "private": false
         },
@@ -693,7 +693,7 @@
           "owner": "cobusgreyling",
           "description": "Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny). Includes loop-audit, loop-init, loop-cost.",
           "html_url": "https://github.com/cobusgreyling/loop-engineering",
-          "stargazers_count": 5883,
+          "stargazers_count": 5884,
           "forks_count": 769,
           "language": "JavaScript",
           "topics": [
@@ -717,10 +717,10 @@
           ],
           "created_at": "2026-06-09T06:28:20Z",
           "pushed_at": "2026-07-05T14:05:20Z",
-          "updated_at": "2026-07-05T18:59:17Z",
+          "updated_at": "2026-07-05T19:02:10Z",
           "license": "MIT",
           "open_issues_count": 12,
-          "watchers_count": 5883,
+          "watchers_count": 5884,
           "archived": false,
           "private": false
         },
@@ -731,16 +731,16 @@
           "owner": "langchain-ai",
           "description": "OpenWiki is a CLI that writes and maintains agent documentation for your codebase.",
           "html_url": "https://github.com/langchain-ai/openwiki",
-          "stargazers_count": 4729,
+          "stargazers_count": 4731,
           "forks_count": 350,
           "language": "TypeScript",
           "topics": [],
           "created_at": "2026-06-22T23:48:26Z",
           "pushed_at": "2026-07-05T16:39:10Z",
-          "updated_at": "2026-07-05T19:01:57Z",
+          "updated_at": "2026-07-05T19:02:50Z",
           "license": "MIT",
           "open_issues_count": 88,
-          "watchers_count": 4729,
+          "watchers_count": 4731,
           "archived": false,
           "private": false
         },
@@ -771,16 +771,16 @@
           "owner": "bikini",
           "description": "A single archive of public exploit PoCs and vulnerability research writeups. At the time I post these, none have been reported. Feel free to report them yourself and take credit for the CVE if handed out lulz. Please do not abuse these. I do this so to allure people into the field, and I've always found this is the most efficient way.",
           "html_url": "https://github.com/bikini/exploitarium",
-          "stargazers_count": 3677,
+          "stargazers_count": 3678,
           "forks_count": 1066,
           "language": "Python",
           "topics": [],
           "created_at": "2026-06-23T05:14:11Z",
           "pushed_at": "2026-07-04T06:27:26Z",
-          "updated_at": "2026-07-05T18:07:17Z",
+          "updated_at": "2026-07-05T19:02:54Z",
           "license": null,
           "open_issues_count": 4,
-          "watchers_count": 3677,
+          "watchers_count": 3678,
           "archived": false,
           "private": false
         },
@@ -979,12 +979,12 @@
           "private": false
         }
       ],
-      "fetched_at": "2026-07-05T19:02:07.448Z"
+      "fetched_at": "2026-07-05T19:02:55.825Z"
     },
     {
       "label": "90d",
       "query": "created:>2026-04-06",
-      "total_count": 26054430,
+      "total_count": 26054576,
       "items": [
         {
           "rank": 1,
@@ -1054,7 +1054,7 @@
           "owner": "DietrichGebert",
           "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
           "html_url": "https://github.com/DietrichGebert/ponytail",
-          "stargazers_count": 74644,
+          "stargazers_count": 74645,
           "forks_count": 3930,
           "language": "JavaScript",
           "topics": [
@@ -1071,10 +1071,10 @@
           ],
           "created_at": "2026-06-12T00:52:37Z",
           "pushed_at": "2026-07-01T23:34:52Z",
-          "updated_at": "2026-07-05T19:02:03Z",
+          "updated_at": "2026-07-05T19:02:28Z",
           "license": "MIT",
           "open_issues_count": 153,
-          "watchers_count": 74644,
+          "watchers_count": 74645,
           "archived": false,
           "private": false
         },
@@ -1477,7 +1477,7 @@
           ],
           "created_at": "2026-05-08T06:41:01Z",
           "pushed_at": "2026-07-02T14:11:34Z",
-          "updated_at": "2026-07-05T18:59:32Z",
+          "updated_at": "2026-07-05T19:02:43Z",
           "license": "MIT",
           "open_issues_count": 16,
           "watchers_count": 10713,
@@ -1526,7 +1526,7 @@
           "private": false
         }
       ],
-      "fetched_at": "2026-07-05T19:02:08.601Z"
+      "fetched_at": "2026-07-05T19:02:57.043Z"
     },
     {
       "label": "all",
@@ -1540,7 +1540,7 @@
           "owner": "codecrafters-io",
           "description": "Master programming by recreating your favorite technologies from scratch.",
           "html_url": "https://github.com/codecrafters-io/build-your-own-x",
-          "stargazers_count": 522687,
+          "stargazers_count": 522689,
           "forks_count": 49445,
           "language": "Markdown",
           "topics": [
@@ -1553,10 +1553,10 @@
           ],
           "created_at": "2018-05-09T12:03:18Z",
           "pushed_at": "2026-06-25T14:41:09Z",
-          "updated_at": "2026-07-05T18:48:43Z",
+          "updated_at": "2026-07-05T19:02:35Z",
           "license": null,
           "open_issues_count": 520,
-          "watchers_count": 522687,
+          "watchers_count": 522689,
           "archived": false,
           "private": false
         },
@@ -1702,7 +1702,7 @@
             "personal"
           ],
           "created_at": "2025-11-24T10:16:47Z",
-          "pushed_at": "2026-07-05T19:01:55Z",
+          "pushed_at": "2026-07-05T19:02:51Z",
           "updated_at": "2026-07-05T19:01:11Z",
           "license": "NOASSERTION",
           "open_issues_count": 6938,
@@ -1929,7 +1929,7 @@
           "description": "An agentic skills framework & software development methodology that works.",
           "html_url": "https://github.com/obra/superpowers",
           "stargazers_count": 246771,
-          "forks_count": 21893,
+          "forks_count": 21894,
           "language": "Shell",
           "topics": [
             "ai",
@@ -2004,7 +2004,7 @@
           "owner": "trimstray",
           "description": "A collection of inspiring lists, manuals, cheatsheets, blogs, hacks, one-liners, cli/web tools and more.",
           "html_url": "https://github.com/trimstray/the-book-of-secret-knowledge",
-          "stargazers_count": 231789,
+          "stargazers_count": 231788,
           "forks_count": 13838,
           "language": null,
           "topics": [
@@ -2030,10 +2030,10 @@
           ],
           "created_at": "2018-06-23T10:43:14Z",
           "pushed_at": "2024-11-19T14:00:38Z",
-          "updated_at": "2026-07-05T18:58:47Z",
+          "updated_at": "2026-07-05T19:02:23Z",
           "license": "MIT",
           "open_issues_count": 157,
-          "watchers_count": 231789,
+          "watchers_count": 231788,
           "archived": false,
           "private": false
         },
@@ -2127,7 +2127,7 @@
           "private": false
         }
       ],
-      "fetched_at": "2026-07-05T19:02:09.795Z"
+      "fetched_at": "2026-07-05T19:02:58.172Z"
     }
   ]
 }
