@@ -1,0 +1,199 @@
+---
+/**
+ * /news/[id] — Pulse IA item detail page
+ *
+ * Static (SSG): carga todos los items del snapshot del día,
+ * encuentra el del id, y renderiza detalle completo.
+ *
+ * Si no encuentra el item → 404.
+ */
+import Base from '@/layouts/Base.astro';
+import { getDict, detectLocaleFromUrl } from '@/i18n';
+import newsData from '../../../public/data/news-latest.json';
+
+export function getStaticPaths() {
+  // Generar paths para todos los items actuales + permitir fallback a 404
+  return newsData.items.map((it) => ({
+    params: { id: it.id },
+    props: { item: it, snapshot: newsData },
+  }));
+}
+
+const { item, snapshot } = Astro.props;
+const locale = detectLocaleFromUrl(Astro.url);
+const dict = getDict(locale);
+
+const localeDict = {
+  es: {
+    summary: 'Resumen',
+    aiDisclaimer: 'Generado por IA basado en la fuente original',
+    scoreBreakdown: 'Desglose del score',
+    sources: 'Fuentes',
+    confirmedBy: 'Confirmado por {n} fuentes',
+    viewOriginal: 'Ver fuente original',
+    publishedOn: 'Publicado',
+    by: 'Por',
+    category: 'Categoría',
+    related: 'Noticias relacionadas',
+    backToHome: '← Volver al inicio',
+    noSummary: 'Sin resumen generado',
+    categoryNames: {
+      paper: 'Paper de investigación',
+      tool: 'Herramienta / Proyecto open source',
+      industry: 'Industria / Anuncio corporativo',
+      model: 'Modelo / Release',
+      discussion: 'Discusión / Comunidad',
+      startup: 'Startup / Funding',
+      uncategorized: 'Noticia general',
+    },
+    scoreLabels: { engagement: 'Engagement', multi_source: 'Multi-fuente', freshness: 'Frescura', category: 'Categoría' },
+  },
+  en: {
+    summary: 'Summary',
+    aiDisclaimer: 'AI-generated based on the original source',
+    scoreBreakdown: 'Score breakdown',
+    sources: 'Sources',
+    confirmedBy: 'Confirmed by {n} sources',
+    viewOriginal: 'View original source',
+    publishedOn: 'Published',
+    by: 'By',
+    category: 'Category',
+    related: 'Related news',
+    backToHome: '← Back to home',
+    noSummary: 'No summary generated',
+    categoryNames: {
+      paper: 'Research paper',
+      tool: 'Tool / Open source project',
+      industry: 'Industry / Corporate',
+      model: 'Model / Release',
+      discussion: 'Discussion / Community',
+      startup: 'Startup / Funding',
+      uncategorized: 'General news',
+    },
+    scoreLabels: { engagement: 'Engagement', multi_source: 'Multi-source', freshness: 'Freshness', category: 'Category' },
+  },
+}[locale];
+
+const cat = localeDict.categoryNames[item.category] ?? localeDict.categoryNames.uncategorized;
+const breakdown = item.score_breakdown ?? {};
+
+// Related: misma categoría, top 5
+const related = snapshot.items
+  .filter((it) => it.id !== item.id && it.category === item.category)
+  .slice(0, 5);
+---
+
+<Base locale={locale} dict={dict} title={item.title}>
+  <article class="news-detail">
+    <header class="news-detail__header">
+      <a href="/" class="news-detail__back">{localeDict.backToHome}</a>
+      <div class="news-detail__meta">
+        <span class="news-detail__cat">{cat}</span>
+        <span class="news-detail__score">Score {item.score}/100</span>
+      </div>
+      <h1 class="news-detail__title">{item.title}</h1>
+      {item.authors && item.authors.length > 0 && (
+        <p class="news-detail__authors">
+          {localeDict.by} {item.authors.slice(0, 5).join(', ')}{item.authors.length > 5 ? `, +${item.authors.length - 5}` : ''}
+        </p>
+      )}
+      {item.submitted_at && (
+        <p class="news-detail__time">
+          <time datetime={item.submitted_at}>{localeDict.publishedOn}: {new Date(item.submitted_at).toLocaleString(locale === 'es' ? 'es-CL' : 'en-US')}</time>
+        </p>
+      )}
+    </header>
+
+    {item.summary_es ? (
+      <section class="news-detail__summary">
+        <h2>{localeDict.summary}</h2>
+        <p>{item.summary_es}</p>
+        <p class="news-detail__ai-disclaimer">{localeDict.aiDisclaimer}</p>
+      </section>
+    ) : (
+      <section class="news-detail__summary">
+        <h2>{localeDict.summary}</h2>
+        <p class="news-detail__no-summary">{localeDict.noSummary}</p>
+        {item.description && <p class="news-detail__desc-fallback">{item.description}</p>}
+      </section>
+    )}
+
+    <section class="news-detail__sources">
+      <h2>{localeDict.sources} ({item.confirmed_by})</h2>
+      <p class="news-detail__confirmed">{localeDict.confirmedBy.replace('{n}', String(item.confirmed_by))}</p>
+      <ul>
+        {(item.sources ?? []).map((sid) => (
+          <li>
+            <a href={item.url} target="_blank" rel="noopener noreferrer">{sid}</a>
+          </li>
+        ))}
+      </ul>
+      <a href={item.url} target="_blank" rel="noopener noreferrer" class="news-detail__cta">
+        {localeDict.viewOriginal} →
+      </a>
+    </section>
+
+    <section class="news-detail__score">
+      <h2>{localeDict.scoreBreakdown}</h2>
+      <div class="news-detail__bars">
+        {Object.entries(breakdown).map(([k, v]) => (
+          <div class="news-detail__bar">
+            <span class="news-detail__bar-label">{localeDict.scoreLabels[k] ?? k}</span>
+            <div class="news-detail__bar-track">
+              <div class="news-detail__bar-fill" style={`width: ${v}%`}></div>
+            </div>
+            <span class="news-detail__bar-value">{v}</span>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    {related.length > 0 && (
+      <section class="news-detail__related">
+        <h2>{localeDict.related}</h2>
+        <ul>
+          {related.map((it) => (
+            <li>
+              <a href={`/news/${it.id}`}>{it.title}</a>
+              <span class="news-detail__related-score">— score {it.score}</span>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
+  </article>
+</Base>
+
+<style>
+  .news-detail { max-width: 760px; margin: 0 auto; padding: 1rem; }
+  .news-detail__back { font-size: 13px; color: var(--text-muted, #6b7280); }
+  .news-detail__back:hover { color: var(--accent, #2563eb); }
+  .news-detail__meta { display: flex; gap: 12px; margin: 12px 0 8px; font-size: 12px; color: var(--text-muted, #6b7280); }
+  .news-detail__cat { background: var(--bg-tag, #f3f4f6); padding: 2px 8px; border-radius: 4px; font-weight: 600; }
+  .news-detail__title { font-size: 28px; font-weight: 700; line-height: 1.2; margin: 8px 0 12px; }
+  .news-detail__authors { font-size: 14px; color: var(--text-secondary, #4b5563); margin: 0 0 4px; }
+  .news-detail__time { font-size: 13px; color: var(--text-muted, #9ca3af); margin: 0 0 24px; }
+  .news-detail__summary { background: var(--bg-card, #f9fafb); border-left: 4px solid var(--accent, #2563eb); padding: 16px 20px; border-radius: 4px; margin: 24px 0; }
+  .news-detail__summary h2 { margin-top: 0; font-size: 14px; text-transform: uppercase; color: var(--text-muted, #6b7280); letter-spacing: 1px; }
+  .news-detail__summary p { font-size: 16px; line-height: 1.6; margin: 8px 0; }
+  .news-detail__ai-disclaimer { font-size: 12px; color: var(--text-muted, #9ca3af); font-style: italic; }
+  .news-detail__no-summary { font-size: 14px; color: var(--text-muted, #9ca3af); font-style: italic; }
+  .news-detail__desc-fallback { font-size: 14px; color: var(--text-secondary, #4b5563); }
+  .news-detail__sources { margin: 24px 0; }
+  .news-detail__sources h2 { font-size: 14px; text-transform: uppercase; color: var(--text-muted, #6b7280); letter-spacing: 1px; }
+  .news-detail__confirmed { font-size: 13px; color: #059669; font-weight: 600; }
+  .news-detail__sources ul { list-style: none; padding: 0; }
+  .news-detail__sources li { padding: 4px 0; font-size: 13px; }
+  .news-detail__cta { display: inline-block; margin-top: 8px; padding: 8px 16px; background: var(--accent, #2563eb); color: white; text-decoration: none; border-radius: 6px; font-size: 13px; font-weight: 600; }
+  .news-detail__bars { display: grid; gap: 8px; margin-top: 8px; }
+  .news-detail__bar { display: grid; grid-template-columns: 100px 1fr 40px; gap: 10px; align-items: center; }
+  .news-detail__bar-label { font-size: 12px; color: var(--text-muted, #6b7280); }
+  .news-detail__bar-track { height: 8px; background: var(--bg-tag, #e5e7eb); border-radius: 4px; overflow: hidden; }
+  .news-detail__bar-fill { height: 100%; background: var(--accent, #2563eb); }
+  .news-detail__bar-value { font-size: 12px; font-variant-numeric: tabular-nums; font-weight: 600; text-align: right; }
+  .news-detail__related ul { list-style: none; padding: 0; }
+  .news-detail__related li { padding: 6px 0; border-bottom: 1px solid var(--border, #e5e7eb); }
+  .news-detail__related a { color: inherit; text-decoration: none; font-size: 14px; }
+  .news-detail__related a:hover { color: var(--accent, #2563eb); }
+  .news-detail__related-score { font-size: 11px; color: var(--text-muted, #9ca3af); }
+</style>

@@ -13,7 +13,14 @@
     "fetch:aa": "node scripts/fetch-aa-models.mjs",
     "fetch:openrouter": "node scripts/fetch-openrouter.mjs",
     "build:data": "node scripts/build-json.mjs",
-    "pipeline": "node scripts/fetch-github-trending.mjs && node scripts/fetch-aa-models.mjs && node scripts/fetch-openrouter.mjs && node scripts/build-json.mjs"
+    "pipeline": "node scripts/fetch-github-trending.mjs && node scripts/fetch-aa-models.mjs && node scripts/fetch-openrouter.mjs && node scripts/build-json.mjs",
+    "news:fetch": "node scripts/news/fetch-huggingface.mjs && node scripts/news/fetch-hackernews.mjs && node scripts/news/fetch-reddit.mjs && node scripts/news/fetch-arxiv.mjs && node scripts/news/fetch-github-ai.mjs",
+    "news:normalize": "node scripts/news/normalize.mjs",
+    "news:summarize": "node scripts/news/summarize.mjs",
+    "news:build": "node scripts/news/build-json.mjs",
+    "news:pipeline": "node scripts/news/pipeline.mjs",
+    "news:pipeline:test": "node scripts/news/pipeline.mjs --skip-m3",
+    "news:test": "node scripts/news/fetch-huggingface.mjs && node scripts/news/fetch-hackernews.mjs && node scripts/news/fetch-reddit.mjs && node scripts/news/fetch-arxiv.mjs && node scripts/news/fetch-github-ai.mjs"
   },
   "dependencies": {
     "astro": "^4.16.0",

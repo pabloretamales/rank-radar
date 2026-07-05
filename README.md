@@ -100,3 +100,77 @@ El `.gitignore` ya excluye:
 ---
 
 _DinamIA Labs · {Pablo's email placeholder si quieres exponer autor}_
+
+## Pulse IA (v2 of RankRadar) — 2026-07-05
+
+**Branch:** `feat/pulse-ia-news` (PR pendiente, NO mergeado a main)
+**Stack:** Astro 4 + Tailwind + M3 (minimax) + Vercel (deploy manual)
+
+### Qué es
+
+Pulse IA = mismo repo de RankRadar, branding paralelo. Pablo decidió
+consolidar bajo un solo repo el 2026-07-05 17:13 CLT ("Ocupemos el mismo repo").
+Pulse IA agrega + cura noticias de IA desde 5 fuentes gratuitas, 2x/día,
+en español, con resúmenes M3.
+
+### Pipeline (idempotente, ~15s)
+
+```
+node scripts/news/pipeline.mjs
+  → fetch-huggingface   (HF Daily Papers, ~50 papers)
+  → fetch-hackernews    (Algolia API, 25 AI-relevant del top 100)
+  → fetch-reddit        (RSS r/MachineLearning + r/LocalLLaMA, rate-limit OK)
+  → fetch-arxiv         (cs.AI + cs.CL + cs.LG, 69 unique papers)
+  → fetch-github-ai     (topic:llm + AI keywords, top 20 7d)
+  → normalize           (unifica + dedupe + score)
+  → summarize           (M3 batch, cache por sha1(title), concurrencia 3)
+  → build-json          (public/data/news-YYYY-MM-DD.json + news-latest.json)
+```
+
+5 fuentes Tier 1 — todas gratuitas, todas estables:
+1. Hugging Face Daily Papers (AK-curated)
+2. Hacker News Algolia API (oficial, post-Firebase migration)
+3. Reddit RSS (JSON bloqueado por Reddit desde 2023, OAuth API needed)
+4. arXiv Atom API (sin auth, 1 req/3s recomendado)
+5. GitHub Trending · AI (topic:llm + keywords broad)
+
+### Archivos clave
+
+- `scripts/news/fetch-*.mjs` — 5 fetchers independientes
+- `scripts/news/normalize.mjs` — unifica + dedupe + score (Levenshtein >0.85)
+- `scripts/news/summarize.mjs` — M3 batch (cache, fallback a descripción si falla)
+- `scripts/news/build-json.mjs` — escribe news-YYYY-MM-DD.json + manifest extendido
+- `scripts/news/pipeline.mjs` — orquestador (con flags --skip-fetch, --skip-m3)
+- `src/components/news/NewsCard.astro` — card reusable (bilingüe es/en)
+- `src/pages/news/[id].astro` — detalle con score breakdown (61 páginas)
+- `src/pages/about.astro` — metodología completa
+- `src/pages/index.astro` — MODIFICADO: bloque Pulse IA top 6 arriba, mantiene RankRadar original
+
+### Principles (no negociables)
+
+1. Cada item lleva link REAL, VERIFICABLE — sin URLs inventadas.
+2. Sin alucinaciones: si M3 duda → mostrar descripción original.
+3. Cada resumen lleva etiqueta "Generado por IA" en la UI.
+4. Commit messages siguen patrón `feat(news): ...` para identificarlos.
+5. **NUNCA** commitear secretos. MINIMAX_API_KEY y GITHUB_TOKEN solo en ~/.openclaw/.env.
+
+### Estado actual (2026-07-05 17:25 CLT)
+
+- ✅ 5 fetchers funcionando y testeados
+- ✅ Pipeline end-to-end OK, 154 unique items, 50 top
+- ✅ Build Astro: 61 páginas, 2.4s, 0 errores
+- ✅ Dev server verificado: `/`, `/news/{id}/`, `/about/` todos 200
+- ✅ Branch `feat/pulse-ia-news` pusheado, PR pendiente
+- ⏳ **Pendiente:** crear 2 crons OpenClaw (`pulse-ia-morning-refresh` + `pulse-ia-afternoon-refresh` con M3 forzado, fallbacks [])
+- ⏳ **Pendiente:** Pablo hace deploy manual en Vercel
+- ⏳ **Pendiente:** Pablo decide si mergea PR o pide cambios
+
+### Anti-hallucination
+
+El prompt M3 incluye reglas estrictas:
+- Resumir SOLO lo que dice el input
+- NO inventar datos, cifras, empresas
+- Si el contenido es confuso → cadena VACÍA
+- Mantener jerga técnica en inglés (RAG, RLHF, etc.)
+
+Si M3 falla o devuelve vacío, el script usa la descripción original como fallback y marca `summary_failed: true` en el JSON.

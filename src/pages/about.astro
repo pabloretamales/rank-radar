@@ -1,0 +1,181 @@
+---
+/**
+ * /about — Pulse IA + RankRadar combined methodology page
+ */
+import Base from '@/layouts/Base.astro';
+import { getDict, detectLocaleFromUrl } from '@/i18n';
+import manifest from '../../public/data/manifest.json';
+import newsData from '../../public/data/news-latest.json' /* fallback if news missing */;
+
+const locale = detectLocaleFromUrl(Astro.url);
+const dict = getDict(locale);
+
+const dictAbout = {
+  es: {
+    title: 'Metodología y transparencia',
+    intro: 'Pulse IA agrega, valida y cura noticias de IA desde 5 fuentes gratuitas. Todo lo que ves en el sitio es derivable a su fuente original — sin contenido inventado.',
+    sourcesTitle: 'Fuentes',
+    sources: [
+      { id: 'Hugging Face Daily Papers', url: 'https://huggingface.co/papers', desc: 'Papers curados diariamente por AK (@akhaliq). API pública, ~50 papers/día.' },
+      { id: 'Hacker News (Algolia)', url: 'https://news.ycombinator.com', desc: 'Front page filtrado por keywords AI. API Algolia (oficial tras migración Firebase).' },
+      { id: 'Reddit r/MachineLearning + r/LocalLLaMA', url: 'https://www.reddit.com', desc: 'RSS público (JSON bloqueado por Reddit desde 2023). Top del día por upvotes.' },
+      { id: 'arXiv cs.AI + cs.CL + cs.LG', url: 'https://arxiv.org', desc: 'API oficial sin auth. Más reciente primero. 30 papers por categoría.' },
+      { id: 'GitHub Trending · AI', url: 'https://github.com/topics/llm', desc: 'Búsqueda GitHub: topic:llm + keywords AI. Repos de los últimos 7 días por estrellas.' },
+    ],
+    howItWorksTitle: '¿Cómo funciona?',
+    steps: [
+      ['Recolectar', 'Cada 8 AM y 15 PM (Chile), el pipeline corre los 5 fetchers en paralelo y guarda el JSON crudo en .cache/.'],
+      ['Normalizar', 'Los 5 JSON crudos se unifican a un shape común (NewsItem) con campos: título, URL canónica, fuente, fecha, engagement.'],
+      ['Deduplicar', 'Items que aparecen en 2+ fuentes se mergean. URL canónica + Levenshtein título (>0.85) detectan duplicados.'],
+      ['Puntuar', 'Score 0-100 = engagement (0.4) + multi-fuente (0.3) + frescura (0.2) + categoría (0.1).'],
+      ['Resumir', 'M3 (minimax/MiniMax-M3) genera resumen 2-3 oraciones en español por item, con cache por hash de título.'],
+      ['Publicar', 'JSON final se commitea y Vercel redeploy automático al push.'],
+    ],
+    scoreTitle: 'Cómo leer el score',
+    scoreFormula: 'score = engagement×0.4 + multi_source×0.3 + freshness×0.2 + category×0.1',
+    scoreComponents: [
+      ['engagement', 'Puntaje combinado de upvotes, puntos, estrellas según la fuente.'],
+      ['multi_source', 'Bonus si aparece en 2+ fuentes. 1 fuente=33, 2 fuentes=67, 3+=100.'],
+      ['freshness', '100 si es de hoy, decay lineal a 0 en 7 días.'],
+      ['category', 'Peso heurístico de categoría: modelo/industry > paper > tool > discussion.'],
+    ],
+    noAiTitle: 'Compromiso anti-alucinación',
+    noAiItems: [
+      'Cada item publicado tiene un link real, verificable, a la fuente original.',
+      'Los resúmenes AI son DERIVADOS. Si M3 duda o devuelve vacío, mostramos la descripción original.',
+      'Las notas de IA aparecen explícitamente en cada card y página de detalle.',
+      'No se publica contenido que el pipeline no haya podido atribuir a una fuente.',
+    ],
+    cadenceTitle: 'Frecuencia',
+    cadence: 'Dos veces al día: 08:00 y 15:00 hora de Chile (America/Santiago). Mismo patrón que RankRadar.',
+    licenseTitle: 'Stack',
+    stack: ['Astro 4 (SSG)', 'Tailwind CSS', 'TypeScript Node scripts', 'M3 (minimax) para resúmenes', 'Vercel deploy', 'Cron OpenClaw'],
+  },
+  en: {
+    title: 'Methodology & transparency',
+    intro: 'Pulse IA aggregates, validates, and curates AI news from 5 free sources. Everything you see is traceable to its original source — no fabricated content.',
+    sourcesTitle: 'Sources',
+    sources: [
+      { id: 'Hugging Face Daily Papers', url: 'https://huggingface.co/papers', desc: 'Daily papers curated by AK (@akhaliq). Public API, ~50 papers/day.' },
+      { id: 'Hacker News (Algolia)', url: 'https://news.ycombinator.com', desc: 'Front page filtered by AI keywords. Algolia API (official after Firebase migration).' },
+      { id: 'Reddit r/MachineLearning + r/LocalLLaMA', url: 'https://www.reddit.com', desc: 'Public RSS (JSON blocked by Reddit since 2023). Top of day by upvotes.' },
+      { id: 'arXiv cs.AI + cs.CL + cs.LG', url: 'https://arxiv.org', desc: 'Official API, no auth. Most recent first. 30 papers per category.' },
+      { id: 'GitHub Trending · AI', url: 'https://github.com/topics/llm', desc: 'GitHub search: topic:llm + AI keywords. Last 7 days by stars.' },
+    ],
+    howItWorksTitle: 'How it works',
+    steps: [
+      ['Collect', 'Twice daily (8 AM + 3 PM Chile), the pipeline runs 5 fetchers in parallel and saves raw JSON to .cache/.'],
+      ['Normalize', 'Raw outputs unified into a common NewsItem shape: title, canonical URL, source, date, engagement.'],
+      ['Deduplicate', 'Items in 2+ sources merge. Canonical URL + Levenshtein title (>0.85) detect duplicates.'],
+      ['Score', 'Score 0-100 = engagement (0.4) + multi_source (0.3) + freshness (0.2) + category (0.1).'],
+      ['Summarize', 'M3 (minimax/MiniMax-M3) generates 2-3 sentences in Spanish per item, cached by title hash.'],
+      ['Publish', 'Final JSON committed, Vercel auto-redeploys on push.'],
+    ],
+    scoreTitle: 'How to read the score',
+    scoreFormula: 'score = engagement×0.4 + multi_source×0.3 + freshness×0.2 + category×0.1',
+    scoreComponents: [
+      ['engagement', 'Combined score from upvotes, points, stars across sources.'],
+      ['multi_source', 'Bonus if appears in 2+ sources. 1=33, 2=67, 3+=100.'],
+      ['freshness', '100 if today, linear decay to 0 in 7 days.'],
+      ['category', 'Heuristic category weight: model/industry > paper > tool > discussion.'],
+    ],
+    noAiTitle: 'Anti-hallucination commitment',
+    noAiItems: [
+      'Every published item has a real, verifiable link to the original source.',
+      'AI summaries are DERIVED. If M3 doubts or returns empty, we show the original description.',
+      'AI-generated notes are explicit on every card and detail page.',
+      'Nothing is published unless traceable to a source the pipeline actually fetched.',
+    ],
+    cadenceTitle: 'Cadence',
+    cadence: 'Twice daily: 08:00 and 15:00 Chile time (America/Santiago). Same pattern as RankRadar.',
+    licenseTitle: 'Stack',
+    stack: ['Astro 4 (SSG)', 'Tailwind CSS', 'TypeScript Node scripts', 'M3 (minimax) for summaries', 'Vercel deploy', 'OpenClaw cron'],
+  },
+}[locale];
+
+const newsInfo = manifest?.news ?? null;
+---
+
+<Base locale={locale} dict={dict} title={dictAbout.title}>
+  <article class="about">
+    <h1>{dictAbout.title}</h1>
+    <p class="about__intro">{dictAbout.intro}</p>
+
+    <section>
+      <h2>{dictAbout.howItWorksTitle}</h2>
+      <ol class="about__steps">
+        {dictAbout.steps.map(([label, desc]) => (
+          <li>
+            <strong>{label}.</strong> {desc}
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <section>
+      <h2>{dictAbout.sourcesTitle}</h2>
+      <ul class="about__sources">
+        {dictAbout.sources.map((s) => (
+          <li>
+            <a href={s.url} target="_blank" rel="noopener noreferrer">{s.id}</a>
+            <span> — {s.desc}</span>
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <section>
+      <h2>{dictAbout.scoreTitle}</h2>
+      <pre class="about__formula">{dictAbout.scoreFormula}</pre>
+      <ul class="about__components">
+        {dictAbout.scoreComponents.map(([k, v]) => (
+          <li><strong>{k}</strong> — {v}</li>
+        ))}
+      </ul>
+    </section>
+
+    <section>
+      <h2>{dictAbout.noAiTitle}</h2>
+      <ul class="about__ai">
+        {dictAbout.noAiItems.map((it) => <li>{it}</li>)}
+      </ul>
+    </section>
+
+    <section>
+      <h2>{dictAbout.cadenceTitle}</h2>
+      <p>{dictAbout.cadence}</p>
+    </section>
+
+    <section>
+      <h2>{dictAbout.licenseTitle}</h2>
+      <p class="about__stack">{dictAbout.stack.join(' · ')}</p>
+    </section>
+
+    {newsInfo && (
+      <section>
+        <h2>Status</h2>
+        <p>
+          Last refresh: <time>{new Date(newsInfo.fetched_at).toLocaleString(locale === 'es' ? 'es-CL' : 'en-US')}</time><br />
+          Items in latest snapshot: <strong>{newsInfo.total_items}</strong><br />
+          Multi-source: <strong>{newsInfo.multi_source_count}</strong>
+        </p>
+      </section>
+    )}
+  </article>
+</Base>
+
+<style>
+  .about { max-width: 760px; margin: 0 auto; padding: 1rem; line-height: 1.6; }
+  .about h1 { font-size: 32px; font-weight: 700; margin: 12px 0 8px; }
+  .about h2 { font-size: 18px; text-transform: uppercase; letter-spacing: 1px; color: var(--text-muted, #6b7280); margin-top: 32px; }
+  .about__intro { font-size: 17px; color: var(--text-secondary, #374151); margin-bottom: 24px; }
+  .about__steps { line-height: 1.8; padding-left: 24px; }
+  .about__sources { list-style: none; padding: 0; }
+  .about__sources li { padding: 8px 0; border-bottom: 1px solid var(--border, #e5e7eb); }
+  .about__sources a { font-weight: 600; color: var(--accent, #2563eb); text-decoration: none; }
+  .about__sources a:hover { text-decoration: underline; }
+  .about__formula { background: var(--bg-tag, #f3f4f6); padding: 12px 16px; border-radius: 6px; font-family: ui-monospace, monospace; font-size: 13px; overflow-x: auto; }
+  .about__components { line-height: 1.8; padding-left: 24px; }
+  .about__ai { line-height: 1.8; padding-left: 24px; }
+  .about__stack { font-family: ui-monospace, monospace; font-size: 13px; color: var(--text-secondary, #4b5563); }
+</style>
