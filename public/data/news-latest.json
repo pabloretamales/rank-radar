@@ -1,0 +1,1609 @@
+{
+  "date": "2026-07-05",
+  "generated_at": "2026-07-05T21:26:52.032Z",
+  "total_items": 50,
+  "total_raw": 154,
+  "cache_stats": {
+    "cached": 2,
+    "generated": 0,
+    "failed": 0,
+    "skipped": 1
+  },
+  "sources_active": [
+    "github-ai",
+    "hackernews",
+    "huggingface-papers",
+    "arxiv",
+    "reddit"
+  ],
+  "items": [
+    {
+      "id": "08a7453ffac09dcc",
+      "title": "Kulaxyz/token-diet — Always-on token-efficiency skill for coding agents (Claude Code, Codex, Cursor, Windsurf, Cline). ~31% lower bill on average, no loss of correctness.",
+      "url": "https://github.com/Kulaxyz/token-diet",
+      "canonical_url": "github.com/kulaxyz/token-diet",
+      "sources": [
+        "github-ai"
+      ],
+      "source_names": [
+        "GitHub · AI"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": "Kulaxyz/token-diet es un skill de eficiencia de tokens siempre activo para agentes de codificación como Claude Code, Codex, Cursor, Windsurf y Cline. Según su descripción, reduce el costo promedio en aproximadamente un 31% sin afectar la correctness. Es una capa de optimización de consumo de tokens aplicable a múltiples entornos de desarrollo.",
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-03T15:20:04Z",
+      "fetched_at": "2026-07-05T21:24:07.130Z",
+      "engagement": 701,
+      "score": 60,
+      "score_breakdown": {
+        "engagement": 71,
+        "multi_source": 33,
+        "freshness": 68,
+        "category": 75
+      },
+      "description": "Always-on token-efficiency skill for coding agents (Claude Code, Codex, Cursor, Windsurf, Cline). ~31% lower bill on average, no loss of correctness."
+    },
+    {
+      "id": "e5d470902a1a97db",
+      "title": "A sociotechnical threat model for AI-driven smart home devices",
+      "url": "https://arxiv.org/abs/2602.09239",
+      "canonical_url": "arxiv.org/abs/2602.09239",
+      "sources": [
+        "hackernews"
+      ],
+      "source_names": [
+        "Hacker News"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-05T17:05:57Z",
+      "fetched_at": "2026-07-05T21:23:16.547Z",
+      "engagement": 105,
+      "score": 57,
+      "score_breakdown": {
+        "engagement": 51,
+        "multi_source": 33,
+        "freshness": 97,
+        "category": 75
+      },
+      "description": null
+    },
+    {
+      "id": "66e6a31afd23a630",
+      "title": "jmerelnyc/Talos — GPU worker client for the Talos network. Pairs with your Talos account, serves open-model inference jobs over a WebSocket, and reports uptime for payouts.",
+      "url": "https://github.com/jmerelnyc/Talos",
+      "canonical_url": "github.com/jmerelnyc/talos",
+      "sources": [
+        "github-ai"
+      ],
+      "source_names": [
+        "GitHub · AI"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": "El repositorio jmerelnyc/Talos es un cliente GPU worker para la red Talos, diseñado para emparejarse con una cuenta Talos del usuario. Se conecta vía WebSocket para servir jobs de inferencia sobre modelos abiertos y reporta métricas de uptime para habilitar los pagos correspondientes.",
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-02T14:43:11Z",
+      "fetched_at": "2026-07-05T21:24:07.130Z",
+      "engagement": 809,
+      "score": 57,
+      "score_breakdown": {
+        "engagement": 73,
+        "multi_source": 33,
+        "freshness": 53,
+        "category": 75
+      },
+      "description": "GPU worker client for the Talos network. Pairs with your Talos account, serves open-model inference jobs over a WebSocket, and reports uptime for payouts."
+    },
+    {
+      "id": "e51a2f459f33a7ed",
+      "title": "Program-as-Weights: A Programming Paradigm for Fuzzy Functions",
+      "url": "https://huggingface.co/papers/2607.02512",
+      "canonical_url": "huggingface.co/papers/2607.02512",
+      "sources": [
+        "huggingface-papers",
+        "arxiv"
+      ],
+      "source_names": [
+        "HF Daily Papers",
+        "arxiv"
+      ],
+      "confirmed_by": 2,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Wentao Zhang",
+        "Liliana Hotsko",
+        "Woojeong Kim",
+        "Pengyu Nie",
+        "Stuart Shieber",
+        "Yuntian Deng"
+      ],
+      "submitted_at": "2026-07-02T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 83,
+      "score": 56,
+      "score_breakdown": {
+        "engagement": 48,
+        "multi_source": 67,
+        "freshness": 44,
+        "category": 75
+      },
+      "description": "Many everyday programming tasks resist clean rule-based implementation, such as alerting on important log lines, repairing malformed JSON, or ranking search results by intent, and are increasingly outsourced to large language model APIs at the cost of locality, reproducibility, and price. We propose fuzzy-function programming: compiling such a function from a natural-language specification into a "
+    },
+    {
+      "id": "d77e7dd7bcda9e9c",
+      "title": "uzairansaruzi/hermex — Native iPhone app for your Hermes agent",
+      "url": "https://github.com/uzairansaruzi/hermex",
+      "canonical_url": "github.com/uzairansaruzi/hermex",
+      "sources": [
+        "github-ai"
+      ],
+      "source_names": [
+        "GitHub · AI"
+      ],
+      "confirmed_by": 1,
+      "category": "tool",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-02T12:47:31Z",
+      "fetched_at": "2026-07-05T21:24:07.130Z",
+      "engagement": 744,
+      "score": 56,
+      "score_breakdown": {
+        "engagement": 72,
+        "multi_source": 33,
+        "freshness": 52,
+        "category": 70
+      },
+      "description": "Native iPhone app for your Hermes agent"
+    },
+    {
+      "id": "701aa32d79af70e2",
+      "title": "Miguok/fable-harness — Make Claude Code work like a disciplined engineer: OODA, multi-party adversarial review, model routing, fail-then-pass. Distilled from Fable to reinforce the Opus harness.",
+      "url": "https://github.com/Miguok/fable-harness",
+      "canonical_url": "github.com/miguok/fable-harness",
+      "sources": [
+        "github-ai"
+      ],
+      "source_names": [
+        "GitHub · AI"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-05T05:57:40Z",
+      "fetched_at": "2026-07-05T21:24:07.130Z",
+      "engagement": 103,
+      "score": 56,
+      "score_breakdown": {
+        "engagement": 50,
+        "multi_source": 33,
+        "freshness": 91,
+        "category": 75
+      },
+      "description": "Make Claude Code work like a disciplined engineer: OODA, multi-party adversarial review, model routing, fail-then-pass. Distilled from Fable to reinforce the Opus harness."
+    },
+    {
+      "id": "60053862b179a918",
+      "title": "100yenadmin/fable-token-saving-skills-orchestrator — 🧚 Fable-first Claude orchestration kit for token-saving lane routing, dense turns, and cache-preserving wait discipline.",
+      "url": "https://github.com/100yenadmin/fable-token-saving-skills-orchestrator",
+      "canonical_url": "github.com/100yenadmin/fable-token-saving-skills-orchestrator",
+      "sources": [
+        "github-ai"
+      ],
+      "source_names": [
+        "GitHub · AI"
+      ],
+      "confirmed_by": 1,
+      "category": "tool",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-04T10:46:54Z",
+      "fetched_at": "2026-07-05T21:24:07.130Z",
+      "engagement": 149,
+      "score": 55,
+      "score_breakdown": {
+        "engagement": 54,
+        "multi_source": 33,
+        "freshness": 79,
+        "category": 70
+      },
+      "description": "🧚 Fable-first Claude orchestration kit for token-saving lane routing, dense turns, and cache-preserving wait discipline."
+    },
+    {
+      "id": "3887db5225522b7b",
+      "title": "New AI tutor achieves 0.71-1.30 SD effect size in Dartmouth course [pdf]",
+      "url": "https://intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf",
+      "canonical_url": "intextbooks.science.uu.nl/workshop2026/files/itb26_s1s2.pdf",
+      "sources": [
+        "hackernews"
+      ],
+      "source_names": [
+        "Hacker News"
+      ],
+      "confirmed_by": 1,
+      "category": "uncategorized",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-05T18:47:43Z",
+      "fetched_at": "2026-07-05T21:23:16.547Z",
+      "engagement": 108,
+      "score": 54,
+      "score_breakdown": {
+        "engagement": 51,
+        "multi_source": 33,
+        "freshness": 98,
+        "category": 40
+      },
+      "description": null
+    },
+    {
+      "id": "325cdd7b648b3dfe",
+      "title": "EvoPolicyGym: Evaluating Autonomous Policy Evolution in Interactive Environments",
+      "url": "https://huggingface.co/papers/2607.02440",
+      "canonical_url": "huggingface.co/papers/2607.02440",
+      "sources": [
+        "huggingface-papers",
+        "arxiv"
+      ],
+      "source_names": [
+        "HF Daily Papers",
+        "arxiv"
+      ],
+      "confirmed_by": 2,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Zhilin Wang",
+        "Han Song",
+        "Runzhe Zhan",
+        "Jusen Du",
+        "Jiacheng Chen",
+        "Tianle Li",
+        "Qingyu Yin",
+        "Yulun Wu",
+        "Zhennan Shen",
+        "Tong Zhu",
+        "Yanshu Li",
+        "Guanjie Chen",
+        "Derek F. Wong",
+        "Yafu Li",
+        "Yu Cheng",
+        "Yang Yang"
+      ],
+      "submitted_at": "2026-07-02T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 43,
+      "score": 53,
+      "score_breakdown": {
+        "engagement": 41,
+        "multi_source": 67,
+        "freshness": 44,
+        "category": 75
+      },
+      "description": "Autonomous agents are increasingly expected to improve executable policies through feedback, yet existing evaluations often collapse this process into a final score or confound it with open-ended software-engineering progress. We introduce Autonomous Policy Evolution, a controlled evaluation setting in which a harness-model agent repeatedly edits an executable policy system under a fixed interacti"
+    },
+    {
+      "id": "0a1a4f74f87a5f5b",
+      "title": "SuperJJ007/CSSwitch — 帮你的 Claude Science 一键接入你自己的 API：DeepSeek / 通义千问 / 智谱 GLM / Kimi / MiniMax / 小米 MiMo / 硅基流动 / OpenRouter / 任意 OpenAI·Anthropic 兼容端点",
+      "url": "https://github.com/SuperJJ007/CSSwitch",
+      "canonical_url": "github.com/superjj007/csswitch",
+      "sources": [
+        "github-ai"
+      ],
+      "source_names": [
+        "GitHub · AI"
+      ],
+      "confirmed_by": 1,
+      "category": "tool",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-02T16:46:56Z",
+      "fetched_at": "2026-07-05T21:24:07.130Z",
+      "engagement": 312,
+      "score": 53,
+      "score_breakdown": {
+        "engagement": 62,
+        "multi_source": 33,
+        "freshness": 54,
+        "category": 70
+      },
+      "description": "帮你的 Claude Science 一键接入你自己的 API：DeepSeek / 通义千问 / 智谱 GLM / Kimi / MiniMax / 小米 MiMo / 硅基流动 / OpenRouter / 任意 OpenAI·Anthropic 兼容端点"
+    },
+    {
+      "id": "49e59ba319208948",
+      "title": "ai4s-research/open-science — Open Science — an open AI workbench for scientists. Open-source alternative to Claude Science: local-first, model-agnostic, reproducible AI research desktop (macOS & Windows), built on Tauri + MCP + agent skills.",
+      "url": "https://github.com/ai4s-research/open-science",
+      "canonical_url": "github.com/ai4s-research/open-science",
+      "sources": [
+        "github-ai"
+      ],
+      "source_names": [
+        "GitHub · AI"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-03T09:22:31Z",
+      "fetched_at": "2026-07-05T21:24:07.130Z",
+      "engagement": 169,
+      "score": 53,
+      "score_breakdown": {
+        "engagement": 56,
+        "multi_source": 33,
+        "freshness": 64,
+        "category": 75
+      },
+      "description": "Open Science — an open AI workbench for scientists. Open-source alternative to Claude Science: local-first, model-agnostic, reproducible AI research desktop (macOS & Windows), built on Tauri + MCP + agent skills."
+    },
+    {
+      "id": "f40d772bc90b7c26",
+      "title": "HUANGCHIHHUNGLeo/claude-real-video — Let Claude (or any LLM) actually watch a video — scene-aware, deduplicated frames + transcript, from a URL or local file. Runs locally, MIT.",
+      "url": "https://github.com/HUANGCHIHHUNGLeo/claude-real-video",
+      "canonical_url": "github.com/huangchihhungleo/claude-real-video",
+      "sources": [
+        "github-ai"
+      ],
+      "source_names": [
+        "GitHub · AI"
+      ],
+      "confirmed_by": 1,
+      "category": "tool",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-06-30T10:55:02Z",
+      "fetched_at": "2026-07-05T21:24:07.130Z",
+      "engagement": 1109,
+      "score": 52,
+      "score_breakdown": {
+        "engagement": 76,
+        "multi_source": 33,
+        "freshness": 22,
+        "category": 70
+      },
+      "description": "Let Claude (or any LLM) actually watch a video — scene-aware, deduplicated frames + transcript, from a URL or local file. Runs locally, MIT."
+    },
+    {
+      "id": "128d1a3ba61e3114",
+      "title": "aleclindz/seo-skill-bench — Open benchmark for Claude Code SEO skills — real headless execution against fixture sites with planted-defect answer keys. Deterministic scoring, pre-registered rubric.",
+      "url": "https://github.com/aleclindz/seo-skill-bench",
+      "canonical_url": "github.com/aleclindz/seo-skill-bench",
+      "sources": [
+        "github-ai"
+      ],
+      "source_names": [
+        "GitHub · AI"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-02T19:14:01Z",
+      "fetched_at": "2026-07-05T21:24:07.130Z",
+      "engagement": 130,
+      "score": 50,
+      "score_breakdown": {
+        "engagement": 53,
+        "multi_source": 33,
+        "freshness": 56,
+        "category": 75
+      },
+      "description": "Open benchmark for Claude Code SEO skills — real headless execution against fixture sites with planted-defect answer keys. Deterministic scoring, pre-registered rubric."
+    },
+    {
+      "id": "f8c94c6b3a71e07e",
+      "title": "Airplane Boneyards List and Map",
+      "url": "https://airplaneboneyards.com/airplane-boneyards-list-and-map.htm",
+      "canonical_url": "airplaneboneyards.com/airplane-boneyards-list-and-map.htm",
+      "sources": [
+        "hackernews"
+      ],
+      "source_names": [
+        "Hacker News"
+      ],
+      "confirmed_by": 1,
+      "category": "uncategorized",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-04T15:53:08Z",
+      "fetched_at": "2026-07-05T21:23:16.547Z",
+      "engagement": 73,
+      "score": 49,
+      "score_breakdown": {
+        "engagement": 47,
+        "multi_source": 33,
+        "freshness": 82,
+        "category": 40
+      },
+      "description": null
+    },
+    {
+      "id": "a65d570bfde4c6cf",
+      "title": "Archive228/loopkit — 33 battle-tested skills + minimal .claude harness for any coding agent (Claude Code, Cursor, Codex, Gemini CLI).",
+      "url": "https://github.com/Archive228/loopkit",
+      "canonical_url": "github.com/archive228/loopkit",
+      "sources": [
+        "github-ai"
+      ],
+      "source_names": [
+        "GitHub · AI"
+      ],
+      "confirmed_by": 1,
+      "category": "tool",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-06-30T08:46:55Z",
+      "fetched_at": "2026-07-05T21:24:07.130Z",
+      "engagement": 347,
+      "score": 47,
+      "score_breakdown": {
+        "engagement": 64,
+        "multi_source": 33,
+        "freshness": 21,
+        "category": 70
+      },
+      "description": "33 battle-tested skills + minimal .claude harness for any coding agent (Claude Code, Cursor, Codex, Gemini CLI)."
+    },
+    {
+      "id": "9d70cd215a44322f",
+      "title": "OpenWiki: CLI that writes and maintains agent documentation for your codebase",
+      "url": "https://github.com/langchain-ai/openwiki",
+      "canonical_url": "github.com/langchain-ai/openwiki",
+      "sources": [
+        "hackernews"
+      ],
+      "source_names": [
+        "Hacker News"
+      ],
+      "confirmed_by": 1,
+      "category": "tool",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-01T20:51:52Z",
+      "fetched_at": "2026-07-05T21:23:16.547Z",
+      "engagement": 82,
+      "score": 45,
+      "score_breakdown": {
+        "engagement": 48,
+        "multi_source": 33,
+        "freshness": 43,
+        "category": 70
+      },
+      "description": null
+    },
+    {
+      "id": "ece0d0f8ca30b0d8",
+      "title": "Learning to Move Before Learning to Do: Task-Agnostic pretraining for VLAs",
+      "url": "https://huggingface.co/papers/2607.02466",
+      "canonical_url": "huggingface.co/papers/2607.02466",
+      "sources": [
+        "huggingface-papers",
+        "arxiv"
+      ],
+      "source_names": [
+        "HF Daily Papers",
+        "arxiv"
+      ],
+      "confirmed_by": 2,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Junhao Shi",
+        "Siyin Wang",
+        "Xiaopeng Yu",
+        "Li Ji",
+        "Jingjing Gong",
+        "Xipeng Qiu"
+      ],
+      "submitted_at": "2026-07-02T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 5,
+      "score": 44,
+      "score_breakdown": {
+        "engagement": 19,
+        "multi_source": 67,
+        "freshness": 44,
+        "category": 75
+      },
+      "description": "Vision-Language-Action (VLA) models are fundamentally bottlenecked by the scarcity of expert demonstrations -- triplets of observations, instructions, and actions that are costly to collect at scale. We argue that this bottleneck stems from conflating two distinct learning objectives: acquiring physical competence (how to move) and acquiring semantic alignment (what to do). Crucially, only the lat"
+    },
+    {
+      "id": "c81349b492ab58b3",
+      "title": "AgenticSTS: A Bounded-Memory Testbed for Long-Horizon LLM Agents",
+      "url": "https://huggingface.co/papers/2607.02255",
+      "canonical_url": "huggingface.co/papers/2607.02255",
+      "sources": [
+        "huggingface-papers"
+      ],
+      "source_names": [
+        "HF Daily Papers"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Xiangchen Cheng",
+        "Yunwei Jiang",
+        "Jianwen Sun",
+        "Zizhen Li",
+        "Chuanhao Li",
+        "Xiangcheng Cao",
+        "Yihao Liu",
+        "Fanrui Zhang",
+        "Li Jin",
+        "Kaipeng Zhang"
+      ],
+      "submitted_at": "2026-07-02T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 46,
+      "score": 43,
+      "score_breakdown": {
+        "engagement": 42,
+        "multi_source": 33,
+        "freshness": 44,
+        "category": 75
+      },
+      "description": "Memory for a long-horizon LLM agent is a contract about what each future decision is allowed to see. The simplest contract appends past observations, tool calls, and reflections to every prompt, which makes prior context easy to access but also turns it into a jumbled mixture in which the effect of any single memory component is hard to isolate. We introduce and instrument an alternative bounded c"
+    },
+    {
+      "id": "314153d8c54cdfec",
+      "title": "frankchiu-dev/claude-codex-usage-dashboard — A local Windows dashboard for Claude Code and Codex usage limits.",
+      "url": "https://github.com/frankchiu-dev/claude-codex-usage-dashboard",
+      "canonical_url": "github.com/frankchiu-dev/claude-codex-usage-dashboard",
+      "sources": [
+        "github-ai"
+      ],
+      "source_names": [
+        "GitHub · AI"
+      ],
+      "confirmed_by": 1,
+      "category": "tool",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-06-29T13:43:25Z",
+      "fetched_at": "2026-07-05T21:24:07.130Z",
+      "engagement": 193,
+      "score": 42,
+      "score_breakdown": {
+        "engagement": 57,
+        "multi_source": 33,
+        "freshness": 10,
+        "category": 70
+      },
+      "description": "A local Windows dashboard for Claude Code and Codex usage limits."
+    },
+    {
+      "id": "5eb38d840fbfe8eb",
+      "title": "Jia-Ethan/claude-keysmith — Claude Code CLAUDE.md import-block installer for local instruction files",
+      "url": "https://github.com/Jia-Ethan/claude-keysmith",
+      "canonical_url": "github.com/jia-ethan/claude-keysmith",
+      "sources": [
+        "github-ai"
+      ],
+      "source_names": [
+        "GitHub · AI"
+      ],
+      "confirmed_by": 1,
+      "category": "tool",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-06-29T15:48:02Z",
+      "fetched_at": "2026-07-05T21:24:07.130Z",
+      "engagement": 176,
+      "score": 42,
+      "score_breakdown": {
+        "engagement": 56,
+        "multi_source": 33,
+        "freshness": 11,
+        "category": 70
+      },
+      "description": "Claude Code CLAUDE.md import-block installer for local instruction files"
+    },
+    {
+      "id": "4bab1d30be753680",
+      "title": "Multi-Resolution Flow Matching: Training-Free Diffusion Acceleration via Staged Sampling",
+      "url": "https://huggingface.co/papers/2607.01642",
+      "canonical_url": "huggingface.co/papers/2607.01642",
+      "sources": [
+        "huggingface-papers"
+      ],
+      "source_names": [
+        "HF Daily Papers"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Xingyu Zheng",
+        "Xianglong Liu",
+        "Yifu Ding",
+        "Weilun Feng",
+        "Junqing Lin",
+        "Jinyang Guo",
+        "Haotong Qin"
+      ],
+      "submitted_at": "2026-07-02T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 29,
+      "score": 41,
+      "score_breakdown": {
+        "engagement": 37,
+        "multi_source": 33,
+        "freshness": 44,
+        "category": 75
+      },
+      "description": "Hardware-agnostic strategies for accelerating text-to-image diffusion, such as timestep distillation and feature caching, can reduce inference time without custom kernels or system-level optimization. Among them, multi-resolution generation strategies have recently received broad attention, attaining more than 5x speedup without any training. However, the design of performing upsampling in the lat"
+    },
+    {
+      "id": "c627e9820d3ce26e",
+      "title": "AgenticDataBench: A Comprehensive Benchmark for Data Agents",
+      "url": "https://huggingface.co/papers/2607.01647",
+      "canonical_url": "huggingface.co/papers/2607.01647",
+      "sources": [
+        "huggingface-papers"
+      ],
+      "source_names": [
+        "HF Daily Papers"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Zhaoyan Sun",
+        "Shan Zhong",
+        "Daizhou Wen",
+        "Jiaxing Han",
+        "Guoliang Li",
+        "Ying Yan",
+        "Peng Zhang",
+        "Yu Su",
+        "Xiang Qi",
+        "Baolin Sun",
+        "Chengyuan Yang",
+        "Tao Fang",
+        "Huaiyu Ruan"
+      ],
+      "submitted_at": "2026-07-02T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 29,
+      "score": 41,
+      "score_breakdown": {
+        "engagement": 37,
+        "multi_source": 33,
+        "freshness": 44,
+        "category": 75
+      },
+      "description": "Data science aims to derive actionable insights from heterogeneous raw data, unlocking the value of the massive amounts of data generated in modern society. Automating this process is essential to reducing labor-intensive efforts for data scientists and enabling scalable data-driven applications. Recently, large language model (LLM)-based data agents have emerged as a promising solution to automat"
+    },
+    {
+      "id": "a6a3ec04ba98d8e7",
+      "title": "Sophomoresty/gemini-search-mcp — Free MCP server for web search powered by Google AI Mode (Gemini). Unlimited, no API key.",
+      "url": "https://github.com/Sophomoresty/gemini-search-mcp",
+      "canonical_url": "github.com/sophomoresty/gemini-search-mcp",
+      "sources": [
+        "github-ai"
+      ],
+      "source_names": [
+        "GitHub · AI"
+      ],
+      "confirmed_by": 1,
+      "category": "tool",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-06-29T13:17:52Z",
+      "fetched_at": "2026-07-05T21:24:07.130Z",
+      "engagement": 167,
+      "score": 41,
+      "score_breakdown": {
+        "engagement": 56,
+        "multi_source": 33,
+        "freshness": 9,
+        "category": 70
+      },
+      "description": "Free MCP server for web search powered by Google AI Mode (Gemini). Unlimited, no API key."
+    },
+    {
+      "id": "1a236c97ac235006",
+      "title": "redevops-io/context-runtime — Context Runtime — a database query planner for LLM context. Decides what a model sees before it answers; plans it, runs it through reused substrate, and learns from the outcome.",
+      "url": "https://github.com/redevops-io/context-runtime",
+      "canonical_url": "github.com/redevops-io/context-runtime",
+      "sources": [
+        "github-ai"
+      ],
+      "source_names": [
+        "GitHub · AI"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-06-29T23:13:39Z",
+      "fetched_at": "2026-07-05T21:24:07.130Z",
+      "engagement": 104,
+      "score": 41,
+      "score_breakdown": {
+        "engagement": 51,
+        "multi_source": 33,
+        "freshness": 15,
+        "category": 75
+      },
+      "description": "Context Runtime — a database query planner for LLM context. Decides what a model sees before it answers; plans it, runs it through reused substrate, and learns from the outcome."
+    },
+    {
+      "id": "fa58865dc3ad82b2",
+      "title": "WorldDirector: Building Controllable World Simulators with Persistent Dynamic Memory",
+      "url": "https://huggingface.co/papers/2607.02517",
+      "canonical_url": "huggingface.co/papers/2607.02517",
+      "sources": [
+        "huggingface-papers"
+      ],
+      "source_names": [
+        "HF Daily Papers"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Hanlin Wang",
+        "Hao Ouyang",
+        "Qiuyu Wang",
+        "Wen Wang",
+        "Qingyan Bai",
+        "Ka Leong Cheng",
+        "Yue Yu",
+        "Yixuan Li",
+        "Yihao Meng",
+        "Zichen Liu",
+        "Yanhong Zeng",
+        "Yujun Shen",
+        "Qifeng Chen"
+      ],
+      "submitted_at": "2026-07-02T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 22,
+      "score": 40,
+      "score_breakdown": {
+        "engagement": 34,
+        "multi_source": 33,
+        "freshness": 44,
+        "category": 75
+      },
+      "description": "We present WorldDirector, a highly controllable video world model framework designed for persistent dynamic object memory and unrestricted viewpoint exploration. Unlike existing world models that entangle physical dynamics with pixel rendering and rely on continuous visual observation to sustain motion, our framework explicitly decouples semantic motion orchestration from visual generation. By lev"
+    },
+    {
+      "id": "35fd75225b040d1c",
+      "title": "I built an open, from-scratch MT pipeline + parallel corpus for Tunisian Darija (Arabizi) early baseline, and I'm growing it into a curated community corpus [P]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1uo92vz/i_built_an_open_fromscratch_mt_pipeline_parallel/",
+      "canonical_url": "reddit.com/r/machinelearning/comments/1uo92vz/i_built_an_open_fromscratch_mt_pipeline_parallel",
+      "sources": [
+        "reddit"
+      ],
+      "source_names": [
+        "reddit"
+      ],
+      "confirmed_by": 1,
+      "category": "tool",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-05T18:08:49.000Z",
+      "fetched_at": "2026-07-05T21:23:17.056Z",
+      "engagement": 0,
+      "score": 40,
+      "score_breakdown": {
+        "engagement": 8,
+        "multi_source": 33,
+        "freshness": 98,
+        "category": 70
+      },
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I&#39;m an 18-year-old independent student from Tunisia. I built and I&#39;m leading an open, from-scratch machine-translation pipeline and parallel corpus for Tunisian Darija. Sharing it for feedback.</p> <p>Why: Tunisian Darija, written in Arabizi (Latin letters + numerals like 3/7/9/5 for Arabic phonemes), has almost no open NLP resources. Existing Arabic tools"
+    },
+    {
+      "id": "4ad9aaca74f20f6a",
+      "title": "kdsuomi/cc-simplerouter — Install and setup in 26 seconds. Simplerouter configures Claude Code to use any compatible OpenRouter model in seconds, WITHOUT manual editing of config files, environment variables, or messing with local webservers/webUIs. It also doesn't overwrite your existing Claude Code subscription sign-in!",
+      "url": "https://github.com/kdsuomi/cc-simplerouter",
+      "canonical_url": "github.com/kdsuomi/cc-simplerouter",
+      "sources": [
+        "github-ai"
+      ],
+      "source_names": [
+        "GitHub · AI"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-06-29T02:22:12Z",
+      "fetched_at": "2026-07-05T21:24:07.130Z",
+      "engagement": 145,
+      "score": 40,
+      "score_breakdown": {
+        "engagement": 54,
+        "multi_source": 33,
+        "freshness": 3,
+        "category": 75
+      },
+      "description": "Install and setup in 26 seconds. Simplerouter configures Claude Code to use any compatible OpenRouter model in seconds, WITHOUT manual editing of config files, environment variables, or messing with local webservers/webUIs. It also doesn't overwrite your existing Claude Code subscription sign-in!"
+    },
+    {
+      "id": "42d9c7acd3c6c656",
+      "title": "guhcostan/claude-mega-brain — OKF-powered knowledge context for Claude Code — injects your project's knowledge base at every session",
+      "url": "https://github.com/guhcostan/claude-mega-brain",
+      "canonical_url": "github.com/guhcostan/claude-mega-brain",
+      "sources": [
+        "github-ai"
+      ],
+      "source_names": [
+        "GitHub · AI"
+      ],
+      "confirmed_by": 1,
+      "category": "tool",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-06-29T14:10:41Z",
+      "fetched_at": "2026-07-05T21:24:07.130Z",
+      "engagement": 133,
+      "score": 40,
+      "score_breakdown": {
+        "engagement": 53,
+        "multi_source": 33,
+        "freshness": 10,
+        "category": 70
+      },
+      "description": "OKF-powered knowledge context for Claude Code — injects your project's knowledge base at every session"
+    },
+    {
+      "id": "8fa7b46ee27f3a71",
+      "title": "If DeepMind or Anthropic is doing your exact research topic, do you still continue? [D]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1unt64q/if_deepmind_or_anthropic_is_doing_your_exact/",
+      "canonical_url": "reddit.com/r/machinelearning/comments/1unt64q/if_deepmind_or_anthropic_is_doing_your_exact",
+      "sources": [
+        "reddit"
+      ],
+      "source_names": [
+        "reddit"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-05T04:54:28.000Z",
+      "fetched_at": "2026-07-05T21:23:17.056Z",
+      "engagement": 0,
+      "score": 39,
+      "score_breakdown": {
+        "engagement": 8,
+        "multi_source": 33,
+        "freshness": 90,
+        "category": 75
+      },
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>As someone who is <strong>not affiliated</strong> with any of the big tech companies, I find it particularly difficult to have the confidence or enthusiasm to approach any ML problem with an attitude that my professors probably had at my stage in life. I&#39;m sure I am not the only one having the following thoughts:</p> <ul> <li>&quot;My research is currently bei"
+    },
+    {
+      "id": "9b626224c041b8d4",
+      "title": "Is machine learning research worth it for now? [D]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1uo0dqi/is_machine_learning_research_worth_it_for_now_d/",
+      "canonical_url": "reddit.com/r/machinelearning/comments/1uo0dqi/is_machine_learning_research_worth_it_for_now_d",
+      "sources": [
+        "reddit"
+      ],
+      "source_names": [
+        "reddit"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-05T11:58:49.000Z",
+      "fetched_at": "2026-07-05T21:23:17.056Z",
+      "engagement": 0,
+      "score": 39,
+      "score_breakdown": {
+        "engagement": 8,
+        "multi_source": 33,
+        "freshness": 94,
+        "category": 75
+      },
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I am a scientist who just applied machine learning to my research (JEPA/Representation/Geometric branch) and it did wonder! Allowed me to see so many papers that I am still struggling to write up.</p> <p>From what I see, there are clearly a million possibilities not done yet, e.g., industrial data, patterns in nature, etc.</p> <p>Why is the job perspective so pess"
+    },
+    {
+      "id": "b1c5a505b721995e",
+      "title": "Competence Gate: gating tool-use on a small model's internal confidence signal instead of its verbalised one — Qwen3.5-4B, open weights [P]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1unw5un/competence_gate_gating_tooluse_on_a_small_models/",
+      "canonical_url": "reddit.com/r/machinelearning/comments/1unw5un/competence_gate_gating_tooluse_on_a_small_models",
+      "sources": [
+        "reddit"
+      ],
+      "source_names": [
+        "reddit"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-05T07:49:09.000Z",
+      "fetched_at": "2026-07-05T21:23:17.056Z",
+      "engagement": 0,
+      "score": 39,
+      "score_breakdown": {
+        "engagement": 8,
+        "multi_source": 33,
+        "freshness": 92,
+        "category": 75
+      },
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I made a 10MB LoRA adapter for Qwen3.5-4B plus a small orchestration layer. It decides, per query, whether to answer directly, search the web, or retrieve from your own local documents and it refuses to make things up when it can&#39;t verify an answer.</p> <p>It runs locally (Apple Silicon / MLX, with a GGUF build for llama.cpp/Ollama).</p> <p>Basically small ins"
+    },
+    {
+      "id": "f8cf662629fbfed3",
+      "title": "xuanxuan321/xuanxuan-prompts — AI Agent 复刻精美网页的提示词合集：每个目录一份 prompt.md + 效果图截图，丢给 Claude/Codex/Kimi 即可生成对应网站",
+      "url": "https://github.com/xuanxuan321/xuanxuan-prompts",
+      "canonical_url": "github.com/xuanxuan321/xuanxuan-prompts",
+      "sources": [
+        "github-ai"
+      ],
+      "source_names": [
+        "GitHub · AI"
+      ],
+      "confirmed_by": 1,
+      "category": "tool",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-06-29T01:43:10Z",
+      "fetched_at": "2026-07-05T21:24:07.130Z",
+      "engagement": 146,
+      "score": 39,
+      "score_breakdown": {
+        "engagement": 54,
+        "multi_source": 33,
+        "freshness": 3,
+        "category": 70
+      },
+      "description": "AI Agent 复刻精美网页的提示词合集：每个目录一份 prompt.md + 效果图截图，丢给 Claude/Codex/Kimi 即可生成对应网站"
+    },
+    {
+      "id": "f182c61f839c5604",
+      "title": "0xMassi/pocketdev — One command to run the AI coding CLI you already pay for (Claude Code, Codex, Cursor, Gemini, Grok, aider) on a Tailscale-only Hetzner box — code from your phone.",
+      "url": "https://github.com/0xMassi/pocketdev",
+      "canonical_url": "github.com/0xmassi/pocketdev",
+      "sources": [
+        "github-ai"
+      ],
+      "source_names": [
+        "GitHub · AI"
+      ],
+      "confirmed_by": 1,
+      "category": "tool",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-06-29T14:03:44Z",
+      "fetched_at": "2026-07-05T21:24:07.130Z",
+      "engagement": 110,
+      "score": 39,
+      "score_breakdown": {
+        "engagement": 51,
+        "multi_source": 33,
+        "freshness": 10,
+        "category": 70
+      },
+      "description": "One command to run the AI coding CLI you already pay for (Claude Code, Codex, Cursor, Gemini, Grok, aider) on a Tailscale-only Hetzner box — code from your phone."
+    },
+    {
+      "id": "46d3c9a235647f95",
+      "title": "AGVBench: A Reliability-Oriented Benchmark of Data Augmentation for Vein Recognition",
+      "url": "https://huggingface.co/papers/2607.02271",
+      "canonical_url": "huggingface.co/papers/2607.02271",
+      "sources": [
+        "huggingface-papers"
+      ],
+      "source_names": [
+        "HF Daily Papers"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Haiyang Li",
+        "Yuming Fu",
+        "Qun Song",
+        "Hongchao Liao",
+        "Jing Chen",
+        "Mounim A. EI-Yacoubi",
+        "Xin Jin"
+      ],
+      "submitted_at": "2026-07-02T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 13,
+      "score": 38,
+      "score_breakdown": {
+        "engagement": 29,
+        "multi_source": 33,
+        "freshness": 44,
+        "category": 75
+      },
+      "description": "Vein recognition is a secure biometric technology often constrained by limited annotated data and imaging variations. While data augmentation mitigates this, strategies designed for natural images may disrupt the fine-grained topology and textures essential for identity discrimination. We present AGVBench, which evaluates 30 representative augmentation strategies on five public palm- and finger-ve"
+    },
+    {
+      "id": "a88db64587384143",
+      "title": "SkillCoach: Self-Evolving Rubrics for Evaluating and Enhancing Agentic Skill-Use",
+      "url": "https://huggingface.co/papers/2607.01874",
+      "canonical_url": "huggingface.co/papers/2607.01874",
+      "sources": [
+        "huggingface-papers"
+      ],
+      "source_names": [
+        "HF Daily Papers"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Jiayin Zhu",
+        "Kelong Mao",
+        "Yudong Guo",
+        "Dengbo He",
+        "Sulong Xu",
+        "Simiu Gu",
+        "Yutao Yue"
+      ],
+      "submitted_at": "2026-07-02T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 15,
+      "score": 38,
+      "score_breakdown": {
+        "engagement": 30,
+        "multi_source": 33,
+        "freshness": 44,
+        "category": 75
+      },
+      "description": "Skills are becoming a reusable operational layer for LLM agents, encoding SOPs, domain rules, tool workflows, scripts, and validation routines. In realistic skill repositories, overlapping skills make reliable skill-use difficult. Final verifier success is too coarse for both evaluation and training, since an agent may pass through trial and error while selecting distractor skills, skipping requir"
+    },
+    {
+      "id": "0d62ca4571ab7063",
+      "title": "Optimizing Visual Generative Models via Distribution-wise Rewards",
+      "url": "https://huggingface.co/papers/2607.02291",
+      "canonical_url": "huggingface.co/papers/2607.02291",
+      "sources": [
+        "huggingface-papers"
+      ],
+      "source_names": [
+        "HF Daily Papers"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Ruihang Li",
+        "Mengde Xu",
+        "Shuyang Gu",
+        "Leigang Qu",
+        "Fuli Feng",
+        "Han Hu",
+        "Wenjie Wang"
+      ],
+      "submitted_at": "2026-07-02T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 14,
+      "score": 38,
+      "score_breakdown": {
+        "engagement": 29,
+        "multi_source": 33,
+        "freshness": 44,
+        "category": 75
+      },
+      "description": "Conventional reinforcement learning strategies for visual generation typically employ sample-wise reward functions, yet this practice frequently results in reward hacking that degrades image diversity and introduces visual anomalies. To address these limitations, we present a novel framework that finetunes generative models using distribution-wise rewards, ensuring better alignment with real-world"
+    },
+    {
+      "id": "73889949225dc478",
+      "title": "From SRA to Self-Flow: Data Augmentation or Self-Supervision?",
+      "url": "https://huggingface.co/papers/2607.02508",
+      "canonical_url": "huggingface.co/papers/2607.02508",
+      "sources": [
+        "huggingface-papers"
+      ],
+      "source_names": [
+        "HF Daily Papers"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Dengyang Jiang",
+        "Mengmeng Wang",
+        "Harry Yang",
+        "Jingdong Wang"
+      ],
+      "submitted_at": "2026-07-02T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 10,
+      "score": 37,
+      "score_breakdown": {
+        "engagement": 26,
+        "multi_source": 33,
+        "freshness": 44,
+        "category": 75
+      },
+      "description": "Representation alignment has become an effective way to accelerate diffusion transformer training and improve generation quality. Recent self-alignment methods, such as SRA and Self-Flow, further remove the dependency on external pretrained encoders by constructing alignment within the diffusion model itself. However, the mechanism behind the improvement from SRA to Self-Flow, dual-time scheduling"
+    },
+    {
+      "id": "4343a1c1f641fbd4",
+      "title": "Multimodal Continuous Reasoning via Asymmetric Mutual Variational Learning",
+      "url": "https://huggingface.co/papers/2607.00461",
+      "canonical_url": "huggingface.co/papers/2607.00461",
+      "sources": [
+        "huggingface-papers"
+      ],
+      "source_names": [
+        "HF Daily Papers"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Shijie Li",
+        "Yilin Gao",
+        "Siyuan Yang",
+        "Tieyuan Chen",
+        "Chaofan Gan",
+        "Zhihao He",
+        "Zicheng Zhao",
+        "Yuyu Guo",
+        "Weiyao Lin",
+        "Hang Yu"
+      ],
+      "submitted_at": "2026-07-01T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 22,
+      "score": 37,
+      "score_breakdown": {
+        "engagement": 34,
+        "multi_source": 33,
+        "freshness": 30,
+        "category": 75
+      },
+      "description": "Multimodal Large Language Models (MLLMs) are often constrained by a language-space bottleneck, forcing complex visual reasoning into discrete tokens which can lose perceptual nuance. A promising alternative is continuous latent reasoning, where the goal is to discover implicit reasoning pathways that bridge the multimodal query and the final answer. However, this introduces a severe train-inferenc"
+    },
+    {
+      "id": "6a034f7ce1aa9032",
+      "title": "ELDR: Expert-Locality-Aware Decode Routing for PD-Disaggregated MoE Serving",
+      "url": "https://huggingface.co/papers/2607.00466",
+      "canonical_url": "huggingface.co/papers/2607.00466",
+      "sources": [
+        "huggingface-papers"
+      ],
+      "source_names": [
+        "HF Daily Papers"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Sangjin Choi",
+        "Sukmin Cho",
+        "Yifan Xiong",
+        "Ziyue Yang",
+        "Youngjin Kwon",
+        "Peng Cheng"
+      ],
+      "submitted_at": "2026-07-01T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 24,
+      "score": 37,
+      "score_breakdown": {
+        "engagement": 35,
+        "multi_source": 33,
+        "freshness": 30,
+        "category": 75
+      },
+      "description": "In prefill-decode (PD) disaggregated LLM serving, each request is assigned to a decode worker after prefill. Existing decode routers balance only load; for mixture-of-experts (MoE) models this is incomplete: equally loaded workers can differ in latency, since each decode step loads the weights of every distinct expert its batch activates. We present ELDR, an expert-locality-aware decode router for"
+    },
+    {
+      "id": "ff006ad21a9d217d",
+      "title": "MemSyco-Bench: Benchmarking Sycophancy in Agent Memory",
+      "url": "https://huggingface.co/papers/2607.01071",
+      "canonical_url": "huggingface.co/papers/2607.01071",
+      "sources": [
+        "huggingface-papers"
+      ],
+      "source_names": [
+        "HF Daily Papers"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Zhishang Xiang",
+        "Zerui Chen",
+        "Yunbo Tang",
+        "Zhimin Wei",
+        "Ruqin Ning",
+        "Yujie Lin",
+        "Qinggang Zhang",
+        "Jinsong Su"
+      ],
+      "submitted_at": "2026-07-01T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 22,
+      "score": 37,
+      "score_breakdown": {
+        "engagement": 34,
+        "multi_source": 33,
+        "freshness": 30,
+        "category": 75
+      },
+      "description": "Memory has emerged as a cornerstone of modern LLM-based agents, supporting their evolution from single-turn assistants to long-term collaborators. However, memory is not always beneficial: retrieved memories often induce a critical issue of sycophancy, causing agents to over-align with the user at the cost of factual accuracy or objective reasoning. Despite this emerging risk, existing memory benc"
+    },
+    {
+      "id": "c6b8e959f19b4199",
+      "title": "Is Intrinsic Motivation a Viable PhD Topic in 2026? [D]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1uo5kg6/is_intrinsic_motivation_a_viable_phd_topic_in/",
+      "canonical_url": "reddit.com/r/machinelearning/comments/1uo5kg6/is_intrinsic_motivation_a_viable_phd_topic_in",
+      "sources": [
+        "reddit"
+      ],
+      "source_names": [
+        "reddit"
+      ],
+      "confirmed_by": 1,
+      "category": "discussion",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-05T15:50:02.000Z",
+      "fetched_at": "2026-07-05T21:23:17.056Z",
+      "engagement": 0,
+      "score": 37,
+      "score_breakdown": {
+        "engagement": 8,
+        "multi_source": 33,
+        "freshness": 97,
+        "category": 50
+      },
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I started a PhD in CS about a year an a half ago. Generally speaking my topic is on intrinsic motivation (more commonly people refer to it as unsupervised RL).</p> <p>Intrinsic motivation (IM) is a niche field within AI. It seeks to develop reward signals which are not specific to any task but rather something closer to the low level motivators that drive intellig"
+    },
+    {
+      "id": "3491014c5a863163",
+      "title": "ECCV travel support program [D]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1unx5f8/eccv_travel_support_program_d/",
+      "canonical_url": "reddit.com/r/machinelearning/comments/1unx5f8/eccv_travel_support_program_d",
+      "sources": [
+        "reddit"
+      ],
+      "source_names": [
+        "reddit"
+      ],
+      "confirmed_by": 1,
+      "category": "discussion",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-05T08:49:12.000Z",
+      "fetched_at": "2026-07-05T21:23:17.056Z",
+      "engagement": 0,
+      "score": 37,
+      "score_breakdown": {
+        "engagement": 8,
+        "multi_source": 33,
+        "freshness": 92,
+        "category": 50
+      },
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Has anyone gotten a response from the eccv travel support program listed on their website? <a href=\"https://eccv.ecva.net/Conferences/2026/DEI\">https://eccv.ecva.net/Conferences/2026/DEI</a></p> <p>Edit: also have anyone applied for this program as an accepted author? I have an independent research paper accepted and am currently looking for funds for paying for t"
+    },
+    {
+      "id": "6617d6e15d53bb96",
+      "title": "Logit-Contribution Scoring Identifies Non-Literal Retrieval Heads",
+      "url": "https://huggingface.co/papers/2607.01002",
+      "canonical_url": "huggingface.co/papers/2607.01002",
+      "sources": [
+        "huggingface-papers"
+      ],
+      "source_names": [
+        "HF Daily Papers"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Aryo Pradipta Gema",
+        "Beatrice Alex",
+        "Pasquale Minervini"
+      ],
+      "submitted_at": "2026-07-01T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 15,
+      "score": 36,
+      "score_breakdown": {
+        "engagement": 30,
+        "multi_source": 33,
+        "freshness": 30,
+        "category": 75
+      },
+      "description": "In long-context use, large language models frequently synthesize answers from the meaning of a relevant context span rather than literally copy-pasting them. Identifying which attention heads perform this synthesis matters for interpreting long-context model behavior. Yet existing detectors miss these heads by construction: they reward heads whose attended token matches the generated token, a lite"
+    },
+    {
+      "id": "db127834c67249e5",
+      "title": "Proposal: Use semantic compression as input diffusion to read sessions larger than the context window [R]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1un63hv/proposal_use_semantic_compression_as_input/",
+      "canonical_url": "reddit.com/r/machinelearning/comments/1un63hv/proposal_use_semantic_compression_as_input",
+      "sources": [
+        "reddit"
+      ],
+      "source_names": [
+        "reddit"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-04T10:56:40.000Z",
+      "fetched_at": "2026-07-05T21:23:17.056Z",
+      "engagement": 0,
+      "score": 36,
+      "score_breakdown": {
+        "engagement": 8,
+        "multi_source": 33,
+        "freshness": 79,
+        "category": 75
+      },
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>I&#39;ve been trying to come up with a solution for keeping extremely long ai sessions coherent. Sometimes there is too much substance to risk compaction. With so much buzz around diffusion going on it got me thinking, what if we treat the context like a progressive render, blurry&gt;sharp.</p> <p>The practical way to make text &quot;blurry&quot; is compression. T"
+    },
+    {
+      "id": "eef9e376ac8520bf",
+      "title": "WARP: Weight-Space Analysis for Recovering Training Data Portfolios",
+      "url": "https://huggingface.co/papers/2607.01686",
+      "canonical_url": "huggingface.co/papers/2607.01686",
+      "sources": [
+        "huggingface-papers"
+      ],
+      "source_names": [
+        "HF Daily Papers"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Tzu-Heng Huang",
+        "Aditya Goyal",
+        "John Cooper",
+        "Frederic Sala"
+      ],
+      "submitted_at": "2026-07-02T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 6,
+      "score": 35,
+      "score_breakdown": {
+        "engagement": 21,
+        "multi_source": 33,
+        "freshness": 44,
+        "category": 75
+      },
+      "description": "Foundation models are routinely released to the public, yet the data recipes used to train them -- such as domain mixture weights that determine how different sources are sampled -- are rarely disclosed. This creates an access asymmetry: researchers study the resulting models but lack visibility into the training distribution that produces them. Prior works for inferring training data, such as mem"
+    },
+    {
+      "id": "628c04788ff5b747",
+      "title": "AutoMem: Automated Learning of Memory as a Cognitive Skill",
+      "url": "https://huggingface.co/papers/2607.01224",
+      "canonical_url": "huggingface.co/papers/2607.01224",
+      "sources": [
+        "huggingface-papers"
+      ],
+      "source_names": [
+        "HF Daily Papers"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Shengguang Wu",
+        "Hao Zhu",
+        "Yuhui Zhang",
+        "Xiaohan Wang",
+        "Serena Yeung-Levy"
+      ],
+      "submitted_at": "2026-07-01T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 14,
+      "score": 35,
+      "score_breakdown": {
+        "engagement": 29,
+        "multi_source": 33,
+        "freshness": 30,
+        "category": 75
+      },
+      "description": "Memory expertise is a learned skill: knowing what to encode, when to retrieve, and how to organize knowledge--a capacity known in cognitive science as metamemory. We bring this perspective to LLMs by treating memory management as a trainable skill. We promote file-system operations to first-class memory actions alongside task actions, letting the model itself decide how to manage its memory. This "
+    },
+    {
+      "id": "1ee2ca8a02dabff5",
+      "title": "PACE: A Proxy for Agentic Capability Evaluation",
+      "url": "https://huggingface.co/papers/2607.02032",
+      "canonical_url": "huggingface.co/papers/2607.02032",
+      "sources": [
+        "huggingface-papers"
+      ],
+      "source_names": [
+        "HF Daily Papers"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Yueqi Song",
+        "Lintang Sutawika",
+        "Jiarui Liu",
+        "Lindia Tjuatja",
+        "Jiayi Geng",
+        "Yunze Xiao",
+        "Daniel Lee",
+        "Aditya Bharat Soni",
+        "Vincent Lo",
+        "Xiang Yue",
+        "Graham Neubig"
+      ],
+      "submitted_at": "2026-07-02T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 7,
+      "score": 35,
+      "score_breakdown": {
+        "engagement": 23,
+        "multi_source": 33,
+        "freshness": 44,
+        "category": 75
+      },
+      "description": "Evaluating LLM agents on benchmarks like SWE-Bench and GAIA can be expensive, time-consuming, and requires complex infrastructure. A single evaluation can cost thousands of dollars and take days to complete. In contrast, non-agentic LLM benchmarks that test individual capabilities (e.g., reasoning, code generation) are fast and cheap to run. In this paper, we investigate whether performance on exp"
+    },
+    {
+      "id": "7801a1018be8d4b0",
+      "title": "Denser neq Better: Limits of On-Policy Self-Distillation for Continual Post-Training",
+      "url": "https://huggingface.co/papers/2607.01763",
+      "canonical_url": "huggingface.co/papers/2607.01763",
+      "sources": [
+        "huggingface-papers"
+      ],
+      "source_names": [
+        "HF Daily Papers"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Meng Wang",
+        "Haohan Zhao",
+        "Wenzhuo Liu",
+        "Lu Yang",
+        "Geng Liu",
+        "Haiyang Guo",
+        "Guo-Sen Xie",
+        "Gaofeng Meng",
+        "Hongbin Liu",
+        "Fei Zhu"
+      ],
+      "submitted_at": "2026-07-02T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 6,
+      "score": 35,
+      "score_breakdown": {
+        "engagement": 21,
+        "multi_source": 33,
+        "freshness": 44,
+        "category": 75
+      },
+      "description": "Continual post-training enables foundation models to acquire new knowledge while preserving existing capabilities. Recent work suggests that on-policy learning can mitigate forgetting, with on-policy self-distillation emerging as a particularly attractive approach. In this work, we revisit this optimistic view through self-distillation policy optimization (SDPO). Our experiments show that SDPO can"
+    },
+    {
+      "id": "b79ff36d20221668",
+      "title": "AnyGroundBench: A Specialized-Domain Benchmark for Video Grounding in Vision-Language Models",
+      "url": "https://huggingface.co/papers/2607.02269",
+      "canonical_url": "huggingface.co/papers/2607.02269",
+      "sources": [
+        "huggingface-papers"
+      ],
+      "source_names": [
+        "HF Daily Papers"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [
+        "Rintaro Otsubo",
+        "Ryo Fujii",
+        "Reina Ishikawa",
+        "Taiki Kanaya",
+        "Kanta Sawafuji",
+        "Hiroki Kajita",
+        "Shigeki Sakai",
+        "Hideo Saito",
+        "Ryo Hachiuma"
+      ],
+      "submitted_at": "2026-07-02T00:00:00.000Z",
+      "fetched_at": "2026-07-05T21:23:16.060Z",
+      "engagement": 7,
+      "score": 35,
+      "score_breakdown": {
+        "engagement": 23,
+        "multi_source": 33,
+        "freshness": 44,
+        "category": 75
+      },
+      "description": "Vision-Language Models (VLMs) have demonstrated immense promise in Spatio-Temporal Video Grounding (STVG). However, current evaluation protocols are largely confined to zero-shot assessments on general, daily-life benchmarks. This creates a critical disconnect from real-world applications in specialized fields, where models inevitably encounter rare visual concepts and complex spatio-temporal dyna"
+    },
+    {
+      "id": "54297e13d4452e82",
+      "title": "H64LM: A 249M-parameter Mixture-of-Experts Transformer built from scratch in PyTorch [P]",
+      "url": "https://www.reddit.com/r/MachineLearning/comments/1umqfd2/h64lm_a_249mparameter_mixtureofexperts/",
+      "canonical_url": "reddit.com/r/machinelearning/comments/1umqfd2/h64lm_a_249mparameter_mixtureofexperts",
+      "sources": [
+        "reddit"
+      ],
+      "source_names": [
+        "reddit"
+      ],
+      "confirmed_by": 1,
+      "category": "paper",
+      "summary_es": null,
+      "summary_failed": false,
+      "authors": [],
+      "submitted_at": "2026-07-03T21:18:10.000Z",
+      "fetched_at": "2026-07-05T21:23:17.056Z",
+      "engagement": 0,
+      "score": 35,
+      "score_breakdown": {
+        "engagement": 8,
+        "multi_source": 33,
+        "freshness": 71,
+        "category": 75
+      },
+      "description": "<!-- SC_OFF --><div class=\"md\"><p>Hi everyone,</p> <p>I built H64LM, a research project to better understand modern LLMs by implementing one from scratch in PyTorch.</p> <p>Instead of relying on high-level training frameworks, I implemented the core components myself attention, MoE routing, normalization, and the training loop.</p> <p><strong>Features</strong></p> <ul> <li>249M-parameter Transform"
+    }
+  ]
+}

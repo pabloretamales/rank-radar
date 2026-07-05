@@ -180,6 +180,7 @@ function dedupe(items) {
           g.title = item.title;
           g.url = item.url;
           g.canonical_url = item.canonical_url;
+          g.id = itemHash(item);
         }
         merged = true;
         break;
@@ -188,6 +189,7 @@ function dedupe(items) {
     if (!merged) {
       groups.push({
         ...item,
+        id: itemHash(item), // canonical_url-hash para routing
         sources: [item.source_id],
         _rep: item,
         title: item.title,

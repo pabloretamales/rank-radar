@@ -4,9 +4,11 @@ import { getDict, detectLocaleFromUrl } from '@/i18n';
 import RepoCard from '@components/RepoCard.astro';
 import ModelCard from '@components/ModelCard.astro';
 import RankedBarChart from '@components/RankedBarChart.astro';
+import NewsCard from '@components/news/NewsCard.astro';
 import githubData from '../../public/data/github-windows.json';
 import aaData from '../../public/data/aa-models.json';
 import openrouterData from '../../public/data/openrouter.json';
+import newsData from '../../public/data/news-latest.json';
 import manifest from '../../public/data/manifest.json';
 
 const locale = detectLocaleFromUrl(Astro.url);
@@ -15,7 +17,13 @@ const dict = getDict(locale);
 const githubTop10 = githubData?.windows?.find(w => w.label === '7d')?.items?.slice(0, 10) ?? [];
 const modelsTop10 = aaData?.rankings?.by_intelligence?.slice(0, 10) ?? [];
 const orTop10 = openrouterData?.rankings?.week?.slice(0, 10) ?? [];
+const newsTop6 = (newsData?.items ?? []).slice(0, 6);
 const lastUpdated = manifest?.generated_at;
+
+// Trunca tagline si tiene Pulse IA también
+const tagline = locale === 'es'
+  ? 'RankRadar — rankings cuantitativos + Pulse IA — noticias curadas en español, 2 veces al día.'
+  : 'RankRadar — quantitative rankings + Pulse IA — curated AI news in Spanish, twice daily.';
 
 // Datos para los bar charts (top 10).
 function humanStars(n) {
@@ -48,7 +56,7 @@ const orBars = orTop10.map((m) => ({
 
 <Base locale={locale} dict={dict}>
   <section class="mb-12">
-    <h1 class="text-3xl sm:text-4xl font-bold mb-3">{dict.site.tagline}</h1>
+    <h1 class="text-3xl sm:text-4xl font-bold mb-3">{tagline}</h1>
     <p class="text-lg max-w-3xl" style="color: var(--text-muted);">{dict.home.intro}</p>
     {lastUpdated && (
       <p class="text-xs mt-4" style="color: var(--text-muted);">
@@ -56,6 +64,41 @@ const orBars = orTop10.map((m) => ({
       </p>
     )}
   </section>
+
+  {newsTop6.length > 0 && (
+    <section class="mb-10 p-5 rounded-lg" style="background: linear-gradient(135deg, #fef3c7 0%, #fffbeb 100%); border: 1px solid #fde68a;">
+      <header class="mb-4 flex items-baseline justify-between flex-wrap gap-2">
+        <div>
+          <h2 class="text-xl font-bold flex items-center gap-2">
+            <span>📰</span>
+            <span>Pulse IA — {locale === 'es' ? 'Hoy' : 'Today'}</span>
+          </h2>
+          <p class="text-sm" style="color: #92400e;">
+            {locale === 'es'
+              ? 'Top 6 noticias curadas, resumidas por IA en español — actualizadas 2×/día.'
+              : 'Top 6 curated news, AI-summarized in Spanish — refreshed 2x/day.'}
+          </p>
+        </div>
+        <a href={`/news/${newsTop6[0].id}`} class="text-sm font-semibold" style="color: #d97706;">
+          {locale === 'es' ? 'Ver detalle →' : 'See details →'}
+        </a>
+      </header>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+        {newsTop6.map((it) => <NewsCard item={it} locale={locale} />)}
+      </div>
+      <div class="mt-4 flex gap-3 text-xs flex-wrap">
+        <a href="/about" class="underline" style="color: #92400e;">
+          {locale === 'es' ? '📋 Metodología' : '📋 Methodology'}
+        </a>
+        {newsData?.items?.filter((it) => it.confirmed_by > 1).length > 0 && (
+          <span style="color: #059669;">
+            ✓ {newsData.items.filter((it) => it.confirmed_by > 1).length}
+            {locale === 'es' ? 'items confirmados por 2+ fuentes' : 'items confirmed by 2+ sources'}
+          </span>
+        )}
+      </div>
+    </section>
+  )}
 
   <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
     <!-- GitHub widget -->
