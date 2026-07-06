@@ -17,7 +17,7 @@ const dict = getDict(locale);
 const githubTop10 = githubData?.windows?.find(w => w.label === '7d')?.items?.slice(0, 10) ?? [];
 const modelsTop10 = aaData?.rankings?.by_intelligence?.slice(0, 10) ?? [];
 const orTop10 = openrouterData?.rankings?.week?.slice(0, 10) ?? [];
-const newsTop6 = (newsData?.items ?? []).slice(0, 6);
+const newsTop16 = (newsData?.items ?? []).slice(0, 16);
 const lastUpdated = manifest?.generated_at;
 
 // Trunca tagline si tiene Pulse IA también
@@ -65,25 +65,25 @@ const orBars = orTop10.map((m) => ({
     )}
   </section>
 
-      {newsTop6.length > 0 && (
-        <section class="mb-10">
-          <header class="mb-4">
-            <div>
-              <h2 class="text-xl font-semibold flex items-center gap-2">
-                <span>Pulse IA</span>
-                <span class="text-xs font-normal px-2 py-0.5 rounded" style="background: var(--bg-tag, #27272a); color: var(--text-muted, #a1a1aa);">
-                  {locale === 'es' ? 'Hoy' : 'Today'}
-                </span>
-              </h2>
-              <p class="text-sm" style="color: var(--text-muted, #a1a1aa);">
-                {locale === 'es'
-                  ? `${newsTop6.length} noticias curadas, resumidas por IA en español — actualizadas 2×/día.`
-                  : `${newsTop6.length} curated news, AI-summarized in Spanish — refreshed 2x/day.`}
-              </p>
-            </div>
-          </header>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
-        {newsTop6.map((it) => <NewsCard item={it} locale={locale} />)}
+  {newsTop16.length > 0 && (
+    <section class="mb-10">
+      <header class="mb-4">
+        <div>
+             <h2 class="text-xl font-semibold flex items-center gap-2">
+               <span>Pulse IA</span>
+               <span class="text-xs font-normal px-2 py-0.5 rounded" style="background: var(--bg-tag, #27272a); color: var(--text-muted, #a1a1aa);">
+                 {locale === 'es' ? 'Hoy' : 'Today'}
+               </span>
+             </h2>
+             <p class="text-sm" style="color: var(--text-muted, #a1a1aa);">
+           {locale === 'es'
+             ? `${newsTop16.length} noticias curadas, resumidas por IA en español — actualizadas 2×/día.`
+             : `${newsTop16.length} curated news, AI-summarized in Spanish — refreshed 2x/day.`}
+          </p>
+        </div>
+      </header>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+        {newsTop16.map((it) => <NewsCard item={it} locale={locale} />)}
       </div>
       {newsData?.items?.filter((it) => it.confirmed_by > 1).length > 0 && (
         <p class="text-xs mt-3" style="color: var(--text-muted, #71717a);">

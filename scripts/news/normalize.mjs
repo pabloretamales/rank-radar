@@ -98,7 +98,7 @@ function normalizeItem(raw, sourceId) {
   item.category = categorize(item.title, item.url);
 
   // Description / abstract (M3 los usa para resumir)
-  item.description = raw.selftext ?? raw.description ?? raw.repo_description ?? raw.abstract ?? null;
+  item.description = raw.selftext ?? raw.description ?? raw.summary ?? raw.repo_description ?? raw.abstract ?? null;
   item.abstract = raw.abstract ?? null;
   item.authors = raw.authors ?? [];
   item.comments_count = raw.comments ?? raw.num_comments ?? null;

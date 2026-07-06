@@ -59,8 +59,8 @@
     },
     {
       "id": "xataka-ia",
-      "name": "Xataka IA",
-      "url": "https://www.xataka.com/tag/inteligencia-artificial/rss",
+      "name": "Xataka",
+      "url": "https://www.xataka.com/feedburner.xml",
       "type": "rss",
       "language": "es",
       "category_hint": "industry",

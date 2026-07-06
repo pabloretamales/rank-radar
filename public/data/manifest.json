@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-05T21:26:52.034Z",
+  "generated_at": "2026-07-06T02:42:12.973Z",
   "oldest_source_fetch": "2026-07-05T19:02:58.423Z",
   "sources": {
     "github": {
@@ -20,14 +20,14 @@
     "aa": "/data/aa-models.json",
     "openrouter": "/data/openrouter.json",
     "news_latest": "/data/news-latest.json",
-    "news_snapshot": "/data/news-2026-07-05.json"
+    "news_snapshot": "/data/news-2026-07-06.json"
   },
   "news": {
-    "date": "2026-07-05",
-    "fetched_at": "2026-07-05T21:26:51.979Z",
+    "date": "2026-07-06",
+    "fetched_at": "2026-07-06T02:41:53.102Z",
     "total_items": 50,
-    "multi_source_count": 3,
+    "multi_source_count": 0,
     "path": "/data/news-latest.json",
-    "snapshot_path": "/data/news-2026-07-05.json"
+    "snapshot_path": "/data/news-2026-07-06.json"
   }
 }
