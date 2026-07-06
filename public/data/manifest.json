@@ -1,33 +1,23 @@
 {
-  "generated_at": "2026-07-06T02:42:12.973Z",
-  "oldest_source_fetch": "2026-07-05T19:02:58.423Z",
+  "generated_at": "2026-07-06T12:03:00.678Z",
+  "oldest_source_fetch": "2026-07-06T12:02:48.253Z",
   "sources": {
     "github": {
-      "fetched_at": "2026-07-05T19:02:58.423Z",
+      "fetched_at": "2026-07-06T12:02:48.253Z",
       "windows": 5
     },
     "aa": {
       "tier": "free",
       "total_models": 550,
-      "fetched_at": "2026-07-05T19:03:01.048Z"
+      "fetched_at": "2026-07-06T12:02:50.364Z"
     },
     "openrouter": {
-      "fetched_at": "2026-07-05T19:03:04.047Z"
+      "fetched_at": "2026-07-06T12:03:00.619Z"
     }
   },
   "paths": {
     "github": "/data/github-windows.json",
     "aa": "/data/aa-models.json",
-    "openrouter": "/data/openrouter.json",
-    "news_latest": "/data/news-latest.json",
-    "news_snapshot": "/data/news-2026-07-06.json"
-  },
-  "news": {
-    "date": "2026-07-06",
-    "fetched_at": "2026-07-06T02:41:53.102Z",
-    "total_items": 50,
-    "multi_source_count": 0,
-    "path": "/data/news-latest.json",
-    "snapshot_path": "/data/news-2026-07-06.json"
+    "openrouter": "/data/openrouter.json"
   }
 }
