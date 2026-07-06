@@ -14,7 +14,7 @@
     "toggleLang": "ES"
   },
   "home": {
-    "intro": "Three rankings in one view. Data refreshed daily from official APIs.",
+    "intro": "Quantitative AI model rankings + the 50 curated news of the day, AI-summarized from 7 free sources. No newsletters, no clickbait.",
     "sectionCompare": "Compare Models",
     "sectionGithub": "GitHub Top",
     "sectionGithubDesc": "Top-starred repos by time window (1d / 7d / 30d / 90d / all-time).",

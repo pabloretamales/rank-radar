@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "RankRadar",
-    "tagline": "Visibilidad en tiempo real de GitHub trending, modelos de IA y apps de OpenRouter",
+    "tagline": "La IA en 5 minutos al día — rankings cuantitativos + noticias curadas, en español.",
     "shortName": "RankRadar"
   },
   "nav": {
@@ -14,7 +14,7 @@
     "toggleLang": "EN"
   },
   "home": {
-    "intro": "Tres rankings en una sola vista. Datos actualizados diariamente desde las APIs oficiales.",
+    "intro": "Rankings cuantitativos de modelos AI + las 50 noticias curadas del día, resumidas por IA desde 7 fuentes gratuitas. Sin newsletters, sin clickbait.",
     "sectionCompare": "Comparar Modelos",
     "sectionGithub": "Top GitHub",
     "sectionGithubDesc": "Repos con más estrellas por ventana de tiempo (1d / 7d / 30d / 90d / histórico).",
