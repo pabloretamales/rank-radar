@@ -19,11 +19,15 @@ const ROOT = join(__dirname, '..', '..');
 const CACHE = join(ROOT, '.cache');
 
 const SOURCES = [
-  { id: 'huggingface-papers', file: 'huggingface-papers.json' },
-  { id: 'hackernews', file: 'hackernews.json' },
-  { id: 'reddit', file: 'reddit.json' },
-  { id: 'arxiv', file: 'arxiv.json' },
-  { id: 'github-ai', file: 'github-ai.json' },
+  // Fuentes validadas por Pablo — mismas que Lovable CRM edge function
+  { id: 'techcrunch-ai', file: 'techcrunch-ai.json' },
+  { id: 'theverge-ai', file: 'theverge-ai.json' },
+  { id: 'venturebeat-ai', file: 'venturebeat-ai.json' },
+  { id: 'mit-techreview-ai', file: 'mit-techreview-ai.json' },
+  { id: 'latent-space', file: 'latent-space.json' },
+  { id: 'hackernews-ai', file: 'hackernews-ai.json' },
+  { id: 'xataka-ia', file: 'xataka-ia.json' },
+  { id: 'wwwhatsnew-ia', file: 'wwwhatsnew-ia.json' },
 ];
 
 const OUT = join(CACHE, 'news-normalized.json');

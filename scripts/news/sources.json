@@ -1,0 +1,79 @@
+{
+  "_comment": "Fuentes validadas por Pablo (mismas que Lovable CRM edge function). Si una feed falla o cambia URL, el script sigue con las demás.",
+  "version": "1.0.0",
+  "updated": "2026-07-05",
+  "sources": [
+    {
+      "id": "techcrunch-ai",
+      "name": "TechCrunch AI",
+      "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+      "type": "rss",
+      "language": "en",
+      "category_hint": "industry",
+      "tier": 1
+    },
+    {
+      "id": "theverge-ai",
+      "name": "The Verge AI",
+      "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+      "type": "rss",
+      "language": "en",
+      "category_hint": "industry",
+      "tier": 1
+    },
+    {
+      "id": "venturebeat-ai",
+      "name": "VentureBeat AI",
+      "url": "https://venturebeat.com/category/ai/feed/",
+      "type": "rss",
+      "language": "en",
+      "category_hint": "industry",
+      "tier": 1
+    },
+    {
+      "id": "mit-techreview-ai",
+      "name": "MIT Technology Review AI",
+      "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+      "type": "rss",
+      "language": "en",
+      "category_hint": "industry",
+      "tier": 1
+    },
+    {
+      "id": "latent-space",
+      "name": "Latent Space",
+      "url": "https://www.latent.space/feed",
+      "type": "rss",
+      "language": "en",
+      "category_hint": "discussion",
+      "tier": 1
+    },
+    {
+      "id": "hackernews-ai",
+      "name": "Hacker News AI (via hnrss.org)",
+      "url": "https://hnrss.org/newest?q=AI+OR+LLM+OR+GPT+OR+Claude+OR+Gemini&count=25",
+      "type": "hnrss",
+      "language": "en",
+      "category_hint": "discussion",
+      "tier": 1
+    },
+    {
+      "id": "xataka-ia",
+      "name": "Xataka IA",
+      "url": "https://www.xataka.com/tag/inteligencia-artificial/rss",
+      "type": "rss",
+      "language": "es",
+      "category_hint": "industry",
+      "tier": 1
+    },
+    {
+      "id": "wwwhatsnew-ia",
+      "name": "WWWhatsnew IA",
+      "url": "https://wwwhatsnew.com/tag/inteligencia-artificial/feed/",
+      "type": "rss",
+      "language": "es",
+      "category_hint": "tool",
+      "tier": 2
+    }
+  ]
+}

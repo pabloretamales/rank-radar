@@ -44,14 +44,14 @@ function buildNewsItem(it) {
     source_names: [...new Set((it.sources_final ?? it.sources ?? [it.source_id]).map((sid) => {
       // Resolver nombre friendly del source
       const M = {
-        'huggingface-papers': 'HF Daily Papers',
-        'hackernews': 'Hacker News',
-        'reddit-machinelearning': 'r/MachineLearning',
-        'reddit-localllama': 'r/LocalLLaMA',
-        'arxiv-cs-ai': 'arXiv (cs.AI)',
-        'arxiv-cs-cl': 'arXiv (cs.CL)',
-        'arxiv-cs-lg': 'arXiv (cs.LG)',
-        'github-ai': 'GitHub · AI',
+        'techcrunch-ai': 'TechCrunch AI',
+        'theverge-ai': 'The Verge AI',
+        'venturebeat-ai': 'VentureBeat AI',
+        'mit-techreview-ai': 'MIT Tech Review',
+        'latent-space': 'Latent Space',
+        'hackernews-ai': 'Hacker News',
+        'xataka-ia': 'Xataka IA',
+        'wwwhatsnew-ia': 'WWWhatsnew',
       };
       return M[sid] ?? sid;
     }))],
