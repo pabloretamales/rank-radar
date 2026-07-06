@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-06T12:02:48.253Z",
+  "fetched_at": "2026-07-06T12:03:12.003Z",
   "source": "GitHub Search API",
   "api": "https://api.github.com/search/repositories",
   "top_n": 20,
@@ -9,12 +9,12 @@
       "query": "created:>2026-07-06",
       "total_count": 0,
       "items": [],
-      "fetched_at": "2026-07-06T12:02:43.125Z"
+      "fetched_at": "2026-07-06T12:03:06.809Z"
     },
     {
       "label": "7d",
       "query": "created:>2026-06-29",
-      "total_count": 2110740,
+      "total_count": 2110887,
       "items": [
         {
           "rank": 1,
@@ -493,12 +493,12 @@
           "private": false
         }
       ],
-      "fetched_at": "2026-07-06T12:02:44.191Z"
+      "fetched_at": "2026-07-06T12:03:07.864Z"
     },
     {
       "label": "30d",
       "query": "created:>2026-06-06",
-      "total_count": 9333061,
+      "total_count": 9333194,
       "items": [
         {
           "rank": 1,
@@ -604,16 +604,16 @@
           "owner": "langchain-ai",
           "description": "OpenWiki is a CLI that writes and maintains agent documentation for your codebase.",
           "html_url": "https://github.com/langchain-ai/openwiki",
-          "stargazers_count": 6424,
+          "stargazers_count": 6425,
           "forks_count": 427,
           "language": "TypeScript",
           "topics": [],
           "created_at": "2026-06-22T23:48:26Z",
           "pushed_at": "2026-07-06T09:23:19Z",
-          "updated_at": "2026-07-06T12:02:13Z",
+          "updated_at": "2026-07-06T12:03:03Z",
           "license": "MIT",
           "open_issues_count": 78,
-          "watchers_count": 6424,
+          "watchers_count": 6425,
           "archived": false,
           "private": false
         },
@@ -661,16 +661,16 @@
           "owner": "deepseek-ai",
           "description": "DeepSpec: a full-stack codebase for training and evaluating speculative decoding algorithms",
           "html_url": "https://github.com/deepseek-ai/DeepSpec",
-          "stargazers_count": 6290,
+          "stargazers_count": 6291,
           "forks_count": 542,
           "language": "Python",
           "topics": [],
           "created_at": "2026-06-26T12:36:05Z",
           "pushed_at": "2026-06-30T06:42:21Z",
-          "updated_at": "2026-07-06T11:51:52Z",
+          "updated_at": "2026-07-06T12:02:57Z",
           "license": "MIT",
           "open_issues_count": 39,
-          "watchers_count": 6290,
+          "watchers_count": 6291,
           "archived": false,
           "private": false
         },
@@ -816,7 +816,7 @@
           "owner": "vercel",
           "description": "The Framework for Building Agents",
           "html_url": "https://github.com/vercel/eve",
-          "stargazers_count": 3245,
+          "stargazers_count": 3246,
           "forks_count": 262,
           "language": "TypeScript",
           "topics": [
@@ -832,10 +832,10 @@
           ],
           "created_at": "2026-06-16T10:51:20Z",
           "pushed_at": "2026-07-06T12:01:51Z",
-          "updated_at": "2026-07-06T11:54:11Z",
+          "updated_at": "2026-07-06T12:03:05Z",
           "license": "Apache-2.0",
           "open_issues_count": 174,
-          "watchers_count": 3245,
+          "watchers_count": 3246,
           "archived": false,
           "private": false
         },
@@ -1003,12 +1003,12 @@
           "private": false
         }
       ],
-      "fetched_at": "2026-07-06T12:02:45.449Z"
+      "fetched_at": "2026-07-06T12:03:09.076Z"
     },
     {
       "label": "90d",
       "query": "created:>2026-04-07",
-      "total_count": 26028820,
+      "total_count": 26028951,
       "items": [
         {
           "rank": 1,
@@ -1529,7 +1529,7 @@
           "private": false
         }
       ],
-      "fetched_at": "2026-07-06T12:02:46.836Z"
+      "fetched_at": "2026-07-06T12:03:10.526Z"
     },
     {
       "label": "all",
@@ -1706,7 +1706,7 @@
           ],
           "created_at": "2025-11-24T10:16:47Z",
           "pushed_at": "2026-07-06T12:00:49Z",
-          "updated_at": "2026-07-06T12:01:42Z",
+          "updated_at": "2026-07-06T12:02:59Z",
           "license": "NOASSERTION",
           "open_issues_count": 6421,
           "watchers_count": 381909,
@@ -1853,7 +1853,7 @@
           "owner": "awesome-selfhosted",
           "description": "A list of Free Software network services and web applications which can be hosted on your own servers",
           "html_url": "https://github.com/awesome-selfhosted/awesome-selfhosted",
-          "stargazers_count": 303194,
+          "stargazers_count": 303195,
           "forks_count": 14141,
           "language": null,
           "topics": [
@@ -1868,10 +1868,10 @@
           ],
           "created_at": "2015-06-01T02:33:17Z",
           "pushed_at": "2026-07-05T11:53:27Z",
-          "updated_at": "2026-07-06T12:02:08Z",
+          "updated_at": "2026-07-06T12:02:49Z",
           "license": "NOASSERTION",
           "open_issues_count": 0,
-          "watchers_count": 303194,
+          "watchers_count": 303195,
           "archived": false,
           "private": false
         },
@@ -1931,7 +1931,7 @@
           "owner": "obra",
           "description": "An agentic skills framework & software development methodology that works.",
           "html_url": "https://github.com/obra/superpowers",
-          "stargazers_count": 247422,
+          "stargazers_count": 247423,
           "forks_count": 21953,
           "language": "Shell",
           "topics": [
@@ -1946,10 +1946,10 @@
           ],
           "created_at": "2025-10-09T19:45:18Z",
           "pushed_at": "2026-07-05T22:52:28Z",
-          "updated_at": "2026-07-06T12:02:46Z",
+          "updated_at": "2026-07-06T12:02:54Z",
           "license": "MIT",
           "open_issues_count": 337,
-          "watchers_count": 247422,
+          "watchers_count": 247423,
           "archived": false,
           "private": false
         },
@@ -2111,8 +2111,8 @@
           "owner": "NousResearch",
           "description": "The agent that grows with you",
           "html_url": "https://github.com/NousResearch/hermes-agent",
-          "stargazers_count": 210056,
-          "forks_count": 38440,
+          "stargazers_count": 210059,
+          "forks_count": 38441,
           "language": "Python",
           "topics": [
             "ai",
@@ -2134,15 +2134,15 @@
           ],
           "created_at": "2025-07-22T22:22:28Z",
           "pushed_at": "2026-07-06T11:58:44Z",
-          "updated_at": "2026-07-06T12:02:17Z",
+          "updated_at": "2026-07-06T12:03:10Z",
           "license": "MIT",
           "open_issues_count": 26133,
-          "watchers_count": 210056,
+          "watchers_count": 210059,
           "archived": false,
           "private": false
         }
       ],
-      "fetched_at": "2026-07-06T12:02:48.002Z"
+      "fetched_at": "2026-07-06T12:03:11.753Z"
     }
   ]
 }
