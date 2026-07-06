@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-06T19:00:19.164Z",
+  "fetched_at": "2026-07-06T19:03:14.033Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-06T19:00:15.222Z",
+    "as_of": "2026-07-06T19:03:09.509Z",
     "version": "v1",
     "start_date": "2026-06-06",
     "end_date": "2026-07-05"
   },
   "rankings_meta": {
-    "as_of": "2026-07-06T19:00:16.392Z",
+    "as_of": "2026-07-06T19:03:10.560Z",
     "version": "v1",
     "start_date": "2026-07-05",
     "end_date": "2026-07-05"
@@ -140,7 +140,7 @@
       {
         "rank": 14,
         "app_id": 3296290,
-        "app_name": "Mira is the leading AI agent inside Telegram",
+        "app_name": "Mira",
         "total_tokens": "13922279285",
         "total_tokens_human": "13.92B",
         "total_requests": 871038,
@@ -322,7 +322,7 @@
       {
         "rank": 14,
         "app_id": 3296290,
-        "app_name": "Mira is the leading AI agent inside Telegram",
+        "app_name": "Mira",
         "total_tokens": "97876612245",
         "total_tokens_human": "97.88B",
         "total_requests": 5859756,
@@ -692,6 +692,27 @@
       },
       {
         "rank": 7,
+        "id": "nex-agi/nex-n2-mini",
+        "slug": "nex-agi/nex-n2-mini",
+        "name": "Nex AGI: Nex-N2-Mini",
+        "description": "Nex-N2-Mini is an open-source agentic mixture-of-experts model from Nex AGI, the smaller sibling in the Nex-N2 series. It accepts text and image input and is built for coding, tool use,...",
+        "context_length": 262144,
+        "modalities": [
+          "text",
+          "image",
+          "→text"
+        ],
+        "n_inputs": 2,
+        "n_outputs": 1,
+        "created_ts": 1782312964,
+        "created_human": "2026-06-24",
+        "pricing_prompt": 2.5e-8,
+        "pricing_completion": 1e-7,
+        "score": 1782312964,
+        "url": "https://huggingface.co/nex-agi/Nex-N2-Mini"
+      },
+      {
+        "rank": 8,
         "id": "sakana/fugu-ultra",
         "slug": "sakana/fugu-ultra-20260615",
         "name": "Sakana: Fugu Ultra",
@@ -712,7 +733,7 @@
         "url": "https://openrouter.ai/models/sakana/fugu-ultra-20260615"
       },
       {
-        "rank": 8,
+        "rank": 9,
         "id": "google/gemini-3.1-flash-image",
         "slug": "google/gemini-3.1-flash-image-20260528",
         "name": "Google: Nano Banana 2 (Gemini 3.1 Flash Image)",
@@ -734,7 +755,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.1-flash-image-20260528"
       },
       {
-        "rank": 9,
+        "rank": 10,
         "id": "google/gemini-3-pro-image",
         "slug": "google/gemini-3-pro-image-20260528",
         "name": "Google: Nano Banana Pro (Gemini 3 Pro Image)",
@@ -756,7 +777,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3-pro-image-20260528"
       },
       {
-        "rank": 10,
+        "rank": 11,
         "id": "cohere/north-mini-code:free",
         "slug": "cohere/north-mini-code-20260617",
         "name": "Cohere: North Mini Code (free)",
@@ -776,7 +797,7 @@
         "url": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0"
       },
       {
-        "rank": 11,
+        "rank": 12,
         "id": "z-ai/glm-5.2",
         "slug": "z-ai/glm-5.2-20260616",
         "name": "Z.ai: GLM 5.2",
@@ -796,7 +817,7 @@
         "url": "https://huggingface.co/zai-org/GLM-5.2"
       },
       {
-        "rank": 12,
+        "rank": 13,
         "id": "openrouter/fusion",
         "slug": "openrouter/fusion",
         "name": "OpenRouter: Fusion",
@@ -816,7 +837,7 @@
         "url": "https://openrouter.ai/models/openrouter/fusion"
       },
       {
-        "rank": 13,
+        "rank": 14,
         "id": "moonshotai/kimi-k2.7-code",
         "slug": "moonshotai/kimi-k2.7-code-20260612",
         "name": "MoonshotAI: Kimi K2.7 Code",
@@ -837,7 +858,7 @@
         "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code"
       },
       {
-        "rank": 14,
+        "rank": 15,
         "id": "~anthropic/claude-fable-latest",
         "slug": "~anthropic/claude-fable-latest",
         "name": "Anthropic: Claude Fable Latest",
@@ -859,7 +880,7 @@
         "url": "https://openrouter.ai/models/~anthropic/claude-fable-latest"
       },
       {
-        "rank": 15,
+        "rank": 16,
         "id": "anthropic/claude-fable-5",
         "slug": "anthropic/claude-5-fable-20260609",
         "name": "Anthropic: Claude Fable 5",
@@ -881,7 +902,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-5-fable-20260609"
       },
       {
-        "rank": 16,
+        "rank": 17,
         "id": "nex-agi/nex-n2-pro",
         "slug": "nex-agi/nex-n2-pro",
         "name": "Nex AGI: Nex-N2-Pro",
@@ -902,7 +923,7 @@
         "url": "https://huggingface.co/nex-agi/Nex-N2-Pro"
       },
       {
-        "rank": 17,
+        "rank": 18,
         "id": "nvidia/nemotron-3.5-content-safety:free",
         "slug": "nvidia/nemotron-3.5-content-safety-20260604",
         "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
@@ -923,7 +944,7 @@
         "url": "https://huggingface.co/nvidia/Nemotron-3.5-Content-Safety"
       },
       {
-        "rank": 18,
+        "rank": 19,
         "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
         "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
         "name": "NVIDIA: Nemotron 3 Ultra (free)",
@@ -943,7 +964,7 @@
         "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
       },
       {
-        "rank": 19,
+        "rank": 20,
         "id": "nvidia/nemotron-3-ultra-550b-a55b",
         "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
         "name": "NVIDIA: Nemotron 3 Ultra",
@@ -961,27 +982,6 @@
         "pricing_completion": 0.0000022,
         "score": 1780551208,
         "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
-      },
-      {
-        "rank": 20,
-        "id": "qwen/qwen3.7-plus",
-        "slug": "qwen/qwen3.7-plus-20260602",
-        "name": "Qwen: Qwen3.7 Plus",
-        "description": "Qwen3.7-Plus is a cost-effective model in Alibaba's Qwen3.7 series. It supports text and image input with text output, building on the series' text capabilities with a comprehensive upgrade to its...",
-        "context_length": 1000000,
-        "modalities": [
-          "text",
-          "image",
-          "→text"
-        ],
-        "n_inputs": 2,
-        "n_outputs": 1,
-        "created_ts": 1780491783,
-        "created_human": "2026-06-03",
-        "pricing_prompt": 3.2e-7,
-        "pricing_completion": 0.00000128,
-        "score": 1780491783,
-        "url": "https://openrouter.ai/models/qwen/qwen3.7-plus-20260602"
       }
     ],
     "today": [
@@ -2148,7 +2148,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-06T19:00:16.392Z",
+      "as_of": "2026-07-06T19:03:10.560Z",
       "version": "v1",
       "start_date": "2026-07-05",
       "end_date": "2026-07-05"
@@ -2156,25 +2156,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-06T19:00:12.175Z",
+      "as_of": "2026-07-06T19:03:07.273Z",
       "version": "v1",
       "start_date": "2026-07-05",
       "end_date": "2026-07-05"
     },
     "week": {
-      "as_of": "2026-07-06T19:00:13.864Z",
+      "as_of": "2026-07-06T19:03:08.205Z",
       "version": "v1",
       "start_date": "2026-06-29",
       "end_date": "2026-07-05"
     },
     "month": {
-      "as_of": "2026-07-06T19:00:15.222Z",
+      "as_of": "2026-07-06T19:03:09.509Z",
       "version": "v1",
       "start_date": "2026-06-06",
       "end_date": "2026-07-05"
     }
   },
-  "models_total": 342,
+  "models_total": 343,
   "catalog": [
     {
       "id": "tencent/hy3:free",
@@ -2275,6 +2275,23 @@
       "pricing_completion": 0.0000015,
       "created_human": "2026-06-30",
       "url": "https://openrouter.ai/models/google/gemini-3.1-flash-lite-image-20260630"
+    },
+    {
+      "id": "nex-agi/nex-n2-mini",
+      "canonical_slug": "nex-agi/nex-n2-mini",
+      "name": "Nex AGI: Nex-N2-Mini",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "image",
+        "→text"
+      ],
+      "n_inputs": 2,
+      "n_outputs": 1,
+      "pricing_prompt": 2.5e-8,
+      "pricing_completion": 1e-7,
+      "created_human": "2026-06-24",
+      "url": "https://huggingface.co/nex-agi/Nex-N2-Mini"
     },
     {
       "id": "sakana/fugu-ultra",
@@ -7406,22 +7423,6 @@
       "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct"
     },
     {
-      "id": "meta-llama/llama-3.2-1b-instruct",
-      "canonical_slug": "meta-llama/llama-3.2-1b-instruct",
-      "name": "Meta: Llama 3.2 1B Instruct",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 2.7e-8,
-      "pricing_completion": 2.01e-7,
-      "created_human": "2024-09-25",
-      "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
-    },
-    {
       "id": "meta-llama/llama-3.2-11b-vision-instruct",
       "canonical_slug": "meta-llama/llama-3.2-11b-vision-instruct",
       "name": "Meta: Llama 3.2 11B Vision Instruct",
@@ -7437,6 +7438,22 @@
       "pricing_completion": 3.45e-7,
       "created_human": "2024-09-25",
       "url": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct"
+    },
+    {
+      "id": "meta-llama/llama-3.2-1b-instruct",
+      "canonical_slug": "meta-llama/llama-3.2-1b-instruct",
+      "name": "Meta: Llama 3.2 1B Instruct",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 2.7e-8,
+      "pricing_completion": 2.01e-7,
+      "created_human": "2024-09-25",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
     },
     {
       "id": "qwen/qwen-2.5-72b-instruct",
@@ -7821,22 +7838,6 @@
       "url": "https://openrouter.ai/models/mistralai/mistral-large"
     },
     {
-      "id": "openai/gpt-3.5-turbo-0613",
-      "canonical_slug": "openai/gpt-3.5-turbo-0613",
-      "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
-      "context_length": 4095,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 0.000001,
-      "pricing_completion": 0.000002,
-      "created_human": "2024-01-25",
-      "url": "https://openrouter.ai/models/openai/gpt-3.5-turbo-0613"
-    },
-    {
       "id": "openai/gpt-4-turbo-preview",
       "canonical_slug": "openai/gpt-4-turbo-preview",
       "name": "OpenAI: GPT-4 Turbo Preview",
@@ -7851,6 +7852,22 @@
       "pricing_completion": 0.00003,
       "created_human": "2024-01-25",
       "url": "https://openrouter.ai/models/openai/gpt-4-turbo-preview"
+    },
+    {
+      "id": "openai/gpt-3.5-turbo-0613",
+      "canonical_slug": "openai/gpt-3.5-turbo-0613",
+      "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
+      "context_length": 4095,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000001,
+      "pricing_completion": 0.000002,
+      "created_human": "2024-01-25",
+      "url": "https://openrouter.ai/models/openai/gpt-3.5-turbo-0613"
     },
     {
       "id": "openrouter/auto",

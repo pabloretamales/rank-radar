@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-06T19:00:09.715Z",
+  "fetched_at": "2026-07-06T19:03:04.288Z",
   "source": "GitHub Search API",
   "api": "https://api.github.com/search/repositories",
   "top_n": 20,
@@ -9,12 +9,12 @@
       "query": "created:>2026-07-06",
       "total_count": 0,
       "items": [],
-      "fetched_at": "2026-07-06T19:00:04.790Z"
+      "fetched_at": "2026-07-06T19:02:58.874Z"
     },
     {
       "label": "7d",
       "query": "created:>2026-06-29",
-      "total_count": 2204834,
+      "total_count": 2205538,
       "items": [
         {
           "rank": 1,
@@ -23,7 +23,7 @@
           "owner": "elder-plinius",
           "description": "autonomous red teaming platform; multi-agent offensive-security meta-harness",
           "html_url": "https://github.com/elder-plinius/T3MP3ST",
-          "stargazers_count": 2482,
+          "stargazers_count": 2483,
           "forks_count": 596,
           "language": "TypeScript",
           "topics": [
@@ -35,10 +35,10 @@
           ],
           "created_at": "2026-07-02T17:53:55Z",
           "pushed_at": "2026-07-06T16:35:07Z",
-          "updated_at": "2026-07-06T18:58:12Z",
+          "updated_at": "2026-07-06T19:00:43Z",
           "license": "AGPL-3.0",
           "open_issues_count": 25,
-          "watchers_count": 2482,
+          "watchers_count": 2483,
           "archived": false,
           "private": false
         },
@@ -197,7 +197,7 @@
           "owner": "synthetic-sciences",
           "description": "The open-source AI workbench for scientific research",
           "html_url": "https://github.com/synthetic-sciences/openscience",
-          "stargazers_count": 687,
+          "stargazers_count": 688,
           "forks_count": 88,
           "language": "TypeScript",
           "topics": [
@@ -219,10 +219,10 @@
           ],
           "created_at": "2026-07-03T15:06:45Z",
           "pushed_at": "2026-07-06T16:01:37Z",
-          "updated_at": "2026-07-06T18:59:32Z",
+          "updated_at": "2026-07-06T19:00:38Z",
           "license": "Apache-2.0",
           "open_issues_count": 9,
-          "watchers_count": 687,
+          "watchers_count": 688,
           "archived": false,
           "private": false
         },
@@ -250,7 +250,7 @@
           "pushed_at": "2026-07-06T17:55:37Z",
           "updated_at": "2026-07-06T18:49:01Z",
           "license": "MIT",
-          "open_issues_count": 25,
+          "open_issues_count": 26,
           "watchers_count": 648,
           "archived": false,
           "private": false
@@ -487,12 +487,12 @@
           "private": false
         }
       ],
-      "fetched_at": "2026-07-06T19:00:05.803Z"
+      "fetched_at": "2026-07-06T19:03:00.177Z"
     },
     {
       "label": "30d",
       "query": "created:>2026-06-06",
-      "total_count": 9424466,
+      "total_count": 9425144,
       "items": [
         {
           "rank": 1,
@@ -501,7 +501,7 @@
           "owner": "DietrichGebert",
           "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
           "html_url": "https://github.com/DietrichGebert/ponytail",
-          "stargazers_count": 75810,
+          "stargazers_count": 75811,
           "forks_count": 4018,
           "language": "JavaScript",
           "topics": [
@@ -518,10 +518,10 @@
           ],
           "created_at": "2026-06-12T00:52:37Z",
           "pushed_at": "2026-07-01T23:34:52Z",
-          "updated_at": "2026-07-06T18:59:42Z",
+          "updated_at": "2026-07-06T19:02:05Z",
           "license": "MIT",
           "open_issues_count": 167,
-          "watchers_count": 75810,
+          "watchers_count": 75811,
           "archived": false,
           "private": false
         },
@@ -578,16 +578,16 @@
           "owner": "langchain-ai",
           "description": "OpenWiki is a CLI that writes and maintains agent documentation for your codebase.",
           "html_url": "https://github.com/langchain-ai/openwiki",
-          "stargazers_count": 7198,
+          "stargazers_count": 7200,
           "forks_count": 478,
           "language": "TypeScript",
           "topics": [],
           "created_at": "2026-06-22T23:48:26Z",
           "pushed_at": "2026-07-06T17:38:41Z",
-          "updated_at": "2026-07-06T18:58:04Z",
+          "updated_at": "2026-07-06T19:00:34Z",
           "license": "MIT",
           "open_issues_count": 93,
-          "watchers_count": 7198,
+          "watchers_count": 7200,
           "archived": false,
           "private": false
         },
@@ -643,7 +643,7 @@
           "pushed_at": "2026-07-06T15:35:46Z",
           "updated_at": "2026-07-06T18:58:52Z",
           "license": "Apache-2.0",
-          "open_issues_count": 459,
+          "open_issues_count": 460,
           "watchers_count": 6406,
           "archived": false,
           "private": false
@@ -887,16 +887,16 @@
           "owner": "Waishnav",
           "description": "Turn ChatGPT into Codex!",
           "html_url": "https://github.com/Waishnav/devspace",
-          "stargazers_count": 2957,
+          "stargazers_count": 2958,
           "forks_count": 316,
           "language": "TypeScript",
           "topics": [],
           "created_at": "2026-06-14T16:57:27Z",
           "pushed_at": "2026-07-05T18:54:16Z",
-          "updated_at": "2026-07-06T18:49:52Z",
+          "updated_at": "2026-07-06T19:01:06Z",
           "license": "MIT",
           "open_issues_count": 17,
-          "watchers_count": 2957,
+          "watchers_count": 2958,
           "archived": false,
           "private": false
         },
@@ -974,7 +974,7 @@
           "owner": "elder-plinius",
           "description": "autonomous red teaming platform; multi-agent offensive-security meta-harness",
           "html_url": "https://github.com/elder-plinius/T3MP3ST",
-          "stargazers_count": 2482,
+          "stargazers_count": 2483,
           "forks_count": 596,
           "language": "TypeScript",
           "topics": [
@@ -986,20 +986,20 @@
           ],
           "created_at": "2026-07-02T17:53:55Z",
           "pushed_at": "2026-07-06T16:35:07Z",
-          "updated_at": "2026-07-06T18:58:12Z",
+          "updated_at": "2026-07-06T19:00:43Z",
           "license": "AGPL-3.0",
           "open_issues_count": 25,
-          "watchers_count": 2482,
+          "watchers_count": 2483,
           "archived": false,
           "private": false
         }
       ],
-      "fetched_at": "2026-07-06T19:00:07.007Z"
+      "fetched_at": "2026-07-06T19:03:01.464Z"
     },
     {
       "label": "90d",
       "query": "created:>2026-04-07",
-      "total_count": 26116505,
+      "total_count": 26117177,
       "items": [
         {
           "rank": 1,
@@ -1028,7 +1028,7 @@
           "owner": "DietrichGebert",
           "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
           "html_url": "https://github.com/DietrichGebert/ponytail",
-          "stargazers_count": 75810,
+          "stargazers_count": 75811,
           "forks_count": 4018,
           "language": "JavaScript",
           "topics": [
@@ -1045,10 +1045,10 @@
           ],
           "created_at": "2026-06-12T00:52:37Z",
           "pushed_at": "2026-07-01T23:34:52Z",
-          "updated_at": "2026-07-06T18:59:42Z",
+          "updated_at": "2026-07-06T19:02:05Z",
           "license": "MIT",
           "open_issues_count": 167,
-          "watchers_count": 75810,
+          "watchers_count": 75811,
           "archived": false,
           "private": false
         },
@@ -1483,7 +1483,7 @@
           "owner": "microsoft",
           "description": "SkillOpt is a text-space optimizer that trains reusable natural-language skills for frozen LLM agents through trajectory-driven edits, validation-gated updates, and deployable best_skill.md artifacts.",
           "html_url": "https://github.com/microsoft/SkillOpt",
-          "stargazers_count": 11100,
+          "stargazers_count": 11101,
           "forks_count": 1020,
           "language": "Python",
           "topics": [
@@ -1492,10 +1492,10 @@
           ],
           "created_at": "2026-05-08T06:41:01Z",
           "pushed_at": "2026-07-02T14:11:34Z",
-          "updated_at": "2026-07-06T18:59:10Z",
+          "updated_at": "2026-07-06T19:02:55Z",
           "license": "MIT",
           "open_issues_count": 21,
-          "watchers_count": 11100,
+          "watchers_count": 11101,
           "archived": false,
           "private": false
         },
@@ -1520,7 +1520,7 @@
           "private": false
         }
       ],
-      "fetched_at": "2026-07-06T19:00:08.382Z"
+      "fetched_at": "2026-07-06T19:03:02.791Z"
     },
     {
       "label": "all",
@@ -1534,7 +1534,7 @@
           "owner": "codecrafters-io",
           "description": "Master programming by recreating your favorite technologies from scratch.",
           "html_url": "https://github.com/codecrafters-io/build-your-own-x",
-          "stargazers_count": 522988,
+          "stargazers_count": 522989,
           "forks_count": 49465,
           "language": "Markdown",
           "topics": [
@@ -1547,10 +1547,10 @@
           ],
           "created_at": "2018-05-09T12:03:18Z",
           "pushed_at": "2026-06-25T14:41:09Z",
-          "updated_at": "2026-07-06T18:59:33Z",
+          "updated_at": "2026-07-06T19:00:20Z",
           "license": null,
           "open_issues_count": 521,
-          "watchers_count": 522988,
+          "watchers_count": 522989,
           "archived": false,
           "private": false
         },
@@ -1561,8 +1561,8 @@
           "owner": "sindresorhus",
           "description": "😎 Awesome lists about all kinds of interesting topics",
           "html_url": "https://github.com/sindresorhus/awesome",
-          "stargazers_count": 482158,
-          "forks_count": 35724,
+          "stargazers_count": 482160,
+          "forks_count": 35725,
           "language": null,
           "topics": [
             "awesome",
@@ -1573,10 +1573,10 @@
           ],
           "created_at": "2014-07-11T13:42:37Z",
           "pushed_at": "2026-06-30T18:21:16Z",
-          "updated_at": "2026-07-06T18:57:25Z",
+          "updated_at": "2026-07-06T19:01:30Z",
           "license": "CC0-1.0",
           "open_issues_count": 91,
-          "watchers_count": 482158,
+          "watchers_count": 482160,
           "archived": false,
           "private": false
         },
@@ -1657,7 +1657,7 @@
           "owner": "EbookFoundation",
           "description": ":books: Freely available programming books",
           "html_url": "https://github.com/EbookFoundation/free-programming-books",
-          "stargazers_count": 391367,
+          "stargazers_count": 391368,
           "forks_count": 66482,
           "language": "Python",
           "topics": [
@@ -1669,10 +1669,10 @@
           ],
           "created_at": "2013-10-11T06:50:37Z",
           "pushed_at": "2026-07-04T21:45:40Z",
-          "updated_at": "2026-07-06T18:56:30Z",
+          "updated_at": "2026-07-06T19:01:10Z",
           "license": "CC-BY-4.0",
           "open_issues_count": 75,
-          "watchers_count": 391367,
+          "watchers_count": 391368,
           "archived": false,
           "private": false
         },
@@ -1696,10 +1696,10 @@
             "personal"
           ],
           "created_at": "2025-11-24T10:16:47Z",
-          "pushed_at": "2026-07-06T18:58:19Z",
-          "updated_at": "2026-07-06T18:58:37Z",
+          "pushed_at": "2026-07-06T19:02:59Z",
+          "updated_at": "2026-07-06T19:01:57Z",
           "license": "NOASSERTION",
-          "open_issues_count": 6405,
+          "open_issues_count": 6404,
           "watchers_count": 381946,
           "archived": false,
           "private": false
@@ -1736,7 +1736,7 @@
           ],
           "created_at": "2017-03-15T13:45:52Z",
           "pushed_at": "2026-07-06T18:44:12Z",
-          "updated_at": "2026-07-06T18:47:39Z",
+          "updated_at": "2026-07-06T19:02:20Z",
           "license": "NOASSERTION",
           "open_issues_count": 18,
           "watchers_count": 359506,
@@ -1750,7 +1750,7 @@
           "owner": "donnemartin",
           "description": "Learn how to design large-scale systems. Prep for the system design interview.  Includes Anki flashcards.",
           "html_url": "https://github.com/donnemartin/system-design-primer",
-          "stargazers_count": 356386,
+          "stargazers_count": 356387,
           "forks_count": 57059,
           "language": "Python",
           "topics": [
@@ -1770,10 +1770,10 @@
           ],
           "created_at": "2017-02-26T16:15:28Z",
           "pushed_at": "2026-03-20T01:52:19Z",
-          "updated_at": "2026-07-06T18:58:55Z",
+          "updated_at": "2026-07-06T19:00:48Z",
           "license": "NOASSERTION",
           "open_issues_count": 568,
-          "watchers_count": 356386,
+          "watchers_count": 356387,
           "archived": false,
           "private": false
         },
@@ -1784,7 +1784,7 @@
           "owner": "jwasham",
           "description": "A complete computer science study plan to become a software engineer.",
           "html_url": "https://github.com/jwasham/coding-interview-university",
-          "stargazers_count": 355272,
+          "stargazers_count": 355273,
           "forks_count": 84121,
           "language": null,
           "topics": [
@@ -1803,10 +1803,10 @@
           ],
           "created_at": "2016-06-06T02:34:12Z",
           "pushed_at": "2025-08-28T14:42:47Z",
-          "updated_at": "2026-07-06T18:57:34Z",
+          "updated_at": "2026-07-06T19:00:20Z",
           "license": "CC-BY-SA-4.0",
           "open_issues_count": 120,
-          "watchers_count": 355272,
+          "watchers_count": 355273,
           "archived": false,
           "private": false
         },
@@ -1922,7 +1922,7 @@
           "owner": "obra",
           "description": "An agentic skills framework & software development methodology that works.",
           "html_url": "https://github.com/obra/superpowers",
-          "stargazers_count": 247631,
+          "stargazers_count": 247633,
           "forks_count": 21977,
           "language": "Shell",
           "topics": [
@@ -1937,10 +1937,10 @@
           ],
           "created_at": "2025-10-09T19:45:18Z",
           "pushed_at": "2026-07-05T22:52:28Z",
-          "updated_at": "2026-07-06T18:58:06Z",
+          "updated_at": "2026-07-06T19:02:52Z",
           "license": "MIT",
           "open_issues_count": 337,
-          "watchers_count": 247631,
+          "watchers_count": 247633,
           "archived": false,
           "private": false
         },
@@ -1978,16 +1978,16 @@
           "owner": "torvalds",
           "description": "Linux kernel source tree",
           "html_url": "https://github.com/torvalds/linux",
-          "stargazers_count": 238597,
+          "stargazers_count": 238598,
           "forks_count": 63171,
           "language": "C",
           "topics": [],
           "created_at": "2011-09-04T22:48:12Z",
           "pushed_at": "2026-07-06T00:44:48Z",
-          "updated_at": "2026-07-06T18:54:01Z",
+          "updated_at": "2026-07-06T19:02:13Z",
           "license": "NOASSERTION",
           "open_issues_count": 3,
-          "watchers_count": 238597,
+          "watchers_count": 238598,
           "archived": false,
           "private": false
         },
@@ -2038,7 +2038,7 @@
           "owner": "affaan-m",
           "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
           "html_url": "https://github.com/affaan-m/ECC",
-          "stargazers_count": 226622,
+          "stargazers_count": 226623,
           "forks_count": 34653,
           "language": "JavaScript",
           "topics": [
@@ -2053,10 +2053,10 @@
           ],
           "created_at": "2026-01-18T00:51:51Z",
           "pushed_at": "2026-07-06T04:55:16Z",
-          "updated_at": "2026-07-06T18:56:45Z",
+          "updated_at": "2026-07-06T19:00:40Z",
           "license": "MIT",
           "open_issues_count": 69,
-          "watchers_count": 226622,
+          "watchers_count": 226623,
           "archived": false,
           "private": false
         },
@@ -2102,7 +2102,7 @@
           "owner": "NousResearch",
           "description": "The agent that grows with you",
           "html_url": "https://github.com/NousResearch/hermes-agent",
-          "stargazers_count": 210267,
+          "stargazers_count": 210268,
           "forks_count": 38498,
           "language": "Python",
           "topics": [
@@ -2125,15 +2125,15 @@
           ],
           "created_at": "2025-07-22T22:22:28Z",
           "pushed_at": "2026-07-06T18:52:20Z",
-          "updated_at": "2026-07-06T18:57:20Z",
+          "updated_at": "2026-07-06T19:00:28Z",
           "license": "MIT",
-          "open_issues_count": 26281,
-          "watchers_count": 210267,
+          "open_issues_count": 26280,
+          "watchers_count": 210268,
           "archived": false,
           "private": false
         }
       ],
-      "fetched_at": "2026-07-06T19:00:09.464Z"
+      "fetched_at": "2026-07-06T19:03:04.038Z"
     }
   ]
 }
