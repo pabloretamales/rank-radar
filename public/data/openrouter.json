@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-07T12:03:24.139Z",
+  "fetched_at": "2026-07-07T19:03:28.495Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-07T12:03:19.556Z",
+    "as_of": "2026-07-07T19:03:23.797Z",
     "version": "v1",
     "start_date": "2026-06-07",
     "end_date": "2026-07-06"
   },
   "rankings_meta": {
-    "as_of": "2026-07-07T12:03:20.653Z",
+    "as_of": "2026-07-07T19:03:25.054Z",
     "version": "v1",
     "start_date": "2026-07-06",
     "end_date": "2026-07-06"
@@ -140,7 +140,7 @@
       {
         "rank": 14,
         "app_id": 3296290,
-        "app_name": "Mira",
+        "app_name": "Mira is the leading AI agent inside Telegram",
         "total_tokens": "15020608038",
         "total_tokens_human": "15.02B",
         "total_requests": 918221,
@@ -313,7 +313,7 @@
       {
         "rank": 13,
         "app_id": 3296290,
-        "app_name": "Mira",
+        "app_name": "Mira is the leading AI agent inside Telegram",
         "total_tokens": "100024939539",
         "total_tokens_human": "100.02B",
         "total_requests": 6011536,
@@ -495,7 +495,7 @@
       {
         "rank": 13,
         "app_id": 3296290,
-        "app_name": "Mira",
+        "app_name": "Mira is the leading AI agent inside Telegram",
         "total_tokens": "442840681530",
         "total_tokens_human": "442.84B",
         "total_requests": 27497295,
@@ -811,8 +811,8 @@
         "n_outputs": 1,
         "created_ts": 1781631930,
         "created_human": "2026-06-16",
-        "pricing_prompt": 9e-7,
-        "pricing_completion": 0.00000286,
+        "pricing_prompt": 9.3e-7,
+        "pricing_completion": 0.000003,
         "score": 1781631930,
         "url": "https://huggingface.co/zai-org/GLM-5.2"
       },
@@ -2165,7 +2165,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-07T12:03:20.653Z",
+      "as_of": "2026-07-07T19:03:25.054Z",
       "version": "v1",
       "start_date": "2026-07-06",
       "end_date": "2026-07-06"
@@ -2173,25 +2173,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-07T12:03:17.502Z",
+      "as_of": "2026-07-07T19:03:20.983Z",
       "version": "v1",
       "start_date": "2026-07-06",
       "end_date": "2026-07-06"
     },
     "week": {
-      "as_of": "2026-07-07T12:03:18.453Z",
+      "as_of": "2026-07-07T19:03:22.048Z",
       "version": "v1",
       "start_date": "2026-06-30",
       "end_date": "2026-07-06"
     },
     "month": {
-      "as_of": "2026-07-07T12:03:19.556Z",
+      "as_of": "2026-07-07T19:03:23.797Z",
       "version": "v1",
       "start_date": "2026-06-07",
       "end_date": "2026-07-06"
     }
   },
-  "models_total": 343,
+  "models_total": 341,
   "catalog": [
     {
       "id": "tencent/hy3:free",
@@ -2390,8 +2390,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 9e-7,
-      "pricing_completion": 0.00000286,
+      "pricing_prompt": 9.3e-7,
+      "pricing_completion": 0.000003,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -6899,38 +6899,6 @@
       "pricing_completion": 0.0000044,
       "created_human": "2025-02-12",
       "url": "https://openrouter.ai/models/openai/o3-mini-high-2025-01-31"
-    },
-    {
-      "id": "aion-labs/aion-1.0",
-      "canonical_slug": "aion-labs/aion-1.0",
-      "name": "AionLabs: Aion-1.0",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 0.000004,
-      "pricing_completion": 0.000008,
-      "created_human": "2025-02-04",
-      "url": "https://openrouter.ai/models/aion-labs/aion-1.0"
-    },
-    {
-      "id": "aion-labs/aion-1.0-mini",
-      "canonical_slug": "aion-labs/aion-1.0-mini",
-      "name": "AionLabs: Aion-1.0-Mini",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 7e-7,
-      "pricing_completion": 0.0000014,
-      "created_human": "2025-02-04",
-      "url": "https://huggingface.co/FuseAI/FuseO1-DeepSeekR1-QwQ-SkyT1-32B-Preview"
     },
     {
       "id": "aion-labs/aion-rp-llama-3.1-8b",
