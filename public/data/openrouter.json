@@ -1,21 +1,21 @@
 {
-  "fetched_at": "2026-07-07T19:03:28.495Z",
+  "fetched_at": "2026-07-08T12:03:16.369Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-07T19:03:23.797Z",
+    "as_of": "2026-07-08T12:03:11.384Z",
     "version": "v1",
-    "start_date": "2026-06-07",
-    "end_date": "2026-07-06"
+    "start_date": "2026-06-08",
+    "end_date": "2026-07-07"
   },
   "rankings_meta": {
-    "as_of": "2026-07-07T19:03:25.054Z",
+    "as_of": "2026-07-08T12:03:12.791Z",
     "version": "v1",
-    "start_date": "2026-07-06",
-    "end_date": "2026-07-06"
+    "start_date": "2026-07-07",
+    "end_date": "2026-07-07"
   },
   "top_n": 20,
   "rankings": {
@@ -24,181 +24,181 @@
         "rank": 1,
         "app_id": 3067167,
         "app_name": "Hermes Agent",
-        "total_tokens": "841731743865",
-        "total_tokens_human": "841.73B",
-        "total_requests": 10839616,
-        "total_requests_human": "10.84M"
+        "total_tokens": "886165619978",
+        "total_tokens_human": "886.17B",
+        "total_requests": 11414655,
+        "total_requests_human": "11.41M"
       },
       {
         "rank": 2,
         "app_id": 2627404,
         "app_name": "Claude Code",
-        "total_tokens": "337599905801",
-        "total_tokens_human": "337.60B",
-        "total_requests": 4523933,
-        "total_requests_human": "4.52M"
+        "total_tokens": "283334669000",
+        "total_tokens_human": "283.33B",
+        "total_requests": 3638540,
+        "total_requests_human": "3.64M"
       },
       {
         "rank": 3,
         "app_id": 2262242,
         "app_name": "Kilo Code",
-        "total_tokens": "254126372305",
-        "total_tokens_human": "254.13B",
-        "total_requests": 4082359,
-        "total_requests_human": "4.08M"
+        "total_tokens": "252166976763",
+        "total_tokens_human": "252.17B",
+        "total_requests": 3802887,
+        "total_requests_human": "3.80M"
       },
       {
         "rank": 4,
         "app_id": 2725608,
         "app_name": "OpenClaw",
-        "total_tokens": "169060231786",
-        "total_tokens_human": "169.06B",
-        "total_requests": 3068419,
-        "total_requests_human": "3.07M"
+        "total_tokens": "166714517419",
+        "total_tokens_human": "166.71B",
+        "total_requests": 2910685,
+        "total_requests_human": "2.91M"
       },
       {
         "rank": 5,
         "app_id": 190604,
         "app_name": "Cline",
-        "total_tokens": "85991901830",
-        "total_tokens_human": "85.99B",
-        "total_requests": 843543,
-        "total_requests_human": "843.54K"
+        "total_tokens": "96205765425",
+        "total_tokens_human": "96.21B",
+        "total_requests": 933971,
+        "total_requests_human": "933.97K"
       },
       {
         "rank": 6,
         "app_id": 2308106,
         "app_name": "Descript",
-        "total_tokens": "74824494987",
-        "total_tokens_human": "74.82B",
-        "total_requests": 907479,
-        "total_requests_human": "907.48K"
+        "total_tokens": "75886242870",
+        "total_tokens_human": "75.89B",
+        "total_requests": 914434,
+        "total_requests_human": "914.43K"
       },
       {
         "rank": 7,
         "app_id": 2853275,
         "app_name": "pi",
-        "total_tokens": "74175371119",
-        "total_tokens_human": "74.18B",
-        "total_requests": 1602939,
-        "total_requests_human": "1.60M"
+        "total_tokens": "50791320531",
+        "total_tokens_human": "50.79B",
+        "total_requests": 842380,
+        "total_requests_human": "842.38K"
       },
       {
         "rank": 8,
-        "app_id": 169155,
-        "app_name": "Janitor AI",
-        "total_tokens": "31850167530",
-        "total_tokens_human": "31.85B",
-        "total_requests": 2396820,
-        "total_requests_human": "2.40M"
+        "app_id": 2640550,
+        "app_name": "Peezy Gateway",
+        "total_tokens": "31431825204",
+        "total_tokens_human": "31.43B",
+        "total_requests": 567630,
+        "total_requests_human": "567.63K"
       },
       {
         "rank": 9,
-        "app_id": 2637375,
-        "app_name": "Lemonade",
-        "total_tokens": "28951054207",
-        "total_tokens_human": "28.95B",
-        "total_requests": 826650,
-        "total_requests_human": "826.65K"
+        "app_id": 169155,
+        "app_name": "Janitor AI",
+        "total_tokens": "31106794032",
+        "total_tokens_human": "31.11B",
+        "total_requests": 2324619,
+        "total_requests_human": "2.32M"
       },
       {
         "rank": 10,
-        "app_id": 2699842,
-        "app_name": "ISEKAI ZERO",
-        "total_tokens": "28795818630",
-        "total_tokens_human": "28.80B",
-        "total_requests": 700148,
-        "total_requests_human": "700.15K"
+        "app_id": 2366863,
+        "app_name": "OpenManus Low-Cost Agent",
+        "total_tokens": "29977121035",
+        "total_tokens_human": "29.98B",
+        "total_requests": 1962990,
+        "total_requests_human": "1.96M"
       },
       {
         "rank": 11,
-        "app_id": 2640550,
-        "app_name": "Peezy Gateway",
-        "total_tokens": "24593587397",
-        "total_tokens_human": "24.59B",
-        "total_requests": 464312,
-        "total_requests_human": "464.31K"
+        "app_id": 2699842,
+        "app_name": "ISEKAI ZERO",
+        "total_tokens": "28609647718",
+        "total_tokens_human": "28.61B",
+        "total_requests": 682483,
+        "total_requests_human": "682.48K"
       },
       {
         "rank": 12,
-        "app_id": 2755681,
-        "app_name": "Pieces.app: Ambient Artificial Memory",
-        "total_tokens": "20741242504",
-        "total_tokens_human": "20.74B",
-        "total_requests": 2411998,
-        "total_requests_human": "2.41M"
+        "app_id": 2637375,
+        "app_name": "Lemonade",
+        "total_tokens": "28023936099",
+        "total_tokens_human": "28.02B",
+        "total_requests": 820515,
+        "total_requests_human": "820.51K"
       },
       {
         "rank": 13,
-        "app_id": 2524738,
-        "app_name": "LangChain",
-        "total_tokens": "20360594771",
-        "total_tokens_human": "20.36B",
-        "total_requests": 5977562,
-        "total_requests_human": "5.98M"
+        "app_id": 4012572,
+        "app_name": "MavenBio",
+        "total_tokens": "22172735544",
+        "total_tokens_human": "22.17B",
+        "total_requests": 345258,
+        "total_requests_human": "345.26K"
       },
       {
         "rank": 14,
-        "app_id": 3296290,
-        "app_name": "Mira is the leading AI agent inside Telegram",
-        "total_tokens": "15020608038",
-        "total_tokens_human": "15.02B",
-        "total_requests": 918221,
-        "total_requests_human": "918.22K"
+        "app_id": 2755681,
+        "app_name": "Pieces.app: Ambient Artificial Memory",
+        "total_tokens": "20721037966",
+        "total_tokens_human": "20.72B",
+        "total_requests": 2389632,
+        "total_requests_human": "2.39M"
       },
       {
         "rank": 15,
-        "app_id": 2250849,
-        "app_name": "Cursor IDE Model Test",
-        "total_tokens": "14870951679",
-        "total_tokens_human": "14.87B",
-        "total_requests": 89995,
-        "total_requests_human": "90.00K"
+        "app_id": 3296290,
+        "app_name": "Mira is the leading AI agent inside Telegram",
+        "total_tokens": "15263677315",
+        "total_tokens_human": "15.26B",
+        "total_requests": 953207,
+        "total_requests_human": "953.21K"
       },
       {
         "rank": 16,
-        "app_id": 2299688,
-        "app_name": "GDevelop",
-        "total_tokens": "13190568119",
-        "total_tokens_human": "13.19B",
-        "total_requests": 362179,
-        "total_requests_human": "362.18K"
+        "app_id": 2524738,
+        "app_name": "LangChain",
+        "total_tokens": "13464225687",
+        "total_tokens_human": "13.46B",
+        "total_requests": 1034950,
+        "total_requests_human": "1.03M"
       },
       {
         "rank": 17,
-        "app_id": 2237546,
-        "app_name": "Cursor",
-        "total_tokens": "12532962311",
-        "total_tokens_human": "12.53B",
-        "total_requests": 109444,
-        "total_requests_human": "109.44K"
+        "app_id": 2299688,
+        "app_name": "GDevelop",
+        "total_tokens": "12744931409",
+        "total_tokens_human": "12.74B",
+        "total_requests": 357521,
+        "total_requests_human": "357.52K"
       },
       {
         "rank": 18,
-        "app_id": 2366863,
-        "app_name": "OpenManus Low-Cost Agent",
-        "total_tokens": "11649858066",
-        "total_tokens_human": "11.65B",
-        "total_requests": 925814,
-        "total_requests_human": "925.81K"
+        "app_id": 2237546,
+        "app_name": "Cursor",
+        "total_tokens": "12578525158",
+        "total_tokens_human": "12.58B",
+        "total_requests": 124999,
+        "total_requests_human": "125.00K"
       },
       {
         "rank": 19,
-        "app_id": 171054,
-        "app_name": "HackerAI",
-        "total_tokens": "11541410178",
-        "total_tokens_human": "11.54B",
-        "total_requests": 266904,
-        "total_requests_human": "266.90K"
+        "app_id": 2668297,
+        "app_name": "Codex",
+        "total_tokens": "11955367838",
+        "total_tokens_human": "11.96B",
+        "total_requests": 132576,
+        "total_requests_human": "132.58K"
       },
       {
         "rank": 20,
-        "app_id": 3690473,
-        "app_name": "OpenCX",
-        "total_tokens": "11511543976",
-        "total_tokens_human": "11.51B",
-        "total_requests": 966511,
-        "total_requests_human": "966.51K"
+        "app_id": 171054,
+        "app_name": "HackerAI",
+        "total_tokens": "11526134955",
+        "total_tokens_human": "11.53B",
+        "total_requests": 258731,
+        "total_requests_human": "258.73K"
       }
     ],
     "apps_week": [
@@ -206,181 +206,181 @@
         "rank": 1,
         "app_id": 3067167,
         "app_name": "Hermes Agent",
-        "total_tokens": "5587492869186",
-        "total_tokens_human": "5.59T",
-        "total_requests": 73249738,
-        "total_requests_human": "73.25M"
+        "total_tokens": "5567586395865",
+        "total_tokens_human": "5.57T",
+        "total_requests": 72578024,
+        "total_requests_human": "72.58M"
       },
       {
         "rank": 2,
         "app_id": 2262242,
         "app_name": "Kilo Code",
-        "total_tokens": "1685958082803",
-        "total_tokens_human": "1.69T",
-        "total_requests": 25192198,
-        "total_requests_human": "25.19M"
+        "total_tokens": "1644640502462",
+        "total_tokens_human": "1.64T",
+        "total_requests": 24901708,
+        "total_requests_human": "24.90M"
       },
       {
         "rank": 3,
         "app_id": 2627404,
         "app_name": "Claude Code",
-        "total_tokens": "1394081971074",
-        "total_tokens_human": "1.39T",
-        "total_requests": 17328112,
-        "total_requests_human": "17.33M"
+        "total_tokens": "1496918560060",
+        "total_tokens_human": "1.50T",
+        "total_requests": 18815131,
+        "total_requests_human": "18.82M"
       },
       {
         "rank": 4,
         "app_id": 2725608,
         "app_name": "OpenClaw",
-        "total_tokens": "1082727555433",
-        "total_tokens_human": "1.08T",
-        "total_requests": 19439812,
-        "total_requests_human": "19.44M"
+        "total_tokens": "1085570273150",
+        "total_tokens_human": "1.09T",
+        "total_requests": 19410807,
+        "total_requests_human": "19.41M"
       },
       {
         "rank": 5,
-        "app_id": 2853275,
-        "app_name": "pi",
-        "total_tokens": "552753381609",
-        "total_tokens_human": "552.75B",
-        "total_requests": 13142553,
-        "total_requests_human": "13.14M"
+        "app_id": 190604,
+        "app_name": "Cline",
+        "total_tokens": "559414285411",
+        "total_tokens_human": "559.41B",
+        "total_requests": 5381173,
+        "total_requests_human": "5.38M"
       },
       {
         "rank": 6,
-        "app_id": 190604,
-        "app_name": "Cline",
-        "total_tokens": "531971834776",
-        "total_tokens_human": "531.97B",
-        "total_requests": 5161786,
-        "total_requests_human": "5.16M"
+        "app_id": 2853275,
+        "app_name": "pi",
+        "total_tokens": "524705500882",
+        "total_tokens_human": "524.71B",
+        "total_requests": 12011141,
+        "total_requests_human": "12.01M"
       },
       {
         "rank": 7,
         "app_id": 2308106,
         "app_name": "Descript",
-        "total_tokens": "465716211277",
-        "total_tokens_human": "465.72B",
-        "total_requests": 5568429,
-        "total_requests_human": "5.57M"
+        "total_tokens": "465081675848",
+        "total_tokens_human": "465.08B",
+        "total_requests": 5403787,
+        "total_requests_human": "5.40M"
       },
       {
         "rank": 8,
         "app_id": 169155,
         "app_name": "Janitor AI",
-        "total_tokens": "215521575414",
-        "total_tokens_human": "215.52B",
-        "total_requests": 15903275,
+        "total_tokens": "214916551495",
+        "total_tokens_human": "214.92B",
+        "total_requests": 15897876,
         "total_requests_human": "15.90M"
       },
       {
         "rank": 9,
         "app_id": 2699842,
         "app_name": "ISEKAI ZERO",
-        "total_tokens": "208970462794",
-        "total_tokens_human": "208.97B",
-        "total_requests": 4953272,
-        "total_requests_human": "4.95M"
+        "total_tokens": "207022197839",
+        "total_tokens_human": "207.02B",
+        "total_requests": 4924326,
+        "total_requests_human": "4.92M"
       },
       {
         "rank": 10,
         "app_id": 2637375,
         "app_name": "Lemonade",
-        "total_tokens": "198430484516",
-        "total_tokens_human": "198.43B",
-        "total_requests": 5772040,
-        "total_requests_human": "5.77M"
+        "total_tokens": "197511013523",
+        "total_tokens_human": "197.51B",
+        "total_requests": 5745385,
+        "total_requests_human": "5.75M"
       },
       {
         "rank": 11,
         "app_id": 2755681,
         "app_name": "Pieces.app: Ambient Artificial Memory",
-        "total_tokens": "122795433557",
-        "total_tokens_human": "122.80B",
-        "total_requests": 13570343,
-        "total_requests_human": "13.57M"
+        "total_tokens": "120089279901",
+        "total_tokens_human": "120.09B",
+        "total_requests": 13473837,
+        "total_requests_human": "13.47M"
       },
       {
         "rank": 12,
-        "app_id": 2524738,
-        "app_name": "LangChain",
-        "total_tokens": "104185226000",
-        "total_tokens_human": "104.19B",
-        "total_requests": 31376953,
-        "total_requests_human": "31.38M"
+        "app_id": 2640550,
+        "app_name": "Peezy Gateway",
+        "total_tokens": "110592951816",
+        "total_tokens_human": "110.59B",
+        "total_requests": 1761209,
+        "total_requests_human": "1.76M"
       },
       {
         "rank": 13,
-        "app_id": 3296290,
-        "app_name": "Mira is the leading AI agent inside Telegram",
-        "total_tokens": "100024939539",
-        "total_tokens_human": "100.02B",
-        "total_requests": 6011536,
-        "total_requests_human": "6.01M"
+        "app_id": 2524738,
+        "app_name": "LangChain",
+        "total_tokens": "103429733841",
+        "total_tokens_human": "103.43B",
+        "total_requests": 29786596,
+        "total_requests_human": "29.79M"
       },
       {
         "rank": 14,
-        "app_id": 3690473,
-        "app_name": "OpenCX",
-        "total_tokens": "99642526335",
-        "total_tokens_human": "99.64B",
-        "total_requests": 5920532,
-        "total_requests_human": "5.92M"
+        "app_id": 3296290,
+        "app_name": "Mira is the leading AI agent inside Telegram",
+        "total_tokens": "103087445966",
+        "total_tokens_human": "103.09B",
+        "total_requests": 6204493,
+        "total_requests_human": "6.20M"
       },
       {
         "rank": 15,
         "app_id": 2237546,
         "app_name": "Cursor",
-        "total_tokens": "97191228790",
-        "total_tokens_human": "97.19B",
-        "total_requests": 860316,
-        "total_requests_human": "860.32K"
+        "total_tokens": "94140879867",
+        "total_tokens_human": "94.14B",
+        "total_requests": 841804,
+        "total_requests_human": "841.80K"
       },
       {
         "rank": 16,
         "app_id": 2299688,
         "app_name": "GDevelop",
-        "total_tokens": "88785924473",
+        "total_tokens": "88789496771",
         "total_tokens_human": "88.79B",
-        "total_requests": 2477430,
+        "total_requests": 2478140,
         "total_requests_human": "2.48M"
       },
       {
         "rank": 17,
-        "app_id": 3356965,
-        "app_name": "Pioneer (production)",
-        "total_tokens": "88715443140",
-        "total_tokens_human": "88.72B",
-        "total_requests": 1856029,
-        "total_requests_human": "1.86M"
+        "app_id": 3690473,
+        "app_name": "OpenCX",
+        "total_tokens": "87088376372",
+        "total_tokens_human": "87.09B",
+        "total_requests": 5232917,
+        "total_requests_human": "5.23M"
       },
       {
         "rank": 18,
-        "app_id": 2640550,
-        "app_name": "Peezy Gateway",
-        "total_tokens": "79297337432",
-        "total_tokens_human": "79.30B",
-        "total_requests": 1223329,
-        "total_requests_human": "1.22M"
+        "app_id": 171054,
+        "app_name": "HackerAI",
+        "total_tokens": "76008767152",
+        "total_tokens_human": "76.01B",
+        "total_requests": 1735962,
+        "total_requests_human": "1.74M"
       },
       {
         "rank": 19,
-        "app_id": 171054,
-        "app_name": "HackerAI",
-        "total_tokens": "75711647794",
-        "total_tokens_human": "75.71B",
-        "total_requests": 1727295,
-        "total_requests_human": "1.73M"
+        "app_id": 3356965,
+        "app_name": "Pioneer (production)",
+        "total_tokens": "73741113411",
+        "total_tokens_human": "73.74B",
+        "total_requests": 1518400,
+        "total_requests_human": "1.52M"
       },
       {
         "rank": 20,
-        "app_id": 142576,
-        "app_name": "SillyTavern",
-        "total_tokens": "66159437923",
-        "total_tokens_human": "66.16B",
-        "total_requests": 3877649,
-        "total_requests_human": "3.88M"
+        "app_id": 2366863,
+        "app_name": "OpenManus Low-Cost Agent",
+        "total_tokens": "69505566507",
+        "total_tokens_human": "69.51B",
+        "total_requests": 5102621,
+        "total_requests_human": "5.10M"
       }
     ],
     "apps_month": [
@@ -388,186 +388,226 @@
         "rank": 1,
         "app_id": 3067167,
         "app_name": "Hermes Agent",
-        "total_tokens": "26249923480458",
-        "total_tokens_human": "26.25T",
-        "total_requests": 352240277,
-        "total_requests_human": "352.24M"
+        "total_tokens": "26389173045694",
+        "total_tokens_human": "26.39T",
+        "total_requests": 352827239,
+        "total_requests_human": "352.83M"
       },
       {
         "rank": 2,
         "app_id": 2262242,
         "app_name": "Kilo Code",
-        "total_tokens": "7456267956974",
-        "total_tokens_human": "7.46T",
-        "total_requests": 117404003,
-        "total_requests_human": "117.40M"
+        "total_tokens": "7522213581924",
+        "total_tokens_human": "7.52T",
+        "total_requests": 118824684,
+        "total_requests_human": "118.82M"
       },
       {
         "rank": 3,
         "app_id": 2725608,
         "app_name": "OpenClaw",
-        "total_tokens": "4987107760585",
-        "total_tokens_human": "4.99T",
-        "total_requests": 92296800,
-        "total_requests_human": "92.30M"
+        "total_tokens": "5001189659654",
+        "total_tokens_human": "5.00T",
+        "total_requests": 92196287,
+        "total_requests_human": "92.20M"
       },
       {
         "rank": 4,
         "app_id": 2627404,
         "app_name": "Claude Code",
-        "total_tokens": "4426801491475",
-        "total_tokens_human": "4.43T",
-        "total_requests": 52394087,
-        "total_requests_human": "52.39M"
+        "total_tokens": "4636822768722",
+        "total_tokens_human": "4.64T",
+        "total_requests": 55101474,
+        "total_requests_human": "55.10M"
       },
       {
         "rank": 5,
         "app_id": 2308106,
         "app_name": "Descript",
-        "total_tokens": "2072050002636",
-        "total_tokens_human": "2.07T",
-        "total_requests": 27876413,
-        "total_requests_human": "27.88M"
+        "total_tokens": "2099911948961",
+        "total_tokens_human": "2.10T",
+        "total_requests": 28172367,
+        "total_requests_human": "28.17M"
       },
       {
         "rank": 6,
         "app_id": 2853275,
         "app_name": "pi",
-        "total_tokens": "2044207756380",
-        "total_tokens_human": "2.04T",
-        "total_requests": 38424143,
-        "total_requests_human": "38.42M"
+        "total_tokens": "2058137859494",
+        "total_tokens_human": "2.06T",
+        "total_requests": 38734555,
+        "total_requests_human": "38.73M"
       },
       {
         "rank": 7,
         "app_id": 190604,
         "app_name": "Cline",
-        "total_tokens": "1577778578684",
-        "total_tokens_human": "1.58T",
-        "total_requests": 16012587,
-        "total_requests_human": "16.01M"
+        "total_tokens": "1651352484558",
+        "total_tokens_human": "1.65T",
+        "total_requests": 16698726,
+        "total_requests_human": "16.70M"
       },
       {
         "rank": 8,
         "app_id": 3356965,
         "app_name": "Pioneer (production)",
-        "total_tokens": "1158376910549",
-        "total_tokens_human": "1.16T",
-        "total_requests": 18919754,
-        "total_requests_human": "18.92M"
+        "total_tokens": "1136795468233",
+        "total_tokens_human": "1.14T",
+        "total_requests": 18740838,
+        "total_requests_human": "18.74M"
       },
       {
         "rank": 9,
         "app_id": 2637375,
         "app_name": "Lemonade",
-        "total_tokens": "972881933514",
-        "total_tokens_human": "972.88B",
-        "total_requests": 28890898,
-        "total_requests_human": "28.89M"
+        "total_tokens": "945338747124",
+        "total_tokens_human": "945.34B",
+        "total_requests": 28131138,
+        "total_requests_human": "28.13M"
       },
       {
         "rank": 10,
         "app_id": 169155,
         "app_name": "Janitor AI",
-        "total_tokens": "947686077984",
-        "total_tokens_human": "947.69B",
-        "total_requests": 69477554,
-        "total_requests_human": "69.48M"
+        "total_tokens": "944871369714",
+        "total_tokens_human": "944.87B",
+        "total_requests": 69327514,
+        "total_requests_human": "69.33M"
       },
       {
         "rank": 11,
         "app_id": 2699842,
         "app_name": "ISEKAI ZERO",
-        "total_tokens": "941407263645",
-        "total_tokens_human": "941.41B",
-        "total_requests": 24582422,
-        "total_requests_human": "24.58M"
+        "total_tokens": "938514238504",
+        "total_tokens_human": "938.51B",
+        "total_requests": 24501458,
+        "total_requests_human": "24.50M"
       },
       {
         "rank": 12,
         "app_id": 2755681,
         "app_name": "Pieces.app: Ambient Artificial Memory",
-        "total_tokens": "566725640473",
-        "total_tokens_human": "566.73B",
-        "total_requests": 62305202,
-        "total_requests_human": "62.31M"
+        "total_tokens": "573799411305",
+        "total_tokens_human": "573.80B",
+        "total_requests": 63300486,
+        "total_requests_human": "63.30M"
       },
       {
         "rank": 13,
         "app_id": 3296290,
         "app_name": "Mira is the leading AI agent inside Telegram",
-        "total_tokens": "442840681530",
-        "total_tokens_human": "442.84B",
-        "total_requests": 27497295,
-        "total_requests_human": "27.50M"
+        "total_tokens": "441172236901",
+        "total_tokens_human": "441.17B",
+        "total_requests": 26893013,
+        "total_requests_human": "26.89M"
       },
       {
         "rank": 14,
         "app_id": 2237546,
         "app_name": "Cursor",
-        "total_tokens": "377270821049",
-        "total_tokens_human": "377.27B",
-        "total_requests": 3409065,
-        "total_requests_human": "3.41M"
+        "total_tokens": "383494564983",
+        "total_tokens_human": "383.49B",
+        "total_requests": 3480268,
+        "total_requests_human": "3.48M"
       },
       {
         "rank": 15,
         "app_id": 2668297,
         "app_name": "Codex",
-        "total_tokens": "326639143705",
-        "total_tokens_human": "326.64B",
-        "total_requests": 4542476,
-        "total_requests_human": "4.54M"
+        "total_tokens": "334076816028",
+        "total_tokens_human": "334.08B",
+        "total_requests": 4619265,
+        "total_requests_human": "4.62M"
       },
       {
         "rank": 16,
         "app_id": 2524738,
         "app_name": "LangChain",
-        "total_tokens": "303333124293",
-        "total_tokens_human": "303.33B",
-        "total_requests": 58001510,
-        "total_requests_human": "58.00M"
+        "total_tokens": "312728466718",
+        "total_tokens_human": "312.73B",
+        "total_requests": 57757877,
+        "total_requests_human": "57.76M"
       },
       {
         "rank": 17,
         "app_id": 2299688,
         "app_name": "GDevelop",
-        "total_tokens": "303298387421",
-        "total_tokens_human": "303.30B",
-        "total_requests": 8604696,
-        "total_requests_human": "8.60M"
+        "total_tokens": "310547202818",
+        "total_tokens_human": "310.55B",
+        "total_requests": 8794748,
+        "total_requests_human": "8.79M"
       },
       {
         "rank": 18,
-        "app_id": 3906588,
-        "app_name": "Zoo Code",
-        "total_tokens": "285324871549",
-        "total_tokens_human": "285.32B",
-        "total_requests": 3694616,
-        "total_requests_human": "3.69M"
+        "app_id": 171054,
+        "app_name": "HackerAI",
+        "total_tokens": "287556213457",
+        "total_tokens_human": "287.56B",
+        "total_requests": 6692650,
+        "total_requests_human": "6.69M"
       },
       {
         "rank": 19,
-        "app_id": 171054,
-        "app_name": "HackerAI",
-        "total_tokens": "284983686559",
-        "total_tokens_human": "284.98B",
-        "total_requests": 6645137,
-        "total_requests_human": "6.65M"
+        "app_id": 3906588,
+        "app_name": "Zoo Code",
+        "total_tokens": "286432552675",
+        "total_tokens_human": "286.43B",
+        "total_requests": 3727735,
+        "total_requests_human": "3.73M"
       },
       {
         "rank": 20,
         "app_id": 142576,
         "app_name": "SillyTavern",
-        "total_tokens": "277975669777",
-        "total_tokens_human": "277.98B",
-        "total_requests": 16339850,
-        "total_requests_human": "16.34M"
+        "total_tokens": "277636683923",
+        "total_tokens_human": "277.64B",
+        "total_requests": 16372815,
+        "total_requests_human": "16.37M"
       }
     ],
     "by_recent": [
       {
         "rank": 1,
+        "id": "aion-labs/aion-3.0-mini",
+        "slug": "aion-labs/aion-3.0-mini-20260707",
+        "name": "AionLabs: Aion-3.0-Mini",
+        "description": "Aion-3.0 Mini is a multi-model roleplaying and storytelling system from AionLabs, built on the DeepSeek family of models. It uses a collaborative generation process in which multiple specialized models each...",
+        "context_length": 131072,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1783443096,
+        "created_human": "2026-07-07",
+        "pricing_prompt": 7e-7,
+        "pricing_completion": 0.0000014,
+        "score": 1783443096,
+        "url": "https://openrouter.ai/models/aion-labs/aion-3.0-mini-20260707"
+      },
+      {
+        "rank": 2,
+        "id": "aion-labs/aion-3.0",
+        "slug": "aion-labs/aion-3.0-20260707",
+        "name": "AionLabs: Aion-3.0",
+        "description": "Aion-3.0 is a multi-model roleplaying and storytelling system from AionLabs, built on the GLM family of models. It uses a collaborative generation process in which multiple specialized models each contribute...",
+        "context_length": 131072,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1783443095,
+        "created_human": "2026-07-07",
+        "pricing_prompt": 0.000003,
+        "pricing_completion": 0.000006,
+        "score": 1783443095,
+        "url": "https://openrouter.ai/models/aion-labs/aion-3.0-20260707"
+      },
+      {
+        "rank": 3,
         "id": "tencent/hy3:free",
         "slug": "tencent/hy3-20260706",
         "name": "Tencent: Hy3 (free)",
@@ -587,7 +627,7 @@
         "url": "https://huggingface.co/tencent/Hy3"
       },
       {
-        "rank": 2,
+        "rank": 4,
         "id": "tencent/hy3",
         "slug": "tencent/hy3-20260706",
         "name": "Tencent: Hy3",
@@ -607,7 +647,7 @@
         "url": "https://huggingface.co/tencent/Hy3"
       },
       {
-        "rank": 3,
+        "rank": 5,
         "id": "poolside/laguna-xs-2.1:free",
         "slug": "poolside/laguna-xs-2.1-20260625",
         "name": "Poolside: Laguna XS 2.1 (free)",
@@ -627,7 +667,7 @@
         "url": "https://huggingface.co/poolside/Laguna-XS-2.1"
       },
       {
-        "rank": 4,
+        "rank": 6,
         "id": "poolside/laguna-xs-2.1",
         "slug": "poolside/laguna-xs-2.1-20260625",
         "name": "Poolside: Laguna XS 2.1",
@@ -647,7 +687,7 @@
         "url": "https://huggingface.co/poolside/Laguna-XS-2.1"
       },
       {
-        "rank": 5,
+        "rank": 7,
         "id": "anthropic/claude-sonnet-5",
         "slug": "anthropic/claude-sonnet-5-20260630",
         "name": "Anthropic: Claude Sonnet 5",
@@ -669,7 +709,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-sonnet-5-20260630"
       },
       {
-        "rank": 6,
+        "rank": 8,
         "id": "google/gemini-3.1-flash-lite-image",
         "slug": "google/gemini-3.1-flash-lite-image-20260630",
         "name": "Google: Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
@@ -691,7 +731,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.1-flash-lite-image-20260630"
       },
       {
-        "rank": 7,
+        "rank": 9,
         "id": "nex-agi/nex-n2-mini",
         "slug": "nex-agi/nex-n2-mini",
         "name": "Nex AGI: Nex-N2-Mini",
@@ -712,7 +752,7 @@
         "url": "https://huggingface.co/nex-agi/Nex-N2-Mini"
       },
       {
-        "rank": 8,
+        "rank": 10,
         "id": "sakana/fugu-ultra",
         "slug": "sakana/fugu-ultra-20260615",
         "name": "Sakana: Fugu Ultra",
@@ -733,7 +773,7 @@
         "url": "https://openrouter.ai/models/sakana/fugu-ultra-20260615"
       },
       {
-        "rank": 9,
+        "rank": 11,
         "id": "google/gemini-3.1-flash-image",
         "slug": "google/gemini-3.1-flash-image-20260528",
         "name": "Google: Nano Banana 2 (Gemini 3.1 Flash Image)",
@@ -755,7 +795,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.1-flash-image-20260528"
       },
       {
-        "rank": 10,
+        "rank": 12,
         "id": "google/gemini-3-pro-image",
         "slug": "google/gemini-3-pro-image-20260528",
         "name": "Google: Nano Banana Pro (Gemini 3 Pro Image)",
@@ -777,7 +817,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3-pro-image-20260528"
       },
       {
-        "rank": 11,
+        "rank": 13,
         "id": "cohere/north-mini-code:free",
         "slug": "cohere/north-mini-code-20260617",
         "name": "Cohere: North Mini Code (free)",
@@ -797,7 +837,7 @@
         "url": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0"
       },
       {
-        "rank": 12,
+        "rank": 14,
         "id": "z-ai/glm-5.2",
         "slug": "z-ai/glm-5.2-20260616",
         "name": "Z.ai: GLM 5.2",
@@ -817,7 +857,7 @@
         "url": "https://huggingface.co/zai-org/GLM-5.2"
       },
       {
-        "rank": 13,
+        "rank": 15,
         "id": "openrouter/fusion",
         "slug": "openrouter/fusion",
         "name": "OpenRouter: Fusion",
@@ -837,7 +877,7 @@
         "url": "https://openrouter.ai/models/openrouter/fusion"
       },
       {
-        "rank": 14,
+        "rank": 16,
         "id": "moonshotai/kimi-k2.7-code",
         "slug": "moonshotai/kimi-k2.7-code-20260612",
         "name": "MoonshotAI: Kimi K2.7 Code",
@@ -858,7 +898,7 @@
         "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code"
       },
       {
-        "rank": 15,
+        "rank": 17,
         "id": "~anthropic/claude-fable-latest",
         "slug": "~anthropic/claude-fable-latest",
         "name": "Anthropic: Claude Fable Latest",
@@ -880,7 +920,7 @@
         "url": "https://openrouter.ai/models/~anthropic/claude-fable-latest"
       },
       {
-        "rank": 16,
+        "rank": 18,
         "id": "anthropic/claude-fable-5",
         "slug": "anthropic/claude-5-fable-20260609",
         "name": "Anthropic: Claude Fable 5",
@@ -902,7 +942,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-5-fable-20260609"
       },
       {
-        "rank": 17,
+        "rank": 19,
         "id": "nex-agi/nex-n2-pro",
         "slug": "nex-agi/nex-n2-pro",
         "name": "Nex AGI: Nex-N2-Pro",
@@ -923,7 +963,7 @@
         "url": "https://huggingface.co/nex-agi/Nex-N2-Pro"
       },
       {
-        "rank": 18,
+        "rank": 20,
         "id": "nvidia/nemotron-3.5-content-safety:free",
         "slug": "nvidia/nemotron-3.5-content-safety-20260604",
         "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
@@ -942,56 +982,31 @@
         "pricing_completion": 0,
         "score": 1780581864,
         "url": "https://huggingface.co/nvidia/Nemotron-3.5-Content-Safety"
-      },
-      {
-        "rank": 19,
-        "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
-        "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-        "name": "NVIDIA: Nemotron 3 Ultra (free)",
-        "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it...",
-        "context_length": 1000000,
-        "modalities": [
-          "text",
-          "→text"
-        ],
-        "n_inputs": 1,
-        "n_outputs": 1,
-        "created_ts": 1780551208,
-        "created_human": "2026-06-04",
-        "pricing_prompt": 0,
-        "pricing_completion": 0,
-        "score": 1780551208,
-        "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
-      },
-      {
-        "rank": 20,
-        "id": "nvidia/nemotron-3-ultra-550b-a55b",
-        "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-        "name": "NVIDIA: Nemotron 3 Ultra",
-        "description": "NVIDIA Nemotron 3 Ultra is an open frontier-reasoning and orchestration model from NVIDIA, with 55B active parameters out of 550B total (MoE). Built on a hybrid Transformer-Mamba mixture-of-experts architecture, it...",
-        "context_length": 1000000,
-        "modalities": [
-          "text",
-          "→text"
-        ],
-        "n_inputs": 1,
-        "n_outputs": 1,
-        "created_ts": 1780551208,
-        "created_human": "2026-06-04",
-        "pricing_prompt": 5e-7,
-        "pricing_completion": 0.0000022,
-        "score": 1780551208,
-        "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
       }
     ],
     "today": [
       {
         "rank": 1,
+        "id": "tencent/hy3",
+        "name": "Tencent: Hy3",
+        "slug": "tencent/hy3-20260706",
+        "total_tokens": 857486103764,
+        "total_tokens_human": "857.49B",
+        "perma": "tencent/hy3-20260706:free",
+        "url": "https://openrouter.ai/models/tencent/hy3-20260706:free",
+        "modalities": [],
+        "context_length": 262144,
+        "pricing_prompt": null,
+        "pricing_completion": null,
+        "window": "today"
+      },
+      {
+        "rank": 2,
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash",
         "slug": "deepseek/deepseek-v4-flash-20260423",
-        "total_tokens": 748538478929,
-        "total_tokens_human": "748.54B",
+        "total_tokens": 806188922027,
+        "total_tokens_human": "806.19B",
         "perma": "deepseek/deepseek-v4-flash-20260423",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-flash-20260423",
         "modalities": [],
@@ -1001,12 +1016,12 @@
         "window": "today"
       },
       {
-        "rank": 2,
+        "rank": 3,
         "id": "minimax/minimax-m3",
         "name": "MiniMax: MiniMax M3",
         "slug": "minimax/minimax-m3-20260531",
-        "total_tokens": 661881164910,
-        "total_tokens_human": "661.88B",
+        "total_tokens": 665887051022,
+        "total_tokens_human": "665.89B",
         "perma": "minimax/minimax-m3-20260531",
         "url": "https://openrouter.ai/models/minimax/minimax-m3-20260531",
         "modalities": [],
@@ -1016,29 +1031,14 @@
         "window": "today"
       },
       {
-        "rank": 3,
+        "rank": 4,
         "id": "xiaomi/mimo-v2.5",
         "name": "Xiaomi: MiMo-V2.5",
         "slug": "xiaomi/mimo-v2.5-20260422",
-        "total_tokens": 658249539424,
-        "total_tokens_human": "658.25B",
+        "total_tokens": 665575538730,
+        "total_tokens_human": "665.58B",
         "perma": "xiaomi/mimo-v2.5-20260422",
         "url": "https://openrouter.ai/models/xiaomi/mimo-v2.5-20260422",
-        "modalities": [],
-        "context_length": 1048576,
-        "pricing_prompt": null,
-        "pricing_completion": null,
-        "window": "today"
-      },
-      {
-        "rank": 4,
-        "id": "z-ai/glm-5.2",
-        "name": "Z.ai: GLM 5.2",
-        "slug": "z-ai/glm-5.2-20260616",
-        "total_tokens": 561656293764,
-        "total_tokens_human": "561.66B",
-        "perma": "z-ai/glm-5.2-20260616",
-        "url": "https://openrouter.ai/models/z-ai/glm-5.2-20260616",
         "modalities": [],
         "context_length": 1048576,
         "pricing_prompt": null,
@@ -1050,8 +1050,8 @@
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro",
         "slug": "deepseek/deepseek-v4-pro-20260423",
-        "total_tokens": 481376410315,
-        "total_tokens_human": "481.38B",
+        "total_tokens": 530605425492,
+        "total_tokens_human": "530.61B",
         "perma": "deepseek/deepseek-v4-pro-20260423",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-20260423",
         "modalities": [],
@@ -1062,11 +1062,26 @@
       },
       {
         "rank": 6,
+        "id": "z-ai/glm-5.2",
+        "name": "Z.ai: GLM 5.2",
+        "slug": "z-ai/glm-5.2-20260616",
+        "total_tokens": 504476799322,
+        "total_tokens_human": "504.48B",
+        "perma": "z-ai/glm-5.2-20260616",
+        "url": "https://openrouter.ai/models/z-ai/glm-5.2-20260616",
+        "modalities": [],
+        "context_length": 1048576,
+        "pricing_prompt": null,
+        "pricing_completion": null,
+        "window": "today"
+      },
+      {
+        "rank": 7,
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 467647486853,
-        "total_tokens_human": "467.65B",
+        "total_tokens": 455156619859,
+        "total_tokens_human": "455.16B",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
         "modalities": [],
@@ -1076,12 +1091,12 @@
         "window": "today"
       },
       {
-        "rank": 7,
+        "rank": 8,
         "id": "anthropic/claude-4.7-opus-20260416",
         "name": "anthropic/claude-4.7-opus-20260416",
         "slug": null,
-        "total_tokens": 403805247867,
-        "total_tokens_human": "403.81B",
+        "total_tokens": 398011479542,
+        "total_tokens_human": "398.01B",
         "perma": "anthropic/claude-4.7-opus-20260416",
         "url": "https://openrouter.ai/models/anthropic/claude-4.7-opus-20260416",
         "modalities": [],
@@ -1091,12 +1106,12 @@
         "window": "today"
       },
       {
-        "rank": 8,
+        "rank": 9,
         "id": "anthropic/claude-4.8-opus-20260528",
         "name": "anthropic/claude-4.8-opus-20260528",
         "slug": null,
-        "total_tokens": 292878216818,
-        "total_tokens_human": "292.88B",
+        "total_tokens": 313331926323,
+        "total_tokens_human": "313.33B",
         "perma": "anthropic/claude-4.8-opus-20260528",
         "url": "https://openrouter.ai/models/anthropic/claude-4.8-opus-20260528",
         "modalities": [],
@@ -1106,27 +1121,12 @@
         "window": "today"
       },
       {
-        "rank": 9,
-        "id": "tencent/hy3-preview",
-        "name": "Tencent: Hy3 preview",
-        "slug": "tencent/hy3-preview-20260421",
-        "total_tokens": 258603057552,
-        "total_tokens_human": "258.60B",
-        "perma": "tencent/hy3-preview-20260421",
-        "url": "https://openrouter.ai/models/tencent/hy3-preview-20260421",
-        "modalities": [],
-        "context_length": 262144,
-        "pricing_prompt": null,
-        "pricing_completion": null,
-        "window": "today"
-      },
-      {
         "rank": 10,
         "id": "stepfun/step-3.7-flash",
         "name": "StepFun: Step 3.7 Flash",
         "slug": "stepfun/step-3.7-flash-20260528",
-        "total_tokens": 234259572415,
-        "total_tokens_human": "234.26B",
+        "total_tokens": 192497168714,
+        "total_tokens_human": "192.50B",
         "perma": "stepfun/step-3.7-flash-20260528",
         "url": "https://openrouter.ai/models/stepfun/step-3.7-flash-20260528",
         "modalities": [],
@@ -1137,26 +1137,11 @@
       },
       {
         "rank": 11,
-        "id": "anthropic/claude-4.6-sonnet-20260217",
-        "name": "anthropic/claude-4.6-sonnet-20260217",
-        "slug": null,
-        "total_tokens": 190944790042,
-        "total_tokens_human": "190.94B",
-        "perma": "anthropic/claude-4.6-sonnet-20260217",
-        "url": "https://openrouter.ai/models/anthropic/claude-4.6-sonnet-20260217",
-        "modalities": [],
-        "context_length": null,
-        "pricing_prompt": null,
-        "pricing_completion": null,
-        "window": "today"
-      },
-      {
-        "rank": 12,
         "id": "openai/gpt-5.5",
         "name": "OpenAI: GPT-5.5",
         "slug": "openai/gpt-5.5-20260423",
-        "total_tokens": 150652952644,
-        "total_tokens_human": "150.65B",
+        "total_tokens": 175088636483,
+        "total_tokens_human": "175.09B",
         "perma": "openai/gpt-5.5-20260423",
         "url": "https://openrouter.ai/models/openai/gpt-5.5-20260423",
         "modalities": [],
@@ -1166,12 +1151,27 @@
         "window": "today"
       },
       {
+        "rank": 12,
+        "id": "anthropic/claude-4.6-sonnet-20260217",
+        "name": "anthropic/claude-4.6-sonnet-20260217",
+        "slug": null,
+        "total_tokens": 157766941703,
+        "total_tokens_human": "157.77B",
+        "perma": "anthropic/claude-4.6-sonnet-20260217",
+        "url": "https://openrouter.ai/models/anthropic/claude-4.6-sonnet-20260217",
+        "modalities": [],
+        "context_length": null,
+        "pricing_prompt": null,
+        "pricing_completion": null,
+        "window": "today"
+      },
+      {
         "rank": 13,
         "id": "google/gemini-3-flash-preview",
         "name": "Google: Gemini 3 Flash Preview",
         "slug": "google/gemini-3-flash-preview-20251217",
-        "total_tokens": 148802958726,
-        "total_tokens_human": "148.80B",
+        "total_tokens": 152143850134,
+        "total_tokens_human": "152.14B",
         "perma": "google/gemini-3-flash-preview-20251217",
         "url": "https://openrouter.ai/models/google/gemini-3-flash-preview-20251217",
         "modalities": [],
@@ -1182,26 +1182,11 @@
       },
       {
         "rank": 14,
-        "id": "nvidia/nemotron-3-ultra-550b-a55b",
-        "name": "NVIDIA: Nemotron 3 Ultra",
-        "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-        "total_tokens": 135992635582,
-        "total_tokens_human": "135.99B",
-        "perma": "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
-        "url": "https://openrouter.ai/models/nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
-        "modalities": [],
-        "context_length": 1000000,
-        "pricing_prompt": null,
-        "pricing_completion": null,
-        "window": "today"
-      },
-      {
-        "rank": 15,
         "id": "anthropic/claude-sonnet-5",
         "name": "Anthropic: Claude Sonnet 5",
         "slug": "anthropic/claude-sonnet-5-20260630",
-        "total_tokens": 134750125803,
-        "total_tokens_human": "134.75B",
+        "total_tokens": 150441800527,
+        "total_tokens_human": "150.44B",
         "perma": "anthropic/claude-sonnet-5-20260630",
         "url": "https://openrouter.ai/models/anthropic/claude-sonnet-5-20260630",
         "modalities": [],
@@ -1211,16 +1196,31 @@
         "window": "today"
       },
       {
-        "rank": 16,
-        "id": "openai/gpt-4o-mini",
-        "name": "OpenAI: GPT-4o-mini",
-        "slug": "openai/gpt-4o-mini",
-        "total_tokens": 88058625483,
-        "total_tokens_human": "88.06B",
-        "perma": "openai/gpt-4o-mini",
-        "url": "https://openrouter.ai/models/openai/gpt-4o-mini",
+        "rank": 15,
+        "id": "nvidia/nemotron-3-ultra-550b-a55b",
+        "name": "NVIDIA: Nemotron 3 Ultra",
+        "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+        "total_tokens": 126493371200,
+        "total_tokens_human": "126.49B",
+        "perma": "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
+        "url": "https://openrouter.ai/models/nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "modalities": [],
-        "context_length": 128000,
+        "context_length": 1000000,
+        "pricing_prompt": null,
+        "pricing_completion": null,
+        "window": "today"
+      },
+      {
+        "rank": 16,
+        "id": "tencent/hy3-preview",
+        "name": "Tencent: Hy3 preview",
+        "slug": "tencent/hy3-preview-20260421",
+        "total_tokens": 112449515842,
+        "total_tokens_human": "112.45B",
+        "perma": "tencent/hy3-preview-20260421",
+        "url": "https://openrouter.ai/models/tencent/hy3-preview-20260421",
+        "modalities": [],
+        "context_length": 262144,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "today"
@@ -1230,8 +1230,8 @@
         "id": "google/gemini-2.5-flash",
         "name": "Google: Gemini 2.5 Flash",
         "slug": "google/gemini-2.5-flash",
-        "total_tokens": 87370409668,
-        "total_tokens_human": "87.37B",
+        "total_tokens": 93370043720,
+        "total_tokens_human": "93.37B",
         "perma": "google/gemini-2.5-flash",
         "url": "https://openrouter.ai/models/google/gemini-2.5-flash",
         "modalities": [],
@@ -1242,15 +1242,15 @@
       },
       {
         "rank": 18,
-        "id": "openai/gpt-5.4",
-        "name": "OpenAI: GPT-5.4",
-        "slug": "openai/gpt-5.4-20260305",
-        "total_tokens": 82064421514,
-        "total_tokens_human": "82.06B",
-        "perma": "openai/gpt-5.4-20260305",
-        "url": "https://openrouter.ai/models/openai/gpt-5.4-20260305",
+        "id": "xiaomi/mimo-v2.5-pro",
+        "name": "Xiaomi: MiMo-V2.5-Pro",
+        "slug": "xiaomi/mimo-v2.5-pro-20260422",
+        "total_tokens": 90381080060,
+        "total_tokens_human": "90.38B",
+        "perma": "xiaomi/mimo-v2.5-pro-20260422",
+        "url": "https://openrouter.ai/models/xiaomi/mimo-v2.5-pro-20260422",
         "modalities": [],
-        "context_length": 1050000,
+        "context_length": 1048576,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "today"
@@ -1260,8 +1260,8 @@
         "id": "google/gemini-3.1-flash-lite",
         "name": "Google: Gemini 3.1 Flash Lite",
         "slug": "google/gemini-3.1-flash-lite-20260507",
-        "total_tokens": 81622977856,
-        "total_tokens_human": "81.62B",
+        "total_tokens": 78708047230,
+        "total_tokens_human": "78.71B",
         "perma": "google/gemini-3.1-flash-lite-20260507",
         "url": "https://openrouter.ai/models/google/gemini-3.1-flash-lite-20260507",
         "modalities": [],
@@ -1275,8 +1275,8 @@
         "id": "google/gemini-2.5-flash-lite",
         "name": "Google: Gemini 2.5 Flash Lite",
         "slug": "google/gemini-2.5-flash-lite",
-        "total_tokens": 80997355807,
-        "total_tokens_human": "81.00B",
+        "total_tokens": 78253098700,
+        "total_tokens_human": "78.25B",
         "perma": "google/gemini-2.5-flash-lite",
         "url": "https://openrouter.ai/models/google/gemini-2.5-flash-lite",
         "modalities": [],
@@ -1292,8 +1292,8 @@
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash",
         "slug": "deepseek/deepseek-v4-flash-20260423",
-        "total_tokens": 5360295013120,
-        "total_tokens_human": "5.36T",
+        "total_tokens": 5443012750691,
+        "total_tokens_human": "5.44T",
         "perma": "deepseek/deepseek-v4-flash-20260423",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-flash-20260423",
         "modalities": [],
@@ -1307,8 +1307,8 @@
         "id": "xiaomi/mimo-v2.5",
         "name": "Xiaomi: MiMo-V2.5",
         "slug": "xiaomi/mimo-v2.5-20260422",
-        "total_tokens": 4425669688818,
-        "total_tokens_human": "4.43T",
+        "total_tokens": 4462170232084,
+        "total_tokens_human": "4.46T",
         "perma": "xiaomi/mimo-v2.5-20260422",
         "url": "https://openrouter.ai/models/xiaomi/mimo-v2.5-20260422",
         "modalities": [],
@@ -1322,8 +1322,8 @@
         "id": "minimax/minimax-m3",
         "name": "MiniMax: MiniMax M3",
         "slug": "minimax/minimax-m3-20260531",
-        "total_tokens": 4173593824740,
-        "total_tokens_human": "4.17T",
+        "total_tokens": 4241513719429,
+        "total_tokens_human": "4.24T",
         "perma": "minimax/minimax-m3-20260531",
         "url": "https://openrouter.ai/models/minimax/minimax-m3-20260531",
         "modalities": [],
@@ -1337,8 +1337,8 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 2963425407174,
-        "total_tokens_human": "2.96T",
+        "total_tokens": 2971840519996,
+        "total_tokens_human": "2.97T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
         "modalities": [],
@@ -1349,26 +1349,11 @@
       },
       {
         "rank": 5,
-        "id": "tencent/hy3-preview",
-        "name": "Tencent: Hy3 preview",
-        "slug": "tencent/hy3-preview-20260421",
-        "total_tokens": 2814633041502,
-        "total_tokens_human": "2.81T",
-        "perma": "tencent/hy3-preview-20260421",
-        "url": "https://openrouter.ai/models/tencent/hy3-preview-20260421",
-        "modalities": [],
-        "context_length": 262144,
-        "pricing_prompt": null,
-        "pricing_completion": null,
-        "window": "week"
-      },
-      {
-        "rank": 6,
         "id": "z-ai/glm-5.2",
         "name": "Z.ai: GLM 5.2",
         "slug": "z-ai/glm-5.2-20260616",
-        "total_tokens": 2796744208945,
-        "total_tokens_human": "2.80T",
+        "total_tokens": 2903063823737,
+        "total_tokens_human": "2.90T",
         "perma": "z-ai/glm-5.2-20260616",
         "url": "https://openrouter.ai/models/z-ai/glm-5.2-20260616",
         "modalities": [],
@@ -1378,12 +1363,12 @@
         "window": "week"
       },
       {
-        "rank": 7,
+        "rank": 6,
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro",
         "slug": "deepseek/deepseek-v4-pro-20260423",
-        "total_tokens": 2530664460497,
-        "total_tokens_human": "2.53T",
+        "total_tokens": 2710386187840,
+        "total_tokens_human": "2.71T",
         "perma": "deepseek/deepseek-v4-pro-20260423",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-20260423",
         "modalities": [],
@@ -1393,12 +1378,12 @@
         "window": "week"
       },
       {
-        "rank": 8,
+        "rank": 7,
         "id": "anthropic/claude-4.7-opus-20260416",
         "name": "anthropic/claude-4.7-opus-20260416",
         "slug": null,
-        "total_tokens": 2324377612371,
-        "total_tokens_human": "2.32T",
+        "total_tokens": 2471725654452,
+        "total_tokens_human": "2.47T",
         "perma": "anthropic/claude-4.7-opus-20260416",
         "url": "https://openrouter.ai/models/anthropic/claude-4.7-opus-20260416",
         "modalities": [],
@@ -1408,12 +1393,27 @@
         "window": "week"
       },
       {
+        "rank": 8,
+        "id": "tencent/hy3-preview",
+        "name": "Tencent: Hy3 preview",
+        "slug": "tencent/hy3-preview-20260421",
+        "total_tokens": 2304573650777,
+        "total_tokens_human": "2.30T",
+        "perma": "tencent/hy3-preview-20260421",
+        "url": "https://openrouter.ai/models/tencent/hy3-preview-20260421",
+        "modalities": [],
+        "context_length": 262144,
+        "pricing_prompt": null,
+        "pricing_completion": null,
+        "window": "week"
+      },
+      {
         "rank": 9,
         "id": "anthropic/claude-4.8-opus-20260528",
         "name": "anthropic/claude-4.8-opus-20260528",
         "slug": null,
-        "total_tokens": 2100842129643,
-        "total_tokens_human": "2.10T",
+        "total_tokens": 2061734694926,
+        "total_tokens_human": "2.06T",
         "perma": "anthropic/claude-4.8-opus-20260528",
         "url": "https://openrouter.ai/models/anthropic/claude-4.8-opus-20260528",
         "modalities": [],
@@ -1427,8 +1427,8 @@
         "id": "stepfun/step-3.7-flash",
         "name": "StepFun: Step 3.7 Flash",
         "slug": "stepfun/step-3.7-flash-20260528",
-        "total_tokens": 1560649516646,
-        "total_tokens_human": "1.56T",
+        "total_tokens": 1532292920425,
+        "total_tokens_human": "1.53T",
         "perma": "stepfun/step-3.7-flash-20260528",
         "url": "https://openrouter.ai/models/stepfun/step-3.7-flash-20260528",
         "modalities": [],
@@ -1442,8 +1442,8 @@
         "id": "anthropic/claude-4.6-sonnet-20260217",
         "name": "anthropic/claude-4.6-sonnet-20260217",
         "slug": null,
-        "total_tokens": 1356852784450,
-        "total_tokens_human": "1.36T",
+        "total_tokens": 1239481196742,
+        "total_tokens_human": "1.24T",
         "perma": "anthropic/claude-4.6-sonnet-20260217",
         "url": "https://openrouter.ai/models/anthropic/claude-4.6-sonnet-20260217",
         "modalities": [],
@@ -1457,7 +1457,7 @@
         "id": "openai/gpt-5.5",
         "name": "OpenAI: GPT-5.5",
         "slug": "openai/gpt-5.5-20260423",
-        "total_tokens": 1116538874562,
+        "total_tokens": 1121940825281,
         "total_tokens_human": "1.12T",
         "perma": "openai/gpt-5.5-20260423",
         "url": "https://openrouter.ai/models/openai/gpt-5.5-20260423",
@@ -1472,8 +1472,8 @@
         "id": "nvidia/nemotron-3-ultra-550b-a55b",
         "name": "NVIDIA: Nemotron 3 Ultra",
         "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-        "total_tokens": 988919601431,
-        "total_tokens_human": "988.92B",
+        "total_tokens": 969472679289,
+        "total_tokens_human": "969.47B",
         "perma": "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "url": "https://openrouter.ai/models/nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "modalities": [],
@@ -1487,8 +1487,8 @@
         "id": "google/gemini-3-flash-preview",
         "name": "Google: Gemini 3 Flash Preview",
         "slug": "google/gemini-3-flash-preview-20251217",
-        "total_tokens": 936197112862,
-        "total_tokens_human": "936.20B",
+        "total_tokens": 945823407582,
+        "total_tokens_human": "945.82B",
         "perma": "google/gemini-3-flash-preview-20251217",
         "url": "https://openrouter.ai/models/google/gemini-3-flash-preview-20251217",
         "modalities": [],
@@ -1499,11 +1499,26 @@
       },
       {
         "rank": 15,
+        "id": "tencent/hy3",
+        "name": "Tencent: Hy3",
+        "slug": "tencent/hy3-20260706",
+        "total_tokens": 925716769949,
+        "total_tokens_human": "925.72B",
+        "perma": "tencent/hy3-20260706:free",
+        "url": "https://openrouter.ai/models/tencent/hy3-20260706:free",
+        "modalities": [],
+        "context_length": 262144,
+        "pricing_prompt": null,
+        "pricing_completion": null,
+        "window": "week"
+      },
+      {
+        "rank": 16,
         "id": "anthropic/claude-sonnet-5",
         "name": "Anthropic: Claude Sonnet 5",
         "slug": "anthropic/claude-sonnet-5-20260630",
-        "total_tokens": 672810111860,
-        "total_tokens_human": "672.81B",
+        "total_tokens": 807299588238,
+        "total_tokens_human": "807.30B",
         "perma": "anthropic/claude-sonnet-5-20260630",
         "url": "https://openrouter.ai/models/anthropic/claude-sonnet-5-20260630",
         "modalities": [],
@@ -1513,42 +1528,12 @@
         "window": "week"
       },
       {
-        "rank": 16,
-        "id": "poolside/laguna-m.1",
-        "name": "Poolside: Laguna M.1",
-        "slug": "poolside/laguna-m.1-20260312",
-        "total_tokens": 653998144734,
-        "total_tokens_human": "654.00B",
-        "perma": "poolside/laguna-m.1-20260312:free",
-        "url": "https://openrouter.ai/models/poolside/laguna-m.1-20260312:free",
-        "modalities": [],
-        "context_length": 262144,
-        "pricing_prompt": null,
-        "pricing_completion": null,
-        "window": "week"
-      },
-      {
         "rank": 17,
-        "id": "google/gemini-2.5-flash-lite",
-        "name": "Google: Gemini 2.5 Flash Lite",
-        "slug": "google/gemini-2.5-flash-lite",
-        "total_tokens": 599508814268,
-        "total_tokens_human": "599.51B",
-        "perma": "google/gemini-2.5-flash-lite",
-        "url": "https://openrouter.ai/models/google/gemini-2.5-flash-lite",
-        "modalities": [],
-        "context_length": 1048576,
-        "pricing_prompt": null,
-        "pricing_completion": null,
-        "window": "week"
-      },
-      {
-        "rank": 18,
         "id": "google/gemini-2.5-flash",
         "name": "Google: Gemini 2.5 Flash",
         "slug": "google/gemini-2.5-flash",
-        "total_tokens": 595054244649,
-        "total_tokens_human": "595.05B",
+        "total_tokens": 597248888389,
+        "total_tokens_human": "597.25B",
         "perma": "google/gemini-2.5-flash",
         "url": "https://openrouter.ai/models/google/gemini-2.5-flash",
         "modalities": [],
@@ -1558,14 +1543,14 @@
         "window": "week"
       },
       {
-        "rank": 19,
-        "id": "xiaomi/mimo-v2.5-pro",
-        "name": "Xiaomi: MiMo-V2.5-Pro",
-        "slug": "xiaomi/mimo-v2.5-pro-20260422",
-        "total_tokens": 550189540849,
-        "total_tokens_human": "550.19B",
-        "perma": "xiaomi/mimo-v2.5-pro-20260422",
-        "url": "https://openrouter.ai/models/xiaomi/mimo-v2.5-pro-20260422",
+        "rank": 18,
+        "id": "google/gemini-2.5-flash-lite",
+        "name": "Google: Gemini 2.5 Flash Lite",
+        "slug": "google/gemini-2.5-flash-lite",
+        "total_tokens": 581113721941,
+        "total_tokens_human": "581.11B",
+        "perma": "google/gemini-2.5-flash-lite",
+        "url": "https://openrouter.ai/models/google/gemini-2.5-flash-lite",
         "modalities": [],
         "context_length": 1048576,
         "pricing_prompt": null,
@@ -1573,16 +1558,31 @@
         "window": "week"
       },
       {
-        "rank": 20,
-        "id": "openai/gpt-4o-mini",
-        "name": "OpenAI: GPT-4o-mini",
-        "slug": "openai/gpt-4o-mini",
-        "total_tokens": 479783710318,
-        "total_tokens_human": "479.78B",
-        "perma": "openai/gpt-4o-mini",
-        "url": "https://openrouter.ai/models/openai/gpt-4o-mini",
+        "rank": 19,
+        "id": "poolside/laguna-m.1",
+        "name": "Poolside: Laguna M.1",
+        "slug": "poolside/laguna-m.1-20260312",
+        "total_tokens": 580457520018,
+        "total_tokens_human": "580.46B",
+        "perma": "poolside/laguna-m.1-20260312:free",
+        "url": "https://openrouter.ai/models/poolside/laguna-m.1-20260312:free",
         "modalities": [],
-        "context_length": 128000,
+        "context_length": 262144,
+        "pricing_prompt": null,
+        "pricing_completion": null,
+        "window": "week"
+      },
+      {
+        "rank": 20,
+        "id": "xiaomi/mimo-v2.5-pro",
+        "name": "Xiaomi: MiMo-V2.5-Pro",
+        "slug": "xiaomi/mimo-v2.5-pro-20260422",
+        "total_tokens": 559083572129,
+        "total_tokens_human": "559.08B",
+        "perma": "xiaomi/mimo-v2.5-pro-20260422",
+        "url": "https://openrouter.ai/models/xiaomi/mimo-v2.5-pro-20260422",
+        "modalities": [],
+        "context_length": 1048576,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "week"
@@ -1594,8 +1594,8 @@
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash",
         "slug": "deepseek/deepseek-v4-flash-20260423",
-        "total_tokens": 20824418480568,
-        "total_tokens_human": "20.82T",
+        "total_tokens": 20902025797984,
+        "total_tokens_human": "20.90T",
         "perma": "deepseek/deepseek-v4-flash-20260423",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-flash-20260423",
         "modalities": [],
@@ -1609,8 +1609,8 @@
         "id": "xiaomi/mimo-v2.5",
         "name": "Xiaomi: MiMo-V2.5",
         "slug": "xiaomi/mimo-v2.5-20260422",
-        "total_tokens": 17384247792683,
-        "total_tokens_human": "17.38T",
+        "total_tokens": 17719753385346,
+        "total_tokens_human": "17.72T",
         "perma": "xiaomi/mimo-v2.5-20260422",
         "url": "https://openrouter.ai/models/xiaomi/mimo-v2.5-20260422",
         "modalities": [],
@@ -1624,8 +1624,8 @@
         "id": "minimax/minimax-m3",
         "name": "MiniMax: MiniMax M3",
         "slug": "minimax/minimax-m3-20260531",
-        "total_tokens": 17073547710784,
-        "total_tokens_human": "17.07T",
+        "total_tokens": 17280784130704,
+        "total_tokens_human": "17.28T",
         "perma": "minimax/minimax-m3-20260531",
         "url": "https://openrouter.ai/models/minimax/minimax-m3-20260531",
         "modalities": [],
@@ -1639,8 +1639,8 @@
         "id": "tencent/hy3-preview",
         "name": "Tencent: Hy3 preview",
         "slug": "tencent/hy3-preview-20260421",
-        "total_tokens": 15000478114704,
-        "total_tokens_human": "15.00T",
+        "total_tokens": 14624722970746,
+        "total_tokens_human": "14.62T",
         "perma": "tencent/hy3-preview-20260421",
         "url": "https://openrouter.ai/models/tencent/hy3-preview-20260421",
         "modalities": [],
@@ -1654,8 +1654,8 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 12196352426011,
-        "total_tokens_human": "12.20T",
+        "total_tokens": 12302736471312,
+        "total_tokens_human": "12.30T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
         "modalities": [],
@@ -1669,8 +1669,8 @@
         "id": "anthropic/claude-4.7-opus-20260416",
         "name": "anthropic/claude-4.7-opus-20260416",
         "slug": null,
-        "total_tokens": 10046264362082,
-        "total_tokens_human": "10.05T",
+        "total_tokens": 10193671232559,
+        "total_tokens_human": "10.19T",
         "perma": "anthropic/claude-4.7-opus-20260416",
         "url": "https://openrouter.ai/models/anthropic/claude-4.7-opus-20260416",
         "modalities": [],
@@ -1684,8 +1684,8 @@
         "id": "deepseek/deepseek-v4-pro",
         "name": "DeepSeek: DeepSeek V4 Pro",
         "slug": "deepseek/deepseek-v4-pro-20260423",
-        "total_tokens": 9679112505892,
-        "total_tokens_human": "9.68T",
+        "total_tokens": 9905281977601,
+        "total_tokens_human": "9.91T",
         "perma": "deepseek/deepseek-v4-pro-20260423",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-20260423",
         "modalities": [],
@@ -1699,8 +1699,8 @@
         "id": "openrouter/owl-alpha",
         "name": "openrouter/owl-alpha",
         "slug": null,
-        "total_tokens": 9584660912437,
-        "total_tokens_human": "9.58T",
+        "total_tokens": 9279874580631,
+        "total_tokens_human": "9.28T",
         "perma": "openrouter/owl-alpha",
         "url": "https://openrouter.ai/models/openrouter/owl-alpha",
         "modalities": [],
@@ -1714,8 +1714,8 @@
         "id": "anthropic/claude-4.8-opus-20260528",
         "name": "anthropic/claude-4.8-opus-20260528",
         "slug": null,
-        "total_tokens": 7430286844961,
-        "total_tokens_human": "7.43T",
+        "total_tokens": 7542558495253,
+        "total_tokens_human": "7.54T",
         "perma": "anthropic/claude-4.8-opus-20260528",
         "url": "https://openrouter.ai/models/anthropic/claude-4.8-opus-20260528",
         "modalities": [],
@@ -1726,26 +1726,11 @@
       },
       {
         "rank": 10,
-        "id": "anthropic/claude-4.6-sonnet-20260217",
-        "name": "anthropic/claude-4.6-sonnet-20260217",
-        "slug": null,
-        "total_tokens": 7024267358429,
-        "total_tokens_human": "7.02T",
-        "perma": "anthropic/claude-4.6-sonnet-20260217",
-        "url": "https://openrouter.ai/models/anthropic/claude-4.6-sonnet-20260217",
-        "modalities": [],
-        "context_length": null,
-        "pricing_prompt": null,
-        "pricing_completion": null,
-        "window": "month"
-      },
-      {
-        "rank": 11,
         "id": "z-ai/glm-5.2",
         "name": "Z.ai: GLM 5.2",
         "slug": "z-ai/glm-5.2-20260616",
-        "total_tokens": 6513423422084,
-        "total_tokens_human": "6.51T",
+        "total_tokens": 7017900221406,
+        "total_tokens_human": "7.02T",
         "perma": "z-ai/glm-5.2-20260616",
         "url": "https://openrouter.ai/models/z-ai/glm-5.2-20260616",
         "modalities": [],
@@ -1755,12 +1740,27 @@
         "window": "month"
       },
       {
+        "rank": 11,
+        "id": "anthropic/claude-4.6-sonnet-20260217",
+        "name": "anthropic/claude-4.6-sonnet-20260217",
+        "slug": null,
+        "total_tokens": 6962382289710,
+        "total_tokens_human": "6.96T",
+        "perma": "anthropic/claude-4.6-sonnet-20260217",
+        "url": "https://openrouter.ai/models/anthropic/claude-4.6-sonnet-20260217",
+        "modalities": [],
+        "context_length": null,
+        "pricing_prompt": null,
+        "pricing_completion": null,
+        "window": "month"
+      },
+      {
         "rank": 12,
         "id": "stepfun/step-3.7-flash",
         "name": "StepFun: Step 3.7 Flash",
         "slug": "stepfun/step-3.7-flash-20260528",
-        "total_tokens": 5092655718347,
-        "total_tokens_human": "5.09T",
+        "total_tokens": 5160789737251,
+        "total_tokens_human": "5.16T",
         "perma": "stepfun/step-3.7-flash-20260528",
         "url": "https://openrouter.ai/models/stepfun/step-3.7-flash-20260528",
         "modalities": [],
@@ -1774,8 +1774,8 @@
         "id": "google/gemini-3-flash-preview",
         "name": "Google: Gemini 3 Flash Preview",
         "slug": "google/gemini-3-flash-preview-20251217",
-        "total_tokens": 4034442288477,
-        "total_tokens_human": "4.03T",
+        "total_tokens": 4060705723006,
+        "total_tokens_human": "4.06T",
         "perma": "google/gemini-3-flash-preview-20251217",
         "url": "https://openrouter.ai/models/google/gemini-3-flash-preview-20251217",
         "modalities": [],
@@ -1789,8 +1789,8 @@
         "id": "openai/gpt-5.5",
         "name": "OpenAI: GPT-5.5",
         "slug": "openai/gpt-5.5-20260423",
-        "total_tokens": 3850011271943,
-        "total_tokens_human": "3.85T",
+        "total_tokens": 3985796512550,
+        "total_tokens_human": "3.99T",
         "perma": "openai/gpt-5.5-20260423",
         "url": "https://openrouter.ai/models/openai/gpt-5.5-20260423",
         "modalities": [],
@@ -1804,8 +1804,8 @@
         "id": "deepseek/deepseek-v3.2",
         "name": "DeepSeek: DeepSeek V3.2",
         "slug": "deepseek/deepseek-v3.2-20251201",
-        "total_tokens": 3547603962245,
-        "total_tokens_human": "3.55T",
+        "total_tokens": 3438883766726,
+        "total_tokens_human": "3.44T",
         "perma": "deepseek/deepseek-v3.2-20251201",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v3.2-20251201",
         "modalities": [],
@@ -1819,8 +1819,8 @@
         "id": "nvidia/nemotron-3-ultra-550b-a55b",
         "name": "NVIDIA: Nemotron 3 Ultra",
         "slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-        "total_tokens": 3360054138500,
-        "total_tokens_human": "3.36T",
+        "total_tokens": 3377384997242,
+        "total_tokens_human": "3.38T",
         "perma": "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "url": "https://openrouter.ai/models/nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "modalities": [],
@@ -1834,8 +1834,8 @@
         "id": "google/gemini-2.5-flash-lite",
         "name": "Google: Gemini 2.5 Flash Lite",
         "slug": "google/gemini-2.5-flash-lite",
-        "total_tokens": 2740588576904,
-        "total_tokens_human": "2.74T",
+        "total_tokens": 2752763090851,
+        "total_tokens_human": "2.75T",
         "perma": "google/gemini-2.5-flash-lite",
         "url": "https://openrouter.ai/models/google/gemini-2.5-flash-lite",
         "modalities": [],
@@ -1849,8 +1849,8 @@
         "id": "poolside/laguna-m.1",
         "name": "Poolside: Laguna M.1",
         "slug": "poolside/laguna-m.1-20260312",
-        "total_tokens": 2661322473882,
-        "total_tokens_human": "2.66T",
+        "total_tokens": 2650344782539,
+        "total_tokens_human": "2.65T",
         "perma": "poolside/laguna-m.1-20260312:free",
         "url": "https://openrouter.ai/models/poolside/laguna-m.1-20260312:free",
         "modalities": [],
@@ -1864,8 +1864,8 @@
         "id": "google/gemini-2.5-flash",
         "name": "Google: Gemini 2.5 Flash",
         "slug": "google/gemini-2.5-flash",
-        "total_tokens": 2554253138854,
-        "total_tokens_human": "2.55T",
+        "total_tokens": 2580883862848,
+        "total_tokens_human": "2.58T",
         "perma": "google/gemini-2.5-flash",
         "url": "https://openrouter.ai/models/google/gemini-2.5-flash",
         "modalities": [],
@@ -1879,8 +1879,8 @@
         "id": "xiaomi/mimo-v2.5-pro",
         "name": "Xiaomi: MiMo-V2.5-Pro",
         "slug": "xiaomi/mimo-v2.5-pro-20260422",
-        "total_tokens": 2196244768506,
-        "total_tokens_human": "2.20T",
+        "total_tokens": 2223438916845,
+        "total_tokens_human": "2.22T",
         "perma": "xiaomi/mimo-v2.5-pro-20260422",
         "url": "https://openrouter.ai/models/xiaomi/mimo-v2.5-pro-20260422",
         "modalities": [],
@@ -1893,81 +1893,13 @@
     "trending": [
       {
         "rank": 1,
-        "id": "anthropic/claude-sonnet-5",
-        "name": "Anthropic: Claude Sonnet 5",
-        "slug": "anthropic/claude-sonnet-5-20260630",
-        "total_tokens": 640905463562,
-        "total_tokens_human": "640.91B",
-        "recent7": 656857787711,
-        "recent7_human": "656.86B",
-        "prev7": 15952324149,
-        "prev7_human": "15.95B",
-        "perma": "anthropic/claude-sonnet-5-20260630",
-        "url": "https://openrouter.ai/models/anthropic/claude-sonnet-5-20260630",
-        "modalities": [],
-        "context_length": 1000000,
-        "window": "trending"
-      },
-      {
-        "rank": 2,
-        "id": "anthropic/claude-5-fable-20260609",
-        "name": "anthropic/claude-5-fable-20260609",
-        "slug": null,
-        "total_tokens": 238642563380,
-        "total_tokens_human": "238.64B",
-        "recent7": 238642563380,
-        "recent7_human": "238.64B",
-        "prev7": 0,
-        "prev7_human": "0",
-        "perma": "anthropic/claude-5-fable-20260609",
-        "url": "https://openrouter.ai/models/anthropic/claude-5-fable-20260609",
-        "modalities": [],
-        "context_length": null,
-        "window": "trending"
-      },
-      {
-        "rank": 3,
-        "id": "openai/text-embedding-3-small",
-        "name": "openai/text-embedding-3-small",
-        "slug": null,
-        "total_tokens": 101482034920,
-        "total_tokens_human": "101.48B",
-        "recent7": 139733835486,
-        "recent7_human": "139.73B",
-        "prev7": 38251800566,
-        "prev7_human": "38.25B",
-        "perma": "openai/text-embedding-3-small",
-        "url": "https://openrouter.ai/models/openai/text-embedding-3-small",
-        "modalities": [],
-        "context_length": null,
-        "window": "trending"
-      },
-      {
-        "rank": 4,
-        "id": "poolside/laguna-xs-2.1",
-        "name": "Poolside: Laguna XS 2.1",
-        "slug": "poolside/laguna-xs-2.1-20260625",
-        "total_tokens": 74898604507,
-        "total_tokens_human": "74.90B",
-        "recent7": 74898604507,
-        "recent7_human": "74.90B",
-        "prev7": 0,
-        "prev7_human": "0",
-        "perma": "poolside/laguna-xs-2.1-20260625:free",
-        "url": "https://openrouter.ai/models/poolside/laguna-xs-2.1-20260625:free",
-        "modalities": [],
-        "context_length": 262144,
-        "window": "trending"
-      },
-      {
-        "rank": 5,
         "id": "tencent/hy3",
         "name": "Tencent: Hy3",
         "slug": "tencent/hy3-20260706",
-        "total_tokens": 68230666185,
-        "total_tokens_human": "68.23B",
-        "recent7": 68230666185,
-        "recent7_human": "68.23B",
+        "total_tokens": 925716769949,
+        "total_tokens_human": "925.72B",
+        "recent7": 925716769949,
+        "recent7_human": "925.72B",
         "prev7": 0,
         "prev7_human": "0",
         "perma": "tencent/hy3-20260706:free",
@@ -1977,16 +1909,50 @@
         "window": "trending"
       },
       {
-        "rank": 6,
+        "rank": 2,
+        "id": "anthropic/claude-sonnet-5",
+        "name": "Anthropic: Claude Sonnet 5",
+        "slug": "anthropic/claude-sonnet-5-20260630",
+        "total_tokens": 573209070687,
+        "total_tokens_human": "573.21B",
+        "recent7": 698230491537,
+        "recent7_human": "698.23B",
+        "prev7": 125021420850,
+        "prev7_human": "125.02B",
+        "perma": "anthropic/claude-sonnet-5-20260630",
+        "url": "https://openrouter.ai/models/anthropic/claude-sonnet-5-20260630",
+        "modalities": [],
+        "context_length": 1000000,
+        "window": "trending"
+      },
+      {
+        "rank": 3,
+        "id": "anthropic/claude-5-fable-20260609",
+        "name": "anthropic/claude-5-fable-20260609",
+        "slug": null,
+        "total_tokens": 313281987799,
+        "total_tokens_human": "313.28B",
+        "recent7": 313281987799,
+        "recent7_human": "313.28B",
+        "prev7": 0,
+        "prev7_human": "0",
+        "perma": "anthropic/claude-5-fable-20260609",
+        "url": "https://openrouter.ai/models/anthropic/claude-5-fable-20260609",
+        "modalities": [],
+        "context_length": null,
+        "window": "trending"
+      },
+      {
+        "rank": 4,
         "id": "openai/gpt-4o-mini",
         "name": "OpenAI: GPT-4o-mini",
         "slug": "openai/gpt-4o-mini",
-        "total_tokens": 60095355812,
-        "total_tokens_human": "60.10B",
-        "recent7": 439573228800,
-        "recent7_human": "439.57B",
-        "prev7": 379477872988,
-        "prev7_human": "379.48B",
+        "total_tokens": 95766212452,
+        "total_tokens_human": "95.77B",
+        "recent7": 447356842216,
+        "recent7_human": "447.36B",
+        "prev7": 351590629764,
+        "prev7_human": "351.59B",
         "perma": "openai/gpt-4o-mini",
         "url": "https://openrouter.ai/models/openai/gpt-4o-mini",
         "modalities": [],
@@ -1994,16 +1960,67 @@
         "window": "trending"
       },
       {
+        "rank": 5,
+        "id": "poolside/laguna-xs-2.1",
+        "name": "Poolside: Laguna XS 2.1",
+        "slug": "poolside/laguna-xs-2.1-20260625",
+        "total_tokens": 91178240719,
+        "total_tokens_human": "91.18B",
+        "recent7": 91178240719,
+        "recent7_human": "91.18B",
+        "prev7": 0,
+        "prev7_human": "0",
+        "perma": "poolside/laguna-xs-2.1-20260625:free",
+        "url": "https://openrouter.ai/models/poolside/laguna-xs-2.1-20260625:free",
+        "modalities": [],
+        "context_length": 262144,
+        "window": "trending"
+      },
+      {
+        "rank": 6,
+        "id": "openai/text-embedding-3-small",
+        "name": "openai/text-embedding-3-small",
+        "slug": null,
+        "total_tokens": 84155954714,
+        "total_tokens_human": "84.16B",
+        "recent7": 148132677532,
+        "recent7_human": "148.13B",
+        "prev7": 63976722818,
+        "prev7_human": "63.98B",
+        "perma": "openai/text-embedding-3-small",
+        "url": "https://openrouter.ai/models/openai/text-embedding-3-small",
+        "modalities": [],
+        "context_length": null,
+        "window": "trending"
+      },
+      {
         "rank": 7,
+        "id": "qwen/qwen3-embedding-8b",
+        "name": "qwen/qwen3-embedding-8b",
+        "slug": null,
+        "total_tokens": 67694902393,
+        "total_tokens_human": "67.69B",
+        "recent7": 105593305863,
+        "recent7_human": "105.59B",
+        "prev7": 37898403470,
+        "prev7_human": "37.90B",
+        "perma": "qwen/qwen3-embedding-8b",
+        "url": "https://openrouter.ai/models/qwen/qwen3-embedding-8b",
+        "modalities": [],
+        "context_length": null,
+        "window": "trending"
+      },
+      {
+        "rank": 8,
         "id": "z-ai/glm-5",
         "name": "Z.ai: GLM 5",
         "slug": "z-ai/glm-5-20260211",
-        "total_tokens": 55750385153,
-        "total_tokens_human": "55.75B",
-        "recent7": 213804462668,
-        "recent7_human": "213.80B",
-        "prev7": 158054077515,
-        "prev7_human": "158.05B",
+        "total_tokens": 53102076009,
+        "total_tokens_human": "53.10B",
+        "recent7": 224540719204,
+        "recent7_human": "224.54B",
+        "prev7": 171438643195,
+        "prev7_human": "171.44B",
         "perma": "z-ai/glm-5-20260211",
         "url": "https://openrouter.ai/models/z-ai/glm-5-20260211",
         "modalities": [],
@@ -2011,24 +2028,24 @@
         "window": "trending"
       },
       {
-        "rank": 8,
-        "id": "google/gemma-4-31b-it",
-        "name": "Google: Gemma 4 31B",
-        "slug": "google/gemma-4-31b-it-20260402",
-        "total_tokens": 34469354389,
-        "total_tokens_human": "34.47B",
-        "recent7": 315482572591,
-        "recent7_human": "315.48B",
-        "prev7": 281013218202,
-        "prev7_human": "281.01B",
-        "perma": "google/gemma-4-31b-it-20260402",
-        "url": "https://openrouter.ai/models/google/gemma-4-31b-it-20260402",
+        "rank": 9,
+        "id": "openai/gpt-oss-20b",
+        "name": "OpenAI: gpt-oss-20b",
+        "slug": "openai/gpt-oss-20b",
+        "total_tokens": 44998556903,
+        "total_tokens_human": "45.00B",
+        "recent7": 44998556903,
+        "recent7_human": "45.00B",
+        "prev7": 0,
+        "prev7_human": "0",
+        "perma": "openai/gpt-oss-20b",
+        "url": "https://openrouter.ai/models/openai/gpt-oss-20b",
         "modalities": [],
-        "context_length": 262144,
+        "context_length": 131072,
         "window": "trending"
       },
       {
-        "rank": 9,
+        "rank": 10,
         "id": "baai/bge-m3-20251117",
         "name": "baai/bge-m3-20251117",
         "slug": null,
@@ -2045,41 +2062,7 @@
         "window": "trending"
       },
       {
-        "rank": 10,
-        "id": "qwen/qwen3-embedding-8b",
-        "name": "qwen/qwen3-embedding-8b",
-        "slug": null,
-        "total_tokens": 24974510069,
-        "total_tokens_human": "24.97B",
-        "recent7": 85565607127,
-        "recent7_human": "85.57B",
-        "prev7": 60591097058,
-        "prev7_human": "60.59B",
-        "perma": "qwen/qwen3-embedding-8b",
-        "url": "https://openrouter.ai/models/qwen/qwen3-embedding-8b",
-        "modalities": [],
-        "context_length": null,
-        "window": "trending"
-      },
-      {
         "rank": 11,
-        "id": "openai/gpt-oss-20b",
-        "name": "OpenAI: gpt-oss-20b",
-        "slug": "openai/gpt-oss-20b",
-        "total_tokens": 19341869543,
-        "total_tokens_human": "19.34B",
-        "recent7": 19341869543,
-        "recent7_human": "19.34B",
-        "prev7": 0,
-        "prev7_human": "0",
-        "perma": "openai/gpt-oss-20b",
-        "url": "https://openrouter.ai/models/openai/gpt-oss-20b",
-        "modalities": [],
-        "context_length": 131072,
-        "window": "trending"
-      },
-      {
-        "rank": 12,
         "id": "qwen/qwen3.5-397b-a17b",
         "name": "Qwen: Qwen3.5 397B A17B",
         "slug": "qwen/qwen3.5-397b-a17b-20260216",
@@ -2096,7 +2079,7 @@
         "window": "trending"
       },
       {
-        "rank": 13,
+        "rank": 12,
         "id": "qwen/qwen3-coder",
         "name": "Qwen: Qwen3 Coder 480B A35B",
         "slug": "qwen/qwen3-coder-480b-a35b-07-25",
@@ -2110,6 +2093,23 @@
         "url": "https://openrouter.ai/models/qwen/qwen3-coder-480b-a35b-07-25",
         "modalities": [],
         "context_length": 1048576,
+        "window": "trending"
+      },
+      {
+        "rank": 13,
+        "id": "x-ai/grok-4.3",
+        "name": "xAI: Grok 4.3",
+        "slug": "x-ai/grok-4.3-20260430",
+        "total_tokens": 11606812620,
+        "total_tokens_human": "11.61B",
+        "recent7": 95668641673,
+        "recent7_human": "95.67B",
+        "prev7": 84061829053,
+        "prev7_human": "84.06B",
+        "perma": "x-ai/grok-4.3-20260430",
+        "url": "https://openrouter.ai/models/x-ai/grok-4.3-20260430",
+        "modalities": [],
+        "context_length": 1000000,
         "window": "trending"
       },
       {
@@ -2128,71 +2128,69 @@
         "modalities": [],
         "context_length": 131072,
         "window": "trending"
-      },
-      {
-        "rank": 15,
-        "id": "x-ai/grok-4.3",
-        "name": "xAI: Grok 4.3",
-        "slug": "x-ai/grok-4.3-20260430",
-        "total_tokens": 10894068706,
-        "total_tokens_human": "10.89B",
-        "recent7": 93151727728,
-        "recent7_human": "93.15B",
-        "prev7": 82257659022,
-        "prev7_human": "82.26B",
-        "perma": "x-ai/grok-4.3-20260430",
-        "url": "https://openrouter.ai/models/x-ai/grok-4.3-20260430",
-        "modalities": [],
-        "context_length": 1000000,
-        "window": "trending"
-      },
-      {
-        "rank": 16,
-        "id": "openai/gpt-4.1",
-        "name": "OpenAI: GPT-4.1",
-        "slug": "openai/gpt-4.1-2025-04-14",
-        "total_tokens": 1197409729,
-        "total_tokens_human": "1.20B",
-        "recent7": 37262650605,
-        "recent7_human": "37.26B",
-        "prev7": 36065240876,
-        "prev7_human": "36.07B",
-        "perma": "openai/gpt-4.1-mini-2025-04-14",
-        "url": "https://openrouter.ai/models/openai/gpt-4.1-mini-2025-04-14",
-        "modalities": [],
-        "context_length": 1047576,
-        "window": "trending"
       }
     ],
     "meta": {
-      "as_of": "2026-07-07T19:03:25.054Z",
+      "as_of": "2026-07-08T12:03:12.791Z",
       "version": "v1",
-      "start_date": "2026-07-06",
-      "end_date": "2026-07-06"
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-07"
     }
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-07T19:03:20.983Z",
+      "as_of": "2026-07-08T12:03:08.905Z",
       "version": "v1",
-      "start_date": "2026-07-06",
-      "end_date": "2026-07-06"
+      "start_date": "2026-07-07",
+      "end_date": "2026-07-07"
     },
     "week": {
-      "as_of": "2026-07-07T19:03:22.048Z",
+      "as_of": "2026-07-08T12:03:09.902Z",
       "version": "v1",
-      "start_date": "2026-06-30",
-      "end_date": "2026-07-06"
+      "start_date": "2026-07-01",
+      "end_date": "2026-07-07"
     },
     "month": {
-      "as_of": "2026-07-07T19:03:23.797Z",
+      "as_of": "2026-07-08T12:03:11.384Z",
       "version": "v1",
-      "start_date": "2026-06-07",
-      "end_date": "2026-07-06"
+      "start_date": "2026-06-08",
+      "end_date": "2026-07-07"
     }
   },
-  "models_total": 341,
+  "models_total": 343,
   "catalog": [
+    {
+      "id": "aion-labs/aion-3.0-mini",
+      "canonical_slug": "aion-labs/aion-3.0-mini-20260707",
+      "name": "AionLabs: Aion-3.0-Mini",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 7e-7,
+      "pricing_completion": 0.0000014,
+      "created_human": "2026-07-07",
+      "url": "https://openrouter.ai/models/aion-labs/aion-3.0-mini-20260707"
+    },
+    {
+      "id": "aion-labs/aion-3.0",
+      "canonical_slug": "aion-labs/aion-3.0-20260707",
+      "name": "AionLabs: Aion-3.0",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000003,
+      "pricing_completion": 0.000006,
+      "created_human": "2026-07-07",
+      "url": "https://openrouter.ai/models/aion-labs/aion-3.0-20260707"
+    },
     {
       "id": "tencent/hy3:free",
       "canonical_slug": "tencent/hy3-20260706",
@@ -2643,9 +2641,10 @@
       "modalities": [
         "text",
         "image",
+        "file",
         "→text"
       ],
-      "n_inputs": 2,
+      "n_inputs": 3,
       "n_outputs": 1,
       "pricing_prompt": 0.000001,
       "pricing_completion": 0.000002,
@@ -7328,22 +7327,6 @@
       "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
     },
     {
-      "id": "inflection/inflection-3-pi",
-      "canonical_slug": "inflection/inflection-3-pi",
-      "name": "Inflection: Inflection 3 Pi",
-      "context_length": 8000,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 0.0000025,
-      "pricing_completion": 0.00001,
-      "created_human": "2024-10-11",
-      "url": "https://openrouter.ai/models/inflection/inflection-3-pi"
-    },
-    {
       "id": "inflection/inflection-3-productivity",
       "canonical_slug": "inflection/inflection-3-productivity",
       "name": "Inflection: Inflection 3 Productivity",
@@ -7360,10 +7343,26 @@
       "url": "https://openrouter.ai/models/inflection/inflection-3-productivity"
     },
     {
+      "id": "inflection/inflection-3-pi",
+      "canonical_slug": "inflection/inflection-3-pi",
+      "name": "Inflection: Inflection 3 Pi",
+      "context_length": 8000,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 0.0000025,
+      "pricing_completion": 0.00001,
+      "created_human": "2024-10-11",
+      "url": "https://openrouter.ai/models/inflection/inflection-3-pi"
+    },
+    {
       "id": "thedrummer/rocinante-12b",
       "canonical_slug": "thedrummer/rocinante-12b",
       "name": "TheDrummer: Rocinante 12B",
-      "context_length": 32768,
+      "context_length": 65536,
       "modalities": [
         "text",
         "→text"
@@ -7374,6 +7373,22 @@
       "pricing_completion": 5e-7,
       "created_human": "2024-09-30",
       "url": "https://huggingface.co/TheDrummer/Rocinante-12B-v1.1"
+    },
+    {
+      "id": "meta-llama/llama-3.2-1b-instruct",
+      "canonical_slug": "meta-llama/llama-3.2-1b-instruct",
+      "name": "Meta: Llama 3.2 1B Instruct",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 2.7e-8,
+      "pricing_completion": 2.01e-7,
+      "created_human": "2024-09-25",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
     },
     {
       "id": "meta-llama/llama-3.2-3b-instruct:free",
@@ -7423,22 +7438,6 @@
       "pricing_completion": 3.45e-7,
       "created_human": "2024-09-25",
       "url": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct"
-    },
-    {
-      "id": "meta-llama/llama-3.2-1b-instruct",
-      "canonical_slug": "meta-llama/llama-3.2-1b-instruct",
-      "name": "Meta: Llama 3.2 1B Instruct",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 2.7e-8,
-      "pricing_completion": 2.01e-7,
-      "created_human": "2024-09-25",
-      "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
     },
     {
       "id": "qwen/qwen-2.5-72b-instruct",
@@ -7587,22 +7586,6 @@
       "url": "https://openrouter.ai/models/openai/gpt-4o-2024-08-06"
     },
     {
-      "id": "meta-llama/llama-3.1-8b-instruct",
-      "canonical_slug": "meta-llama/llama-3.1-8b-instruct",
-      "name": "Meta: Llama 3.1 8B Instruct",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 2e-8,
-      "pricing_completion": 3e-8,
-      "created_human": "2024-07-23",
-      "url": "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct"
-    },
-    {
       "id": "meta-llama/llama-3.1-70b-instruct",
       "canonical_slug": "meta-llama/llama-3.1-70b-instruct",
       "name": "Meta: Llama 3.1 70B Instruct",
@@ -7619,6 +7602,22 @@
       "url": "https://huggingface.co/meta-llama/Meta-Llama-3.1-70B-Instruct"
     },
     {
+      "id": "meta-llama/llama-3.1-8b-instruct",
+      "canonical_slug": "meta-llama/llama-3.1-8b-instruct",
+      "name": "Meta: Llama 3.1 8B Instruct",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 2e-8,
+      "pricing_completion": 3e-8,
+      "created_human": "2024-07-23",
+      "url": "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct"
+    },
+    {
       "id": "mistralai/mistral-nemo",
       "canonical_slug": "mistralai/mistral-nemo",
       "name": "Mistral: Mistral Nemo",
@@ -7633,24 +7632,6 @@
       "pricing_completion": 3e-8,
       "created_human": "2024-07-19",
       "url": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407"
-    },
-    {
-      "id": "openai/gpt-4o-mini-2024-07-18",
-      "canonical_slug": "openai/gpt-4o-mini-2024-07-18",
-      "name": "OpenAI: GPT-4o-mini (2024-07-18)",
-      "context_length": 128000,
-      "modalities": [
-        "text",
-        "image",
-        "file",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 1.5e-7,
-      "pricing_completion": 6e-7,
-      "created_human": "2024-07-18",
-      "url": "https://openrouter.ai/models/openai/gpt-4o-mini-2024-07-18"
     },
     {
       "id": "openai/gpt-4o-mini",
@@ -7671,6 +7652,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-4o-mini"
     },
     {
+      "id": "openai/gpt-4o-mini-2024-07-18",
+      "canonical_slug": "openai/gpt-4o-mini-2024-07-18",
+      "name": "OpenAI: GPT-4o-mini (2024-07-18)",
+      "context_length": 128000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 1.5e-7,
+      "pricing_completion": 6e-7,
+      "created_human": "2024-07-18",
+      "url": "https://openrouter.ai/models/openai/gpt-4o-mini-2024-07-18"
+    },
+    {
       "id": "google/gemma-2-27b-it",
       "canonical_slug": "google/gemma-2-27b-it",
       "name": "Google: Gemma 2 27B",
@@ -7685,24 +7684,6 @@
       "pricing_completion": 6.5e-7,
       "created_human": "2024-07-13",
       "url": "https://huggingface.co/google/gemma-2-27b-it"
-    },
-    {
-      "id": "openai/gpt-4o",
-      "canonical_slug": "openai/gpt-4o",
-      "name": "OpenAI: GPT-4o",
-      "context_length": 128000,
-      "modalities": [
-        "text",
-        "image",
-        "file",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 0.0000025,
-      "pricing_completion": 0.00001,
-      "created_human": "2024-05-13",
-      "url": "https://openrouter.ai/models/openai/gpt-4o"
     },
     {
       "id": "openai/gpt-4o-2024-05-13",
@@ -7721,6 +7702,24 @@
       "pricing_completion": 0.000015,
       "created_human": "2024-05-13",
       "url": "https://openrouter.ai/models/openai/gpt-4o-2024-05-13"
+    },
+    {
+      "id": "openai/gpt-4o",
+      "canonical_slug": "openai/gpt-4o",
+      "name": "OpenAI: GPT-4o",
+      "context_length": 128000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.0000025,
+      "pricing_completion": 0.00001,
+      "created_human": "2024-05-13",
+      "url": "https://openrouter.ai/models/openai/gpt-4o"
     },
     {
       "id": "meta-llama/llama-3-8b-instruct",
@@ -7823,22 +7822,6 @@
       "url": "https://openrouter.ai/models/mistralai/mistral-large"
     },
     {
-      "id": "openai/gpt-4-turbo-preview",
-      "canonical_slug": "openai/gpt-4-turbo-preview",
-      "name": "OpenAI: GPT-4 Turbo Preview",
-      "context_length": 128000,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 0.00001,
-      "pricing_completion": 0.00003,
-      "created_human": "2024-01-25",
-      "url": "https://openrouter.ai/models/openai/gpt-4-turbo-preview"
-    },
-    {
       "id": "openai/gpt-3.5-turbo-0613",
       "canonical_slug": "openai/gpt-3.5-turbo-0613",
       "name": "OpenAI: GPT-3.5 Turbo (older v0613)",
@@ -7853,6 +7836,22 @@
       "pricing_completion": 0.000002,
       "created_human": "2024-01-25",
       "url": "https://openrouter.ai/models/openai/gpt-3.5-turbo-0613"
+    },
+    {
+      "id": "openai/gpt-4-turbo-preview",
+      "canonical_slug": "openai/gpt-4-turbo-preview",
+      "name": "OpenAI: GPT-4 Turbo Preview",
+      "context_length": 128000,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 0.00001,
+      "pricing_completion": 0.00003,
+      "created_human": "2024-01-25",
+      "url": "https://openrouter.ai/models/openai/gpt-4-turbo-preview"
     },
     {
       "id": "openrouter/auto",
@@ -7956,22 +7955,6 @@
       "url": "https://huggingface.co/Gryphe/MythoMax-L2-13b"
     },
     {
-      "id": "openai/gpt-4",
-      "canonical_slug": "openai/gpt-4",
-      "name": "OpenAI: GPT-4",
-      "context_length": 8191,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 0.00003,
-      "pricing_completion": 0.00006,
-      "created_human": "2023-05-28",
-      "url": "https://openrouter.ai/models/openai/gpt-4"
-    },
-    {
       "id": "openai/gpt-3.5-turbo",
       "canonical_slug": "openai/gpt-3.5-turbo",
       "name": "OpenAI: GPT-3.5 Turbo",
@@ -7986,6 +7969,22 @@
       "pricing_completion": 0.0000015,
       "created_human": "2023-05-28",
       "url": "https://openrouter.ai/models/openai/gpt-3.5-turbo"
+    },
+    {
+      "id": "openai/gpt-4",
+      "canonical_slug": "openai/gpt-4",
+      "name": "OpenAI: GPT-4",
+      "context_length": 8191,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 0.00003,
+      "pricing_completion": 0.00006,
+      "created_human": "2023-05-28",
+      "url": "https://openrouter.ai/models/openai/gpt-4"
     }
   ]
 }
