@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-08T12:03:16.369Z",
+  "fetched_at": "2026-07-08T19:00:20.252Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-08T12:03:11.384Z",
+    "as_of": "2026-07-08T19:00:16.850Z",
     "version": "v1",
     "start_date": "2026-06-08",
     "end_date": "2026-07-07"
   },
   "rankings_meta": {
-    "as_of": "2026-07-08T12:03:12.791Z",
+    "as_of": "2026-07-08T19:00:18.166Z",
     "version": "v1",
     "start_date": "2026-07-07",
     "end_date": "2026-07-07"
@@ -149,7 +149,7 @@
       {
         "rank": 15,
         "app_id": 3296290,
-        "app_name": "Mira is the leading AI agent inside Telegram",
+        "app_name": "Mira",
         "total_tokens": "15263677315",
         "total_tokens_human": "15.26B",
         "total_requests": 953207,
@@ -322,7 +322,7 @@
       {
         "rank": 14,
         "app_id": 3296290,
-        "app_name": "Mira is the leading AI agent inside Telegram",
+        "app_name": "Mira",
         "total_tokens": "103087445966",
         "total_tokens_human": "103.09B",
         "total_requests": 6204493,
@@ -495,7 +495,7 @@
       {
         "rank": 13,
         "app_id": 3296290,
-        "app_name": "Mira is the leading AI agent inside Telegram",
+        "app_name": "Mira",
         "total_tokens": "441172236901",
         "total_tokens_human": "441.17B",
         "total_requests": 26893013,
@@ -568,6 +568,50 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "x-ai/grok-4.5",
+        "slug": "x-ai/grok-4.5-20260708",
+        "name": "xAI: Grok 4.5",
+        "description": "Grok 4.5 is SpaceXAI's smartest model with frontier performance on coding, knowledge work, and STEM.",
+        "context_length": 500000,
+        "modalities": [
+          "text",
+          "image",
+          "file",
+          "→text"
+        ],
+        "n_inputs": 3,
+        "n_outputs": 1,
+        "created_ts": 1783523154,
+        "created_human": "2026-07-08",
+        "pricing_prompt": 0.000002,
+        "pricing_completion": 0.000006,
+        "score": 1783523154,
+        "url": "https://openrouter.ai/models/x-ai/grok-4.5-20260708"
+      },
+      {
+        "rank": 2,
+        "id": "~x-ai/grok-latest",
+        "slug": "~x-ai/grok-latest",
+        "name": "xAI: Grok Latest",
+        "description": "This model always redirects to the latest Grok model from xAI.",
+        "context_length": 500000,
+        "modalities": [
+          "text",
+          "image",
+          "file",
+          "→text"
+        ],
+        "n_inputs": 3,
+        "n_outputs": 1,
+        "created_ts": 1783519360,
+        "created_human": "2026-07-08",
+        "pricing_prompt": 0.000002,
+        "pricing_completion": 0.000006,
+        "score": 1783519360,
+        "url": "https://openrouter.ai/models/~x-ai/grok-latest"
+      },
+      {
+        "rank": 3,
         "id": "aion-labs/aion-3.0-mini",
         "slug": "aion-labs/aion-3.0-mini-20260707",
         "name": "AionLabs: Aion-3.0-Mini",
@@ -587,7 +631,7 @@
         "url": "https://openrouter.ai/models/aion-labs/aion-3.0-mini-20260707"
       },
       {
-        "rank": 2,
+        "rank": 4,
         "id": "aion-labs/aion-3.0",
         "slug": "aion-labs/aion-3.0-20260707",
         "name": "AionLabs: Aion-3.0",
@@ -607,7 +651,7 @@
         "url": "https://openrouter.ai/models/aion-labs/aion-3.0-20260707"
       },
       {
-        "rank": 3,
+        "rank": 5,
         "id": "tencent/hy3:free",
         "slug": "tencent/hy3-20260706",
         "name": "Tencent: Hy3 (free)",
@@ -627,7 +671,7 @@
         "url": "https://huggingface.co/tencent/Hy3"
       },
       {
-        "rank": 4,
+        "rank": 6,
         "id": "tencent/hy3",
         "slug": "tencent/hy3-20260706",
         "name": "Tencent: Hy3",
@@ -647,7 +691,7 @@
         "url": "https://huggingface.co/tencent/Hy3"
       },
       {
-        "rank": 5,
+        "rank": 7,
         "id": "poolside/laguna-xs-2.1:free",
         "slug": "poolside/laguna-xs-2.1-20260625",
         "name": "Poolside: Laguna XS 2.1 (free)",
@@ -667,7 +711,7 @@
         "url": "https://huggingface.co/poolside/Laguna-XS-2.1"
       },
       {
-        "rank": 6,
+        "rank": 8,
         "id": "poolside/laguna-xs-2.1",
         "slug": "poolside/laguna-xs-2.1-20260625",
         "name": "Poolside: Laguna XS 2.1",
@@ -687,7 +731,7 @@
         "url": "https://huggingface.co/poolside/Laguna-XS-2.1"
       },
       {
-        "rank": 7,
+        "rank": 9,
         "id": "anthropic/claude-sonnet-5",
         "slug": "anthropic/claude-sonnet-5-20260630",
         "name": "Anthropic: Claude Sonnet 5",
@@ -709,7 +753,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-sonnet-5-20260630"
       },
       {
-        "rank": 8,
+        "rank": 10,
         "id": "google/gemini-3.1-flash-lite-image",
         "slug": "google/gemini-3.1-flash-lite-image-20260630",
         "name": "Google: Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
@@ -731,7 +775,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.1-flash-lite-image-20260630"
       },
       {
-        "rank": 9,
+        "rank": 11,
         "id": "nex-agi/nex-n2-mini",
         "slug": "nex-agi/nex-n2-mini",
         "name": "Nex AGI: Nex-N2-Mini",
@@ -752,7 +796,7 @@
         "url": "https://huggingface.co/nex-agi/Nex-N2-Mini"
       },
       {
-        "rank": 10,
+        "rank": 12,
         "id": "sakana/fugu-ultra",
         "slug": "sakana/fugu-ultra-20260615",
         "name": "Sakana: Fugu Ultra",
@@ -773,7 +817,7 @@
         "url": "https://openrouter.ai/models/sakana/fugu-ultra-20260615"
       },
       {
-        "rank": 11,
+        "rank": 13,
         "id": "google/gemini-3.1-flash-image",
         "slug": "google/gemini-3.1-flash-image-20260528",
         "name": "Google: Nano Banana 2 (Gemini 3.1 Flash Image)",
@@ -795,7 +839,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.1-flash-image-20260528"
       },
       {
-        "rank": 12,
+        "rank": 14,
         "id": "google/gemini-3-pro-image",
         "slug": "google/gemini-3-pro-image-20260528",
         "name": "Google: Nano Banana Pro (Gemini 3 Pro Image)",
@@ -817,7 +861,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3-pro-image-20260528"
       },
       {
-        "rank": 13,
+        "rank": 15,
         "id": "cohere/north-mini-code:free",
         "slug": "cohere/north-mini-code-20260617",
         "name": "Cohere: North Mini Code (free)",
@@ -837,7 +881,7 @@
         "url": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0"
       },
       {
-        "rank": 14,
+        "rank": 16,
         "id": "z-ai/glm-5.2",
         "slug": "z-ai/glm-5.2-20260616",
         "name": "Z.ai: GLM 5.2",
@@ -851,13 +895,13 @@
         "n_outputs": 1,
         "created_ts": 1781631930,
         "created_human": "2026-06-16",
-        "pricing_prompt": 9.3e-7,
-        "pricing_completion": 0.000003,
+        "pricing_prompt": 4.2e-7,
+        "pricing_completion": 0.00000132,
         "score": 1781631930,
         "url": "https://huggingface.co/zai-org/GLM-5.2"
       },
       {
-        "rank": 15,
+        "rank": 17,
         "id": "openrouter/fusion",
         "slug": "openrouter/fusion",
         "name": "OpenRouter: Fusion",
@@ -877,7 +921,7 @@
         "url": "https://openrouter.ai/models/openrouter/fusion"
       },
       {
-        "rank": 16,
+        "rank": 18,
         "id": "moonshotai/kimi-k2.7-code",
         "slug": "moonshotai/kimi-k2.7-code-20260612",
         "name": "MoonshotAI: Kimi K2.7 Code",
@@ -898,7 +942,7 @@
         "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code"
       },
       {
-        "rank": 17,
+        "rank": 19,
         "id": "~anthropic/claude-fable-latest",
         "slug": "~anthropic/claude-fable-latest",
         "name": "Anthropic: Claude Fable Latest",
@@ -920,7 +964,7 @@
         "url": "https://openrouter.ai/models/~anthropic/claude-fable-latest"
       },
       {
-        "rank": 18,
+        "rank": 20,
         "id": "anthropic/claude-fable-5",
         "slug": "anthropic/claude-5-fable-20260609",
         "name": "Anthropic: Claude Fable 5",
@@ -940,48 +984,6 @@
         "pricing_completion": 0.00005,
         "score": 1781007515,
         "url": "https://openrouter.ai/models/anthropic/claude-5-fable-20260609"
-      },
-      {
-        "rank": 19,
-        "id": "nex-agi/nex-n2-pro",
-        "slug": "nex-agi/nex-n2-pro",
-        "name": "Nex AGI: Nex-N2-Pro",
-        "description": "Nex-N2-Pro is an agentic mixture-of-experts model from Nex AGI, with 17B active parameters out of 397B total. Built on the Qwen3.5 architecture, it accepts text and image input and produces...",
-        "context_length": 262144,
-        "modalities": [
-          "text",
-          "image",
-          "→text"
-        ],
-        "n_inputs": 2,
-        "n_outputs": 1,
-        "created_ts": 1780937140,
-        "created_human": "2026-06-08",
-        "pricing_prompt": 2.5e-7,
-        "pricing_completion": 0.000001,
-        "score": 1780937140,
-        "url": "https://huggingface.co/nex-agi/Nex-N2-Pro"
-      },
-      {
-        "rank": 20,
-        "id": "nvidia/nemotron-3.5-content-safety:free",
-        "slug": "nvidia/nemotron-3.5-content-safety-20260604",
-        "name": "NVIDIA: Nemotron 3.5 Content Safety (free)",
-        "description": "NVIDIA Nemotron 3.5 Content Safety is a compact 4B-parameter multimodal guardrail model from NVIDIA, fine-tuned from Google Gemma-3-4B. It moderates both inputs to and responses from LLMs and VLMs, accepting...",
-        "context_length": 128000,
-        "modalities": [
-          "text",
-          "image",
-          "→text"
-        ],
-        "n_inputs": 2,
-        "n_outputs": 1,
-        "created_ts": 1780581864,
-        "created_human": "2026-06-04",
-        "pricing_prompt": 0,
-        "pricing_completion": 0,
-        "score": 1780581864,
-        "url": "https://huggingface.co/nvidia/Nemotron-3.5-Content-Safety"
       }
     ],
     "today": [
@@ -2131,7 +2133,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-08T12:03:12.791Z",
+      "as_of": "2026-07-08T19:00:18.166Z",
       "version": "v1",
       "start_date": "2026-07-07",
       "end_date": "2026-07-07"
@@ -2139,26 +2141,62 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-08T12:03:08.905Z",
+      "as_of": "2026-07-08T19:00:14.781Z",
       "version": "v1",
       "start_date": "2026-07-07",
       "end_date": "2026-07-07"
     },
     "week": {
-      "as_of": "2026-07-08T12:03:09.902Z",
+      "as_of": "2026-07-08T19:00:15.816Z",
       "version": "v1",
       "start_date": "2026-07-01",
       "end_date": "2026-07-07"
     },
     "month": {
-      "as_of": "2026-07-08T12:03:11.384Z",
+      "as_of": "2026-07-08T19:00:16.850Z",
       "version": "v1",
       "start_date": "2026-06-08",
       "end_date": "2026-07-07"
     }
   },
-  "models_total": 343,
+  "models_total": 345,
   "catalog": [
+    {
+      "id": "x-ai/grok-4.5",
+      "canonical_slug": "x-ai/grok-4.5-20260708",
+      "name": "xAI: Grok 4.5",
+      "context_length": 500000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000002,
+      "pricing_completion": 0.000006,
+      "created_human": "2026-07-08",
+      "url": "https://openrouter.ai/models/x-ai/grok-4.5-20260708"
+    },
+    {
+      "id": "~x-ai/grok-latest",
+      "canonical_slug": "~x-ai/grok-latest",
+      "name": "xAI: Grok Latest",
+      "context_length": 500000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000002,
+      "pricing_completion": 0.000006,
+      "created_human": "2026-07-08",
+      "url": "https://openrouter.ai/models/~x-ai/grok-latest"
+    },
     {
       "id": "aion-labs/aion-3.0-mini",
       "canonical_slug": "aion-labs/aion-3.0-mini-20260707",
@@ -2388,8 +2426,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 9.3e-7,
-      "pricing_completion": 0.000003,
+      "pricing_prompt": 4.2e-7,
+      "pricing_completion": 0.00000132,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -2964,7 +3002,7 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 6.6e-7,
+      "pricing_prompt": 6.5e-7,
       "pricing_completion": 0.00000341,
       "created_human": "2026-04-27",
       "url": "https://openrouter.ai/models/~moonshotai/kimi-latest"
@@ -3329,7 +3367,7 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 6.6e-7,
+      "pricing_prompt": 6.5e-7,
       "pricing_completion": 0.00000341,
       "created_human": "2026-04-20",
       "url": "https://huggingface.co/moonshotai/Kimi-K2.6"
@@ -7327,22 +7365,6 @@
       "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
     },
     {
-      "id": "inflection/inflection-3-productivity",
-      "canonical_slug": "inflection/inflection-3-productivity",
-      "name": "Inflection: Inflection 3 Productivity",
-      "context_length": 8000,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 0.0000025,
-      "pricing_completion": 0.00001,
-      "created_human": "2024-10-11",
-      "url": "https://openrouter.ai/models/inflection/inflection-3-productivity"
-    },
-    {
       "id": "inflection/inflection-3-pi",
       "canonical_slug": "inflection/inflection-3-pi",
       "name": "Inflection: Inflection 3 Pi",
@@ -7359,6 +7381,22 @@
       "url": "https://openrouter.ai/models/inflection/inflection-3-pi"
     },
     {
+      "id": "inflection/inflection-3-productivity",
+      "canonical_slug": "inflection/inflection-3-productivity",
+      "name": "Inflection: Inflection 3 Productivity",
+      "context_length": 8000,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 0.0000025,
+      "pricing_completion": 0.00001,
+      "created_human": "2024-10-11",
+      "url": "https://openrouter.ai/models/inflection/inflection-3-productivity"
+    },
+    {
       "id": "thedrummer/rocinante-12b",
       "canonical_slug": "thedrummer/rocinante-12b",
       "name": "TheDrummer: Rocinante 12B",
@@ -7373,22 +7411,6 @@
       "pricing_completion": 5e-7,
       "created_human": "2024-09-30",
       "url": "https://huggingface.co/TheDrummer/Rocinante-12B-v1.1"
-    },
-    {
-      "id": "meta-llama/llama-3.2-1b-instruct",
-      "canonical_slug": "meta-llama/llama-3.2-1b-instruct",
-      "name": "Meta: Llama 3.2 1B Instruct",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 2.7e-8,
-      "pricing_completion": 2.01e-7,
-      "created_human": "2024-09-25",
-      "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
     },
     {
       "id": "meta-llama/llama-3.2-3b-instruct:free",
@@ -7421,6 +7443,22 @@
       "pricing_completion": 3.3e-7,
       "created_human": "2024-09-25",
       "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct"
+    },
+    {
+      "id": "meta-llama/llama-3.2-1b-instruct",
+      "canonical_slug": "meta-llama/llama-3.2-1b-instruct",
+      "name": "Meta: Llama 3.2 1B Instruct",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 2.7e-8,
+      "pricing_completion": 2.01e-7,
+      "created_human": "2024-09-25",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
     },
     {
       "id": "meta-llama/llama-3.2-11b-vision-instruct",
@@ -7586,22 +7624,6 @@
       "url": "https://openrouter.ai/models/openai/gpt-4o-2024-08-06"
     },
     {
-      "id": "meta-llama/llama-3.1-70b-instruct",
-      "canonical_slug": "meta-llama/llama-3.1-70b-instruct",
-      "name": "Meta: Llama 3.1 70B Instruct",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 4e-7,
-      "pricing_completion": 4e-7,
-      "created_human": "2024-07-23",
-      "url": "https://huggingface.co/meta-llama/Meta-Llama-3.1-70B-Instruct"
-    },
-    {
       "id": "meta-llama/llama-3.1-8b-instruct",
       "canonical_slug": "meta-llama/llama-3.1-8b-instruct",
       "name": "Meta: Llama 3.1 8B Instruct",
@@ -7616,6 +7638,22 @@
       "pricing_completion": 3e-8,
       "created_human": "2024-07-23",
       "url": "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct"
+    },
+    {
+      "id": "meta-llama/llama-3.1-70b-instruct",
+      "canonical_slug": "meta-llama/llama-3.1-70b-instruct",
+      "name": "Meta: Llama 3.1 70B Instruct",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 4e-7,
+      "pricing_completion": 4e-7,
+      "created_human": "2024-07-23",
+      "url": "https://huggingface.co/meta-llama/Meta-Llama-3.1-70B-Instruct"
     },
     {
       "id": "mistralai/mistral-nemo",
@@ -7634,24 +7672,6 @@
       "url": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407"
     },
     {
-      "id": "openai/gpt-4o-mini",
-      "canonical_slug": "openai/gpt-4o-mini",
-      "name": "OpenAI: GPT-4o-mini",
-      "context_length": 128000,
-      "modalities": [
-        "text",
-        "image",
-        "file",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 1.5e-7,
-      "pricing_completion": 6e-7,
-      "created_human": "2024-07-18",
-      "url": "https://openrouter.ai/models/openai/gpt-4o-mini"
-    },
-    {
       "id": "openai/gpt-4o-mini-2024-07-18",
       "canonical_slug": "openai/gpt-4o-mini-2024-07-18",
       "name": "OpenAI: GPT-4o-mini (2024-07-18)",
@@ -7668,6 +7688,24 @@
       "pricing_completion": 6e-7,
       "created_human": "2024-07-18",
       "url": "https://openrouter.ai/models/openai/gpt-4o-mini-2024-07-18"
+    },
+    {
+      "id": "openai/gpt-4o-mini",
+      "canonical_slug": "openai/gpt-4o-mini",
+      "name": "OpenAI: GPT-4o-mini",
+      "context_length": 128000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 1.5e-7,
+      "pricing_completion": 6e-7,
+      "created_human": "2024-07-18",
+      "url": "https://openrouter.ai/models/openai/gpt-4o-mini"
     },
     {
       "id": "google/gemma-2-27b-it",
@@ -7955,22 +7993,6 @@
       "url": "https://huggingface.co/Gryphe/MythoMax-L2-13b"
     },
     {
-      "id": "openai/gpt-3.5-turbo",
-      "canonical_slug": "openai/gpt-3.5-turbo",
-      "name": "OpenAI: GPT-3.5 Turbo",
-      "context_length": 16385,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 5e-7,
-      "pricing_completion": 0.0000015,
-      "created_human": "2023-05-28",
-      "url": "https://openrouter.ai/models/openai/gpt-3.5-turbo"
-    },
-    {
       "id": "openai/gpt-4",
       "canonical_slug": "openai/gpt-4",
       "name": "OpenAI: GPT-4",
@@ -7985,6 +8007,22 @@
       "pricing_completion": 0.00006,
       "created_human": "2023-05-28",
       "url": "https://openrouter.ai/models/openai/gpt-4"
+    },
+    {
+      "id": "openai/gpt-3.5-turbo",
+      "canonical_slug": "openai/gpt-3.5-turbo",
+      "name": "OpenAI: GPT-3.5 Turbo",
+      "context_length": 16385,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 5e-7,
+      "pricing_completion": 0.0000015,
+      "created_human": "2023-05-28",
+      "url": "https://openrouter.ai/models/openai/gpt-3.5-turbo"
     }
   ]
 }
