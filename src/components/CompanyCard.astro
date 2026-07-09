@@ -16,83 +16,145 @@ interface Props {
     country: string | null;
     location: string | null;
     is_hiring: boolean;
+    top_company?: boolean;
     team_size: number | null;
     stage: string | null;
     logo: string | null;
     ai_score: number;
     ai_signals: string[];
-    first_seen?: string;
-    times_featured?: number;
+    created_at?: string | null;
   };
   dict: Dictionary;
-  compact?: boolean;
 }
 
-const { company, dict, compact = false } = Astro.props;
+const { company, dict } = Astro.props;
+
+// Rank styling (top 3 medals)
 const rankClass = company.rank === 1 ? 'gold' : company.rank === 2 ? 'silver' : company.rank === 3 ? 'bronze' : '';
+
+// Outbound URL → prefer official website, fallback to exploreyc page
 const exploreycUrl = `https://www.exploreyc.com/companies/${company.slug}`;
 const websiteUrl = company.website ?? exploreycUrl;
+
+// "Added Xd ago" relative time (built-time snapshot from created_at)
+function relativeDays(iso: string | null | undefined): string {
+  if (!iso) return '';
+  const ms = Date.parse(iso);
+  if (isNaN(ms)) return '';
+  const days = Math.max(0, Math.floor((Date.now() - ms) / 86400000));
+  if (days === 0) return 'hoy';
+  if (days === 1) return 'ayer';
+  if (days < 30) return `hace ${days}d`;
+  if (days < 365) return `hace ${Math.floor(days / 30)}mo`;
+  return `hace ${Math.floor(days / 365)}a`;
+}
+
+const daysAgo = relativeDays(company.created_at);
+
+// Clean description (API returns \r\n\r\n paragraph breaks)
+const cleanDescription = (company.description ?? '')
+  .replace(/\r\n/g, ' ')
+  .replace(/\n+/g, ' ')
+  .replace(/\s+/g, ' ')
+  .trim();
 ---
 
-<a href={websiteUrl} target="_blank" rel="noopener" class={`card block ${compact ? 'p-3' : 'p-4'}`}>
+<a href={websiteUrl} target="_blank" rel="noopener" class="card block p-5 hover:translate-y-[-1px] transition-transform">
   <div class="flex items-start gap-3">
     <div class={`rank-badge ${rankClass} shrink-0`}>
       {company.rank ? `#${company.rank}` : '·'}
     </div>
     <div class="flex-1 min-w-0">
+      <!-- ===== Title row ===== -->
       <div class="flex items-baseline gap-2 flex-wrap">
         {company.logo && (
           <img
             src={company.logo}
             alt={company.name}
-            width="20"
-            height="20"
-            class="w-5 h-5 rounded shrink-0"
+            width="28"
+            height="28"
+            class="w-7 h-7 rounded shrink-0"
             loading="lazy"
             onerror="this.style.display='none'"
           />
         )}
-        <span class="font-semibold truncate">{company.name}</span>
+        <span class="font-bold text-lg truncate">{company.name}</span>
         {company.batch && (
-          <span class="text-xs px-1.5 py-0.5 rounded" style="background: var(--bg-card-elevated); color: var(--text-muted);">
+          <span class="text-xs px-1.5 py-0.5 rounded font-medium" style="background: var(--bg-card-elevated); color: var(--text-muted);">
             {company.batch}
           </span>
         )}
+        {company.top_company && (
+          <span class="text-xs px-1.5 py-0.5 rounded font-bold" style="background: #f59e0b; color: #000;">
+            ⭐ TOP
+          </span>
+        )}
         {company.is_hiring && (
-          <span class="text-xs px-1.5 py-0.5 rounded" style="background: var(--accent); color: white;">
+          <span class="text-xs px-1.5 py-0.5 rounded font-bold" style="background: #10b981; color: white;">
             {dict.exploreyc.hiring}
           </span>
         )}
       </div>
-      {!compact && company.one_liner && (
-        <p class="text-sm mt-1 line-clamp-2" style="color: var(--text-muted);">{company.one_liner}</p>
+
+      <!-- ===== One-liner (the pitch) ===== -->
+      {company.one_liner && (
+        <p class="text-base mt-2 font-semibold leading-snug" style="color: var(--text);">
+          {company.one_liner}
+        </p>
       )}
-      {!compact && (
-        <div class="flex items-center gap-3 mt-2 text-xs flex-wrap" style="color: var(--text-muted);">
-          {company.location && (
-            <span>📍 {company.location}</span>
-          )}
-          {company.team_size != null && (
-            <span>👥 {company.team_size}</span>
-          )}
-          {company.stage && (
-            <span>{dict.exploreyc.stage}: <span class="font-medium" style="color: var(--text);">{company.stage}</span></span>
+
+      <!-- ===== Long description (truncated) ===== -->
+      {cleanDescription && (
+        <p class="text-sm mt-2 leading-relaxed" style="color: var(--text-muted);">
+          {cleanDescription.length > 380
+            ? cleanDescription.slice(0, 380).replace(/\s+\S*$/, '') + '…'
+            : cleanDescription}
+        </p>
+      )}
+
+      <!-- ===== Metadata row ===== -->
+      <div class="flex items-center gap-3 mt-3 text-xs flex-wrap" style="color: var(--text-muted);">
+        {company.location && (
+          <span title={company.country ?? ''}>📍 {company.location}</span>
+        )}
+        {company.team_size != null && (
+          <span>👥 {company.team_size} {company.team_size === 1 ? 'person' : 'people'}</span>
+        )}
+        {company.stage && (
+          <span>{dict.exploreyc.stage}: <span class="font-semibold" style="color: var(--text);">{company.stage}</span></span>
+        )}
+        {daysAgo && (
+          <span title={company.created_at ?? ''}>🕒 {daysAgo}</span>
+        )}
+      </div>
+
+      <!-- ===== Industry tags ===== -->
+      {(company.industry || company.subindustry) && (
+        <div class="flex items-center gap-1.5 mt-2.5 flex-wrap">
+          {company.industry && (
+            <span class="text-xs px-2 py-0.5 rounded" style="background: var(--bg-card-elevated); color: var(--text);">
+              {company.industry}
+            </span>
           )}
           {company.subindustry && company.subindustry !== company.industry && (
-            <span>🏷️ {company.subindustry}</span>
-          )}
-          {company.times_featured != null && company.times_featured > 1 && (
-            <span>⭐ ×{company.times_featured}</span>
+            <span class="text-xs px-2 py-0.5 rounded" style="background: rgba(99,102,241,0.12); color: #818cf8;">
+              {company.subindustry}
+            </span>
           )}
         </div>
       )}
-      {!compact && company.ai_signals && company.ai_signals.length > 0 && (
-        <div class="flex items-center gap-1 mt-2 flex-wrap">
-          <span class="text-xs font-semibold" style="color: var(--accent);">
+
+      <!-- ===== AI signals (only when present) ===== -->
+      {company.ai_signals && company.ai_signals.length > 0 && (
+        <div class="flex items-center gap-1.5 mt-3 flex-wrap">
+          <span class="text-xs font-bold" style="color: var(--accent);">
             {dict.exploreyc.aiScore}: {company.ai_score}
           </span>
-          {company.ai_signals.slice(0, 3).map((sig) => (
-            <span class="text-xs px-1.5 py-0.5 rounded" style="background: var(--bg-card-elevated); color: var(--text-muted); font-size: 0.65rem;">
+          {company.ai_signals.slice(0, 4).map((sig) => (
+            <span
+              class="text-xs px-1.5 py-0.5 rounded font-mono"
+              style="background: rgba(99,102,241,0.18); color: #c4b5fd; font-size: 0.7rem;"
+            >
               {sig.replace(/^(strong|medium):/, '')}
             </span>
           ))}

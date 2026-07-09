@@ -3,13 +3,11 @@ import Base from '@/layouts/Base.astro';
 import CompanyCard from '@components/CompanyCard.astro';
 import { getDict, detectLocaleFromUrl } from '@/i18n';
 import exploreycToday from '../../public/data/exploreyc-today.json';
-import exploreycHistory from '../../public/data/exploreyc-history.json';
 
 const locale = detectLocaleFromUrl(Astro.url);
 const dict = getDict(locale);
 
 const today: any = exploreycToday ?? { items: [], totals: {}, rate_limit: {} };
-const history: any = exploreycHistory ?? { items: [], total: 0 };
 
 // Top 5 con rank asignado
 const todayItems = (today.items ?? []).map((it: any, idx: number) => ({
@@ -17,19 +15,13 @@ const todayItems = (today.items ?? []).map((it: any, idx: number) => ({
   rank: idx + 1,
 }));
 
-// History completo (sin los que ya están en today — sin repetir en pantalla)
-const todayIds = new Set(todayItems.map((c: any) => c.id));
-const historyItems = (history.items ?? []).filter((c: any) => !todayIds.has(c.id));
-
 const remaining = today.rate_limit?.remaining ?? '?';
 const aiRelevant = today.totals?.ai_relevant ?? 0;
 const shown = today.totals?.shown ?? 0;
-const total = history.total ?? 0;
 
 const todayCountText = dict.exploreyc.todayCount
   .replace('{shown}', String(shown))
   .replace('{relevant}', String(aiRelevant));
-const historyCountText = dict.exploreyc.historyCount.replace('{total}', String(total));
 const rateNote = (dict.exploreyc.rateNote ?? '').replace('{remaining}', String(remaining));
 ---
 
@@ -42,8 +34,7 @@ const rateNote = (dict.exploreyc.rateNote ?? '').replace('{remaining}', String(r
     </p>
   </header>
 
-  <!-- ============ 5 de hoy ============ -->
-  <section class="mb-12">
+  <section>
     <div class="flex items-baseline gap-3 mb-1">
       <h2 class="text-xl font-semibold">{dict.exploreyc.sectionToday}</h2>
       <span class="text-xs" style="color: var(--text-muted);">{todayCountText}</span>
@@ -55,58 +46,9 @@ const rateNote = (dict.exploreyc.rateNote ?? '').replace('{remaining}', String(r
         {dict.exploreyc.noResults}
       </p>
     ) : (
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {todayItems.map((c: any) => <CompanyCard company={c} dict={dict} />)}
       </div>
     )}
   </section>
-
-  <!-- ============ Base acumulada ============ -->
-  <section>
-    <div class="flex items-baseline gap-3 mb-1">
-      <h2 class="text-xl font-semibold">{dict.exploreyc.sectionHistory}</h2>
-      <span class="text-xs" style="color: var(--text-muted);">{historyCountText}</span>
-    </div>
-    <p class="text-xs mb-4" style="color: var(--text-muted);">{dict.exploreyc.sectionHistoryDesc}</p>
-
-    <div class="flex flex-wrap gap-2 mb-6 border-b pb-3" style="border-color: var(--border);">
-      <button data-filter="all" class="btn-tab active">{dict.exploreyc.filterAll}</button>
-      <button data-filter="hiring" class="btn-tab">{dict.exploreyc.filterHiring}</button>
-      <button data-filter="ai" class="btn-tab">{dict.exploreyc.filterAiOnly}</button>
-    </div>
-
-    {historyItems.length === 0 && todayItems.length === 0 ? (
-      <p class="card p-6 text-center" style="color: var(--text-muted);">
-        {dict.exploreyc.noResults}
-      </p>
-    ) : (
-      <div id="history-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
-        {historyItems.map((c: any, idx: number) => (
-          <div
-            data-hiring={c.is_hiring ? 'true' : 'false'}
-            data-ai={c.ai_score >= 3 ? 'true' : 'false'}
-          >
-            <CompanyCard company={{ ...c, rank: idx + 1 }} dict={dict} compact />
-          </div>
-        ))}
-      </div>
-    )}
-  </section>
 </Base>
-
-<script is:inline>
-  document.querySelectorAll('[data-filter]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const filter = btn.getAttribute('data-filter');
-      document.querySelectorAll('[data-filter]').forEach((b) => b.classList.toggle('active', b === btn));
-      document.querySelectorAll('#history-grid > [data-hiring]').forEach((card) => {
-        const isHiring = card.getAttribute('data-hiring') === 'true';
-        const isAi = card.getAttribute('data-ai') === 'true';
-        let show = true;
-        if (filter === 'hiring') show = isHiring;
-        else if (filter === 'ai') show = isAi;
-        (card).style.display = show ? '' : 'none';
-      });
-    });
-  });
-</script>

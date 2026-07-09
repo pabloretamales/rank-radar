@@ -104,25 +104,17 @@
     "empty": "Pick up to 3 models above and click Compare."
   },
   "exploreyc": {
-    "title": "ExploreYC — AI-focused YC startups",
-    "subtitle": "Every day 5 AI-relevant YC startups are added to the dataset, prioritizing the most recent. The accumulated base grows by 1 req/day with no duplicates.",
+    "title": "ExploreYC — 5 AI-focused YC startups, every day",
+    "subtitle": "Every day, 5 AI-relevant YC startups get added, prioritizing the most recent from the current batch. No repeats across runs.",
     "sectionToday": "Today's 5",
-    "sectionTodayDesc": "Top 5 YC startups from the latest batch (Summer 2026 or current), filtered by AI keywords.",
-    "sectionHistory": "Accumulated base",
-    "sectionHistoryDesc": "Full history, sorted most-recent first. No duplicates.",
-    "todayCount": "Showing {shown} of {relevant} AI-relevant from the latest batch",
-    "historyCount": "Total: {total} startups accumulated since tracker started",
+    "sectionTodayDesc": "Top 5 YC startups from the current batch, filtered by AI keywords. Refreshed once a day with a single API call.",
+    "todayCount": "Showing {shown} of {relevant} AI-relevant from the current batch",
     "hiring": "Hiring",
     "stage": "Stage",
     "aiScore": "AI score",
     "batchLabel": "Batch",
-    "noResults": "No results for this filter",
-    "filterAll": "All",
-    "filterHiring": "Hiring only",
-    "filterAiOnly": "AI-relevant only",
-    "rateNote": "Source: ExploreYC · free tier 5 req/day · {remaining} remaining",
-    "firstSeen": "First seen",
-    "timesFeatured": "× featured"
+    "noResults": "Nothing today — the cron runs once a day at 14:00 CLT",
+    "rateNote": "Source: ExploreYC · free tier 5 req/day · {remaining} remaining"
   },
   "footer": {
     "madeBy": "Made by",
