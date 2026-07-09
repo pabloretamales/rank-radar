@@ -9,6 +9,7 @@
     "github": "GitHub",
     "models": "AI Models",
     "openrouter": "OpenRouter",
+    "exploreyc": "ExploreYC",
     "compare": "Compare",
     "toggleTheme": "Toggle theme",
     "toggleLang": "ES"
@@ -102,11 +103,32 @@
     "btnClear": "Clear",
     "empty": "Pick up to 3 models above and click Compare."
   },
+  "exploreyc": {
+    "title": "ExploreYC — AI-focused YC startups",
+    "subtitle": "Every day 5 AI-relevant YC startups are added to the dataset, prioritizing the most recent. The accumulated base grows by 1 req/day with no duplicates.",
+    "sectionToday": "Today's 5",
+    "sectionTodayDesc": "Top 5 YC startups from the latest batch (Summer 2026 or current), filtered by AI keywords.",
+    "sectionHistory": "Accumulated base",
+    "sectionHistoryDesc": "Full history, sorted most-recent first. No duplicates.",
+    "todayCount": "Showing {shown} of {relevant} AI-relevant from the latest batch",
+    "historyCount": "Total: {total} startups accumulated since tracker started",
+    "hiring": "Hiring",
+    "stage": "Stage",
+    "aiScore": "AI score",
+    "batchLabel": "Batch",
+    "noResults": "No results for this filter",
+    "filterAll": "All",
+    "filterHiring": "Hiring only",
+    "filterAiOnly": "AI-relevant only",
+    "rateNote": "Source: ExploreYC · free tier 5 req/day · {remaining} remaining",
+    "firstSeen": "First seen",
+    "timesFeatured": "× featured"
+  },
   "footer": {
     "madeBy": "Made by",
     "company": "DinamIA Labs",
     "dataRefresh": "Data refreshed daily via cron",
-    "credits": "Data provided by GitHub Search, Artificial Analysis, OpenRouter, and OpenClaw.",
+    "credits": "Data provided by GitHub Search, Artificial Analysis, OpenRouter, ExploreYC, and OpenClaw.",
     "builtWith": "Built with OpenClaw · MiniMax-M3"
   },
   "common": {

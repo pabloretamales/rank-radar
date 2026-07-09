@@ -42,26 +42,39 @@ async function main() {
   const github = readIfExists(join(DATA, 'github-windows.json'));
   const aa = readIfExists(join(DATA, 'aa-models.json'));
   const openrouter = readIfExists(join(DATA, 'openrouter.json'));
+  const exploreycToday = readIfExists(join(DATA, 'exploreyc-today.json'));
+  const exploreycHistory = readIfExists(join(DATA, 'exploreyc-history.json'));
 
-  if (!github && !aa && !openrouter) {
+  if (!github && !aa && !openrouter && !exploreycToday && !exploreycHistory) {
     console.warn('⚠️  Ningún dataset presente. Corré los fetchers primero.');
     process.exit(1);
   }
 
   const payload = {
     generated_at: new Date().toISOString(),
-    oldest_source_fetch: smallestFetchedAt(github, aa, openrouter),
+    oldest_source_fetch: smallestFetchedAt(github, aa, openrouter, exploreycToday),
     sources: {
       github: github
         ? { fetched_at: github.fetched_at, windows: github.windows?.length ?? 0 }
         : null,
       aa: aa ? { tier: aa.tier, total_models: aa.total_models, fetched_at: aa.fetched_at } : null,
       openrouter: openrouter ? { fetched_at: openrouter.fetched_at } : null,
+      exploreyc: exploreycToday
+        ? {
+            fetched_at: exploreycToday.fetched_at,
+            shown_today: exploreycToday.totals?.shown ?? 0,
+            ai_relevant: exploreycToday.totals?.ai_relevant ?? 0,
+            rate_limit_remaining: exploreycToday.rate_limit?.remaining ?? null,
+            history_total: exploreycHistory?.total ?? 0,
+          }
+        : null,
     },
     paths: {
       github: '/data/github-windows.json',
       aa: '/data/aa-models.json',
       openrouter: '/data/openrouter.json',
+      exploreyc_today: '/data/exploreyc-today.json',
+      exploreyc_history: '/data/exploreyc-history.json',
     },
   };
 

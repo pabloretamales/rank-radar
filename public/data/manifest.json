@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T19:03:21.672Z",
+  "generated_at": "2026-07-09T01:14:26.395Z",
   "oldest_source_fetch": "2026-07-08T19:03:12.418Z",
   "sources": {
     "github": {
@@ -13,11 +13,20 @@
     },
     "openrouter": {
       "fetched_at": "2026-07-08T19:03:21.620Z"
+    },
+    "exploreyc": {
+      "fetched_at": "2026-07-09T01:14:19.366Z",
+      "shown_today": 5,
+      "ai_relevant": 12,
+      "rate_limit_remaining": 1,
+      "history_total": 5
     }
   },
   "paths": {
     "github": "/data/github-windows.json",
     "aa": "/data/aa-models.json",
-    "openrouter": "/data/openrouter.json"
+    "openrouter": "/data/openrouter.json",
+    "exploreyc_today": "/data/exploreyc-today.json",
+    "exploreyc_history": "/data/exploreyc-history.json"
   }
 }

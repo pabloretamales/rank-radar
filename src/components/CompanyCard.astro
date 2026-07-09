@@ -1,0 +1,103 @@
+---
+import type { Dictionary } from '@/i18n';
+
+interface Props {
+  company: {
+    id: number;
+    rank?: number;
+    slug: string;
+    name: string;
+    one_liner: string;
+    description?: string;
+    website: string | null;
+    batch: string | null;
+    industry: string | null;
+    subindustry: string | null;
+    country: string | null;
+    location: string | null;
+    is_hiring: boolean;
+    team_size: number | null;
+    stage: string | null;
+    logo: string | null;
+    ai_score: number;
+    ai_signals: string[];
+    first_seen?: string;
+    times_featured?: number;
+  };
+  dict: Dictionary;
+  compact?: boolean;
+}
+
+const { company, dict, compact = false } = Astro.props;
+const rankClass = company.rank === 1 ? 'gold' : company.rank === 2 ? 'silver' : company.rank === 3 ? 'bronze' : '';
+const exploreycUrl = `https://www.exploreyc.com/companies/${company.slug}`;
+const websiteUrl = company.website ?? exploreycUrl;
+---
+
+<a href={websiteUrl} target="_blank" rel="noopener" class={`card block ${compact ? 'p-3' : 'p-4'}`}>
+  <div class="flex items-start gap-3">
+    <div class={`rank-badge ${rankClass} shrink-0`}>
+      {company.rank ? `#${company.rank}` : '·'}
+    </div>
+    <div class="flex-1 min-w-0">
+      <div class="flex items-baseline gap-2 flex-wrap">
+        {company.logo && (
+          <img
+            src={company.logo}
+            alt={company.name}
+            width="20"
+            height="20"
+            class="w-5 h-5 rounded shrink-0"
+            loading="lazy"
+            onerror="this.style.display='none'"
+          />
+        )}
+        <span class="font-semibold truncate">{company.name}</span>
+        {company.batch && (
+          <span class="text-xs px-1.5 py-0.5 rounded" style="background: var(--bg-card-elevated); color: var(--text-muted);">
+            {company.batch}
+          </span>
+        )}
+        {company.is_hiring && (
+          <span class="text-xs px-1.5 py-0.5 rounded" style="background: var(--accent); color: white;">
+            {dict.exploreyc.hiring}
+          </span>
+        )}
+      </div>
+      {!compact && company.one_liner && (
+        <p class="text-sm mt-1 line-clamp-2" style="color: var(--text-muted);">{company.one_liner}</p>
+      )}
+      {!compact && (
+        <div class="flex items-center gap-3 mt-2 text-xs flex-wrap" style="color: var(--text-muted);">
+          {company.location && (
+            <span>📍 {company.location}</span>
+          )}
+          {company.team_size != null && (
+            <span>👥 {company.team_size}</span>
+          )}
+          {company.stage && (
+            <span>{dict.exploreyc.stage}: <span class="font-medium" style="color: var(--text);">{company.stage}</span></span>
+          )}
+          {company.subindustry && company.subindustry !== company.industry && (
+            <span>🏷️ {company.subindustry}</span>
+          )}
+          {company.times_featured != null && company.times_featured > 1 && (
+            <span>⭐ ×{company.times_featured}</span>
+          )}
+        </div>
+      )}
+      {!compact && company.ai_signals && company.ai_signals.length > 0 && (
+        <div class="flex items-center gap-1 mt-2 flex-wrap">
+          <span class="text-xs font-semibold" style="color: var(--accent);">
+            {dict.exploreyc.aiScore}: {company.ai_score}
+          </span>
+          {company.ai_signals.slice(0, 3).map((sig) => (
+            <span class="text-xs px-1.5 py-0.5 rounded" style="background: var(--bg-card-elevated); color: var(--text-muted); font-size: 0.65rem;">
+              {sig.replace(/^(strong|medium):/, '')}
+            </span>
+          ))}
+        </div>
+      )}
+    </div>
+  </div>
+</a>

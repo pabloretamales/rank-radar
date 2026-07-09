@@ -1,0 +1,152 @@
+{
+  "schema": "exploreyc-today/v1",
+  "fetched_at": "2026-07-09T01:14:19.366Z",
+  "date": "2026-07-09",
+  "source": "yc",
+  "rate_limit": {
+    "remaining": 1,
+    "reset": 1783645840
+  },
+  "totals": {
+    "yc_companies_seen": 100,
+    "yc_total_in_dataset": 6031,
+    "ai_scored_pool": 30,
+    "ai_relevant": 12,
+    "shown": 5
+  },
+  "items": [
+    {
+      "id": 31570,
+      "slug": "rindler",
+      "name": "Rindler",
+      "one_liner": "Middleware making websites readable for AI agents",
+      "description": "Rindler turns any website, including sites without APIs, into a deterministic API that AI agents can reliably use. It handles logins, 2FA, and bot detection, giving agents clean structured data and dependable actions instead of raw HTML, with robust maintenance when sites change.\r\n\r\nRindler is agent-agnostic and built on the open MCP standard, so it works with any agent.\r\n\r\nFor operators: get your team out of portals and back to the work that matters.\r\n\r\nFor agent builders: let your agents act on the real web quickly, cheaply, and reliably on every run.",
+      "website": "https://rindler.ai",
+      "batch": "Summer 2026",
+      "industry": "B2B",
+      "subindustry": "B2B -> Infrastructure",
+      "country": "United States",
+      "location": "Boston, MA, USA",
+      "team_size": 2,
+      "stage": "Early",
+      "is_hiring": false,
+      "top_company": false,
+      "status": "Active",
+      "logo": "https://bookface-images.s3.amazonaws.com/small_logos/ba85eb3919f954ce9bf661f9b9ee195327c93ceb.png",
+      "created_at": "2026-07-08T04:57:59.613722Z",
+      "updated_at": "2026-07-08T04:57:59.613722Z",
+      "ai_score": 9,
+      "ai_signals": [
+        "strong:ai",
+        "strong:agent",
+        "strong:agents"
+      ]
+    },
+    {
+      "id": 33019,
+      "slug": "agnost-ai",
+      "name": "Agnost AI",
+      "one_liner": "Product analytics for teams building conversational agents",
+      "description": "Agnost AI helps teams building chat and voice AI agents understand what users want, where they get stuck, and why they drop off.\r\n\r\nWe read production AI conversations, cluster recurring intents, feature requests, frustration, and failure patterns, then open PRs against prompts, tools, and harnesses to improve the agent.",
+      "website": "https://agnost.ai",
+      "batch": "Summer 2026",
+      "industry": "B2B",
+      "subindustry": "B2B -> Analytics",
+      "country": "United States",
+      "location": "San Francisco, CA, USA",
+      "team_size": 2,
+      "stage": "Early",
+      "is_hiring": false,
+      "top_company": false,
+      "status": "Active",
+      "logo": "https://bookface-images.s3.amazonaws.com/small_logos/8bf16355f4f9b0a78a4a26f6f533377d295877d5.png",
+      "created_at": "2026-07-08T04:57:44.890486Z",
+      "updated_at": "2026-07-08T04:57:44.890486Z",
+      "ai_score": 9,
+      "ai_signals": [
+        "strong:ai",
+        "strong:agent",
+        "strong:agents"
+      ]
+    },
+    {
+      "id": 30873,
+      "slug": "tell-if-ai",
+      "name": "Tell if AI",
+      "one_liner": "AI agents on real phones, growing brands across every platform.",
+      "description": "An AI-run performance marketing agency. We deploy autonomous agents on a fleet of real mobile phones that create, post, and grow content across YouTube, TikTok, Instagram, X, Reddit and more operating hundreds of accounts in parallel, indistinguishable from human creators. Brands hire us the way they'd hire a growth agency, but instead of a team of marketers we run the entire pipeline autonomously: ideation, video production, posting, engagement, and audience building. We get paid on revenue share, so our incentives are aligned with our partners' growth. Our first partnership is revenue sharing with a telehealth clinic, where we're driving patient acquisition across dozens of channels we built and operate end-to-end.",
+      "website": "https://tellif.ai",
+      "batch": "Fall 2025",
+      "industry": "B2B",
+      "subindustry": "B2B -> Marketing",
+      "country": "United States",
+      "location": "Austin, TX, USA",
+      "team_size": 2,
+      "stage": "Early",
+      "is_hiring": false,
+      "top_company": false,
+      "status": "Active",
+      "logo": "https://bookface-images.s3.amazonaws.com/small_logos/da77fda94e244c20522deac6fb0556be091b2804.png",
+      "created_at": "2026-07-01T06:18:52.828278Z",
+      "updated_at": "2026-07-08T05:00:21.514424Z",
+      "ai_score": 9,
+      "ai_signals": [
+        "strong:ai",
+        "strong:agent",
+        "strong:agents"
+      ]
+    },
+    {
+      "id": 33315,
+      "slug": "amulet",
+      "name": "Amulet",
+      "one_liner": "Agents that drive customer success",
+      "description": "Amulet helps post-sales teams monitor every account and automate the work that drives retention and expansion.\r\n\r\nOur agents connect to customer data (CRM, support, product usage, and communication data) to flag churn risks, surface upsell opportunities, track adoption, and draft the right messages for each customer.",
+      "website": "https://amulet.so/",
+      "batch": "Summer 2026",
+      "industry": "B2B",
+      "subindustry": "B2B -> Operations",
+      "country": "United States",
+      "location": "San Francisco, CA, USA",
+      "team_size": 2,
+      "stage": "Early",
+      "is_hiring": false,
+      "top_company": false,
+      "status": "Active",
+      "logo": "https://bookface-images.s3.amazonaws.com/small_logos/995b893cdd67e1db883c8b75bff1f9221fff5327.png",
+      "created_at": "2026-07-07T05:58:17.406128Z",
+      "updated_at": "2026-07-08T04:57:41.739036Z",
+      "ai_score": 6,
+      "ai_signals": [
+        "strong:agent",
+        "strong:agents"
+      ]
+    },
+    {
+      "id": 31234,
+      "slug": "ekpa",
+      "name": "Ekpa",
+      "one_liner": "Building Autonomous Research Agents for Trading",
+      "description": "",
+      "website": "https://goekpa.com/",
+      "batch": "Summer 2026",
+      "industry": "Fintech",
+      "subindustry": "Fintech -> Asset Management",
+      "country": "United States",
+      "location": "Boston, MA, USA",
+      "team_size": 2,
+      "stage": "Early",
+      "is_hiring": false,
+      "top_company": false,
+      "status": "Active",
+      "logo": "https://bookface-images.s3.amazonaws.com/small_logos/6e4cd183ffca48da0b8c0ac22b9a4a380bdecc65.png",
+      "created_at": "2026-07-04T05:37:09.291406Z",
+      "updated_at": "2026-07-08T04:59:04.939032Z",
+      "ai_score": 6,
+      "ai_signals": [
+        "strong:agent",
+        "strong:agents"
+      ]
+    }
+  ]
+}

@@ -4,6 +4,7 @@ Visibilidad en tiempo real de:
 1. **Top GitHub** — repos por estrellas en ventanas 1d / 7d / 30d / 90d / histórico
 2. **Top modelos IA** — rankings Artificial Analysis (intelligence, coding, math, velocidad, precio)
 3. **Top apps OpenRouter** — popular, trending, por tokens
+4. **ExploreYC** — 5 startups YC con foco IA, acumuladas diariamente sin repetir
 
 Sitio: [rankradar.dinamialabs.com](https://rankradar.dinamialabs.com)
 
@@ -43,7 +44,9 @@ Los JSON en `public/data/` son **generados y commiteados**:
 - `github-windows.json` — top 20 por ventana (5 ventanas)
 - `aa-models.json` — 543 modelos + 11 rankings (intelligence, coding, math, MMLU-Pro, GPQA, LiveCodeBench, HLE, speed, TTFT, cheapest blended, cheapest input)
 - `openrouter.json` — popular + trending + by_tokens
-- `manifest.json` — metadata de los 3 datasets
+- `exploreyc-today.json` — top 5 AI-relevant YC startups del día actual
+- `exploreyc-history.json` — base acumulada (dedupe por id, orden created_at desc)
+- `manifest.json` — metadata de los 5 datasets
 
 ## Setup local
 
@@ -72,20 +75,41 @@ El archivo `.env` debe vivir solo en tu máquina. **No** se commitea — `.gitig
 - **`ARTIFICIAL_ANALYSIS_API_KEY`** — el script `fetch-aa-models.mjs` la envía como header `x-api-key`. Con el tier **FREE** actual detecta ~543 modelos y devuelve los benchmarks principales (intelligence/coding/math/speed/precio). Si en algún momento subís a PRO, vas a ver además `openrouter_api_id`, `context_window` y `modalities`.
 - **`GITHUB_TOKEN`** — el script `fetch-github-trending.mjs` la envía como `Authorization: Bearer`. Necesita scope de `public_repo` para `/search/repositories`. Rate limit autenticado: 5000 req/h.
 - **`OPENROUTER_API_KEY`** — el script `fetch-openrouter.mjs` la envía como `Authorization: Bearer` contra `/api/v1/datasets/app-rankings`. Sirve cualquier key, incluso con 0 crédito, porque el endpoint no consume tokens de inferencia. Rate limit: 30 req/min, 500 req/día.
+- **`EYC_API_KEY`** — el script `fetch-exploreyc.mjs` la envía como `Authorization: Bearer` contra `https://api.exploreyc.com/api/v1/companies`. **Free tier: 5 req/día, rolling 24h.** Por eso este fetcher corre **una sola vez al día** (cron separado, no integrado en `pipeline`) y cachea "ya corrió hoy" en `.cache/exploreyc-last-date.txt`. Pagá `Starter` ($29/mes, 500 req/día) si querés más. Filtro AI: keyword-based (ExploreYC no tiene industry "AI", solo B2B/Consumer/Software/etc).
 
 ## Pipeline automático
 
 Cron diario (UTC) en OpenClaw:
-- Re-corre los 3 fetchers
+- Re-corre los fetchers principales (github + aa + openrouter)
 - Re-genera `public/data/*.json`
 - Commit + push al repo
+- **Cron independiente** `rank-radar-exploreyc-refresh` corre **1 req/día** a ExploreYC (cuota 5/día) y mergea con la base acumulada
 
 Vercel re-deploy automáticamente con los JSON nuevos.
 
+### ExploreYC — Cómo está hecho
+
+1. **Fetcher único por día** (`scripts/fetch-exploreyc.mjs`):
+   - Cache `.cache/exploreyc-last-date.txt` evita quemar cuota si se ejecuta dos veces.
+   - 1 call a `GET /companies?source=yc&limit=100` (los más recientes).
+   - Re-ordena localmente por `created_at DESC` (no confiar en el orden del API).
+   - Puntúa los 30 más recientes con keywords AI (lista en `scripts/lib/ai-keywords.mjs`).
+   - Score ≥ 3 → top 5 van al `exploreyc-today.json`.
+   - Dedupe por `id` → actualiza `exploreyc-history.json` (acumulado).
+
+2. **AI filter — sin industry-match**:
+   - ExploreYC tiene **10 industries** (B2B, Consumer, Software...). No hay "AI"/"ML".
+   - Por eso el filtro es 100% keyword-based en `name + one_liner + long_description + subindustry`.
+   - Score: `strong`=3 (e.g. "AI", "agent", "RAG", "LLM"), `medium`=1 (e.g. "computer vision", "machine learning"). Threshold mínimo: 3.
+
+3. **Por qué cron separado**:
+   - El pipeline principal corre **3 veces/día** (daily, midday, + build). Si cada run llamara a ExploreYC → se quema la cuota en <2 días.
+   - Cron `rank-radar-exploreyc-refresh` corre **1 vez/día** a las 14:00 CLT y mantiene 4 calls/día de buffer para regeneraciones manuales.
+
 ## Idiomas
 
-- ES: `/`, `/github/`, `/models/`, `/openrouter/` (default, sin prefijo)
-- EN: `/en/`, `/en/github/`, `/en/models/`, `/en/openrouter/`
+- ES: `/`, `/github/`, `/models/`, `/openrouter/`, `/exploreyc/` (default, sin prefijo)
+- EN: `/en/`, `/en/github/`, `/en/models/`, `/en/openrouter/`, `/en/exploreyc/`
 
 ## Privacidad del repo
 
