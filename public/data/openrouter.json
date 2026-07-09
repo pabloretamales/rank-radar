@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-09T12:03:00.784Z",
+  "fetched_at": "2026-07-09T19:00:25.466Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-09T12:02:56.342Z",
+    "as_of": "2026-07-09T19:00:20.308Z",
     "version": "v1",
     "start_date": "2026-06-09",
     "end_date": "2026-07-08"
   },
   "rankings_meta": {
-    "as_of": "2026-07-09T12:02:57.517Z",
+    "as_of": "2026-07-09T19:00:21.460Z",
     "version": "v1",
     "start_date": "2026-07-08",
     "end_date": "2026-07-08"
@@ -568,6 +568,138 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "openai/gpt-5.6-luna-pro",
+        "slug": "openai/gpt-5.6-luna-pro-20260709",
+        "name": "OpenAI: GPT-5.6 Luna Pro",
+        "description": "GPT-5.6 Luna Pro is the same underlying model as [GPT-5.6 Luna](https://openrouter.ai/openai/gpt-5.6-luna), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
+        "context_length": 1050000,
+        "modalities": [
+          "file",
+          "image",
+          "text",
+          "→text"
+        ],
+        "n_inputs": 3,
+        "n_outputs": 1,
+        "created_ts": 1783590867,
+        "created_human": "2026-07-09",
+        "pricing_prompt": 0.000001,
+        "pricing_completion": 0.000006,
+        "score": 1783590867,
+        "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-pro-20260709"
+      },
+      {
+        "rank": 2,
+        "id": "openai/gpt-5.6-luna",
+        "slug": "openai/gpt-5.6-luna-20260709",
+        "name": "OpenAI: GPT-5.6 Luna",
+        "description": "GPT-5.6 Luna is a fast, cost-efficient model in OpenAI's GPT-5.6 series. It is suited for high-volume, latency-sensitive tasks such as chat, classification, and lightweight agentic workflows, providing capable reasoning for...",
+        "context_length": 1050000,
+        "modalities": [
+          "file",
+          "image",
+          "text",
+          "→text"
+        ],
+        "n_inputs": 3,
+        "n_outputs": 1,
+        "created_ts": 1783590864,
+        "created_human": "2026-07-09",
+        "pricing_prompt": 0.000001,
+        "pricing_completion": 0.000006,
+        "score": 1783590864,
+        "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-20260709"
+      },
+      {
+        "rank": 3,
+        "id": "openai/gpt-5.6-terra-pro",
+        "slug": "openai/gpt-5.6-terra-pro-20260709",
+        "name": "OpenAI: GPT-5.6 Terra Pro",
+        "description": "GPT-5.6 Terra Pro is the same underlying model as [GPT-5.6 Terra](https://openrouter.ai/openai/gpt-5.6-terra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
+        "context_length": 1050000,
+        "modalities": [
+          "file",
+          "image",
+          "text",
+          "→text"
+        ],
+        "n_inputs": 3,
+        "n_outputs": 1,
+        "created_ts": 1783590861,
+        "created_human": "2026-07-09",
+        "pricing_prompt": 0.0000025,
+        "pricing_completion": 0.000015,
+        "score": 1783590861,
+        "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-pro-20260709"
+      },
+      {
+        "rank": 4,
+        "id": "openai/gpt-5.6-terra",
+        "slug": "openai/gpt-5.6-terra-20260709",
+        "name": "OpenAI: GPT-5.6 Terra",
+        "description": "GPT-5.6 Terra is a balanced model in OpenAI's GPT-5.6 series, positioned between the flagship Sol tier and the cost-efficient Luna tier. It is suited for everyday coding, reasoning, and agentic...",
+        "context_length": 1050000,
+        "modalities": [
+          "file",
+          "image",
+          "text",
+          "→text"
+        ],
+        "n_inputs": 3,
+        "n_outputs": 1,
+        "created_ts": 1783590857,
+        "created_human": "2026-07-09",
+        "pricing_prompt": 0.0000025,
+        "pricing_completion": 0.000015,
+        "score": 1783590857,
+        "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-20260709"
+      },
+      {
+        "rank": 5,
+        "id": "openai/gpt-5.6-sol-pro",
+        "slug": "openai/gpt-5.6-sol-pro-20260709",
+        "name": "OpenAI: GPT-5.6 Sol Pro",
+        "description": "GPT-5.6 Sol Pro is the same underlying model as [GPT-5.6 Sol](https://openrouter.ai/openai/gpt-5.6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
+        "context_length": 1050000,
+        "modalities": [
+          "file",
+          "image",
+          "text",
+          "→text"
+        ],
+        "n_inputs": 3,
+        "n_outputs": 1,
+        "created_ts": 1783590854,
+        "created_human": "2026-07-09",
+        "pricing_prompt": 0.000005,
+        "pricing_completion": 0.00003,
+        "score": 1783590854,
+        "url": "https://openrouter.ai/models/openai/gpt-5.6-sol-pro-20260709"
+      },
+      {
+        "rank": 6,
+        "id": "openai/gpt-5.6-sol",
+        "slug": "openai/gpt-5.6-sol-20260709",
+        "name": "OpenAI: GPT-5.6 Sol",
+        "description": "GPT-5.6 Sol is the flagship model in OpenAI's GPT-5.6 series. It is suited for complex reasoning, coding, and agentic workflows, and is particularly strong at command-line and multi-step coding tasks...",
+        "context_length": 1050000,
+        "modalities": [
+          "file",
+          "image",
+          "text",
+          "→text"
+        ],
+        "n_inputs": 3,
+        "n_outputs": 1,
+        "created_ts": 1783590850,
+        "created_human": "2026-07-09",
+        "pricing_prompt": 0.000005,
+        "pricing_completion": 0.00003,
+        "score": 1783590850,
+        "url": "https://openrouter.ai/models/openai/gpt-5.6-sol-20260709"
+      },
+      {
+        "rank": 7,
         "id": "x-ai/grok-4.5",
         "slug": "x-ai/grok-4.5-20260708",
         "name": "xAI: Grok 4.5",
@@ -589,7 +721,7 @@
         "url": "https://openrouter.ai/models/x-ai/grok-4.5-20260708"
       },
       {
-        "rank": 2,
+        "rank": 8,
         "id": "~x-ai/grok-latest",
         "slug": "~x-ai/grok-latest",
         "name": "xAI: Grok Latest",
@@ -611,7 +743,7 @@
         "url": "https://openrouter.ai/models/~x-ai/grok-latest"
       },
       {
-        "rank": 3,
+        "rank": 9,
         "id": "aion-labs/aion-3.0-mini",
         "slug": "aion-labs/aion-3.0-mini-20260707",
         "name": "AionLabs: Aion-3.0-Mini",
@@ -631,7 +763,7 @@
         "url": "https://openrouter.ai/models/aion-labs/aion-3.0-mini-20260707"
       },
       {
-        "rank": 4,
+        "rank": 10,
         "id": "aion-labs/aion-3.0",
         "slug": "aion-labs/aion-3.0-20260707",
         "name": "AionLabs: Aion-3.0",
@@ -651,7 +783,7 @@
         "url": "https://openrouter.ai/models/aion-labs/aion-3.0-20260707"
       },
       {
-        "rank": 5,
+        "rank": 11,
         "id": "tencent/hy3:free",
         "slug": "tencent/hy3-20260706",
         "name": "Tencent: Hy3 (free)",
@@ -671,7 +803,7 @@
         "url": "https://huggingface.co/tencent/Hy3"
       },
       {
-        "rank": 6,
+        "rank": 12,
         "id": "tencent/hy3",
         "slug": "tencent/hy3-20260706",
         "name": "Tencent: Hy3",
@@ -691,7 +823,7 @@
         "url": "https://huggingface.co/tencent/Hy3"
       },
       {
-        "rank": 7,
+        "rank": 13,
         "id": "poolside/laguna-xs-2.1:free",
         "slug": "poolside/laguna-xs-2.1-20260625",
         "name": "Poolside: Laguna XS 2.1 (free)",
@@ -711,7 +843,7 @@
         "url": "https://huggingface.co/poolside/Laguna-XS-2.1"
       },
       {
-        "rank": 8,
+        "rank": 14,
         "id": "poolside/laguna-xs-2.1",
         "slug": "poolside/laguna-xs-2.1-20260625",
         "name": "Poolside: Laguna XS 2.1",
@@ -731,7 +863,7 @@
         "url": "https://huggingface.co/poolside/Laguna-XS-2.1"
       },
       {
-        "rank": 9,
+        "rank": 15,
         "id": "anthropic/claude-sonnet-5",
         "slug": "anthropic/claude-sonnet-5-20260630",
         "name": "Anthropic: Claude Sonnet 5",
@@ -753,7 +885,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-sonnet-5-20260630"
       },
       {
-        "rank": 10,
+        "rank": 16,
         "id": "google/gemini-3.1-flash-lite-image",
         "slug": "google/gemini-3.1-flash-lite-image-20260630",
         "name": "Google: Nano Banana 2 Lite (Gemini 3.1 Flash Lite Image)",
@@ -775,7 +907,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.1-flash-lite-image-20260630"
       },
       {
-        "rank": 11,
+        "rank": 17,
         "id": "nex-agi/nex-n2-mini",
         "slug": "nex-agi/nex-n2-mini",
         "name": "Nex AGI: Nex-N2-Mini",
@@ -796,7 +928,7 @@
         "url": "https://huggingface.co/nex-agi/Nex-N2-Mini"
       },
       {
-        "rank": 12,
+        "rank": 18,
         "id": "sakana/fugu-ultra",
         "slug": "sakana/fugu-ultra-20260615",
         "name": "Sakana: Fugu Ultra",
@@ -817,7 +949,7 @@
         "url": "https://openrouter.ai/models/sakana/fugu-ultra-20260615"
       },
       {
-        "rank": 13,
+        "rank": 19,
         "id": "google/gemini-3.1-flash-image",
         "slug": "google/gemini-3.1-flash-image-20260528",
         "name": "Google: Nano Banana 2 (Gemini 3.1 Flash Image)",
@@ -839,7 +971,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.1-flash-image-20260528"
       },
       {
-        "rank": 14,
+        "rank": 20,
         "id": "google/gemini-3-pro-image",
         "slug": "google/gemini-3-pro-image-20260528",
         "name": "Google: Nano Banana Pro (Gemini 3 Pro Image)",
@@ -859,131 +991,6 @@
         "pricing_completion": 0.000012,
         "score": 1781754054,
         "url": "https://openrouter.ai/models/google/gemini-3-pro-image-20260528"
-      },
-      {
-        "rank": 15,
-        "id": "cohere/north-mini-code:free",
-        "slug": "cohere/north-mini-code-20260617",
-        "name": "Cohere: North Mini Code (free)",
-        "description": "North Mini Code is Cohere's first agentic coding model and the debut of its North family. A sparse mixture-of-experts model with 30B total parameters and 3B active, it is optimized...",
-        "context_length": 256000,
-        "modalities": [
-          "text",
-          "→text"
-        ],
-        "n_inputs": 1,
-        "n_outputs": 1,
-        "created_ts": 1781723748,
-        "created_human": "2026-06-17",
-        "pricing_prompt": 0,
-        "pricing_completion": 0,
-        "score": 1781723748,
-        "url": "https://huggingface.co/CohereLabs/North-Mini-Code-1.0"
-      },
-      {
-        "rank": 16,
-        "id": "z-ai/glm-5.2",
-        "slug": "z-ai/glm-5.2-20260616",
-        "name": "Z.ai: GLM 5.2",
-        "description": "GLM 5.2 is a large-scale reasoning model from Z.ai. It supports text input and output with a 1M-token context window, and is suited for long-horizon agent workflows, project-level software engineering,...",
-        "context_length": 1048576,
-        "modalities": [
-          "text",
-          "→text"
-        ],
-        "n_inputs": 1,
-        "n_outputs": 1,
-        "created_ts": 1781631930,
-        "created_human": "2026-06-16",
-        "pricing_prompt": 9.3e-7,
-        "pricing_completion": 0.000003,
-        "score": 1781631930,
-        "url": "https://huggingface.co/zai-org/GLM-5.2"
-      },
-      {
-        "rank": 17,
-        "id": "openrouter/fusion",
-        "slug": "openrouter/fusion",
-        "name": "OpenRouter: Fusion",
-        "description": "Fusion turns your prompt into a small multi-model deliberation. A panel of expert models (see below) analyzes your prompt in parallel with web search and web fetch enabled, then a...",
-        "context_length": 1000000,
-        "modalities": [
-          "text",
-          "→text"
-        ],
-        "n_inputs": 1,
-        "n_outputs": 1,
-        "created_ts": 1781371647,
-        "created_human": "2026-06-13",
-        "pricing_prompt": -1,
-        "pricing_completion": -1,
-        "score": 1781371647,
-        "url": "https://openrouter.ai/models/openrouter/fusion"
-      },
-      {
-        "rank": 18,
-        "id": "moonshotai/kimi-k2.7-code",
-        "slug": "moonshotai/kimi-k2.7-code-20260612",
-        "name": "MoonshotAI: Kimi K2.7 Code",
-        "description": "MoonshotAI: Kimi K2.7 Code is a coding-focused model in Moonshot AI's Kimi K2 family, built to complete end-to-end programming tasks reliably over long contexts. It uses a native multimodal mixture-of-experts...",
-        "context_length": 262144,
-        "modalities": [
-          "text",
-          "image",
-          "→text"
-        ],
-        "n_inputs": 2,
-        "n_outputs": 1,
-        "created_ts": 1781266361,
-        "created_human": "2026-06-12",
-        "pricing_prompt": 7.4e-7,
-        "pricing_completion": 0.0000035,
-        "score": 1781266361,
-        "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code"
-      },
-      {
-        "rank": 19,
-        "id": "~anthropic/claude-fable-latest",
-        "slug": "~anthropic/claude-fable-latest",
-        "name": "Anthropic: Claude Fable Latest",
-        "description": "This model always redirects to the latest model in the Claude Fable family.",
-        "context_length": 1000000,
-        "modalities": [
-          "text",
-          "image",
-          "file",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1781029944,
-        "created_human": "2026-06-09",
-        "pricing_prompt": 0.00001,
-        "pricing_completion": 0.00005,
-        "score": 1781029944,
-        "url": "https://openrouter.ai/models/~anthropic/claude-fable-latest"
-      },
-      {
-        "rank": 20,
-        "id": "anthropic/claude-fable-5",
-        "slug": "anthropic/claude-5-fable-20260609",
-        "name": "Anthropic: Claude Fable 5",
-        "description": "Claude Fable 5 is a Mythos-class model from Anthropic, built for autonomous knowledge work and coding. It supports text, image, and file inputs with text output, with reasoning support and...",
-        "context_length": 1000000,
-        "modalities": [
-          "text",
-          "image",
-          "file",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1781007515,
-        "created_human": "2026-06-09",
-        "pricing_prompt": 0.00001,
-        "pricing_completion": 0.00005,
-        "score": 1781007515,
-        "url": "https://openrouter.ai/models/anthropic/claude-5-fable-20260609"
       }
     ],
     "today": [
@@ -2133,7 +2140,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-09T12:02:57.517Z",
+      "as_of": "2026-07-09T19:00:21.460Z",
       "version": "v1",
       "start_date": "2026-07-08",
       "end_date": "2026-07-08"
@@ -2141,26 +2148,134 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-09T12:02:54.302Z",
+      "as_of": "2026-07-09T19:00:17.719Z",
       "version": "v1",
       "start_date": "2026-07-08",
       "end_date": "2026-07-08"
     },
     "week": {
-      "as_of": "2026-07-09T12:02:55.460Z",
+      "as_of": "2026-07-09T19:00:19.324Z",
       "version": "v1",
       "start_date": "2026-07-02",
       "end_date": "2026-07-08"
     },
     "month": {
-      "as_of": "2026-07-09T12:02:56.342Z",
+      "as_of": "2026-07-09T19:00:20.308Z",
       "version": "v1",
       "start_date": "2026-06-09",
       "end_date": "2026-07-08"
     }
   },
-  "models_total": 343,
+  "models_total": 346,
   "catalog": [
+    {
+      "id": "openai/gpt-5.6-luna-pro",
+      "canonical_slug": "openai/gpt-5.6-luna-pro-20260709",
+      "name": "OpenAI: GPT-5.6 Luna Pro",
+      "context_length": 1050000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000001,
+      "pricing_completion": 0.000006,
+      "created_human": "2026-07-09",
+      "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-pro-20260709"
+    },
+    {
+      "id": "openai/gpt-5.6-luna",
+      "canonical_slug": "openai/gpt-5.6-luna-20260709",
+      "name": "OpenAI: GPT-5.6 Luna",
+      "context_length": 1050000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000001,
+      "pricing_completion": 0.000006,
+      "created_human": "2026-07-09",
+      "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-20260709"
+    },
+    {
+      "id": "openai/gpt-5.6-terra-pro",
+      "canonical_slug": "openai/gpt-5.6-terra-pro-20260709",
+      "name": "OpenAI: GPT-5.6 Terra Pro",
+      "context_length": 1050000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.0000025,
+      "pricing_completion": 0.000015,
+      "created_human": "2026-07-09",
+      "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-pro-20260709"
+    },
+    {
+      "id": "openai/gpt-5.6-terra",
+      "canonical_slug": "openai/gpt-5.6-terra-20260709",
+      "name": "OpenAI: GPT-5.6 Terra",
+      "context_length": 1050000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.0000025,
+      "pricing_completion": 0.000015,
+      "created_human": "2026-07-09",
+      "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-20260709"
+    },
+    {
+      "id": "openai/gpt-5.6-sol-pro",
+      "canonical_slug": "openai/gpt-5.6-sol-pro-20260709",
+      "name": "OpenAI: GPT-5.6 Sol Pro",
+      "context_length": 1050000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000005,
+      "pricing_completion": 0.00003,
+      "created_human": "2026-07-09",
+      "url": "https://openrouter.ai/models/openai/gpt-5.6-sol-pro-20260709"
+    },
+    {
+      "id": "openai/gpt-5.6-sol",
+      "canonical_slug": "openai/gpt-5.6-sol-20260709",
+      "name": "OpenAI: GPT-5.6 Sol",
+      "context_length": 1050000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000005,
+      "pricing_completion": 0.00003,
+      "created_human": "2026-07-09",
+      "url": "https://openrouter.ai/models/openai/gpt-5.6-sol-20260709"
+    },
     {
       "id": "x-ai/grok-4.5",
       "canonical_slug": "x-ai/grok-4.5-20260708",
@@ -2426,8 +2541,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 9.3e-7,
-      "pricing_completion": 0.000003,
+      "pricing_prompt": 5.4e-7,
+      "pricing_completion": 0.00000176,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -2459,8 +2574,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 7.4e-7,
-      "pricing_completion": 0.0000035,
+      "pricing_prompt": 7.2e-7,
+      "pricing_completion": 0.00000349,
       "created_human": "2026-06-12",
       "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code"
     },
@@ -2869,38 +2984,6 @@
       "pricing_completion": null,
       "created_human": "2026-04-28",
       "url": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16"
-    },
-    {
-      "id": "poolside/laguna-xs.2:free",
-      "canonical_slug": "poolside/laguna-xs.2-20260421",
-      "name": "Poolside: Laguna XS.2 (free)",
-      "context_length": 262144,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
-      "created_human": "2026-04-28",
-      "url": "https://huggingface.co/poolside/Laguna-XS.2"
-    },
-    {
-      "id": "poolside/laguna-xs.2",
-      "canonical_slug": "poolside/laguna-xs.2-20260421",
-      "name": "Poolside: Laguna XS.2",
-      "context_length": 262144,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 1e-7,
-      "pricing_completion": 2e-7,
-      "created_human": "2026-04-28",
-      "url": "https://huggingface.co/poolside/Laguna-XS.2"
     },
     {
       "id": "poolside/laguna-m.1:free",
@@ -3647,8 +3730,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.8e-7,
-      "pricing_completion": 7.2e-7,
+      "pricing_prompt": 2.4e-7,
+      "pricing_completion": 9.6e-7,
       "created_human": "2026-03-18",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7"
     },
@@ -4126,8 +4209,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.2e-7,
-      "pricing_completion": 4.8e-7,
+      "pricing_prompt": 1.5e-7,
+      "pricing_completion": 9e-7,
       "created_human": "2026-02-12",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.5"
     },
@@ -5358,26 +5441,6 @@
       "url": "https://openrouter.ai/models/relace/relace-apply-3"
     },
     {
-      "id": "google/gemini-2.5-flash-lite-preview-09-2025",
-      "canonical_slug": "google/gemini-2.5-flash-lite-preview-09-2025",
-      "name": "Google: Gemini 2.5 Flash Lite Preview 09-2025",
-      "context_length": 1048576,
-      "modalities": [
-        "text",
-        "image",
-        "file",
-        "audio",
-        "video",
-        "→text"
-      ],
-      "n_inputs": 5,
-      "n_outputs": 1,
-      "pricing_prompt": 1e-7,
-      "pricing_completion": 4e-7,
-      "created_human": "2025-09-25",
-      "url": "https://openrouter.ai/models/google/gemini-2.5-flash-lite-preview-09-2025"
-    },
-    {
       "id": "qwen/qwen3-vl-235b-a22b-thinking",
       "canonical_slug": "qwen/qwen3-vl-235b-a22b-thinking",
       "name": "Qwen: Qwen3 VL 235B A22B Thinking",
@@ -5818,8 +5881,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 3e-8,
-      "pricing_completion": 1.5e-7,
+      "pricing_prompt": 3.6e-8,
+      "pricing_completion": 1.8e-7,
       "created_human": "2025-08-05",
       "url": "https://huggingface.co/openai/gpt-oss-120b"
     },
@@ -7333,22 +7396,6 @@
       "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
     },
     {
-      "id": "inflection/inflection-3-pi",
-      "canonical_slug": "inflection/inflection-3-pi",
-      "name": "Inflection: Inflection 3 Pi",
-      "context_length": 8000,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 0.0000025,
-      "pricing_completion": 0.00001,
-      "created_human": "2024-10-11",
-      "url": "https://openrouter.ai/models/inflection/inflection-3-pi"
-    },
-    {
       "id": "inflection/inflection-3-productivity",
       "canonical_slug": "inflection/inflection-3-productivity",
       "name": "Inflection: Inflection 3 Productivity",
@@ -7365,6 +7412,22 @@
       "url": "https://openrouter.ai/models/inflection/inflection-3-productivity"
     },
     {
+      "id": "inflection/inflection-3-pi",
+      "canonical_slug": "inflection/inflection-3-pi",
+      "name": "Inflection: Inflection 3 Pi",
+      "context_length": 8000,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 0.0000025,
+      "pricing_completion": 0.00001,
+      "created_human": "2024-10-11",
+      "url": "https://openrouter.ai/models/inflection/inflection-3-pi"
+    },
+    {
       "id": "thedrummer/rocinante-12b",
       "canonical_slug": "thedrummer/rocinante-12b",
       "name": "TheDrummer: Rocinante 12B",
@@ -7379,38 +7442,6 @@
       "pricing_completion": 5e-7,
       "created_human": "2024-09-30",
       "url": "https://huggingface.co/TheDrummer/Rocinante-12B-v1.1"
-    },
-    {
-      "id": "meta-llama/llama-3.2-3b-instruct:free",
-      "canonical_slug": "meta-llama/llama-3.2-3b-instruct",
-      "name": "Meta: Llama 3.2 3B Instruct (free)",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
-      "created_human": "2024-09-25",
-      "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct"
-    },
-    {
-      "id": "meta-llama/llama-3.2-3b-instruct",
-      "canonical_slug": "meta-llama/llama-3.2-3b-instruct",
-      "name": "Meta: Llama 3.2 3B Instruct",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 5e-8,
-      "pricing_completion": 3.3e-7,
-      "created_human": "2024-09-25",
-      "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct"
     },
     {
       "id": "meta-llama/llama-3.2-1b-instruct",
@@ -7444,6 +7475,38 @@
       "pricing_completion": 3.45e-7,
       "created_human": "2024-09-25",
       "url": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct"
+    },
+    {
+      "id": "meta-llama/llama-3.2-3b-instruct:free",
+      "canonical_slug": "meta-llama/llama-3.2-3b-instruct",
+      "name": "Meta: Llama 3.2 3B Instruct (free)",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
+      "created_human": "2024-09-25",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct"
+    },
+    {
+      "id": "meta-llama/llama-3.2-3b-instruct",
+      "canonical_slug": "meta-llama/llama-3.2-3b-instruct",
+      "name": "Meta: Llama 3.2 3B Instruct",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 5e-8,
+      "pricing_completion": 3.3e-7,
+      "created_human": "2024-09-25",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct"
     },
     {
       "id": "qwen/qwen-2.5-72b-instruct",
