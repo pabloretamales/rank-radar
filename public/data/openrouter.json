@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-10T12:00:20.347Z",
+  "fetched_at": "2026-07-10T12:03:36.025Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-10T12:00:16.543Z",
+    "as_of": "2026-07-10T12:03:28.393Z",
     "version": "v1",
     "start_date": "2026-06-10",
     "end_date": "2026-07-09"
   },
   "rankings_meta": {
-    "as_of": "2026-07-10T12:00:17.993Z",
+    "as_of": "2026-07-10T12:03:29.417Z",
     "version": "v1",
     "start_date": "2026-07-09",
     "end_date": "2026-07-09"
@@ -149,7 +149,7 @@
       {
         "rank": 15,
         "app_id": 3296290,
-        "app_name": "Mira",
+        "app_name": "Mira is the leading AI agent inside Telegram",
         "total_tokens": "15755141917",
         "total_tokens_human": "15.76B",
         "total_requests": 950518,
@@ -331,7 +331,7 @@
       {
         "rank": 15,
         "app_id": 3296290,
-        "app_name": "Mira",
+        "app_name": "Mira is the leading AI agent inside Telegram",
         "total_tokens": "102238274497",
         "total_tokens_human": "102.24B",
         "total_requests": 6337215,
@@ -450,7 +450,7 @@
       {
         "rank": 8,
         "app_id": 3356965,
-        "app_name": "Pioneer (production)",
+        "app_name": "Pioneer (development)",
         "total_tokens": "1097355758989",
         "total_tokens_human": "1.10T",
         "total_requests": 18389742,
@@ -495,7 +495,7 @@
       {
         "rank": 13,
         "app_id": 3296290,
-        "app_name": "Mira",
+        "app_name": "Mira is the leading AI agent inside Telegram",
         "total_tokens": "437344814175",
         "total_tokens_human": "437.34B",
         "total_requests": 25570880,
@@ -2089,7 +2089,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-10T12:00:17.993Z",
+      "as_of": "2026-07-10T12:03:29.417Z",
       "version": "v1",
       "start_date": "2026-07-09",
       "end_date": "2026-07-09"
@@ -2097,19 +2097,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-10T12:00:13.937Z",
+      "as_of": "2026-07-10T12:03:25.846Z",
       "version": "v1",
       "start_date": "2026-07-09",
       "end_date": "2026-07-09"
     },
     "week": {
-      "as_of": "2026-07-10T12:00:15.077Z",
+      "as_of": "2026-07-10T12:03:27.117Z",
       "version": "v1",
       "start_date": "2026-07-03",
       "end_date": "2026-07-09"
     },
     "month": {
-      "as_of": "2026-07-10T12:00:16.543Z",
+      "as_of": "2026-07-10T12:03:28.393Z",
       "version": "v1",
       "start_date": "2026-06-10",
       "end_date": "2026-07-09"
