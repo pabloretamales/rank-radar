@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-10T12:03:36.025Z",
+  "fetched_at": "2026-07-10T19:03:03.060Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-10T12:03:28.393Z",
+    "as_of": "2026-07-10T19:02:58.105Z",
     "version": "v1",
     "start_date": "2026-06-10",
     "end_date": "2026-07-09"
   },
   "rankings_meta": {
-    "as_of": "2026-07-10T12:03:29.417Z",
+    "as_of": "2026-07-10T19:02:59.550Z",
     "version": "v1",
     "start_date": "2026-07-09",
     "end_date": "2026-07-09"
@@ -450,7 +450,7 @@
       {
         "rank": 8,
         "app_id": 3356965,
-        "app_name": "Pioneer (development)",
+        "app_name": "Pioneer (production)",
         "total_tokens": "1097355758989",
         "total_tokens_human": "1.10T",
         "total_requests": 18389742,
@@ -2089,7 +2089,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-10T12:03:29.417Z",
+      "as_of": "2026-07-10T19:02:59.550Z",
       "version": "v1",
       "start_date": "2026-07-09",
       "end_date": "2026-07-09"
@@ -2097,25 +2097,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-10T12:03:25.846Z",
+      "as_of": "2026-07-10T19:02:55.078Z",
       "version": "v1",
       "start_date": "2026-07-09",
       "end_date": "2026-07-09"
     },
     "week": {
-      "as_of": "2026-07-10T12:03:27.117Z",
+      "as_of": "2026-07-10T19:02:56.301Z",
       "version": "v1",
       "start_date": "2026-07-03",
       "end_date": "2026-07-09"
     },
     "month": {
-      "as_of": "2026-07-10T12:03:28.393Z",
+      "as_of": "2026-07-10T19:02:58.105Z",
       "version": "v1",
       "start_date": "2026-06-10",
       "end_date": "2026-07-09"
     }
   },
-  "models_total": 347,
+  "models_total": 346,
   "catalog": [
     {
       "id": "openai/gpt-5.6-luna-pro",
@@ -2490,8 +2490,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 7.7e-7,
-      "pricing_completion": 0.00000242,
+      "pricing_prompt": 4.2e-7,
+      "pricing_completion": 0.00000132,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -3246,8 +3246,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 9e-8,
-      "pricing_completion": 1.8e-7,
+      "pricing_prompt": 8.4e-8,
+      "pricing_completion": 1.68e-7,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
@@ -4773,22 +4773,6 @@
       "pricing_completion": 0.0000015,
       "created_human": "2025-12-01",
       "url": "https://openrouter.ai/models/mistralai/mistral-large-2512"
-    },
-    {
-      "id": "arcee-ai/trinity-mini",
-      "canonical_slug": "arcee-ai/trinity-mini-20251201",
-      "name": "Arcee AI: Trinity Mini",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 4.5e-8,
-      "pricing_completion": 1.5e-7,
-      "created_human": "2025-12-01",
-      "url": "https://huggingface.co/arcee-ai/Trinity-Mini"
     },
     {
       "id": "deepseek/deepseek-v3.2",
