@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-12T16:00:16.524Z",
+  "fetched_at": "2026-07-12T23:00:16.250Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-12T16:00:11.954Z",
+    "as_of": "2026-07-12T23:00:11.863Z",
     "version": "v1",
     "start_date": "2026-06-12",
     "end_date": "2026-07-11"
   },
   "rankings_meta": {
-    "as_of": "2026-07-12T16:00:12.933Z",
+    "as_of": "2026-07-12T23:00:12.688Z",
     "version": "v1",
     "start_date": "2026-07-11",
     "end_date": "2026-07-11"
@@ -450,7 +450,7 @@
       {
         "rank": 8,
         "app_id": 3356965,
-        "app_name": "Pioneer (production)",
+        "app_name": "Pioneer (development)",
         "total_tokens": "1046005374506",
         "total_tokens_human": "1.05T",
         "total_requests": 17770989,
@@ -2106,7 +2106,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-12T16:00:12.933Z",
+      "as_of": "2026-07-12T23:00:12.688Z",
       "version": "v1",
       "start_date": "2026-07-11",
       "end_date": "2026-07-11"
@@ -2114,19 +2114,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-12T16:00:09.459Z",
+      "as_of": "2026-07-12T23:00:09.114Z",
       "version": "v1",
       "start_date": "2026-07-11",
       "end_date": "2026-07-11"
     },
     "week": {
-      "as_of": "2026-07-12T16:00:10.706Z",
+      "as_of": "2026-07-12T23:00:10.054Z",
       "version": "v1",
       "start_date": "2026-07-05",
       "end_date": "2026-07-11"
     },
     "month": {
-      "as_of": "2026-07-12T16:00:11.954Z",
+      "as_of": "2026-07-12T23:00:11.863Z",
       "version": "v1",
       "start_date": "2026-06-12",
       "end_date": "2026-07-11"
