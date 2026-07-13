@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-13T16:00:26.209Z",
+  "fetched_at": "2026-07-13T23:00:16.956Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-13T16:00:21.371Z",
+    "as_of": "2026-07-13T23:00:11.694Z",
     "version": "v1",
     "start_date": "2026-06-13",
     "end_date": "2026-07-12"
   },
   "rankings_meta": {
-    "as_of": "2026-07-13T16:00:23.013Z",
+    "as_of": "2026-07-13T23:00:13.033Z",
     "version": "v1",
     "start_date": "2026-07-12",
     "end_date": "2026-07-12"
@@ -140,7 +140,7 @@
       {
         "rank": 14,
         "app_id": 3296290,
-        "app_name": "Mira is the leading AI agent inside Telegram",
+        "app_name": "Mira",
         "total_tokens": "14952953134",
         "total_tokens_human": "14.95B",
         "total_requests": 921934,
@@ -331,7 +331,7 @@
       {
         "rank": 15,
         "app_id": 3296290,
-        "app_name": "Mira is the leading AI agent inside Telegram",
+        "app_name": "Mira",
         "total_tokens": "104138817798",
         "total_tokens_human": "104.14B",
         "total_requests": 6533872,
@@ -495,7 +495,7 @@
       {
         "rank": 13,
         "app_id": 3296290,
-        "app_name": "Mira is the leading AI agent inside Telegram",
+        "app_name": "Mira",
         "total_tokens": "441210212617",
         "total_tokens_human": "441.21B",
         "total_requests": 25767662,
@@ -784,26 +784,6 @@
       },
       {
         "rank": 11,
-        "id": "tencent/hy3:free",
-        "slug": "tencent/hy3-20260706",
-        "name": "Tencent: Hy3 (free)",
-        "description": "Hy3 is a 295B-parameter Mixture-of-Experts model from Tencent (21B active, 192 experts with top-8 routing) built for reasoning, agentic workflows, and real-world production use. It supports a configurable reasoning effort:...",
-        "context_length": 262144,
-        "modalities": [
-          "text",
-          "→text"
-        ],
-        "n_inputs": 1,
-        "n_outputs": 1,
-        "created_ts": 1783344048,
-        "created_human": "2026-07-06",
-        "pricing_prompt": 0,
-        "pricing_completion": 0,
-        "score": 1783344048,
-        "url": "https://huggingface.co/tencent/Hy3"
-      },
-      {
-        "rank": 12,
         "id": "tencent/hy3",
         "slug": "tencent/hy3-20260706",
         "name": "Tencent: Hy3",
@@ -823,11 +803,11 @@
         "url": "https://huggingface.co/tencent/Hy3"
       },
       {
-        "rank": 13,
-        "id": "poolside/laguna-xs-2.1:free",
-        "slug": "poolside/laguna-xs-2.1-20260625",
-        "name": "Poolside: Laguna XS 2.1 (free)",
-        "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
+        "rank": 12,
+        "id": "tencent/hy3:free",
+        "slug": "tencent/hy3-20260706",
+        "name": "Tencent: Hy3 (free)",
+        "description": "Hy3 is a 295B-parameter Mixture-of-Experts model from Tencent (21B active, 192 experts with top-8 routing) built for reasoning, agentic workflows, and real-world production use. It supports a configurable reasoning effort:...",
         "context_length": 262144,
         "modalities": [
           "text",
@@ -835,15 +815,15 @@
         ],
         "n_inputs": 1,
         "n_outputs": 1,
-        "created_ts": 1783002429,
-        "created_human": "2026-07-02",
+        "created_ts": 1783344048,
+        "created_human": "2026-07-06",
         "pricing_prompt": 0,
         "pricing_completion": 0,
-        "score": 1783002429,
-        "url": "https://huggingface.co/poolside/Laguna-XS-2.1"
+        "score": 1783344048,
+        "url": "https://huggingface.co/tencent/Hy3"
       },
       {
-        "rank": 14,
+        "rank": 13,
         "id": "poolside/laguna-xs-2.1",
         "slug": "poolside/laguna-xs-2.1-20260625",
         "name": "Poolside: Laguna XS 2.1",
@@ -859,6 +839,26 @@
         "created_human": "2026-07-02",
         "pricing_prompt": 6e-8,
         "pricing_completion": 1.2e-7,
+        "score": 1783002429,
+        "url": "https://huggingface.co/poolside/Laguna-XS-2.1"
+      },
+      {
+        "rank": 14,
+        "id": "poolside/laguna-xs-2.1:free",
+        "slug": "poolside/laguna-xs-2.1-20260625",
+        "name": "Poolside: Laguna XS 2.1 (free)",
+        "description": "Laguna XS 2.1 is the latest coding agent model in the 33B-A3B category from [Poolside](https://poolside.ai/) and a step forward from their Laguna XS.2 model (released in April 2026). It combines...",
+        "context_length": 262144,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1783002429,
+        "created_human": "2026-07-02",
+        "pricing_prompt": 0,
+        "pricing_completion": 0,
         "score": 1783002429,
         "url": "https://huggingface.co/poolside/Laguna-XS-2.1"
       },
@@ -2089,8 +2089,8 @@
       },
       {
         "rank": 12,
-        "id": "openai/gpt-oss-120b:free",
-        "name": "OpenAI: gpt-oss-120b (free)",
+        "id": "openai/gpt-oss-120b",
+        "name": "OpenAI: gpt-oss-120b",
         "slug": "openai/gpt-oss-120b",
         "total_tokens": 14140315354,
         "total_tokens_human": "14.14B",
@@ -2123,7 +2123,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-13T16:00:23.013Z",
+      "as_of": "2026-07-13T23:00:13.033Z",
       "version": "v1",
       "start_date": "2026-07-12",
       "end_date": "2026-07-12"
@@ -2131,25 +2131,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-13T16:00:11.722Z",
+      "as_of": "2026-07-13T23:00:09.502Z",
       "version": "v1",
       "start_date": "2026-07-12",
       "end_date": "2026-07-12"
     },
     "week": {
-      "as_of": "2026-07-13T16:00:15.682Z",
+      "as_of": "2026-07-13T23:00:10.589Z",
       "version": "v1",
       "start_date": "2026-07-06",
       "end_date": "2026-07-12"
     },
     "month": {
-      "as_of": "2026-07-13T16:00:21.371Z",
+      "as_of": "2026-07-13T23:00:11.694Z",
       "version": "v1",
       "start_date": "2026-06-13",
       "end_date": "2026-07-12"
     }
   },
-  "models_total": 343,
+  "models_total": 342,
   "catalog": [
     {
       "id": "openai/gpt-5.6-luna-pro",
@@ -2328,22 +2328,6 @@
       "url": "https://openrouter.ai/models/aion-labs/aion-3.0-20260707"
     },
     {
-      "id": "tencent/hy3:free",
-      "canonical_slug": "tencent/hy3-20260706",
-      "name": "Tencent: Hy3 (free)",
-      "context_length": 262144,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
-      "created_human": "2026-07-06",
-      "url": "https://huggingface.co/tencent/Hy3"
-    },
-    {
       "id": "tencent/hy3",
       "canonical_slug": "tencent/hy3-20260706",
       "name": "Tencent: Hy3",
@@ -2360,9 +2344,9 @@
       "url": "https://huggingface.co/tencent/Hy3"
     },
     {
-      "id": "poolside/laguna-xs-2.1:free",
-      "canonical_slug": "poolside/laguna-xs-2.1-20260625",
-      "name": "Poolside: Laguna XS 2.1 (free)",
+      "id": "tencent/hy3:free",
+      "canonical_slug": "tencent/hy3-20260706",
+      "name": "Tencent: Hy3 (free)",
       "context_length": 262144,
       "modalities": [
         "text",
@@ -2372,8 +2356,8 @@
       "n_outputs": 1,
       "pricing_prompt": null,
       "pricing_completion": null,
-      "created_human": "2026-07-02",
-      "url": "https://huggingface.co/poolside/Laguna-XS-2.1"
+      "created_human": "2026-07-06",
+      "url": "https://huggingface.co/tencent/Hy3"
     },
     {
       "id": "poolside/laguna-xs-2.1",
@@ -2388,6 +2372,22 @@
       "n_outputs": 1,
       "pricing_prompt": 6e-8,
       "pricing_completion": 1.2e-7,
+      "created_human": "2026-07-02",
+      "url": "https://huggingface.co/poolside/Laguna-XS-2.1"
+    },
+    {
+      "id": "poolside/laguna-xs-2.1:free",
+      "canonical_slug": "poolside/laguna-xs-2.1-20260625",
+      "name": "Poolside: Laguna XS 2.1 (free)",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
       "created_human": "2026-07-02",
       "url": "https://huggingface.co/poolside/Laguna-XS-2.1"
     },
@@ -2633,22 +2633,6 @@
       "url": "https://huggingface.co/nvidia/Nemotron-3.5-Content-Safety"
     },
     {
-      "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
-      "canonical_slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
-      "name": "NVIDIA: Nemotron 3 Ultra (free)",
-      "context_length": 1000000,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
-      "created_human": "2026-06-04",
-      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
-    },
-    {
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
       "canonical_slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
       "name": "NVIDIA: Nemotron 3 Ultra",
@@ -2661,6 +2645,22 @@
       "n_outputs": 1,
       "pricing_prompt": 5e-7,
       "pricing_completion": 0.0000022,
+      "created_human": "2026-06-04",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
+    },
+    {
+      "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+      "canonical_slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
+      "name": "NVIDIA: Nemotron 3 Ultra (free)",
+      "context_length": 1000000,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
       "created_human": "2026-06-04",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
     },
@@ -2969,22 +2969,6 @@
       "url": "https://huggingface.co/nvidia/Nemotron-3-Nano-Omni-30B-A3B-Reasoning-BF16"
     },
     {
-      "id": "poolside/laguna-m.1:free",
-      "canonical_slug": "poolside/laguna-m.1-20260312",
-      "name": "Poolside: Laguna M.1 (free)",
-      "context_length": 262144,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
-      "created_human": "2026-04-28",
-      "url": "https://huggingface.co/poolside/Laguna-M.1"
-    },
-    {
       "id": "poolside/laguna-m.1",
       "canonical_slug": "poolside/laguna-m.1-20260312",
       "name": "Poolside: Laguna M.1",
@@ -2997,6 +2981,22 @@
       "n_outputs": 1,
       "pricing_prompt": 2e-7,
       "pricing_completion": 4e-7,
+      "created_human": "2026-04-28",
+      "url": "https://huggingface.co/poolside/Laguna-M.1"
+    },
+    {
+      "id": "poolside/laguna-m.1:free",
+      "canonical_slug": "poolside/laguna-m.1-20260312",
+      "name": "Poolside: Laguna M.1 (free)",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
       "created_human": "2026-04-28",
       "url": "https://huggingface.co/poolside/Laguna-M.1"
     },
@@ -3473,24 +3473,6 @@
       "url": "https://huggingface.co/zai-org/GLM-5.1"
     },
     {
-      "id": "google/gemma-4-26b-a4b-it:free",
-      "canonical_slug": "google/gemma-4-26b-a4b-it-20260403",
-      "name": "Google: Gemma 4 26B A4B  (free)",
-      "context_length": 262144,
-      "modalities": [
-        "image",
-        "text",
-        "video",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
-      "created_human": "2026-04-03",
-      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it"
-    },
-    {
       "id": "google/gemma-4-26b-a4b-it",
       "canonical_slug": "google/gemma-4-26b-a4b-it-20260403",
       "name": "Google: Gemma 4 26B A4B ",
@@ -3509,9 +3491,9 @@
       "url": "https://huggingface.co/google/gemma-4-26B-A4B-it"
     },
     {
-      "id": "google/gemma-4-31b-it:free",
-      "canonical_slug": "google/gemma-4-31b-it-20260402",
-      "name": "Google: Gemma 4 31B (free)",
+      "id": "google/gemma-4-26b-a4b-it:free",
+      "canonical_slug": "google/gemma-4-26b-a4b-it-20260403",
+      "name": "Google: Gemma 4 26B A4B  (free)",
       "context_length": 262144,
       "modalities": [
         "image",
@@ -3523,8 +3505,8 @@
       "n_outputs": 1,
       "pricing_prompt": null,
       "pricing_completion": null,
-      "created_human": "2026-04-02",
-      "url": "https://huggingface.co/google/gemma-4-31B-it"
+      "created_human": "2026-04-03",
+      "url": "https://huggingface.co/google/gemma-4-26B-A4B-it"
     },
     {
       "id": "google/gemma-4-31b-it",
@@ -3541,6 +3523,24 @@
       "n_outputs": 1,
       "pricing_prompt": 1.2e-7,
       "pricing_completion": 3.5e-7,
+      "created_human": "2026-04-02",
+      "url": "https://huggingface.co/google/gemma-4-31B-it"
+    },
+    {
+      "id": "google/gemma-4-31b-it:free",
+      "canonical_slug": "google/gemma-4-31b-it-20260402",
+      "name": "Google: Gemma 4 31B (free)",
+      "context_length": 262144,
+      "modalities": [
+        "image",
+        "text",
+        "video",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
       "created_human": "2026-04-02",
       "url": "https://huggingface.co/google/gemma-4-31B-it"
     },
@@ -3788,22 +3788,6 @@
       "url": "https://openrouter.ai/models/z-ai/glm-5-turbo-20260315"
     },
     {
-      "id": "nvidia/nemotron-3-super-120b-a12b:free",
-      "canonical_slug": "nvidia/nemotron-3-super-120b-a12b-20230311",
-      "name": "NVIDIA: Nemotron 3 Super (free)",
-      "context_length": 1000000,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
-      "created_human": "2026-03-11",
-      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8"
-    },
-    {
       "id": "nvidia/nemotron-3-super-120b-a12b",
       "canonical_slug": "nvidia/nemotron-3-super-120b-a12b-20230311",
       "name": "NVIDIA: Nemotron 3 Super",
@@ -3816,6 +3800,22 @@
       "n_outputs": 1,
       "pricing_prompt": 8e-8,
       "pricing_completion": 4.5e-7,
+      "created_human": "2026-03-11",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8"
+    },
+    {
+      "id": "nvidia/nemotron-3-super-120b-a12b:free",
+      "canonical_slug": "nvidia/nemotron-3-super-120b-a12b-20230311",
+      "name": "NVIDIA: Nemotron 3 Super (free)",
+      "context_length": 1000000,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
       "created_human": "2026-03-11",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Super-120B-A12B-FP8"
     },
@@ -4519,22 +4519,6 @@
       "url": "https://openrouter.ai/models/google/gemini-3-flash-preview-20251217"
     },
     {
-      "id": "nvidia/nemotron-3-nano-30b-a3b:free",
-      "canonical_slug": "nvidia/nemotron-3-nano-30b-a3b",
-      "name": "NVIDIA: Nemotron 3 Nano 30B A3B (free)",
-      "context_length": 256000,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
-      "created_human": "2025-12-14",
-      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16"
-    },
-    {
       "id": "nvidia/nemotron-3-nano-30b-a3b",
       "canonical_slug": "nvidia/nemotron-3-nano-30b-a3b",
       "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
@@ -4547,6 +4531,22 @@
       "n_outputs": 1,
       "pricing_prompt": 5e-8,
       "pricing_completion": 2e-7,
+      "created_human": "2025-12-14",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16"
+    },
+    {
+      "id": "nvidia/nemotron-3-nano-30b-a3b:free",
+      "canonical_slug": "nvidia/nemotron-3-nano-30b-a3b",
+      "name": "NVIDIA: Nemotron 3 Nano 30B A3B (free)",
+      "context_length": 256000,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
       "created_human": "2025-12-14",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16"
     },
@@ -5507,22 +5507,6 @@
       "url": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking"
     },
     {
-      "id": "qwen/qwen3-next-80b-a3b-instruct:free",
-      "canonical_slug": "qwen/qwen3-next-80b-a3b-instruct-2509",
-      "name": "Qwen: Qwen3 Next 80B A3B Instruct (free)",
-      "context_length": 262144,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
-      "created_human": "2025-09-11",
-      "url": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct"
-    },
-    {
       "id": "qwen/qwen3-next-80b-a3b-instruct",
       "canonical_slug": "qwen/qwen3-next-80b-a3b-instruct-2509",
       "name": "Qwen: Qwen3 Next 80B A3B Instruct",
@@ -5539,9 +5523,25 @@
       "url": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct"
     },
     {
-      "id": "qwen/qwen-plus-2025-07-28:thinking",
+      "id": "qwen/qwen3-next-80b-a3b-instruct:free",
+      "canonical_slug": "qwen/qwen3-next-80b-a3b-instruct-2509",
+      "name": "Qwen: Qwen3 Next 80B A3B Instruct (free)",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
+      "created_human": "2025-09-11",
+      "url": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct"
+    },
+    {
+      "id": "qwen/qwen-plus-2025-07-28",
       "canonical_slug": "qwen/qwen-plus-2025-07-28",
-      "name": "Qwen: Qwen Plus 0728 (thinking)",
+      "name": "Qwen: Qwen Plus 0728",
       "context_length": 1000000,
       "modalities": [
         "text",
@@ -5555,9 +5555,9 @@
       "url": "https://openrouter.ai/models/qwen/qwen-plus-2025-07-28"
     },
     {
-      "id": "qwen/qwen-plus-2025-07-28",
+      "id": "qwen/qwen-plus-2025-07-28:thinking",
       "canonical_slug": "qwen/qwen-plus-2025-07-28",
-      "name": "Qwen: Qwen Plus 0728",
+      "name": "Qwen: Qwen Plus 0728 (thinking)",
       "context_length": 1000000,
       "modalities": [
         "text",
@@ -5790,22 +5790,6 @@
       "url": "https://openrouter.ai/models/openai/gpt-5-nano-2025-08-07"
     },
     {
-      "id": "openai/gpt-oss-120b:free",
-      "canonical_slug": "openai/gpt-oss-120b",
-      "name": "OpenAI: gpt-oss-120b (free)",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
-      "created_human": "2025-08-05",
-      "url": "https://huggingface.co/openai/gpt-oss-120b"
-    },
-    {
       "id": "openai/gpt-oss-120b",
       "canonical_slug": "openai/gpt-oss-120b",
       "name": "OpenAI: gpt-oss-120b",
@@ -5816,26 +5800,10 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 3.6e-8,
-      "pricing_completion": 1.8e-7,
+      "pricing_prompt": 3e-8,
+      "pricing_completion": 1.5e-7,
       "created_human": "2025-08-05",
       "url": "https://huggingface.co/openai/gpt-oss-120b"
-    },
-    {
-      "id": "openai/gpt-oss-20b:free",
-      "canonical_slug": "openai/gpt-oss-20b",
-      "name": "OpenAI: gpt-oss-20b (free)",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
-      "created_human": "2025-08-05",
-      "url": "https://huggingface.co/openai/gpt-oss-20b"
     },
     {
       "id": "openai/gpt-oss-20b",
@@ -5850,6 +5818,22 @@
       "n_outputs": 1,
       "pricing_prompt": 2.9e-8,
       "pricing_completion": 1.4e-7,
+      "created_human": "2025-08-05",
+      "url": "https://huggingface.co/openai/gpt-oss-20b"
+    },
+    {
+      "id": "openai/gpt-oss-20b:free",
+      "canonical_slug": "openai/gpt-oss-20b",
+      "name": "OpenAI: gpt-oss-20b (free)",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
       "created_human": "2025-08-05",
       "url": "https://huggingface.co/openai/gpt-oss-20b"
     },
@@ -5969,22 +5953,6 @@
       "url": "https://huggingface.co/Qwen/Qwen3-235B-A22B-Thinking-2507"
     },
     {
-      "id": "qwen/qwen3-coder:free",
-      "canonical_slug": "qwen/qwen3-coder-480b-a35b-07-25",
-      "name": "Qwen: Qwen3 Coder 480B A35B (free)",
-      "context_length": 1048576,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
-      "created_human": "2025-07-23",
-      "url": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct"
-    },
-    {
       "id": "qwen/qwen3-coder",
       "canonical_slug": "qwen/qwen3-coder-480b-a35b-07-25",
       "name": "Qwen: Qwen3 Coder 480B A35B",
@@ -5997,6 +5965,22 @@
       "n_outputs": 1,
       "pricing_prompt": 2.2e-7,
       "pricing_completion": 0.0000018,
+      "created_human": "2025-07-23",
+      "url": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct"
+    },
+    {
+      "id": "qwen/qwen3-coder:free",
+      "canonical_slug": "qwen/qwen3-coder-480b-a35b-07-25",
+      "name": "Qwen: Qwen3 Coder 480B A35B (free)",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
       "created_human": "2025-07-23",
       "url": "https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct"
     },
@@ -6070,22 +6054,6 @@
       "url": "https://huggingface.co/moonshotai/Kimi-K2-Instruct"
     },
     {
-      "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
-      "canonical_slug": "venice/uncensored",
-      "name": "Venice: Uncensored (free)",
-      "context_length": 32768,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
-      "created_human": "2025-07-09",
-      "url": "https://huggingface.co/cognitivecomputations/Dolphin-Mistral-24B-Venice-Edition"
-    },
-    {
       "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition",
       "canonical_slug": "venice/uncensored",
       "name": "Venice: Uncensored",
@@ -6098,6 +6066,22 @@
       "n_outputs": 1,
       "pricing_prompt": 2e-7,
       "pricing_completion": 9e-7,
+      "created_human": "2025-07-09",
+      "url": "https://huggingface.co/cognitivecomputations/Dolphin-Mistral-24B-Venice-Edition"
+    },
+    {
+      "id": "cognitivecomputations/dolphin-mistral-24b-venice-edition:free",
+      "canonical_slug": "venice/uncensored",
+      "name": "Venice: Uncensored (free)",
+      "context_length": 32768,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
       "created_human": "2025-07-09",
       "url": "https://huggingface.co/cognitivecomputations/Dolphin-Mistral-24B-Venice-Edition"
     },
@@ -7166,22 +7150,6 @@
       "url": "https://openrouter.ai/models/cohere/command-r7b-12-2024"
     },
     {
-      "id": "meta-llama/llama-3.3-70b-instruct:free",
-      "canonical_slug": "meta-llama/llama-3.3-70b-instruct",
-      "name": "Meta: Llama 3.3 70B Instruct (free)",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
-      "created_human": "2024-12-06",
-      "url": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct"
-    },
-    {
       "id": "meta-llama/llama-3.3-70b-instruct",
       "canonical_slug": "meta-llama/llama-3.3-70b-instruct",
       "name": "Meta: Llama 3.3 70B Instruct",
@@ -7194,6 +7162,22 @@
       "n_outputs": 1,
       "pricing_prompt": 1e-7,
       "pricing_completion": 3.2e-7,
+      "created_human": "2024-12-06",
+      "url": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct"
+    },
+    {
+      "id": "meta-llama/llama-3.3-70b-instruct:free",
+      "canonical_slug": "meta-llama/llama-3.3-70b-instruct",
+      "name": "Meta: Llama 3.3 70B Instruct (free)",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
       "created_human": "2024-12-06",
       "url": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct"
     },
@@ -7347,22 +7331,6 @@
       "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
     },
     {
-      "id": "inflection/inflection-3-productivity",
-      "canonical_slug": "inflection/inflection-3-productivity",
-      "name": "Inflection: Inflection 3 Productivity",
-      "context_length": 8000,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 0.0000025,
-      "pricing_completion": 0.00001,
-      "created_human": "2024-10-11",
-      "url": "https://openrouter.ai/models/inflection/inflection-3-productivity"
-    },
-    {
       "id": "inflection/inflection-3-pi",
       "canonical_slug": "inflection/inflection-3-pi",
       "name": "Inflection: Inflection 3 Pi",
@@ -7379,6 +7347,22 @@
       "url": "https://openrouter.ai/models/inflection/inflection-3-pi"
     },
     {
+      "id": "inflection/inflection-3-productivity",
+      "canonical_slug": "inflection/inflection-3-productivity",
+      "name": "Inflection: Inflection 3 Productivity",
+      "context_length": 8000,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 0.0000025,
+      "pricing_completion": 0.00001,
+      "created_human": "2024-10-11",
+      "url": "https://openrouter.ai/models/inflection/inflection-3-productivity"
+    },
+    {
       "id": "thedrummer/rocinante-12b",
       "canonical_slug": "thedrummer/rocinante-12b",
       "name": "TheDrummer: Rocinante 12B",
@@ -7393,22 +7377,6 @@
       "pricing_completion": 5e-7,
       "created_human": "2024-09-30",
       "url": "https://huggingface.co/TheDrummer/Rocinante-12B-v1.1"
-    },
-    {
-      "id": "meta-llama/llama-3.2-1b-instruct",
-      "canonical_slug": "meta-llama/llama-3.2-1b-instruct",
-      "name": "Meta: Llama 3.2 1B Instruct",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 2.7e-8,
-      "pricing_completion": 2.01e-7,
-      "created_human": "2024-09-25",
-      "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
     },
     {
       "id": "meta-llama/llama-3.2-11b-vision-instruct",
@@ -7428,9 +7396,9 @@
       "url": "https://huggingface.co/meta-llama/Llama-3.2-11B-Vision-Instruct"
     },
     {
-      "id": "meta-llama/llama-3.2-3b-instruct:free",
-      "canonical_slug": "meta-llama/llama-3.2-3b-instruct",
-      "name": "Meta: Llama 3.2 3B Instruct (free)",
+      "id": "meta-llama/llama-3.2-1b-instruct",
+      "canonical_slug": "meta-llama/llama-3.2-1b-instruct",
+      "name": "Meta: Llama 3.2 1B Instruct",
       "context_length": 131072,
       "modalities": [
         "text",
@@ -7438,10 +7406,10 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
+      "pricing_prompt": 2.7e-8,
+      "pricing_completion": 2.01e-7,
       "created_human": "2024-09-25",
-      "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct"
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-1B-Instruct"
     },
     {
       "id": "meta-llama/llama-3.2-3b-instruct",
@@ -7456,6 +7424,22 @@
       "n_outputs": 1,
       "pricing_prompt": 5e-8,
       "pricing_completion": 3.3e-7,
+      "created_human": "2024-09-25",
+      "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct"
+    },
+    {
+      "id": "meta-llama/llama-3.2-3b-instruct:free",
+      "canonical_slug": "meta-llama/llama-3.2-3b-instruct",
+      "name": "Meta: Llama 3.2 3B Instruct (free)",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
       "created_human": "2024-09-25",
       "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct"
     },
@@ -7540,22 +7524,6 @@
       "url": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-70B"
     },
     {
-      "id": "nousresearch/hermes-3-llama-3.1-405b:free",
-      "canonical_slug": "nousresearch/hermes-3-llama-3.1-405b",
-      "name": "Nous: Hermes 3 405B Instruct (free)",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
-      "created_human": "2024-08-16",
-      "url": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-405B"
-    },
-    {
       "id": "nousresearch/hermes-3-llama-3.1-405b",
       "canonical_slug": "nousresearch/hermes-3-llama-3.1-405b",
       "name": "Nous: Hermes 3 405B Instruct",
@@ -7568,6 +7536,22 @@
       "n_outputs": 1,
       "pricing_prompt": 0.000001,
       "pricing_completion": 0.000001,
+      "created_human": "2024-08-16",
+      "url": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-405B"
+    },
+    {
+      "id": "nousresearch/hermes-3-llama-3.1-405b:free",
+      "canonical_slug": "nousresearch/hermes-3-llama-3.1-405b",
+      "name": "Nous: Hermes 3 405B Instruct (free)",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
       "created_human": "2024-08-16",
       "url": "https://huggingface.co/NousResearch/Hermes-3-Llama-3.1-405B"
     },
@@ -7606,22 +7590,6 @@
       "url": "https://openrouter.ai/models/openai/gpt-4o-2024-08-06"
     },
     {
-      "id": "meta-llama/llama-3.1-8b-instruct",
-      "canonical_slug": "meta-llama/llama-3.1-8b-instruct",
-      "name": "Meta: Llama 3.1 8B Instruct",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 2e-8,
-      "pricing_completion": 3e-8,
-      "created_human": "2024-07-23",
-      "url": "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct"
-    },
-    {
       "id": "meta-llama/llama-3.1-70b-instruct",
       "canonical_slug": "meta-llama/llama-3.1-70b-instruct",
       "name": "Meta: Llama 3.1 70B Instruct",
@@ -7638,6 +7606,22 @@
       "url": "https://huggingface.co/meta-llama/Meta-Llama-3.1-70B-Instruct"
     },
     {
+      "id": "meta-llama/llama-3.1-8b-instruct",
+      "canonical_slug": "meta-llama/llama-3.1-8b-instruct",
+      "name": "Meta: Llama 3.1 8B Instruct",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 2e-8,
+      "pricing_completion": 3e-8,
+      "created_human": "2024-07-23",
+      "url": "https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct"
+    },
+    {
       "id": "mistralai/mistral-nemo",
       "canonical_slug": "mistralai/mistral-nemo",
       "name": "Mistral: Mistral Nemo",
@@ -7652,24 +7636,6 @@
       "pricing_completion": 3e-8,
       "created_human": "2024-07-19",
       "url": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407"
-    },
-    {
-      "id": "openai/gpt-4o-mini-2024-07-18",
-      "canonical_slug": "openai/gpt-4o-mini-2024-07-18",
-      "name": "OpenAI: GPT-4o-mini (2024-07-18)",
-      "context_length": 128000,
-      "modalities": [
-        "text",
-        "image",
-        "file",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 1.5e-7,
-      "pricing_completion": 6e-7,
-      "created_human": "2024-07-18",
-      "url": "https://openrouter.ai/models/openai/gpt-4o-mini-2024-07-18"
     },
     {
       "id": "openai/gpt-4o-mini",
@@ -7690,6 +7656,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-4o-mini"
     },
     {
+      "id": "openai/gpt-4o-mini-2024-07-18",
+      "canonical_slug": "openai/gpt-4o-mini-2024-07-18",
+      "name": "OpenAI: GPT-4o-mini (2024-07-18)",
+      "context_length": 128000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 1.5e-7,
+      "pricing_completion": 6e-7,
+      "created_human": "2024-07-18",
+      "url": "https://openrouter.ai/models/openai/gpt-4o-mini-2024-07-18"
+    },
+    {
       "id": "google/gemma-2-27b-it",
       "canonical_slug": "google/gemma-2-27b-it",
       "name": "Google: Gemma 2 27B",
@@ -7704,24 +7688,6 @@
       "pricing_completion": 6.5e-7,
       "created_human": "2024-07-13",
       "url": "https://huggingface.co/google/gemma-2-27b-it"
-    },
-    {
-      "id": "openai/gpt-4o-2024-05-13",
-      "canonical_slug": "openai/gpt-4o-2024-05-13",
-      "name": "OpenAI: GPT-4o (2024-05-13)",
-      "context_length": 128000,
-      "modalities": [
-        "text",
-        "image",
-        "file",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 0.000005,
-      "pricing_completion": 0.000015,
-      "created_human": "2024-05-13",
-      "url": "https://openrouter.ai/models/openai/gpt-4o-2024-05-13"
     },
     {
       "id": "openai/gpt-4o",
@@ -7740,6 +7706,24 @@
       "pricing_completion": 0.00001,
       "created_human": "2024-05-13",
       "url": "https://openrouter.ai/models/openai/gpt-4o"
+    },
+    {
+      "id": "openai/gpt-4o-2024-05-13",
+      "canonical_slug": "openai/gpt-4o-2024-05-13",
+      "name": "OpenAI: GPT-4o (2024-05-13)",
+      "context_length": 128000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000005,
+      "pricing_completion": 0.000015,
+      "created_human": "2024-05-13",
+      "url": "https://openrouter.ai/models/openai/gpt-4o-2024-05-13"
     },
     {
       "id": "mistralai/mixtral-8x22b-instruct",
@@ -7959,22 +7943,6 @@
       "url": "https://huggingface.co/Gryphe/MythoMax-L2-13b"
     },
     {
-      "id": "openai/gpt-4",
-      "canonical_slug": "openai/gpt-4",
-      "name": "OpenAI: GPT-4",
-      "context_length": 8191,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 0.00003,
-      "pricing_completion": 0.00006,
-      "created_human": "2023-05-28",
-      "url": "https://openrouter.ai/models/openai/gpt-4"
-    },
-    {
       "id": "openai/gpt-3.5-turbo",
       "canonical_slug": "openai/gpt-3.5-turbo",
       "name": "OpenAI: GPT-3.5 Turbo",
@@ -7989,6 +7957,22 @@
       "pricing_completion": 0.0000015,
       "created_human": "2023-05-28",
       "url": "https://openrouter.ai/models/openai/gpt-3.5-turbo"
+    },
+    {
+      "id": "openai/gpt-4",
+      "canonical_slug": "openai/gpt-4",
+      "name": "OpenAI: GPT-4",
+      "context_length": 8191,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 0.00003,
+      "pricing_completion": 0.00006,
+      "created_human": "2023-05-28",
+      "url": "https://openrouter.ai/models/openai/gpt-4"
     }
   ]
 }
