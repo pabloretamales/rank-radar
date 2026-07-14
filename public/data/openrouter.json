@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-14T16:00:23.132Z",
+  "fetched_at": "2026-07-14T23:00:24.052Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-14T16:00:17.606Z",
+    "as_of": "2026-07-14T23:00:19.358Z",
     "version": "v1",
     "start_date": "2026-06-14",
     "end_date": "2026-07-13"
   },
   "rankings_meta": {
-    "as_of": "2026-07-14T16:00:18.498Z",
+    "as_of": "2026-07-14T23:00:20.225Z",
     "version": "v1",
     "start_date": "2026-07-13",
     "end_date": "2026-07-13"
@@ -2085,7 +2085,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-14T16:00:18.498Z",
+      "as_of": "2026-07-14T23:00:20.225Z",
       "version": "v1",
       "start_date": "2026-07-13",
       "end_date": "2026-07-13"
@@ -2093,19 +2093,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-14T16:00:13.783Z",
+      "as_of": "2026-07-14T23:00:16.923Z",
       "version": "v1",
       "start_date": "2026-07-13",
       "end_date": "2026-07-13"
     },
     "week": {
-      "as_of": "2026-07-14T16:00:14.840Z",
+      "as_of": "2026-07-14T23:00:18.072Z",
       "version": "v1",
       "start_date": "2026-07-07",
       "end_date": "2026-07-13"
     },
     "month": {
-      "as_of": "2026-07-14T16:00:17.606Z",
+      "as_of": "2026-07-14T23:00:19.358Z",
       "version": "v1",
       "start_date": "2026-06-14",
       "end_date": "2026-07-13"
@@ -2518,8 +2518,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 9.24e-7,
-      "pricing_completion": 0.000002904,
+      "pricing_prompt": 9.1e-7,
+      "pricing_completion": 0.00000286,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
