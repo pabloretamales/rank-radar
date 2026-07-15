@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-15T16:00:23.619Z",
+  "fetched_at": "2026-07-15T23:00:20.772Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-15T16:00:18.501Z",
+    "as_of": "2026-07-15T23:00:14.793Z",
     "version": "v1",
     "start_date": "2026-06-15",
     "end_date": "2026-07-14"
   },
   "rankings_meta": {
-    "as_of": "2026-07-15T16:00:19.628Z",
+    "as_of": "2026-07-15T23:00:16.562Z",
     "version": "v1",
     "start_date": "2026-07-14",
     "end_date": "2026-07-14"
@@ -2136,7 +2136,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-15T16:00:19.628Z",
+      "as_of": "2026-07-15T23:00:16.562Z",
       "version": "v1",
       "start_date": "2026-07-14",
       "end_date": "2026-07-14"
@@ -2144,19 +2144,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-15T16:00:15.157Z",
+      "as_of": "2026-07-15T23:00:12.721Z",
       "version": "v1",
       "start_date": "2026-07-14",
       "end_date": "2026-07-14"
     },
     "week": {
-      "as_of": "2026-07-15T16:00:16.407Z",
+      "as_of": "2026-07-15T23:00:13.939Z",
       "version": "v1",
       "start_date": "2026-07-08",
       "end_date": "2026-07-14"
     },
     "month": {
-      "as_of": "2026-07-15T16:00:18.501Z",
+      "as_of": "2026-07-15T23:00:14.793Z",
       "version": "v1",
       "start_date": "2026-06-15",
       "end_date": "2026-07-14"
@@ -2569,8 +2569,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8.61e-7,
-      "pricing_completion": 0.000002706,
+      "pricing_prompt": 9.758e-7,
+      "pricing_completion": 0.0000030668,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -2809,8 +2809,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 0.00000125,
-      "pricing_completion": 0.00000375,
+      "pricing_prompt": 0.000001475,
+      "pricing_completion": 0.000004425,
       "created_human": "2026-05-21",
       "url": "https://openrouter.ai/models/qwen/qwen3.7-max-20260520"
     },
@@ -6487,7 +6487,7 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1e-7,
+      "pricing_prompt": 1.2e-7,
       "pricing_completion": 2.4e-7,
       "created_human": "2025-04-28",
       "url": "https://huggingface.co/Qwen/Qwen3-14B"
