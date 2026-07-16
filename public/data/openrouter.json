@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-16T16:00:20.602Z",
+  "fetched_at": "2026-07-16T23:00:20.160Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-16T16:00:15.198Z",
+    "as_of": "2026-07-16T23:00:15.609Z",
     "version": "v1",
     "start_date": "2026-06-16",
     "end_date": "2026-07-15"
   },
   "rankings_meta": {
-    "as_of": "2026-07-16T16:00:16.270Z",
+    "as_of": "2026-07-16T23:00:16.418Z",
     "version": "v1",
     "start_date": "2026-07-15",
     "end_date": "2026-07-15"
@@ -571,7 +571,7 @@
         "id": "moonshotai/kimi-k3",
         "slug": "moonshotai/kimi-k3-20260715",
         "name": "MoonshotAI: Kimi K3",
-        "description": "Kimi K3 is an ultra-large-scale, open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at navigating...",
+        "description": "Kimi K3 is a 2.8T parameter open-weight multimodal reasoning model from Moonshot AI. It is suited for complex coding, knowledge work, and long-horizon agentic workflows, and is particularly strong at...",
         "context_length": 1048576,
         "modalities": [
           "text",
@@ -2105,7 +2105,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-16T16:00:16.270Z",
+      "as_of": "2026-07-16T23:00:16.418Z",
       "version": "v1",
       "start_date": "2026-07-15",
       "end_date": "2026-07-15"
@@ -2113,19 +2113,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-16T16:00:11.110Z",
+      "as_of": "2026-07-16T23:00:13.125Z",
       "version": "v1",
       "start_date": "2026-07-15",
       "end_date": "2026-07-15"
     },
     "week": {
-      "as_of": "2026-07-16T16:00:13.930Z",
+      "as_of": "2026-07-16T23:00:14.255Z",
       "version": "v1",
       "start_date": "2026-07-09",
       "end_date": "2026-07-15"
     },
     "month": {
-      "as_of": "2026-07-16T16:00:15.198Z",
+      "as_of": "2026-07-16T23:00:15.609Z",
       "version": "v1",
       "start_date": "2026-06-16",
       "end_date": "2026-07-15"
@@ -2575,8 +2575,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 9.324e-7,
-      "pricing_completion": 0.0000029304,
+      "pricing_prompt": 9.058e-7,
+      "pricing_completion": 0.0000028468,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -6493,7 +6493,7 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1e-7,
+      "pricing_prompt": 1.2e-7,
       "pricing_completion": 2.4e-7,
       "created_human": "2025-04-28",
       "url": "https://huggingface.co/Qwen/Qwen3-14B"
@@ -7441,8 +7441,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 5e-8,
-      "pricing_completion": 3.3e-7,
+      "pricing_prompt": 5.09e-8,
+      "pricing_completion": 3.35e-7,
       "created_human": "2024-09-25",
       "url": "https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct"
     },
@@ -7651,8 +7651,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 2e-8,
-      "pricing_completion": 4e-8,
+      "pricing_prompt": 1.9e-8,
+      "pricing_completion": 3e-8,
       "created_human": "2024-07-19",
       "url": "https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407"
     },
