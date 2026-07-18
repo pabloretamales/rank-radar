@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-18T16:00:20.948Z",
+  "fetched_at": "2026-07-18T23:00:23.081Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-18T16:00:16.763Z",
+    "as_of": "2026-07-18T23:00:17.918Z",
     "version": "v1",
     "start_date": "2026-06-18",
     "end_date": "2026-07-17"
   },
   "rankings_meta": {
-    "as_of": "2026-07-18T16:00:17.994Z",
+    "as_of": "2026-07-18T23:00:19.106Z",
     "version": "v1",
     "start_date": "2026-07-17",
     "end_date": "2026-07-17"
@@ -2125,7 +2125,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-18T16:00:17.994Z",
+      "as_of": "2026-07-18T23:00:19.106Z",
       "version": "v1",
       "start_date": "2026-07-17",
       "end_date": "2026-07-17"
@@ -2133,19 +2133,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-18T16:00:14.597Z",
+      "as_of": "2026-07-18T23:00:15.563Z",
       "version": "v1",
       "start_date": "2026-07-17",
       "end_date": "2026-07-17"
     },
     "week": {
-      "as_of": "2026-07-18T16:00:15.790Z",
+      "as_of": "2026-07-18T23:00:17.043Z",
       "version": "v1",
       "start_date": "2026-07-11",
       "end_date": "2026-07-17"
     },
     "month": {
-      "as_of": "2026-07-18T16:00:16.763Z",
+      "as_of": "2026-07-18T23:00:17.918Z",
       "version": "v1",
       "start_date": "2026-06-18",
       "end_date": "2026-07-17"
@@ -2634,8 +2634,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 2.912e-7,
-      "pricing_completion": 9.152e-7,
+      "pricing_prompt": 2.66e-7,
+      "pricing_completion": 8.36e-7,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -2667,8 +2667,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 0.000001,
-      "pricing_completion": 0.0000044,
+      "pricing_prompt": 7.4e-7,
+      "pricing_completion": 0.00000349,
       "created_human": "2026-06-12",
       "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code"
     },
@@ -6536,8 +6536,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 2.275e-7,
-      "pricing_completion": 9.1e-7,
+      "pricing_prompt": 1.2e-7,
+      "pricing_completion": 2.4e-7,
       "created_human": "2025-04-28",
       "url": "https://huggingface.co/Qwen/Qwen3-14B"
     },
