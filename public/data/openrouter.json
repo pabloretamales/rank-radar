@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-21T16:00:23.496Z",
+  "fetched_at": "2026-07-21T23:00:16.802Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-21T16:00:14.336Z",
+    "as_of": "2026-07-21T23:00:11.890Z",
     "version": "v1",
     "start_date": "2026-06-21",
     "end_date": "2026-07-20"
   },
   "rankings_meta": {
-    "as_of": "2026-07-21T16:00:15.188Z",
+    "as_of": "2026-07-21T23:00:12.720Z",
     "version": "v1",
     "start_date": "2026-07-20",
     "end_date": "2026-07-20"
@@ -531,7 +531,7 @@
       {
         "rank": 17,
         "app_id": 3296290,
-        "app_name": "Mira",
+        "app_name": "Mira is the leading AI agent inside Telegram",
         "total_tokens": "423640266751",
         "total_tokens_human": "423.64B",
         "total_requests": 26057049,
@@ -568,6 +568,46 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "poolside/laguna-s-2.1",
+        "slug": "poolside/laguna-s-2.1-20260720",
+        "name": "Poolside: Laguna S 2.1",
+        "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and...",
+        "context_length": 1048576,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1784652683,
+        "created_human": "2026-07-21",
+        "pricing_prompt": 1e-7,
+        "pricing_completion": 2e-7,
+        "score": 1784652683,
+        "url": "https://huggingface.co/poolside/Laguna-S-2.1"
+      },
+      {
+        "rank": 2,
+        "id": "poolside/laguna-s-2.1:free",
+        "slug": "poolside/laguna-s-2.1-20260720",
+        "name": "Poolside: Laguna S 2.1 (free)",
+        "description": "Laguna S 2.1 is the latest coding agent model from [Poolside](<https://poolside.ai/>). Laguna S 2.1 is a 118B total parameter model with 8B active parameters, scoring 70.2% on Terminal-Bench 2.1 and...",
+        "context_length": 262144,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1784652683,
+        "created_human": "2026-07-21",
+        "pricing_prompt": 0,
+        "pricing_completion": 0,
+        "score": 1784652683,
+        "url": "https://huggingface.co/poolside/Laguna-S-2.1"
+      },
+      {
+        "rank": 3,
         "id": "google/gemini-3.6-flash",
         "slug": "google/gemini-3.6-flash-20260721",
         "name": "Google: Gemini 3.6 Flash",
@@ -591,7 +631,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.6-flash-20260721"
       },
       {
-        "rank": 2,
+        "rank": 4,
         "id": "google/gemini-3.5-flash-lite",
         "slug": "google/gemini-3.5-flash-lite-20260721",
         "name": "Google: Gemini 3.5 Flash-Lite",
@@ -615,7 +655,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.5-flash-lite-20260721"
       },
       {
-        "rank": 3,
+        "rank": 5,
         "id": "meituan/longcat-2.0",
         "slug": "meituan/longcat-2.0-20260720",
         "name": "Meituan: LongCat 2.0",
@@ -635,12 +675,12 @@
         "url": "https://huggingface.co/meituan-longcat/LongCat-2.0"
       },
       {
-        "rank": 4,
+        "rank": 6,
         "id": "thinkingmachines/inkling",
         "slug": "thinkingmachines/inkling-20260715",
         "name": "Thinking Machines: Inkling",
         "description": "Inkling is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 41B active parameters out of 975B total. It is designed for general-purpose reasoning, coding, agentic and tool-use systems,...",
-        "context_length": 1048576,
+        "context_length": 524288,
         "modalities": [
           "text",
           "image",
@@ -657,7 +697,7 @@
         "url": "https://huggingface.co/thinkingmachines/Inkling"
       },
       {
-        "rank": 5,
+        "rank": 7,
         "id": "openrouter/auto-beta",
         "slug": "openrouter/auto-beta",
         "name": "Auto Router (Beta)",
@@ -682,7 +722,7 @@
         "url": "https://openrouter.ai/models/openrouter/auto-beta"
       },
       {
-        "rank": 6,
+        "rank": 8,
         "id": "moonshotai/kimi-k3",
         "slug": "moonshotai/kimi-k3-20260715",
         "name": "MoonshotAI: Kimi K3",
@@ -703,7 +743,7 @@
         "url": "https://openrouter.ai/models/moonshotai/kimi-k3-20260715"
       },
       {
-        "rank": 7,
+        "rank": 9,
         "id": "meta/muse-spark-1.1",
         "slug": "meta/muse-spark-1.1-20260709",
         "name": "Meta: Muse Spark 1.1",
@@ -727,7 +767,7 @@
         "url": "https://openrouter.ai/models/meta/muse-spark-1.1-20260709"
       },
       {
-        "rank": 8,
+        "rank": 10,
         "id": "kwaipilot/kat-coder-air-v2.5",
         "slug": "kwaipilot/kat-coder-air-v2.5-20260710",
         "name": "Kwaipilot: KAT-Coder-Air V2.5",
@@ -747,7 +787,7 @@
         "url": "https://openrouter.ai/models/kwaipilot/kat-coder-air-v2.5-20260710"
       },
       {
-        "rank": 9,
+        "rank": 11,
         "id": "kwaipilot/kat-coder-pro-v2.5",
         "slug": "kwaipilot/kat-coder-pro-v2.5-20260710",
         "name": "Kwaipilot: KAT-Coder-Pro V2.5",
@@ -767,7 +807,7 @@
         "url": "https://openrouter.ai/models/kwaipilot/kat-coder-pro-v2.5-20260710"
       },
       {
-        "rank": 10,
+        "rank": 12,
         "id": "openai/gpt-5.6-luna-pro",
         "slug": "openai/gpt-5.6-luna-pro-20260709",
         "name": "OpenAI: GPT-5.6 Luna Pro",
@@ -789,7 +829,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-pro-20260709"
       },
       {
-        "rank": 11,
+        "rank": 13,
         "id": "openai/gpt-5.6-luna",
         "slug": "openai/gpt-5.6-luna-20260709",
         "name": "OpenAI: GPT-5.6 Luna",
@@ -811,7 +851,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-20260709"
       },
       {
-        "rank": 12,
+        "rank": 14,
         "id": "openai/gpt-5.6-terra-pro",
         "slug": "openai/gpt-5.6-terra-pro-20260709",
         "name": "OpenAI: GPT-5.6 Terra Pro",
@@ -833,7 +873,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-pro-20260709"
       },
       {
-        "rank": 13,
+        "rank": 15,
         "id": "openai/gpt-5.6-terra",
         "slug": "openai/gpt-5.6-terra-20260709",
         "name": "OpenAI: GPT-5.6 Terra",
@@ -855,7 +895,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-20260709"
       },
       {
-        "rank": 14,
+        "rank": 16,
         "id": "openai/gpt-5.6-sol-pro",
         "slug": "openai/gpt-5.6-sol-pro-20260709",
         "name": "OpenAI: GPT-5.6 Sol Pro",
@@ -877,7 +917,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-5.6-sol-pro-20260709"
       },
       {
-        "rank": 15,
+        "rank": 17,
         "id": "openai/gpt-5.6-sol",
         "slug": "openai/gpt-5.6-sol-20260709",
         "name": "OpenAI: GPT-5.6 Sol",
@@ -899,7 +939,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-5.6-sol-20260709"
       },
       {
-        "rank": 16,
+        "rank": 18,
         "id": "x-ai/grok-4.5",
         "slug": "x-ai/grok-4.5-20260708",
         "name": "xAI: Grok 4.5",
@@ -921,7 +961,7 @@
         "url": "https://openrouter.ai/models/x-ai/grok-4.5-20260708"
       },
       {
-        "rank": 17,
+        "rank": 19,
         "id": "~x-ai/grok-latest",
         "slug": "~x-ai/grok-latest",
         "name": "xAI: Grok Latest",
@@ -943,7 +983,7 @@
         "url": "https://openrouter.ai/models/~x-ai/grok-latest"
       },
       {
-        "rank": 18,
+        "rank": 20,
         "id": "aion-labs/aion-3.0-mini",
         "slug": "aion-labs/aion-3.0-mini-20260707",
         "name": "AionLabs: Aion-3.0-Mini",
@@ -961,46 +1001,6 @@
         "pricing_completion": 0.0000014,
         "score": 1783443096,
         "url": "https://openrouter.ai/models/aion-labs/aion-3.0-mini-20260707"
-      },
-      {
-        "rank": 19,
-        "id": "aion-labs/aion-3.0",
-        "slug": "aion-labs/aion-3.0-20260707",
-        "name": "AionLabs: Aion-3.0",
-        "description": "Aion-3.0 is a multi-model roleplaying and storytelling system from AionLabs, built on the GLM family of models. It uses a collaborative generation process in which multiple specialized models each contribute...",
-        "context_length": 131072,
-        "modalities": [
-          "text",
-          "→text"
-        ],
-        "n_inputs": 1,
-        "n_outputs": 1,
-        "created_ts": 1783443095,
-        "created_human": "2026-07-07",
-        "pricing_prompt": 0.000003,
-        "pricing_completion": 0.000006,
-        "score": 1783443095,
-        "url": "https://openrouter.ai/models/aion-labs/aion-3.0-20260707"
-      },
-      {
-        "rank": 20,
-        "id": "tencent/hy3",
-        "slug": "tencent/hy3-20260706",
-        "name": "Tencent: Hy3",
-        "description": "Hy3 is a 295B-parameter Mixture-of-Experts model from Tencent (21B active, 192 experts with top-8 routing) built for reasoning, agentic workflows, and real-world production use. It supports a configurable reasoning effort:...",
-        "context_length": 262144,
-        "modalities": [
-          "text",
-          "→text"
-        ],
-        "n_inputs": 1,
-        "n_outputs": 1,
-        "created_ts": 1783344048,
-        "created_human": "2026-07-06",
-        "pricing_prompt": 1.4e-7,
-        "pricing_completion": 5.8e-7,
-        "score": 1783344048,
-        "url": "https://huggingface.co/tencent/Hy3"
       }
     ],
     "today": [
@@ -1029,7 +1029,7 @@
         "perma": "xiaomi/mimo-v2.5-20260422",
         "url": "https://openrouter.ai/models/xiaomi/mimo-v2.5-20260422",
         "modalities": [],
-        "context_length": 1048576,
+        "context_length": 1050000,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "today"
@@ -1119,7 +1119,7 @@
         "perma": "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "url": "https://openrouter.ai/models/nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "modalities": [],
-        "context_length": 1000000,
+        "context_length": 512288,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "today"
@@ -1224,7 +1224,7 @@
         "perma": "stepfun/step-3.7-flash-20260528",
         "url": "https://openrouter.ai/models/stepfun/step-3.7-flash-20260528",
         "modalities": [],
-        "context_length": 256000,
+        "context_length": 262144,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "today"
@@ -1331,7 +1331,7 @@
         "perma": "xiaomi/mimo-v2.5-20260422",
         "url": "https://openrouter.ai/models/xiaomi/mimo-v2.5-20260422",
         "modalities": [],
-        "context_length": 1048576,
+        "context_length": 1050000,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "week"
@@ -1406,7 +1406,7 @@
         "perma": "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "url": "https://openrouter.ai/models/nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "modalities": [],
-        "context_length": 1000000,
+        "context_length": 512288,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "week"
@@ -1511,7 +1511,7 @@
         "perma": "stepfun/step-3.7-flash-20260528",
         "url": "https://openrouter.ai/models/stepfun/step-3.7-flash-20260528",
         "modalities": [],
-        "context_length": 256000,
+        "context_length": 262144,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "week"
@@ -1571,7 +1571,7 @@
         "perma": "xiaomi/mimo-v2.5-pro-20260422",
         "url": "https://openrouter.ai/models/xiaomi/mimo-v2.5-pro-20260422",
         "modalities": [],
-        "context_length": 1048576,
+        "context_length": 1050000,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "week"
@@ -1618,7 +1618,7 @@
         "perma": "xiaomi/mimo-v2.5-20260422",
         "url": "https://openrouter.ai/models/xiaomi/mimo-v2.5-20260422",
         "modalities": [],
-        "context_length": 1048576,
+        "context_length": 1050000,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "month"
@@ -1768,7 +1768,7 @@
         "perma": "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "url": "https://openrouter.ai/models/nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "modalities": [],
-        "context_length": 1000000,
+        "context_length": 512288,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "month"
@@ -1783,7 +1783,7 @@
         "perma": "stepfun/step-3.7-flash-20260528",
         "url": "https://openrouter.ai/models/stepfun/step-3.7-flash-20260528",
         "modalities": [],
-        "context_length": 256000,
+        "context_length": 262144,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "month"
@@ -2133,7 +2133,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-21T16:00:15.188Z",
+      "as_of": "2026-07-21T23:00:12.720Z",
       "version": "v1",
       "start_date": "2026-07-20",
       "end_date": "2026-07-20"
@@ -2141,26 +2141,58 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-21T16:00:11.676Z",
+      "as_of": "2026-07-21T23:00:09.404Z",
       "version": "v1",
       "start_date": "2026-07-20",
       "end_date": "2026-07-20"
     },
     "week": {
-      "as_of": "2026-07-21T16:00:12.833Z",
+      "as_of": "2026-07-21T23:00:10.538Z",
       "version": "v1",
       "start_date": "2026-07-14",
       "end_date": "2026-07-20"
     },
     "month": {
-      "as_of": "2026-07-21T16:00:14.336Z",
+      "as_of": "2026-07-21T23:00:11.890Z",
       "version": "v1",
       "start_date": "2026-06-21",
       "end_date": "2026-07-20"
     }
   },
-  "models_total": 340,
+  "models_total": 342,
   "catalog": [
+    {
+      "id": "poolside/laguna-s-2.1",
+      "canonical_slug": "poolside/laguna-s-2.1-20260720",
+      "name": "Poolside: Laguna S 2.1",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 1e-7,
+      "pricing_completion": 2e-7,
+      "created_human": "2026-07-21",
+      "url": "https://huggingface.co/poolside/Laguna-S-2.1"
+    },
+    {
+      "id": "poolside/laguna-s-2.1:free",
+      "canonical_slug": "poolside/laguna-s-2.1-20260720",
+      "name": "Poolside: Laguna S 2.1 (free)",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
+      "created_human": "2026-07-21",
+      "url": "https://huggingface.co/poolside/Laguna-S-2.1"
+    },
     {
       "id": "google/gemini-3.6-flash",
       "canonical_slug": "google/gemini-3.6-flash-20260721",
@@ -2221,7 +2253,7 @@
       "id": "thinkingmachines/inkling",
       "canonical_slug": "thinkingmachines/inkling-20260715",
       "name": "Thinking Machines: Inkling",
-      "context_length": 1048576,
+      "context_length": 524288,
       "modalities": [
         "text",
         "image",
@@ -2641,7 +2673,7 @@
       "id": "google/gemini-3-pro-image",
       "canonical_slug": "google/gemini-3-pro-image-20260528",
       "name": "Google: Nano Banana Pro (Gemini 3 Pro Image)",
-      "context_length": 65536,
+      "context_length": 131072,
       "modalities": [
         "image",
         "text",
@@ -2682,8 +2714,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8.078e-7,
-      "pricing_completion": 0.0000025388,
+      "pricing_prompt": 7.714e-7,
+      "pricing_completion": 0.0000024244,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -2794,7 +2826,7 @@
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
       "canonical_slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
       "name": "NVIDIA: Nemotron 3 Ultra",
-      "context_length": 1000000,
+      "context_length": 512288,
       "modalities": [
         "text",
         "→text"
@@ -2861,7 +2893,7 @@
       "id": "stepfun/step-3.7-flash",
       "canonical_slug": "stepfun/step-3.7-flash-20260528",
       "name": "StepFun: Step 3.7 Flash",
-      "context_length": 256000,
+      "context_length": 262144,
       "modalities": [
         "text",
         "image",
@@ -3479,7 +3511,7 @@
       "id": "xiaomi/mimo-v2.5-pro",
       "canonical_slug": "xiaomi/mimo-v2.5-pro-20260422",
       "name": "Xiaomi: MiMo-V2.5-Pro",
-      "context_length": 1048576,
+      "context_length": 1050000,
       "modalities": [
         "text",
         "→text"
@@ -3495,7 +3527,7 @@
       "id": "xiaomi/mimo-v2.5",
       "canonical_slug": "xiaomi/mimo-v2.5-20260422",
       "name": "Xiaomi: MiMo-V2.5",
-      "context_length": 1048576,
+      "context_length": 1050000,
       "modalities": [
         "text",
         "audio",
@@ -3618,7 +3650,7 @@
       "id": "z-ai/glm-5.1",
       "canonical_slug": "z-ai/glm-5.1-20260406",
       "name": "Z.ai: GLM 5.1",
-      "context_length": 202752,
+      "context_length": 204800,
       "modalities": [
         "text",
         "→text"
@@ -3830,7 +3862,7 @@
       "id": "kwaipilot/kat-coder-pro-v2",
       "canonical_slug": "kwaipilot/kat-coder-pro-v2-20260327",
       "name": "Kwaipilot: KAT-Coder-Pro V2",
-      "context_length": 256000,
+      "context_length": 262144,
       "modalities": [
         "text",
         "→text"
@@ -3965,7 +3997,7 @@
       "id": "nvidia/nemotron-3-super-120b-a12b:free",
       "canonical_slug": "nvidia/nemotron-3-super-120b-a12b-20230311",
       "name": "NVIDIA: Nemotron 3 Super (free)",
-      "context_length": 1000000,
+      "context_length": 262144,
       "modalities": [
         "text",
         "→text"
@@ -4215,7 +4247,7 @@
       "id": "google/gemini-3.1-pro-preview-customtools",
       "canonical_slug": "google/gemini-3.1-pro-preview-customtools-20260219",
       "name": "Google: Gemini 3.1 Pro Preview Custom Tools",
-      "context_length": 1048756,
+      "context_length": 1048576,
       "modalities": [
         "text",
         "audio",
@@ -4559,7 +4591,7 @@
       "id": "z-ai/glm-4.7-flash",
       "canonical_slug": "z-ai/glm-4.7-flash-20260119",
       "name": "Z.ai: GLM 4.7 Flash",
-      "context_length": 200000,
+      "context_length": 202752,
       "modalities": [
         "text",
         "→text"
@@ -4644,7 +4676,7 @@
       "id": "z-ai/glm-4.7",
       "canonical_slug": "z-ai/glm-4.7-20251222",
       "name": "Z.ai: GLM 4.7",
-      "context_length": 202752,
+      "context_length": 204800,
       "modalities": [
         "text",
         "→text"
@@ -5210,7 +5242,7 @@
       "id": "qwen/qwen3-vl-32b-instruct",
       "canonical_slug": "qwen/qwen3-vl-32b-instruct",
       "name": "Qwen: Qwen3 VL 32B Instruct",
-      "context_length": 262144,
+      "context_length": 131072,
       "modalities": [
         "text",
         "image",
@@ -5280,7 +5312,7 @@
       "id": "qwen/qwen3-vl-8b-thinking",
       "canonical_slug": "qwen/qwen3-vl-8b-thinking",
       "name": "Qwen: Qwen3 VL 8B Thinking",
-      "context_length": 256000,
+      "context_length": 131072,
       "modalities": [
         "image",
         "text",
@@ -5297,7 +5329,7 @@
       "id": "qwen/qwen3-vl-8b-instruct",
       "canonical_slug": "qwen/qwen3-vl-8b-instruct",
       "name": "Qwen: Qwen3 VL 8B Instruct",
-      "context_length": 256000,
+      "context_length": 262144,
       "modalities": [
         "image",
         "text",
@@ -5387,7 +5419,7 @@
       "id": "qwen/qwen3-vl-30b-a3b-thinking",
       "canonical_slug": "qwen/qwen3-vl-30b-a3b-thinking",
       "name": "Qwen: Qwen3 VL 30B A3B Thinking",
-      "context_length": 131072,
+      "context_length": 262144,
       "modalities": [
         "text",
         "image",
@@ -5439,7 +5471,7 @@
       "id": "z-ai/glm-4.6",
       "canonical_slug": "z-ai/glm-4.6",
       "name": "Z.ai: GLM 4.6",
-      "context_length": 202752,
+      "context_length": 204800,
       "modalities": [
         "text",
         "→text"
@@ -5538,7 +5570,7 @@
       "id": "qwen/qwen3-vl-235b-a22b-instruct",
       "canonical_slug": "qwen/qwen3-vl-235b-a22b-instruct",
       "name": "Qwen: Qwen3 VL 235B A22B Instruct",
-      "context_length": 131072,
+      "context_length": 262144,
       "modalities": [
         "text",
         "image",
@@ -5604,7 +5636,7 @@
       "id": "deepseek/deepseek-v3.1-terminus",
       "canonical_slug": "deepseek/deepseek-v3.1-terminus",
       "name": "DeepSeek: DeepSeek V3.1 Terminus",
-      "context_length": 131072,
+      "context_length": 163840,
       "modalities": [
         "text",
         "→text"
@@ -5732,7 +5764,7 @@
       "id": "qwen/qwen3-30b-a3b-thinking-2507",
       "canonical_slug": "qwen/qwen3-30b-a3b-thinking-2507",
       "name": "Qwen: Qwen3 30B A3B Thinking 2507",
-      "context_length": 131072,
+      "context_length": 81920,
       "modalities": [
         "text",
         "→text"
@@ -6002,7 +6034,7 @@
       "id": "qwen/qwen3-coder-30b-a3b-instruct",
       "canonical_slug": "qwen/qwen3-coder-30b-a3b-instruct",
       "name": "Qwen: Qwen3 Coder 30B A3B Instruct",
-      "context_length": 160000,
+      "context_length": 262144,
       "modalities": [
         "text",
         "→text"
@@ -6082,7 +6114,7 @@
       "id": "qwen/qwen3-coder",
       "canonical_slug": "qwen/qwen3-coder-480b-a35b-07-25",
       "name": "Qwen: Qwen3 Coder 480B A35B",
-      "context_length": 1048576,
+      "context_length": 262144,
       "modalities": [
         "text",
         "→text"
@@ -6231,7 +6263,7 @@
       "id": "baidu/ernie-4.5-vl-424b-a47b",
       "canonical_slug": "baidu/ernie-4.5-vl-424b-a47b",
       "name": "Baidu: ERNIE 4.5 VL 424B A47B ",
-      "context_length": 131072,
+      "context_length": 123000,
       "modalities": [
         "image",
         "text",
@@ -6248,7 +6280,7 @@
       "id": "mistralai/mistral-small-3.2-24b-instruct",
       "canonical_slug": "mistralai/mistral-small-3.2-24b-instruct-2506",
       "name": "Mistral: Mistral Small 3.2 24B",
-      "context_length": 131072,
+      "context_length": 256000,
       "modalities": [
         "image",
         "text",
@@ -6480,7 +6512,7 @@
       "id": "meta-llama/llama-guard-4-12b",
       "canonical_slug": "meta-llama/llama-guard-4-12b",
       "name": "Meta: Llama Guard 4 12B",
-      "context_length": 163840,
+      "context_length": 1048576,
       "modalities": [
         "image",
         "text",
@@ -6529,7 +6561,7 @@
       "id": "qwen/qwen3-14b",
       "canonical_slug": "qwen/qwen3-14b-04-28",
       "name": "Qwen: Qwen3 14B",
-      "context_length": 131702,
+      "context_length": 131072,
       "modalities": [
         "text",
         "→text"
@@ -6702,7 +6734,7 @@
       "id": "meta-llama/llama-4-scout",
       "canonical_slug": "meta-llama/llama-4-scout-17b-16e-instruct",
       "name": "Meta: Llama 4 Scout",
-      "context_length": 10000000,
+      "context_length": 1310720,
       "modalities": [
         "text",
         "image",
@@ -6868,7 +6900,7 @@
       "id": "google/gemma-3-27b-it",
       "canonical_slug": "google/gemma-3-27b-it",
       "name": "Google: Gemma 3 27B",
-      "context_length": 131072,
+      "context_length": 262144,
       "modalities": [
         "text",
         "image",
@@ -7001,7 +7033,7 @@
       "id": "qwen/qwen2.5-vl-72b-instruct",
       "canonical_slug": "qwen/qwen2.5-vl-72b-instruct",
       "name": "Qwen: Qwen2.5 VL 72B Instruct",
-      "context_length": 131072,
+      "context_length": 128000,
       "modalities": [
         "text",
         "image",
@@ -7084,7 +7116,7 @@
       "id": "deepseek/deepseek-r1-distill-llama-70b",
       "canonical_slug": "deepseek/deepseek-r1-distill-llama-70b",
       "name": "DeepSeek: R1 Distill Llama 70B",
-      "context_length": 128000,
+      "context_length": 8192,
       "modalities": [
         "text",
         "→text"
@@ -7149,7 +7181,7 @@
       "id": "deepseek/deepseek-chat",
       "canonical_slug": "deepseek/deepseek-chat-v3",
       "name": "DeepSeek: DeepSeek V3",
-      "context_length": 131072,
+      "context_length": 163840,
       "modalities": [
         "text",
         "→text"
@@ -7316,7 +7348,7 @@
       "id": "qwen/qwen-2.5-coder-32b-instruct",
       "canonical_slug": "qwen/qwen-2.5-coder-32b-instruct",
       "name": "Qwen2.5 Coder 32B Instruct",
-      "context_length": 128000,
+      "context_length": 32768,
       "modalities": [
         "text",
         "→text"
@@ -7348,7 +7380,7 @@
       "id": "anthracite-org/magnum-v4-72b",
       "canonical_slug": "anthracite-org/magnum-v4-72b",
       "name": "Magnum v4 72B",
-      "context_length": 32768,
+      "context_length": 16384,
       "modalities": [
         "text",
         "→text"
@@ -7364,7 +7396,7 @@
       "id": "qwen/qwen-2.5-7b-instruct",
       "canonical_slug": "qwen/qwen-2.5-7b-instruct",
       "name": "Qwen: Qwen2.5 7B Instruct",
-      "context_length": 131072,
+      "context_length": 32768,
       "modalities": [
         "text",
         "→text"
@@ -7428,7 +7460,7 @@
       "id": "meta-llama/llama-3.2-1b-instruct",
       "canonical_slug": "meta-llama/llama-3.2-1b-instruct",
       "name": "Meta: Llama 3.2 1B Instruct",
-      "context_length": 131072,
+      "context_length": 60000,
       "modalities": [
         "text",
         "→text"
@@ -7460,7 +7492,7 @@
       "id": "qwen/qwen-2.5-72b-instruct",
       "canonical_slug": "qwen/qwen-2.5-72b-instruct",
       "name": "Qwen2.5 72B Instruct",
-      "context_length": 131072,
+      "context_length": 32768,
       "modalities": [
         "text",
         "→text"
@@ -7743,7 +7775,7 @@
       "id": "microsoft/wizardlm-2-8x22b",
       "canonical_slug": "microsoft/wizardlm-2-8x22b",
       "name": "WizardLM-2 8x22B",
-      "context_length": 65536,
+      "context_length": 65535,
       "modalities": [
         "text",
         "→text"
@@ -7927,7 +7959,7 @@
       "id": "gryphe/mythomax-l2-13b",
       "canonical_slug": "gryphe/mythomax-l2-13b",
       "name": "MythoMax 13B",
-      "context_length": 4096,
+      "context_length": 8192,
       "modalities": [
         "text",
         "→text"
