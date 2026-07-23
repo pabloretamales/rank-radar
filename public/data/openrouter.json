@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-23T16:00:17.537Z",
+  "fetched_at": "2026-07-23T23:00:18.304Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-23T16:00:13.365Z",
+    "as_of": "2026-07-23T23:00:13.725Z",
     "version": "v1",
     "start_date": "2026-06-23",
     "end_date": "2026-07-22"
   },
   "rankings_meta": {
-    "as_of": "2026-07-23T16:00:14.614Z",
+    "as_of": "2026-07-23T23:00:14.554Z",
     "version": "v1",
     "start_date": "2026-07-22",
     "end_date": "2026-07-22"
@@ -185,7 +185,7 @@
       {
         "rank": 19,
         "app_id": 3296290,
-        "app_name": "Mira",
+        "app_name": "Mira is the leading AI agent inside Telegram",
         "total_tokens": "12682958106",
         "total_tokens_human": "12.68B",
         "total_requests": 890650,
@@ -531,7 +531,7 @@
       {
         "rank": 17,
         "app_id": 3296290,
-        "app_name": "Mira",
+        "app_name": "Mira is the leading AI agent inside Telegram",
         "total_tokens": "417828637585",
         "total_tokens_human": "417.83B",
         "total_requests": 26139679,
@@ -568,6 +568,26 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "inclusionai/ling-3.0-flash:free",
+        "slug": "inclusionai/ling-3.0-flash-20260723",
+        "name": "Ling-3.0-flash (free)",
+        "description": "*Ling-3.0-flash* is a *124B-parameter Mixture-of-Experts (MoE) model*, with approximately *5.1B parameters activated per token*. The model is designed with *token efficiency and production-scale agentic inference* as key priorities, enabling developers...",
+        "context_length": 262144,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1784818580,
+        "created_human": "2026-07-23",
+        "pricing_prompt": 0,
+        "pricing_completion": 0,
+        "score": 1784818580,
+        "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-20260723"
+      },
+      {
+        "rank": 2,
         "id": "poolside/laguna-s-2.1",
         "slug": "poolside/laguna-s-2.1-20260720",
         "name": "Poolside: Laguna S 2.1",
@@ -587,7 +607,7 @@
         "url": "https://huggingface.co/poolside/Laguna-S-2.1"
       },
       {
-        "rank": 2,
+        "rank": 3,
         "id": "poolside/laguna-s-2.1:free",
         "slug": "poolside/laguna-s-2.1-20260720",
         "name": "Poolside: Laguna S 2.1 (free)",
@@ -607,7 +627,7 @@
         "url": "https://huggingface.co/poolside/Laguna-S-2.1"
       },
       {
-        "rank": 3,
+        "rank": 4,
         "id": "google/gemini-3.6-flash",
         "slug": "google/gemini-3.6-flash-20260721",
         "name": "Google: Gemini 3.6 Flash",
@@ -631,7 +651,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.6-flash-20260721"
       },
       {
-        "rank": 4,
+        "rank": 5,
         "id": "google/gemini-3.5-flash-lite",
         "slug": "google/gemini-3.5-flash-lite-20260721",
         "name": "Google: Gemini 3.5 Flash Lite",
@@ -655,7 +675,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.5-flash-lite-20260721"
       },
       {
-        "rank": 5,
+        "rank": 6,
         "id": "meituan/longcat-2.0",
         "slug": "meituan/longcat-2.0-20260720",
         "name": "Meituan: LongCat 2.0",
@@ -675,7 +695,7 @@
         "url": "https://huggingface.co/meituan-longcat/LongCat-2.0"
       },
       {
-        "rank": 6,
+        "rank": 7,
         "id": "thinkingmachines/inkling",
         "slug": "thinkingmachines/inkling-20260715",
         "name": "Thinking Machines: Inkling",
@@ -697,7 +717,7 @@
         "url": "https://huggingface.co/thinkingmachines/Inkling"
       },
       {
-        "rank": 7,
+        "rank": 8,
         "id": "openrouter/auto-beta",
         "slug": "openrouter/auto-beta",
         "name": "Auto Router (Beta)",
@@ -722,7 +742,7 @@
         "url": "https://openrouter.ai/models/openrouter/auto-beta"
       },
       {
-        "rank": 8,
+        "rank": 9,
         "id": "moonshotai/kimi-k3",
         "slug": "moonshotai/kimi-k3-20260715",
         "name": "MoonshotAI: Kimi K3",
@@ -743,7 +763,7 @@
         "url": "https://openrouter.ai/models/moonshotai/kimi-k3-20260715"
       },
       {
-        "rank": 9,
+        "rank": 10,
         "id": "meta/muse-spark-1.1",
         "slug": "meta/muse-spark-1.1-20260709",
         "name": "Meta: Muse Spark 1.1",
@@ -767,7 +787,7 @@
         "url": "https://openrouter.ai/models/meta/muse-spark-1.1-20260709"
       },
       {
-        "rank": 10,
+        "rank": 11,
         "id": "kwaipilot/kat-coder-air-v2.5",
         "slug": "kwaipilot/kat-coder-air-v2.5-20260710",
         "name": "Kwaipilot: KAT-Coder-Air V2.5",
@@ -787,7 +807,7 @@
         "url": "https://openrouter.ai/models/kwaipilot/kat-coder-air-v2.5-20260710"
       },
       {
-        "rank": 11,
+        "rank": 12,
         "id": "kwaipilot/kat-coder-pro-v2.5",
         "slug": "kwaipilot/kat-coder-pro-v2.5-20260710",
         "name": "Kwaipilot: KAT-Coder-Pro V2.5",
@@ -807,7 +827,7 @@
         "url": "https://openrouter.ai/models/kwaipilot/kat-coder-pro-v2.5-20260710"
       },
       {
-        "rank": 12,
+        "rank": 13,
         "id": "openai/gpt-5.6-luna-pro",
         "slug": "openai/gpt-5.6-luna-pro-20260709",
         "name": "OpenAI: GPT-5.6 Luna Pro",
@@ -829,7 +849,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-pro-20260709"
       },
       {
-        "rank": 13,
+        "rank": 14,
         "id": "openai/gpt-5.6-luna",
         "slug": "openai/gpt-5.6-luna-20260709",
         "name": "OpenAI: GPT-5.6 Luna",
@@ -851,7 +871,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-20260709"
       },
       {
-        "rank": 14,
+        "rank": 15,
         "id": "openai/gpt-5.6-terra-pro",
         "slug": "openai/gpt-5.6-terra-pro-20260709",
         "name": "OpenAI: GPT-5.6 Terra Pro",
@@ -873,7 +893,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-pro-20260709"
       },
       {
-        "rank": 15,
+        "rank": 16,
         "id": "openai/gpt-5.6-terra",
         "slug": "openai/gpt-5.6-terra-20260709",
         "name": "OpenAI: GPT-5.6 Terra",
@@ -895,7 +915,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-20260709"
       },
       {
-        "rank": 16,
+        "rank": 17,
         "id": "openai/gpt-5.6-sol-pro",
         "slug": "openai/gpt-5.6-sol-pro-20260709",
         "name": "OpenAI: GPT-5.6 Sol Pro",
@@ -917,7 +937,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-5.6-sol-pro-20260709"
       },
       {
-        "rank": 17,
+        "rank": 18,
         "id": "openai/gpt-5.6-sol",
         "slug": "openai/gpt-5.6-sol-20260709",
         "name": "OpenAI: GPT-5.6 Sol",
@@ -939,7 +959,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-5.6-sol-20260709"
       },
       {
-        "rank": 18,
+        "rank": 19,
         "id": "x-ai/grok-4.5",
         "slug": "x-ai/grok-4.5-20260708",
         "name": "xAI: Grok 4.5",
@@ -961,7 +981,7 @@
         "url": "https://openrouter.ai/models/x-ai/grok-4.5-20260708"
       },
       {
-        "rank": 19,
+        "rank": 20,
         "id": "~x-ai/grok-latest",
         "slug": "~x-ai/grok-latest",
         "name": "xAI: Grok Latest",
@@ -981,26 +1001,6 @@
         "pricing_completion": 0.000006,
         "score": 1783519360,
         "url": "https://openrouter.ai/models/~x-ai/grok-latest"
-      },
-      {
-        "rank": 20,
-        "id": "aion-labs/aion-3.0-mini",
-        "slug": "aion-labs/aion-3.0-mini-20260707",
-        "name": "AionLabs: Aion-3.0-Mini",
-        "description": "Aion-3.0 Mini is a multi-model roleplaying and storytelling system from AionLabs, built on the DeepSeek family of models. It uses a collaborative generation process in which multiple specialized models each...",
-        "context_length": 131072,
-        "modalities": [
-          "text",
-          "→text"
-        ],
-        "n_inputs": 1,
-        "n_outputs": 1,
-        "created_ts": 1783443096,
-        "created_human": "2026-07-07",
-        "pricing_prompt": 7e-7,
-        "pricing_completion": 0.0000014,
-        "score": 1783443096,
-        "url": "https://openrouter.ai/models/aion-labs/aion-3.0-mini-20260707"
       }
     ],
     "today": [
@@ -2218,7 +2218,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-23T16:00:14.614Z",
+      "as_of": "2026-07-23T23:00:14.554Z",
       "version": "v1",
       "start_date": "2026-07-22",
       "end_date": "2026-07-22"
@@ -2226,26 +2226,42 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-23T16:00:11.005Z",
+      "as_of": "2026-07-23T23:00:10.684Z",
       "version": "v1",
       "start_date": "2026-07-22",
       "end_date": "2026-07-22"
     },
     "week": {
-      "as_of": "2026-07-23T16:00:12.182Z",
+      "as_of": "2026-07-23T23:00:12.078Z",
       "version": "v1",
       "start_date": "2026-07-16",
       "end_date": "2026-07-22"
     },
     "month": {
-      "as_of": "2026-07-23T16:00:13.365Z",
+      "as_of": "2026-07-23T23:00:13.725Z",
       "version": "v1",
       "start_date": "2026-06-23",
       "end_date": "2026-07-22"
     }
   },
-  "models_total": 342,
+  "models_total": 343,
   "catalog": [
+    {
+      "id": "inclusionai/ling-3.0-flash:free",
+      "canonical_slug": "inclusionai/ling-3.0-flash-20260723",
+      "name": "Ling-3.0-flash (free)",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
+      "created_human": "2026-07-23",
+      "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-20260723"
+    },
     {
       "id": "poolside/laguna-s-2.1",
       "canonical_slug": "poolside/laguna-s-2.1-20260720",
@@ -2799,8 +2815,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 7.756e-7,
-      "pricing_completion": 0.0000024376,
+      "pricing_prompt": 7.966e-7,
+      "pricing_completion": 0.0000025036,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -4287,8 +4303,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 2.6e-7,
-      "pricing_completion": 0.0000026,
+      "pricing_prompt": 1.95e-7,
+      "pricing_completion": 0.00000156,
       "created_human": "2026-02-25",
       "url": "https://huggingface.co/Qwen/Qwen3.5-27B"
     },
@@ -5318,8 +5334,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 3e-7,
-      "pricing_completion": 0.0000012,
+      "pricing_prompt": 2.55e-7,
+      "pricing_completion": 0.00000102,
       "created_human": "2025-10-23",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2"
     },
@@ -6993,8 +7009,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 1e-7,
-      "pricing_completion": 3e-7,
+      "pricing_prompt": 8e-8,
+      "pricing_completion": 4.5e-7,
       "created_human": "2025-03-12",
       "url": "https://huggingface.co/google/gemma-3-27b-it"
     },
