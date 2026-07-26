@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-26T16:00:17.515Z",
+  "fetched_at": "2026-07-26T23:00:20.791Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-26T16:00:12.890Z",
+    "as_of": "2026-07-26T23:00:15.654Z",
     "version": "v1",
     "start_date": "2026-06-26",
     "end_date": "2026-07-25"
   },
   "rankings_meta": {
-    "as_of": "2026-07-26T16:00:14.018Z",
+    "as_of": "2026-07-26T23:00:16.715Z",
     "version": "v1",
     "start_date": "2026-07-25",
     "end_date": "2026-07-25"
@@ -522,7 +522,7 @@
       {
         "rank": 16,
         "app_id": 3356965,
-        "app_name": "Pioneer (staging)",
+        "app_name": "Pioneer (development)",
         "total_tokens": "471421868323",
         "total_tokens_human": "471.42B",
         "total_requests": 7423269,
@@ -2252,7 +2252,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-26T16:00:14.018Z",
+      "as_of": "2026-07-26T23:00:16.715Z",
       "version": "v1",
       "start_date": "2026-07-25",
       "end_date": "2026-07-25"
@@ -2260,25 +2260,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-26T16:00:10.585Z",
+      "as_of": "2026-07-26T23:00:13.542Z",
       "version": "v1",
       "start_date": "2026-07-25",
       "end_date": "2026-07-25"
     },
     "week": {
-      "as_of": "2026-07-26T16:00:11.826Z",
+      "as_of": "2026-07-26T23:00:14.665Z",
       "version": "v1",
       "start_date": "2026-07-19",
       "end_date": "2026-07-25"
     },
     "month": {
-      "as_of": "2026-07-26T16:00:12.890Z",
+      "as_of": "2026-07-26T23:00:15.654Z",
       "version": "v1",
       "start_date": "2026-06-26",
       "end_date": "2026-07-25"
     }
   },
-  "models_total": 345,
+  "models_total": 343,
   "catalog": [
     {
       "id": "anthropic/claude-opus-5-fast",
@@ -2918,7 +2918,7 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 7.5e-7,
+      "pricing_prompt": 7.3e-7,
       "pricing_completion": 0.0000035,
       "created_human": "2026-06-12",
       "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code"
@@ -7578,38 +7578,6 @@
       "pricing_completion": 1e-7,
       "created_human": "2024-10-16",
       "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
-    },
-    {
-      "id": "inflection/inflection-3-pi",
-      "canonical_slug": "inflection/inflection-3-pi",
-      "name": "Inflection: Inflection 3 Pi",
-      "context_length": 8000,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 0.0000025,
-      "pricing_completion": 0.00001,
-      "created_human": "2024-10-11",
-      "url": "https://openrouter.ai/models/inflection/inflection-3-pi"
-    },
-    {
-      "id": "inflection/inflection-3-productivity",
-      "canonical_slug": "inflection/inflection-3-productivity",
-      "name": "Inflection: Inflection 3 Productivity",
-      "context_length": 8000,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 0.0000025,
-      "pricing_completion": 0.00001,
-      "created_human": "2024-10-11",
-      "url": "https://openrouter.ai/models/inflection/inflection-3-productivity"
     },
     {
       "id": "thedrummer/rocinante-12b",
