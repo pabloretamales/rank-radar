@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-27T16:00:16.017Z",
+  "fetched_at": "2026-07-27T23:00:15.831Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-27T16:00:11.827Z",
+    "as_of": "2026-07-27T23:00:11.529Z",
     "version": "v1",
     "start_date": "2026-06-27",
     "end_date": "2026-07-26"
   },
   "rankings_meta": {
-    "as_of": "2026-07-27T16:00:12.894Z",
+    "as_of": "2026-07-27T23:00:12.412Z",
     "version": "v1",
     "start_date": "2026-07-26",
     "end_date": "2026-07-26"
@@ -522,7 +522,7 @@
       {
         "rank": 16,
         "app_id": 3296290,
-        "app_name": "Mira is the leading AI agent inside Telegram",
+        "app_name": "Mira",
         "total_tokens": "411475621916",
         "total_tokens_human": "411.48B",
         "total_requests": 26394538,
@@ -531,7 +531,7 @@
       {
         "rank": 17,
         "app_id": 3356965,
-        "app_name": "Pioneer (staging)",
+        "app_name": "Pioneer (development)",
         "total_tokens": "409469166058",
         "total_tokens_human": "409.47B",
         "total_requests": 6598256,
@@ -887,8 +887,8 @@
         "n_outputs": 1,
         "created_ts": 1783590867,
         "created_human": "2026-07-09",
-        "pricing_prompt": 0.000001,
-        "pricing_completion": 0.000006,
+        "pricing_prompt": 5e-7,
+        "pricing_completion": 0.000003,
         "score": 1783590867,
         "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-pro-20260709"
       },
@@ -909,8 +909,8 @@
         "n_outputs": 1,
         "created_ts": 1783590864,
         "created_human": "2026-07-09",
-        "pricing_prompt": 0.000001,
-        "pricing_completion": 0.000006,
+        "pricing_prompt": 5e-7,
+        "pricing_completion": 0.000003,
         "score": 1783590864,
         "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-20260709"
       },
@@ -931,8 +931,8 @@
         "n_outputs": 1,
         "created_ts": 1783590861,
         "created_human": "2026-07-09",
-        "pricing_prompt": 0.0000025,
-        "pricing_completion": 0.000015,
+        "pricing_prompt": 0.00000125,
+        "pricing_completion": 0.0000075,
         "score": 1783590861,
         "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-pro-20260709"
       },
@@ -953,8 +953,8 @@
         "n_outputs": 1,
         "created_ts": 1783590857,
         "created_human": "2026-07-09",
-        "pricing_prompt": 0.0000025,
-        "pricing_completion": 0.000015,
+        "pricing_prompt": 0.00000125,
+        "pricing_completion": 0.0000075,
         "score": 1783590857,
         "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-20260709"
       },
@@ -2252,7 +2252,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-27T16:00:12.894Z",
+      "as_of": "2026-07-27T23:00:12.412Z",
       "version": "v1",
       "start_date": "2026-07-26",
       "end_date": "2026-07-26"
@@ -2260,25 +2260,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-27T16:00:09.654Z",
+      "as_of": "2026-07-27T23:00:09.530Z",
       "version": "v1",
       "start_date": "2026-07-26",
       "end_date": "2026-07-26"
     },
     "week": {
-      "as_of": "2026-07-27T16:00:10.589Z",
+      "as_of": "2026-07-27T23:00:10.574Z",
       "version": "v1",
       "start_date": "2026-07-20",
       "end_date": "2026-07-26"
     },
     "month": {
-      "as_of": "2026-07-27T16:00:11.827Z",
+      "as_of": "2026-07-27T23:00:11.529Z",
       "version": "v1",
       "start_date": "2026-06-27",
       "end_date": "2026-07-26"
     }
   },
-  "models_total": 341,
+  "models_total": 340,
   "catalog": [
     {
       "id": "anthropic/claude-opus-5-fast",
@@ -2541,8 +2541,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.000001,
-      "pricing_completion": 0.000006,
+      "pricing_prompt": 5e-7,
+      "pricing_completion": 0.000003,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-pro-20260709"
     },
@@ -2559,8 +2559,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.000001,
-      "pricing_completion": 0.000006,
+      "pricing_prompt": 5e-7,
+      "pricing_completion": 0.000003,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-20260709"
     },
@@ -2577,8 +2577,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.0000025,
-      "pricing_completion": 0.000015,
+      "pricing_prompt": 0.00000125,
+      "pricing_completion": 0.0000075,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-pro-20260709"
     },
@@ -2595,8 +2595,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.0000025,
-      "pricing_completion": 0.000015,
+      "pricing_prompt": 0.00000125,
+      "pricing_completion": 0.0000075,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-20260709"
     },
@@ -2885,8 +2885,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 7.798e-7,
-      "pricing_completion": 0.0000024508,
+      "pricing_prompt": 7.448e-7,
+      "pricing_completion": 0.0000023408,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -6045,24 +6045,6 @@
       "pricing_completion": 0.000008,
       "created_human": "2025-08-08",
       "url": "https://huggingface.co/ai21labs/AI21-Jamba-Large-1.7"
-    },
-    {
-      "id": "openai/gpt-5-chat",
-      "canonical_slug": "openai/gpt-5-chat-2025-08-07",
-      "name": "OpenAI: GPT-5 Chat",
-      "context_length": 128000,
-      "modalities": [
-        "file",
-        "image",
-        "text",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 0.00000125,
-      "pricing_completion": 0.00001,
-      "created_human": "2025-08-07",
-      "url": "https://openrouter.ai/models/openai/gpt-5-chat-2025-08-07"
     },
     {
       "id": "openai/gpt-5",
