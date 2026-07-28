@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-28T16:00:20.530Z",
+  "fetched_at": "2026-07-28T23:00:22.572Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-28T16:00:16.457Z",
+    "as_of": "2026-07-28T23:00:16.984Z",
     "version": "v1",
     "start_date": "2026-06-28",
     "end_date": "2026-07-27"
   },
   "rankings_meta": {
-    "as_of": "2026-07-28T16:00:17.911Z",
+    "as_of": "2026-07-28T23:00:17.858Z",
     "version": "v1",
     "start_date": "2026-07-27",
     "end_date": "2026-07-27"
@@ -540,7 +540,7 @@
       {
         "rank": 18,
         "app_id": 3296290,
-        "app_name": "Mira",
+        "app_name": "Mira is the leading AI agent inside Telegram",
         "total_tokens": "412683092146",
         "total_tokens_human": "412.68B",
         "total_requests": 26594045,
@@ -549,7 +549,7 @@
       {
         "rank": 19,
         "app_id": 4012572,
-        "app_name": "maven-audit-citations",
+        "app_name": "MavenBio",
         "total_tokens": "398604121845",
         "total_tokens_human": "398.60B",
         "total_requests": 6267815,
@@ -718,6 +718,30 @@
       },
       {
         "rank": 8,
+        "id": "google/gemini-3.6-flash:batch",
+        "slug": "google/gemini-3.6-flash-20260721",
+        "name": "Google: Gemini 3.6 Flash (batch)",
+        "description": "Gemini 3.6 Flash is a high-efficiency model from Google for coding, agentic workflows, and web and app development. It is designed to produce polished outputs with fewer unnecessary edits and...",
+        "context_length": 1048576,
+        "modalities": [
+          "text",
+          "image",
+          "video",
+          "file",
+          "audio",
+          "→text"
+        ],
+        "n_inputs": 5,
+        "n_outputs": 1,
+        "created_ts": 1784646733,
+        "created_human": "2026-07-21",
+        "pricing_prompt": 7.5e-7,
+        "pricing_completion": 0.00000375,
+        "score": 1784646733,
+        "url": "https://openrouter.ai/models/google/gemini-3.6-flash-20260721"
+      },
+      {
+        "rank": 9,
         "id": "google/gemini-3.5-flash-lite",
         "slug": "google/gemini-3.5-flash-lite-20260721",
         "name": "Google: Gemini 3.5 Flash Lite",
@@ -741,7 +765,31 @@
         "url": "https://openrouter.ai/models/google/gemini-3.5-flash-lite-20260721"
       },
       {
-        "rank": 9,
+        "rank": 10,
+        "id": "google/gemini-3.5-flash-lite:batch",
+        "slug": "google/gemini-3.5-flash-lite-20260721",
+        "name": "Google: Gemini 3.5 Flash Lite (batch)",
+        "description": "Gemini 3.5 Flash Lite is a high-efficiency model from Google with upgraded agentic capabilities. It is suited for subagents that execute focused tasks within complex, multi-agent workflows.",
+        "context_length": 1048576,
+        "modalities": [
+          "text",
+          "image",
+          "video",
+          "file",
+          "audio",
+          "→text"
+        ],
+        "n_inputs": 5,
+        "n_outputs": 1,
+        "created_ts": 1784646726,
+        "created_human": "2026-07-21",
+        "pricing_prompt": 1.5e-7,
+        "pricing_completion": 0.00000125,
+        "score": 1784646726,
+        "url": "https://openrouter.ai/models/google/gemini-3.5-flash-lite-20260721"
+      },
+      {
+        "rank": 11,
         "id": "meituan/longcat-2.0",
         "slug": "meituan/longcat-2.0-20260720",
         "name": "Meituan: LongCat 2.0",
@@ -761,7 +809,7 @@
         "url": "https://huggingface.co/meituan-longcat/LongCat-2.0"
       },
       {
-        "rank": 10,
+        "rank": 12,
         "id": "thinkingmachines/inkling",
         "slug": "thinkingmachines/inkling-20260715",
         "name": "Thinking Machines: Inkling",
@@ -783,7 +831,7 @@
         "url": "https://huggingface.co/thinkingmachines/Inkling"
       },
       {
-        "rank": 11,
+        "rank": 13,
         "id": "openrouter/auto-beta",
         "slug": "openrouter/auto-beta",
         "name": "Auto Router (Beta)",
@@ -808,7 +856,7 @@
         "url": "https://openrouter.ai/models/openrouter/auto-beta"
       },
       {
-        "rank": 12,
+        "rank": 14,
         "id": "moonshotai/kimi-k3",
         "slug": "moonshotai/kimi-k3-20260715",
         "name": "MoonshotAI: Kimi K3",
@@ -829,7 +877,7 @@
         "url": "https://huggingface.co/moonshotai/Kimi-K3"
       },
       {
-        "rank": 13,
+        "rank": 15,
         "id": "meta/muse-spark-1.1",
         "slug": "meta/muse-spark-1.1-20260709",
         "name": "Meta: Muse Spark 1.1",
@@ -853,7 +901,7 @@
         "url": "https://openrouter.ai/models/meta/muse-spark-1.1-20260709"
       },
       {
-        "rank": 14,
+        "rank": 16,
         "id": "kwaipilot/kat-coder-air-v2.5",
         "slug": "kwaipilot/kat-coder-air-v2.5-20260710",
         "name": "Kwaipilot: KAT-Coder-Air V2.5",
@@ -873,7 +921,7 @@
         "url": "https://openrouter.ai/models/kwaipilot/kat-coder-air-v2.5-20260710"
       },
       {
-        "rank": 15,
+        "rank": 17,
         "id": "kwaipilot/kat-coder-pro-v2.5",
         "slug": "kwaipilot/kat-coder-pro-v2.5-20260710",
         "name": "Kwaipilot: KAT-Coder-Pro V2.5",
@@ -893,7 +941,7 @@
         "url": "https://openrouter.ai/models/kwaipilot/kat-coder-pro-v2.5-20260710"
       },
       {
-        "rank": 16,
+        "rank": 18,
         "id": "openai/gpt-5.6-luna-pro",
         "slug": "openai/gpt-5.6-luna-pro-20260709",
         "name": "OpenAI: GPT-5.6 Luna Pro",
@@ -915,7 +963,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-pro-20260709"
       },
       {
-        "rank": 17,
+        "rank": 19,
         "id": "openai/gpt-5.6-luna",
         "slug": "openai/gpt-5.6-luna-20260709",
         "name": "OpenAI: GPT-5.6 Luna",
@@ -937,7 +985,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-20260709"
       },
       {
-        "rank": 18,
+        "rank": 20,
         "id": "openai/gpt-5.6-terra-pro",
         "slug": "openai/gpt-5.6-terra-pro-20260709",
         "name": "OpenAI: GPT-5.6 Terra Pro",
@@ -957,50 +1005,6 @@
         "pricing_completion": 0.0000075,
         "score": 1783590861,
         "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-pro-20260709"
-      },
-      {
-        "rank": 19,
-        "id": "openai/gpt-5.6-terra",
-        "slug": "openai/gpt-5.6-terra-20260709",
-        "name": "OpenAI: GPT-5.6 Terra",
-        "description": "GPT-5.6 Terra is a balanced model in OpenAI's GPT-5.6 series, positioned between the flagship Sol tier and the cost-efficient Luna tier. It is suited for everyday coding, reasoning, and agentic...",
-        "context_length": 1050000,
-        "modalities": [
-          "file",
-          "image",
-          "text",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1783590857,
-        "created_human": "2026-07-09",
-        "pricing_prompt": 0.00000125,
-        "pricing_completion": 0.0000075,
-        "score": 1783590857,
-        "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-20260709"
-      },
-      {
-        "rank": 20,
-        "id": "openai/gpt-5.6-sol-pro",
-        "slug": "openai/gpt-5.6-sol-pro-20260709",
-        "name": "OpenAI: GPT-5.6 Sol Pro",
-        "description": "GPT-5.6 Sol Pro is the same underlying model as [GPT-5.6 Sol](https://openrouter.ai/openai/gpt-5.6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
-        "context_length": 1050000,
-        "modalities": [
-          "file",
-          "image",
-          "text",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1783590854,
-        "created_human": "2026-07-09",
-        "pricing_prompt": 0.000005,
-        "pricing_completion": 0.00003,
-        "score": 1783590854,
-        "url": "https://openrouter.ai/models/openai/gpt-5.6-sol-pro-20260709"
       }
     ],
     "today": [
@@ -2252,7 +2256,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-28T16:00:17.911Z",
+      "as_of": "2026-07-28T23:00:17.858Z",
       "version": "v1",
       "start_date": "2026-07-27",
       "end_date": "2026-07-27"
@@ -2260,25 +2264,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-28T16:00:14.330Z",
+      "as_of": "2026-07-28T23:00:10.637Z",
       "version": "v1",
       "start_date": "2026-07-27",
       "end_date": "2026-07-27"
     },
     "week": {
-      "as_of": "2026-07-28T16:00:15.334Z",
+      "as_of": "2026-07-28T23:00:13.002Z",
       "version": "v1",
       "start_date": "2026-07-21",
       "end_date": "2026-07-27"
     },
     "month": {
-      "as_of": "2026-07-28T16:00:16.457Z",
+      "as_of": "2026-07-28T23:00:16.984Z",
       "version": "v1",
       "start_date": "2026-06-28",
       "end_date": "2026-07-27"
     }
   },
-  "models_total": 349,
+  "models_total": 367,
   "catalog": [
     {
       "id": "qwen/qwen3.7-flash",
@@ -2403,6 +2407,26 @@
       "url": "https://openrouter.ai/models/google/gemini-3.6-flash-20260721"
     },
     {
+      "id": "google/gemini-3.6-flash:batch",
+      "canonical_slug": "google/gemini-3.6-flash-20260721",
+      "name": "Google: Gemini 3.6 Flash (batch)",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio",
+        "→text"
+      ],
+      "n_inputs": 5,
+      "n_outputs": 1,
+      "pricing_prompt": 7.5e-7,
+      "pricing_completion": 0.00000375,
+      "created_human": "2026-07-21",
+      "url": "https://openrouter.ai/models/google/gemini-3.6-flash-20260721"
+    },
+    {
       "id": "google/gemini-3.5-flash-lite",
       "canonical_slug": "google/gemini-3.5-flash-lite-20260721",
       "name": "Google: Gemini 3.5 Flash Lite",
@@ -2419,6 +2443,26 @@
       "n_outputs": 1,
       "pricing_prompt": 3e-7,
       "pricing_completion": 0.0000025,
+      "created_human": "2026-07-21",
+      "url": "https://openrouter.ai/models/google/gemini-3.5-flash-lite-20260721"
+    },
+    {
+      "id": "google/gemini-3.5-flash-lite:batch",
+      "canonical_slug": "google/gemini-3.5-flash-lite-20260721",
+      "name": "Google: Gemini 3.5 Flash Lite (batch)",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio",
+        "→text"
+      ],
+      "n_inputs": 5,
+      "n_outputs": 1,
+      "pricing_prompt": 1.5e-7,
+      "pricing_completion": 0.00000125,
       "created_human": "2026-07-21",
       "url": "https://openrouter.ai/models/google/gemini-3.5-flash-lite-20260721"
     },
@@ -3115,6 +3159,24 @@
       "url": "https://huggingface.co/MiniMaxAI/Minimax-M3"
     },
     {
+      "id": "minimax/minimax-m3:batch",
+      "canonical_slug": "minimax/minimax-m3-20260531",
+      "name": "MiniMax: MiniMax M3 (batch)",
+      "context_length": 524288,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 1.5e-7,
+      "pricing_completion": 6e-7,
+      "created_human": "2026-05-31",
+      "url": "https://huggingface.co/MiniMaxAI/Minimax-M3"
+    },
+    {
       "id": "stepfun/step-3.7-flash",
       "canonical_slug": "stepfun/step-3.7-flash-20260528",
       "name": "StepFun: Step 3.7 Flash",
@@ -3197,8 +3259,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 0.000001475,
-      "pricing_completion": 0.000004425,
+      "pricing_prompt": 0.00000125,
+      "pricing_completion": 0.00000375,
       "created_human": "2026-05-21",
       "url": "https://openrouter.ai/models/qwen/qwen3.7-max-20260520"
     },
@@ -3237,6 +3299,26 @@
       "n_outputs": 1,
       "pricing_prompt": 0.0000015,
       "pricing_completion": 0.000009,
+      "created_human": "2026-05-19",
+      "url": "https://openrouter.ai/models/google/gemini-3.5-flash-20260519"
+    },
+    {
+      "id": "google/gemini-3.5-flash:batch",
+      "canonical_slug": "google/gemini-3.5-flash-20260519",
+      "name": "Google: Gemini 3.5 Flash (batch)",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio",
+        "→text"
+      ],
+      "n_inputs": 5,
+      "n_outputs": 1,
+      "pricing_prompt": 7.5e-7,
+      "pricing_completion": 0.0000045,
       "created_human": "2026-05-19",
       "url": "https://openrouter.ai/models/google/gemini-3.5-flash-20260519"
     },
@@ -3309,6 +3391,26 @@
       "n_outputs": 1,
       "pricing_prompt": 2.5e-7,
       "pricing_completion": 0.0000015,
+      "created_human": "2026-05-07",
+      "url": "https://openrouter.ai/models/google/gemini-3.1-flash-lite-20260507"
+    },
+    {
+      "id": "google/gemini-3.1-flash-lite:batch",
+      "canonical_slug": "google/gemini-3.1-flash-lite-20260507",
+      "name": "Google: Gemini 3.1 Flash Lite (batch)",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio",
+        "→text"
+      ],
+      "n_inputs": 5,
+      "n_outputs": 1,
+      "pricing_prompt": 1.25e-7,
+      "pricing_completion": 7.5e-7,
       "created_human": "2026-05-07",
       "url": "https://openrouter.ai/models/google/gemini-3.1-flash-lite-20260507"
     },
@@ -3579,8 +3681,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 1.4e-7,
-      "pricing_completion": 0.000001,
+      "pricing_prompt": 1e-7,
+      "pricing_completion": 9.5e-7,
       "created_human": "2026-04-27",
       "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B"
     },
@@ -3876,6 +3978,24 @@
       "url": "https://openrouter.ai/models/anthropic/claude-4.7-opus-20260416"
     },
     {
+      "id": "anthropic/claude-opus-4.7:batch",
+      "canonical_slug": "anthropic/claude-4.7-opus-20260416",
+      "name": "Anthropic: Claude Opus 4.7 (batch)",
+      "context_length": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.0000025,
+      "pricing_completion": 0.0000125,
+      "created_human": "2026-04-16",
+      "url": "https://openrouter.ai/models/anthropic/claude-4.7-opus-20260416"
+    },
+    {
       "id": "z-ai/glm-5.1",
       "canonical_slug": "z-ai/glm-5.1-20260406",
       "name": "Z.ai: GLM 5.1",
@@ -3904,8 +4024,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 1.6e-7,
-      "pricing_completion": 4.8e-7,
+      "pricing_prompt": 1.5e-7,
+      "pricing_completion": 4.5e-7,
       "created_human": "2026-04-03",
       "url": "https://huggingface.co/google/gemma-4-26B-A4B-it"
     },
@@ -4601,6 +4721,26 @@
       "url": "https://openrouter.ai/models/google/gemini-3.1-pro-preview-20260219"
     },
     {
+      "id": "google/gemini-3.1-pro-preview:batch",
+      "canonical_slug": "google/gemini-3.1-pro-preview-20260219",
+      "name": "Google: Gemini 3.1 Pro Preview (batch)",
+      "context_length": 1048576,
+      "modalities": [
+        "audio",
+        "file",
+        "image",
+        "text",
+        "video",
+        "→text"
+      ],
+      "n_inputs": 5,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000001,
+      "pricing_completion": 0.000006,
+      "created_human": "2026-02-19",
+      "url": "https://openrouter.ai/models/google/gemini-3.1-pro-preview-20260219"
+    },
+    {
       "id": "anthropic/claude-sonnet-4.6",
       "canonical_slug": "anthropic/claude-4.6-sonnet-20260217",
       "name": "Anthropic: Claude Sonnet 4.6",
@@ -4717,6 +4857,24 @@
       "n_outputs": 1,
       "pricing_prompt": 0.000005,
       "pricing_completion": 0.000025,
+      "created_human": "2026-02-04",
+      "url": "https://openrouter.ai/models/anthropic/claude-4.6-opus-20260205"
+    },
+    {
+      "id": "anthropic/claude-opus-4.6:batch",
+      "canonical_slug": "anthropic/claude-4.6-opus-20260205",
+      "name": "Anthropic: Claude Opus 4.6 (batch)",
+      "context_length": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.0000025,
+      "pricing_completion": 0.0000125,
       "created_human": "2026-02-04",
       "url": "https://openrouter.ai/models/anthropic/claude-4.6-opus-20260205"
     },
@@ -4992,6 +5150,26 @@
       "url": "https://openrouter.ai/models/google/gemini-3-flash-preview-20251217"
     },
     {
+      "id": "google/gemini-3-flash-preview:batch",
+      "canonical_slug": "google/gemini-3-flash-preview-20251217",
+      "name": "Google: Gemini 3 Flash Preview (batch)",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "audio",
+        "video",
+        "→text"
+      ],
+      "n_inputs": 5,
+      "n_outputs": 1,
+      "pricing_prompt": 2.5e-7,
+      "pricing_completion": 0.0000015,
+      "created_human": "2025-12-17",
+      "url": "https://openrouter.ai/models/google/gemini-3-flash-preview-20251217"
+    },
+    {
       "id": "nvidia/nemotron-3-nano-30b-a3b",
       "canonical_slug": "nvidia/nemotron-3-nano-30b-a3b",
       "name": "NVIDIA: Nemotron 3 Nano 30B A3B",
@@ -5074,6 +5252,24 @@
       "n_outputs": 1,
       "pricing_prompt": 0.00000175,
       "pricing_completion": 0.000014,
+      "created_human": "2025-12-10",
+      "url": "https://openrouter.ai/models/openai/gpt-5.2-20251211"
+    },
+    {
+      "id": "openai/gpt-5.2:batch",
+      "canonical_slug": "openai/gpt-5.2-20251211",
+      "name": "OpenAI: GPT-5.2 (batch)",
+      "context_length": 400000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 8.75e-7,
+      "pricing_completion": 0.000007,
       "created_human": "2025-12-10",
       "url": "https://openrouter.ai/models/openai/gpt-5.2-20251211"
     },
@@ -5284,6 +5480,24 @@
       "url": "https://openrouter.ai/models/anthropic/claude-4.5-opus-20251124"
     },
     {
+      "id": "anthropic/claude-opus-4.5:batch",
+      "canonical_slug": "anthropic/claude-4.5-opus-20251124",
+      "name": "Anthropic: Claude Opus 4.5 (batch)",
+      "context_length": 200000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.0000025,
+      "pricing_completion": 0.0000125,
+      "created_human": "2025-11-24",
+      "url": "https://openrouter.ai/models/anthropic/claude-4.5-opus-20251124"
+    },
+    {
       "id": "allenai/olmo-3-32b-think",
       "canonical_slug": "allenai/olmo-3-32b-think-20251121",
       "name": "AllenAI: Olmo 3 32B Think",
@@ -5348,6 +5562,24 @@
       "n_outputs": 1,
       "pricing_prompt": 0.00000125,
       "pricing_completion": 0.00001,
+      "created_human": "2025-11-13",
+      "url": "https://openrouter.ai/models/openai/gpt-5.1-20251113"
+    },
+    {
+      "id": "openai/gpt-5.1:batch",
+      "canonical_slug": "openai/gpt-5.1-20251113",
+      "name": "OpenAI: GPT-5.1 (batch)",
+      "context_length": 400000,
+      "modalities": [
+        "image",
+        "text",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 6.25e-7,
+      "pricing_completion": 0.000005,
       "created_human": "2025-11-13",
       "url": "https://openrouter.ai/models/openai/gpt-5.1-20251113"
     },
@@ -5621,8 +5853,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 1.17e-7,
-      "pricing_completion": 0.000001365,
+      "pricing_prompt": 1.8e-7,
+      "pricing_completion": 0.0000021,
       "created_human": "2025-10-14",
       "url": "https://huggingface.co/Qwen/Qwen3-VL-8B-Thinking"
     },
@@ -5728,8 +5960,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 1.3e-7,
-      "pricing_completion": 0.00000156,
+      "pricing_prompt": 2e-7,
+      "pricing_completion": 0.0000024,
       "created_human": "2025-10-06",
       "url": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Thinking"
     },
@@ -5803,6 +6035,24 @@
       "url": "https://openrouter.ai/models/anthropic/claude-4.5-sonnet-20250929"
     },
     {
+      "id": "anthropic/claude-sonnet-4.5:batch",
+      "canonical_slug": "anthropic/claude-4.5-sonnet-20250929",
+      "name": "Anthropic: Claude Sonnet 4.5 (batch)",
+      "context_length": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.0000015,
+      "pricing_completion": 0.0000075,
+      "created_human": "2025-09-29",
+      "url": "https://openrouter.ai/models/anthropic/claude-4.5-sonnet-20250929"
+    },
+    {
       "id": "deepseek/deepseek-v3.2-exp",
       "canonical_slug": "deepseek/deepseek-v3.2-exp",
       "name": "DeepSeek: DeepSeek V3.2 Exp",
@@ -5862,8 +6112,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 2.6e-7,
-      "pricing_completion": 0.0000026,
+      "pricing_prompt": 4e-7,
+      "pricing_completion": 0.000004,
       "created_human": "2025-09-23",
       "url": "https://huggingface.co/Qwen/Qwen3-VL-235B-A22B-Thinking"
     },
@@ -5976,8 +6226,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 9.75e-8,
-      "pricing_completion": 7.8e-7,
+      "pricing_prompt": 1.5e-7,
+      "pricing_completion": 0.0000012,
       "created_human": "2025-09-11",
       "url": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Thinking"
     },
@@ -6024,8 +6274,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 2.6e-7,
-      "pricing_completion": 7.8e-7,
+      "pricing_prompt": 4e-7,
+      "pricing_completion": 0.0000012,
       "created_human": "2025-09-08",
       "url": "https://openrouter.ai/models/qwen/qwen-plus-2025-07-28"
     },
@@ -6072,8 +6322,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.3e-7,
-      "pricing_completion": 0.00000156,
+      "pricing_prompt": 2e-7,
+      "pricing_completion": 0.0000024,
       "created_human": "2025-08-28",
       "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507"
     },
@@ -6231,6 +6481,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-5-mini-2025-08-07"
     },
     {
+      "id": "openai/gpt-5-mini:batch",
+      "canonical_slug": "openai/gpt-5-mini-2025-08-07",
+      "name": "OpenAI: GPT-5 Mini (batch)",
+      "context_length": 400000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 1.25e-7,
+      "pricing_completion": 0.000001,
+      "created_human": "2025-08-07",
+      "url": "https://openrouter.ai/models/openai/gpt-5-mini-2025-08-07"
+    },
+    {
       "id": "openai/gpt-5-nano",
       "canonical_slug": "openai/gpt-5-nano-2025-08-07",
       "name": "OpenAI: GPT-5 Nano",
@@ -6329,6 +6597,24 @@
       "n_outputs": 1,
       "pricing_prompt": 0.000015,
       "pricing_completion": 0.000075,
+      "created_human": "2025-08-05",
+      "url": "https://openrouter.ai/models/anthropic/claude-4.1-opus-20250805"
+    },
+    {
+      "id": "anthropic/claude-opus-4.1:batch",
+      "canonical_slug": "anthropic/claude-4.1-opus-20250805",
+      "name": "Anthropic: Claude Opus 4.1 (batch)",
+      "context_length": 200000,
+      "modalities": [
+        "image",
+        "text",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.0000075,
+      "pricing_completion": 0.0000375,
       "created_human": "2025-08-05",
       "url": "https://openrouter.ai/models/anthropic/claude-4.1-opus-20250805"
     },
@@ -6479,6 +6765,26 @@
       "n_outputs": 1,
       "pricing_prompt": 1e-7,
       "pricing_completion": 4e-7,
+      "created_human": "2025-07-22",
+      "url": "https://openrouter.ai/models/google/gemini-2.5-flash-lite"
+    },
+    {
+      "id": "google/gemini-2.5-flash-lite:batch",
+      "canonical_slug": "google/gemini-2.5-flash-lite",
+      "name": "Google: Gemini 2.5 Flash Lite (batch)",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "audio",
+        "video",
+        "→text"
+      ],
+      "n_inputs": 5,
+      "n_outputs": 1,
+      "pricing_prompt": 5e-8,
+      "pricing_completion": 2e-7,
       "created_human": "2025-07-22",
       "url": "https://openrouter.ai/models/google/gemini-2.5-flash-lite"
     },
@@ -6649,6 +6955,26 @@
       "url": "https://openrouter.ai/models/google/gemini-2.5-flash"
     },
     {
+      "id": "google/gemini-2.5-flash:batch",
+      "canonical_slug": "google/gemini-2.5-flash",
+      "name": "Google: Gemini 2.5 Flash (batch)",
+      "context_length": 1048576,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "audio",
+        "video",
+        "→text"
+      ],
+      "n_inputs": 5,
+      "n_outputs": 1,
+      "pricing_prompt": 1.5e-7,
+      "pricing_completion": 0.00000125,
+      "created_human": "2025-06-17",
+      "url": "https://openrouter.ai/models/google/gemini-2.5-flash"
+    },
+    {
       "id": "google/gemini-2.5-pro",
       "canonical_slug": "google/gemini-2.5-pro",
       "name": "Google: Gemini 2.5 Pro",
@@ -6665,6 +6991,26 @@
       "n_outputs": 1,
       "pricing_prompt": 0.00000125,
       "pricing_completion": 0.00001,
+      "created_human": "2025-06-17",
+      "url": "https://openrouter.ai/models/google/gemini-2.5-pro"
+    },
+    {
+      "id": "google/gemini-2.5-pro:batch",
+      "canonical_slug": "google/gemini-2.5-pro",
+      "name": "Google: Gemini 2.5 Pro (batch)",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "audio",
+        "video",
+        "→text"
+      ],
+      "n_inputs": 5,
+      "n_outputs": 1,
+      "pricing_prompt": 6.25e-7,
+      "pricing_completion": 0.000005,
       "created_human": "2025-06-17",
       "url": "https://openrouter.ai/models/google/gemini-2.5-pro"
     },
@@ -7541,8 +7887,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.3e-7,
-      "pricing_completion": 4e-7,
+      "pricing_prompt": 1e-7,
+      "pricing_completion": 3.2e-7,
       "created_human": "2024-12-06",
       "url": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct"
     },
