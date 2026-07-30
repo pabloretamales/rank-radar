@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-07-30T16:00:18.420Z",
+  "fetched_at": "2026-07-30T23:00:16.181Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-07-30T16:00:12.550Z",
+    "as_of": "2026-07-30T23:00:12.930Z",
     "version": "v1",
     "start_date": "2026-06-30",
     "end_date": "2026-07-29"
   },
   "rankings_meta": {
-    "as_of": "2026-07-30T16:00:13.791Z",
+    "as_of": "2026-07-30T23:00:13.850Z",
     "version": "v1",
     "start_date": "2026-07-29",
     "end_date": "2026-07-29"
@@ -340,7 +340,7 @@
       {
         "rank": 16,
         "app_id": 2344758,
-        "app_name": "Sahasra ICP Classifier",
+        "app_name": "Sahasra",
         "total_tokens": "126262859401",
         "total_tokens_human": "126.26B",
         "total_requests": 1778258,
@@ -540,7 +540,7 @@
       {
         "rank": 18,
         "app_id": 3296290,
-        "app_name": "Mira",
+        "app_name": "Mira is the leading AI agent inside Telegram",
         "total_tokens": "412916252640",
         "total_tokens_human": "412.92B",
         "total_requests": 26891721,
@@ -667,8 +667,8 @@
         "n_outputs": 1,
         "created_ts": 1784652683,
         "created_human": "2026-07-21",
-        "pricing_prompt": 1e-7,
-        "pricing_completion": 2e-7,
+        "pricing_prompt": 9e-8,
+        "pricing_completion": 1.8e-7,
         "score": 1784652683,
         "url": "https://huggingface.co/poolside/Laguna-S-2.1"
       },
@@ -957,8 +957,8 @@
         "n_outputs": 1,
         "created_ts": 1783590867,
         "created_human": "2026-07-09",
-        "pricing_prompt": 5e-7,
-        "pricing_completion": 0.000003,
+        "pricing_prompt": 1e-7,
+        "pricing_completion": 6.000000000000001e-7,
         "score": 1783590867,
         "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-pro-20260709"
       },
@@ -979,8 +979,8 @@
         "n_outputs": 1,
         "created_ts": 1783590864,
         "created_human": "2026-07-09",
-        "pricing_prompt": 5e-7,
-        "pricing_completion": 0.000003,
+        "pricing_prompt": 1e-7,
+        "pricing_completion": 6.000000000000001e-7,
         "score": 1783590864,
         "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-20260709"
       },
@@ -1001,8 +1001,8 @@
         "n_outputs": 1,
         "created_ts": 1783590861,
         "created_human": "2026-07-09",
-        "pricing_prompt": 0.00000125,
-        "pricing_completion": 0.0000075,
+        "pricing_prompt": 0.0000010000000000000002,
+        "pricing_completion": 0.000006,
         "score": 1783590861,
         "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-pro-20260709"
       }
@@ -2188,7 +2188,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-07-30T16:00:13.791Z",
+      "as_of": "2026-07-30T23:00:13.850Z",
       "version": "v1",
       "start_date": "2026-07-29",
       "end_date": "2026-07-29"
@@ -2196,25 +2196,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-07-30T16:00:10.315Z",
+      "as_of": "2026-07-30T23:00:10.529Z",
       "version": "v1",
       "start_date": "2026-07-29",
       "end_date": "2026-07-29"
     },
     "week": {
-      "as_of": "2026-07-30T16:00:11.474Z",
+      "as_of": "2026-07-30T23:00:11.447Z",
       "version": "v1",
       "start_date": "2026-07-23",
       "end_date": "2026-07-29"
     },
     "month": {
-      "as_of": "2026-07-30T16:00:12.550Z",
+      "as_of": "2026-07-30T23:00:12.930Z",
       "version": "v1",
       "start_date": "2026-06-30",
       "end_date": "2026-07-29"
     }
   },
-  "models_total": 367,
+  "models_total": 364,
   "catalog": [
     {
       "id": "qwen/qwen3.7-flash",
@@ -2297,8 +2297,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1e-7,
-      "pricing_completion": 2e-7,
+      "pricing_prompt": 9e-8,
+      "pricing_completion": 1.8e-7,
       "created_human": "2026-07-21",
       "url": "https://huggingface.co/poolside/Laguna-S-2.1"
     },
@@ -2535,8 +2535,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 5e-7,
-      "pricing_completion": 0.000003,
+      "pricing_prompt": 1e-7,
+      "pricing_completion": 6.000000000000001e-7,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-pro-20260709"
     },
@@ -2553,8 +2553,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 5e-7,
-      "pricing_completion": 0.000003,
+      "pricing_prompt": 1e-7,
+      "pricing_completion": 6.000000000000001e-7,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-20260709"
     },
@@ -2571,8 +2571,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.00000125,
-      "pricing_completion": 0.0000075,
+      "pricing_prompt": 0.0000010000000000000002,
+      "pricing_completion": 0.000006,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-pro-20260709"
     },
@@ -2589,8 +2589,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.00000125,
-      "pricing_completion": 0.0000075,
+      "pricing_prompt": 0.0000010000000000000002,
+      "pricing_completion": 0.000006,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-20260709"
     },
@@ -3504,7 +3504,7 @@
       "n_inputs": 2,
       "n_outputs": 1,
       "pricing_prompt": 0.0000029,
-      "pricing_completion": 0.000015,
+      "pricing_completion": 0.000014,
       "created_human": "2026-04-27",
       "url": "https://openrouter.ai/models/~moonshotai/kimi-latest"
     },
@@ -3886,8 +3886,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 6.46e-7,
-      "pricing_completion": 0.00000272,
+      "pricing_prompt": 9.5e-7,
+      "pricing_completion": 0.000004,
       "created_human": "2026-04-20",
       "url": "https://huggingface.co/moonshotai/Kimi-K2.6"
     },
@@ -5827,42 +5827,6 @@
       "url": "https://openrouter.ai/models/openai/gpt-5-image"
     },
     {
-      "id": "openai/o3-deep-research",
-      "canonical_slug": "openai/o3-deep-research-2025-06-26",
-      "name": "OpenAI: o3 Deep Research",
-      "context_length": 200000,
-      "modalities": [
-        "image",
-        "text",
-        "file",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 0.00001,
-      "pricing_completion": 0.00004,
-      "created_human": "2025-10-10",
-      "url": "https://openrouter.ai/models/openai/o3-deep-research-2025-06-26"
-    },
-    {
-      "id": "openai/o4-mini-deep-research",
-      "canonical_slug": "openai/o4-mini-deep-research-2025-06-26",
-      "name": "OpenAI: o4 Mini Deep Research",
-      "context_length": 200000,
-      "modalities": [
-        "file",
-        "image",
-        "text",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 0.000002,
-      "pricing_completion": 0.000008,
-      "created_human": "2025-10-10",
-      "url": "https://openrouter.ai/models/openai/o4-mini-deep-research-2025-06-26"
-    },
-    {
       "id": "google/gemini-2.5-flash-image",
       "canonical_slug": "google/gemini-2.5-flash-image",
       "name": "Google: Nano Banana (Gemini 2.5 Flash Image)",
@@ -6097,23 +6061,6 @@
       "pricing_completion": 0.00000325,
       "created_human": "2025-09-23",
       "url": "https://openrouter.ai/models/qwen/qwen3-coder-plus"
-    },
-    {
-      "id": "openai/gpt-5-codex",
-      "canonical_slug": "openai/gpt-5-codex",
-      "name": "OpenAI: GPT-5 Codex",
-      "context_length": 400000,
-      "modalities": [
-        "text",
-        "image",
-        "→text"
-      ],
-      "n_inputs": 2,
-      "n_outputs": 1,
-      "pricing_prompt": 0.00000125,
-      "pricing_completion": 0.00001,
-      "created_human": "2025-09-23",
-      "url": "https://openrouter.ai/models/openai/gpt-5-codex"
     },
     {
       "id": "deepseek/deepseek-v3.1-terminus",
