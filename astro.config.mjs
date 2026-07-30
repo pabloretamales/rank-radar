@@ -4,7 +4,7 @@ import tailwind from '@astrojs/tailwind';
 import icon from 'astro-icon';
 
 export default defineConfig({
-  site: 'https://rankradar.dinamialabs.com',
+  site: 'https://ai-rank-radar.vercel.app',
   trailingSlash: 'always',
   output: 'static',
   integrations: [

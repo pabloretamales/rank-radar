@@ -6,7 +6,7 @@ Visibilidad en tiempo real de:
 3. **Top apps OpenRouter** — popular, trending, por tokens
 4. **ExploreYC** — 5 startups YC con foco IA, acumuladas diariamente sin repetir
 
-Sitio: [rankradar.dinamialabs.com](https://rankradar.dinamialabs.com)
+Sitio: [ai-rank-radar.vercel.app](https://ai-rank-radar.vercel.app/)
 
 ## Stack
 
