@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-01T16:00:17.598Z",
+  "fetched_at": "2026-08-01T23:00:15.283Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-01T16:00:13.202Z",
+    "as_of": "2026-08-01T23:00:11.513Z",
     "version": "v1",
     "start_date": "2026-07-02",
     "end_date": "2026-07-31"
   },
   "rankings_meta": {
-    "as_of": "2026-08-01T16:00:14.036Z",
+    "as_of": "2026-08-01T23:00:12.354Z",
     "version": "v1",
     "start_date": "2026-07-31",
     "end_date": "2026-07-31"
@@ -185,7 +185,7 @@
       {
         "rank": 19,
         "app_id": 2344758,
-        "app_name": "Sahasra B2B Lead Scoring",
+        "app_name": "Sahasra",
         "total_tokens": "23494612575",
         "total_tokens_human": "23.49B",
         "total_requests": 417317,
@@ -358,7 +358,7 @@
       {
         "rank": 18,
         "app_id": 2344758,
-        "app_name": "Sahasra B2B Lead Scoring",
+        "app_name": "Sahasra",
         "total_tokens": "123151407476",
         "total_tokens_human": "123.15B",
         "total_requests": 1881223,
@@ -568,6 +568,26 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "~deepseek/deepseek-v4-flash-latest",
+        "slug": "~deepseek/deepseek-v4-flash-latest",
+        "name": "DeepSeek V4 Flash Latest",
+        "description": "This model always redirects to the latest model in the DeepSeek V4 Flash family.",
+        "context_length": 1048576,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1785606009,
+        "created_human": "2026-08-01",
+        "pricing_prompt": 9e-8,
+        "pricing_completion": 1.8e-7,
+        "score": 1785606009,
+        "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
+      },
+      {
+        "rank": 2,
         "id": "deepseek/deepseek-v4-flash-0731",
         "slug": "deepseek/deepseek-v4-flash-20260731",
         "name": "DeepSeek: DeepSeek V4 Flash 0731",
@@ -581,13 +601,13 @@
         "n_outputs": 1,
         "created_ts": 1785478908,
         "created_human": "2026-07-31",
-        "pricing_prompt": 1.4e-7,
-        "pricing_completion": 2.8e-7,
+        "pricing_prompt": 9e-8,
+        "pricing_completion": 1.8e-7,
         "score": 1785478908,
         "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
       },
       {
-        "rank": 2,
+        "rank": 3,
         "id": "thinkingmachines/inkling-small",
         "slug": "thinkingmachines/inkling-small-20260730",
         "name": "Thinking Machines: Inkling Small",
@@ -609,7 +629,7 @@
         "url": "https://huggingface.co/thinkingmachines/Inkling-Small"
       },
       {
-        "rank": 3,
+        "rank": 4,
         "id": "qwen/qwen3.7-flash",
         "slug": "qwen/qwen3.7-flash-20260727",
         "name": "Qwen: Qwen3.7 Flash",
@@ -631,7 +651,7 @@
         "url": "https://openrouter.ai/models/qwen/qwen3.7-flash-20260727"
       },
       {
-        "rank": 4,
+        "rank": 5,
         "id": "anthropic/claude-opus-5-fast",
         "slug": "anthropic/claude-opus-5-fast-20260723",
         "name": "Claude Opus 5 (Fast)",
@@ -653,7 +673,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-opus-5-fast-20260723"
       },
       {
-        "rank": 5,
+        "rank": 6,
         "id": "anthropic/claude-opus-5",
         "slug": "anthropic/claude-opus-5-20260723",
         "name": "Claude Opus 5",
@@ -675,7 +695,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-opus-5-20260723"
       },
       {
-        "rank": 6,
+        "rank": 7,
         "id": "inclusionai/ling-3.0-flash:free",
         "slug": "inclusionai/ling-3.0-flash-20260723",
         "name": "Ling-3.0-flash (free)",
@@ -695,7 +715,7 @@
         "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-20260723"
       },
       {
-        "rank": 7,
+        "rank": 8,
         "id": "poolside/laguna-s-2.1",
         "slug": "poolside/laguna-s-2.1-20260720",
         "name": "Poolside: Laguna S 2.1",
@@ -715,7 +735,7 @@
         "url": "https://huggingface.co/poolside/Laguna-S-2.1"
       },
       {
-        "rank": 8,
+        "rank": 9,
         "id": "poolside/laguna-s-2.1:free",
         "slug": "poolside/laguna-s-2.1-20260720",
         "name": "Poolside: Laguna S 2.1 (free)",
@@ -735,7 +755,7 @@
         "url": "https://huggingface.co/poolside/Laguna-S-2.1"
       },
       {
-        "rank": 9,
+        "rank": 10,
         "id": "google/gemini-3.6-flash",
         "slug": "google/gemini-3.6-flash-20260721",
         "name": "Google: Gemini 3.6 Flash",
@@ -759,7 +779,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.6-flash-20260721"
       },
       {
-        "rank": 10,
+        "rank": 11,
         "id": "google/gemini-3.5-flash-lite",
         "slug": "google/gemini-3.5-flash-lite-20260721",
         "name": "Google: Gemini 3.5 Flash Lite",
@@ -783,7 +803,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.5-flash-lite-20260721"
       },
       {
-        "rank": 11,
+        "rank": 12,
         "id": "meituan/longcat-2.0",
         "slug": "meituan/longcat-2.0-20260720",
         "name": "Meituan: LongCat 2.0",
@@ -803,7 +823,7 @@
         "url": "https://huggingface.co/meituan-longcat/LongCat-2.0"
       },
       {
-        "rank": 12,
+        "rank": 13,
         "id": "thinkingmachines/inkling",
         "slug": "thinkingmachines/inkling-20260715",
         "name": "Thinking Machines: Inkling",
@@ -825,7 +845,7 @@
         "url": "https://huggingface.co/thinkingmachines/Inkling"
       },
       {
-        "rank": 13,
+        "rank": 14,
         "id": "openrouter/auto-beta",
         "slug": "openrouter/auto-beta",
         "name": "Auto Router (Beta)",
@@ -850,7 +870,7 @@
         "url": "https://openrouter.ai/models/openrouter/auto-beta"
       },
       {
-        "rank": 14,
+        "rank": 15,
         "id": "moonshotai/kimi-k3",
         "slug": "moonshotai/kimi-k3-20260715",
         "name": "MoonshotAI: Kimi K3",
@@ -871,7 +891,7 @@
         "url": "https://huggingface.co/moonshotai/Kimi-K3"
       },
       {
-        "rank": 15,
+        "rank": 16,
         "id": "meta/muse-spark-1.1",
         "slug": "meta/muse-spark-1.1-20260709",
         "name": "Meta: Muse Spark 1.1",
@@ -895,7 +915,7 @@
         "url": "https://openrouter.ai/models/meta/muse-spark-1.1-20260709"
       },
       {
-        "rank": 16,
+        "rank": 17,
         "id": "kwaipilot/kat-coder-air-v2.5",
         "slug": "kwaipilot/kat-coder-air-v2.5-20260710",
         "name": "Kwaipilot: KAT-Coder-Air V2.5",
@@ -915,7 +935,7 @@
         "url": "https://openrouter.ai/models/kwaipilot/kat-coder-air-v2.5-20260710"
       },
       {
-        "rank": 17,
+        "rank": 18,
         "id": "kwaipilot/kat-coder-pro-v2.5",
         "slug": "kwaipilot/kat-coder-pro-v2.5-20260710",
         "name": "Kwaipilot: KAT-Coder-Pro V2.5",
@@ -935,7 +955,7 @@
         "url": "https://openrouter.ai/models/kwaipilot/kat-coder-pro-v2.5-20260710"
       },
       {
-        "rank": 18,
+        "rank": 19,
         "id": "openai/gpt-5.6-luna-pro",
         "slug": "openai/gpt-5.6-luna-pro-20260709",
         "name": "OpenAI: GPT-5.6 Luna Pro",
@@ -957,7 +977,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-pro-20260709"
       },
       {
-        "rank": 19,
+        "rank": 20,
         "id": "openai/gpt-5.6-luna",
         "slug": "openai/gpt-5.6-luna-20260709",
         "name": "OpenAI: GPT-5.6 Luna",
@@ -977,28 +997,6 @@
         "pricing_completion": 6.000000000000001e-7,
         "score": 1783590864,
         "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-20260709"
-      },
-      {
-        "rank": 20,
-        "id": "openai/gpt-5.6-terra-pro",
-        "slug": "openai/gpt-5.6-terra-pro-20260709",
-        "name": "OpenAI: GPT-5.6 Terra Pro",
-        "description": "GPT-5.6 Terra Pro is the same underlying model as [GPT-5.6 Terra](https://openrouter.ai/openai/gpt-5.6-terra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
-        "context_length": 1050000,
-        "modalities": [
-          "file",
-          "image",
-          "text",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1783590861,
-        "created_human": "2026-07-09",
-        "pricing_prompt": 0.0000010000000000000002,
-        "pricing_completion": 0.000006,
-        "score": 1783590861,
-        "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-pro-20260709"
       }
     ],
     "today": [
@@ -2216,7 +2214,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-01T16:00:14.036Z",
+      "as_of": "2026-08-01T23:00:12.354Z",
       "version": "v1",
       "start_date": "2026-07-31",
       "end_date": "2026-07-31"
@@ -2224,26 +2222,42 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-01T16:00:10.758Z",
+      "as_of": "2026-08-01T23:00:09.293Z",
       "version": "v1",
       "start_date": "2026-07-31",
       "end_date": "2026-07-31"
     },
     "week": {
-      "as_of": "2026-08-01T16:00:11.603Z",
+      "as_of": "2026-08-01T23:00:10.407Z",
       "version": "v1",
       "start_date": "2026-07-25",
       "end_date": "2026-07-31"
     },
     "month": {
-      "as_of": "2026-08-01T16:00:13.202Z",
+      "as_of": "2026-08-01T23:00:11.513Z",
       "version": "v1",
       "start_date": "2026-07-02",
       "end_date": "2026-07-31"
     }
   },
-  "models_total": 336,
+  "models_total": 337,
   "catalog": [
+    {
+      "id": "~deepseek/deepseek-v4-flash-latest",
+      "canonical_slug": "~deepseek/deepseek-v4-flash-latest",
+      "name": "DeepSeek V4 Flash Latest",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 9e-8,
+      "pricing_completion": 1.8e-7,
+      "created_human": "2026-08-01",
+      "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
+    },
     {
       "id": "deepseek/deepseek-v4-flash-0731",
       "canonical_slug": "deepseek/deepseek-v4-flash-20260731",
@@ -2255,8 +2269,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.4e-7,
-      "pricing_completion": 2.8e-7,
+      "pricing_prompt": 9e-8,
+      "pricing_completion": 1.8e-7,
       "created_human": "2026-07-31",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
     },
@@ -2901,8 +2915,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 7.168e-7,
-      "pricing_completion": 0.0000022528,
+      "pricing_prompt": 4.2e-7,
+      "pricing_completion": 0.00000132,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
