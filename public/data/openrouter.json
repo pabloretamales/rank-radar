@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-02T16:00:18.597Z",
+  "fetched_at": "2026-08-02T23:00:17.905Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-02T16:00:14.343Z",
+    "as_of": "2026-08-02T23:00:12.550Z",
     "version": "v1",
     "start_date": "2026-07-03",
     "end_date": "2026-08-01"
   },
   "rankings_meta": {
-    "as_of": "2026-08-02T16:00:15.579Z",
+    "as_of": "2026-08-02T23:00:14.055Z",
     "version": "v1",
     "start_date": "2026-08-01",
     "end_date": "2026-08-01"
@@ -972,7 +972,7 @@
         "created_ts": 1783590867,
         "created_human": "2026-07-09",
         "pricing_prompt": 1e-7,
-        "pricing_completion": 6.000000000000001e-7,
+        "pricing_completion": 6e-7,
         "score": 1783590867,
         "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-pro-20260709"
       },
@@ -994,7 +994,7 @@
         "created_ts": 1783590864,
         "created_human": "2026-07-09",
         "pricing_prompt": 1e-7,
-        "pricing_completion": 6.000000000000001e-7,
+        "pricing_completion": 6e-7,
         "score": 1783590864,
         "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-20260709"
       }
@@ -2197,7 +2197,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-02T16:00:15.579Z",
+      "as_of": "2026-08-02T23:00:14.055Z",
       "version": "v1",
       "start_date": "2026-08-01",
       "end_date": "2026-08-01"
@@ -2205,19 +2205,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-02T16:00:10.349Z",
+      "as_of": "2026-08-02T23:00:10.144Z",
       "version": "v1",
       "start_date": "2026-08-01",
       "end_date": "2026-08-01"
     },
     "week": {
-      "as_of": "2026-08-02T16:00:13.393Z",
+      "as_of": "2026-08-02T23:00:11.058Z",
       "version": "v1",
       "start_date": "2026-07-26",
       "end_date": "2026-08-01"
     },
     "month": {
-      "as_of": "2026-08-02T16:00:14.343Z",
+      "as_of": "2026-08-02T23:00:12.550Z",
       "version": "v1",
       "start_date": "2026-07-03",
       "end_date": "2026-08-01"
@@ -2555,7 +2555,7 @@
       "n_inputs": 3,
       "n_outputs": 1,
       "pricing_prompt": 1e-7,
-      "pricing_completion": 6.000000000000001e-7,
+      "pricing_completion": 6e-7,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-pro-20260709"
     },
@@ -2573,7 +2573,7 @@
       "n_inputs": 3,
       "n_outputs": 1,
       "pricing_prompt": 1e-7,
-      "pricing_completion": 6.000000000000001e-7,
+      "pricing_completion": 6e-7,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-20260709"
     },
@@ -2590,7 +2590,7 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.0000010000000000000002,
+      "pricing_prompt": 0.000001,
       "pricing_completion": 0.000006,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-pro-20260709"
@@ -2608,7 +2608,7 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.0000010000000000000002,
+      "pricing_prompt": 0.000001,
       "pricing_completion": 0.000006,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-20260709"
