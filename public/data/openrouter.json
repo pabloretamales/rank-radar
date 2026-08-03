@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-03T16:00:21.327Z",
+  "fetched_at": "2026-08-03T23:00:19.138Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-03T16:00:16.633Z",
+    "as_of": "2026-08-03T23:00:13.974Z",
     "version": "v1",
     "start_date": "2026-07-04",
     "end_date": "2026-08-02"
   },
   "rankings_meta": {
-    "as_of": "2026-08-03T16:00:17.726Z",
+    "as_of": "2026-08-03T23:00:15.298Z",
     "version": "v1",
     "start_date": "2026-08-02",
     "end_date": "2026-08-02"
@@ -1003,7 +1003,7 @@
       {
         "rank": 1,
         "id": "deepseek/deepseek-v4-flash",
-        "name": "DeepSeek: DeepSeek V4 Flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
         "slug": "deepseek/deepseek-v4-flash-20260423",
         "total_tokens": 817317462750,
         "total_tokens_human": "817.32B",
@@ -1018,7 +1018,7 @@
       {
         "rank": 2,
         "id": "deepseek/deepseek-v4-flash",
-        "name": "DeepSeek: DeepSeek V4 Flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
         "slug": "deepseek/deepseek-v4-flash-20260423",
         "total_tokens": 706786292625,
         "total_tokens_human": "706.79B",
@@ -1305,7 +1305,7 @@
       {
         "rank": 1,
         "id": "deepseek/deepseek-v4-flash",
-        "name": "DeepSeek: DeepSeek V4 Flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
         "slug": "deepseek/deepseek-v4-flash-20260423",
         "total_tokens": 7220350124001,
         "total_tokens_human": "7.22T",
@@ -1485,7 +1485,7 @@
       {
         "rank": 13,
         "id": "deepseek/deepseek-v4-flash",
-        "name": "DeepSeek: DeepSeek V4 Flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
         "slug": "deepseek/deepseek-v4-flash-20260423",
         "total_tokens": 1316494259652,
         "total_tokens_human": "1.32T",
@@ -1622,7 +1622,7 @@
       {
         "rank": 2,
         "id": "deepseek/deepseek-v4-flash",
-        "name": "DeepSeek: DeepSeek V4 Flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
         "slug": "deepseek/deepseek-v4-flash-20260423",
         "total_tokens": 25516785681459,
         "total_tokens_human": "25.52T",
@@ -1926,7 +1926,7 @@
       {
         "rank": 2,
         "id": "deepseek/deepseek-v4-flash",
-        "name": "DeepSeek: DeepSeek V4 Flash",
+        "name": "DeepSeek: DeepSeek V4 Flash 0423",
         "slug": "deepseek/deepseek-v4-flash-20260423",
         "total_tokens": 1316494259652,
         "total_tokens_human": "1.32T",
@@ -2146,7 +2146,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-03T16:00:17.726Z",
+      "as_of": "2026-08-03T23:00:15.298Z",
       "version": "v1",
       "start_date": "2026-08-02",
       "end_date": "2026-08-02"
@@ -2154,19 +2154,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-03T16:00:13.030Z",
+      "as_of": "2026-08-03T23:00:10.964Z",
       "version": "v1",
       "start_date": "2026-08-02",
       "end_date": "2026-08-02"
     },
     "week": {
-      "as_of": "2026-08-03T16:00:15.094Z",
+      "as_of": "2026-08-03T23:00:12.073Z",
       "version": "v1",
       "start_date": "2026-07-27",
       "end_date": "2026-08-02"
     },
     "month": {
-      "as_of": "2026-08-03T16:00:16.633Z",
+      "as_of": "2026-08-03T23:00:13.974Z",
       "version": "v1",
       "start_date": "2026-07-04",
       "end_date": "2026-08-02"
@@ -2865,8 +2865,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 6.146e-7,
-      "pricing_completion": 0.0000019316,
+      "pricing_prompt": 6.286e-7,
+      "pricing_completion": 0.0000019756,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -3581,7 +3581,7 @@
     {
       "id": "deepseek/deepseek-v4-flash",
       "canonical_slug": "deepseek/deepseek-v4-flash-20260423",
-      "name": "DeepSeek: DeepSeek V4 Flash",
+      "name": "DeepSeek: DeepSeek V4 Flash 0423",
       "context_length": 1048576,
       "modalities": [
         "text",
@@ -6055,7 +6055,7 @@
       "n_inputs": 1,
       "n_outputs": 1,
       "pricing_prompt": 7e-8,
-      "pricing_completion": 2.8e-7,
+      "pricing_completion": 2.7e-7,
       "created_human": "2025-07-31",
       "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct"
     },
@@ -7235,8 +7235,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.3e-7,
-      "pricing_completion": 4e-7,
+      "pricing_prompt": 1e-7,
+      "pricing_completion": 3.2e-7,
       "created_human": "2024-12-06",
       "url": "https://huggingface.co/meta-llama/Llama-3.3-70B-Instruct"
     },
