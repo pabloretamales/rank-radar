@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-04T16:00:24.070Z",
+  "fetched_at": "2026-08-04T23:00:16.719Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-04T16:00:12.650Z",
+    "as_of": "2026-08-04T23:00:13.090Z",
     "version": "v1",
     "start_date": "2026-07-05",
     "end_date": "2026-08-03"
   },
   "rankings_meta": {
-    "as_of": "2026-08-04T16:00:15.612Z",
+    "as_of": "2026-08-04T23:00:14.270Z",
     "version": "v1",
     "start_date": "2026-08-03",
     "end_date": "2026-08-03"
@@ -558,7 +558,7 @@
       {
         "rank": 20,
         "app_id": 3296290,
-        "app_name": "Mira is the leading AI agent inside Telegram",
+        "app_name": "Mira",
         "total_tokens": "409536008868",
         "total_tokens_human": "409.54B",
         "total_requests": 27336222,
@@ -2163,7 +2163,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-04T16:00:15.612Z",
+      "as_of": "2026-08-04T23:00:14.270Z",
       "version": "v1",
       "start_date": "2026-08-03",
       "end_date": "2026-08-03"
@@ -2171,19 +2171,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-04T16:00:09.937Z",
+      "as_of": "2026-08-04T23:00:10.273Z",
       "version": "v1",
       "start_date": "2026-08-03",
       "end_date": "2026-08-03"
     },
     "week": {
-      "as_of": "2026-08-04T16:00:11.058Z",
+      "as_of": "2026-08-04T23:00:11.203Z",
       "version": "v1",
       "start_date": "2026-07-28",
       "end_date": "2026-08-03"
     },
     "month": {
-      "as_of": "2026-08-04T16:00:12.650Z",
+      "as_of": "2026-08-04T23:00:13.090Z",
       "version": "v1",
       "start_date": "2026-07-05",
       "end_date": "2026-08-03"
@@ -2636,7 +2636,7 @@
     {
       "id": "x-ai/grok-4.5",
       "canonical_slug": "x-ai/grok-4.5-20260708",
-      "name": "xAI: Grok 4.5",
+      "name": "SpaceXAI: Grok 4.5",
       "context_length": 500000,
       "modalities": [
         "text",
@@ -3130,7 +3130,7 @@
     {
       "id": "x-ai/grok-build-0.1",
       "canonical_slug": "x-ai/grok-build-0.1-20260520",
-      "name": "xAI: Grok Build 0.1",
+      "name": "SpaceXAI: Grok Build 0.1",
       "context_length": 256000,
       "modalities": [
         "text",
@@ -3258,7 +3258,7 @@
     {
       "id": "x-ai/grok-4.3",
       "canonical_slug": "x-ai/grok-4.3-20260430",
-      "name": "xAI: Grok 4.3",
+      "name": "SpaceXAI: Grok 4.3",
       "context_length": 1000000,
       "modalities": [
         "text",
@@ -3925,7 +3925,7 @@
     {
       "id": "x-ai/grok-4.20-multi-agent",
       "canonical_slug": "x-ai/grok-4.20-multi-agent-20260309",
-      "name": "xAI: Grok 4.20 Multi-Agent",
+      "name": "SpaceXAI: Grok 4.20 Multi-Agent",
       "context_length": 2000000,
       "modalities": [
         "text",
@@ -3943,7 +3943,7 @@
     {
       "id": "x-ai/grok-4.20",
       "canonical_slug": "x-ai/grok-4.20-20260309",
-      "name": "xAI: Grok 4.20",
+      "name": "SpaceXAI: Grok 4.20",
       "context_length": 2000000,
       "modalities": [
         "text",
@@ -4039,8 +4039,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 2.5e-7,
-      "pricing_completion": 0.000001,
+      "pricing_prompt": 2.7e-7,
+      "pricing_completion": 0.00000108,
       "created_human": "2026-03-18",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7"
     },
@@ -6318,8 +6318,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 7.5e-8,
-      "pricing_completion": 2e-7,
+      "pricing_prompt": 9.375e-8,
+      "pricing_completion": 2.5e-7,
       "created_human": "2025-06-20",
       "url": "https://huggingface.co/mistralai/Mistral-Small-3.2-24B-Instruct-2506"
     },
