@@ -9,7 +9,7 @@ const dict = getDict(locale);
 
 const today: any = exploreycToday ?? { items: [], totals: {}, rate_limit: {} };
 
-// Top 5 con rank asignado
+// Top N con rank asignado
 const todayItems = (today.items ?? []).map((it: any, idx: number) => ({
   ...it,
   rank: idx + 1,

@@ -13,9 +13,23 @@ pnpm-debug.log*
 
 # Environment & secrets
 .env
-.env.local
-.env.*.local
+.env.*
+!.env.example
 # .env.example se commitea (es la plantilla, sin secretos)
+
+# Certificados y claves privadas
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Credenciales cloud
+credentials.json
+service-account*.json
+
+# Auth tokens (revisar si rank-radar los usa localmente antes de activar)
+.npmrc
+.netrc
 
 # Local build artifacts
 .cache/

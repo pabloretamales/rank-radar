@@ -15,8 +15,11 @@
     "toggleLang": "ES"
   },
   "home": {
-    "intro": "Quantitative AI model rankings + the 50 curated news of the day, AI-summarized from 7 free sources. No newsletters, no clickbait.",
+    "intro": "Quantitative AI model rankings, GitHub repos, OpenRouter consumption and AI-focused YC startups. No newsletters, no clickbait.",
     "sectionCompare": "Compare Models",
+    "sectionExploreYC": "YC startups today",
+    "sectionExploreYCDesc": "AI-relevant YC startups from the current batch.",
+    "openExploreYC": "View startups",
     "sectionGithub": "GitHub Top",
     "sectionGithubDesc": "Top-starred repos by time window (1d / 7d / 30d / 90d / all-time).",
     "sectionModels": "Top AI Models",
@@ -104,10 +107,10 @@
     "empty": "Pick up to 3 models above and click Compare."
   },
   "exploreyc": {
-    "title": "ExploreYC — 5 AI-focused YC startups, every day",
-    "subtitle": "Every day, 5 AI-relevant YC startups get added, prioritizing the most recent from the current batch. No repeats across runs.",
-    "sectionToday": "Today's 5",
-    "sectionTodayDesc": "Top 5 YC startups from the current batch, filtered by AI keywords. Refreshed once a day with a single API call.",
+    "title": "ExploreYC — 12 AI-focused YC startups, every day",
+    "subtitle": "Every day, AI-relevant YC startups get added, prioritizing the most recent from the current batch. No repeats across runs.",
+    "sectionToday": "Today",
+    "sectionTodayDesc": "YC startups from the current batch, filtered by AI keywords. Refreshed once a day with a single API call.",
     "todayCount": "Showing {shown} of {relevant} AI-relevant from the current batch",
     "hiring": "Hiring",
     "stage": "Stage",
@@ -121,7 +124,7 @@
     "company": "DinamIA Labs",
     "dataRefresh": "Data refreshed daily via cron",
     "credits": "Data provided by GitHub Search, Artificial Analysis, OpenRouter, ExploreYC, and OpenClaw.",
-    "builtWith": "Built with OpenClaw · MiniMax-M3"
+    "builtWith": "Built with OpenClaw"
   },
   "common": {
     "rank": "#",

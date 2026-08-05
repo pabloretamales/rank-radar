@@ -40,7 +40,7 @@ const OUT_TODAY = join(ROOT, 'public', 'data', 'exploreyc-today.json');
 const OUT_HISTORY = join(ROOT, 'public', 'data', 'exploreyc-history.json');
 
 const API_BASE = 'https://api.exploreyc.com/api/v1';
-const TOP_N = 5;              // cantidad que va al "today"
+const TOP_N = 12;             // cantidad que va al "today"
 const FETCH_LIMIT = 100;      // cantidad pedida a la API
 const TOP_AI_POOL = 30;       // solo los N más recientes se puntúan (ahorra CPU)
 

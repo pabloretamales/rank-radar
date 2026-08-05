@@ -3,49 +3,48 @@ import Base from '@/layouts/Base.astro';
 import { getDict, detectLocaleFromUrl } from '@/i18n';
 import RepoCard from '@components/RepoCard.astro';
 import ModelCard from '@components/ModelCard.astro';
+import CompanyCard from '@components/CompanyCard.astro';
 import RankedBarChart from '@components/RankedBarChart.astro';
-import NewsCard from '@components/news/NewsCard.astro';
 import githubData from '../../public/data/github-windows.json';
 import aaData from '../../public/data/aa-models.json';
 import openrouterData from '../../public/data/openrouter.json';
-import newsData from '../../public/data/news-latest.json';
+import exploreycToday from '../../public/data/exploreyc-today.json';
 import manifest from '../../public/data/manifest.json';
 
 const locale = detectLocaleFromUrl(Astro.url);
 const dict = getDict(locale);
 
-const githubTop10 = githubData?.windows?.find(w => w.label === '7d')?.items?.slice(0, 10) ?? [];
-const modelsTop10 = aaData?.rankings?.by_intelligence?.slice(0, 10) ?? [];
-const orTop10 = openrouterData?.rankings?.week?.slice(0, 10) ?? [];
-const newsTop16 = (newsData?.items ?? []).slice(0, 16);
+const githubTop = githubData?.windows?.find(w => w.label === '7d')?.items?.slice(0, 8) ?? [];
+const modelsTop = aaData?.rankings?.by_intelligence?.slice(0, 8) ?? [];
+const orTop = openrouterData?.rankings?.week?.slice(0, 8) ?? [];
+const todayItems = (exploreycToday?.items ?? []).map((it, idx) => ({ ...it, rank: idx + 1 }));
 const lastUpdated = manifest?.generated_at;
 
-// Trunca tagline si tiene Pulse IA también
 const tagline = locale === 'es'
-  ? 'La IA en 5 minutos al día — rankings + noticias curadas, en español.'
-  : 'AI in 5 minutes a day — rankings + curated news.';
+  ? 'La IA en 5 minutos al día — rankings y startups, en español.'
+  : 'AI in 5 minutes a day — rankings and startups.';
 
-// Datos para los bar charts (top 10).
+// Datos para los bar charts.
 function humanStars(n) {
   if (n == null) return '—';
   if (n >= 1000) return (n / 1000).toFixed(1) + 'k';
   return String(n);
 }
-const ghBars = githubTop10.map((r) => ({
+const ghBars = githubTop.map((r) => ({
   rank: r.rank,
   name: r.full_name?.split('/')[1] ?? r.full_name,
   value: r.stargazers_count ?? 0,
   valueHuman: humanStars(r.stargazers_count) + ' ⭐',
   url: r.html_url,
 }));
-const modelsBars = modelsTop10.map((m) => ({
+const modelsBars = modelsTop.map((m) => ({
   rank: m.rank,
   name: m.name,
   value: m.score ?? 0,
   valueHuman: (m.score ?? 0).toFixed(1) + ' pts',
   url: `https://artificialanalysis.ai/models/${m.slug || m.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`,
 }));
-const orBars = orTop10.map((m) => ({
+const orBars = orTop.map((m) => ({
   rank: m.rank,
   name: m.name,
   value: Number(m.total_tokens ?? 0),
@@ -55,7 +54,7 @@ const orBars = orTop10.map((m) => ({
 ---
 
 <Base locale={locale} dict={dict}>
-  <section class="mb-12">
+  <section class="mb-10">
     <h1 class="text-3xl sm:text-4xl font-bold mb-3">{tagline}</h1>
     <p class="text-lg max-w-3xl" style="color: var(--text-muted);">{dict.home.intro}</p>
     {lastUpdated && (
@@ -65,112 +64,67 @@ const orBars = orTop10.map((m) => ({
     )}
   </section>
 
-  {newsTop16.length > 0 && (
-    <section class="mb-10">
-      <header class="mb-4">
-        <div>
-             <h2 class="text-xl font-semibold flex items-center gap-2">
-               <span>Pulse IA</span>
-               <span class="text-xs font-normal px-2 py-0.5 rounded" style="background: var(--bg-tag, #27272a); color: var(--text-muted, #a1a1aa);">
-                 {locale === 'es' ? 'Hoy' : 'Today'}
-               </span>
-             </h2>
-             <p class="text-sm" style="color: var(--text-muted, #a1a1aa);">
-           {locale === 'es'
-             ? `${newsTop16.length} noticias curadas, resumidas por IA en español — actualizadas 2×/día.`
-             : `${newsTop16.length} curated news, AI-summarized in Spanish — refreshed 2x/day.`}
-          </p>
-        </div>
-      </header>
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
-        {newsTop16.map((it) => <NewsCard item={it} locale={locale} />)}
-      </div>
-      {newsData?.items?.filter((it) => it.confirmed_by > 1).length > 0 && (
-        <p class="text-xs mt-3" style="color: var(--text-muted, #71717a);">
-          {locale === 'es'
-            ? `✓ ${newsData.items.filter((it) => it.confirmed_by > 1).length} items confirmados por 2+ fuentes.`
-            : `✓ ${newsData.items.filter((it) => it.confirmed_by > 1).length} items confirmed by 2+ sources.`}
-        </p>
-      )}
-    </section>
-  )}
-
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
     <!-- GitHub widget -->
-    <section class="lg:col-span-1">
-      <header class="mb-4">
+    <section>
+      <header class="mb-4 flex items-baseline gap-2">
         <h2 class="text-xl font-semibold">{dict.home.sectionGithub}</h2>
-        <p class="text-sm" style="color: var(--text-muted);">{dict.home.sectionGithubDesc}</p>
+        <span class="text-xs" style="color: var(--text-muted);">{dict.home.sectionGithubDesc}</span>
       </header>
       <div class="card p-4 mb-3">
-        <RankedBarChart items={ghBars} topN={10} color="#22c55e" />
+        <RankedBarChart items={ghBars} topN={8} color="#22c55e" />
       </div>
-      <details class="text-xs" style="color: var(--text-muted);">
-        <summary class="cursor-pointer hover:opacity-80">{dict.home.viewFullList}</summary>
-        <div class="space-y-2 mt-3">
-          {githubTop10.length === 0 && <p>{dict.common.none}</p>}
-          {githubTop10.map((repo) => <RepoCard repo={repo} dict={dict} compact />)}
-        </div>
-      </details>
-      <a href={(locale === 'es' ? '' : '/en') + '/github/'} class="btn-tab mt-4 inline-block">
+      <a href={(locale === 'es' ? '' : '/en') + '/github/'} class="btn-tab inline-block">
         {dict.home.openGithub} →
       </a>
     </section>
 
     <!-- Models widget -->
-    <section class="lg:col-span-1">
-      <header class="mb-4">
+    <section>
+      <header class="mb-4 flex items-baseline gap-2">
         <h2 class="text-xl font-semibold">{dict.home.sectionModels}</h2>
-        <p class="text-sm" style="color: var(--text-muted);">
+        <span class="text-xs" style="color: var(--text-muted);">
           {dict.home.sectionModelsDesc}
-          {aaData?.tier && <span class="badge ml-2">{aaData.tier.toUpperCase()}</span>}
-        </p>
+          {aaData?.tier && <span class="badge ml-1">{aaData.tier.toUpperCase()}</span>}
+        </span>
       </header>
       <div class="card p-4 mb-3">
-        <RankedBarChart items={modelsBars} topN={10} color="#7c3aed" />
+        <RankedBarChart items={modelsBars} topN={8} color="#7c3aed" />
       </div>
-      <details class="text-xs" style="color: var(--text-muted);">
-        <summary class="cursor-pointer hover:opacity-80">{dict.home.viewFullList}</summary>
-        <div class="space-y-2 mt-3">
-          {modelsTop10.length === 0 && <p>{dict.common.none}</p>}
-          {modelsTop10.map((m) => <ModelCard model={m} metric="by_intelligence" dict={dict} />)}
-        </div>
-      </details>
-      <a href={(locale === 'es' ? '' : '/en') + '/models/'} class="btn-tab mt-4 inline-block">
+      <a href={(locale === 'es' ? '' : '/en') + '/models/'} class="btn-tab inline-block">
         {dict.home.openModels} →
       </a>
     </section>
 
-    <!-- OpenRouter widget: muestra MODELOS POR USO DE TOKENS (week) -->
-    <section class="lg:col-span-1">
-      <header class="mb-4">
+    <!-- OpenRouter widget -->
+    <section>
+      <header class="mb-4 flex items-baseline gap-2">
         <h2 class="text-xl font-semibold">{dict.home.sectionOpenRouter}</h2>
-        <p class="text-sm" style="color: var(--text-muted);">{dict.home.sectionOpenRouterDesc}</p>
+        <span class="text-xs" style="color: var(--text-muted);">{dict.home.sectionOpenRouterDesc}</span>
       </header>
       <div class="card p-4 mb-3">
-        <RankedBarChart items={orBars} topN={10} color="#3b82f6" />
+        <RankedBarChart items={orBars} topN={8} color="#3b82f6" />
       </div>
-      <details class="text-xs" style="color: var(--text-muted);">
-        <summary class="cursor-pointer hover:opacity-80">{dict.home.viewFullList}</summary>
-        <div class="space-y-2 mt-3">
-          {orTop10.length === 0 && <p>{dict.common.none}</p>}
-          {orTop10.map((m) => (
-            <a href={m.url} target="_blank" rel="noopener" class="card block p-3">
-              <div class="flex items-start gap-3">
-                <div class={`rank-badge ${m.rank === 1 ? 'gold' : m.rank === 2 ? 'silver' : m.rank === 3 ? 'bronze' : ''} shrink-0 text-sm`}>#{m.rank}</div>
-                <div class="flex-1 min-w-0">
-                  <div class="flex items-baseline gap-2 flex-wrap">
-                    <span class="font-semibold text-sm truncate">{m.name}</span>
-                    <span class="text-xs" style="color: var(--text-muted);">🪙 {m.total_tokens_human}</span>
-                  </div>
-                </div>
-              </div>
-            </a>
-          ))}
-        </div>
-      </details>
-      <a href={(locale === 'es' ? '' : '/en') + '/openrouter/'} class="btn-tab mt-4 inline-block">
+      <a href={(locale === 'es' ? '' : '/en') + '/openrouter/'} class="btn-tab inline-block">
         {dict.home.openOpenRouter} →
+      </a>
+    </section>
+
+    <!-- ExploreYC widget -->
+    <section>
+      <header class="mb-4 flex items-baseline gap-2">
+        <h2 class="text-xl font-semibold">{dict.home.sectionExploreYC}</h2>
+        <span class="text-xs" style="color: var(--text-muted);">{dict.home.sectionExploreYCDesc}</span>
+      </header>
+      <div class="space-y-3">
+        {todayItems.length === 0 ? (
+          <p class="card p-4 text-sm" style="color: var(--text-muted);">{dict.exploreyc.noResults}</p>
+        ) : (
+          todayItems.slice(0, 4).map((c) => <CompanyCard company={c} dict={dict} />)
+        )}
+      </div>
+      <a href={(locale === 'es' ? '' : '/en') + '/exploreyc/'} class="btn-tab mt-3 inline-block">
+        {dict.home.openExploreYC} →
       </a>
     </section>
   </div>

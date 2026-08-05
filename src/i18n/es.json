@@ -15,8 +15,11 @@
     "toggleLang": "EN"
   },
   "home": {
-    "intro": "Rankings cuantitativos de modelos AI + las 50 noticias curadas del día, resumidas por IA desde 7 fuentes gratuitas. Sin newsletters, sin clickbait.",
+    "intro": "Rankings cuantitativos de modelos AI, repos de GitHub, consumo de OpenRouter y startups YC con foco IA. Sin newsletters, sin clickbait.",
     "sectionCompare": "Comparar Modelos",
+    "sectionExploreYC": "Startups YC del día",
+    "sectionExploreYCDesc": "Startups YC AI-relevant del último batch.",
+    "openExploreYC": "Ver startups",
     "sectionGithub": "Top GitHub",
     "sectionGithubDesc": "Repos con más estrellas por ventana de tiempo (1d / 7d / 30d / 90d / histórico).",
     "sectionModels": "Top Modelos IA",
@@ -106,10 +109,10 @@
     "empty": "Elegí hasta 3 modelos arriba y hacé click en Comparar."
   },
   "exploreyc": {
-    "title": "ExploreYC — 5 startups YC con foco IA, cada día",
-    "subtitle": "Cada día se agregan 5 startups YC AI-relevant, priorizando las más recientes del último batch. Sin repetir entre corridas.",
-    "sectionToday": "5 de hoy",
-    "sectionTodayDesc": "Top 5 startups YC del último batch, filtradas por keywords AI. Se actualiza 1 vez al día con un único call al API.",
+    "title": "ExploreYC — 12 startups YC con foco IA, cada día",
+    "subtitle": "Cada día se agregan startups YC AI-relevant, priorizando las más recientes del último batch. Sin repetir entre corridas.",
+    "sectionToday": "Hoy",
+    "sectionTodayDesc": "Startups YC del último batch, filtradas por keywords AI. Se actualiza 1 vez al día con un único call al API.",
     "todayCount": "Mostrando {shown} de {relevant} AI-relevant del último batch",
     "hiring": "Hiring",
     "stage": "Etapa",
@@ -123,7 +126,7 @@
     "company": "DinamIA Labs",
     "dataRefresh": "Datos refrescados diariamente vía cron",
     "credits": "Datos provistos por GitHub Search, Artificial Analysis, OpenRouter, ExploreYC y OpenClaw.",
-    "builtWith": "Construido con OpenClaw · MiniMax-M3"
+    "builtWith": "Construido con OpenClaw"
   },
   "common": {
     "rank": "#",
