@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-10T16:00:18.602Z",
+  "fetched_at": "2026-08-10T23:00:16.709Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-10T16:00:12.665Z",
+    "as_of": "2026-08-10T23:00:12.927Z",
     "version": "v1",
     "start_date": "2026-07-11",
     "end_date": "2026-08-09"
   },
   "rankings_meta": {
-    "as_of": "2026-08-10T16:00:14.227Z",
+    "as_of": "2026-08-10T23:00:14.069Z",
     "version": "v1",
     "start_date": "2026-08-09",
     "end_date": "2026-08-09"
@@ -568,6 +568,27 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "meta/muse-glimmer-30b",
+        "slug": "meta/muse-glimmer-30b-20260810",
+        "name": "Meta: Muse Glimmer 30B",
+        "description": "Muse Glimmer 30B is a dense, open-weight multimodal model from Meta Superintelligence Labs, distilled from Muse Spark and optimized for autonomous agents on consumer hardware. It is suited for long-horizon...",
+        "context_length": 131072,
+        "modalities": [
+          "text",
+          "image",
+          "→text"
+        ],
+        "n_inputs": 2,
+        "n_outputs": 1,
+        "created_ts": 1786302394,
+        "created_human": "2026-08-09",
+        "pricing_prompt": 3.5e-7,
+        "pricing_completion": 0.0000015,
+        "score": 1786302394,
+        "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B"
+      },
+      {
+        "rank": 2,
         "id": "inclusionai/ling-3.0-tiny:free",
         "slug": "inclusionai/ling-3.0-tiny-20260806",
         "name": "inclusionAI: Ling 3.0 Tiny (free)",
@@ -587,7 +608,7 @@
         "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny"
       },
       {
-        "rank": 2,
+        "rank": 3,
         "id": "meta/muse-spark-1.2",
         "slug": "meta/muse-spark-1.2-20260805",
         "name": "Meta: Muse Spark 1.2",
@@ -611,7 +632,7 @@
         "url": "https://openrouter.ai/models/meta/muse-spark-1.2-20260805"
       },
       {
-        "rank": 3,
+        "rank": 4,
         "id": "qwen/qwen3.8-max",
         "slug": "qwen/qwen3.8-max-20260803",
         "name": "Qwen: Qwen3.8 Max",
@@ -633,7 +654,7 @@
         "url": "https://openrouter.ai/models/qwen/qwen3.8-max-20260803"
       },
       {
-        "rank": 4,
+        "rank": 5,
         "id": "~deepseek/deepseek-v4-flash-latest",
         "slug": "~deepseek/deepseek-v4-flash-latest",
         "name": "DeepSeek V4 Flash Latest",
@@ -653,7 +674,7 @@
         "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
       },
       {
-        "rank": 5,
+        "rank": 6,
         "id": "deepseek/deepseek-v4-flash-0731",
         "slug": "deepseek/deepseek-v4-flash-20260731",
         "name": "DeepSeek: DeepSeek V4 Flash 0731",
@@ -673,7 +694,7 @@
         "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
       },
       {
-        "rank": 6,
+        "rank": 7,
         "id": "thinkingmachines/inkling-small",
         "slug": "thinkingmachines/inkling-small-20260730",
         "name": "Thinking Machines: Inkling Small",
@@ -695,7 +716,7 @@
         "url": "https://huggingface.co/thinkingmachines/Inkling-Small"
       },
       {
-        "rank": 7,
+        "rank": 8,
         "id": "qwen/qwen3.7-flash",
         "slug": "qwen/qwen3.7-flash-20260727",
         "name": "Qwen: Qwen3.7 Flash",
@@ -717,7 +738,7 @@
         "url": "https://openrouter.ai/models/qwen/qwen3.7-flash-20260727"
       },
       {
-        "rank": 8,
+        "rank": 9,
         "id": "anthropic/claude-opus-5-fast",
         "slug": "anthropic/claude-opus-5-fast-20260723",
         "name": "Claude Opus 5 (Fast)",
@@ -739,7 +760,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-opus-5-fast-20260723"
       },
       {
-        "rank": 9,
+        "rank": 10,
         "id": "anthropic/claude-opus-5",
         "slug": "anthropic/claude-opus-5-20260723",
         "name": "Claude Opus 5",
@@ -761,7 +782,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-opus-5-20260723"
       },
       {
-        "rank": 10,
+        "rank": 11,
         "id": "anthropic/claude-opus-5:batch",
         "slug": "anthropic/claude-opus-5-20260723",
         "name": "Claude Opus 5 (batch)",
@@ -783,7 +804,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-opus-5-20260723"
       },
       {
-        "rank": 11,
+        "rank": 12,
         "id": "inclusionai/ling-3.0-flash",
         "slug": "inclusionai/ling-3.0-flash-20260723",
         "name": "Ling-3.0-flash",
@@ -803,7 +824,7 @@
         "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash"
       },
       {
-        "rank": 12,
+        "rank": 13,
         "id": "poolside/laguna-s-2.1",
         "slug": "poolside/laguna-s-2.1-20260720",
         "name": "Poolside: Laguna S 2.1",
@@ -823,7 +844,7 @@
         "url": "https://huggingface.co/poolside/Laguna-S-2.1"
       },
       {
-        "rank": 13,
+        "rank": 14,
         "id": "poolside/laguna-s-2.1:free",
         "slug": "poolside/laguna-s-2.1-20260720",
         "name": "Poolside: Laguna S 2.1 (free)",
@@ -843,7 +864,7 @@
         "url": "https://huggingface.co/poolside/Laguna-S-2.1"
       },
       {
-        "rank": 14,
+        "rank": 15,
         "id": "google/gemini-3.6-flash",
         "slug": "google/gemini-3.6-flash-20260721",
         "name": "Google: Gemini 3.6 Flash",
@@ -867,7 +888,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.6-flash-20260721"
       },
       {
-        "rank": 15,
+        "rank": 16,
         "id": "google/gemini-3.6-flash:batch",
         "slug": "google/gemini-3.6-flash-20260721",
         "name": "Google: Gemini 3.6 Flash (batch)",
@@ -891,7 +912,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.6-flash-20260721"
       },
       {
-        "rank": 16,
+        "rank": 17,
         "id": "google/gemini-3.5-flash-lite",
         "slug": "google/gemini-3.5-flash-lite-20260721",
         "name": "Google: Gemini 3.5 Flash Lite",
@@ -915,7 +936,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.5-flash-lite-20260721"
       },
       {
-        "rank": 17,
+        "rank": 18,
         "id": "google/gemini-3.5-flash-lite:batch",
         "slug": "google/gemini-3.5-flash-lite-20260721",
         "name": "Google: Gemini 3.5 Flash Lite (batch)",
@@ -939,7 +960,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.5-flash-lite-20260721"
       },
       {
-        "rank": 18,
+        "rank": 19,
         "id": "meituan/longcat-2.0",
         "slug": "meituan/longcat-2.0-20260720",
         "name": "Meituan: LongCat 2.0",
@@ -959,7 +980,7 @@
         "url": "https://huggingface.co/meituan-longcat/LongCat-2.0"
       },
       {
-        "rank": 19,
+        "rank": 20,
         "id": "thinkingmachines/inkling",
         "slug": "thinkingmachines/inkling-20260715",
         "name": "Thinking Machines: Inkling",
@@ -977,28 +998,6 @@
         "created_human": "2026-07-17",
         "pricing_prompt": 9.5e-7,
         "pricing_completion": 0.00000405,
-        "score": 1784325956,
-        "url": "https://huggingface.co/thinkingmachines/Inkling"
-      },
-      {
-        "rank": 20,
-        "id": "thinkingmachines/inkling:batch",
-        "slug": "thinkingmachines/inkling-20260715",
-        "name": "Thinking Machines: Inkling (batch)",
-        "description": "Inkling is an open-weight multimodal mixture-of-experts model from Thinking Machines Lab, with 41B active parameters out of 975B total. It is designed for general-purpose reasoning, coding, agentic and tool-use systems,...",
-        "context_length": 524288,
-        "modalities": [
-          "text",
-          "image",
-          "audio",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1784325956,
-        "created_human": "2026-07-17",
-        "pricing_prompt": 5e-7,
-        "pricing_completion": 0.000002025,
         "score": 1784325956,
         "url": "https://huggingface.co/thinkingmachines/Inkling"
       }
@@ -2201,7 +2200,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-10T16:00:14.227Z",
+      "as_of": "2026-08-10T23:00:14.069Z",
       "version": "v1",
       "start_date": "2026-08-09",
       "end_date": "2026-08-09"
@@ -2209,26 +2208,43 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-10T16:00:10.045Z",
+      "as_of": "2026-08-10T23:00:10.404Z",
       "version": "v1",
       "start_date": "2026-08-09",
       "end_date": "2026-08-09"
     },
     "week": {
-      "as_of": "2026-08-10T16:00:11.267Z",
+      "as_of": "2026-08-10T23:00:11.638Z",
       "version": "v1",
       "start_date": "2026-08-03",
       "end_date": "2026-08-09"
     },
     "month": {
-      "as_of": "2026-08-10T16:00:12.665Z",
+      "as_of": "2026-08-10T23:00:12.927Z",
       "version": "v1",
       "start_date": "2026-07-11",
       "end_date": "2026-08-09"
     }
   },
-  "models_total": 399,
+  "models_total": 400,
   "catalog": [
+    {
+      "id": "meta/muse-glimmer-30b",
+      "canonical_slug": "meta/muse-glimmer-30b-20260810",
+      "name": "Meta: Muse Glimmer 30B",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "image",
+        "→text"
+      ],
+      "n_inputs": 2,
+      "n_outputs": 1,
+      "pricing_prompt": 3.5e-7,
+      "pricing_completion": 0.0000015,
+      "created_human": "2026-08-09",
+      "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B"
+    },
     {
       "id": "inclusionai/ling-3.0-tiny:free",
       "canonical_slug": "inclusionai/ling-3.0-tiny-20260806",
@@ -3158,8 +3174,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 7.6e-7,
-      "pricing_completion": 0.00000242,
+      "pricing_prompt": 5.026e-7,
+      "pricing_completion": 0.0000015796,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -6890,7 +6906,7 @@
       "n_inputs": 1,
       "n_outputs": 1,
       "pricing_prompt": 7e-8,
-      "pricing_completion": 2.7e-7,
+      "pricing_completion": 2.8e-7,
       "created_human": "2025-07-31",
       "url": "https://huggingface.co/Qwen/Qwen3-Coder-30B-A3B-Instruct"
     },
@@ -7760,7 +7776,7 @@
       "n_inputs": 2,
       "n_outputs": 1,
       "pricing_prompt": 2e-7,
-      "pricing_completion": 6.96e-7,
+      "pricing_completion": 8e-7,
       "created_human": "2025-04-05",
       "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct"
     },
