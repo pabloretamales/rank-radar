@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-11T16:00:19.741Z",
+  "fetched_at": "2026-08-11T23:00:19.571Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-11T16:00:13.855Z",
+    "as_of": "2026-08-11T23:00:13.901Z",
     "version": "v1",
     "start_date": "2026-07-12",
     "end_date": "2026-08-10"
   },
   "rankings_meta": {
-    "as_of": "2026-08-11T16:00:15.275Z",
+    "as_of": "2026-08-11T23:00:15.203Z",
     "version": "v1",
     "start_date": "2026-08-10",
     "end_date": "2026-08-10"
@@ -95,7 +95,7 @@
       {
         "rank": 9,
         "app_id": 3682314,
-        "app_name": "Oh-My-Pi",
+        "app_name": "omp",
         "total_tokens": "86931301311",
         "total_tokens_human": "86.93B",
         "total_requests": 616021,
@@ -176,7 +176,7 @@
       {
         "rank": 18,
         "app_id": 2640550,
-        "app_name": "p0",
+        "app_name": "Peezy Gateway",
         "total_tokens": "25144038609",
         "total_tokens_human": "25.14B",
         "total_requests": 449548,
@@ -295,7 +295,7 @@
       {
         "rank": 11,
         "app_id": 3682314,
-        "app_name": "Oh-My-Pi",
+        "app_name": "omp",
         "total_tokens": "444169655198",
         "total_tokens_human": "444.17B",
         "total_requests": 3329811,
@@ -358,7 +358,7 @@
       {
         "rank": 18,
         "app_id": 2640550,
-        "app_name": "p0",
+        "app_name": "Peezy Gateway",
         "total_tokens": "183106962493",
         "total_tokens_human": "183.11B",
         "total_requests": 3284124,
@@ -504,7 +504,7 @@
       {
         "rank": 14,
         "app_id": 3682314,
-        "app_name": "Oh-My-Pi",
+        "app_name": "omp",
         "total_tokens": "906952721176",
         "total_tokens_human": "906.95B",
         "total_requests": 7391609,
@@ -531,7 +531,7 @@
       {
         "rank": 17,
         "app_id": 2640550,
-        "app_name": "p0",
+        "app_name": "Peezy Gateway",
         "total_tokens": "814477598871",
         "total_tokens_human": "814.48B",
         "total_requests": 12601202,
@@ -568,6 +568,46 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "liquid/lfm-2.5-2.6b:free",
+        "slug": "liquid/lfm-2.5-2.6b-20260811",
+        "name": "LiquidAI: LFM2.5-2.6B (free)",
+        "description": "LFM2.5-2.6B is a compact reasoning model from Liquid AI. It is suited for agent workflows, data extraction, RAG, and long-context processing. Liquid advises against using it for agentic coding or...",
+        "context_length": 128000,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1786470519,
+        "created_human": "2026-08-11",
+        "pricing_prompt": 0,
+        "pricing_completion": 0,
+        "score": 1786470519,
+        "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B"
+      },
+      {
+        "rank": 2,
+        "id": "nvidia/nemotron-3.5-lightning",
+        "slug": "nvidia/nemotron-3.5-lightning-20260807",
+        "name": "NVIDIA: Nemotron 3.5 Lightning",
+        "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
+        "context_length": 262144,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1786452751,
+        "created_human": "2026-08-11",
+        "pricing_prompt": 1e-7,
+        "pricing_completion": 2.5e-7,
+        "score": 1786452751,
+        "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+      },
+      {
+        "rank": 3,
         "id": "nvidia/nemotron-3.5-lightning:free",
         "slug": "nvidia/nemotron-3.5-lightning-20260807",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
@@ -587,7 +627,7 @@
         "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
       },
       {
-        "rank": 2,
+        "rank": 4,
         "id": "sakana/sakana-namazu",
         "slug": "sakana/namazu-20260811",
         "name": "Sakana: Sakana Namazu",
@@ -609,7 +649,7 @@
         "url": "https://openrouter.ai/models/sakana/namazu-20260811"
       },
       {
-        "rank": 3,
+        "rank": 5,
         "id": "upstage/solar-pro4",
         "slug": "upstage/solar-pro4-20260810",
         "name": "Upstage: Solar Pro 4",
@@ -629,7 +669,7 @@
         "url": "https://openrouter.ai/models/upstage/solar-pro4-20260810"
       },
       {
-        "rank": 4,
+        "rank": 6,
         "id": "meta/muse-glimmer-30b",
         "slug": "meta/muse-glimmer-30b-20260810",
         "name": "Meta: Muse Glimmer 30B",
@@ -650,7 +690,7 @@
         "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B"
       },
       {
-        "rank": 5,
+        "rank": 7,
         "id": "inclusionai/ling-3.0-tiny:free",
         "slug": "inclusionai/ling-3.0-tiny-20260806",
         "name": "inclusionAI: Ling 3.0 Tiny (free)",
@@ -670,7 +710,7 @@
         "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny"
       },
       {
-        "rank": 6,
+        "rank": 8,
         "id": "meta/muse-spark-1.2",
         "slug": "meta/muse-spark-1.2-20260805",
         "name": "Meta: Muse Spark 1.2",
@@ -694,7 +734,7 @@
         "url": "https://openrouter.ai/models/meta/muse-spark-1.2-20260805"
       },
       {
-        "rank": 7,
+        "rank": 9,
         "id": "qwen/qwen3.8-max",
         "slug": "qwen/qwen3.8-max-20260803",
         "name": "Qwen: Qwen3.8 Max",
@@ -716,7 +756,7 @@
         "url": "https://openrouter.ai/models/qwen/qwen3.8-max-20260803"
       },
       {
-        "rank": 8,
+        "rank": 10,
         "id": "~deepseek/deepseek-v4-flash-latest",
         "slug": "~deepseek/deepseek-v4-flash-latest",
         "name": "DeepSeek V4 Flash Latest",
@@ -730,13 +770,13 @@
         "n_outputs": 1,
         "created_ts": 1785606009,
         "created_human": "2026-08-01",
-        "pricing_prompt": 7.98e-8,
-        "pricing_completion": 1.596e-7,
+        "pricing_prompt": 7.2e-8,
+        "pricing_completion": 1.44e-7,
         "score": 1785606009,
         "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
       },
       {
-        "rank": 9,
+        "rank": 11,
         "id": "deepseek/deepseek-v4-flash-0731",
         "slug": "deepseek/deepseek-v4-flash-20260731",
         "name": "DeepSeek: DeepSeek V4 Flash 0731",
@@ -756,7 +796,29 @@
         "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
       },
       {
-        "rank": 10,
+        "rank": 12,
+        "id": "bytedance-seed/seed-2.0-code",
+        "slug": "bytedance-seed/seed-2.0-code-20260730",
+        "name": "ByteDance Seed: Seed-2.0-Code",
+        "description": "Seed 2.0 Code is a model from ByteDance Seed optimized for agentic coding. It is suited for frontend development, multilingual programming tasks, and coding-agent workflows in tools such as Claude...",
+        "context_length": 262144,
+        "modalities": [
+          "text",
+          "image",
+          "video",
+          "→text"
+        ],
+        "n_inputs": 3,
+        "n_outputs": 1,
+        "created_ts": 1785451719,
+        "created_human": "2026-07-30",
+        "pricing_prompt": 5e-7,
+        "pricing_completion": 0.000003,
+        "score": 1785451719,
+        "url": "https://openrouter.ai/models/bytedance-seed/seed-2.0-code-20260730"
+      },
+      {
+        "rank": 13,
         "id": "thinkingmachines/inkling-small",
         "slug": "thinkingmachines/inkling-small-20260730",
         "name": "Thinking Machines: Inkling Small",
@@ -778,7 +840,7 @@
         "url": "https://huggingface.co/thinkingmachines/Inkling-Small"
       },
       {
-        "rank": 11,
+        "rank": 14,
         "id": "qwen/qwen3.7-flash",
         "slug": "qwen/qwen3.7-flash-20260727",
         "name": "Qwen: Qwen3.7 Flash",
@@ -800,7 +862,7 @@
         "url": "https://openrouter.ai/models/qwen/qwen3.7-flash-20260727"
       },
       {
-        "rank": 12,
+        "rank": 15,
         "id": "anthropic/claude-opus-5-fast",
         "slug": "anthropic/claude-opus-5-fast-20260723",
         "name": "Claude Opus 5 (Fast)",
@@ -822,7 +884,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-opus-5-fast-20260723"
       },
       {
-        "rank": 13,
+        "rank": 16,
         "id": "anthropic/claude-opus-5",
         "slug": "anthropic/claude-opus-5-20260723",
         "name": "Claude Opus 5",
@@ -844,7 +906,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-opus-5-20260723"
       },
       {
-        "rank": 14,
+        "rank": 17,
         "id": "anthropic/claude-opus-5:batch",
         "slug": "anthropic/claude-opus-5-20260723",
         "name": "Claude Opus 5 (batch)",
@@ -866,7 +928,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-opus-5-20260723"
       },
       {
-        "rank": 15,
+        "rank": 18,
         "id": "inclusionai/ling-3.0-flash",
         "slug": "inclusionai/ling-3.0-flash-20260723",
         "name": "Ling-3.0-flash",
@@ -886,7 +948,7 @@
         "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash"
       },
       {
-        "rank": 16,
+        "rank": 19,
         "id": "poolside/laguna-s-2.1",
         "slug": "poolside/laguna-s-2.1-20260720",
         "name": "Poolside: Laguna S 2.1",
@@ -906,7 +968,7 @@
         "url": "https://huggingface.co/poolside/Laguna-S-2.1"
       },
       {
-        "rank": 17,
+        "rank": 20,
         "id": "poolside/laguna-s-2.1:free",
         "slug": "poolside/laguna-s-2.1-20260720",
         "name": "Poolside: Laguna S 2.1 (free)",
@@ -924,78 +986,6 @@
         "pricing_completion": 0,
         "score": 1784652683,
         "url": "https://huggingface.co/poolside/Laguna-S-2.1"
-      },
-      {
-        "rank": 18,
-        "id": "google/gemini-3.6-flash",
-        "slug": "google/gemini-3.6-flash-20260721",
-        "name": "Google: Gemini 3.6 Flash",
-        "description": "Gemini 3.6 Flash is a high-efficiency model from Google for coding, agentic workflows, and web and app development. It is designed to produce polished outputs with fewer unnecessary edits and...",
-        "context_length": 1048576,
-        "modalities": [
-          "text",
-          "image",
-          "video",
-          "file",
-          "audio",
-          "→text"
-        ],
-        "n_inputs": 5,
-        "n_outputs": 1,
-        "created_ts": 1784646733,
-        "created_human": "2026-07-21",
-        "pricing_prompt": 0.0000015,
-        "pricing_completion": 0.0000075,
-        "score": 1784646733,
-        "url": "https://openrouter.ai/models/google/gemini-3.6-flash-20260721"
-      },
-      {
-        "rank": 19,
-        "id": "google/gemini-3.6-flash:batch",
-        "slug": "google/gemini-3.6-flash-20260721",
-        "name": "Google: Gemini 3.6 Flash (batch)",
-        "description": "Gemini 3.6 Flash is a high-efficiency model from Google for coding, agentic workflows, and web and app development. It is designed to produce polished outputs with fewer unnecessary edits and...",
-        "context_length": 1048576,
-        "modalities": [
-          "text",
-          "image",
-          "video",
-          "file",
-          "audio",
-          "→text"
-        ],
-        "n_inputs": 5,
-        "n_outputs": 1,
-        "created_ts": 1784646733,
-        "created_human": "2026-07-21",
-        "pricing_prompt": 7.5e-7,
-        "pricing_completion": 0.00000375,
-        "score": 1784646733,
-        "url": "https://openrouter.ai/models/google/gemini-3.6-flash-20260721"
-      },
-      {
-        "rank": 20,
-        "id": "google/gemini-3.5-flash-lite",
-        "slug": "google/gemini-3.5-flash-lite-20260721",
-        "name": "Google: Gemini 3.5 Flash Lite",
-        "description": "Gemini 3.5 Flash Lite is a high-efficiency model from Google with upgraded agentic capabilities. It is suited for subagents that execute focused tasks within complex, multi-agent workflows.",
-        "context_length": 1048576,
-        "modalities": [
-          "text",
-          "image",
-          "video",
-          "file",
-          "audio",
-          "→text"
-        ],
-        "n_inputs": 5,
-        "n_outputs": 1,
-        "created_ts": 1784646726,
-        "created_human": "2026-07-21",
-        "pricing_prompt": 3e-7,
-        "pricing_completion": 0.0000025,
-        "score": 1784646726,
-        "url": "https://openrouter.ai/models/google/gemini-3.5-flash-lite-20260721"
       }
     ],
     "today": [
@@ -2162,7 +2152,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-11T16:00:15.275Z",
+      "as_of": "2026-08-11T23:00:15.203Z",
       "version": "v1",
       "start_date": "2026-08-10",
       "end_date": "2026-08-10"
@@ -2170,26 +2160,58 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-11T16:00:10.660Z",
+      "as_of": "2026-08-11T23:00:11.140Z",
       "version": "v1",
       "start_date": "2026-08-10",
       "end_date": "2026-08-10"
     },
     "week": {
-      "as_of": "2026-08-11T16:00:12.140Z",
+      "as_of": "2026-08-11T23:00:12.423Z",
       "version": "v1",
       "start_date": "2026-08-04",
       "end_date": "2026-08-10"
     },
     "month": {
-      "as_of": "2026-08-11T16:00:13.855Z",
+      "as_of": "2026-08-11T23:00:13.901Z",
       "version": "v1",
       "start_date": "2026-07-12",
       "end_date": "2026-08-10"
     }
   },
-  "models_total": 403,
+  "models_total": 406,
   "catalog": [
+    {
+      "id": "liquid/lfm-2.5-2.6b:free",
+      "canonical_slug": "liquid/lfm-2.5-2.6b-20260811",
+      "name": "LiquidAI: LFM2.5-2.6B (free)",
+      "context_length": 128000,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
+      "created_human": "2026-08-11",
+      "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B"
+    },
+    {
+      "id": "nvidia/nemotron-3.5-lightning",
+      "canonical_slug": "nvidia/nemotron-3.5-lightning-20260807",
+      "name": "NVIDIA: Nemotron 3.5 Lightning",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 1e-7,
+      "pricing_completion": 2.5e-7,
+      "created_human": "2026-08-11",
+      "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
+    },
     {
       "id": "nvidia/nemotron-3.5-lightning:free",
       "canonical_slug": "nvidia/nemotron-3.5-lightning-20260807",
@@ -2322,8 +2344,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 7.98e-8,
-      "pricing_completion": 1.596e-7,
+      "pricing_prompt": 7.2e-8,
+      "pricing_completion": 1.44e-7,
       "created_human": "2026-08-01",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
     },
@@ -2342,6 +2364,24 @@
       "pricing_completion": 1.8e-7,
       "created_human": "2026-07-31",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
+    },
+    {
+      "id": "bytedance-seed/seed-2.0-code",
+      "canonical_slug": "bytedance-seed/seed-2.0-code-20260730",
+      "name": "ByteDance Seed: Seed-2.0-Code",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 5e-7,
+      "pricing_completion": 0.000003,
+      "created_human": "2026-07-30",
+      "url": "https://openrouter.ai/models/bytedance-seed/seed-2.0-code-20260730"
     },
     {
       "id": "thinkingmachines/inkling-small",
@@ -3187,8 +3227,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 4.886e-7,
-      "pricing_completion": 0.0000015356,
+      "pricing_prompt": 3.906e-7,
+      "pricing_completion": 0.0000012276,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
