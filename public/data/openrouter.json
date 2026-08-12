@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-12T16:00:18.126Z",
+  "fetched_at": "2026-08-12T23:00:16.987Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-12T16:00:13.860Z",
+    "as_of": "2026-08-12T23:00:13.003Z",
     "version": "v1",
     "start_date": "2026-07-13",
     "end_date": "2026-08-11"
   },
   "rankings_meta": {
-    "as_of": "2026-08-12T16:00:14.858Z",
+    "as_of": "2026-08-12T23:00:13.976Z",
     "version": "v1",
     "start_date": "2026-08-11",
     "end_date": "2026-08-11"
@@ -568,6 +568,90 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "bytedance-seed/seed-2-1-turbo",
+        "slug": "bytedance-seed/seed-2-1-turbo-20260810",
+        "name": "ByteDance Seed: Seed 2.1 Turbo",
+        "description": "Seed 2.1 Turbo is a multimodal model from ByteDance Seed for coding and long-horizon agent workflows. It is suited for end-to-end software delivery, multi-step task execution, and understanding visual and...",
+        "context_length": 262144,
+        "modalities": [
+          "text",
+          "image",
+          "video",
+          "→text"
+        ],
+        "n_inputs": 3,
+        "n_outputs": 1,
+        "created_ts": 1786552176,
+        "created_human": "2026-08-12",
+        "pricing_prompt": 5e-7,
+        "pricing_completion": 0.0000025,
+        "score": 1786552176,
+        "url": "https://openrouter.ai/models/bytedance-seed/seed-2-1-turbo-20260810"
+      },
+      {
+        "rank": 2,
+        "id": "qwen/qwen3.8-2.4t-a95b",
+        "slug": "qwen/qwen3.8-2.4t-a95b-20260812",
+        "name": "Qwen: Qwen3.8 2.4T A95B",
+        "description": "Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of [Qwen3.8 Max](/qwen/qwen3.8-max), with 95 billion active parameters out of 2.4 trillion total. It is...",
+        "context_length": 262144,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1786551702,
+        "created_human": "2026-08-12",
+        "pricing_prompt": 0.000002,
+        "pricing_completion": 0.000006,
+        "score": 1786551702,
+        "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
+      },
+      {
+        "rank": 3,
+        "id": "bytedance-seed/seed-2.0-code",
+        "slug": "bytedance-seed/seed-2.0-code-20260730",
+        "name": "ByteDance Seed: Seed-2.0-Code",
+        "description": "Seed 2.0 Code is a model from ByteDance Seed optimized for agentic coding. It is suited for frontend development, multilingual programming tasks, and coding-agent workflows in tools such as Claude...",
+        "context_length": 262144,
+        "modalities": [
+          "text",
+          "image",
+          "video",
+          "→text"
+        ],
+        "n_inputs": 3,
+        "n_outputs": 1,
+        "created_ts": 1786550701,
+        "created_human": "2026-08-12",
+        "pricing_prompt": 5e-7,
+        "pricing_completion": 0.000003,
+        "score": 1786550701,
+        "url": "https://openrouter.ai/models/bytedance-seed/seed-2.0-code-20260730"
+      },
+      {
+        "rank": 4,
+        "id": "deepseek/deepseek-v4-pro-0813",
+        "slug": "deepseek/deepseek-v4-pro-20260813",
+        "name": "DeepSeek: DeepSeek V4 Pro 0813",
+        "description": "DeepSeek V4 Pro 0813 is a large-scale mixture-of-experts model from DeepSeek. This is the GA release of DeepSeek V4 Pro.",
+        "context_length": 1048576,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1786549364,
+        "created_human": "2026-08-12",
+        "pricing_prompt": 4.35e-7,
+        "pricing_completion": 8.7e-7,
+        "score": 1786549364,
+        "url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-20260813"
+      },
+      {
+        "rank": 5,
         "id": "x-ai/grok-4.6",
         "slug": "x-ai/grok-4.6-20260810",
         "name": "SpaceXAI: Grok 4.6",
@@ -589,7 +673,7 @@
         "url": "https://openrouter.ai/models/x-ai/grok-4.6-20260810"
       },
       {
-        "rank": 2,
+        "rank": 6,
         "id": "liquid/lfm-2.5-2.6b:free",
         "slug": "liquid/lfm-2.5-2.6b-20260811",
         "name": "LiquidAI: LFM2.5-2.6B (free)",
@@ -609,12 +693,12 @@
         "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B"
       },
       {
-        "rank": 3,
+        "rank": 7,
         "id": "nvidia/nemotron-3.5-lightning",
         "slug": "nvidia/nemotron-3.5-lightning-20260807",
         "name": "NVIDIA: Nemotron 3.5 Lightning",
         "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
-        "context_length": 262144,
+        "context_length": 1000000,
         "modalities": [
           "text",
           "→text"
@@ -629,7 +713,7 @@
         "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
       },
       {
-        "rank": 4,
+        "rank": 8,
         "id": "nvidia/nemotron-3.5-lightning:free",
         "slug": "nvidia/nemotron-3.5-lightning-20260807",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
@@ -649,7 +733,7 @@
         "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
       },
       {
-        "rank": 5,
+        "rank": 9,
         "id": "sakana/sakana-namazu",
         "slug": "sakana/namazu-20260811",
         "name": "Sakana: Sakana Namazu",
@@ -671,29 +755,7 @@
         "url": "https://openrouter.ai/models/sakana/namazu-20260811"
       },
       {
-        "rank": 6,
-        "id": "bytedance-seed/seed-2-1-turbo",
-        "slug": "bytedance-seed/seed-2-1-turbo-20260810",
-        "name": "ByteDance Seed: Seed 2.1 Turbo",
-        "description": "Seed 2.1 Turbo is a multimodal model from ByteDance Seed for coding and long-horizon agent workflows. It is suited for end-to-end software delivery, multi-step task execution, and understanding visual and...",
-        "context_length": 262144,
-        "modalities": [
-          "text",
-          "image",
-          "video",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1786392277,
-        "created_human": "2026-08-10",
-        "pricing_prompt": 5e-7,
-        "pricing_completion": 0.0000025,
-        "score": 1786392277,
-        "url": "https://openrouter.ai/models/bytedance-seed/seed-2-1-turbo-20260810"
-      },
-      {
-        "rank": 7,
+        "rank": 10,
         "id": "upstage/solar-pro4",
         "slug": "upstage/solar-pro4-20260810",
         "name": "Upstage: Solar Pro 4",
@@ -713,7 +775,7 @@
         "url": "https://openrouter.ai/models/upstage/solar-pro4-20260810"
       },
       {
-        "rank": 8,
+        "rank": 11,
         "id": "meta/muse-glimmer-30b",
         "slug": "meta/muse-glimmer-30b-20260810",
         "name": "Meta: Muse Glimmer 30B",
@@ -734,7 +796,7 @@
         "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B"
       },
       {
-        "rank": 9,
+        "rank": 12,
         "id": "inclusionai/ling-3.0-tiny:free",
         "slug": "inclusionai/ling-3.0-tiny-20260806",
         "name": "inclusionAI: Ling 3.0 Tiny (free)",
@@ -754,7 +816,7 @@
         "url": "https://huggingface.co/inclusionAI/Ling-3.0-tiny"
       },
       {
-        "rank": 10,
+        "rank": 13,
         "id": "meta/muse-spark-1.2",
         "slug": "meta/muse-spark-1.2-20260805",
         "name": "Meta: Muse Spark 1.2",
@@ -778,7 +840,7 @@
         "url": "https://openrouter.ai/models/meta/muse-spark-1.2-20260805"
       },
       {
-        "rank": 11,
+        "rank": 14,
         "id": "qwen/qwen3.8-max",
         "slug": "qwen/qwen3.8-max-20260803",
         "name": "Qwen: Qwen3.8 Max",
@@ -800,7 +862,7 @@
         "url": "https://openrouter.ai/models/qwen/qwen3.8-max-20260803"
       },
       {
-        "rank": 12,
+        "rank": 15,
         "id": "~deepseek/deepseek-v4-flash-latest",
         "slug": "~deepseek/deepseek-v4-flash-latest",
         "name": "DeepSeek V4 Flash Latest",
@@ -820,11 +882,11 @@
         "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
       },
       {
-        "rank": 13,
+        "rank": 16,
         "id": "deepseek/deepseek-v4-flash-0731",
         "slug": "deepseek/deepseek-v4-flash-20260731",
         "name": "DeepSeek: DeepSeek V4 Flash 0731",
-        "description": "DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workflows.",
+        "description": "DeepSeek V4 Flash 0731 is a sparse mixture-of-experts model from DeepSeek, with 13B active parameters out of 284B total. This re-post-trained revision is suited for coding, reasoning, and agent workflows....",
         "context_length": 1048576,
         "modalities": [
           "text",
@@ -840,29 +902,7 @@
         "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
       },
       {
-        "rank": 14,
-        "id": "bytedance-seed/seed-2.0-code",
-        "slug": "bytedance-seed/seed-2.0-code-20260730",
-        "name": "ByteDance Seed: Seed-2.0-Code",
-        "description": "Seed 2.0 Code is a model from ByteDance Seed optimized for agentic coding. It is suited for frontend development, multilingual programming tasks, and coding-agent workflows in tools such as Claude...",
-        "context_length": 262144,
-        "modalities": [
-          "text",
-          "image",
-          "video",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1785451719,
-        "created_human": "2026-07-30",
-        "pricing_prompt": 5e-7,
-        "pricing_completion": 0.000003,
-        "score": 1785451719,
-        "url": "https://openrouter.ai/models/bytedance-seed/seed-2.0-code-20260730"
-      },
-      {
-        "rank": 15,
+        "rank": 17,
         "id": "thinkingmachines/inkling-small",
         "slug": "thinkingmachines/inkling-small-20260730",
         "name": "Thinking Machines: Inkling Small",
@@ -884,7 +924,7 @@
         "url": "https://huggingface.co/thinkingmachines/Inkling-Small"
       },
       {
-        "rank": 16,
+        "rank": 18,
         "id": "qwen/qwen3.7-flash",
         "slug": "qwen/qwen3.7-flash-20260727",
         "name": "Qwen: Qwen3.7 Flash",
@@ -906,7 +946,7 @@
         "url": "https://openrouter.ai/models/qwen/qwen3.7-flash-20260727"
       },
       {
-        "rank": 17,
+        "rank": 19,
         "id": "anthropic/claude-opus-5-fast",
         "slug": "anthropic/claude-opus-5-fast-20260723",
         "name": "Claude Opus 5 (Fast)",
@@ -928,7 +968,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-opus-5-fast-20260723"
       },
       {
-        "rank": 18,
+        "rank": 20,
         "id": "anthropic/claude-opus-5",
         "slug": "anthropic/claude-opus-5-20260723",
         "name": "Claude Opus 5",
@@ -948,48 +988,6 @@
         "pricing_completion": 0.000025,
         "score": 1784912544,
         "url": "https://openrouter.ai/models/anthropic/claude-opus-5-20260723"
-      },
-      {
-        "rank": 19,
-        "id": "anthropic/claude-opus-5:batch",
-        "slug": "anthropic/claude-opus-5-20260723",
-        "name": "Claude Opus 5 (batch)",
-        "description": "Claude Opus 5 is Anthropic’s flagship model for demanding reasoning, coding, and long-horizon agentic work. It is particularly strong at end-to-end software tasks, code review and bug finding, visual analysis...",
-        "context_length": 1000000,
-        "modalities": [
-          "text",
-          "image",
-          "file",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1784912544,
-        "created_human": "2026-07-24",
-        "pricing_prompt": 0.0000025,
-        "pricing_completion": 0.0000125,
-        "score": 1784912544,
-        "url": "https://openrouter.ai/models/anthropic/claude-opus-5-20260723"
-      },
-      {
-        "rank": 20,
-        "id": "inclusionai/ling-3.0-flash",
-        "slug": "inclusionai/ling-3.0-flash-20260723",
-        "name": "Ling-3.0-flash",
-        "description": "*Ling-3.0-flash* is a *124B-parameter Mixture-of-Experts (MoE) model*, with approximately *5.1B parameters activated per token*. The model is designed with *token efficiency and production-scale agentic inference* as key priorities, enabling developers...",
-        "context_length": 262144,
-        "modalities": [
-          "text",
-          "→text"
-        ],
-        "n_inputs": 1,
-        "n_outputs": 1,
-        "created_ts": 1784818580,
-        "created_human": "2026-07-23",
-        "pricing_prompt": 2.1e-8,
-        "pricing_completion": 6.3e-8,
-        "score": 1784818580,
-        "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash"
       }
     ],
     "today": [
@@ -2083,7 +2081,7 @@
         "perma": "nvidia/nemotron-3.5-lightning-20260807:free",
         "url": "https://openrouter.ai/models/nvidia/nemotron-3.5-lightning-20260807:free",
         "modalities": [],
-        "context_length": 262144,
+        "context_length": 1000000,
         "window": "trending"
       },
       {
@@ -2122,7 +2120,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-12T16:00:14.858Z",
+      "as_of": "2026-08-12T23:00:13.976Z",
       "version": "v1",
       "start_date": "2026-08-11",
       "end_date": "2026-08-11"
@@ -2130,26 +2128,94 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-12T16:00:11.007Z",
+      "as_of": "2026-08-12T23:00:10.470Z",
       "version": "v1",
       "start_date": "2026-08-11",
       "end_date": "2026-08-11"
     },
     "week": {
-      "as_of": "2026-08-12T16:00:12.490Z",
+      "as_of": "2026-08-12T23:00:11.816Z",
       "version": "v1",
       "start_date": "2026-08-05",
       "end_date": "2026-08-11"
     },
     "month": {
-      "as_of": "2026-08-12T16:00:13.860Z",
+      "as_of": "2026-08-12T23:00:13.003Z",
       "version": "v1",
       "start_date": "2026-07-13",
       "end_date": "2026-08-11"
     }
   },
-  "models_total": 408,
+  "models_total": 410,
   "catalog": [
+    {
+      "id": "bytedance-seed/seed-2-1-turbo",
+      "canonical_slug": "bytedance-seed/seed-2-1-turbo-20260810",
+      "name": "ByteDance Seed: Seed 2.1 Turbo",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 5e-7,
+      "pricing_completion": 0.0000025,
+      "created_human": "2026-08-12",
+      "url": "https://openrouter.ai/models/bytedance-seed/seed-2-1-turbo-20260810"
+    },
+    {
+      "id": "qwen/qwen3.8-2.4t-a95b",
+      "canonical_slug": "qwen/qwen3.8-2.4t-a95b-20260812",
+      "name": "Qwen: Qwen3.8 2.4T A95B",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000002,
+      "pricing_completion": 0.000006,
+      "created_human": "2026-08-12",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
+    },
+    {
+      "id": "bytedance-seed/seed-2.0-code",
+      "canonical_slug": "bytedance-seed/seed-2.0-code-20260730",
+      "name": "ByteDance Seed: Seed-2.0-Code",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 5e-7,
+      "pricing_completion": 0.000003,
+      "created_human": "2026-08-12",
+      "url": "https://openrouter.ai/models/bytedance-seed/seed-2.0-code-20260730"
+    },
+    {
+      "id": "deepseek/deepseek-v4-pro-0813",
+      "canonical_slug": "deepseek/deepseek-v4-pro-20260813",
+      "name": "DeepSeek: DeepSeek V4 Pro 0813",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 4.35e-7,
+      "pricing_completion": 8.7e-7,
+      "created_human": "2026-08-12",
+      "url": "https://openrouter.ai/models/deepseek/deepseek-v4-pro-20260813"
+    },
     {
       "id": "x-ai/grok-4.6",
       "canonical_slug": "x-ai/grok-4.6-20260810",
@@ -2188,7 +2254,7 @@
       "id": "nvidia/nemotron-3.5-lightning",
       "canonical_slug": "nvidia/nemotron-3.5-lightning-20260807",
       "name": "NVIDIA: Nemotron 3.5 Lightning",
-      "context_length": 262144,
+      "context_length": 1000000,
       "modalities": [
         "text",
         "→text"
@@ -2233,24 +2299,6 @@
       "pricing_completion": 0.000004,
       "created_human": "2026-08-11",
       "url": "https://openrouter.ai/models/sakana/namazu-20260811"
-    },
-    {
-      "id": "bytedance-seed/seed-2-1-turbo",
-      "canonical_slug": "bytedance-seed/seed-2-1-turbo-20260810",
-      "name": "ByteDance Seed: Seed 2.1 Turbo",
-      "context_length": 262144,
-      "modalities": [
-        "text",
-        "image",
-        "video",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 5e-7,
-      "pricing_completion": 0.0000025,
-      "created_human": "2026-08-10",
-      "url": "https://openrouter.ai/models/bytedance-seed/seed-2-1-turbo-20260810"
     },
     {
       "id": "upstage/solar-pro4",
@@ -2370,24 +2418,6 @@
       "pricing_completion": 1.8e-7,
       "created_human": "2026-07-31",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
-    },
-    {
-      "id": "bytedance-seed/seed-2.0-code",
-      "canonical_slug": "bytedance-seed/seed-2.0-code-20260730",
-      "name": "ByteDance Seed: Seed-2.0-Code",
-      "context_length": 262144,
-      "modalities": [
-        "text",
-        "image",
-        "video",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 5e-7,
-      "pricing_completion": 0.000003,
-      "created_human": "2026-07-30",
-      "url": "https://openrouter.ai/models/bytedance-seed/seed-2.0-code-20260730"
     },
     {
       "id": "thinkingmachines/inkling-small",
@@ -4342,8 +4372,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 0.0000014,
-      "pricing_completion": 0.0000044,
+      "pricing_prompt": 9.52e-7,
+      "pricing_completion": 0.000002992,
       "created_human": "2026-04-07",
       "url": "https://huggingface.co/zai-org/GLM-5.1"
     },
