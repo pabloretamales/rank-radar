@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-13T16:00:22.110Z",
+  "fetched_at": "2026-08-13T23:00:19.388Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-13T16:00:14.926Z",
+    "as_of": "2026-08-13T23:00:15.532Z",
     "version": "v1",
     "start_date": "2026-07-14",
     "end_date": "2026-08-12"
   },
   "rankings_meta": {
-    "as_of": "2026-08-13T16:00:19.054Z",
+    "as_of": "2026-08-13T23:00:16.739Z",
     "version": "v1",
     "start_date": "2026-08-12",
     "end_date": "2026-08-12"
@@ -568,6 +568,54 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "google/gemini-3.7-flash",
+        "slug": "google/gemini-3.7-flash-20260813",
+        "name": "Google: Gemini 3.7 Flash",
+        "description": "Gemini 3.7 Flash is a multimodal model from Google for fast agentic workflows, coding, and complex multi-step reasoning. It is designed for tasks that require responsive performance and reliable multi-step...",
+        "context_length": 1048576,
+        "modalities": [
+          "text",
+          "image",
+          "video",
+          "file",
+          "audio",
+          "→text"
+        ],
+        "n_inputs": 5,
+        "n_outputs": 1,
+        "created_ts": 1786640581,
+        "created_human": "2026-08-13",
+        "pricing_prompt": 3.75e-7,
+        "pricing_completion": 0.000001875,
+        "score": 1786640581,
+        "url": "https://openrouter.ai/models/google/gemini-3.7-flash-20260813"
+      },
+      {
+        "rank": 2,
+        "id": "google/gemini-3.7-flash:batch",
+        "slug": "google/gemini-3.7-flash-20260813",
+        "name": "Google: Gemini 3.7 Flash (batch)",
+        "description": "Gemini 3.7 Flash is a multimodal model from Google for fast agentic workflows, coding, and complex multi-step reasoning. It is designed for tasks that require responsive performance and reliable multi-step...",
+        "context_length": 1048576,
+        "modalities": [
+          "text",
+          "image",
+          "video",
+          "file",
+          "audio",
+          "→text"
+        ],
+        "n_inputs": 5,
+        "n_outputs": 1,
+        "created_ts": 1786640581,
+        "created_human": "2026-08-13",
+        "pricing_prompt": 1.875e-7,
+        "pricing_completion": 9.375e-7,
+        "score": 1786640581,
+        "url": "https://openrouter.ai/models/google/gemini-3.7-flash-20260813"
+      },
+      {
+        "rank": 3,
         "id": "bytedance-seed/seed-2-1-turbo",
         "slug": "bytedance-seed/seed-2-1-turbo-20260810",
         "name": "ByteDance Seed: Seed 2.1 Turbo",
@@ -589,7 +637,7 @@
         "url": "https://openrouter.ai/models/bytedance-seed/seed-2-1-turbo-20260810"
       },
       {
-        "rank": 2,
+        "rank": 4,
         "id": "qwen/qwen3.8-2.4t-a95b",
         "slug": "qwen/qwen3.8-2.4t-a95b-20260812",
         "name": "Qwen: Qwen3.8 2.4T A95B",
@@ -609,7 +657,7 @@
         "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
       },
       {
-        "rank": 3,
+        "rank": 5,
         "id": "bytedance-seed/seed-2.0-code",
         "slug": "bytedance-seed/seed-2.0-code-20260730",
         "name": "ByteDance Seed: Seed-2.0-Code",
@@ -631,7 +679,7 @@
         "url": "https://openrouter.ai/models/bytedance-seed/seed-2.0-code-20260730"
       },
       {
-        "rank": 4,
+        "rank": 6,
         "id": "deepseek/deepseek-v4-pro-0813",
         "slug": "deepseek/deepseek-v4-pro-20260813",
         "name": "DeepSeek: DeepSeek V4 Pro 0813",
@@ -651,7 +699,7 @@
         "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
       },
       {
-        "rank": 5,
+        "rank": 7,
         "id": "x-ai/grok-4.6",
         "slug": "x-ai/grok-4.6-20260810",
         "name": "SpaceXAI: Grok 4.6",
@@ -673,7 +721,7 @@
         "url": "https://openrouter.ai/models/x-ai/grok-4.6-20260810"
       },
       {
-        "rank": 6,
+        "rank": 8,
         "id": "liquid/lfm-2.5-2.6b:free",
         "slug": "liquid/lfm-2.5-2.6b-20260811",
         "name": "LiquidAI: LFM2.5-2.6B (free)",
@@ -693,12 +741,12 @@
         "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B"
       },
       {
-        "rank": 7,
+        "rank": 9,
         "id": "nvidia/nemotron-3.5-lightning",
         "slug": "nvidia/nemotron-3.5-lightning-20260807",
         "name": "NVIDIA: Nemotron 3.5 Lightning",
         "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
-        "context_length": 1048576,
+        "context_length": 1000000,
         "modalities": [
           "text",
           "→text"
@@ -713,7 +761,7 @@
         "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
       },
       {
-        "rank": 8,
+        "rank": 10,
         "id": "nvidia/nemotron-3.5-lightning:free",
         "slug": "nvidia/nemotron-3.5-lightning-20260807",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
@@ -733,7 +781,7 @@
         "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
       },
       {
-        "rank": 9,
+        "rank": 11,
         "id": "sakana/sakana-namazu",
         "slug": "sakana/namazu-20260811",
         "name": "Sakana: Sakana Namazu",
@@ -755,7 +803,7 @@
         "url": "https://openrouter.ai/models/sakana/namazu-20260811"
       },
       {
-        "rank": 10,
+        "rank": 12,
         "id": "upstage/solar-pro4",
         "slug": "upstage/solar-pro4-20260810",
         "name": "Upstage: Solar Pro 4",
@@ -775,7 +823,7 @@
         "url": "https://openrouter.ai/models/upstage/solar-pro4-20260810"
       },
       {
-        "rank": 11,
+        "rank": 13,
         "id": "meta/muse-glimmer-30b",
         "slug": "meta/muse-glimmer-30b-20260810",
         "name": "Meta: Muse Glimmer 30B",
@@ -796,7 +844,7 @@
         "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B"
       },
       {
-        "rank": 12,
+        "rank": 14,
         "id": "meta/muse-spark-1.2",
         "slug": "meta/muse-spark-1.2-20260805",
         "name": "Meta: Muse Spark 1.2",
@@ -820,7 +868,7 @@
         "url": "https://openrouter.ai/models/meta/muse-spark-1.2-20260805"
       },
       {
-        "rank": 13,
+        "rank": 15,
         "id": "qwen/qwen3.8-max",
         "slug": "qwen/qwen3.8-max-20260803",
         "name": "Qwen: Qwen3.8 Max",
@@ -842,7 +890,7 @@
         "url": "https://openrouter.ai/models/qwen/qwen3.8-max-20260803"
       },
       {
-        "rank": 14,
+        "rank": 16,
         "id": "~deepseek/deepseek-v4-flash-latest",
         "slug": "~deepseek/deepseek-v4-flash-latest",
         "name": "DeepSeek V4 Flash Latest",
@@ -862,7 +910,7 @@
         "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
       },
       {
-        "rank": 15,
+        "rank": 17,
         "id": "deepseek/deepseek-v4-flash-0731",
         "slug": "deepseek/deepseek-v4-flash-20260731",
         "name": "DeepSeek: DeepSeek V4 Flash 0731",
@@ -882,7 +930,7 @@
         "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
       },
       {
-        "rank": 16,
+        "rank": 18,
         "id": "thinkingmachines/inkling-small",
         "slug": "thinkingmachines/inkling-small-20260730",
         "name": "Thinking Machines: Inkling Small",
@@ -904,7 +952,7 @@
         "url": "https://huggingface.co/thinkingmachines/Inkling-Small"
       },
       {
-        "rank": 17,
+        "rank": 19,
         "id": "qwen/qwen3.7-flash",
         "slug": "qwen/qwen3.7-flash-20260727",
         "name": "Qwen: Qwen3.7 Flash",
@@ -926,7 +974,7 @@
         "url": "https://openrouter.ai/models/qwen/qwen3.7-flash-20260727"
       },
       {
-        "rank": 18,
+        "rank": 20,
         "id": "anthropic/claude-opus-5-fast",
         "slug": "anthropic/claude-opus-5-fast-20260723",
         "name": "Claude Opus 5 (Fast)",
@@ -946,50 +994,6 @@
         "pricing_completion": 0.00005,
         "score": 1784912546,
         "url": "https://openrouter.ai/models/anthropic/claude-opus-5-fast-20260723"
-      },
-      {
-        "rank": 19,
-        "id": "anthropic/claude-opus-5",
-        "slug": "anthropic/claude-opus-5-20260723",
-        "name": "Claude Opus 5",
-        "description": "Claude Opus 5 is Anthropic’s flagship model for demanding reasoning, coding, and long-horizon agentic work. It is particularly strong at end-to-end software tasks, code review and bug finding, visual analysis...",
-        "context_length": 1000000,
-        "modalities": [
-          "text",
-          "image",
-          "file",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1784912544,
-        "created_human": "2026-07-24",
-        "pricing_prompt": 0.000005,
-        "pricing_completion": 0.000025,
-        "score": 1784912544,
-        "url": "https://openrouter.ai/models/anthropic/claude-opus-5-20260723"
-      },
-      {
-        "rank": 20,
-        "id": "anthropic/claude-opus-5:batch",
-        "slug": "anthropic/claude-opus-5-20260723",
-        "name": "Claude Opus 5 (batch)",
-        "description": "Claude Opus 5 is Anthropic’s flagship model for demanding reasoning, coding, and long-horizon agentic work. It is particularly strong at end-to-end software tasks, code review and bug finding, visual analysis...",
-        "context_length": 1000000,
-        "modalities": [
-          "text",
-          "image",
-          "file",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1784912544,
-        "created_human": "2026-07-24",
-        "pricing_prompt": 0.0000025,
-        "pricing_completion": 0.0000125,
-        "score": 1784912544,
-        "url": "https://openrouter.ai/models/anthropic/claude-opus-5-20260723"
       }
     ],
     "today": [
@@ -1981,7 +1985,7 @@
         "perma": "nvidia/nemotron-3.5-lightning-20260807:free",
         "url": "https://openrouter.ai/models/nvidia/nemotron-3.5-lightning-20260807:free",
         "modalities": [],
-        "context_length": 1048576,
+        "context_length": 1000000,
         "window": "trending"
       },
       {
@@ -2122,7 +2126,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-13T16:00:19.054Z",
+      "as_of": "2026-08-13T23:00:16.739Z",
       "version": "v1",
       "start_date": "2026-08-12",
       "end_date": "2026-08-12"
@@ -2130,26 +2134,66 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-13T16:00:11.794Z",
+      "as_of": "2026-08-13T23:00:10.078Z",
       "version": "v1",
       "start_date": "2026-08-12",
       "end_date": "2026-08-12"
     },
     "week": {
-      "as_of": "2026-08-13T16:00:13.045Z",
+      "as_of": "2026-08-13T23:00:12.767Z",
       "version": "v1",
       "start_date": "2026-08-06",
       "end_date": "2026-08-12"
     },
     "month": {
-      "as_of": "2026-08-13T16:00:14.926Z",
+      "as_of": "2026-08-13T23:00:15.532Z",
       "version": "v1",
       "start_date": "2026-07-14",
       "end_date": "2026-08-12"
     }
   },
-  "models_total": 409,
+  "models_total": 411,
   "catalog": [
+    {
+      "id": "google/gemini-3.7-flash",
+      "canonical_slug": "google/gemini-3.7-flash-20260813",
+      "name": "Google: Gemini 3.7 Flash",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio",
+        "→text"
+      ],
+      "n_inputs": 5,
+      "n_outputs": 1,
+      "pricing_prompt": 3.75e-7,
+      "pricing_completion": 0.000001875,
+      "created_human": "2026-08-13",
+      "url": "https://openrouter.ai/models/google/gemini-3.7-flash-20260813"
+    },
+    {
+      "id": "google/gemini-3.7-flash:batch",
+      "canonical_slug": "google/gemini-3.7-flash-20260813",
+      "name": "Google: Gemini 3.7 Flash (batch)",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "file",
+        "audio",
+        "→text"
+      ],
+      "n_inputs": 5,
+      "n_outputs": 1,
+      "pricing_prompt": 1.875e-7,
+      "pricing_completion": 9.375e-7,
+      "created_human": "2026-08-13",
+      "url": "https://openrouter.ai/models/google/gemini-3.7-flash-20260813"
+    },
     {
       "id": "bytedance-seed/seed-2-1-turbo",
       "canonical_slug": "bytedance-seed/seed-2-1-turbo-20260810",
@@ -2256,7 +2300,7 @@
       "id": "nvidia/nemotron-3.5-lightning",
       "canonical_slug": "nvidia/nemotron-3.5-lightning-20260807",
       "name": "NVIDIA: Nemotron 3.5 Lightning",
-      "context_length": 1048576,
+      "context_length": 1000000,
       "modalities": [
         "text",
         "→text"
@@ -2558,8 +2602,8 @@
       ],
       "n_inputs": 5,
       "n_outputs": 1,
-      "pricing_prompt": 0.0000015,
-      "pricing_completion": 0.0000075,
+      "pricing_prompt": 7.5e-7,
+      "pricing_completion": 0.00000375,
       "created_human": "2026-07-21",
       "url": "https://openrouter.ai/models/google/gemini-3.6-flash-20260721"
     },
@@ -2578,8 +2622,8 @@
       ],
       "n_inputs": 5,
       "n_outputs": 1,
-      "pricing_prompt": 7.5e-7,
-      "pricing_completion": 0.00000375,
+      "pricing_prompt": 3.75e-7,
+      "pricing_completion": 0.000001875,
       "created_human": "2026-07-21",
       "url": "https://openrouter.ai/models/google/gemini-3.6-flash-20260721"
     },
@@ -3249,8 +3293,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 6.3e-7,
-      "pricing_completion": 0.00000198,
+      "pricing_prompt": 3.92e-7,
+      "pricing_completion": 0.000001232,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -3925,8 +3969,8 @@
       ],
       "n_inputs": 5,
       "n_outputs": 1,
-      "pricing_prompt": 0.0000015,
-      "pricing_completion": 0.0000075,
+      "pricing_prompt": 3.75e-7,
+      "pricing_completion": 0.000001875,
       "created_human": "2026-04-27",
       "url": "https://openrouter.ai/models/~google/gemini-flash-latest"
     },
@@ -4306,8 +4350,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 5.795e-7,
-      "pricing_completion": 0.00000244,
+      "pricing_prompt": 5.605e-7,
+      "pricing_completion": 0.00000236,
       "created_human": "2026-04-20",
       "url": "https://huggingface.co/moonshotai/Kimi-K2.6"
     },
