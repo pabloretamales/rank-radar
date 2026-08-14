@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-14T16:00:18.641Z",
+  "fetched_at": "2026-08-14T23:00:17.175Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-14T16:00:13.710Z",
+    "as_of": "2026-08-14T23:00:13.283Z",
     "version": "v1",
     "start_date": "2026-07-15",
     "end_date": "2026-08-13"
   },
   "rankings_meta": {
-    "as_of": "2026-08-14T16:00:15.499Z",
+    "as_of": "2026-08-14T23:00:14.560Z",
     "version": "v1",
     "start_date": "2026-08-13",
     "end_date": "2026-08-13"
@@ -904,8 +904,8 @@
         "n_outputs": 1,
         "created_ts": 1785606009,
         "created_human": "2026-08-01",
-        "pricing_prompt": 7.9996e-8,
-        "pricing_completion": 2.52e-7,
+        "pricing_prompt": 7.98e-8,
+        "pricing_completion": 1.596e-7,
         "score": 1785606009,
         "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
       },
@@ -2109,7 +2109,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-14T16:00:15.499Z",
+      "as_of": "2026-08-14T23:00:14.560Z",
       "version": "v1",
       "start_date": "2026-08-13",
       "end_date": "2026-08-13"
@@ -2117,19 +2117,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-14T16:00:11.062Z",
+      "as_of": "2026-08-14T23:00:10.546Z",
       "version": "v1",
       "start_date": "2026-08-13",
       "end_date": "2026-08-13"
     },
     "week": {
-      "as_of": "2026-08-14T16:00:12.575Z",
+      "as_of": "2026-08-14T23:00:12.192Z",
       "version": "v1",
       "start_date": "2026-08-07",
       "end_date": "2026-08-13"
     },
     "month": {
-      "as_of": "2026-08-14T16:00:13.710Z",
+      "as_of": "2026-08-14T23:00:13.283Z",
       "version": "v1",
       "start_date": "2026-07-15",
       "end_date": "2026-08-13"
@@ -2411,8 +2411,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 7.9996e-8,
-      "pricing_completion": 2.52e-7,
+      "pricing_prompt": 7.98e-8,
+      "pricing_completion": 1.596e-7,
       "created_human": "2026-08-01",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
     },
@@ -4333,8 +4333,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 5.795e-7,
-      "pricing_completion": 0.00000244,
+      "pricing_prompt": 5.605e-7,
+      "pricing_completion": 0.00000236,
       "created_human": "2026-04-20",
       "url": "https://huggingface.co/moonshotai/Kimi-K2.6"
     },
@@ -5186,8 +5186,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 5e-7,
-      "pricing_completion": 0.0000036,
+      "pricing_prompt": 3.9e-7,
+      "pricing_completion": 0.00000234,
       "created_human": "2026-02-16",
       "url": "https://huggingface.co/Qwen/Qwen3.5-397B-A17B"
     },
@@ -5218,8 +5218,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 9.5e-7,
-      "pricing_completion": 0.00000255,
+      "pricing_prompt": 6e-7,
+      "pricing_completion": 0.00000192,
       "created_human": "2026-02-11",
       "url": "https://huggingface.co/zai-org/GLM-5"
     },
@@ -6373,8 +6373,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 5e-7,
-      "pricing_completion": 0.000002,
+      "pricing_prompt": 5.5e-7,
+      "pricing_completion": 0.0000022,
       "created_human": "2025-09-30",
       "url": "https://huggingface.co/zai-org/GLM-4.6"
     },
@@ -7879,7 +7879,7 @@
       "n_inputs": 2,
       "n_outputs": 1,
       "pricing_prompt": 2e-7,
-      "pricing_completion": 6.96e-7,
+      "pricing_completion": 8e-7,
       "created_human": "2025-04-05",
       "url": "https://huggingface.co/meta-llama/Llama-4-Maverick-17B-128E-Instruct"
     },
