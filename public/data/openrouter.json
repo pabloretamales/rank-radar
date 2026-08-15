@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-15T16:00:16.851Z",
+  "fetched_at": "2026-08-15T23:00:19.285Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-15T16:00:13.607Z",
+    "as_of": "2026-08-15T23:00:12.671Z",
     "version": "v1",
     "start_date": "2026-07-16",
     "end_date": "2026-08-14"
   },
   "rankings_meta": {
-    "as_of": "2026-08-15T16:00:14.522Z",
+    "as_of": "2026-08-15T23:00:15.390Z",
     "version": "v1",
     "start_date": "2026-08-14",
     "end_date": "2026-08-14"
@@ -947,8 +947,8 @@
         "n_outputs": 1,
         "created_ts": 1785606009,
         "created_human": "2026-08-01",
-        "pricing_prompt": 6.986e-8,
-        "pricing_completion": 1.3972e-7,
+        "pricing_prompt": 6.75e-8,
+        "pricing_completion": 1.35e-7,
         "score": 1785606009,
         "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
       },
@@ -1046,7 +1046,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 774736212238,
+        "total_tokens": 774737017267,
         "total_tokens_human": "774.74B",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1363,7 +1363,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 4601566985376,
+        "total_tokens": 4601567790405,
         "total_tokens_human": "4.60T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1665,7 +1665,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 18073773033678,
+        "total_tokens": 18073773838707,
         "total_tokens_human": "18.07T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -2244,7 +2244,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-15T16:00:14.522Z",
+      "as_of": "2026-08-15T23:00:15.390Z",
       "version": "v1",
       "start_date": "2026-08-14",
       "end_date": "2026-08-14"
@@ -2252,19 +2252,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-15T16:00:11.127Z",
+      "as_of": "2026-08-15T23:00:10.193Z",
       "version": "v1",
       "start_date": "2026-08-14",
       "end_date": "2026-08-14"
     },
     "week": {
-      "as_of": "2026-08-15T16:00:12.256Z",
+      "as_of": "2026-08-15T23:00:11.384Z",
       "version": "v1",
       "start_date": "2026-08-08",
       "end_date": "2026-08-14"
     },
     "month": {
-      "as_of": "2026-08-15T16:00:13.607Z",
+      "as_of": "2026-08-15T23:00:12.671Z",
       "version": "v1",
       "start_date": "2026-07-16",
       "end_date": "2026-08-14"
@@ -2581,8 +2581,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 6.986e-8,
-      "pricing_completion": 1.3972e-7,
+      "pricing_prompt": 6.75e-8,
+      "pricing_completion": 1.35e-7,
       "created_human": "2026-08-01",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
     },
