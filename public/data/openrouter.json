@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-16T16:00:16.569Z",
+  "fetched_at": "2026-08-16T23:00:17.526Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-16T16:00:12.746Z",
+    "as_of": "2026-08-16T23:00:13.899Z",
     "version": "v1",
     "start_date": "2026-07-17",
     "end_date": "2026-08-15"
   },
   "rankings_meta": {
-    "as_of": "2026-08-16T16:00:13.774Z",
+    "as_of": "2026-08-16T23:00:14.943Z",
     "version": "v1",
     "start_date": "2026-08-15",
     "end_date": "2026-08-15"
@@ -736,8 +736,8 @@
         "n_outputs": 1,
         "created_ts": 1786549364,
         "created_human": "2026-08-12",
-        "pricing_prompt": 4.35e-7,
-        "pricing_completion": 8.7e-7,
+        "pricing_prompt": 6.6e-7,
+        "pricing_completion": 0.00000198,
         "score": 1786549364,
         "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
       },
@@ -798,8 +798,8 @@
         "n_outputs": 1,
         "created_ts": 1786452751,
         "created_human": "2026-08-11",
-        "pricing_prompt": 1e-7,
-        "pricing_completion": 2.5e-7,
+        "pricing_prompt": 8e-8,
+        "pricing_completion": 2e-7,
         "score": 1786452751,
         "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
       },
@@ -1001,7 +1001,7 @@
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash 0423",
         "slug": "deepseek/deepseek-v4-flash-20260423",
-        "total_tokens": 1407526180746,
+        "total_tokens": 1407526668596,
         "total_tokens_human": "1.41T",
         "perma": "deepseek/deepseek-v4-flash-20260731",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-flash-20260731",
@@ -1134,7 +1134,7 @@
       {
         "rank": 10,
         "id": "deepseek/deepseek-v4-pro",
-        "name": "DeepSeek: DeepSeek V4 Pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
         "slug": "deepseek/deepseek-v4-pro-20260423",
         "total_tokens": 330252003744,
         "total_tokens_human": "330.25B",
@@ -1179,7 +1179,7 @@
       {
         "rank": 13,
         "id": "deepseek/deepseek-v4-pro",
-        "name": "DeepSeek: DeepSeek V4 Pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
         "slug": "deepseek/deepseek-v4-pro-20260423",
         "total_tokens": 160702050576,
         "total_tokens_human": "160.70B",
@@ -1303,7 +1303,7 @@
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash 0423",
         "slug": "deepseek/deepseek-v4-flash-20260423",
-        "total_tokens": 11059431631772,
+        "total_tokens": 11059432119622,
         "total_tokens_human": "11.06T",
         "perma": "deepseek/deepseek-v4-flash-20260731",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-flash-20260731",
@@ -1406,7 +1406,7 @@
       {
         "rank": 8,
         "id": "deepseek/deepseek-v4-pro",
-        "name": "DeepSeek: DeepSeek V4 Pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
         "slug": "deepseek/deepseek-v4-pro-20260423",
         "total_tokens": 2765152839277,
         "total_tokens_human": "2.77T",
@@ -1650,7 +1650,7 @@
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash 0423",
         "slug": "deepseek/deepseek-v4-flash-20260423",
-        "total_tokens": 19867240632942,
+        "total_tokens": 19867241120792,
         "total_tokens_human": "19.87T",
         "perma": "deepseek/deepseek-v4-flash-20260731",
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-flash-20260731",
@@ -1693,7 +1693,7 @@
       {
         "rank": 7,
         "id": "deepseek/deepseek-v4-pro",
-        "name": "DeepSeek: DeepSeek V4 Pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
         "slug": "deepseek/deepseek-v4-pro-20260423",
         "total_tokens": 12691059988692,
         "total_tokens_human": "12.69T",
@@ -1922,7 +1922,7 @@
       {
         "rank": 2,
         "id": "deepseek/deepseek-v4-pro",
-        "name": "DeepSeek: DeepSeek V4 Pro",
+        "name": "DeepSeek: DeepSeek V4 Pro 0423",
         "slug": "deepseek/deepseek-v4-pro-20260423",
         "total_tokens": 474192682033,
         "total_tokens_human": "474.19B",
@@ -2026,9 +2026,9 @@
         "id": "deepseek/deepseek-v4-flash",
         "name": "DeepSeek: DeepSeek V4 Flash 0423",
         "slug": "deepseek/deepseek-v4-flash-20260423",
-        "total_tokens": 191807235577,
+        "total_tokens": 191807723427,
         "total_tokens_human": "191.81B",
-        "recent7": 9724669950746,
+        "recent7": 9724670438596,
         "recent7_human": "9.72T",
         "prev7": 9532862715169,
         "prev7_human": "9.53T",
@@ -2227,7 +2227,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-16T16:00:13.774Z",
+      "as_of": "2026-08-16T23:00:14.943Z",
       "version": "v1",
       "start_date": "2026-08-15",
       "end_date": "2026-08-15"
@@ -2235,25 +2235,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-16T16:00:10.199Z",
+      "as_of": "2026-08-16T23:00:11.728Z",
       "version": "v1",
       "start_date": "2026-08-15",
       "end_date": "2026-08-15"
     },
     "week": {
-      "as_of": "2026-08-16T16:00:11.481Z",
+      "as_of": "2026-08-16T23:00:12.781Z",
       "version": "v1",
       "start_date": "2026-08-09",
       "end_date": "2026-08-15"
     },
     "month": {
-      "as_of": "2026-08-16T16:00:12.746Z",
+      "as_of": "2026-08-16T23:00:13.899Z",
       "version": "v1",
       "start_date": "2026-07-17",
       "end_date": "2026-08-15"
     }
   },
-  "models_total": 413,
+  "models_total": 414,
   "catalog": [
     {
       "id": "qwen/qwen3.8-27b",
@@ -2393,8 +2393,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 4.35e-7,
-      "pricing_completion": 8.7e-7,
+      "pricing_prompt": 6.6e-7,
+      "pricing_completion": 0.00000198,
       "created_human": "2026-08-12",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
     },
@@ -2443,8 +2443,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1e-7,
-      "pricing_completion": 2.5e-7,
+      "pricing_prompt": 8e-8,
+      "pricing_completion": 2e-7,
       "created_human": "2026-08-11",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
     },
@@ -3451,6 +3451,22 @@
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
     {
+      "id": "z-ai/glm-5.2:free",
+      "canonical_slug": "z-ai/glm-5.2-20260616",
+      "name": "Z.ai: GLM 5.2 (free)",
+      "context_length": 128000,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
+      "created_human": "2026-06-16",
+      "url": "https://huggingface.co/zai-org/GLM-5.2"
+    },
+    {
       "id": "openrouter/fusion",
       "canonical_slug": "openrouter/fusion",
       "name": "OpenRouter: Fusion",
@@ -4195,7 +4211,7 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 1.5e-7,
+      "pricing_prompt": 1.4e-7,
       "pricing_completion": 0.000001,
       "created_human": "2026-04-27",
       "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B"
@@ -4309,7 +4325,7 @@
     {
       "id": "deepseek/deepseek-v4-pro",
       "canonical_slug": "deepseek/deepseek-v4-pro-20260423",
-      "name": "DeepSeek: DeepSeek V4 Pro",
+      "name": "DeepSeek: DeepSeek V4 Pro 0423",
       "context_length": 1048576,
       "modalities": [
         "text",
@@ -4333,8 +4349,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 6.146e-8,
-      "pricing_completion": 1.2292e-7,
+      "pricing_prompt": 5.866e-8,
+      "pricing_completion": 1.1732e-7,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
@@ -4556,8 +4572,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 1.2e-7,
-      "pricing_completion": 4e-7,
+      "pricing_prompt": 7e-8,
+      "pricing_completion": 3.4e-7,
       "created_human": "2026-04-03",
       "url": "https://huggingface.co/google/gemma-4-26B-A4B-it"
     },
@@ -8350,8 +8366,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 2.5e-7,
-      "pricing_completion": 7.5e-7,
+      "pricing_prompt": 8e-7,
+      "pricing_completion": 0.000001,
       "created_human": "2025-02-01",
       "url": "https://huggingface.co/Qwen/Qwen2.5-VL-72B-Instruct"
     },
