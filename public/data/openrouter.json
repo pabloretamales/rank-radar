@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-17T16:00:25.812Z",
+  "fetched_at": "2026-08-17T23:00:18.349Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-17T16:00:19.806Z",
+    "as_of": "2026-08-17T23:00:13.650Z",
     "version": "v1",
     "start_date": "2026-07-18",
     "end_date": "2026-08-16"
   },
   "rankings_meta": {
-    "as_of": "2026-08-17T16:00:21.195Z",
+    "as_of": "2026-08-17T23:00:15.124Z",
     "version": "v1",
     "start_date": "2026-08-16",
     "end_date": "2026-08-16"
@@ -947,8 +947,8 @@
         "n_outputs": 1,
         "created_ts": 1785606009,
         "created_human": "2026-08-01",
-        "pricing_prompt": 7.8596e-8,
-        "pricing_completion": 1.57192e-7,
+        "pricing_prompt": 7.83e-8,
+        "pricing_completion": 1.566e-7,
         "score": 1785606009,
         "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
       },
@@ -2142,7 +2142,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-17T16:00:21.195Z",
+      "as_of": "2026-08-17T23:00:15.124Z",
       "version": "v1",
       "start_date": "2026-08-16",
       "end_date": "2026-08-16"
@@ -2150,19 +2150,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-17T16:00:17.290Z",
+      "as_of": "2026-08-17T23:00:10.318Z",
       "version": "v1",
       "start_date": "2026-08-16",
       "end_date": "2026-08-16"
     },
     "week": {
-      "as_of": "2026-08-17T16:00:18.559Z",
+      "as_of": "2026-08-17T23:00:11.705Z",
       "version": "v1",
       "start_date": "2026-08-10",
       "end_date": "2026-08-16"
     },
     "month": {
-      "as_of": "2026-08-17T16:00:19.806Z",
+      "as_of": "2026-08-17T23:00:13.650Z",
       "version": "v1",
       "start_date": "2026-07-18",
       "end_date": "2026-08-16"
@@ -2479,8 +2479,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 7.8596e-8,
-      "pricing_completion": 1.57192e-7,
+      "pricing_prompt": 7.83e-8,
+      "pricing_completion": 1.566e-7,
       "created_human": "2026-08-01",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
     },
@@ -3018,8 +3018,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.000005,
-      "pricing_completion": 0.00003,
+      "pricing_prompt": 0.0000025,
+      "pricing_completion": 0.000015,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-sol-pro-20260709"
     },
@@ -3036,8 +3036,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.0000025,
-      "pricing_completion": 0.000015,
+      "pricing_prompt": 0.00000125,
+      "pricing_completion": 0.0000075,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-sol-pro-20260709"
     },
@@ -3054,8 +3054,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.000005,
-      "pricing_completion": 0.00003,
+      "pricing_prompt": 0.0000025,
+      "pricing_completion": 0.000015,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-sol-20260709"
     },
@@ -3072,8 +3072,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.0000025,
-      "pricing_completion": 0.000015,
+      "pricing_prompt": 0.00000125,
+      "pricing_completion": 0.0000075,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-sol-20260709"
     },
@@ -3344,8 +3344,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 0.00000119,
-      "pricing_completion": 0.00000374,
+      "pricing_prompt": 4.62e-7,
+      "pricing_completion": 0.000001452,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -4072,8 +4072,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.000005,
-      "pricing_completion": 0.00003,
+      "pricing_prompt": 0.0000025,
+      "pricing_completion": 0.000015,
       "created_human": "2026-04-27",
       "url": "https://openrouter.ai/models/~openai/gpt-latest"
     },
@@ -4264,8 +4264,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 7.98e-8,
-      "pricing_completion": 1.596e-7,
+      "pricing_prompt": 7.14e-8,
+      "pricing_completion": 1.428e-7,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
