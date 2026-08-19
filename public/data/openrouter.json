@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-19T16:00:18.307Z",
+  "fetched_at": "2026-08-19T23:00:20.530Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-19T16:00:13.295Z",
+    "as_of": "2026-08-19T23:00:13.873Z",
     "version": "v1",
     "start_date": "2026-07-20",
     "end_date": "2026-08-18"
   },
   "rankings_meta": {
-    "as_of": "2026-08-19T16:00:14.933Z",
+    "as_of": "2026-08-19T23:00:16.046Z",
     "version": "v1",
     "start_date": "2026-08-18",
     "end_date": "2026-08-18"
@@ -612,7 +612,7 @@
         "slug": "qwen/qwen3.8-27b-20260814",
         "name": "Qwen: Qwen3.8 27B",
         "description": "Qwen3.8 27B is an open-weight dense vision-language model from Qwen. It is suited for coding, professional workflows, research, multimodal interaction, and long-running agent tasks, with flexible thinking that can be...",
-        "context_length": 262144,
+        "context_length": 1000000,
         "modalities": [
           "text",
           "image",
@@ -987,8 +987,8 @@
         "n_outputs": 1,
         "created_ts": 1785606009,
         "created_human": "2026-08-01",
-        "pricing_prompt": 7.65e-8,
-        "pricing_completion": 1.53e-7,
+        "pricing_prompt": 7e-8,
+        "pricing_completion": 1.4e-7,
         "score": 1785606009,
         "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
       }
@@ -2140,7 +2140,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-19T16:00:14.933Z",
+      "as_of": "2026-08-19T23:00:16.046Z",
       "version": "v1",
       "start_date": "2026-08-18",
       "end_date": "2026-08-18"
@@ -2148,25 +2148,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-19T16:00:10.527Z",
+      "as_of": "2026-08-19T23:00:11.034Z",
       "version": "v1",
       "start_date": "2026-08-18",
       "end_date": "2026-08-18"
     },
     "week": {
-      "as_of": "2026-08-19T16:00:11.729Z",
+      "as_of": "2026-08-19T23:00:12.220Z",
       "version": "v1",
       "start_date": "2026-08-12",
       "end_date": "2026-08-18"
     },
     "month": {
-      "as_of": "2026-08-19T16:00:13.295Z",
+      "as_of": "2026-08-19T23:00:13.873Z",
       "version": "v1",
       "start_date": "2026-07-20",
       "end_date": "2026-08-18"
     }
   },
-  "models_total": 416,
+  "models_total": 414,
   "catalog": [
     {
       "id": "~z-ai/glm-latest",
@@ -2204,7 +2204,7 @@
       "id": "qwen/qwen3.8-27b",
       "canonical_slug": "qwen/qwen3.8-27b-20260814",
       "name": "Qwen: Qwen3.8 27B",
-      "context_length": 262144,
+      "context_length": 1000000,
       "modalities": [
         "text",
         "image",
@@ -2509,8 +2509,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 7.65e-8,
-      "pricing_completion": 1.53e-7,
+      "pricing_prompt": 7e-8,
+      "pricing_completion": 1.4e-7,
       "created_human": "2026-08-01",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
     },
@@ -4294,8 +4294,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8.26e-8,
-      "pricing_completion": 1.652e-7,
+      "pricing_prompt": 7.42e-8,
+      "pricing_completion": 1.484e-7,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
@@ -4447,8 +4447,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 5.605e-7,
-      "pricing_completion": 0.00000236,
+      "pricing_prompt": 5.415e-7,
+      "pricing_completion": 0.00000228,
       "created_human": "2026-04-20",
       "url": "https://huggingface.co/moonshotai/Kimi-K2.6"
     },
@@ -4553,7 +4553,7 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 9e-8,
+      "pricing_prompt": 1e-7,
       "pricing_completion": 3.4e-7,
       "created_human": "2026-04-02",
       "url": "https://huggingface.co/google/gemma-4-31B-it"
@@ -6885,22 +6885,6 @@
       "pricing_completion": 0.0000018,
       "created_human": "2025-08-11",
       "url": "https://huggingface.co/zai-org/GLM-4.5V"
-    },
-    {
-      "id": "ai21/jamba-large-1.7",
-      "canonical_slug": "ai21/jamba-large-1.7",
-      "name": "AI21: Jamba Large 1.7",
-      "context_length": 256000,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 0.000002,
-      "pricing_completion": 0.000008,
-      "created_human": "2025-08-08",
-      "url": "https://huggingface.co/ai21labs/AI21-Jamba-Large-1.7"
     },
     {
       "id": "openai/gpt-5",
@@ -9248,22 +9232,6 @@
       "pricing_completion": 0.000004,
       "created_human": "2023-08-28",
       "url": "https://openrouter.ai/models/openai/gpt-3.5-turbo-16k"
-    },
-    {
-      "id": "mancer/weaver",
-      "canonical_slug": "mancer/weaver",
-      "name": "Mancer: Weaver (alpha)",
-      "context_length": 8000,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 5e-7,
-      "pricing_completion": 7.5e-7,
-      "created_human": "2023-08-02",
-      "url": "https://openrouter.ai/models/mancer/weaver"
     },
     {
       "id": "undi95/remm-slerp-l2-13b",
