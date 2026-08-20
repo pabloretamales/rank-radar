@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-20T16:00:19.207Z",
+  "fetched_at": "2026-08-20T23:00:17.105Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-20T16:00:13.859Z",
+    "as_of": "2026-08-20T23:00:12.353Z",
     "version": "v1",
     "start_date": "2026-07-21",
     "end_date": "2026-08-19"
   },
   "rankings_meta": {
-    "as_of": "2026-08-20T16:00:14.928Z",
+    "as_of": "2026-08-20T23:00:13.399Z",
     "version": "v1",
     "start_date": "2026-08-19",
     "end_date": "2026-08-19"
@@ -568,6 +568,28 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "stealth/ox-alpha",
+        "slug": "stealth/ox-alpha",
+        "name": "Ox Alpha",
+        "description": "Ox Alpha is a reasoning model designed for coding, sustained agentic work, and production workloads. It is suited for long-horizon software engineering, complex reasoning, and workflows that combine text with...",
+        "context_length": 1048576,
+        "modalities": [
+          "text",
+          "image",
+          "video",
+          "→text"
+        ],
+        "n_inputs": 3,
+        "n_outputs": 1,
+        "created_ts": 1787256295,
+        "created_human": "2026-08-20",
+        "pricing_prompt": 0,
+        "pricing_completion": 0,
+        "score": 1787256295,
+        "url": "https://openrouter.ai/models/stealth/ox-alpha"
+      },
+      {
+        "rank": 2,
         "id": "tencent/hy-mt2-1.8b",
         "slug": "tencent/hy-mt2-1.8b-20260521",
         "name": "Tencent: Hy-MT2-1.8B",
@@ -587,7 +609,7 @@
         "url": "https://huggingface.co/tencent/Hy-MT2-1.8B"
       },
       {
-        "rank": 2,
+        "rank": 3,
         "id": "tencent/hy-mt2-30b-a3b",
         "slug": "tencent/hy-mt2-30b-a3b-20260521",
         "name": "Tencent: Hy-MT2-30B-A3B",
@@ -607,7 +629,7 @@
         "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B"
       },
       {
-        "rank": 3,
+        "rank": 4,
         "id": "~z-ai/glm-latest",
         "slug": "~z-ai/glm-latest",
         "name": "Z.ai: GLM Latest",
@@ -627,7 +649,7 @@
         "url": "https://openrouter.ai/models/~z-ai/glm-latest"
       },
       {
-        "rank": 4,
+        "rank": 5,
         "id": "z-ai/glm-5.3",
         "slug": "z-ai/glm-5.3-20260816",
         "name": "Z.ai: GLM 5.3",
@@ -647,7 +669,7 @@
         "url": "https://openrouter.ai/models/z-ai/glm-5.3-20260816"
       },
       {
-        "rank": 5,
+        "rank": 6,
         "id": "qwen/qwen3.8-27b",
         "slug": "qwen/qwen3.8-27b-20260814",
         "name": "Qwen: Qwen3.8 27B",
@@ -669,7 +691,7 @@
         "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
       },
       {
-        "rank": 6,
+        "rank": 7,
         "id": "dots-studio/dots-3-note-preview:free",
         "slug": "dots-studio/dots-3-note-preview-20260813",
         "name": "Dots Studio: Dots3-Note Preview (free)",
@@ -690,7 +712,7 @@
         "url": "https://openrouter.ai/models/dots-studio/dots-3-note-preview-20260813"
       },
       {
-        "rank": 7,
+        "rank": 8,
         "id": "google/gemini-3.7-flash",
         "slug": "google/gemini-3.7-flash-20260813",
         "name": "Google: Gemini 3.7 Flash",
@@ -714,7 +736,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.7-flash-20260813"
       },
       {
-        "rank": 8,
+        "rank": 9,
         "id": "google/gemini-3.7-flash:batch",
         "slug": "google/gemini-3.7-flash-20260813",
         "name": "Google: Gemini 3.7 Flash (batch)",
@@ -738,7 +760,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.7-flash-20260813"
       },
       {
-        "rank": 9,
+        "rank": 10,
         "id": "bytedance-seed/seed-2-1-turbo",
         "slug": "bytedance-seed/seed-2-1-turbo-20260810",
         "name": "ByteDance Seed: Seed 2.1 Turbo",
@@ -760,7 +782,7 @@
         "url": "https://openrouter.ai/models/bytedance-seed/seed-2-1-turbo-20260810"
       },
       {
-        "rank": 10,
+        "rank": 11,
         "id": "qwen/qwen3.8-2.4t-a95b",
         "slug": "qwen/qwen3.8-2.4t-a95b-20260812",
         "name": "Qwen: Qwen3.8 2.4T A95B",
@@ -780,7 +802,7 @@
         "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
       },
       {
-        "rank": 11,
+        "rank": 12,
         "id": "bytedance-seed/seed-2.0-code",
         "slug": "bytedance-seed/seed-2.0-code-20260730",
         "name": "ByteDance Seed: Seed-2.0-Code",
@@ -802,7 +824,7 @@
         "url": "https://openrouter.ai/models/bytedance-seed/seed-2.0-code-20260730"
       },
       {
-        "rank": 12,
+        "rank": 13,
         "id": "deepseek/deepseek-v4-pro-0813",
         "slug": "deepseek/deepseek-v4-pro-20260813",
         "name": "DeepSeek: DeepSeek V4 Pro 0813",
@@ -822,7 +844,7 @@
         "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
       },
       {
-        "rank": 13,
+        "rank": 14,
         "id": "x-ai/grok-4.6",
         "slug": "x-ai/grok-4.6-20260810",
         "name": "SpaceXAI: Grok 4.6",
@@ -844,7 +866,7 @@
         "url": "https://openrouter.ai/models/x-ai/grok-4.6-20260810"
       },
       {
-        "rank": 14,
+        "rank": 15,
         "id": "liquid/lfm-2.5-2.6b:free",
         "slug": "liquid/lfm-2.5-2.6b-20260811",
         "name": "LiquidAI: LFM2.5-2.6B (free)",
@@ -864,7 +886,7 @@
         "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B"
       },
       {
-        "rank": 15,
+        "rank": 16,
         "id": "nvidia/nemotron-3.5-lightning",
         "slug": "nvidia/nemotron-3.5-lightning-20260807",
         "name": "NVIDIA: Nemotron 3.5 Lightning",
@@ -884,7 +906,7 @@
         "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
       },
       {
-        "rank": 16,
+        "rank": 17,
         "id": "nvidia/nemotron-3.5-lightning:free",
         "slug": "nvidia/nemotron-3.5-lightning-20260807",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
@@ -904,7 +926,7 @@
         "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
       },
       {
-        "rank": 17,
+        "rank": 18,
         "id": "sakana/sakana-namazu",
         "slug": "sakana/namazu-20260811",
         "name": "Sakana: Sakana Namazu",
@@ -926,7 +948,7 @@
         "url": "https://openrouter.ai/models/sakana/namazu-20260811"
       },
       {
-        "rank": 18,
+        "rank": 19,
         "id": "upstage/solar-pro4",
         "slug": "upstage/solar-pro4-20260810",
         "name": "Upstage: Solar Pro 4",
@@ -946,7 +968,7 @@
         "url": "https://openrouter.ai/models/upstage/solar-pro4-20260810"
       },
       {
-        "rank": 19,
+        "rank": 20,
         "id": "meta/muse-glimmer-30b",
         "slug": "meta/muse-glimmer-30b-20260810",
         "name": "Meta: Muse Glimmer 30B",
@@ -965,30 +987,6 @@
         "pricing_completion": 0.0000015,
         "score": 1786302394,
         "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B"
-      },
-      {
-        "rank": 20,
-        "id": "meta/muse-spark-1.2",
-        "slug": "meta/muse-spark-1.2-20260805",
-        "name": "Meta: Muse Spark 1.2",
-        "description": "Muse Spark 1.2 is a reasoning model from Meta, designed for complex agentic tasks. It accepts text, images, video, audio, and PDF documents, returns text, and offers a 1M-token context...",
-        "context_length": 1048576,
-        "modalities": [
-          "text",
-          "image",
-          "video",
-          "file",
-          "audio",
-          "→text"
-        ],
-        "n_inputs": 5,
-        "n_outputs": 1,
-        "created_ts": 1785959287,
-        "created_human": "2026-08-05",
-        "pricing_prompt": 0.00000125,
-        "pricing_completion": 0.00000425,
-        "score": 1785959287,
-        "url": "https://openrouter.ai/models/meta/muse-spark-1.2-20260805"
       }
     ],
     "today": [
@@ -1072,8 +1070,8 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 788090456217,
-        "total_tokens_human": "788.09B",
+        "total_tokens": 788097347929,
+        "total_tokens_human": "788.10B",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
         "modalities": [],
@@ -1359,7 +1357,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 5154509458072,
+        "total_tokens": 5154516349784,
         "total_tokens_human": "5.15T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1661,7 +1659,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 19273087757857,
+        "total_tokens": 19273094649569,
         "total_tokens_human": "19.27T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -2189,7 +2187,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-20T16:00:14.928Z",
+      "as_of": "2026-08-20T23:00:13.399Z",
       "version": "v1",
       "start_date": "2026-08-19",
       "end_date": "2026-08-19"
@@ -2197,26 +2195,44 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-20T16:00:11.372Z",
+      "as_of": "2026-08-20T23:00:10.030Z",
       "version": "v1",
       "start_date": "2026-08-19",
       "end_date": "2026-08-19"
     },
     "week": {
-      "as_of": "2026-08-20T16:00:12.851Z",
+      "as_of": "2026-08-20T23:00:11.026Z",
       "version": "v1",
       "start_date": "2026-08-13",
       "end_date": "2026-08-19"
     },
     "month": {
-      "as_of": "2026-08-20T16:00:13.859Z",
+      "as_of": "2026-08-20T23:00:12.353Z",
       "version": "v1",
       "start_date": "2026-07-21",
       "end_date": "2026-08-19"
     }
   },
-  "models_total": 416,
+  "models_total": 418,
   "catalog": [
+    {
+      "id": "stealth/ox-alpha",
+      "canonical_slug": "stealth/ox-alpha",
+      "name": "Ox Alpha",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
+      "created_human": "2026-08-20",
+      "url": "https://openrouter.ai/models/stealth/ox-alpha"
+    },
     {
       "id": "tencent/hy-mt2-1.8b",
       "canonical_slug": "tencent/hy-mt2-1.8b-20260521",
@@ -2615,7 +2631,7 @@
       "id": "thinkingmachines/inkling-small",
       "canonical_slug": "thinkingmachines/inkling-small-20260730",
       "name": "Thinking Machines: Inkling Small",
-      "context_length": 524288,
+      "context_length": 1048576,
       "modalities": [
         "text",
         "image",
@@ -3464,7 +3480,7 @@
       "id": "z-ai/glm-5.2:batch",
       "canonical_slug": "z-ai/glm-5.2-20260616",
       "name": "Z.ai: GLM 5.2 (batch)",
-      "context_length": 512000,
+      "context_length": 1048575,
       "modalities": [
         "text",
         "→text"
@@ -4375,8 +4391,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8.4e-8,
-      "pricing_completion": 1.68e-7,
+      "pricing_prompt": 7.56e-8,
+      "pricing_completion": 1.512e-7,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
@@ -4528,8 +4544,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 5.795e-7,
-      "pricing_completion": 0.00000244,
+      "pricing_prompt": 5.415e-7,
+      "pricing_completion": 0.00000228,
       "created_human": "2026-04-20",
       "url": "https://huggingface.co/moonshotai/Kimi-K2.6"
     },
@@ -8761,6 +8777,22 @@
       "pricing_completion": 0.000005,
       "created_human": "2024-10-22",
       "url": "https://huggingface.co/anthracite-org/magnum-v4-72b"
+    },
+    {
+      "id": "mistralai/ministral-8b",
+      "canonical_slug": "mistralai/ministral-8b",
+      "name": "Mistral: Ministral 8B",
+      "context_length": 128000,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 1.1e-7,
+      "pricing_completion": 1.1e-7,
+      "created_human": "2024-10-17",
+      "url": "https://openrouter.ai/models/mistralai/ministral-8b"
     },
     {
       "id": "qwen/qwen-2.5-7b-instruct",
