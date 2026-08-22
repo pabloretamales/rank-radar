@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-22T16:00:16.160Z",
+  "fetched_at": "2026-08-22T23:00:15.959Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-22T16:00:11.453Z",
+    "as_of": "2026-08-22T23:00:12.213Z",
     "version": "v1",
     "start_date": "2026-07-23",
     "end_date": "2026-08-21"
   },
   "rankings_meta": {
-    "as_of": "2026-08-22T16:00:13.220Z",
+    "as_of": "2026-08-22T23:00:13.442Z",
     "version": "v1",
     "start_date": "2026-08-21",
     "end_date": "2026-08-21"
@@ -695,6 +695,26 @@
       },
       {
         "rank": 7,
+        "id": "tencent/hy-mt2-7b",
+        "slug": "tencent/hy-mt2-7b-20260521",
+        "name": "Tencent: Hy-MT2-7B",
+        "description": "Hy-MT2-7B is a 7B-parameter translation model from Tencent. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and style-guided translation.",
+        "context_length": 8192,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1787148797,
+        "created_human": "2026-08-19",
+        "pricing_prompt": 7.4e-8,
+        "pricing_completion": 2.95e-7,
+        "score": 1787148797,
+        "url": "https://huggingface.co/tencent/Hy-MT2-7B"
+      },
+      {
+        "rank": 8,
         "id": "z-ai/glm-5.3",
         "slug": "z-ai/glm-5.3-20260816",
         "name": "Z.ai: GLM 5.3",
@@ -714,7 +734,7 @@
         "url": "https://openrouter.ai/models/z-ai/glm-5.3-20260816"
       },
       {
-        "rank": 8,
+        "rank": 9,
         "id": "qwen/qwen3.8-27b",
         "slug": "qwen/qwen3.8-27b-20260814",
         "name": "Qwen: Qwen3.8 27B",
@@ -730,13 +750,13 @@
         "n_outputs": 1,
         "created_ts": 1786722910,
         "created_human": "2026-08-14",
-        "pricing_prompt": 4.5e-7,
-        "pricing_completion": 0.0000032,
+        "pricing_prompt": 4e-7,
+        "pricing_completion": 0.000003,
         "score": 1786722910,
         "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
       },
       {
-        "rank": 9,
+        "rank": 10,
         "id": "dots-studio/dots-3-note-preview:free",
         "slug": "dots-studio/dots-3-note-preview-20260813",
         "name": "Dots Studio: Dots3-Note Preview (free)",
@@ -757,7 +777,7 @@
         "url": "https://openrouter.ai/models/dots-studio/dots-3-note-preview-20260813"
       },
       {
-        "rank": 10,
+        "rank": 11,
         "id": "google/gemini-3.7-flash",
         "slug": "google/gemini-3.7-flash-20260813",
         "name": "Google: Gemini 3.7 Flash",
@@ -781,7 +801,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.7-flash-20260813"
       },
       {
-        "rank": 11,
+        "rank": 12,
         "id": "google/gemini-3.7-flash:batch",
         "slug": "google/gemini-3.7-flash-20260813",
         "name": "Google: Gemini 3.7 Flash (batch)",
@@ -805,7 +825,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.7-flash-20260813"
       },
       {
-        "rank": 12,
+        "rank": 13,
         "id": "bytedance-seed/seed-2-1-turbo",
         "slug": "bytedance-seed/seed-2-1-turbo-20260810",
         "name": "ByteDance Seed: Seed 2.1 Turbo",
@@ -827,7 +847,7 @@
         "url": "https://openrouter.ai/models/bytedance-seed/seed-2-1-turbo-20260810"
       },
       {
-        "rank": 13,
+        "rank": 14,
         "id": "qwen/qwen3.8-2.4t-a95b",
         "slug": "qwen/qwen3.8-2.4t-a95b-20260812",
         "name": "Qwen: Qwen3.8 2.4T A95B",
@@ -847,7 +867,7 @@
         "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
       },
       {
-        "rank": 14,
+        "rank": 15,
         "id": "bytedance-seed/seed-2.0-code",
         "slug": "bytedance-seed/seed-2.0-code-20260730",
         "name": "ByteDance Seed: Seed-2.0-Code",
@@ -869,7 +889,7 @@
         "url": "https://openrouter.ai/models/bytedance-seed/seed-2.0-code-20260730"
       },
       {
-        "rank": 15,
+        "rank": 16,
         "id": "deepseek/deepseek-v4-pro-0813",
         "slug": "deepseek/deepseek-v4-pro-20260813",
         "name": "DeepSeek: DeepSeek V4 Pro 0813",
@@ -883,13 +903,13 @@
         "n_outputs": 1,
         "created_ts": 1786549364,
         "created_human": "2026-08-12",
-        "pricing_prompt": 0.000001188,
-        "pricing_completion": 0.000003564,
+        "pricing_prompt": 0.000001122,
+        "pricing_completion": 0.000003366,
         "score": 1786549364,
         "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
       },
       {
-        "rank": 16,
+        "rank": 17,
         "id": "x-ai/grok-4.6",
         "slug": "x-ai/grok-4.6-20260810",
         "name": "SpaceXAI: Grok 4.6",
@@ -911,7 +931,7 @@
         "url": "https://openrouter.ai/models/x-ai/grok-4.6-20260810"
       },
       {
-        "rank": 17,
+        "rank": 18,
         "id": "liquid/lfm-2.5-2.6b:free",
         "slug": "liquid/lfm-2.5-2.6b-20260811",
         "name": "LiquidAI: LFM2.5-2.6B (free)",
@@ -931,7 +951,7 @@
         "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B"
       },
       {
-        "rank": 18,
+        "rank": 19,
         "id": "nvidia/nemotron-3.5-lightning",
         "slug": "nvidia/nemotron-3.5-lightning-20260807",
         "name": "NVIDIA: Nemotron 3.5 Lightning",
@@ -951,7 +971,7 @@
         "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
       },
       {
-        "rank": 19,
+        "rank": 20,
         "id": "nvidia/nemotron-3.5-lightning:free",
         "slug": "nvidia/nemotron-3.5-lightning-20260807",
         "name": "NVIDIA: Nemotron 3.5 Lightning (free)",
@@ -969,28 +989,6 @@
         "pricing_completion": 0,
         "score": 1786452751,
         "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
-      },
-      {
-        "rank": 20,
-        "id": "sakana/sakana-namazu",
-        "slug": "sakana/namazu-20260811",
-        "name": "Sakana: Sakana Namazu",
-        "description": "Sakana Namazu is a Japanese-specialized reasoning model from Sakana AI, based on Kimi K2.6 with additional training for Japanese language and business contexts. It is suited for Japanese instruction following,...",
-        "context_length": 262144,
-        "modalities": [
-          "text",
-          "image",
-          "file",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1786410129,
-        "created_human": "2026-08-11",
-        "pricing_prompt": 9.5e-7,
-        "pricing_completion": 0.000004,
-        "score": 1786410129,
-        "url": "https://openrouter.ai/models/sakana/namazu-20260811"
       }
     ],
     "today": [
@@ -2174,7 +2172,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-22T16:00:13.220Z",
+      "as_of": "2026-08-22T23:00:13.442Z",
       "version": "v1",
       "start_date": "2026-08-21",
       "end_date": "2026-08-21"
@@ -2182,25 +2180,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-22T16:00:09.052Z",
+      "as_of": "2026-08-22T23:00:10.087Z",
       "version": "v1",
       "start_date": "2026-08-21",
       "end_date": "2026-08-21"
     },
     "week": {
-      "as_of": "2026-08-22T16:00:10.303Z",
+      "as_of": "2026-08-22T23:00:11.210Z",
       "version": "v1",
       "start_date": "2026-08-15",
       "end_date": "2026-08-21"
     },
     "month": {
-      "as_of": "2026-08-22T16:00:11.453Z",
+      "as_of": "2026-08-22T23:00:12.213Z",
       "version": "v1",
       "start_date": "2026-07-23",
       "end_date": "2026-08-21"
     }
   },
-  "models_total": 421,
+  "models_total": 422,
   "catalog": [
     {
       "id": "meta/muse-spark-1.2-contributor",
@@ -2306,6 +2304,22 @@
       "url": "https://openrouter.ai/models/~z-ai/glm-latest"
     },
     {
+      "id": "tencent/hy-mt2-7b",
+      "canonical_slug": "tencent/hy-mt2-7b-20260521",
+      "name": "Tencent: Hy-MT2-7B",
+      "context_length": 8192,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 7.4e-8,
+      "pricing_completion": 2.95e-7,
+      "created_human": "2026-08-19",
+      "url": "https://huggingface.co/tencent/Hy-MT2-7B"
+    },
+    {
       "id": "z-ai/glm-5.3",
       "canonical_slug": "z-ai/glm-5.3-20260816",
       "name": "Z.ai: GLM 5.3",
@@ -2334,8 +2348,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 4.5e-7,
-      "pricing_completion": 0.0000032,
+      "pricing_prompt": 4e-7,
+      "pricing_completion": 0.000003,
       "created_human": "2026-08-14",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
     },
@@ -2459,8 +2473,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 0.000001188,
-      "pricing_completion": 0.000003564,
+      "pricing_prompt": 0.000001122,
+      "pricing_completion": 0.000003366,
       "created_human": "2026-08-12",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
     },
@@ -2576,8 +2590,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 3e-7,
-      "pricing_completion": 0.0000011,
+      "pricing_prompt": 3.5e-7,
+      "pricing_completion": 0.0000015,
       "created_human": "2026-08-09",
       "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B"
     },
@@ -2630,8 +2644,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 6.5e-8,
-      "pricing_completion": 1.8e-7,
+      "pricing_prompt": 6.39e-8,
+      "pricing_completion": 1.278e-7,
       "created_human": "2026-08-01",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
     },
@@ -4451,8 +4465,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 6.006e-8,
-      "pricing_completion": 1.2012e-7,
+      "pricing_prompt": 5.726e-8,
+      "pricing_completion": 1.1452e-7,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
@@ -7146,7 +7160,7 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 3e-8,
+      "pricing_prompt": 3.7e-8,
       "pricing_completion": 1.7e-7,
       "created_human": "2025-08-05",
       "url": "https://huggingface.co/openai/gpt-oss-120b"
