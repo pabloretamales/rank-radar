@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-23T16:00:16.488Z",
+  "fetched_at": "2026-08-23T23:00:16.324Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-23T16:00:12.759Z",
+    "as_of": "2026-08-23T23:00:12.852Z",
     "version": "v1",
     "start_date": "2026-07-24",
     "end_date": "2026-08-22"
   },
   "rankings_meta": {
-    "as_of": "2026-08-23T16:00:13.945Z",
+    "as_of": "2026-08-23T23:00:13.705Z",
     "version": "v1",
     "start_date": "2026-08-22",
     "end_date": "2026-08-22"
@@ -1374,7 +1374,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 5222689001045,
+        "total_tokens": 5222704087381,
         "total_tokens_human": "5.22T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1661,7 +1661,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 19683523040313,
+        "total_tokens": 19683538126649,
         "total_tokens_human": "19.68T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -2189,7 +2189,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-23T16:00:13.945Z",
+      "as_of": "2026-08-23T23:00:13.705Z",
       "version": "v1",
       "start_date": "2026-08-22",
       "end_date": "2026-08-22"
@@ -2197,19 +2197,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-23T16:00:10.064Z",
+      "as_of": "2026-08-23T23:00:09.961Z",
       "version": "v1",
       "start_date": "2026-08-22",
       "end_date": "2026-08-22"
     },
     "week": {
-      "as_of": "2026-08-23T16:00:10.997Z",
+      "as_of": "2026-08-23T23:00:10.975Z",
       "version": "v1",
       "start_date": "2026-08-16",
       "end_date": "2026-08-22"
     },
     "month": {
-      "as_of": "2026-08-23T16:00:12.759Z",
+      "as_of": "2026-08-23T23:00:12.852Z",
       "version": "v1",
       "start_date": "2026-07-24",
       "end_date": "2026-08-22"
@@ -2947,7 +2947,7 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.000001,
+      "pricing_prompt": 9.5e-7,
       "pricing_completion": 0.00000405,
       "created_human": "2026-07-17",
       "url": "https://huggingface.co/thinkingmachines/Inkling"
@@ -4635,8 +4635,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 9.5e-7,
-      "pricing_completion": 0.000004,
+      "pricing_prompt": 5.415e-7,
+      "pricing_completion": 0.00000228,
       "created_human": "2026-04-20",
       "url": "https://huggingface.co/moonshotai/Kimi-K2.6"
     },
@@ -7835,8 +7835,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.2e-7,
-      "pricing_completion": 5e-7,
+      "pricing_prompt": 1.3e-7,
+      "pricing_completion": 5.2e-7,
       "created_human": "2025-04-28",
       "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B"
     },
