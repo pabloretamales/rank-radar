@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-24T16:00:20.289Z",
+  "fetched_at": "2026-08-24T23:00:30.994Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-24T16:00:14.585Z",
+    "as_of": "2026-08-24T23:00:18.170Z",
     "version": "v1",
     "start_date": "2026-07-25",
     "end_date": "2026-08-23"
   },
   "rankings_meta": {
-    "as_of": "2026-08-24T16:00:15.460Z",
+    "as_of": "2026-08-24T23:00:20.965Z",
     "version": "v1",
     "start_date": "2026-08-23",
     "end_date": "2026-08-23"
@@ -1087,8 +1087,8 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 697326540909,
-        "total_tokens_human": "697.33B",
+        "total_tokens": 697337842572,
+        "total_tokens_human": "697.34B",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
         "modalities": [],
@@ -1374,7 +1374,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 5326491948354,
+        "total_tokens": 5326531052746,
         "total_tokens_human": "5.33T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1661,7 +1661,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 19700098524285,
+        "total_tokens": 19700137628677,
         "total_tokens_human": "19.70T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -2240,7 +2240,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-24T16:00:15.460Z",
+      "as_of": "2026-08-24T23:00:20.965Z",
       "version": "v1",
       "start_date": "2026-08-23",
       "end_date": "2026-08-23"
@@ -2248,25 +2248,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-24T16:00:11.393Z",
+      "as_of": "2026-08-24T23:00:12.583Z",
       "version": "v1",
       "start_date": "2026-08-23",
       "end_date": "2026-08-23"
     },
     "week": {
-      "as_of": "2026-08-24T16:00:12.868Z",
+      "as_of": "2026-08-24T23:00:15.466Z",
       "version": "v1",
       "start_date": "2026-08-17",
       "end_date": "2026-08-23"
     },
     "month": {
-      "as_of": "2026-08-24T16:00:14.585Z",
+      "as_of": "2026-08-24T23:00:18.170Z",
       "version": "v1",
       "start_date": "2026-07-25",
       "end_date": "2026-08-23"
     }
   },
-  "models_total": 416,
+  "models_total": 417,
   "catalog": [
     {
       "id": "meta/muse-spark-1.2-contributor",
@@ -2712,8 +2712,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 4e-8,
-      "pricing_completion": 8e-8,
+      "pricing_prompt": 3.5e-8,
+      "pricing_completion": 1.2e-7,
       "created_human": "2026-08-01",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
     },
@@ -2755,7 +2755,7 @@
       "id": "thinkingmachines/inkling-small:free",
       "canonical_slug": "thinkingmachines/inkling-small-20260730",
       "name": "Thinking Machines: Inkling Small (free)",
-      "context_length": 262144,
+      "context_length": 1048576,
       "modalities": [
         "text",
         "image",
@@ -3025,7 +3025,7 @@
       "id": "thinkingmachines/inkling:free",
       "canonical_slug": "thinkingmachines/inkling-20260715",
       "name": "Thinking Machines: Inkling (free)",
-      "context_length": 262144,
+      "context_length": 1048576,
       "modalities": [
         "text",
         "image",
@@ -4501,8 +4501,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 5.22174e-7,
-      "pricing_completion": 0.000001044348,
+      "pricing_prompt": 5.22e-7,
+      "pricing_completion": 0.000001044,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
     },
@@ -4936,8 +4936,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 2.4e-7,
-      "pricing_completion": 9.6e-7,
+      "pricing_prompt": 3e-7,
+      "pricing_completion": 0.0000012,
       "created_human": "2026-03-18",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7"
     },
@@ -5976,6 +5976,23 @@
       "pricing_completion": 0.000007,
       "created_human": "2025-12-10",
       "url": "https://openrouter.ai/models/openai/gpt-5.2-20251211"
+    },
+    {
+      "id": "mistralai/devstral-2512",
+      "canonical_slug": "mistralai/devstral-2512",
+      "name": "Mistral: Devstral 2 2512",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 2,
+      "n_outputs": 1,
+      "pricing_prompt": 4.4e-7,
+      "pricing_completion": 0.0000022,
+      "created_human": "2025-12-09",
+      "url": "https://huggingface.co/mistralai/Devstral-2-123B-Instruct-2512"
     },
     {
       "id": "relace/relace-search",
