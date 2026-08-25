@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-25T16:00:21.937Z",
+  "fetched_at": "2026-08-25T23:00:18.111Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-25T16:00:13.998Z",
+    "as_of": "2026-08-25T23:00:14.210Z",
     "version": "v1",
     "start_date": "2026-07-26",
     "end_date": "2026-08-24"
   },
   "rankings_meta": {
-    "as_of": "2026-08-25T16:00:16.100Z",
+    "as_of": "2026-08-25T23:00:14.957Z",
     "version": "v1",
     "start_date": "2026-08-24",
     "end_date": "2026-08-24"
@@ -2189,7 +2189,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-25T16:00:16.100Z",
+      "as_of": "2026-08-25T23:00:14.957Z",
       "version": "v1",
       "start_date": "2026-08-24",
       "end_date": "2026-08-24"
@@ -2197,25 +2197,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-25T16:00:11.514Z",
+      "as_of": "2026-08-25T23:00:11.861Z",
       "version": "v1",
       "start_date": "2026-08-24",
       "end_date": "2026-08-24"
     },
     "week": {
-      "as_of": "2026-08-25T16:00:12.744Z",
+      "as_of": "2026-08-25T23:00:12.814Z",
       "version": "v1",
       "start_date": "2026-08-18",
       "end_date": "2026-08-24"
     },
     "month": {
-      "as_of": "2026-08-25T16:00:13.998Z",
+      "as_of": "2026-08-25T23:00:14.210Z",
       "version": "v1",
       "start_date": "2026-07-26",
       "end_date": "2026-08-24"
     }
   },
-  "models_total": 418,
+  "models_total": 417,
   "catalog": [
     {
       "id": "meta/muse-spark-1.2-contributor",
@@ -2662,7 +2662,7 @@
       "n_inputs": 1,
       "n_outputs": 1,
       "pricing_prompt": 3.5e-8,
-      "pricing_completion": 1e-7,
+      "pricing_completion": 2.8e-7,
       "created_human": "2026-08-01",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
     },
@@ -2677,8 +2677,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 6.16e-8,
-      "pricing_completion": 1.232e-7,
+      "pricing_prompt": 4e-8,
+      "pricing_completion": 8e-8,
       "created_human": "2026-07-31",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
     },
@@ -4236,8 +4236,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.0000028,
-      "pricing_completion": 0.000014,
+      "pricing_prompt": 0.00000255,
+      "pricing_completion": 0.00001275,
       "created_human": "2026-04-27",
       "url": "https://openrouter.ai/models/~moonshotai/kimi-latest"
     },
@@ -4468,8 +4468,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 5.72808e-7,
-      "pricing_completion": 0.000001145616,
+      "pricing_prompt": 5.5593e-7,
+      "pricing_completion": 0.00000111186,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
     },
@@ -4484,8 +4484,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8.26e-8,
-      "pricing_completion": 1.652e-7,
+      "pricing_prompt": 7.7e-8,
+      "pricing_completion": 1.54e-7,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
@@ -7675,22 +7675,6 @@
       "url": "https://openrouter.ai/models/anthropic/claude-4-sonnet-20250522"
     },
     {
-      "id": "google/gemma-3n-e4b-it",
-      "canonical_slug": "google/gemma-3n-e4b-it",
-      "name": "Google: Gemma 3n 4B",
-      "context_length": 32768,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 6e-8,
-      "pricing_completion": 1.2e-7,
-      "created_human": "2025-05-20",
-      "url": "https://huggingface.co/google/gemma-3n-E4B-it"
-    },
-    {
       "id": "mistralai/mistral-medium-3",
       "canonical_slug": "mistralai/mistral-medium-3",
       "name": "Mistral: Mistral Medium 3",
@@ -7748,7 +7732,7 @@
       "id": "meta-llama/llama-guard-4-12b",
       "canonical_slug": "meta-llama/llama-guard-4-12b",
       "name": "Meta: Llama Guard 4 12B",
-      "context_length": 1048576,
+      "context_length": 163840,
       "modalities": [
         "image",
         "text",
