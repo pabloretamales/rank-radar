@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-27T16:00:21.093Z",
+  "fetched_at": "2026-08-27T23:00:18.312Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-27T16:00:15.428Z",
+    "as_of": "2026-08-27T23:00:14.065Z",
     "version": "v1",
     "start_date": "2026-07-28",
     "end_date": "2026-08-26"
   },
   "rankings_meta": {
-    "as_of": "2026-08-27T16:00:16.332Z",
+    "as_of": "2026-08-27T23:00:14.954Z",
     "version": "v1",
     "start_date": "2026-08-26",
     "end_date": "2026-08-26"
@@ -568,6 +568,26 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "inclusionai/ling-3.0-flash-fin:free",
+        "slug": "inclusionai/ling-3.0-flash-fin-20260827",
+        "name": "Ling 3.0 Flash Fin (free)",
+        "description": "Ling 3.0 Flash Fin is a finance-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for real-world investment...",
+        "context_length": 262144,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1787846290,
+        "created_human": "2026-08-27",
+        "pricing_prompt": 0,
+        "pricing_completion": 0,
+        "score": 1787846290,
+        "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-fin-20260827"
+      },
+      {
+        "rank": 2,
         "id": "qwen/qwen3.8-flash",
         "slug": "qwen/qwen3.8-flash-20260826",
         "name": "Qwen: Qwen3.8 Flash",
@@ -589,7 +609,7 @@
         "url": "https://openrouter.ai/models/qwen/qwen3.8-flash-20260826"
       },
       {
-        "rank": 2,
+        "rank": 3,
         "id": "z-ai/glm-5.3-flash",
         "slug": "z-ai/glm-5.3-flash-20260826",
         "name": "Z.ai: GLM 5.3 Flash",
@@ -611,7 +631,7 @@
         "url": "https://huggingface.co/zai-org/GLM-5.3-Flash"
       },
       {
-        "rank": 3,
+        "rank": 4,
         "id": "meta/muse-spark-1.2-contributor",
         "slug": "meta/muse-spark-1.2-contributor-20260805",
         "name": "Meta: Muse Spark 1.2 Contributor",
@@ -635,7 +655,7 @@
         "url": "https://openrouter.ai/models/meta/muse-spark-1.2-contributor-20260805"
       },
       {
-        "rank": 4,
+        "rank": 5,
         "id": "deepseek/deepseek-v4-flash-vision-exp",
         "slug": "deepseek/deepseek-v4-flash-vision-exp-20260821",
         "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
@@ -656,7 +676,7 @@
         "url": "https://openrouter.ai/models/deepseek/deepseek-v4-flash-vision-exp-20260821"
       },
       {
-        "rank": 5,
+        "rank": 6,
         "id": "tencent/hy-mt2-1.8b",
         "slug": "tencent/hy-mt2-1.8b-20260521",
         "name": "Tencent: Hy-MT2-1.8B",
@@ -676,7 +696,7 @@
         "url": "https://huggingface.co/tencent/Hy-MT2-1.8B"
       },
       {
-        "rank": 6,
+        "rank": 7,
         "id": "tencent/hy-mt2-30b-a3b",
         "slug": "tencent/hy-mt2-30b-a3b-20260521",
         "name": "Tencent: Hy-MT2-30B-A3B",
@@ -696,7 +716,7 @@
         "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B"
       },
       {
-        "rank": 7,
+        "rank": 8,
         "id": "~z-ai/glm-latest",
         "slug": "~z-ai/glm-latest",
         "name": "Z.ai: GLM Latest",
@@ -716,7 +736,7 @@
         "url": "https://openrouter.ai/models/~z-ai/glm-latest"
       },
       {
-        "rank": 8,
+        "rank": 9,
         "id": "tencent/hy-mt2-7b",
         "slug": "tencent/hy-mt2-7b-20260521",
         "name": "Tencent: Hy-MT2-7B",
@@ -736,7 +756,7 @@
         "url": "https://huggingface.co/tencent/Hy-MT2-7B"
       },
       {
-        "rank": 9,
+        "rank": 10,
         "id": "z-ai/glm-5.3",
         "slug": "z-ai/glm-5.3-20260816",
         "name": "Z.ai: GLM 5.3",
@@ -756,7 +776,7 @@
         "url": "https://openrouter.ai/models/z-ai/glm-5.3-20260816"
       },
       {
-        "rank": 10,
+        "rank": 11,
         "id": "qwen/qwen3.8-27b",
         "slug": "qwen/qwen3.8-27b-20260814",
         "name": "Qwen: Qwen3.8 27B",
@@ -778,7 +798,7 @@
         "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
       },
       {
-        "rank": 11,
+        "rank": 12,
         "id": "dots-studio/dots-3-note-preview:free",
         "slug": "dots-studio/dots-3-note-preview-20260813",
         "name": "Dots Studio: Dots3-Note Preview (free)",
@@ -799,7 +819,7 @@
         "url": "https://openrouter.ai/models/dots-studio/dots-3-note-preview-20260813"
       },
       {
-        "rank": 12,
+        "rank": 13,
         "id": "google/gemini-3.7-flash",
         "slug": "google/gemini-3.7-flash-20260813",
         "name": "Google: Gemini 3.7 Flash",
@@ -823,7 +843,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.7-flash-20260813"
       },
       {
-        "rank": 13,
+        "rank": 14,
         "id": "google/gemini-3.7-flash:batch",
         "slug": "google/gemini-3.7-flash-20260813",
         "name": "Google: Gemini 3.7 Flash (batch)",
@@ -847,7 +867,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.7-flash-20260813"
       },
       {
-        "rank": 14,
+        "rank": 15,
         "id": "bytedance-seed/seed-2-1-turbo",
         "slug": "bytedance-seed/seed-2-1-turbo-20260810",
         "name": "ByteDance Seed: Seed 2.1 Turbo",
@@ -869,7 +889,7 @@
         "url": "https://openrouter.ai/models/bytedance-seed/seed-2-1-turbo-20260810"
       },
       {
-        "rank": 15,
+        "rank": 16,
         "id": "qwen/qwen3.8-2.4t-a95b",
         "slug": "qwen/qwen3.8-2.4t-a95b-20260812",
         "name": "Qwen: Qwen3.8 2.4T A95B",
@@ -889,7 +909,7 @@
         "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
       },
       {
-        "rank": 16,
+        "rank": 17,
         "id": "bytedance-seed/seed-2.0-code",
         "slug": "bytedance-seed/seed-2.0-code-20260730",
         "name": "ByteDance Seed: Seed-2.0-Code",
@@ -911,7 +931,7 @@
         "url": "https://openrouter.ai/models/bytedance-seed/seed-2.0-code-20260730"
       },
       {
-        "rank": 17,
+        "rank": 18,
         "id": "deepseek/deepseek-v4-pro-0813",
         "slug": "deepseek/deepseek-v4-pro-20260813",
         "name": "DeepSeek: DeepSeek V4 Pro 0813",
@@ -931,7 +951,7 @@
         "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
       },
       {
-        "rank": 18,
+        "rank": 19,
         "id": "x-ai/grok-4.6",
         "slug": "x-ai/grok-4.6-20260810",
         "name": "SpaceXAI: Grok 4.6",
@@ -953,7 +973,7 @@
         "url": "https://openrouter.ai/models/x-ai/grok-4.6-20260810"
       },
       {
-        "rank": 19,
+        "rank": 20,
         "id": "liquid/lfm-2.5-2.6b:free",
         "slug": "liquid/lfm-2.5-2.6b-20260811",
         "name": "LiquidAI: LFM2.5-2.6B (free)",
@@ -971,26 +991,6 @@
         "pricing_completion": 0,
         "score": 1786470519,
         "url": "https://huggingface.co/LiquidAI/LFM2.5-2.6B"
-      },
-      {
-        "rank": 20,
-        "id": "nvidia/nemotron-3.5-lightning",
-        "slug": "nvidia/nemotron-3.5-lightning-20260807",
-        "name": "NVIDIA: Nemotron 3.5 Lightning",
-        "description": "NVIDIA Nemotron 3.5 Lightning is an open mixture-of-experts model from NVIDIA, with 3B active parameters out of 30B total. It is suited for high-throughput agentic workloads and specialized tasks that...",
-        "context_length": 262144,
-        "modalities": [
-          "text",
-          "→text"
-        ],
-        "n_inputs": 1,
-        "n_outputs": 1,
-        "created_ts": 1786452751,
-        "created_human": "2026-08-11",
-        "pricing_prompt": 8e-8,
-        "pricing_completion": 2e-7,
-        "score": 1786452751,
-        "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Lightning-30B-A3B-BF16"
       }
     ],
     "today": [
@@ -1109,7 +1109,7 @@
         "perma": "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "url": "https://openrouter.ai/models/nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "modalities": [],
-        "context_length": 512288,
+        "context_length": 262144,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "today"
@@ -1396,7 +1396,7 @@
         "perma": "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "url": "https://openrouter.ai/models/nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "modalities": [],
-        "context_length": 512288,
+        "context_length": 262144,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "week"
@@ -1728,7 +1728,7 @@
         "perma": "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "url": "https://openrouter.ai/models/nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "modalities": [],
-        "context_length": 512288,
+        "context_length": 262144,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "month"
@@ -1965,7 +1965,7 @@
         "perma": "nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "url": "https://openrouter.ai/models/nvidia/nemotron-3-ultra-550b-a55b-20260604:free",
         "modalities": [],
-        "context_length": 512288,
+        "context_length": 262144,
         "window": "trending"
       },
       {
@@ -2174,7 +2174,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-27T16:00:16.332Z",
+      "as_of": "2026-08-27T23:00:14.954Z",
       "version": "v1",
       "start_date": "2026-08-26",
       "end_date": "2026-08-26"
@@ -2182,26 +2182,42 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-27T16:00:13.047Z",
+      "as_of": "2026-08-27T23:00:11.273Z",
       "version": "v1",
       "start_date": "2026-08-26",
       "end_date": "2026-08-26"
     },
     "week": {
-      "as_of": "2026-08-27T16:00:14.419Z",
+      "as_of": "2026-08-27T23:00:12.636Z",
       "version": "v1",
       "start_date": "2026-08-20",
       "end_date": "2026-08-26"
     },
     "month": {
-      "as_of": "2026-08-27T16:00:15.428Z",
+      "as_of": "2026-08-27T23:00:14.065Z",
       "version": "v1",
       "start_date": "2026-07-28",
       "end_date": "2026-08-26"
     }
   },
-  "models_total": 417,
+  "models_total": 415,
   "catalog": [
+    {
+      "id": "inclusionai/ling-3.0-flash-fin:free",
+      "canonical_slug": "inclusionai/ling-3.0-flash-fin-20260827",
+      "name": "Ling 3.0 Flash Fin (free)",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
+      "created_human": "2026-08-27",
+      "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-fin-20260827"
+    },
     {
       "id": "qwen/qwen3.8-flash",
       "canonical_slug": "qwen/qwen3.8-flash-20260826",
@@ -2680,8 +2696,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 6e-8,
-      "pricing_completion": 1.2e-7,
+      "pricing_prompt": 5e-8,
+      "pricing_completion": 1e-7,
       "created_human": "2026-07-31",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
     },
@@ -3377,8 +3393,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -3620,23 +3636,6 @@
       "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code"
     },
     {
-      "id": "moonshotai/kimi-k2.7-code:batch",
-      "canonical_slug": "moonshotai/kimi-k2.7-code-20260612",
-      "name": "MoonshotAI: Kimi K2.7 Code (batch)",
-      "context_length": 262144,
-      "modalities": [
-        "text",
-        "image",
-        "→text"
-      ],
-      "n_inputs": 2,
-      "n_outputs": 1,
-      "pricing_prompt": 9.5e-7,
-      "pricing_completion": 0.000004,
-      "created_human": "2026-06-12",
-      "url": "https://huggingface.co/moonshotai/Kimi-K2.7-Code"
-    },
-    {
       "id": "~anthropic/claude-fable-latest",
       "canonical_slug": "~anthropic/claude-fable-latest",
       "name": "Anthropic: Claude Fable Latest",
@@ -3728,15 +3727,15 @@
       "id": "nvidia/nemotron-3-ultra-550b-a55b",
       "canonical_slug": "nvidia/nemotron-3-ultra-550b-a55b-20260604",
       "name": "NVIDIA: Nemotron 3 Ultra",
-      "context_length": 512288,
+      "context_length": 262144,
       "modalities": [
         "text",
         "→text"
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 6e-7,
-      "pricing_completion": 0.0000036,
+      "pricing_prompt": 5e-7,
+      "pricing_completion": 0.0000022,
       "created_human": "2026-06-04",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B-BF16"
     },
@@ -4471,8 +4470,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 7.798e-8,
-      "pricing_completion": 1.5596e-7,
+      "pricing_prompt": 7.49e-8,
+      "pricing_completion": 1.498e-7,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
@@ -8746,22 +8745,6 @@
       "url": "https://huggingface.co/anthracite-org/magnum-v4-72b"
     },
     {
-      "id": "mistralai/ministral-8b",
-      "canonical_slug": "mistralai/ministral-8b",
-      "name": "Mistral: Ministral 8B",
-      "context_length": 128000,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 1.1e-7,
-      "pricing_completion": 1.1e-7,
-      "created_human": "2024-10-17",
-      "url": "https://openrouter.ai/models/mistralai/ministral-8b"
-    },
-    {
       "id": "qwen/qwen-2.5-7b-instruct",
       "canonical_slug": "qwen/qwen-2.5-7b-instruct",
       "name": "Qwen: Qwen2.5 7B Instruct",
@@ -8776,22 +8759,6 @@
       "pricing_completion": 2e-7,
       "created_human": "2024-10-16",
       "url": "https://huggingface.co/Qwen/Qwen2.5-7B-Instruct"
-    },
-    {
-      "id": "thedrummer/rocinante-12b",
-      "canonical_slug": "thedrummer/rocinante-12b",
-      "name": "TheDrummer: Rocinante 12B",
-      "context_length": 65536,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 2.5e-7,
-      "pricing_completion": 5e-7,
-      "created_human": "2024-09-30",
-      "url": "https://huggingface.co/TheDrummer/Rocinante-12B-v1.1"
     },
     {
       "id": "meta-llama/llama-3.2-1b-instruct",
