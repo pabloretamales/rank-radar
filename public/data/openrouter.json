@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-29T16:00:19.093Z",
+  "fetched_at": "2026-08-29T23:00:18.444Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-29T16:00:14.706Z",
+    "as_of": "2026-08-29T23:00:13.482Z",
     "version": "v1",
     "start_date": "2026-07-30",
     "end_date": "2026-08-28"
   },
   "rankings_meta": {
-    "as_of": "2026-08-29T16:00:16.040Z",
+    "as_of": "2026-08-29T23:00:14.549Z",
     "version": "v1",
     "start_date": "2026-08-28",
     "end_date": "2026-08-28"
@@ -1074,8 +1074,8 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 872370117413,
-        "total_tokens_human": "872.37B",
+        "total_tokens": 872398776070,
+        "total_tokens_human": "872.40B",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
         "modalities": [],
@@ -1376,7 +1376,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 5718594128674,
+        "total_tokens": 5718622787331,
         "total_tokens_human": "5.72T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1693,7 +1693,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 21021720736006,
+        "total_tokens": 21021749394663,
         "total_tokens_human": "21.02T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -2208,7 +2208,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-29T16:00:16.040Z",
+      "as_of": "2026-08-29T23:00:14.549Z",
       "version": "v1",
       "start_date": "2026-08-28",
       "end_date": "2026-08-28"
@@ -2216,19 +2216,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-29T16:00:11.437Z",
+      "as_of": "2026-08-29T23:00:11.026Z",
       "version": "v1",
       "start_date": "2026-08-28",
       "end_date": "2026-08-28"
     },
     "week": {
-      "as_of": "2026-08-29T16:00:12.608Z",
+      "as_of": "2026-08-29T23:00:12.150Z",
       "version": "v1",
       "start_date": "2026-08-22",
       "end_date": "2026-08-28"
     },
     "month": {
-      "as_of": "2026-08-29T16:00:14.706Z",
+      "as_of": "2026-08-29T23:00:13.482Z",
       "version": "v1",
       "start_date": "2026-07-30",
       "end_date": "2026-08-28"
@@ -2813,8 +2813,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 4.5e-8,
-      "pricing_completion": 9e-8,
+      "pricing_prompt": 6.5e-8,
+      "pricing_completion": 1.8e-7,
       "created_human": "2026-07-31",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
     },
@@ -3454,8 +3454,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -4497,8 +4497,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 5.89512e-7,
-      "pricing_completion": 0.000001179024,
+      "pricing_prompt": 5.38878e-7,
+      "pricing_completion": 0.000001077756,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
     },
@@ -4513,8 +4513,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8.316e-8,
-      "pricing_completion": 1.6632e-7,
+      "pricing_prompt": 8.176e-8,
+      "pricing_completion": 1.6352e-7,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
