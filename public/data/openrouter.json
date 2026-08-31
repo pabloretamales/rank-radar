@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-08-31T16:00:25.128Z",
+  "fetched_at": "2026-08-31T23:00:17.494Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-08-31T16:00:14.992Z",
+    "as_of": "2026-08-31T23:00:13.265Z",
     "version": "v1",
     "start_date": "2026-08-01",
     "end_date": "2026-08-30"
   },
   "rankings_meta": {
-    "as_of": "2026-08-31T16:00:17.254Z",
+    "as_of": "2026-08-31T23:00:14.471Z",
     "version": "v1",
     "start_date": "2026-08-30",
     "end_date": "2026-08-30"
@@ -568,6 +568,26 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "ibm-granite/granite-4.2-8b",
+        "slug": "ibm-granite/granite-4.2-8b-20260831",
+        "name": "IBM: Granite 4.2 8B",
+        "description": "Granite 4.2 8B is a dense reasoning model from IBM. It is suited for mathematics, code generation, multilingual dialogue, and agentic workflows that need multi-step reasoning. It supports full, low-effort,...",
+        "context_length": 131072,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1788206780,
+        "created_human": "2026-08-31",
+        "pricing_prompt": 1e-7,
+        "pricing_completion": 1.5e-7,
+        "score": 1788206780,
+        "url": "https://huggingface.co/ibm-granite/granite-4.2-8b"
+      },
+      {
+        "rank": 2,
         "id": "tencent/hy4-preview",
         "slug": "tencent/hy4-preview-20260827",
         "name": "Tencent: Hy4 preview",
@@ -587,7 +607,7 @@
         "url": "https://openrouter.ai/models/tencent/hy4-preview-20260827"
       },
       {
-        "rank": 2,
+        "rank": 3,
         "id": "inclusionai/ling-3.0-flash-fin:free",
         "slug": "inclusionai/ling-3.0-flash-fin-20260827",
         "name": "Ling 3.0 Flash Fin (free)",
@@ -607,7 +627,7 @@
         "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-fin-20260827"
       },
       {
-        "rank": 3,
+        "rank": 4,
         "id": "qwen/qwen3.8-flash",
         "slug": "qwen/qwen3.8-flash-20260826",
         "name": "Qwen: Qwen3.8 Flash",
@@ -629,7 +649,7 @@
         "url": "https://openrouter.ai/models/qwen/qwen3.8-flash-20260826"
       },
       {
-        "rank": 4,
+        "rank": 5,
         "id": "z-ai/glm-5.3-flash",
         "slug": "z-ai/glm-5.3-flash-20260826",
         "name": "Z.ai: GLM 5.3 Flash",
@@ -651,7 +671,7 @@
         "url": "https://huggingface.co/zai-org/GLM-5.3-Flash"
       },
       {
-        "rank": 5,
+        "rank": 6,
         "id": "z-ai/glm-5.3-flash:batch",
         "slug": "z-ai/glm-5.3-flash-20260826",
         "name": "Z.ai: GLM 5.3 Flash (batch)",
@@ -673,7 +693,7 @@
         "url": "https://huggingface.co/zai-org/GLM-5.3-Flash"
       },
       {
-        "rank": 6,
+        "rank": 7,
         "id": "meta/muse-spark-1.2-contributor",
         "slug": "meta/muse-spark-1.2-contributor-20260805",
         "name": "Meta: Muse Spark 1.2 Contributor",
@@ -697,7 +717,7 @@
         "url": "https://openrouter.ai/models/meta/muse-spark-1.2-contributor-20260805"
       },
       {
-        "rank": 7,
+        "rank": 8,
         "id": "deepseek/deepseek-v4-flash-vision-exp",
         "slug": "deepseek/deepseek-v4-flash-vision-exp-20260821",
         "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
@@ -718,7 +738,7 @@
         "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp"
       },
       {
-        "rank": 8,
+        "rank": 9,
         "id": "tencent/hy-mt2-1.8b",
         "slug": "tencent/hy-mt2-1.8b-20260521",
         "name": "Tencent: Hy-MT2-1.8B",
@@ -738,7 +758,7 @@
         "url": "https://huggingface.co/tencent/Hy-MT2-1.8B"
       },
       {
-        "rank": 9,
+        "rank": 10,
         "id": "tencent/hy-mt2-30b-a3b",
         "slug": "tencent/hy-mt2-30b-a3b-20260521",
         "name": "Tencent: Hy-MT2-30B-A3B",
@@ -758,7 +778,7 @@
         "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B"
       },
       {
-        "rank": 10,
+        "rank": 11,
         "id": "~z-ai/glm-latest",
         "slug": "~z-ai/glm-latest",
         "name": "Z.ai: GLM Latest",
@@ -772,13 +792,13 @@
         "n_outputs": 1,
         "created_ts": 1787151053,
         "created_human": "2026-08-19",
-        "pricing_prompt": 0.0000011875,
-        "pricing_completion": 0.00000418,
+        "pricing_prompt": 0.00000117,
+        "pricing_completion": 0.00000396,
         "score": 1787151053,
         "url": "https://openrouter.ai/models/~z-ai/glm-latest"
       },
       {
-        "rank": 11,
+        "rank": 12,
         "id": "tencent/hy-mt2-7b",
         "slug": "tencent/hy-mt2-7b-20260521",
         "name": "Tencent: Hy-MT2-7B",
@@ -798,7 +818,7 @@
         "url": "https://huggingface.co/tencent/Hy-MT2-7B"
       },
       {
-        "rank": 12,
+        "rank": 13,
         "id": "z-ai/glm-5.3",
         "slug": "z-ai/glm-5.3-20260816",
         "name": "Z.ai: GLM 5.3",
@@ -818,7 +838,7 @@
         "url": "https://huggingface.co/zai-org/GLM-5.3"
       },
       {
-        "rank": 13,
+        "rank": 14,
         "id": "qwen/qwen3.8-27b",
         "slug": "qwen/qwen3.8-27b-20260814",
         "name": "Qwen: Qwen3.8 27B",
@@ -840,7 +860,7 @@
         "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
       },
       {
-        "rank": 14,
+        "rank": 15,
         "id": "dots-studio/dots-3-note-preview:free",
         "slug": "dots-studio/dots-3-note-preview-20260813",
         "name": "Dots Studio: Dots3-Note Preview (free)",
@@ -861,7 +881,7 @@
         "url": "https://openrouter.ai/models/dots-studio/dots-3-note-preview-20260813"
       },
       {
-        "rank": 15,
+        "rank": 16,
         "id": "google/gemini-3.7-flash",
         "slug": "google/gemini-3.7-flash-20260813",
         "name": "Google: Gemini 3.7 Flash",
@@ -885,7 +905,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.7-flash-20260813"
       },
       {
-        "rank": 16,
+        "rank": 17,
         "id": "google/gemini-3.7-flash:batch",
         "slug": "google/gemini-3.7-flash-20260813",
         "name": "Google: Gemini 3.7 Flash (batch)",
@@ -909,7 +929,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.7-flash-20260813"
       },
       {
-        "rank": 17,
+        "rank": 18,
         "id": "bytedance-seed/seed-2-1-turbo",
         "slug": "bytedance-seed/seed-2-1-turbo-20260810",
         "name": "ByteDance Seed: Seed 2.1 Turbo",
@@ -931,7 +951,7 @@
         "url": "https://openrouter.ai/models/bytedance-seed/seed-2-1-turbo-20260810"
       },
       {
-        "rank": 18,
+        "rank": 19,
         "id": "qwen/qwen3.8-2.4t-a95b",
         "slug": "qwen/qwen3.8-2.4t-a95b-20260812",
         "name": "Qwen: Qwen3.8 2.4T A95B",
@@ -951,7 +971,7 @@
         "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
       },
       {
-        "rank": 19,
+        "rank": 20,
         "id": "qwen/qwen3.8-2.4t-a95b:batch",
         "slug": "qwen/qwen3.8-2.4t-a95b-20260812",
         "name": "Qwen: Qwen3.8 2.4T A95B (batch)",
@@ -969,28 +989,6 @@
         "pricing_completion": 0.00000625,
         "score": 1786551702,
         "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
-      },
-      {
-        "rank": 20,
-        "id": "bytedance-seed/seed-2.0-code",
-        "slug": "bytedance-seed/seed-2.0-code-20260730",
-        "name": "ByteDance Seed: Seed-2.0-Code",
-        "description": "Seed 2.0 Code is a model from ByteDance Seed optimized for agentic coding. It is suited for frontend development, multilingual programming tasks, and coding-agent workflows in tools such as Claude...",
-        "context_length": 262144,
-        "modalities": [
-          "text",
-          "image",
-          "video",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1786550701,
-        "created_human": "2026-08-12",
-        "pricing_prompt": 5e-7,
-        "pricing_completion": 0.000003,
-        "score": 1786550701,
-        "url": "https://openrouter.ai/models/bytedance-seed/seed-2.0-code-20260730"
       }
     ],
     "today": [
@@ -1089,8 +1087,8 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 715255823884,
-        "total_tokens_human": "715.26B",
+        "total_tokens": 715290233395,
+        "total_tokens_human": "715.29B",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
         "modalities": [],
@@ -1391,7 +1389,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 5793222623546,
+        "total_tokens": 5793257033057,
         "total_tokens_human": "5.79T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1693,7 +1691,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 21147614413364,
+        "total_tokens": 21147675866081,
         "total_tokens_human": "21.15T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -2191,7 +2189,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-08-31T16:00:17.254Z",
+      "as_of": "2026-08-31T23:00:14.471Z",
       "version": "v1",
       "start_date": "2026-08-30",
       "end_date": "2026-08-30"
@@ -2199,26 +2197,42 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-08-31T16:00:12.142Z",
+      "as_of": "2026-08-31T23:00:10.649Z",
       "version": "v1",
       "start_date": "2026-08-30",
       "end_date": "2026-08-30"
     },
     "week": {
-      "as_of": "2026-08-31T16:00:13.492Z",
+      "as_of": "2026-08-31T23:00:11.594Z",
       "version": "v1",
       "start_date": "2026-08-24",
       "end_date": "2026-08-30"
     },
     "month": {
-      "as_of": "2026-08-31T16:00:14.992Z",
+      "as_of": "2026-08-31T23:00:13.265Z",
       "version": "v1",
       "start_date": "2026-08-01",
       "end_date": "2026-08-30"
     }
   },
-  "models_total": 395,
+  "models_total": 425,
   "catalog": [
+    {
+      "id": "ibm-granite/granite-4.2-8b",
+      "canonical_slug": "ibm-granite/granite-4.2-8b-20260831",
+      "name": "IBM: Granite 4.2 8B",
+      "context_length": 131072,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 1e-7,
+      "pricing_completion": 1.5e-7,
+      "created_human": "2026-08-31",
+      "url": "https://huggingface.co/ibm-granite/granite-4.2-8b"
+    },
     {
       "id": "tencent/hy4-preview",
       "canonical_slug": "tencent/hy4-preview-20260827",
@@ -2385,8 +2399,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 0.0000011875,
-      "pricing_completion": 0.00000418,
+      "pricing_prompt": 0.00000117,
+      "pricing_completion": 0.00000396,
       "created_human": "2026-08-19",
       "url": "https://openrouter.ai/models/~z-ai/glm-latest"
     },
@@ -2780,7 +2794,7 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 3e-8,
+      "pricing_prompt": 5e-8,
       "pricing_completion": 1.6e-7,
       "created_human": "2026-08-01",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
@@ -3253,6 +3267,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-pro-20260709"
     },
     {
+      "id": "openai/gpt-5.6-luna-pro:batch",
+      "canonical_slug": "openai/gpt-5.6-luna-pro-20260709",
+      "name": "OpenAI: GPT-5.6 Luna Pro (batch)",
+      "context_length": 1050000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 1e-7,
+      "pricing_completion": 6e-7,
+      "created_human": "2026-07-09",
+      "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-pro-20260709"
+    },
+    {
       "id": "openai/gpt-5.6-luna",
       "canonical_slug": "openai/gpt-5.6-luna-20260709",
       "name": "OpenAI: GPT-5.6 Luna",
@@ -3267,6 +3299,24 @@
       "n_outputs": 1,
       "pricing_prompt": 2e-7,
       "pricing_completion": 0.0000012,
+      "created_human": "2026-07-09",
+      "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-20260709"
+    },
+    {
+      "id": "openai/gpt-5.6-luna:batch",
+      "canonical_slug": "openai/gpt-5.6-luna-20260709",
+      "name": "OpenAI: GPT-5.6 Luna (batch)",
+      "context_length": 1050000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 1e-7,
+      "pricing_completion": 6e-7,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-luna-20260709"
     },
@@ -3289,6 +3339,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-pro-20260709"
     },
     {
+      "id": "openai/gpt-5.6-terra-pro:batch",
+      "canonical_slug": "openai/gpt-5.6-terra-pro-20260709",
+      "name": "OpenAI: GPT-5.6 Terra Pro (batch)",
+      "context_length": 1050000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000001,
+      "pricing_completion": 0.000006,
+      "created_human": "2026-07-09",
+      "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-pro-20260709"
+    },
+    {
       "id": "openai/gpt-5.6-terra",
       "canonical_slug": "openai/gpt-5.6-terra-20260709",
       "name": "OpenAI: GPT-5.6 Terra",
@@ -3303,6 +3371,24 @@
       "n_outputs": 1,
       "pricing_prompt": 0.000002,
       "pricing_completion": 0.000012,
+      "created_human": "2026-07-09",
+      "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-20260709"
+    },
+    {
+      "id": "openai/gpt-5.6-terra:batch",
+      "canonical_slug": "openai/gpt-5.6-terra-20260709",
+      "name": "OpenAI: GPT-5.6 Terra (batch)",
+      "context_length": 1050000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000001,
+      "pricing_completion": 0.000006,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-terra-20260709"
     },
@@ -3325,6 +3411,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-5.6-sol-pro-20260709"
     },
     {
+      "id": "openai/gpt-5.6-sol-pro:batch",
+      "canonical_slug": "openai/gpt-5.6-sol-pro-20260709",
+      "name": "OpenAI: GPT-5.6 Sol Pro (batch)",
+      "context_length": 1050000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000001,
+      "pricing_completion": 0.000005,
+      "created_human": "2026-07-09",
+      "url": "https://openrouter.ai/models/openai/gpt-5.6-sol-pro-20260709"
+    },
+    {
       "id": "openai/gpt-5.6-sol",
       "canonical_slug": "openai/gpt-5.6-sol-20260709",
       "name": "OpenAI: GPT-5.6 Sol",
@@ -3339,6 +3443,24 @@
       "n_outputs": 1,
       "pricing_prompt": 0.000002,
       "pricing_completion": 0.00001,
+      "created_human": "2026-07-09",
+      "url": "https://openrouter.ai/models/openai/gpt-5.6-sol-20260709"
+    },
+    {
+      "id": "openai/gpt-5.6-sol:batch",
+      "canonical_slug": "openai/gpt-5.6-sol-20260709",
+      "name": "OpenAI: GPT-5.6 Sol (batch)",
+      "context_length": 1050000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000001,
+      "pricing_completion": 0.000005,
       "created_human": "2026-07-09",
       "url": "https://openrouter.ai/models/openai/gpt-5.6-sol-20260709"
     },
@@ -3421,8 +3543,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -4436,6 +4558,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-5.5-pro-20260423"
     },
     {
+      "id": "openai/gpt-5.5-pro:batch",
+      "canonical_slug": "openai/gpt-5.5-pro-20260423",
+      "name": "OpenAI: GPT-5.5 Pro (batch)",
+      "context_length": 1050000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000015,
+      "pricing_completion": 0.00009,
+      "created_human": "2026-04-24",
+      "url": "https://openrouter.ai/models/openai/gpt-5.5-pro-20260423"
+    },
+    {
       "id": "openai/gpt-5.5",
       "canonical_slug": "openai/gpt-5.5-20260423",
       "name": "OpenAI: GPT-5.5",
@@ -4454,6 +4594,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-5.5-20260423"
     },
     {
+      "id": "openai/gpt-5.5:batch",
+      "canonical_slug": "openai/gpt-5.5-20260423",
+      "name": "OpenAI: GPT-5.5 (batch)",
+      "context_length": 1050000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.0000025,
+      "pricing_completion": 0.000015,
+      "created_human": "2026-04-24",
+      "url": "https://openrouter.ai/models/openai/gpt-5.5-20260423"
+    },
+    {
       "id": "deepseek/deepseek-v4-pro",
       "canonical_slug": "deepseek/deepseek-v4-pro-20260423",
       "name": "DeepSeek: DeepSeek V4 Pro 0423",
@@ -4464,8 +4622,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 0.000001035996,
-      "pricing_completion": 0.000002071992,
+      "pricing_prompt": 8.7e-7,
+      "pricing_completion": 0.00000174,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
     },
@@ -4480,8 +4638,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8.554e-8,
-      "pricing_completion": 1.7108e-7,
+      "pricing_prompt": 7.938e-8,
+      "pricing_completion": 1.5876e-7,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
@@ -4957,6 +5115,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-5.4-nano-20260317"
     },
     {
+      "id": "openai/gpt-5.4-nano:batch",
+      "canonical_slug": "openai/gpt-5.4-nano-20260317",
+      "name": "OpenAI: GPT-5.4 Nano (batch)",
+      "context_length": 400000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 1e-7,
+      "pricing_completion": 6.25e-7,
+      "created_human": "2026-03-17",
+      "url": "https://openrouter.ai/models/openai/gpt-5.4-nano-20260317"
+    },
+    {
       "id": "openai/gpt-5.4-mini",
       "canonical_slug": "openai/gpt-5.4-mini-20260317",
       "name": "OpenAI: GPT-5.4 Mini",
@@ -4971,6 +5147,24 @@
       "n_outputs": 1,
       "pricing_prompt": 7.5e-7,
       "pricing_completion": 0.0000045,
+      "created_human": "2026-03-17",
+      "url": "https://openrouter.ai/models/openai/gpt-5.4-mini-20260317"
+    },
+    {
+      "id": "openai/gpt-5.4-mini:batch",
+      "canonical_slug": "openai/gpt-5.4-mini-20260317",
+      "name": "OpenAI: GPT-5.4 Mini (batch)",
+      "context_length": 400000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 3.75e-7,
+      "pricing_completion": 0.00000225,
       "created_human": "2026-03-17",
       "url": "https://openrouter.ai/models/openai/gpt-5.4-mini-20260317"
     },
@@ -5129,6 +5323,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-5.4-pro-20260305"
     },
     {
+      "id": "openai/gpt-5.4-pro:batch",
+      "canonical_slug": "openai/gpt-5.4-pro-20260305",
+      "name": "OpenAI: GPT-5.4 Pro (batch)",
+      "context_length": 1050000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000015,
+      "pricing_completion": 0.00009,
+      "created_human": "2026-03-05",
+      "url": "https://openrouter.ai/models/openai/gpt-5.4-pro-20260305"
+    },
+    {
       "id": "openai/gpt-5.4",
       "canonical_slug": "openai/gpt-5.4-20260305",
       "name": "OpenAI: GPT-5.4",
@@ -5143,6 +5355,24 @@
       "n_outputs": 1,
       "pricing_prompt": 0.0000025,
       "pricing_completion": 0.000015,
+      "created_human": "2026-03-05",
+      "url": "https://openrouter.ai/models/openai/gpt-5.4-20260305"
+    },
+    {
+      "id": "openai/gpt-5.4:batch",
+      "canonical_slug": "openai/gpt-5.4-20260305",
+      "name": "OpenAI: GPT-5.4 (batch)",
+      "context_length": 1050000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.00000125,
+      "pricing_completion": 0.0000075,
       "created_human": "2026-03-05",
       "url": "https://openrouter.ai/models/openai/gpt-5.4-20260305"
     },
@@ -5884,6 +6114,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-5.2-pro-20251211"
     },
     {
+      "id": "openai/gpt-5.2-pro:batch",
+      "canonical_slug": "openai/gpt-5.2-pro-20251211",
+      "name": "OpenAI: GPT-5.2 Pro (batch)",
+      "context_length": 400000,
+      "modalities": [
+        "image",
+        "text",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.0000105,
+      "pricing_completion": 0.000084,
+      "created_human": "2025-12-10",
+      "url": "https://openrouter.ai/models/openai/gpt-5.2-pro-20251211"
+    },
+    {
       "id": "openai/gpt-5.2",
       "canonical_slug": "openai/gpt-5.2-20251211",
       "name": "OpenAI: GPT-5.2",
@@ -5898,6 +6146,24 @@
       "n_outputs": 1,
       "pricing_prompt": 0.00000175,
       "pricing_completion": 0.000014,
+      "created_human": "2025-12-10",
+      "url": "https://openrouter.ai/models/openai/gpt-5.2-20251211"
+    },
+    {
+      "id": "openai/gpt-5.2:batch",
+      "canonical_slug": "openai/gpt-5.2-20251211",
+      "name": "OpenAI: GPT-5.2 (batch)",
+      "context_length": 400000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 8.75e-7,
+      "pricing_completion": 0.000007,
       "created_human": "2025-12-10",
       "url": "https://openrouter.ai/models/openai/gpt-5.2-20251211"
     },
@@ -6193,6 +6459,24 @@
       "n_outputs": 1,
       "pricing_prompt": 0.00000125,
       "pricing_completion": 0.00001,
+      "created_human": "2025-11-13",
+      "url": "https://openrouter.ai/models/openai/gpt-5.1-20251113"
+    },
+    {
+      "id": "openai/gpt-5.1:batch",
+      "canonical_slug": "openai/gpt-5.1-20251113",
+      "name": "OpenAI: GPT-5.1 (batch)",
+      "context_length": 400000,
+      "modalities": [
+        "image",
+        "text",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 6.25e-7,
+      "pricing_completion": 0.000005,
       "created_human": "2025-11-13",
       "url": "https://openrouter.ai/models/openai/gpt-5.1-20251113"
     },
@@ -6542,6 +6826,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-5-pro-2025-10-06"
     },
     {
+      "id": "openai/gpt-5-pro:batch",
+      "canonical_slug": "openai/gpt-5-pro-2025-10-06",
+      "name": "OpenAI: GPT-5 Pro (batch)",
+      "context_length": 400000,
+      "modalities": [
+        "image",
+        "text",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.0000075,
+      "pricing_completion": 0.00006,
+      "created_human": "2025-10-06",
+      "url": "https://openrouter.ai/models/openai/gpt-5-pro-2025-10-06"
+    },
+    {
       "id": "z-ai/glm-4.6",
       "canonical_slug": "z-ai/glm-4.6",
       "name": "Z.ai: GLM 4.6",
@@ -6766,7 +7068,7 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 9e-8,
+      "pricing_prompt": 1e-7,
       "pricing_completion": 0.0000011,
       "created_human": "2025-09-11",
       "url": "https://huggingface.co/Qwen/Qwen3-Next-80B-A3B-Instruct"
@@ -6939,6 +7241,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-5-2025-08-07"
     },
     {
+      "id": "openai/gpt-5:batch",
+      "canonical_slug": "openai/gpt-5-2025-08-07",
+      "name": "OpenAI: GPT-5 (batch)",
+      "context_length": 400000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 6.25e-7,
+      "pricing_completion": 0.000005,
+      "created_human": "2025-08-07",
+      "url": "https://openrouter.ai/models/openai/gpt-5-2025-08-07"
+    },
+    {
       "id": "openai/gpt-5-mini",
       "canonical_slug": "openai/gpt-5-mini-2025-08-07",
       "name": "OpenAI: GPT-5 Mini",
@@ -6957,6 +7277,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-5-mini-2025-08-07"
     },
     {
+      "id": "openai/gpt-5-mini:batch",
+      "canonical_slug": "openai/gpt-5-mini-2025-08-07",
+      "name": "OpenAI: GPT-5 Mini (batch)",
+      "context_length": 400000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 1.25e-7,
+      "pricing_completion": 0.000001,
+      "created_human": "2025-08-07",
+      "url": "https://openrouter.ai/models/openai/gpt-5-mini-2025-08-07"
+    },
+    {
       "id": "openai/gpt-5-nano",
       "canonical_slug": "openai/gpt-5-nano-2025-08-07",
       "name": "OpenAI: GPT-5 Nano",
@@ -6971,6 +7309,24 @@
       "n_outputs": 1,
       "pricing_prompt": 5e-8,
       "pricing_completion": 4e-7,
+      "created_human": "2025-08-07",
+      "url": "https://openrouter.ai/models/openai/gpt-5-nano-2025-08-07"
+    },
+    {
+      "id": "openai/gpt-5-nano:batch",
+      "canonical_slug": "openai/gpt-5-nano-2025-08-07",
+      "name": "OpenAI: GPT-5 Nano (batch)",
+      "context_length": 400000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 2.5e-8,
+      "pricing_completion": 2e-7,
       "created_human": "2025-08-07",
       "url": "https://openrouter.ai/models/openai/gpt-5-nano-2025-08-07"
     },
@@ -7748,6 +8104,24 @@
       "url": "https://openrouter.ai/models/openai/o3-2025-04-16"
     },
     {
+      "id": "openai/o3:batch",
+      "canonical_slug": "openai/o3-2025-04-16",
+      "name": "OpenAI: o3 (batch)",
+      "context_length": 200000,
+      "modalities": [
+        "image",
+        "text",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000001,
+      "pricing_completion": 0.000004,
+      "created_human": "2025-04-16",
+      "url": "https://openrouter.ai/models/openai/o3-2025-04-16"
+    },
+    {
       "id": "openai/o4-mini",
       "canonical_slug": "openai/o4-mini-2025-04-16",
       "name": "OpenAI: o4 Mini",
@@ -7762,6 +8136,24 @@
       "n_outputs": 1,
       "pricing_prompt": 0.0000011,
       "pricing_completion": 0.0000044,
+      "created_human": "2025-04-16",
+      "url": "https://openrouter.ai/models/openai/o4-mini-2025-04-16"
+    },
+    {
+      "id": "openai/o4-mini:batch",
+      "canonical_slug": "openai/o4-mini-2025-04-16",
+      "name": "OpenAI: o4 Mini (batch)",
+      "context_length": 200000,
+      "modalities": [
+        "image",
+        "text",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 5.5e-7,
+      "pricing_completion": 0.0000022,
       "created_human": "2025-04-16",
       "url": "https://openrouter.ai/models/openai/o4-mini-2025-04-16"
     },
@@ -7784,6 +8176,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-4.1-2025-04-14"
     },
     {
+      "id": "openai/gpt-4.1:batch",
+      "canonical_slug": "openai/gpt-4.1-2025-04-14",
+      "name": "OpenAI: GPT-4.1 (batch)",
+      "context_length": 1047576,
+      "modalities": [
+        "image",
+        "text",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000001,
+      "pricing_completion": 0.000004,
+      "created_human": "2025-04-14",
+      "url": "https://openrouter.ai/models/openai/gpt-4.1-2025-04-14"
+    },
+    {
       "id": "openai/gpt-4.1-mini",
       "canonical_slug": "openai/gpt-4.1-mini-2025-04-14",
       "name": "OpenAI: GPT-4.1 Mini",
@@ -7802,6 +8212,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-4.1-mini-2025-04-14"
     },
     {
+      "id": "openai/gpt-4.1-mini:batch",
+      "canonical_slug": "openai/gpt-4.1-mini-2025-04-14",
+      "name": "OpenAI: GPT-4.1 Mini (batch)",
+      "context_length": 1047576,
+      "modalities": [
+        "image",
+        "text",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 2e-7,
+      "pricing_completion": 8e-7,
+      "created_human": "2025-04-14",
+      "url": "https://openrouter.ai/models/openai/gpt-4.1-mini-2025-04-14"
+    },
+    {
       "id": "openai/gpt-4.1-nano",
       "canonical_slug": "openai/gpt-4.1-nano-2025-04-14",
       "name": "OpenAI: GPT-4.1 Nano",
@@ -7816,6 +8244,24 @@
       "n_outputs": 1,
       "pricing_prompt": 1e-7,
       "pricing_completion": 4e-7,
+      "created_human": "2025-04-14",
+      "url": "https://openrouter.ai/models/openai/gpt-4.1-nano-2025-04-14"
+    },
+    {
+      "id": "openai/gpt-4.1-nano:batch",
+      "canonical_slug": "openai/gpt-4.1-nano-2025-04-14",
+      "name": "OpenAI: GPT-4.1 Nano (batch)",
+      "context_length": 1047576,
+      "modalities": [
+        "image",
+        "text",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 5e-8,
+      "pricing_completion": 2e-7,
       "created_human": "2025-04-14",
       "url": "https://openrouter.ai/models/openai/gpt-4.1-nano-2025-04-14"
     },
@@ -8150,6 +8596,23 @@
       "n_outputs": 1,
       "pricing_prompt": 0.0000011,
       "pricing_completion": 0.0000044,
+      "created_human": "2025-01-31",
+      "url": "https://openrouter.ai/models/openai/o3-mini-2025-01-31"
+    },
+    {
+      "id": "openai/o3-mini:batch",
+      "canonical_slug": "openai/o3-mini-2025-01-31",
+      "name": "OpenAI: o3 Mini (batch)",
+      "context_length": 200000,
+      "modalities": [
+        "text",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 2,
+      "n_outputs": 1,
+      "pricing_prompt": 5.5e-7,
+      "pricing_completion": 0.0000022,
       "created_human": "2025-01-31",
       "url": "https://openrouter.ai/models/openai/o3-mini-2025-01-31"
     },
@@ -8729,6 +9192,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-4o-mini-2024-07-18"
     },
     {
+      "id": "openai/gpt-4o-mini:batch",
+      "canonical_slug": "openai/gpt-4o-mini",
+      "name": "OpenAI: GPT-4o-mini (batch)",
+      "context_length": 128000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 7.5e-8,
+      "pricing_completion": 3e-7,
+      "created_human": "2024-07-18",
+      "url": "https://openrouter.ai/models/openai/gpt-4o-mini"
+    },
+    {
       "id": "google/gemma-2-27b-it",
       "canonical_slug": "google/gemma-2-27b-it",
       "name": "Google: Gemma 2 27B",
@@ -8781,6 +9262,24 @@
       "url": "https://openrouter.ai/models/openai/gpt-4o-2024-05-13"
     },
     {
+      "id": "openai/gpt-4o:batch",
+      "canonical_slug": "openai/gpt-4o",
+      "name": "OpenAI: GPT-4o (batch)",
+      "context_length": 128000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.00000125,
+      "pricing_completion": 0.000005,
+      "created_human": "2024-05-13",
+      "url": "https://openrouter.ai/models/openai/gpt-4o"
+    },
+    {
       "id": "mistralai/mixtral-8x22b-instruct",
       "canonical_slug": "mistralai/mixtral-8x22b-instruct",
       "name": "Mistral: Mixtral 8x22B Instruct",
@@ -8827,6 +9326,23 @@
       "n_outputs": 1,
       "pricing_prompt": 0.00001,
       "pricing_completion": 0.00003,
+      "created_human": "2024-04-09",
+      "url": "https://openrouter.ai/models/openai/gpt-4-turbo"
+    },
+    {
+      "id": "openai/gpt-4-turbo:batch",
+      "canonical_slug": "openai/gpt-4-turbo",
+      "name": "OpenAI: GPT-4 Turbo (batch)",
+      "context_length": 128000,
+      "modalities": [
+        "text",
+        "image",
+        "→text"
+      ],
+      "n_inputs": 2,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000005,
+      "pricing_completion": 0.000015,
       "created_human": "2024-04-09",
       "url": "https://openrouter.ai/models/openai/gpt-4-turbo"
     },
@@ -9010,6 +9526,22 @@
       "n_outputs": 1,
       "pricing_prompt": 5e-7,
       "pricing_completion": 0.0000015,
+      "created_human": "2023-05-28",
+      "url": "https://openrouter.ai/models/openai/gpt-3.5-turbo"
+    },
+    {
+      "id": "openai/gpt-3.5-turbo:batch",
+      "canonical_slug": "openai/gpt-3.5-turbo",
+      "name": "OpenAI: GPT-3.5 Turbo (batch)",
+      "context_length": 16385,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 2.5e-7,
+      "pricing_completion": 7.5e-7,
       "created_human": "2023-05-28",
       "url": "https://openrouter.ai/models/openai/gpt-3.5-turbo"
     },
