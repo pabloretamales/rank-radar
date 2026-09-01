@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-09-01T16:00:19.189Z",
+  "fetched_at": "2026-09-01T23:00:24.046Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-09-01T16:00:13.020Z",
+    "as_of": "2026-09-01T23:00:17.320Z",
     "version": "v1",
     "start_date": "2026-08-02",
     "end_date": "2026-08-31"
   },
   "rankings_meta": {
-    "as_of": "2026-09-01T15:59:42.191Z",
+    "as_of": "2026-09-01T23:00:18.711Z",
     "version": "v1",
     "start_date": "2026-08-31",
     "end_date": "2026-08-31"
@@ -568,6 +568,28 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "anthropic/claude-fable-5.1",
+        "slug": "anthropic/claude-fable-5.1-20260831",
+        "name": "Anthropic: Claude Fable 5.1",
+        "description": "Claude Fable 5.1 improves on Claude Fable 5 across the board, with the biggest gains in agentic coding, long-running agentic workflows, and knowledge work: long code refactors, front-end and visual...",
+        "context_length": 1000000,
+        "modalities": [
+          "text",
+          "image",
+          "file",
+          "→text"
+        ],
+        "n_inputs": 3,
+        "n_outputs": 1,
+        "created_ts": 1788285838,
+        "created_human": "2026-09-01",
+        "pricing_prompt": 0.00001,
+        "pricing_completion": 0.00005,
+        "score": 1788285838,
+        "url": "https://openrouter.ai/models/anthropic/claude-fable-5.1-20260831"
+      },
+      {
+        "rank": 2,
         "id": "inception/mercury-2.5-preview",
         "slug": "inception/mercury-2.5-preview-20260831",
         "name": "Inception: Mercury 2.5 Preview",
@@ -587,7 +609,7 @@
         "url": "https://openrouter.ai/models/inception/mercury-2.5-preview-20260831"
       },
       {
-        "rank": 2,
+        "rank": 3,
         "id": "ibm-granite/granite-4.2-8b",
         "slug": "ibm-granite/granite-4.2-8b-20260831",
         "name": "IBM: Granite 4.2 8B",
@@ -607,7 +629,7 @@
         "url": "https://huggingface.co/ibm-granite/granite-4.2-8b"
       },
       {
-        "rank": 3,
+        "rank": 4,
         "id": "tencent/hy4-preview",
         "slug": "tencent/hy4-preview-20260827",
         "name": "Tencent: Hy4 preview",
@@ -627,7 +649,7 @@
         "url": "https://openrouter.ai/models/tencent/hy4-preview-20260827"
       },
       {
-        "rank": 4,
+        "rank": 5,
         "id": "inclusionai/ling-3.0-flash-fin:free",
         "slug": "inclusionai/ling-3.0-flash-fin-20260827",
         "name": "Ling 3.0 Flash Fin (free)",
@@ -647,7 +669,7 @@
         "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-fin-20260827"
       },
       {
-        "rank": 5,
+        "rank": 6,
         "id": "qwen/qwen3.8-flash",
         "slug": "qwen/qwen3.8-flash-20260826",
         "name": "Qwen: Qwen3.8 Flash",
@@ -669,7 +691,7 @@
         "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
       },
       {
-        "rank": 6,
+        "rank": 7,
         "id": "z-ai/glm-5.3-flash",
         "slug": "z-ai/glm-5.3-flash-20260826",
         "name": "Z.ai: GLM 5.3 Flash",
@@ -691,7 +713,7 @@
         "url": "https://huggingface.co/zai-org/GLM-5.3-Flash"
       },
       {
-        "rank": 7,
+        "rank": 8,
         "id": "z-ai/glm-5.3-flash:batch",
         "slug": "z-ai/glm-5.3-flash-20260826",
         "name": "Z.ai: GLM 5.3 Flash (batch)",
@@ -713,7 +735,7 @@
         "url": "https://huggingface.co/zai-org/GLM-5.3-Flash"
       },
       {
-        "rank": 8,
+        "rank": 9,
         "id": "meta/muse-spark-1.2-contributor",
         "slug": "meta/muse-spark-1.2-contributor-20260805",
         "name": "Meta: Muse Spark 1.2 Contributor",
@@ -737,7 +759,7 @@
         "url": "https://openrouter.ai/models/meta/muse-spark-1.2-contributor-20260805"
       },
       {
-        "rank": 9,
+        "rank": 10,
         "id": "deepseek/deepseek-v4-flash-vision-exp",
         "slug": "deepseek/deepseek-v4-flash-vision-exp-20260821",
         "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
@@ -758,7 +780,7 @@
         "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp"
       },
       {
-        "rank": 10,
+        "rank": 11,
         "id": "tencent/hy-mt2-1.8b",
         "slug": "tencent/hy-mt2-1.8b-20260521",
         "name": "Tencent: Hy-MT2-1.8B",
@@ -778,7 +800,7 @@
         "url": "https://huggingface.co/tencent/Hy-MT2-1.8B"
       },
       {
-        "rank": 11,
+        "rank": 12,
         "id": "tencent/hy-mt2-30b-a3b",
         "slug": "tencent/hy-mt2-30b-a3b-20260521",
         "name": "Tencent: Hy-MT2-30B-A3B",
@@ -798,7 +820,7 @@
         "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B"
       },
       {
-        "rank": 12,
+        "rank": 13,
         "id": "~z-ai/glm-latest",
         "slug": "~z-ai/glm-latest",
         "name": "Z.ai: GLM Latest",
@@ -818,7 +840,7 @@
         "url": "https://openrouter.ai/models/~z-ai/glm-latest"
       },
       {
-        "rank": 13,
+        "rank": 14,
         "id": "tencent/hy-mt2-7b",
         "slug": "tencent/hy-mt2-7b-20260521",
         "name": "Tencent: Hy-MT2-7B",
@@ -838,7 +860,7 @@
         "url": "https://huggingface.co/tencent/Hy-MT2-7B"
       },
       {
-        "rank": 14,
+        "rank": 15,
         "id": "z-ai/glm-5.3",
         "slug": "z-ai/glm-5.3-20260816",
         "name": "Z.ai: GLM 5.3",
@@ -858,7 +880,7 @@
         "url": "https://huggingface.co/zai-org/GLM-5.3"
       },
       {
-        "rank": 15,
+        "rank": 16,
         "id": "qwen/qwen3.8-27b",
         "slug": "qwen/qwen3.8-27b-20260814",
         "name": "Qwen: Qwen3.8 27B",
@@ -880,7 +902,7 @@
         "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
       },
       {
-        "rank": 16,
+        "rank": 17,
         "id": "dots-studio/dots-3-note-preview:free",
         "slug": "dots-studio/dots-3-note-preview-20260813",
         "name": "Dots Studio: Dots3-Note Preview (free)",
@@ -901,7 +923,7 @@
         "url": "https://openrouter.ai/models/dots-studio/dots-3-note-preview-20260813"
       },
       {
-        "rank": 17,
+        "rank": 18,
         "id": "google/gemini-3.7-flash",
         "slug": "google/gemini-3.7-flash-20260813",
         "name": "Google: Gemini 3.7 Flash",
@@ -925,7 +947,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.7-flash-20260813"
       },
       {
-        "rank": 18,
+        "rank": 19,
         "id": "google/gemini-3.7-flash:batch",
         "slug": "google/gemini-3.7-flash-20260813",
         "name": "Google: Gemini 3.7 Flash (batch)",
@@ -949,7 +971,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.7-flash-20260813"
       },
       {
-        "rank": 19,
+        "rank": 20,
         "id": "bytedance-seed/seed-2-1-turbo",
         "slug": "bytedance-seed/seed-2-1-turbo-20260810",
         "name": "ByteDance Seed: Seed 2.1 Turbo",
@@ -969,26 +991,6 @@
         "pricing_completion": 0.0000025,
         "score": 1786552176,
         "url": "https://openrouter.ai/models/bytedance-seed/seed-2-1-turbo-20260810"
-      },
-      {
-        "rank": 20,
-        "id": "qwen/qwen3.8-2.4t-a95b",
-        "slug": "qwen/qwen3.8-2.4t-a95b-20260812",
-        "name": "Qwen: Qwen3.8 2.4T A95B",
-        "description": "Qwen3.8 2.4T A95B is an open-weight sparse mixture-of-experts model from Qwen and the open-weight variant of [Qwen3.8 Max](/qwen/qwen3.8-max), with 95 billion active parameters out of 2.4 trillion total. It is...",
-        "context_length": 1048576,
-        "modalities": [
-          "text",
-          "→text"
-        ],
-        "n_inputs": 1,
-        "n_outputs": 1,
-        "created_ts": 1786551702,
-        "created_human": "2026-08-12",
-        "pricing_prompt": 0.000002,
-        "pricing_completion": 0.000006,
-        "score": 1786551702,
-        "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
       }
     ],
     "today": [
@@ -1057,7 +1059,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 909828151858,
+        "total_tokens": 909828174807,
         "total_tokens_human": "909.83B",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1389,7 +1391,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 5836592668843,
+        "total_tokens": 5836626032599,
         "total_tokens_human": "5.84T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1691,7 +1693,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 21565837172630,
+        "total_tokens": 21565870536386,
         "total_tokens_human": "21.57T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -2189,7 +2191,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-09-01T15:59:42.191Z",
+      "as_of": "2026-09-01T23:00:18.711Z",
       "version": "v1",
       "start_date": "2026-08-31",
       "end_date": "2026-08-31"
@@ -2197,26 +2199,44 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-09-01T16:00:10.250Z",
+      "as_of": "2026-09-01T23:00:14.943Z",
       "version": "v1",
       "start_date": "2026-08-31",
       "end_date": "2026-08-31"
     },
     "week": {
-      "as_of": "2026-09-01T16:00:12.015Z",
+      "as_of": "2026-09-01T23:00:15.953Z",
       "version": "v1",
       "start_date": "2026-08-25",
       "end_date": "2026-08-31"
     },
     "month": {
-      "as_of": "2026-09-01T16:00:13.020Z",
+      "as_of": "2026-09-01T23:00:17.320Z",
       "version": "v1",
       "start_date": "2026-08-02",
       "end_date": "2026-08-31"
     }
   },
-  "models_total": 418,
+  "models_total": 419,
   "catalog": [
+    {
+      "id": "anthropic/claude-fable-5.1",
+      "canonical_slug": "anthropic/claude-fable-5.1-20260831",
+      "name": "Anthropic: Claude Fable 5.1",
+      "context_length": 1000000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.00001,
+      "pricing_completion": 0.00005,
+      "created_human": "2026-09-01",
+      "url": "https://openrouter.ai/models/anthropic/claude-fable-5.1-20260831"
+    },
     {
       "id": "inception/mercury-2.5-preview",
       "canonical_slug": "inception/mercury-2.5-preview-20260831",
@@ -3541,8 +3561,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -4584,8 +4604,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 0.0000016,
-      "pricing_completion": 0.0000032,
+      "pricing_prompt": 0.00000102747,
+      "pricing_completion": 0.00000205494,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
     },
@@ -4600,8 +4620,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 7.63e-8,
-      "pricing_completion": 1.526e-7,
+      "pricing_prompt": 7.168e-8,
+      "pricing_completion": 1.4336e-7,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
