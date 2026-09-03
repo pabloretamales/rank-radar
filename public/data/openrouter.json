@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-09-03T16:00:20.872Z",
+  "fetched_at": "2026-09-03T23:00:18.445Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-09-03T16:00:13.446Z",
+    "as_of": "2026-09-03T23:00:12.248Z",
     "version": "v1",
     "start_date": "2026-08-04",
     "end_date": "2026-09-02"
   },
   "rankings_meta": {
-    "as_of": "2026-09-03T16:00:14.834Z",
+    "as_of": "2026-09-03T23:00:13.262Z",
     "version": "v1",
     "start_date": "2026-09-02",
     "end_date": "2026-09-02"
@@ -768,6 +768,26 @@
       },
       {
         "rank": 10,
+        "id": "inclusionai/ling-3.0-flash-fin",
+        "slug": "inclusionai/ling-3.0-flash-fin-20260827",
+        "name": "Ling 3.0 Flash Fin",
+        "description": "Ling 3.0 Flash Fin is a finance-focused mixture-of-experts model from InclusionAI, built on Ling 3.0 Flash with 5.1B active parameters out of 124B total. It is designed for real-world investment...",
+        "context_length": 262144,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1787846290,
+        "created_human": "2026-08-27",
+        "pricing_prompt": 6e-8,
+        "pricing_completion": 1.8e-7,
+        "score": 1787846290,
+        "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-fin-20260827"
+      },
+      {
+        "rank": 11,
         "id": "inclusionai/ling-3.0-flash-fin:free",
         "slug": "inclusionai/ling-3.0-flash-fin-20260827",
         "name": "Ling 3.0 Flash Fin (free)",
@@ -787,7 +807,7 @@
         "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-fin-20260827"
       },
       {
-        "rank": 11,
+        "rank": 12,
         "id": "~z-ai/glm-flash-latest",
         "slug": "~z-ai/glm-flash-latest",
         "name": "Z.ai: GLM Flash Latest",
@@ -809,7 +829,7 @@
         "url": "https://openrouter.ai/models/~z-ai/glm-flash-latest"
       },
       {
-        "rank": 12,
+        "rank": 13,
         "id": "qwen/qwen3.8-flash",
         "slug": "qwen/qwen3.8-flash-20260826",
         "name": "Qwen: Qwen3.8 Flash",
@@ -831,7 +851,7 @@
         "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
       },
       {
-        "rank": 13,
+        "rank": 14,
         "id": "z-ai/glm-5.3-flash",
         "slug": "z-ai/glm-5.3-flash-20260826",
         "name": "Z.ai: GLM 5.3 Flash",
@@ -853,7 +873,7 @@
         "url": "https://huggingface.co/zai-org/GLM-5.3-Flash"
       },
       {
-        "rank": 14,
+        "rank": 15,
         "id": "z-ai/glm-5.3-flash:batch",
         "slug": "z-ai/glm-5.3-flash-20260826",
         "name": "Z.ai: GLM 5.3 Flash (batch)",
@@ -875,7 +895,7 @@
         "url": "https://huggingface.co/zai-org/GLM-5.3-Flash"
       },
       {
-        "rank": 15,
+        "rank": 16,
         "id": "meta/muse-spark-1.2-contributor",
         "slug": "meta/muse-spark-1.2-contributor-20260805",
         "name": "Meta: Muse Spark 1.2 Contributor",
@@ -899,7 +919,7 @@
         "url": "https://openrouter.ai/models/meta/muse-spark-1.2-contributor-20260805"
       },
       {
-        "rank": 16,
+        "rank": 17,
         "id": "deepseek/deepseek-v4-flash-vision-exp",
         "slug": "deepseek/deepseek-v4-flash-vision-exp-20260821",
         "name": "DeepSeek: DeepSeek V4 Flash Vision Exp",
@@ -920,7 +940,7 @@
         "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp"
       },
       {
-        "rank": 17,
+        "rank": 18,
         "id": "tencent/hy-mt2-1.8b",
         "slug": "tencent/hy-mt2-1.8b-20260521",
         "name": "Tencent: Hy-MT2-1.8B",
@@ -940,7 +960,7 @@
         "url": "https://huggingface.co/tencent/Hy-MT2-1.8B"
       },
       {
-        "rank": 18,
+        "rank": 19,
         "id": "tencent/hy-mt2-30b-a3b",
         "slug": "tencent/hy-mt2-30b-a3b-20260521",
         "name": "Tencent: Hy-MT2-30B-A3B",
@@ -960,7 +980,7 @@
         "url": "https://huggingface.co/tencent/Hy-MT2-30B-A3B"
       },
       {
-        "rank": 19,
+        "rank": 20,
         "id": "~z-ai/glm-latest",
         "slug": "~z-ai/glm-latest",
         "name": "Z.ai: GLM Latest",
@@ -974,30 +994,10 @@
         "n_outputs": 1,
         "created_ts": 1787151053,
         "created_human": "2026-08-19",
-        "pricing_prompt": 0.000001134,
-        "pricing_completion": 0.000003564,
+        "pricing_prompt": 0.00000115,
+        "pricing_completion": 0.0000035,
         "score": 1787151053,
         "url": "https://openrouter.ai/models/~z-ai/glm-latest"
-      },
-      {
-        "rank": 20,
-        "id": "tencent/hy-mt2-7b",
-        "slug": "tencent/hy-mt2-7b-20260521",
-        "name": "Tencent: Hy-MT2-7B",
-        "description": "Hy-MT2-7B is a 7B-parameter translation model from Tencent. It supports 33 language pairs and five Chinese dialect and minority-language pairs, with workflows for structured, delimiter-based, contextual, glossary-based, and style-guided translation.",
-        "context_length": 8192,
-        "modalities": [
-          "text",
-          "→text"
-        ],
-        "n_inputs": 1,
-        "n_outputs": 1,
-        "created_ts": 1787148797,
-        "created_human": "2026-08-19",
-        "pricing_prompt": 7.4e-8,
-        "pricing_completion": 2.95e-7,
-        "score": 1787148797,
-        "url": "https://huggingface.co/tencent/Hy-MT2-7B"
       }
     ],
     "today": [
@@ -1066,7 +1066,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 1062586979355,
+        "total_tokens": 1062587750525,
         "total_tokens_human": "1.06T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1368,7 +1368,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 6150020138416,
+        "total_tokens": 6150050256800,
         "total_tokens_human": "6.15T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1700,7 +1700,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 22543592779256,
+        "total_tokens": 22543622897640,
         "total_tokens_human": "22.54T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1977,9 +1977,9 @@
       },
       {
         "rank": 5,
-        "id": "inclusionai/ling-3.0-flash",
-        "name": "Ling-3.0-flash",
-        "slug": "inclusionai/ling-3.0-flash-20260723",
+        "id": "inclusionai/ling-3.0-flash-fin",
+        "name": "Ling 3.0 Flash Fin",
+        "slug": "inclusionai/ling-3.0-flash-fin-20260827",
         "total_tokens": 561210990603,
         "total_tokens_human": "561.21B",
         "recent7": 561210990603,
@@ -2181,7 +2181,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-09-03T16:00:14.834Z",
+      "as_of": "2026-09-03T23:00:13.262Z",
       "version": "v1",
       "start_date": "2026-09-02",
       "end_date": "2026-09-02"
@@ -2189,25 +2189,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-09-03T16:00:10.545Z",
+      "as_of": "2026-09-03T23:00:09.512Z",
       "version": "v1",
       "start_date": "2026-09-02",
       "end_date": "2026-09-02"
     },
     "week": {
-      "as_of": "2026-09-03T16:00:12.388Z",
+      "as_of": "2026-09-03T23:00:10.956Z",
       "version": "v1",
       "start_date": "2026-08-27",
       "end_date": "2026-09-02"
     },
     "month": {
-      "as_of": "2026-09-03T16:00:13.446Z",
+      "as_of": "2026-09-03T23:00:12.248Z",
       "version": "v1",
       "start_date": "2026-08-04",
       "end_date": "2026-09-02"
     }
   },
-  "models_total": 424,
+  "models_total": 425,
   "catalog": [
     {
       "id": "meta/muse-spark-1.3-contributor",
@@ -2372,6 +2372,22 @@
       "pricing_completion": 0.000002501,
       "created_human": "2026-08-28",
       "url": "https://openrouter.ai/models/tencent/hy4-preview-20260827"
+    },
+    {
+      "id": "inclusionai/ling-3.0-flash-fin",
+      "canonical_slug": "inclusionai/ling-3.0-flash-fin-20260827",
+      "name": "Ling 3.0 Flash Fin",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 6e-8,
+      "pricing_completion": 1.8e-7,
+      "created_human": "2026-08-27",
+      "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-fin-20260827"
     },
     {
       "id": "inclusionai/ling-3.0-flash-fin:free",
@@ -2541,8 +2557,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 0.000001134,
-      "pricing_completion": 0.000003564,
+      "pricing_prompt": 0.00000115,
+      "pricing_completion": 0.0000035,
       "created_human": "2026-08-19",
       "url": "https://openrouter.ai/models/~z-ai/glm-latest"
     },
@@ -2591,8 +2607,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 4.25e-7,
-      "pricing_completion": 0.00000255,
+      "pricing_prompt": 4.2e-7,
+      "pricing_completion": 0.000003,
       "created_human": "2026-08-14",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
     },
@@ -3667,8 +3683,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -4360,7 +4376,7 @@
       "id": "mistralai/mistral-medium-3-5:batch",
       "canonical_slug": "mistralai/mistral-medium-3.5-20260430",
       "name": "Mistral: Mistral Medium 3.5 (batch)",
-      "context_length": 262144,
+      "context_length": 32768,
       "modalities": [
         "text",
         "image",
@@ -4462,8 +4478,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.00000255,
-      "pricing_completion": 0.00001275,
+      "pricing_prompt": 0.0000025,
+      "pricing_completion": 0.000014,
       "created_human": "2026-04-27",
       "url": "https://openrouter.ai/models/~moonshotai/kimi-latest"
     },
@@ -4694,8 +4710,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 0.000001035996,
-      "pricing_completion": 0.000002071992,
+      "pricing_prompt": 0.000001024164,
+      "pricing_completion": 0.000002048328,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
     },
@@ -4710,8 +4726,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8.554e-8,
-      "pricing_completion": 1.7108e-7,
+      "pricing_prompt": 7.938e-8,
+      "pricing_completion": 1.5876e-7,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
@@ -7184,8 +7200,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 2.5e-7,
-      "pricing_completion": 9.5e-7,
+      "pricing_prompt": 5.5e-7,
+      "pricing_completion": 0.00000165,
       "created_human": "2025-08-21",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3.1"
     },
