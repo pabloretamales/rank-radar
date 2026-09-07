@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-09-07T15:00:18.632Z",
+  "fetched_at": "2026-09-07T22:00:18.388Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-09-07T15:00:13.616Z",
+    "as_of": "2026-09-07T22:00:14.017Z",
     "version": "v1",
     "start_date": "2026-08-08",
     "end_date": "2026-09-06"
   },
   "rankings_meta": {
-    "as_of": "2026-09-07T15:00:14.532Z",
+    "as_of": "2026-09-07T21:59:39.052Z",
     "version": "v1",
     "start_date": "2026-09-06",
     "end_date": "2026-09-06"
@@ -2252,7 +2252,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-09-07T15:00:14.532Z",
+      "as_of": "2026-09-07T21:59:39.052Z",
       "version": "v1",
       "start_date": "2026-09-06",
       "end_date": "2026-09-06"
@@ -2260,25 +2260,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-09-07T15:00:11.197Z",
+      "as_of": "2026-09-07T22:00:10.063Z",
       "version": "v1",
       "start_date": "2026-09-06",
       "end_date": "2026-09-06"
     },
     "week": {
-      "as_of": "2026-09-07T15:00:12.456Z",
+      "as_of": "2026-09-07T22:00:11.231Z",
       "version": "v1",
       "start_date": "2026-08-31",
       "end_date": "2026-09-06"
     },
     "month": {
-      "as_of": "2026-09-07T15:00:13.616Z",
+      "as_of": "2026-09-07T22:00:14.017Z",
       "version": "v1",
       "start_date": "2026-08-08",
       "end_date": "2026-09-06"
     }
   },
-  "models_total": 430,
+  "models_total": 428,
   "catalog": [
     {
       "id": "openai/gpt-6-astra",
@@ -3842,8 +3842,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -4259,24 +4259,6 @@
       "url": "https://huggingface.co/MiniMaxAI/Minimax-M3"
     },
     {
-      "id": "minimax/minimax-m3:free",
-      "canonical_slug": "minimax/minimax-m3-20260531",
-      "name": "MiniMax: MiniMax M3 (free)",
-      "context_length": 1048576,
-      "modalities": [
-        "text",
-        "image",
-        "video",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
-      "created_human": "2026-05-31",
-      "url": "https://huggingface.co/MiniMaxAI/Minimax-M3"
-    },
-    {
       "id": "stepfun/step-3.7-flash",
       "canonical_slug": "stepfun/step-3.7-flash-20260528",
       "name": "StepFun: Step 3.7 Flash",
@@ -4640,8 +4622,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.00000255,
-      "pricing_completion": 0.00001275,
+      "pricing_prompt": 0.0000025,
+      "pricing_completion": 0.000014,
       "created_human": "2026-04-27",
       "url": "https://openrouter.ai/models/~moonshotai/kimi-latest"
     },
@@ -5327,22 +5309,6 @@
       "n_outputs": 1,
       "pricing_prompt": 3e-7,
       "pricing_completion": 0.0000012,
-      "created_human": "2026-03-18",
-      "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7"
-    },
-    {
-      "id": "minimax/minimax-m2.7:free",
-      "canonical_slug": "minimax/minimax-m2.7-20260318",
-      "name": "MiniMax: MiniMax M2.7 (free)",
-      "context_length": 196608,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
       "created_human": "2026-03-18",
       "url": "https://huggingface.co/MiniMaxAI/MiniMax-M2.7"
     },
