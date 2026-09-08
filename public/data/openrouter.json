@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-09-08T15:00:20.894Z",
+  "fetched_at": "2026-09-08T22:00:18.932Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-09-08T15:00:14.157Z",
+    "as_of": "2026-09-08T22:00:13.017Z",
     "version": "v1",
     "start_date": "2026-08-09",
     "end_date": "2026-09-07"
   },
   "rankings_meta": {
-    "as_of": "2026-09-08T14:59:19.743Z",
+    "as_of": "2026-09-08T22:00:14.869Z",
     "version": "v1",
     "start_date": "2026-09-07",
     "end_date": "2026-09-07"
@@ -568,6 +568,67 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "inception/mercury-2.5",
+        "slug": "inception/mercury-2.5-20260908",
+        "name": "Inception: Mercury 2.5",
+        "description": "Mercury 2.5 is the fastest reasoning LLM, and the latest diffusion LLM (dLLM) from Inception. Instead of generating tokens sequentially, Mercury 2.5 produces and refines multiple tokens in parallel, achieving...",
+        "context_length": 260000,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1788892137,
+        "created_human": "2026-09-08",
+        "pricing_prompt": 4e-8,
+        "pricing_completion": 1.5e-7,
+        "score": 1788892137,
+        "url": "https://openrouter.ai/models/inception/mercury-2.5-20260908"
+      },
+      {
+        "rank": 2,
+        "id": "nex-agi/nex-n2.5-mini:free",
+        "slug": "nex-agi/nex-n2.5-mini-20260908",
+        "name": "Nex AGI: Nex-N2.5-Mini (free)",
+        "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
+        "context_length": 262144,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1788890061,
+        "created_human": "2026-09-08",
+        "pricing_prompt": 0,
+        "pricing_completion": 0,
+        "score": 1788890061,
+        "url": "https://huggingface.co/nex-agi/Nex-N2.5-mini"
+      },
+      {
+        "rank": 3,
+        "id": "nex-agi/nex-n2.5-pro:free",
+        "slug": "nex-agi/nex-n2.5-pro-20260907",
+        "name": "Nex AGI: Nex-N2.5-Pro (free)",
+        "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
+        "context_length": 262144,
+        "modalities": [
+          "text",
+          "image",
+          "→text"
+        ],
+        "n_inputs": 2,
+        "n_outputs": 1,
+        "created_ts": 1788890050,
+        "created_human": "2026-09-08",
+        "pricing_prompt": 0,
+        "pricing_completion": 0,
+        "score": 1788890050,
+        "url": "https://huggingface.co/nex-agi/Nex-N2.5-Pro"
+      },
+      {
+        "rank": 4,
         "id": "openai/gpt-6-astra",
         "slug": "openai/gpt-6-astra-20260903",
         "name": "OpenAI: GPT-6 Astra",
@@ -589,7 +650,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-astra-20260903"
       },
       {
-        "rank": 2,
+        "rank": 5,
         "id": "openai/gpt-6-astra:batch",
         "slug": "openai/gpt-6-astra-20260903",
         "name": "OpenAI: GPT-6 Astra (batch)",
@@ -611,7 +672,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-astra-20260903"
       },
       {
-        "rank": 3,
+        "rank": 6,
         "id": "openai/gpt-6-astra-pro",
         "slug": "openai/gpt-6-astra-pro-20260903",
         "name": "OpenAI: GPT-6 Astra Pro",
@@ -633,7 +694,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-astra-pro-20260903"
       },
       {
-        "rank": 4,
+        "rank": 7,
         "id": "openai/gpt-6-astra-pro:batch",
         "slug": "openai/gpt-6-astra-pro-20260903",
         "name": "OpenAI: GPT-6 Astra Pro (batch)",
@@ -655,7 +716,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-astra-pro-20260903"
       },
       {
-        "rank": 5,
+        "rank": 8,
         "id": "inclusionai/ling-3.0-flash-sante:free",
         "slug": "inclusionai/ling-3.0-flash-sante-20260904",
         "name": "inclusionAI: Ling 3.0 Flash Sante (free)",
@@ -675,7 +736,7 @@
         "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-sante-20260904"
       },
       {
-        "rank": 6,
+        "rank": 9,
         "id": "qwen/qwen3.8-max-0902",
         "slug": "qwen/qwen3.8-max-20260902",
         "name": "Qwen: Qwen3.8 Max (0902)",
@@ -697,7 +758,7 @@
         "url": "https://openrouter.ai/models/qwen/qwen3.8-max-20260902"
       },
       {
-        "rank": 7,
+        "rank": 10,
         "id": "meta/muse-spark-1.3-contributor",
         "slug": "meta/muse-spark-1.3-contributor-20260902",
         "name": "Meta: Muse Spark 1.3 Contributor",
@@ -721,7 +782,7 @@
         "url": "https://openrouter.ai/models/meta/muse-spark-1.3-contributor-20260902"
       },
       {
-        "rank": 8,
+        "rank": 11,
         "id": "meta/muse-spark-1.3",
         "slug": "meta/muse-spark-1.3-20260902",
         "name": "Meta: Muse Spark 1.3",
@@ -745,7 +806,7 @@
         "url": "https://openrouter.ai/models/meta/muse-spark-1.3-20260902"
       },
       {
-        "rank": 9,
+        "rank": 12,
         "id": "google/gemini-3.8-flash",
         "slug": "google/gemini-3.8-flash-20260902",
         "name": "Google: Gemini 3.8 Flash",
@@ -769,7 +830,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.8-flash-20260902"
       },
       {
-        "rank": 10,
+        "rank": 13,
         "id": "google/gemini-3.8-flash:batch",
         "slug": "google/gemini-3.8-flash-20260902",
         "name": "Google: Gemini 3.8 Flash (batch)",
@@ -793,7 +854,7 @@
         "url": "https://openrouter.ai/models/google/gemini-3.8-flash-20260902"
       },
       {
-        "rank": 11,
+        "rank": 14,
         "id": "anthropic/claude-fable-5.1",
         "slug": "anthropic/claude-fable-5.1-20260831",
         "name": "Anthropic: Claude Fable 5.1",
@@ -815,7 +876,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-fable-5.1-20260831"
       },
       {
-        "rank": 12,
+        "rank": 15,
         "id": "anthropic/claude-fable-5.1:batch",
         "slug": "anthropic/claude-fable-5.1-20260831",
         "name": "Anthropic: Claude Fable 5.1 (batch)",
@@ -837,27 +898,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-fable-5.1-20260831"
       },
       {
-        "rank": 13,
-        "id": "inception/mercury-2.5-preview",
-        "slug": "inception/mercury-2.5-preview-20260831",
-        "name": "Inception: Mercury 2.5 Preview",
-        "description": "Mercury 2.5 is the fastest reasoning LLM, and the latest diffusion LLM (dLLM) from Inception. Instead of generating tokens sequentially, Mercury 2.5 produces and refines multiple tokens in parallel, achieving...",
-        "context_length": 260000,
-        "modalities": [
-          "text",
-          "→text"
-        ],
-        "n_inputs": 1,
-        "n_outputs": 1,
-        "created_ts": 1788209864,
-        "created_human": "2026-08-31",
-        "pricing_prompt": 4e-8,
-        "pricing_completion": 1.5e-7,
-        "score": 1788209864,
-        "url": "https://openrouter.ai/models/inception/mercury-2.5-preview-20260831"
-      },
-      {
-        "rank": 14,
+        "rank": 16,
         "id": "ibm-granite/granite-4.2-8b",
         "slug": "ibm-granite/granite-4.2-8b-20260831",
         "name": "IBM: Granite 4.2 8B",
@@ -877,7 +918,7 @@
         "url": "https://huggingface.co/ibm-granite/granite-4.2-8b"
       },
       {
-        "rank": 15,
+        "rank": 17,
         "id": "tencent/hy4-preview",
         "slug": "tencent/hy4-preview-20260827",
         "name": "Tencent: Hy4 preview",
@@ -897,7 +938,7 @@
         "url": "https://huggingface.co/tencent/Hy4-preview"
       },
       {
-        "rank": 16,
+        "rank": 18,
         "id": "inclusionai/ling-3.0-flash-fin",
         "slug": "inclusionai/ling-3.0-flash-fin-20260827",
         "name": "inclusionAI: Ling 3.0 Flash Fin",
@@ -917,7 +958,7 @@
         "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-fin-20260827"
       },
       {
-        "rank": 17,
+        "rank": 19,
         "id": "inclusionai/ling-3.0-flash-fin:free",
         "slug": "inclusionai/ling-3.0-flash-fin-20260827",
         "name": "inclusionAI: Ling 3.0 Flash Fin (free)",
@@ -937,7 +978,7 @@
         "url": "https://openrouter.ai/models/inclusionai/ling-3.0-flash-fin-20260827"
       },
       {
-        "rank": 18,
+        "rank": 20,
         "id": "~z-ai/glm-flash-latest",
         "slug": "~z-ai/glm-flash-latest",
         "name": "Z.ai: GLM Flash Latest",
@@ -953,54 +994,10 @@
         "n_outputs": 1,
         "created_ts": 1787817633,
         "created_human": "2026-08-27",
-        "pricing_prompt": 7.125e-8,
-        "pricing_completion": 2.375e-7,
-        "score": 1787817633,
-        "url": "https://openrouter.ai/models/~z-ai/glm-flash-latest"
-      },
-      {
-        "rank": 19,
-        "id": "qwen/qwen3.8-flash",
-        "slug": "qwen/qwen3.8-flash-20260826",
-        "name": "Qwen: Qwen3.8 Flash",
-        "description": "Qwen3.8 Flash is a multimodal reasoning model from Alibaba. It is suited for coding assistance, agentic workflows, visual understanding, document and codebase analysis, desktop interaction, chart analysis, and long-video analysis.",
-        "context_length": 1000000,
-        "modalities": [
-          "text",
-          "image",
-          "video",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1787773060,
-        "created_human": "2026-08-26",
-        "pricing_prompt": 1.5e-7,
-        "pricing_completion": 4.7e-7,
-        "score": 1787773060,
-        "url": "https://huggingface.co/Qwen/Qwen3.8-Flash-Next"
-      },
-      {
-        "rank": 20,
-        "id": "z-ai/glm-5.3-flash",
-        "slug": "z-ai/glm-5.3-flash-20260826",
-        "name": "Z.ai: GLM 5.3 Flash",
-        "description": "GLM-5.3-Flash is a native multimodal model from Z.ai. It is suited for efficient coding and long-horizon agent tasks. Its hybrid sparse and linear attention architecture maintains accurate long-context behavior while...",
-        "context_length": 1310720,
-        "modalities": [
-          "text",
-          "image",
-          "video",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1787752741,
-        "created_human": "2026-08-26",
         "pricing_prompt": 7.5e-8,
         "pricing_completion": 2.5e-7,
-        "score": 1787752741,
-        "url": "https://huggingface.co/zai-org/GLM-5.3-Flash"
+        "score": 1787817633,
+        "url": "https://openrouter.ai/models/~z-ai/glm-flash-latest"
       }
     ],
     "today": [
@@ -1069,7 +1066,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 1101075109629,
+        "total_tokens": 1101104334131,
         "total_tokens_human": "1.10T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1371,7 +1368,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 7077695935368,
+        "total_tokens": 7077744866005,
         "total_tokens_human": "7.08T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1688,7 +1685,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 24451991088528,
+        "total_tokens": 24452040019165,
         "total_tokens_human": "24.45T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -2252,7 +2249,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-09-08T14:59:19.743Z",
+      "as_of": "2026-09-08T22:00:14.869Z",
       "version": "v1",
       "start_date": "2026-09-07",
       "end_date": "2026-09-07"
@@ -2260,26 +2257,75 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-09-08T15:00:11.174Z",
+      "as_of": "2026-09-08T22:00:10.775Z",
       "version": "v1",
       "start_date": "2026-09-07",
       "end_date": "2026-09-07"
     },
     "week": {
-      "as_of": "2026-09-08T15:00:13.007Z",
+      "as_of": "2026-09-08T22:00:11.978Z",
       "version": "v1",
       "start_date": "2026-09-01",
       "end_date": "2026-09-07"
     },
     "month": {
-      "as_of": "2026-09-08T15:00:14.157Z",
+      "as_of": "2026-09-08T22:00:13.017Z",
       "version": "v1",
       "start_date": "2026-08-09",
       "end_date": "2026-09-07"
     }
   },
-  "models_total": 426,
+  "models_total": 431,
   "catalog": [
+    {
+      "id": "inception/mercury-2.5",
+      "canonical_slug": "inception/mercury-2.5-20260908",
+      "name": "Inception: Mercury 2.5",
+      "context_length": 260000,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 4e-8,
+      "pricing_completion": 1.5e-7,
+      "created_human": "2026-09-08",
+      "url": "https://openrouter.ai/models/inception/mercury-2.5-20260908"
+    },
+    {
+      "id": "nex-agi/nex-n2.5-mini:free",
+      "canonical_slug": "nex-agi/nex-n2.5-mini-20260908",
+      "name": "Nex AGI: Nex-N2.5-Mini (free)",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
+      "created_human": "2026-09-08",
+      "url": "https://huggingface.co/nex-agi/Nex-N2.5-mini"
+    },
+    {
+      "id": "nex-agi/nex-n2.5-pro:free",
+      "canonical_slug": "nex-agi/nex-n2.5-pro-20260907",
+      "name": "Nex AGI: Nex-N2.5-Pro (free)",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "image",
+        "→text"
+      ],
+      "n_inputs": 2,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
+      "created_human": "2026-09-08",
+      "url": "https://huggingface.co/nex-agi/Nex-N2.5-Pro"
+    },
     {
       "id": "openai/gpt-6-astra",
       "canonical_slug": "openai/gpt-6-astra-20260903",
@@ -2503,22 +2549,6 @@
       "url": "https://openrouter.ai/models/anthropic/claude-fable-5.1-20260831"
     },
     {
-      "id": "inception/mercury-2.5-preview",
-      "canonical_slug": "inception/mercury-2.5-preview-20260831",
-      "name": "Inception: Mercury 2.5 Preview",
-      "context_length": 260000,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 4e-8,
-      "pricing_completion": 1.5e-7,
-      "created_human": "2026-08-31",
-      "url": "https://openrouter.ai/models/inception/mercury-2.5-preview-20260831"
-    },
-    {
       "id": "ibm-granite/granite-4.2-8b",
       "canonical_slug": "ibm-granite/granite-4.2-8b-20260831",
       "name": "IBM: Granite 4.2 8B",
@@ -2595,8 +2625,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 7.125e-8,
-      "pricing_completion": 2.375e-7,
+      "pricing_prompt": 7.5e-8,
+      "pricing_completion": 2.5e-7,
       "created_human": "2026-08-27",
       "url": "https://openrouter.ai/models/~z-ai/glm-flash-latest"
     },
@@ -2640,7 +2670,7 @@
       "id": "z-ai/glm-5.3-flash:batch",
       "canonical_slug": "z-ai/glm-5.3-flash-20260826",
       "name": "Z.ai: GLM 5.3 Flash (batch)",
-      "context_length": 1048575,
+      "context_length": 1048576,
       "modalities": [
         "text",
         "image",
@@ -2649,8 +2679,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 1.5e-7,
-      "pricing_completion": 5e-7,
+      "pricing_prompt": 7.5e-8,
+      "pricing_completion": 2.5e-7,
       "created_human": "2026-08-26",
       "url": "https://huggingface.co/zai-org/GLM-5.3-Flash"
     },
@@ -2688,6 +2718,23 @@
       "n_outputs": 1,
       "pricing_prompt": 2.2e-7,
       "pricing_completion": 6.6e-7,
+      "created_human": "2026-08-21",
+      "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp"
+    },
+    {
+      "id": "deepseek/deepseek-v4-flash-vision-exp:batch",
+      "canonical_slug": "deepseek/deepseek-v4-flash-vision-exp-20260821",
+      "name": "DeepSeek: DeepSeek V4 Flash Vision Exp (batch)",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "image",
+        "→text"
+      ],
+      "n_inputs": 2,
+      "n_outputs": 1,
+      "pricing_prompt": 1.1e-7,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-08-21",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp"
     },
@@ -2768,6 +2815,22 @@
       "n_outputs": 1,
       "pricing_prompt": 0.0000014,
       "pricing_completion": 0.0000044,
+      "created_human": "2026-08-18",
+      "url": "https://huggingface.co/zai-org/GLM-5.3"
+    },
+    {
+      "id": "z-ai/glm-5.3:batch",
+      "canonical_slug": "z-ai/glm-5.3-20260816",
+      "name": "Z.ai: GLM 5.3 (batch)",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 7e-7,
+      "pricing_completion": 0.0000022,
       "created_human": "2026-08-18",
       "url": "https://huggingface.co/zai-org/GLM-5.3"
     },
@@ -2925,8 +2988,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 6.6e-7,
-      "pricing_completion": 0.00000198,
+      "pricing_prompt": 5.7948e-7,
+      "pricing_completion": 0.00000173844,
       "created_human": "2026-08-12",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
     },
@@ -2941,8 +3004,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 0.00000132,
-      "pricing_completion": 0.00000396,
+      "pricing_prompt": 6.6e-7,
+      "pricing_completion": 0.00000198,
       "created_human": "2026-08-12",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
     },
@@ -3075,8 +3138,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 3.5e-7,
-      "pricing_completion": 0.0000015,
+      "pricing_prompt": 1.75e-7,
+      "pricing_completion": 7.5e-7,
       "created_human": "2026-08-09",
       "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B"
     },
@@ -3143,8 +3206,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.4e-7,
-      "pricing_completion": 2.8e-7,
+      "pricing_prompt": 1.1e-7,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-31",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
     },
@@ -3842,8 +3905,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -4015,6 +4078,22 @@
       "n_outputs": 1,
       "pricing_prompt": 9.66e-7,
       "pricing_completion": 0.000003036,
+      "created_human": "2026-06-16",
+      "url": "https://huggingface.co/zai-org/GLM-5.2"
+    },
+    {
+      "id": "z-ai/glm-5.2:batch",
+      "canonical_slug": "z-ai/glm-5.2-20260616",
+      "name": "Z.ai: GLM 5.2 (batch)",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": 7e-7,
+      "pricing_completion": 0.0000022,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -4588,8 +4667,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.0000025,
-      "pricing_completion": 0.000014,
+      "pricing_prompt": 0.00000255,
+      "pricing_completion": 0.00001275,
       "created_human": "2026-04-27",
       "url": "https://openrouter.ai/models/~moonshotai/kimi-latest"
     },
@@ -4820,8 +4899,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 9.5526e-7,
-      "pricing_completion": 0.00000191052,
+      "pricing_prompt": 9.46386e-7,
+      "pricing_completion": 0.000001892772,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
     },
@@ -4836,8 +4915,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8.8606e-8,
-      "pricing_completion": 1.77212e-7,
+      "pricing_prompt": 8.246e-8,
+      "pricing_completion": 1.6492e-7,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
@@ -7853,7 +7932,7 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 5.5e-7,
+      "pricing_prompt": 4e-7,
       "pricing_completion": 0.0000022,
       "created_human": "2025-06-17",
       "url": "https://openrouter.ai/models/minimax/minimax-m1"
