@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-09-09T15:00:20.286Z",
+  "fetched_at": "2026-09-09T22:00:19.954Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-09-09T15:00:13.768Z",
+    "as_of": "2026-09-09T22:00:13.524Z",
     "version": "v1",
     "start_date": "2026-08-10",
     "end_date": "2026-09-08"
   },
   "rankings_meta": {
-    "as_of": "2026-09-09T15:00:14.955Z",
+    "as_of": "2026-09-09T22:00:14.784Z",
     "version": "v1",
     "start_date": "2026-09-08",
     "end_date": "2026-09-08"
@@ -95,7 +95,7 @@
       {
         "rank": 9,
         "app_id": 4137556,
-        "app_name": "Zazen (Freebuff fork)",
+        "app_name": "Freebuff",
         "total_tokens": "136529800271",
         "total_tokens_human": "136.53B",
         "total_requests": 1487038,
@@ -241,7 +241,7 @@
       {
         "rank": 5,
         "app_id": 4137556,
-        "app_name": "Zazen (Freebuff fork)",
+        "app_name": "Freebuff",
         "total_tokens": "1663181223989",
         "total_tokens_human": "1.66T",
         "total_requests": 14936390,
@@ -414,7 +414,7 @@
       {
         "rank": 4,
         "app_id": 4137556,
-        "app_name": "Zazen (Freebuff fork)",
+        "app_name": "Freebuff",
         "total_tokens": "9570579152828",
         "total_tokens_human": "9.57T",
         "total_requests": 79047170,
@@ -595,9 +595,10 @@
         "context_length": 262144,
         "modalities": [
           "text",
+          "image",
           "→text"
         ],
-        "n_inputs": 1,
+        "n_inputs": 2,
         "n_outputs": 1,
         "created_ts": 1788890061,
         "created_human": "2026-09-08",
@@ -1081,7 +1082,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 1114758284762,
+        "total_tokens": 1114775886124,
         "total_tokens_human": "1.11T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1161,7 +1162,7 @@
         "perma": "z-ai/glm-5.3-20260816",
         "url": "https://openrouter.ai/models/z-ai/glm-5.3-20260816",
         "modalities": [],
-        "context_length": 1048576,
+        "context_length": 1310720,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "today"
@@ -1368,7 +1369,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 7205141747724,
+        "total_tokens": 7205159349086,
         "total_tokens_human": "7.21T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1463,7 +1464,7 @@
         "perma": "z-ai/glm-5.3-20260816",
         "url": "https://openrouter.ai/models/z-ai/glm-5.3-20260816",
         "modalities": [],
-        "context_length": 1048576,
+        "context_length": 1310720,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "week"
@@ -1685,7 +1686,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 25078226963445,
+        "total_tokens": 25078244564807,
         "total_tokens_human": "25.08T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1900,7 +1901,7 @@
         "perma": "z-ai/glm-5.3-20260816",
         "url": "https://openrouter.ai/models/z-ai/glm-5.3-20260816",
         "modalities": [],
-        "context_length": 1048576,
+        "context_length": 1310720,
         "pricing_prompt": null,
         "pricing_completion": null,
         "window": "month"
@@ -1972,7 +1973,7 @@
         "perma": "z-ai/glm-5.3-20260816",
         "url": "https://openrouter.ai/models/z-ai/glm-5.3-20260816",
         "modalities": [],
-        "context_length": 1048576,
+        "context_length": 1310720,
         "window": "trending"
       },
       {
@@ -2249,7 +2250,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-09-09T15:00:14.955Z",
+      "as_of": "2026-09-09T22:00:14.784Z",
       "version": "v1",
       "start_date": "2026-09-08",
       "end_date": "2026-09-08"
@@ -2257,25 +2258,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-09-09T15:00:11.005Z",
+      "as_of": "2026-09-09T22:00:11.119Z",
       "version": "v1",
       "start_date": "2026-09-08",
       "end_date": "2026-09-08"
     },
     "week": {
-      "as_of": "2026-09-09T15:00:11.906Z",
+      "as_of": "2026-09-09T22:00:12.095Z",
       "version": "v1",
       "start_date": "2026-09-02",
       "end_date": "2026-09-08"
     },
     "month": {
-      "as_of": "2026-09-09T15:00:13.768Z",
+      "as_of": "2026-09-09T22:00:13.524Z",
       "version": "v1",
       "start_date": "2026-08-10",
       "end_date": "2026-09-08"
     }
   },
-  "models_total": 431,
+  "models_total": 430,
   "catalog": [
     {
       "id": "inception/mercury-2.5",
@@ -2300,9 +2301,10 @@
       "context_length": 262144,
       "modalities": [
         "text",
+        "image",
         "→text"
       ],
-      "n_inputs": 1,
+      "n_inputs": 2,
       "n_outputs": 1,
       "pricing_prompt": null,
       "pricing_completion": null,
@@ -2774,7 +2776,7 @@
       "id": "~z-ai/glm-latest",
       "canonical_slug": "~z-ai/glm-latest",
       "name": "Z.ai: GLM Latest",
-      "context_length": 1048576,
+      "context_length": 1310720,
       "modalities": [
         "text",
         "→text"
@@ -2806,7 +2808,7 @@
       "id": "z-ai/glm-5.3",
       "canonical_slug": "z-ai/glm-5.3-20260816",
       "name": "Z.ai: GLM 5.3",
-      "context_length": 1048576,
+      "context_length": 1310720,
       "modalities": [
         "text",
         "→text"
@@ -3905,8 +3907,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -4076,8 +4078,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 9.66e-7,
-      "pricing_completion": 0.000003036,
+      "pricing_prompt": 2.8e-7,
+      "pricing_completion": 8.8e-7,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -4915,8 +4917,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8.554e-8,
-      "pricing_completion": 1.7108e-7,
+      "pricing_prompt": 7e-8,
+      "pricing_completion": 1.4e-7,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
@@ -7329,22 +7331,6 @@
       "pricing_completion": 0.0000024,
       "created_human": "2025-08-28",
       "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B-Thinking-2507"
-    },
-    {
-      "id": "nousresearch/hermes-4-70b",
-      "canonical_slug": "nousresearch/hermes-4-70b",
-      "name": "Nous: Hermes 4 70B",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 1.3e-7,
-      "pricing_completion": 4e-7,
-      "created_human": "2025-08-26",
-      "url": "https://huggingface.co/NousResearch/Hermes-4-70B"
     },
     {
       "id": "nousresearch/hermes-4-405b",
