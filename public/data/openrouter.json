@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-09-11T15:00:18.164Z",
+  "fetched_at": "2026-09-11T22:00:20.288Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-09-11T15:00:13.630Z",
+    "as_of": "2026-09-11T22:00:14.187Z",
     "version": "v1",
     "start_date": "2026-08-12",
     "end_date": "2026-09-10"
   },
   "rankings_meta": {
-    "as_of": "2026-09-11T15:00:14.616Z",
+    "as_of": "2026-09-11T22:00:15.587Z",
     "version": "v1",
     "start_date": "2026-09-10",
     "end_date": "2026-09-10"
@@ -2236,7 +2236,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-09-11T15:00:14.616Z",
+      "as_of": "2026-09-11T22:00:15.587Z",
       "version": "v1",
       "start_date": "2026-09-10",
       "end_date": "2026-09-10"
@@ -2244,19 +2244,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-09-11T15:00:10.953Z",
+      "as_of": "2026-09-11T22:00:11.890Z",
       "version": "v1",
       "start_date": "2026-09-10",
       "end_date": "2026-09-10"
     },
     "week": {
-      "as_of": "2026-09-11T15:00:12.349Z",
+      "as_of": "2026-09-11T22:00:13.161Z",
       "version": "v1",
       "start_date": "2026-09-04",
       "end_date": "2026-09-10"
     },
     "month": {
-      "as_of": "2026-09-11T15:00:13.630Z",
+      "as_of": "2026-09-11T22:00:14.187Z",
       "version": "v1",
       "start_date": "2026-08-12",
       "end_date": "2026-09-10"
@@ -2930,8 +2930,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 7e-7,
-      "pricing_completion": 0.0000022,
+      "pricing_prompt": 8.727e-7,
+      "pricing_completion": 0.00000336,
       "created_human": "2026-08-19",
       "url": "https://openrouter.ai/models/~z-ai/glm-latest"
     },
@@ -3700,8 +3700,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.00000234,
-      "pricing_completion": 0.0000117,
+      "pricing_prompt": 0.0000017955,
+      "pricing_completion": 0.000009006,
       "created_human": "2026-07-16",
       "url": "https://huggingface.co/moonshotai/Kimi-K3"
     },
@@ -4054,8 +4054,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -4225,8 +4225,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 9.66e-7,
-      "pricing_completion": 0.000003036,
+      "pricing_prompt": 6e-7,
+      "pricing_completion": 0.000002,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -4816,8 +4816,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.00000234,
-      "pricing_completion": 0.0000117,
+      "pricing_prompt": 0.0000017955,
+      "pricing_completion": 0.000009006,
       "created_human": "2026-04-27",
       "url": "https://openrouter.ai/models/~moonshotai/kimi-latest"
     },
@@ -5046,8 +5046,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8.652e-8,
-      "pricing_completion": 1.7304e-7,
+      "pricing_prompt": 8.456e-8,
+      "pricing_completion": 1.6912e-7,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
@@ -8110,7 +8110,7 @@
       "id": "mistralai/mistral-small-3.2-24b-instruct",
       "canonical_slug": "mistralai/mistral-small-3.2-24b-instruct-2506",
       "name": "Mistral: Mistral Small 3.2 24B",
-      "context_length": 131072,
+      "context_length": 256000,
       "modalities": [
         "image",
         "text",
