@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-09-13T15:00:18.479Z",
+  "fetched_at": "2026-09-13T22:00:16.921Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-09-13T15:00:12.980Z",
+    "as_of": "2026-09-13T22:00:12.059Z",
     "version": "v1",
     "start_date": "2026-08-14",
     "end_date": "2026-09-12"
   },
   "rankings_meta": {
-    "as_of": "2026-09-13T15:00:14.473Z",
+    "as_of": "2026-09-13T22:00:13.191Z",
     "version": "v1",
     "start_date": "2026-09-12",
     "end_date": "2026-09-12"
@@ -1137,7 +1137,7 @@
         "id": "tencent/hy3",
         "name": "Tencent: Hy3",
         "slug": "tencent/hy3-20260706",
-        "total_tokens": 473250418311,
+        "total_tokens": 473250473699,
         "total_tokens_human": "473.25B",
         "perma": "tencent/hy3-20260706",
         "url": "https://openrouter.ai/models/tencent/hy3-20260706",
@@ -1424,7 +1424,7 @@
         "id": "tencent/hy3",
         "name": "Tencent: Hy3",
         "slug": "tencent/hy3-20260706",
-        "total_tokens": 3640802828901,
+        "total_tokens": 3640802884289,
         "total_tokens_human": "3.64T",
         "perma": "tencent/hy3-20260706",
         "url": "https://openrouter.ai/models/tencent/hy3-20260706",
@@ -1711,7 +1711,7 @@
         "id": "tencent/hy3",
         "name": "Tencent: Hy3",
         "slug": "tencent/hy3-20260706",
-        "total_tokens": 25795522141776,
+        "total_tokens": 25795522197164,
         "total_tokens_human": "25.80T",
         "perma": "tencent/hy3-20260706",
         "url": "https://openrouter.ai/models/tencent/hy3-20260706",
@@ -2228,7 +2228,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-09-13T15:00:14.473Z",
+      "as_of": "2026-09-13T22:00:13.191Z",
       "version": "v1",
       "start_date": "2026-09-12",
       "end_date": "2026-09-12"
@@ -2236,19 +2236,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-09-13T15:00:10.521Z",
+      "as_of": "2026-09-13T22:00:09.799Z",
       "version": "v1",
       "start_date": "2026-09-12",
       "end_date": "2026-09-12"
     },
     "week": {
-      "as_of": "2026-09-13T15:00:11.800Z",
+      "as_of": "2026-09-13T22:00:10.787Z",
       "version": "v1",
       "start_date": "2026-09-06",
       "end_date": "2026-09-12"
     },
     "month": {
-      "as_of": "2026-09-13T15:00:12.980Z",
+      "as_of": "2026-09-13T22:00:12.059Z",
       "version": "v1",
       "start_date": "2026-08-14",
       "end_date": "2026-09-12"
@@ -2834,8 +2834,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 7.5e-8,
-      "pricing_completion": 2.5e-7,
+      "pricing_prompt": 1.5e-7,
+      "pricing_completion": 5e-7,
       "created_human": "2026-08-26",
       "url": "https://huggingface.co/zai-org/GLM-5.3-Flash"
     },
@@ -4078,8 +4078,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -5070,8 +5070,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 4.844e-8,
-      "pricing_completion": 9.688e-8,
+      "pricing_prompt": 4.648e-8,
+      "pricing_completion": 9.296e-8,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
