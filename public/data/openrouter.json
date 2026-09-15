@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-09-15T15:00:19.891Z",
+  "fetched_at": "2026-09-15T22:00:18.202Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-09-15T15:00:13.299Z",
+    "as_of": "2026-09-15T22:00:12.998Z",
     "version": "v1",
     "start_date": "2026-08-16",
     "end_date": "2026-09-14"
   },
   "rankings_meta": {
-    "as_of": "2026-09-15T15:00:14.345Z",
+    "as_of": "2026-09-15T22:00:14.242Z",
     "version": "v1",
     "start_date": "2026-09-14",
     "end_date": "2026-09-14"
@@ -581,8 +581,8 @@
         "n_outputs": 1,
         "created_ts": 1789399174,
         "created_human": "2026-09-14",
-        "pricing_prompt": 5.808e-7,
-        "pricing_completion": 0.0000017424,
+        "pricing_prompt": 5.7948e-7,
+        "pricing_completion": 0.00000173844,
         "score": 1789399174,
         "url": "https://openrouter.ai/models/~deepseek/deepseek-pro-latest"
       },
@@ -1828,7 +1828,7 @@
       {
         "rank": 16,
         "id": "anthropic/claude-opus-5",
-        "name": "Claude Opus 5",
+        "name": "Anthropic: Claude Opus 5",
         "slug": "anthropic/claude-opus-5-20260723",
         "total_tokens": 6906160623380,
         "total_tokens_human": "6.91T",
@@ -2244,7 +2244,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-09-15T15:00:14.345Z",
+      "as_of": "2026-09-15T22:00:14.242Z",
       "version": "v1",
       "start_date": "2026-09-14",
       "end_date": "2026-09-14"
@@ -2252,19 +2252,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-09-15T15:00:10.990Z",
+      "as_of": "2026-09-15T22:00:11.022Z",
       "version": "v1",
       "start_date": "2026-09-14",
       "end_date": "2026-09-14"
     },
     "week": {
-      "as_of": "2026-09-15T15:00:12.217Z",
+      "as_of": "2026-09-15T22:00:12.105Z",
       "version": "v1",
       "start_date": "2026-09-08",
       "end_date": "2026-09-14"
     },
     "month": {
-      "as_of": "2026-09-15T15:00:13.299Z",
+      "as_of": "2026-09-15T22:00:12.998Z",
       "version": "v1",
       "start_date": "2026-08-16",
       "end_date": "2026-09-14"
@@ -2283,8 +2283,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 5.808e-7,
-      "pricing_completion": 0.0000017424,
+      "pricing_prompt": 5.7948e-7,
+      "pricing_completion": 0.00000173844,
       "created_human": "2026-09-14",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-pro-latest"
     },
@@ -3210,8 +3210,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 6.5868e-7,
-      "pricing_completion": 0.00000197604,
+      "pricing_prompt": 5.7948e-7,
+      "pricing_completion": 0.00000173844,
       "created_human": "2026-08-12",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
     },
@@ -3508,7 +3508,7 @@
     {
       "id": "anthropic/claude-opus-5",
       "canonical_slug": "anthropic/claude-opus-5-20260723",
-      "name": "Claude Opus 5",
+      "name": "Anthropic: Claude Opus 5",
       "context_length": 1000000,
       "modalities": [
         "text",
@@ -3526,7 +3526,7 @@
     {
       "id": "anthropic/claude-opus-5:batch",
       "canonical_slug": "anthropic/claude-opus-5-20260723",
-      "name": "Claude Opus 5 (batch)",
+      "name": "Anthropic: Claude Opus 5 (batch)",
       "context_length": 1000000,
       "modalities": [
         "text",
@@ -4127,8 +4127,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -5135,8 +5135,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8.708e-8,
-      "pricing_completion": 1.7416e-7,
+      "pricing_prompt": 7.784e-8,
+      "pricing_completion": 1.5568e-7,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
