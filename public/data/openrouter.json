@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-09-17T15:00:20.724Z",
+  "fetched_at": "2026-09-17T22:00:21.226Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-09-17T15:00:14.225Z",
+    "as_of": "2026-09-17T22:00:16.358Z",
     "version": "v1",
     "start_date": "2026-08-18",
     "end_date": "2026-09-16"
   },
   "rankings_meta": {
-    "as_of": "2026-09-17T15:00:15.291Z",
+    "as_of": "2026-09-17T22:00:17.325Z",
     "version": "v1",
     "start_date": "2026-09-16",
     "end_date": "2026-09-16"
@@ -2141,7 +2141,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-09-17T15:00:15.291Z",
+      "as_of": "2026-09-17T22:00:17.325Z",
       "version": "v1",
       "start_date": "2026-09-16",
       "end_date": "2026-09-16"
@@ -2149,25 +2149,25 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-09-17T15:00:11.027Z",
+      "as_of": "2026-09-17T22:00:09.840Z",
       "version": "v1",
       "start_date": "2026-09-16",
       "end_date": "2026-09-16"
     },
     "week": {
-      "as_of": "2026-09-17T15:00:12.171Z",
+      "as_of": "2026-09-17T22:00:15.378Z",
       "version": "v1",
       "start_date": "2026-09-10",
       "end_date": "2026-09-16"
     },
     "month": {
-      "as_of": "2026-09-17T15:00:14.225Z",
+      "as_of": "2026-09-17T22:00:16.358Z",
       "version": "v1",
       "start_date": "2026-08-18",
       "end_date": "2026-09-16"
     }
   },
-  "models_total": 444,
+  "models_total": 445,
   "catalog": [
     {
       "id": "stealth/union-alpha",
@@ -2989,6 +2989,24 @@
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
     },
     {
+      "id": "qwen/qwen3.8-27b:free",
+      "canonical_slug": "qwen/qwen3.8-27b-20260814",
+      "name": "Qwen: Qwen3.8 27B (free)",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
+      "created_human": "2026-08-14",
+      "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
+    },
+    {
       "id": "dots-studio/dots-3-note-preview:free",
       "canonical_slug": "dots-studio/dots-3-note-preview-20260813",
       "name": "Dots Studio: Dots3-Note Preview (free)",
@@ -3310,8 +3328,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 3e-8,
-      "pricing_completion": 1.3e-7,
+      "pricing_prompt": 4e-8,
+      "pricing_completion": 1e-7,
       "created_human": "2026-08-01",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
     },
@@ -4023,8 +4041,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -9032,8 +9050,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 2.574e-7,
-      "pricing_completion": 0.0000010287,
+      "pricing_prompt": 3.2e-7,
+      "pricing_completion": 8.9e-7,
       "created_human": "2024-12-26",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V3"
     },

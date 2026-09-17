@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-09-17T15:00:20.772Z",
+  "generated_at": "2026-09-17T22:00:21.278Z",
   "oldest_source_fetch": "2026-08-05T21:58:14.532Z",
   "sources": {
     "github": {
-      "fetched_at": "2026-09-17T15:00:07.759Z",
+      "fetched_at": "2026-09-17T22:00:06.727Z",
       "windows": 5
     },
     "aa": {
       "tier": "free",
       "total_models": 652,
-      "fetched_at": "2026-09-17T15:00:10.026Z"
+      "fetched_at": "2026-09-17T22:00:08.876Z"
     },
     "openrouter": {
-      "fetched_at": "2026-09-17T15:00:20.724Z"
+      "fetched_at": "2026-09-17T22:00:21.226Z"
     },
     "exploreyc": {
       "fetched_at": "2026-08-05T21:58:14.532Z",
