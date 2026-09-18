@@ -14,15 +14,17 @@
     "fetch:openrouter": "node scripts/fetch-openrouter.mjs",
     "fetch:exploreyc": "node scripts/fetch-exploreyc.mjs",
     "build:data": "node scripts/build-json.mjs",
+    "guard": "node scripts/guard-data-only.mjs",
+    "test": "node scripts/lib/selftest.mjs",
     "pipeline": "node scripts/fetch-github-trending.mjs && node scripts/fetch-aa-models.mjs && node scripts/fetch-openrouter.mjs && node scripts/build-json.mjs",
     "pipeline:all": "node scripts/fetch-github-trending.mjs && node scripts/fetch-aa-models.mjs && node scripts/fetch-openrouter.mjs && node scripts/fetch-exploreyc.mjs && node scripts/build-json.mjs"
   },
   "dependencies": {
-    "astro": "^4.16.0",
-    "@astrojs/tailwind": "^5.1.0",
-    "tailwindcss": "^3.4.0",
-    "fuse.js": "^7.0.0",
+    "@astrojs/tailwind": "^6.0.2",
     "@iconify-json/lucide": "^1.2.0",
-    "astro-icon": "^1.1.0"
+    "astro": "^5.18.2",
+    "astro-icon": "^1.1.0",
+    "fuse.js": "^7.0.0",
+    "tailwindcss": "^3.4.0"
   }
 }
