@@ -59,7 +59,7 @@ const orBars = orTop.map((m) => ({
     <p class="text-lg max-w-3xl" style="color: var(--text-muted);">{dict.home.intro}</p>
     {lastUpdated && (
       <p class="text-xs mt-4" style="color: var(--text-muted);">
-        {dict.home.lastUpdated}: <time class="tabular-nums">{new Date(lastUpdated).toLocaleString(locale === 'es' ? 'es-CL' : 'en-US')}</time>
+        {dict.home.lastUpdated}: <time class="tabular-nums">{new Date(lastUpdated).toLocaleString(locale === 'es' ? 'es-CL' : 'en-US', { timeZone: 'UTC' })} UTC</time>
       </p>
     )}
   </section>
