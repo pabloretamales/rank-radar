@@ -1,5 +1,6 @@
 ---
 import type { Dictionary } from '@/i18n';
+import { safeUrl } from '@/lib/safe.mjs';
 
 interface Props {
   company: {
@@ -34,7 +35,8 @@ const rankClass = company.rank === 1 ? 'gold' : company.rank === 2 ? 'silver' : 
 
 // Outbound URL → prefer official website, fallback to exploreyc page
 const exploreycUrl = `https://www.exploreyc.com/companies/${company.slug}`;
-const websiteUrl = company.website ?? exploreycUrl;
+const websiteUrl = safeUrl(company.website, exploreycUrl);
+const logoUrl = company.logo ? safeUrl(company.logo, '') : '';
 
 // "Added Xd ago" relative time (built-time snapshot from created_at)
 function relativeDays(iso: string | null | undefined): string {
@@ -67,9 +69,9 @@ const cleanDescription = (company.description ?? '')
     <div class="flex-1 min-w-0">
       <!-- ===== Title row ===== -->
       <div class="flex items-baseline gap-2 flex-wrap">
-        {company.logo && (
+        {logoUrl && (
           <img
-            src={company.logo}
+            src={logoUrl}
             alt={company.name}
             width="28"
             height="28"

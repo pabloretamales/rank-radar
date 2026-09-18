@@ -25,6 +25,7 @@
 import { writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { cleanText, cleanTextOrNull } from './lib/clean.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -74,15 +75,15 @@ async function searchRepos(query, sort, order, perPage, attempt = 1) {
 function normalizeRepo(r) {
   return {
     rank: 0, // se asigna después
-    full_name: r.full_name,
-    name: r.name,
-    owner: r.owner?.login,
-    description: r.description,
+    full_name: cleanText(r.full_name, 140),
+    name: cleanText(r.name, 140),
+    owner: cleanText(r.owner?.login, 100),
+    description: cleanTextOrNull(r.description, 300),
     html_url: r.html_url,
     stargazers_count: r.stargazers_count,
     forks_count: r.forks_count,
-    language: r.language,
-    topics: r.topics ?? [],
+    language: cleanTextOrNull(r.language, 60),
+    topics: (r.topics ?? []).slice(0, 20).map((t) => cleanText(t, 40)),
     created_at: r.created_at,
     pushed_at: r.pushed_at,
     updated_at: r.updated_at,

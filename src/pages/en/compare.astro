@@ -15,7 +15,8 @@ const models = (mergedData?.models ?? [])
     creator: m.creator ?? '',
   }));
 
-const modelsJson = JSON.stringify(models);
+// Escape `<` so a model name containing `</script>` cannot break out of the JSON block below.
+const modelsJson = JSON.stringify(models).replace(/</g, '\\u003c');
 ---
 
 <Base locale={locale} dict={dict}>
@@ -44,6 +45,16 @@ const modelsJson = JSON.stringify(models);
   <script type="application/json" id="models-data" set:html={modelsJson}></script>
   <script is:inline>
     (function() {
+      // API-sourced strings (model name, creator, modalities, OR url) are third-party
+      // data: escape before it touches innerHTML, and allow only http(s) in hrefs.
+      const esc = (v) => String(v ?? '').replace(/[&<>"']/g, (c) =>
+        ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+      const safeHref = (u) => {
+        try {
+          const p = new URL(String(u));
+          return p.protocol === 'http:' || p.protocol === 'https:' ? esc(p.href) : '#';
+        } catch { return '#'; }
+      };
       const data = JSON.parse(document.getElementById('models-data').textContent);
       const dl = document.getElementById('models-dl');
       for (const m of data) {
@@ -102,9 +113,9 @@ const modelsJson = JSON.stringify(models);
             case 'agentic':
               return mod[key] == null ? '—' : mod[key].toFixed(1);
             case 'creator':
-              return mod.creator ?? '—';
+              return esc(mod.creator) || '—';
             case 'release':
-              return mod.release_date ?? '—';
+              return esc(mod.release_date) || '—';
             case 'tokens_per_sec':
               return mod.tokens_per_sec != null ? mod.tokens_per_sec.toFixed(0) : '—';
             case 'ttft':
@@ -117,10 +128,10 @@ const modelsJson = JSON.stringify(models);
               return mod.or ? fmtInt(mod.or.context_length) : '—';
             case 'modalities':
               return mod.or?.modalities?.length
-                ? mod.or.modalities.map(m => `<span class="px-1" title="${m}">${({text:'📝',image:'🖼',audio:'🎵',video:'🎬',file:'📎'}[m.replace('→','')] ?? '🔹')}</span>`).join('')
+                ? mod.or.modalities.map(m => `<span class="px-1" title="${esc(m)}">${({text:'📝',image:'🖼',audio:'🎵',video:'🎬',file:'📎'}[m.replace('→','')] ?? '🔹')}</span>`).join('')
                 : '—';
             case 'or_url':
-              return mod.or?.url ? `<a href="${mod.or.url}" target="_blank" class="badge">→</a>` : '—';
+              return mod.or?.url ? `<a href="${safeHref(mod.or.url)}" target="_blank" rel="noopener" class="badge">→</a>` : '—';
           }
           return '—';
         };
@@ -141,7 +152,7 @@ const modelsJson = JSON.stringify(models);
         html += '<th class="text-left py-2 pr-3" style="color: var(--text-muted);">Metric</th>';
         for (const m of rows) {
           html += '<th class="text-left py-3 pl-3">' +
-            `<div class="font-semibold truncate" title="${m.name}">${m.name}</div>` +
+            `<div class="font-semibold truncate" title="${esc(m.name)}">${esc(m.name)}</div>` +
             `<div class="text-xs font-normal mt-1">${badgesFor(m)}</div>` +
             '</th>';
         }

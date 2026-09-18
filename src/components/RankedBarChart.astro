@@ -3,6 +3,8 @@
  * RankedBarChart — top-N horizontal bar chart with rank, label, magnitude bar, and value.
  * Pure CSS, no JS, no charting libs. The bar length encodes the value relative to the max.
  */
+import { safeUrl } from '@/lib/safe.mjs';
+
 interface Item {
   rank: number;
   name: string;
@@ -35,7 +37,7 @@ const max = Math.max(1, ...sliced.map((it) => Number(it.value) || 0));
           <li class="ranked-bar-row">
             <span class="ranked-bar-rank">{rankLabel}{it.rank}</span>
             {it.url ? (
-              <a href={it.url} target="_blank" rel="noopener" class="ranked-bar-link">
+              <a href={safeUrl(it.url)} target="_blank" rel="noopener" class="ranked-bar-link">
                 <span class="ranked-bar-name" title={it.name}>{it.name}</span>
                 <span class="ranked-bar-track" style={`background:${trackColor};`}>
                   <span class="ranked-bar-fill" style={`width:${pct}%;background:${color};`}></span>

@@ -1,4 +1,5 @@
 ---
+import { safeUrl } from '@/lib/safe.mjs';
 /**
  * BarChart — horizontal bar chart for quick visual comparison.
  * No external libs, pure CSS bars, responsive.
@@ -56,7 +57,7 @@ const fmt = formatValue ?? ((n: number) => n.toLocaleString());
             <div class="flex-1 min-w-0">
               <div class="flex items-baseline justify-between gap-2 mb-1">
                 {it.href ? (
-                  <a href={it.href} target="_blank" rel="noopener" class="truncate font-medium hover:underline">{it.label}</a>
+                  <a href={safeUrl(it.href)} target="_blank" rel="noopener" class="truncate font-medium hover:underline">{it.label}</a>
                 ) : (
                   <span class="truncate font-medium">{it.label}</span>
                 )}

@@ -1,4 +1,5 @@
 ---
+import { safeUrl } from '@/lib/safe.mjs';
 import Base from '@/layouts/Base.astro';
 import { getDict, detectLocaleFromUrl } from '@/i18n';
 import AppCard from '@components/AppCard.astro';
@@ -99,7 +100,7 @@ const chartsByApp = Object.fromEntries(
                 )}
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3">
                   {items.map((m) => (
-                    <a href={m.url} target="_blank" rel="noopener" class="card block p-4">
+                    <a href={safeUrl(m.url)} target="_blank" rel="noopener" class="card block p-4">
                       <div class="flex items-start gap-3">
                         <div class={`rank-badge ${m.rank === 1 ? 'gold' : m.rank === 2 ? 'silver' : m.rank === 3 ? 'bronze' : ''} shrink-0`}>#{m.rank}</div>
                         <div class="flex-1 min-w-0">

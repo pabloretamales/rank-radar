@@ -30,6 +30,7 @@
 import { writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { cleanText } from './lib/clean.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -71,10 +72,10 @@ function rankBy(models, field, topN, descending = true, { minScore = null } = {}
   return sorted.map((m, i) => ({
     rank: i + 1,
     id: m.id,
-    name: m.name,
-    slug: m.slug,
-    creator: m.model_creator?.name,
-    creator_slug: m.model_creator?.slug,
+    name: cleanText(m.name, 140),
+    slug: cleanText(m.slug, 140),
+    creator: cleanText(m.model_creator?.name, 120),
+    creator_slug: cleanText(m.model_creator?.slug, 120),
     release_date: m.release_date,
     score: field(m),
     pricing: {
@@ -190,10 +191,10 @@ async function main() {
     // Todos los modelos para vistas tipo "explore" o filtros custom
     models: models.map((m) => ({
       id: m.id,
-      name: m.name,
-      slug: m.slug,
-      creator: m.model_creator?.name,
-      creator_slug: m.model_creator?.slug,
+      name: cleanText(m.name, 140),
+      slug: cleanText(m.slug, 140),
+      creator: cleanText(m.model_creator?.name, 120),
+      creator_slug: cleanText(m.model_creator?.slug, 120),
       release_date: m.release_date,
       intelligence: m.evaluations?.artificial_analysis_intelligence_index,
       coding: m.evaluations?.artificial_analysis_coding_index,

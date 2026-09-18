@@ -31,6 +31,7 @@ import {
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { AI_KEYWORDS, AI_WEIGHTS, AI_MIN_SCORE } from './lib/ai-keywords.mjs';
+import { cleanText, cleanTextOrNull } from './lib/clean.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -147,18 +148,18 @@ function scoreCompany(c) {
 function normalize(c) {
   return {
     id: c.id,
-    slug: c.slug,
-    name: c.name,
-    one_liner: c.one_liner ?? '',
-    description: c.long_description ?? '',
+    slug: cleanText(c.slug, 120),
+    name: cleanText(c.name, 140),
+    one_liner: cleanText(c.one_liner, 200),
+    description: cleanText(c.long_description, 600),
     website: c.website ?? null,
-    batch: c.batch ?? null,
-    industry: c.industry ?? null,
-    subindustry: c.subindustry ?? null,
-    country: c.country ?? null,
-    location: c.all_locations ?? null,
+    batch: cleanTextOrNull(c.batch, 40),
+    industry: cleanTextOrNull(c.industry, 80),
+    subindustry: cleanTextOrNull(c.subindustry, 80),
+    country: cleanTextOrNull(c.country, 80),
+    location: cleanTextOrNull(c.all_locations, 160),
     team_size: c.team_size ?? null,
-    stage: c.stage ?? null,
+    stage: cleanTextOrNull(c.stage, 60),
     is_hiring: c.is_hiring ?? false,
     top_company: c.top_company ?? false,
     status: c.status ?? null,

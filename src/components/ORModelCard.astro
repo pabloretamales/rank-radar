@@ -1,5 +1,6 @@
 ---
 import type { Dictionary } from '@/i18n';
+import { safeUrl } from '@/lib/safe.mjs';
 
 interface Props {
   model: {
@@ -55,7 +56,7 @@ const primary =
   '';
 ---
 
-<a href={model.url} target="_blank" rel="noopener" class="card block p-4">
+<a href={safeUrl(model.url)} target="_blank" rel="noopener" class="card block p-4">
   <div class="flex items-start gap-3">
     <div class={`rank-badge ${rankClass} shrink-0`}>#{model.rank}</div>
     <div class="flex-1 min-w-0">

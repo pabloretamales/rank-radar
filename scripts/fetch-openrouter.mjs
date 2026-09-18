@@ -20,6 +20,7 @@
 import { writeFileSync, existsSync, mkdirSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { cleanText, cleanTextOrNull } from './lib/clean.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -132,7 +133,7 @@ function normalizeApps(apps) {
     .map((a) => ({
       rank: a.rank,
       app_id: a.app_id,
-      app_name: a.app_name,
+      app_name: cleanText(a.app_name, 140),
       total_tokens: a.total_tokens,
       total_tokens_human: formatTokens(a.total_tokens),
       total_requests: a.total_requests,
@@ -163,9 +164,9 @@ function rankModels(models, scoreFn, topN, descending = true) {
       return {
         rank: i + 1,
         id: m.id,
-        slug: m.canonical_slug ?? m.id,
-        name: m.name ?? m.id,
-        description: m.description ?? '',
+        slug: cleanText(m.canonical_slug ?? m.id, 140),
+        name: cleanText(m.name ?? m.id, 140),
+        description: cleanText(m.description, 400),
         context_length: m.context_length ?? null,
         modalities,
         n_inputs: (arch.input_modalities ?? []).length,
@@ -218,7 +219,7 @@ async function main() {
     return {
       id: m.id,
       canonical_slug: m.canonical_slug ?? null,
-      name: m.name ?? m.id,
+      name: cleanText(m.name ?? m.id, 140),
       context_length: m.context_length ?? null,
       modalities: [
         ...(arch.input_modalities ?? []),
@@ -262,7 +263,7 @@ async function main() {
     return {
       rank: i + 1,
       id: match?.id ?? perma,
-      name: match?.name ?? perma,
+      name: cleanText(match?.name ?? perma, 140),
       slug: match?.canonical_slug ?? null,
       total_tokens: total,
       total_tokens_human: formatTokens(total),
@@ -349,7 +350,7 @@ async function main() {
       return {
         rank: i + 1,
         id: match?.id ?? t.slug,
-        name: match?.name ?? t.slug,
+        name: cleanText(match?.name ?? t.slug, 140),
         slug: match?.canonical_slug ?? null,
         total_tokens: t.excess, // mostramos el excess como el valor principal
         total_tokens_human: formatTokens(t.excess),

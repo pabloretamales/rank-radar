@@ -1,4 +1,5 @@
 ---
+import { safeUrl } from '@/lib/safe.mjs';
 import type { Dictionary } from '@/i18n';
 
 interface Props {
@@ -34,7 +35,7 @@ function languageColor(lang) {
 }
 ---
 
-<a href={repo.html_url} target="_blank" rel="noopener" class={`card block ${compact ? 'p-3' : 'p-4'}`}>
+<a href={safeUrl(repo.html_url)} target="_blank" rel="noopener" class={`card block ${compact ? 'p-3' : 'p-4'}`}>
   <div class="flex items-start gap-3">
     <div class={`rank-badge ${rankClass} shrink-0`}>#{repo.rank}</div>
     <div class="flex-1 min-w-0">
