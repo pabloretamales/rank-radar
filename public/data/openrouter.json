@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-09-18T15:00:19.886Z",
+  "fetched_at": "2026-09-18T17:20:00.263Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-09-18T15:00:13.733Z",
+    "as_of": "2026-09-18T17:19:51.655Z",
     "version": "v1",
     "start_date": "2026-08-19",
     "end_date": "2026-09-17"
   },
   "rankings_meta": {
-    "as_of": "2026-09-18T15:00:15.359Z",
+    "as_of": "2026-09-18T17:19:53.399Z",
     "version": "v1",
     "start_date": "2026-09-17",
     "end_date": "2026-09-17"
@@ -602,8 +602,8 @@
         "n_outputs": 1,
         "created_ts": 1789399174,
         "created_human": "2026-09-14",
-        "pricing_prompt": 5.7948e-7,
-        "pricing_completion": 0.00000173844,
+        "pricing_prompt": 5.7816e-7,
+        "pricing_completion": 0.00000173448,
         "score": 1789399174,
         "url": "https://openrouter.ai/models/~deepseek/deepseek-pro-latest"
       },
@@ -976,7 +976,7 @@
         "id": "openai/gpt-6-astra-pro",
         "slug": "openai/gpt-6-astra-pro-20260903",
         "name": "OpenAI: GPT-6 Astra Pro",
-        "description": "GPT-6 Astra Pro is the same underlying model as [GPT-6 Astra](https://openrouter.ai/openai/gpt-6-astra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks.\n\nLearn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
+        "description": "GPT-6 Astra Pro is the same underlying model as [GPT-6 Astra](https://openrouter.ai/openai/gpt-6-astra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. Learn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
         "context_length": 1050000,
         "modalities": [
           "file",
@@ -2090,7 +2090,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-09-18T15:00:15.359Z",
+      "as_of": "2026-09-18T17:19:53.399Z",
       "version": "v1",
       "start_date": "2026-09-17",
       "end_date": "2026-09-17"
@@ -2098,19 +2098,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-09-18T15:00:10.901Z",
+      "as_of": "2026-09-18T17:19:49.263Z",
       "version": "v1",
       "start_date": "2026-09-17",
       "end_date": "2026-09-17"
     },
     "week": {
-      "as_of": "2026-09-18T15:00:12.603Z",
+      "as_of": "2026-09-18T17:19:50.677Z",
       "version": "v1",
       "start_date": "2026-09-11",
       "end_date": "2026-09-17"
     },
     "month": {
-      "as_of": "2026-09-18T15:00:13.733Z",
+      "as_of": "2026-09-18T17:19:51.655Z",
       "version": "v1",
       "start_date": "2026-08-19",
       "end_date": "2026-09-17"
@@ -2146,8 +2146,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 5.7948e-7,
-      "pricing_completion": 0.00000173844,
+      "pricing_prompt": 5.7816e-7,
+      "pricing_completion": 0.00000173448,
       "created_human": "2026-09-14",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-pro-latest"
     },
@@ -2866,8 +2866,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 9e-7,
-      "pricing_completion": 0.000003,
+      "pricing_prompt": 8.988e-7,
+      "pricing_completion": 0.0000028248,
       "created_human": "2026-08-19",
       "url": "https://openrouter.ai/models/~z-ai/glm-latest"
     },
@@ -2898,8 +2898,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 0.0000014,
-      "pricing_completion": 0.0000044,
+      "pricing_prompt": 9.1e-7,
+      "pricing_completion": 0.00000286,
       "created_human": "2026-08-18",
       "url": "https://huggingface.co/zai-org/GLM-5.3"
     },
@@ -3091,8 +3091,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 5.7948e-7,
-      "pricing_completion": 0.00000173844,
+      "pricing_prompt": 5.7816e-7,
+      "pricing_completion": 0.00000173448,
       "created_human": "2026-08-12",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
     },
@@ -3224,8 +3224,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 3e-7,
-      "pricing_completion": 0.0000011,
+      "pricing_prompt": 3.5e-7,
+      "pricing_completion": 0.0000015,
       "created_human": "2026-08-09",
       "url": "https://huggingface.co/meta-models/Muse-Glimmer-30B"
     },
@@ -4006,8 +4006,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -5014,8 +5014,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 4.984e-8,
-      "pricing_completion": 9.968e-8,
+      "pricing_prompt": 4.956e-8,
+      "pricing_completion": 9.912e-8,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
@@ -5195,7 +5195,7 @@
     {
       "id": "google/gemma-4-26b-a4b-it",
       "canonical_slug": "google/gemma-4-26b-a4b-it-20260403",
-      "name": "Google: Gemma 4 26B A4B ",
+      "name": "Google: Gemma 4 26B A4B",
       "context_length": 262144,
       "modalities": [
         "image",
@@ -5213,7 +5213,7 @@
     {
       "id": "google/gemma-4-26b-a4b-it:free",
       "canonical_slug": "google/gemma-4-26b-a4b-it-20260403",
-      "name": "Google: Gemma 4 26B A4B  (free)",
+      "name": "Google: Gemma 4 26B A4B (free)",
       "context_length": 262144,
       "modalities": [
         "image",
@@ -7855,7 +7855,7 @@
     {
       "id": "bytedance/ui-tars-1.5-7b",
       "canonical_slug": "bytedance/ui-tars-1.5-7b",
-      "name": "ByteDance: UI-TARS 7B ",
+      "name": "ByteDance: UI-TARS 7B",
       "context_length": 128000,
       "modalities": [
         "image",
@@ -8008,7 +8008,7 @@
     {
       "id": "baidu/ernie-4.5-vl-424b-a47b",
       "canonical_slug": "baidu/ernie-4.5-vl-424b-a47b",
-      "name": "Baidu: ERNIE 4.5 VL 424B A47B ",
+      "name": "Baidu: ERNIE 4.5 VL 424B A47B",
       "context_length": 123000,
       "modalities": [
         "image",
