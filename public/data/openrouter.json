@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-09-18T17:20:00.263Z",
+  "fetched_at": "2026-09-18T22:00:20.813Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-09-18T17:19:51.655Z",
+    "as_of": "2026-09-18T22:00:13.666Z",
     "version": "v1",
     "start_date": "2026-08-19",
     "end_date": "2026-09-17"
   },
   "rankings_meta": {
-    "as_of": "2026-09-18T17:19:53.399Z",
+    "as_of": "2026-09-18T22:00:15.371Z",
     "version": "v1",
     "start_date": "2026-09-17",
     "end_date": "2026-09-17"
@@ -568,6 +568,27 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "prism-ml/ternary-bonsai-2-27b",
+        "slug": "prism-ml/ternary-bonsai-2-27b-20260918",
+        "name": "PrismML: Ternary Bonsai 2 27B",
+        "description": "Bonsai 2 27B is a 27B-parameter reasoning model from PrismML derived from Qwen3.8-27B. It supports coding, mathematics, tool calling, and image understanding with a 262K-token context window. Ternary compression shrinks...",
+        "context_length": 262144,
+        "modalities": [
+          "text",
+          "image",
+          "→text"
+        ],
+        "n_inputs": 2,
+        "n_outputs": 1,
+        "created_ts": 1789754046,
+        "created_human": "2026-09-18",
+        "pricing_prompt": 7.5e-8,
+        "pricing_completion": 5e-7,
+        "score": 1789754046,
+        "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf"
+      },
+      {
+        "rank": 2,
         "id": "unbiased/pareto",
         "slug": "unbiased/pareto-20260917",
         "name": "Pareto",
@@ -588,7 +609,7 @@
         "url": "https://openrouter.ai/models/unbiased/pareto-20260917"
       },
       {
-        "rank": 2,
+        "rank": 3,
         "id": "~deepseek/deepseek-pro-latest",
         "slug": "~deepseek/deepseek-pro-latest",
         "name": "DeepSeek: DeepSeek Pro Latest",
@@ -608,7 +629,7 @@
         "url": "https://openrouter.ai/models/~deepseek/deepseek-pro-latest"
       },
       {
-        "rank": 3,
+        "rank": 4,
         "id": "~deepseek/deepseek-flash-latest",
         "slug": "~deepseek/deepseek-flash-latest",
         "name": "DeepSeek: DeepSeek Flash Latest",
@@ -623,13 +644,13 @@
         "n_outputs": 1,
         "created_ts": 1789399150,
         "created_human": "2026-09-14",
-        "pricing_prompt": 1.5e-7,
-        "pricing_completion": 6e-7,
+        "pricing_prompt": 1.4e-7,
+        "pricing_completion": 4.2e-7,
         "score": 1789399150,
         "url": "https://openrouter.ai/models/~deepseek/deepseek-flash-latest"
       },
       {
-        "rank": 4,
+        "rank": 5,
         "id": "inference-net/schematron-v2-turbo",
         "slug": "inference-net/schematron-v2-turbo-20260902",
         "name": "Inference.net: Schematron V2 Turbo",
@@ -649,7 +670,7 @@
         "url": "https://huggingface.co/inference-net/schematron-v2-granite-4.0-h-micro"
       },
       {
-        "rank": 5,
+        "rank": 6,
         "id": "inference-net/schematron-v2-small",
         "slug": "inference-net/schematron-v2-small-20260902",
         "name": "Inference.net: Schematron V2 Small",
@@ -669,7 +690,7 @@
         "url": "https://huggingface.co/inference-net/schematron-v2-llama-3.2-3b"
       },
       {
-        "rank": 6,
+        "rank": 7,
         "id": "~openai/gpt-astra-latest",
         "slug": "~openai/gpt-astra-latest",
         "name": "OpenAI: GPT Astra Latest",
@@ -691,7 +712,7 @@
         "url": "https://openrouter.ai/models/~openai/gpt-astra-latest"
       },
       {
-        "rank": 7,
+        "rank": 8,
         "id": "~openai/gpt-sol-latest",
         "slug": "~openai/gpt-sol-latest",
         "name": "OpenAI: GPT Sol Latest",
@@ -713,7 +734,7 @@
         "url": "https://openrouter.ai/models/~openai/gpt-sol-latest"
       },
       {
-        "rank": 8,
+        "rank": 9,
         "id": "~openai/gpt-terra-latest",
         "slug": "~openai/gpt-terra-latest",
         "name": "OpenAI: GPT Terra Latest",
@@ -735,7 +756,7 @@
         "url": "https://openrouter.ai/models/~openai/gpt-terra-latest"
       },
       {
-        "rank": 9,
+        "rank": 10,
         "id": "~openai/gpt-luna-latest",
         "slug": "~openai/gpt-luna-latest",
         "name": "OpenAI: GPT Luna Latest",
@@ -757,7 +778,7 @@
         "url": "https://openrouter.ai/models/~openai/gpt-luna-latest"
       },
       {
-        "rank": 10,
+        "rank": 11,
         "id": "sakana/fugu-ultra-v2",
         "slug": "sakana/fugu-ultra-v2-20260911",
         "name": "Sakana: Fugu Ultra v2",
@@ -779,7 +800,7 @@
         "url": "https://openrouter.ai/models/sakana/fugu-ultra-v2-20260911"
       },
       {
-        "rank": 11,
+        "rank": 12,
         "id": "sakana/fugu-max",
         "slug": "sakana/fugu-max-20260911",
         "name": "Sakana: Fugu Max",
@@ -801,7 +822,7 @@
         "url": "https://openrouter.ai/models/sakana/fugu-max-20260911"
       },
       {
-        "rank": 12,
+        "rank": 13,
         "id": "inclusionai/ling-3.0-flash-vl",
         "slug": "inclusionai/ling-3.0-flash-vl-20260910",
         "name": "inclusionAI: Ling 3.0 Flash VL",
@@ -823,7 +844,7 @@
         "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL"
       },
       {
-        "rank": 13,
+        "rank": 14,
         "id": "inclusionai/ling-3.0-flash-vl:free",
         "slug": "inclusionai/ling-3.0-flash-vl-20260910",
         "name": "inclusionAI: Ling 3.0 Flash VL (free)",
@@ -845,7 +866,7 @@
         "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL"
       },
       {
-        "rank": 14,
+        "rank": 15,
         "id": "deepseek/deepseek-v4.1-flash",
         "slug": "deepseek/deepseek-v4.1-flash-20260910",
         "name": "DeepSeek: DeepSeek V4.1 Flash",
@@ -866,7 +887,7 @@
         "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
       },
       {
-        "rank": 15,
+        "rank": 16,
         "id": "inception/mercury-2.5",
         "slug": "inception/mercury-2.5-20260908",
         "name": "Inception: Mercury 2.5",
@@ -886,7 +907,7 @@
         "url": "https://openrouter.ai/models/inception/mercury-2.5-20260908"
       },
       {
-        "rank": 16,
+        "rank": 17,
         "id": "nex-agi/nex-n2.5-mini:free",
         "slug": "nex-agi/nex-n2.5-mini-20260908",
         "name": "Nex AGI: Nex-N2.5-Mini (free)",
@@ -907,7 +928,7 @@
         "url": "https://huggingface.co/nex-agi/Nex-N2.5-mini"
       },
       {
-        "rank": 17,
+        "rank": 18,
         "id": "nex-agi/nex-n2.5-pro:free",
         "slug": "nex-agi/nex-n2.5-pro-20260907",
         "name": "Nex AGI: Nex-N2.5-Pro (free)",
@@ -928,7 +949,7 @@
         "url": "https://huggingface.co/nex-agi/Nex-N2.5-Pro"
       },
       {
-        "rank": 18,
+        "rank": 19,
         "id": "openai/gpt-6-astra",
         "slug": "openai/gpt-6-astra-20260903",
         "name": "OpenAI: GPT-6 Astra",
@@ -950,7 +971,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-astra-20260903"
       },
       {
-        "rank": 19,
+        "rank": 20,
         "id": "openai/gpt-6-astra:batch",
         "slug": "openai/gpt-6-astra-20260903",
         "name": "OpenAI: GPT-6 Astra (batch)",
@@ -970,28 +991,6 @@
         "pricing_completion": 0.000025,
         "score": 1788552838,
         "url": "https://openrouter.ai/models/openai/gpt-6-astra-20260903"
-      },
-      {
-        "rank": 20,
-        "id": "openai/gpt-6-astra-pro",
-        "slug": "openai/gpt-6-astra-pro-20260903",
-        "name": "OpenAI: GPT-6 Astra Pro",
-        "description": "GPT-6 Astra Pro is the same underlying model as [GPT-6 Astra](https://openrouter.ai/openai/gpt-6-astra), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. Learn more in OpenAI's docs: https://developers.openai.com/api/docs/guides/reasoning#reasoning-mode",
-        "context_length": 1050000,
-        "modalities": [
-          "file",
-          "image",
-          "text",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1788552835,
-        "created_human": "2026-09-04",
-        "pricing_prompt": 0.00001,
-        "pricing_completion": 0.00005,
-        "score": 1788552835,
-        "url": "https://openrouter.ai/models/openai/gpt-6-astra-pro-20260903"
       }
     ],
     "today": [
@@ -2090,7 +2089,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-09-18T17:19:53.399Z",
+      "as_of": "2026-09-18T22:00:15.371Z",
       "version": "v1",
       "start_date": "2026-09-17",
       "end_date": "2026-09-17"
@@ -2098,26 +2097,43 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-09-18T17:19:49.263Z",
+      "as_of": "2026-09-18T22:00:11.145Z",
       "version": "v1",
       "start_date": "2026-09-17",
       "end_date": "2026-09-17"
     },
     "week": {
-      "as_of": "2026-09-18T17:19:50.677Z",
+      "as_of": "2026-09-18T22:00:12.502Z",
       "version": "v1",
       "start_date": "2026-09-11",
       "end_date": "2026-09-17"
     },
     "month": {
-      "as_of": "2026-09-18T17:19:51.655Z",
+      "as_of": "2026-09-18T22:00:13.666Z",
       "version": "v1",
       "start_date": "2026-08-19",
       "end_date": "2026-09-17"
     }
   },
-  "models_total": 445,
+  "models_total": 446,
   "catalog": [
+    {
+      "id": "prism-ml/ternary-bonsai-2-27b",
+      "canonical_slug": "prism-ml/ternary-bonsai-2-27b-20260918",
+      "name": "PrismML: Ternary Bonsai 2 27B",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "image",
+        "→text"
+      ],
+      "n_inputs": 2,
+      "n_outputs": 1,
+      "pricing_prompt": 7.5e-8,
+      "pricing_completion": 5e-7,
+      "created_human": "2026-09-18",
+      "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf"
+    },
     {
       "id": "unbiased/pareto",
       "canonical_slug": "unbiased/pareto-20260917",
@@ -2163,8 +2179,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 1.5e-7,
-      "pricing_completion": 6e-7,
+      "pricing_prompt": 1.4e-7,
+      "pricing_completion": 4.2e-7,
       "created_human": "2026-09-14",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-flash-latest"
     },
@@ -2866,8 +2882,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8.988e-7,
-      "pricing_completion": 0.0000028248,
+      "pricing_prompt": 8.918e-7,
+      "pricing_completion": 0.0000028028,
       "created_human": "2026-08-19",
       "url": "https://openrouter.ai/models/~z-ai/glm-latest"
     },
@@ -3277,8 +3293,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 5.5e-8,
-      "pricing_completion": 1.65e-7,
+      "pricing_prompt": 5.412e-8,
+      "pricing_completion": 1.6236e-7,
       "created_human": "2026-08-01",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
     },
@@ -3652,8 +3668,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.0000021,
-      "pricing_completion": 0.00001095,
+      "pricing_prompt": 0.00000195,
+      "pricing_completion": 0.00001092,
       "created_human": "2026-07-16",
       "url": "https://huggingface.co/moonshotai/Kimi-K3"
     },
@@ -4784,8 +4800,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.0000021,
-      "pricing_completion": 0.00001095,
+      "pricing_prompt": 0.00000195,
+      "pricing_completion": 0.00001092,
       "created_human": "2026-04-27",
       "url": "https://openrouter.ai/models/~moonshotai/kimi-latest"
     },
@@ -5014,8 +5030,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 4.956e-8,
-      "pricing_completion": 9.912e-8,
+      "pricing_prompt": 4.844e-8,
+      "pricing_completion": 9.688e-8,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
