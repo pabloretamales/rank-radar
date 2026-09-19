@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-09-19T15:00:17.932Z",
+  "fetched_at": "2026-09-19T22:00:20.852Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-09-19T15:00:12.623Z",
+    "as_of": "2026-09-19T22:00:13.898Z",
     "version": "v1",
     "start_date": "2026-08-20",
     "end_date": "2026-09-18"
   },
   "rankings_meta": {
-    "as_of": "2026-09-19T15:00:13.885Z",
+    "as_of": "2026-09-19T22:00:15.183Z",
     "version": "v1",
     "start_date": "2026-09-18",
     "end_date": "2026-09-18"
@@ -2208,7 +2208,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-09-19T15:00:13.885Z",
+      "as_of": "2026-09-19T22:00:15.183Z",
       "version": "v1",
       "start_date": "2026-09-18",
       "end_date": "2026-09-18"
@@ -2216,19 +2216,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-09-19T15:00:09.778Z",
+      "as_of": "2026-09-19T22:00:10.635Z",
       "version": "v1",
       "start_date": "2026-09-18",
       "end_date": "2026-09-18"
     },
     "week": {
-      "as_of": "2026-09-19T15:00:11.241Z",
+      "as_of": "2026-09-19T22:00:11.618Z",
       "version": "v1",
       "start_date": "2026-09-12",
       "end_date": "2026-09-18"
     },
     "month": {
-      "as_of": "2026-09-19T15:00:12.623Z",
+      "as_of": "2026-09-19T22:00:13.898Z",
       "version": "v1",
       "start_date": "2026-08-20",
       "end_date": "2026-09-18"
@@ -3019,8 +3019,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8.918e-7,
-      "pricing_completion": 0.0000028028,
+      "pricing_prompt": 8.442e-7,
+      "pricing_completion": 0.0000026532,
       "created_human": "2026-08-19",
       "url": "https://openrouter.ai/models/~z-ai/glm-latest"
     },
@@ -4159,8 +4159,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -5167,8 +5167,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 4.256e-8,
-      "pricing_completion": 8.512e-8,
+      "pricing_prompt": 3.892e-8,
+      "pricing_completion": 7.784e-8,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
@@ -7279,8 +7279,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 2e-7,
-      "pricing_completion": 7e-7,
+      "pricing_prompt": 1.3e-7,
+      "pricing_completion": 5.2e-7,
       "created_human": "2025-10-06",
       "url": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct"
     },
@@ -7331,8 +7331,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 5e-7,
-      "pricing_completion": 0.000002,
+      "pricing_prompt": 4.3e-7,
+      "pricing_completion": 0.00000175,
       "created_human": "2025-09-30",
       "url": "https://huggingface.co/zai-org/GLM-4.6"
     },
