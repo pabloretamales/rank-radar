@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-09-20T15:00:18.786Z",
+  "fetched_at": "2026-09-20T22:00:18.550Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-09-20T15:00:12.952Z",
+    "as_of": "2026-09-20T22:00:13.135Z",
     "version": "v1",
     "start_date": "2026-08-21",
     "end_date": "2026-09-19"
   },
   "rankings_meta": {
-    "as_of": "2026-09-20T15:00:14.225Z",
+    "as_of": "2026-09-20T22:00:14.475Z",
     "version": "v1",
     "start_date": "2026-09-19",
     "end_date": "2026-09-19"
@@ -645,8 +645,8 @@
         "n_outputs": 1,
         "created_ts": 1789399174,
         "created_human": "2026-09-14",
-        "pricing_prompt": 5.4912e-7,
-        "pricing_completion": 0.00000164736,
+        "pricing_prompt": 5.2536e-7,
+        "pricing_completion": 0.00000157608,
         "score": 1789399174,
         "url": "https://openrouter.ai/models/~deepseek/deepseek-pro-latest"
       },
@@ -1029,7 +1029,7 @@
         "id": "tencent/hy4-preview",
         "name": "Tencent: Hy4 preview",
         "slug": "tencent/hy4-preview-20260827",
-        "total_tokens": 1411341424163,
+        "total_tokens": 1411341498040,
         "total_tokens_human": "1.41T",
         "perma": "tencent/hy4-preview-20260827",
         "url": "https://openrouter.ai/models/tencent/hy4-preview-20260827",
@@ -1346,7 +1346,7 @@
         "id": "tencent/hy4-preview",
         "name": "Tencent: Hy4 preview",
         "slug": "tencent/hy4-preview-20260827",
-        "total_tokens": 11925508167543,
+        "total_tokens": 11925508241420,
         "total_tokens_human": "11.93T",
         "perma": "tencent/hy4-preview-20260827",
         "url": "https://openrouter.ai/models/tencent/hy4-preview-20260827",
@@ -1633,7 +1633,7 @@
         "id": "tencent/hy4-preview",
         "name": "Tencent: Hy4 preview",
         "slug": "tencent/hy4-preview-20260827",
-        "total_tokens": 45100768371706,
+        "total_tokens": 45100768445583,
         "total_tokens_human": "45.10T",
         "perma": "tencent/hy4-preview-20260827",
         "url": "https://openrouter.ai/models/tencent/hy4-preview-20260827",
@@ -2174,7 +2174,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-09-20T15:00:14.225Z",
+      "as_of": "2026-09-20T22:00:14.475Z",
       "version": "v1",
       "start_date": "2026-09-19",
       "end_date": "2026-09-19"
@@ -2182,19 +2182,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-09-20T15:00:10.148Z",
+      "as_of": "2026-09-20T22:00:10.014Z",
       "version": "v1",
       "start_date": "2026-09-19",
       "end_date": "2026-09-19"
     },
     "week": {
-      "as_of": "2026-09-20T15:00:11.673Z",
+      "as_of": "2026-09-20T22:00:11.164Z",
       "version": "v1",
       "start_date": "2026-09-13",
       "end_date": "2026-09-19"
     },
     "month": {
-      "as_of": "2026-09-20T15:00:12.952Z",
+      "as_of": "2026-09-20T22:00:13.135Z",
       "version": "v1",
       "start_date": "2026-08-21",
       "end_date": "2026-09-19"
@@ -2265,8 +2265,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 5.4912e-7,
-      "pricing_completion": 0.00000164736,
+      "pricing_prompt": 5.2536e-7,
+      "pricing_completion": 0.00000157608,
       "created_human": "2026-09-14",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-pro-latest"
     },
@@ -2920,8 +2920,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 2.156e-7,
-      "pricing_completion": 6.468e-7,
+      "pricing_prompt": 2.2e-7,
+      "pricing_completion": 6.6e-7,
       "created_human": "2026-08-21",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp"
     },
@@ -2985,8 +2985,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8.442e-7,
-      "pricing_completion": 0.0000026532,
+      "pricing_prompt": 7.728e-7,
+      "pricing_completion": 0.0000024288,
       "created_human": "2026-08-19",
       "url": "https://openrouter.ai/models/~z-ai/glm-latest"
     },
@@ -3017,8 +3017,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8.68e-7,
-      "pricing_completion": 0.000002728,
+      "pricing_prompt": 9.1e-7,
+      "pricing_completion": 0.00000286,
       "created_human": "2026-08-18",
       "url": "https://huggingface.co/zai-org/GLM-5.3"
     },
@@ -3210,8 +3210,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 5.4912e-7,
-      "pricing_completion": 0.00000164736,
+      "pricing_prompt": 5.2536e-7,
+      "pricing_completion": 0.00000157608,
       "created_human": "2026-08-12",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
     },
@@ -3397,7 +3397,7 @@
       "n_inputs": 1,
       "n_outputs": 1,
       "pricing_prompt": 4e-8,
-      "pricing_completion": 8e-8,
+      "pricing_completion": 1.6e-7,
       "created_human": "2026-08-01",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
     },
@@ -3413,7 +3413,7 @@
       "n_inputs": 1,
       "n_outputs": 1,
       "pricing_prompt": 4e-8,
-      "pricing_completion": 8e-8,
+      "pricing_completion": 1.6e-7,
       "created_human": "2026-07-31",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
     },
@@ -4109,8 +4109,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -4979,8 +4979,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 1e-7,
-      "pricing_completion": 9e-7,
+      "pricing_prompt": 1.5e-7,
+      "pricing_completion": 0.000001,
       "created_human": "2026-04-27",
       "url": "https://huggingface.co/Qwen/Qwen3.6-35B-A3B"
     },
@@ -7229,8 +7229,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 2e-7,
-      "pricing_completion": 7e-7,
+      "pricing_prompt": 1.3e-7,
+      "pricing_completion": 5.2e-7,
       "created_human": "2025-10-06",
       "url": "https://huggingface.co/Qwen/Qwen3-VL-30B-A3B-Instruct"
     },
