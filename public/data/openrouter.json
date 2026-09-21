@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-09-21T15:00:19.875Z",
+  "fetched_at": "2026-09-21T22:00:21.805Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-09-21T15:00:13.904Z",
+    "as_of": "2026-09-21T22:00:14.045Z",
     "version": "v1",
     "start_date": "2026-08-22",
     "end_date": "2026-09-20"
   },
   "rankings_meta": {
-    "as_of": "2026-09-21T15:00:14.887Z",
+    "as_of": "2026-09-21T22:00:15.136Z",
     "version": "v1",
     "start_date": "2026-09-20",
     "end_date": "2026-09-20"
@@ -568,6 +568,97 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
+        "slug": "xiaomi/mimo-v2.6-pro-ultraspeed-20260921",
+        "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
+        "description": "MiMo-V2.6-Pro-UltraSpeed is the fast speed edition of Xiaomi's flagship foundation model, MiMo-V2.6-Pro. Built from the same 1T MiMo-V2.6-Pro checkpoint, it matches the original model in quality while delivering roughly 10x...",
+        "context_length": 1048576,
+        "modalities": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "→text"
+        ],
+        "n_inputs": 4,
+        "n_outputs": 1,
+        "created_ts": 1790021267,
+        "created_human": "2026-09-21",
+        "pricing_prompt": 0.00000435,
+        "pricing_completion": 0.0000087,
+        "score": 1790021267,
+        "url": "https://openrouter.ai/models/xiaomi/mimo-v2.6-pro-ultraspeed-20260921"
+      },
+      {
+        "rank": 2,
+        "id": "xiaomi/mimo-v2.6-flash",
+        "slug": "xiaomi/mimo-v2.6-flash-20260921",
+        "name": "Xiaomi: MiMo-V2.6-Flash",
+        "description": "MiMo-V2.6-Flash is an open-source foundation model developed by Xiaomi. Built on a Mixture-of-Experts architecture with 309B total parameters and 15B activated per token, it employs a hybrid attention mechanism for...",
+        "context_length": 1048576,
+        "modalities": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "→text"
+        ],
+        "n_inputs": 4,
+        "n_outputs": 1,
+        "created_ts": 1790021264,
+        "created_human": "2026-09-21",
+        "pricing_prompt": 1.4e-7,
+        "pricing_completion": 2.8e-7,
+        "score": 1790021264,
+        "url": "https://openrouter.ai/models/xiaomi/mimo-v2.6-flash-20260921"
+      },
+      {
+        "rank": 3,
+        "id": "xiaomi/mimo-v2.6-pro",
+        "slug": "xiaomi/mimo-v2.6-pro-20260921",
+        "name": "Xiaomi: MiMo-V2.6-Pro",
+        "description": "MiMo-V2.6-Pro is the flagship foundation model developed by Xiaomi. Built at a scale of over 1T parameters, it is designed to push the ceiling of capability for the most demanding...",
+        "context_length": 1048576,
+        "modalities": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "→text"
+        ],
+        "n_inputs": 4,
+        "n_outputs": 1,
+        "created_ts": 1790021259,
+        "created_human": "2026-09-21",
+        "pricing_prompt": 4.35e-7,
+        "pricing_completion": 8.7e-7,
+        "score": 1790021259,
+        "url": "https://openrouter.ai/models/xiaomi/mimo-v2.6-pro-20260921"
+      },
+      {
+        "rank": 4,
+        "id": "x-ai/grok-4.7",
+        "slug": "x-ai/grok-4.7-20260916",
+        "name": "SpaceXAI: Grok 4.7",
+        "description": "Grok 4.7 is SpaceXAI's flagship model for coding, agentic tasks, and knowledge work, succeeding Grok 4.6. It is particularly strong at long-running software engineering tasks, verifying its own work, and...",
+        "context_length": 500000,
+        "modalities": [
+          "text",
+          "image",
+          "file",
+          "→text"
+        ],
+        "n_inputs": 3,
+        "n_outputs": 1,
+        "created_ts": 1790007541,
+        "created_human": "2026-09-21",
+        "pricing_prompt": 0.0000016,
+        "pricing_completion": 0.0000048,
+        "score": 1790007541,
+        "url": "https://openrouter.ai/models/x-ai/grok-4.7-20260916"
+      },
+      {
+        "rank": 5,
         "id": "prism-ml/ternary-bonsai-2-27b",
         "slug": "prism-ml/ternary-bonsai-2-27b-20260918",
         "name": "PrismML: Ternary Bonsai 2 27B",
@@ -588,7 +679,7 @@
         "url": "https://huggingface.co/prism-ml/Ternary-Bonsai-2-27B-gguf"
       },
       {
-        "rank": 2,
+        "rank": 6,
         "id": "z-ai/glm-5.3-flashx",
         "slug": "z-ai/glm-5.3-flashx-20260918",
         "name": "Z.ai: GLM 5.3 FlashX",
@@ -610,7 +701,7 @@
         "url": "https://openrouter.ai/models/z-ai/glm-5.3-flashx-20260918"
       },
       {
-        "rank": 3,
+        "rank": 7,
         "id": "unbiased/pareto",
         "slug": "unbiased/pareto-20260917",
         "name": "Pareto",
@@ -631,7 +722,7 @@
         "url": "https://openrouter.ai/models/unbiased/pareto-20260917"
       },
       {
-        "rank": 4,
+        "rank": 8,
         "id": "~deepseek/deepseek-pro-latest",
         "slug": "~deepseek/deepseek-pro-latest",
         "name": "DeepSeek: DeepSeek Pro Latest",
@@ -645,13 +736,13 @@
         "n_outputs": 1,
         "created_ts": 1789399174,
         "created_human": "2026-09-14",
-        "pricing_prompt": 5.7816e-7,
-        "pricing_completion": 0.00000173448,
+        "pricing_prompt": 5.412e-7,
+        "pricing_completion": 0.0000016236,
         "score": 1789399174,
         "url": "https://openrouter.ai/models/~deepseek/deepseek-pro-latest"
       },
       {
-        "rank": 5,
+        "rank": 9,
         "id": "~deepseek/deepseek-flash-latest",
         "slug": "~deepseek/deepseek-flash-latest",
         "name": "DeepSeek: DeepSeek Flash Latest",
@@ -672,7 +763,7 @@
         "url": "https://openrouter.ai/models/~deepseek/deepseek-flash-latest"
       },
       {
-        "rank": 6,
+        "rank": 10,
         "id": "inference-net/schematron-v2-turbo",
         "slug": "inference-net/schematron-v2-turbo-20260902",
         "name": "Inference.net: Schematron V2 Turbo",
@@ -692,7 +783,7 @@
         "url": "https://huggingface.co/inference-net/schematron-v2-granite-4.0-h-micro"
       },
       {
-        "rank": 7,
+        "rank": 11,
         "id": "inference-net/schematron-v2-small",
         "slug": "inference-net/schematron-v2-small-20260902",
         "name": "Inference.net: Schematron V2 Small",
@@ -712,7 +803,7 @@
         "url": "https://huggingface.co/inference-net/schematron-v2-llama-3.2-3b"
       },
       {
-        "rank": 8,
+        "rank": 12,
         "id": "~openai/gpt-astra-latest",
         "slug": "~openai/gpt-astra-latest",
         "name": "OpenAI: GPT Astra Latest",
@@ -734,7 +825,7 @@
         "url": "https://openrouter.ai/models/~openai/gpt-astra-latest"
       },
       {
-        "rank": 9,
+        "rank": 13,
         "id": "~openai/gpt-sol-latest",
         "slug": "~openai/gpt-sol-latest",
         "name": "OpenAI: GPT Sol Latest",
@@ -756,7 +847,7 @@
         "url": "https://openrouter.ai/models/~openai/gpt-sol-latest"
       },
       {
-        "rank": 10,
+        "rank": 14,
         "id": "~openai/gpt-terra-latest",
         "slug": "~openai/gpt-terra-latest",
         "name": "OpenAI: GPT Terra Latest",
@@ -778,7 +869,7 @@
         "url": "https://openrouter.ai/models/~openai/gpt-terra-latest"
       },
       {
-        "rank": 11,
+        "rank": 15,
         "id": "~openai/gpt-luna-latest",
         "slug": "~openai/gpt-luna-latest",
         "name": "OpenAI: GPT Luna Latest",
@@ -800,7 +891,7 @@
         "url": "https://openrouter.ai/models/~openai/gpt-luna-latest"
       },
       {
-        "rank": 12,
+        "rank": 16,
         "id": "sakana/fugu-ultra-v2",
         "slug": "sakana/fugu-ultra-v2-20260911",
         "name": "Sakana: Fugu Ultra v2",
@@ -822,7 +913,7 @@
         "url": "https://openrouter.ai/models/sakana/fugu-ultra-v2-20260911"
       },
       {
-        "rank": 13,
+        "rank": 17,
         "id": "sakana/fugu-max",
         "slug": "sakana/fugu-max-20260911",
         "name": "Sakana: Fugu Max",
@@ -844,7 +935,7 @@
         "url": "https://openrouter.ai/models/sakana/fugu-max-20260911"
       },
       {
-        "rank": 14,
+        "rank": 18,
         "id": "inclusionai/ling-3.0-flash-vl",
         "slug": "inclusionai/ling-3.0-flash-vl-20260910",
         "name": "inclusionAI: Ling 3.0 Flash VL",
@@ -866,7 +957,7 @@
         "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL"
       },
       {
-        "rank": 15,
+        "rank": 19,
         "id": "inclusionai/ling-3.0-flash-vl:free",
         "slug": "inclusionai/ling-3.0-flash-vl-20260910",
         "name": "inclusionAI: Ling 3.0 Flash VL (free)",
@@ -888,7 +979,7 @@
         "url": "https://huggingface.co/inclusionAI/Ling-3.0-flash-VL"
       },
       {
-        "rank": 16,
+        "rank": 20,
         "id": "deepseek/deepseek-v4.1-flash",
         "slug": "deepseek/deepseek-v4.1-flash-20260910",
         "name": "DeepSeek: DeepSeek V4.1 Flash",
@@ -907,90 +998,6 @@
         "pricing_completion": 6e-7,
         "score": 1789021285,
         "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
-      },
-      {
-        "rank": 17,
-        "id": "inception/mercury-2.5",
-        "slug": "inception/mercury-2.5-20260908",
-        "name": "Inception: Mercury 2.5",
-        "description": "Mercury 2.5 is the fastest reasoning LLM, and the latest diffusion LLM (dLLM) from Inception. Instead of generating tokens sequentially, Mercury 2.5 produces and refines multiple tokens in parallel, achieving...",
-        "context_length": 260000,
-        "modalities": [
-          "text",
-          "→text"
-        ],
-        "n_inputs": 1,
-        "n_outputs": 1,
-        "created_ts": 1788892137,
-        "created_human": "2026-09-08",
-        "pricing_prompt": 4e-8,
-        "pricing_completion": 1.5e-7,
-        "score": 1788892137,
-        "url": "https://openrouter.ai/models/inception/mercury-2.5-20260908"
-      },
-      {
-        "rank": 18,
-        "id": "nex-agi/nex-n2.5-mini:free",
-        "slug": "nex-agi/nex-n2.5-mini-20260908",
-        "name": "Nex AGI: Nex-N2.5-Mini (free)",
-        "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
-        "context_length": 262144,
-        "modalities": [
-          "text",
-          "image",
-          "→text"
-        ],
-        "n_inputs": 2,
-        "n_outputs": 1,
-        "created_ts": 1788890061,
-        "created_human": "2026-09-08",
-        "pricing_prompt": 0,
-        "pricing_completion": 0,
-        "score": 1788890061,
-        "url": "https://huggingface.co/nex-agi/Nex-N2.5-mini"
-      },
-      {
-        "rank": 19,
-        "id": "nex-agi/nex-n2.5-pro:free",
-        "slug": "nex-agi/nex-n2.5-pro-20260907",
-        "name": "Nex AGI: Nex-N2.5-Pro (free)",
-        "description": "Nex-N2.5 is an agentic model built to turn goals into working, verified outcomes. Its core strength is agentic coding within a visual feedback loop: it can explore codebases, implement multi-file...",
-        "context_length": 262144,
-        "modalities": [
-          "text",
-          "image",
-          "→text"
-        ],
-        "n_inputs": 2,
-        "n_outputs": 1,
-        "created_ts": 1788890050,
-        "created_human": "2026-09-08",
-        "pricing_prompt": 0,
-        "pricing_completion": 0,
-        "score": 1788890050,
-        "url": "https://huggingface.co/nex-agi/Nex-N2.5-Pro"
-      },
-      {
-        "rank": 20,
-        "id": "openai/gpt-6-astra",
-        "slug": "openai/gpt-6-astra-20260903",
-        "name": "OpenAI: GPT-6 Astra",
-        "description": "GPT-6 Astra is OpenAI's flagship model for demanding end-to-end work. It is suited for advanced analysis, software engineering, deep research, scientific work, and document creation, with particular strengths in long-horizon...",
-        "context_length": 1050000,
-        "modalities": [
-          "file",
-          "image",
-          "text",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1788552838,
-        "created_human": "2026-09-04",
-        "pricing_prompt": 0.00001,
-        "pricing_completion": 0.00005,
-        "score": 1788552838,
-        "url": "https://openrouter.ai/models/openai/gpt-6-astra-20260903"
       }
     ],
     "today": [
@@ -2140,7 +2147,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-09-21T15:00:14.887Z",
+      "as_of": "2026-09-21T22:00:15.136Z",
       "version": "v1",
       "start_date": "2026-09-20",
       "end_date": "2026-09-20"
@@ -2148,26 +2155,101 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-09-21T15:00:10.940Z",
+      "as_of": "2026-09-21T22:00:10.316Z",
       "version": "v1",
       "start_date": "2026-09-20",
       "end_date": "2026-09-20"
     },
     "week": {
-      "as_of": "2026-09-21T15:00:12.080Z",
+      "as_of": "2026-09-21T22:00:12.010Z",
       "version": "v1",
       "start_date": "2026-09-14",
       "end_date": "2026-09-20"
     },
     "month": {
-      "as_of": "2026-09-21T15:00:13.904Z",
+      "as_of": "2026-09-21T22:00:14.045Z",
       "version": "v1",
       "start_date": "2026-08-22",
       "end_date": "2026-09-20"
     }
   },
-  "models_total": 446,
+  "models_total": 443,
   "catalog": [
+    {
+      "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
+      "canonical_slug": "xiaomi/mimo-v2.6-pro-ultraspeed-20260921",
+      "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "→text"
+      ],
+      "n_inputs": 4,
+      "n_outputs": 1,
+      "pricing_prompt": 0.00000435,
+      "pricing_completion": 0.0000087,
+      "created_human": "2026-09-21",
+      "url": "https://openrouter.ai/models/xiaomi/mimo-v2.6-pro-ultraspeed-20260921"
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-flash",
+      "canonical_slug": "xiaomi/mimo-v2.6-flash-20260921",
+      "name": "Xiaomi: MiMo-V2.6-Flash",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "→text"
+      ],
+      "n_inputs": 4,
+      "n_outputs": 1,
+      "pricing_prompt": 1.4e-7,
+      "pricing_completion": 2.8e-7,
+      "created_human": "2026-09-21",
+      "url": "https://openrouter.ai/models/xiaomi/mimo-v2.6-flash-20260921"
+    },
+    {
+      "id": "xiaomi/mimo-v2.6-pro",
+      "canonical_slug": "xiaomi/mimo-v2.6-pro-20260921",
+      "name": "Xiaomi: MiMo-V2.6-Pro",
+      "context_length": 1048576,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "→text"
+      ],
+      "n_inputs": 4,
+      "n_outputs": 1,
+      "pricing_prompt": 4.35e-7,
+      "pricing_completion": 8.7e-7,
+      "created_human": "2026-09-21",
+      "url": "https://openrouter.ai/models/xiaomi/mimo-v2.6-pro-20260921"
+    },
+    {
+      "id": "x-ai/grok-4.7",
+      "canonical_slug": "x-ai/grok-4.7-20260916",
+      "name": "SpaceXAI: Grok 4.7",
+      "context_length": 500000,
+      "modalities": [
+        "text",
+        "image",
+        "file",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.0000016,
+      "pricing_completion": 0.0000048,
+      "created_human": "2026-09-21",
+      "url": "https://openrouter.ai/models/x-ai/grok-4.7-20260916"
+    },
     {
       "id": "prism-ml/ternary-bonsai-2-27b",
       "canonical_slug": "prism-ml/ternary-bonsai-2-27b-20260918",
@@ -2231,8 +2313,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 5.7816e-7,
-      "pricing_completion": 0.00000173448,
+      "pricing_prompt": 5.412e-7,
+      "pricing_completion": 0.0000016236,
       "created_human": "2026-09-14",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-pro-latest"
     },
@@ -2729,8 +2811,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1e-7,
-      "pricing_completion": 1.5e-7,
+      "pricing_prompt": 6e-8,
+      "pricing_completion": 2.5e-7,
       "created_human": "2026-08-31",
       "url": "https://huggingface.co/ibm-granite/granite-4.2-8b"
     },
@@ -2831,8 +2913,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 9e-8,
-      "pricing_completion": 3e-7,
+      "pricing_prompt": 7.5e-8,
+      "pricing_completion": 2.5e-7,
       "created_human": "2026-08-26",
       "url": "https://huggingface.co/zai-org/GLM-5.3-Flash"
     },
@@ -3017,8 +3099,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 2e-7,
-      "pricing_completion": 0.0000025,
+      "pricing_prompt": 4.2e-7,
+      "pricing_completion": 0.000003,
       "created_human": "2026-08-14",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
     },
@@ -3132,22 +3214,6 @@
       "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
     },
     {
-      "id": "qwen/qwen3.8-2.4t-a95b:batch",
-      "canonical_slug": "qwen/qwen3.8-2.4t-a95b-20260812",
-      "name": "Qwen: Qwen3.8 2.4T A95B (batch)",
-      "context_length": 1010000,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 0.000002,
-      "pricing_completion": 0.000006,
-      "created_human": "2026-08-12",
-      "url": "https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B"
-    },
-    {
       "id": "bytedance-seed/seed-2.0-code",
       "canonical_slug": "bytedance-seed/seed-2.0-code-20260730",
       "name": "ByteDance Seed: Seed-2.0-Code",
@@ -3176,8 +3242,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 5.7816e-7,
-      "pricing_completion": 0.00000173448,
+      "pricing_prompt": 6.6e-7,
+      "pricing_completion": 0.00000198,
       "created_human": "2026-08-12",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
     },
@@ -3363,7 +3429,7 @@
       "n_inputs": 1,
       "n_outputs": 1,
       "pricing_prompt": 4e-8,
-      "pricing_completion": 1.6e-7,
+      "pricing_completion": 4e-7,
       "created_human": "2026-08-01",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
     },
@@ -3379,7 +3445,7 @@
       "n_inputs": 1,
       "n_outputs": 1,
       "pricing_prompt": 4e-8,
-      "pricing_completion": 1.6e-7,
+      "pricing_completion": 6.4e-7,
       "created_human": "2026-07-31",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash-0731"
     },
@@ -3652,24 +3718,6 @@
       "url": "https://huggingface.co/thinkingmachines/Inkling"
     },
     {
-      "id": "thinkingmachines/inkling:batch",
-      "canonical_slug": "thinkingmachines/inkling-20260715",
-      "name": "Thinking Machines: Inkling (batch)",
-      "context_length": 524288,
-      "modalities": [
-        "text",
-        "image",
-        "audio",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 0.000001,
-      "pricing_completion": 0.00000405,
-      "created_human": "2026-07-17",
-      "url": "https://huggingface.co/thinkingmachines/Inkling"
-    },
-    {
       "id": "thinkingmachines/inkling:free",
       "canonical_slug": "thinkingmachines/inkling-20260715",
       "name": "Thinking Machines: Inkling (free)",
@@ -3712,24 +3760,6 @@
       "id": "moonshotai/kimi-k3",
       "canonical_slug": "moonshotai/kimi-k3-20260715",
       "name": "MoonshotAI: Kimi K3",
-      "context_length": 1048576,
-      "modalities": [
-        "text",
-        "image",
-        "video",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 0.0000017,
-      "pricing_completion": 0.0000085,
-      "created_human": "2026-07-16",
-      "url": "https://huggingface.co/moonshotai/Kimi-K3"
-    },
-    {
-      "id": "moonshotai/kimi-k3:batch",
-      "canonical_slug": "moonshotai/kimi-k3-20260715",
-      "name": "MoonshotAI: Kimi K3 (batch)",
       "context_length": 1048576,
       "modalities": [
         "text",
@@ -4027,8 +4057,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.000002,
-      "pricing_completion": 0.000006,
+      "pricing_prompt": 0.0000016,
+      "pricing_completion": 0.0000048,
       "created_human": "2026-07-08",
       "url": "https://openrouter.ai/models/~x-ai/grok-latest"
     },
@@ -4075,8 +4105,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -4472,24 +4502,6 @@
       "url": "https://huggingface.co/MiniMaxAI/Minimax-M3"
     },
     {
-      "id": "minimax/minimax-m3:batch",
-      "canonical_slug": "minimax/minimax-m3-20260531",
-      "name": "MiniMax: MiniMax M3 (batch)",
-      "context_length": 524288,
-      "modalities": [
-        "text",
-        "image",
-        "video",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 3e-7,
-      "pricing_completion": 0.0000012,
-      "created_human": "2026-05-31",
-      "url": "https://huggingface.co/MiniMaxAI/Minimax-M3"
-    },
-    {
       "id": "stepfun/step-3.7-flash",
       "canonical_slug": "stepfun/step-3.7-flash-20260528",
       "name": "StepFun: Step 3.7 Flash",
@@ -4853,8 +4865,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 0.0000017,
-      "pricing_completion": 0.0000085,
+      "pricing_prompt": 0.0000015,
+      "pricing_completion": 0.0000075,
       "created_human": "2026-04-27",
       "url": "https://openrouter.ai/models/~moonshotai/kimi-latest"
     },
@@ -5067,8 +5079,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 9.46386e-7,
-      "pricing_completion": 0.000001892772,
+      "pricing_prompt": 8.95578e-7,
+      "pricing_completion": 0.000001791156,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
     },
@@ -5694,24 +5706,6 @@
       "n_outputs": 1,
       "pricing_prompt": 1e-7,
       "pricing_completion": 1.5e-7,
-      "created_human": "2026-03-10",
-      "url": "https://huggingface.co/Qwen/Qwen3.5-9B"
-    },
-    {
-      "id": "qwen/qwen3.5-9b:batch",
-      "canonical_slug": "qwen/qwen3.5-9b-20260310",
-      "name": "Qwen: Qwen3.5-9B (batch)",
-      "context_length": 262144,
-      "modalities": [
-        "text",
-        "image",
-        "video",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 1.7e-7,
-      "pricing_completion": 2.5e-7,
       "created_human": "2026-03-10",
       "url": "https://huggingface.co/Qwen/Qwen3.5-9B"
     },
@@ -6483,8 +6477,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 6e-8,
-      "pricing_completion": 2.4e-7,
+      "pricing_prompt": 5e-8,
+      "pricing_completion": 2e-7,
       "created_human": "2025-12-14",
       "url": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-BF16"
     },
@@ -7724,22 +7718,6 @@
       "url": "https://huggingface.co/openai/gpt-oss-120b"
     },
     {
-      "id": "openai/gpt-oss-120b:batch",
-      "canonical_slug": "openai/gpt-oss-120b",
-      "name": "OpenAI: gpt-oss-120b (batch)",
-      "context_length": 131072,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": 1.5e-7,
-      "pricing_completion": 6e-7,
-      "created_human": "2025-08-05",
-      "url": "https://huggingface.co/openai/gpt-oss-120b"
-    },
-    {
       "id": "openai/gpt-oss-20b",
       "canonical_slug": "openai/gpt-oss-20b",
       "name": "OpenAI: gpt-oss-20b",
@@ -8258,28 +8236,10 @@
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-R1-0528"
     },
     {
-      "id": "anthropic/claude-opus-4",
-      "canonical_slug": "anthropic/claude-4-opus-20250522",
-      "name": "Anthropic: Claude Opus 4",
-      "context_length": 200000,
-      "modalities": [
-        "image",
-        "text",
-        "file",
-        "→text"
-      ],
-      "n_inputs": 3,
-      "n_outputs": 1,
-      "pricing_prompt": 0.000015,
-      "pricing_completion": 0.000075,
-      "created_human": "2025-05-22",
-      "url": "https://openrouter.ai/models/anthropic/claude-4-opus-20250522"
-    },
-    {
       "id": "anthropic/claude-sonnet-4",
       "canonical_slug": "anthropic/claude-4-sonnet-20250522",
       "name": "Anthropic: Claude Sonnet 4",
-      "context_length": 1000000,
+      "context_length": 200000,
       "modalities": [
         "image",
         "text",
