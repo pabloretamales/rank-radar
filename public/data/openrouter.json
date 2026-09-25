@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-09-25T15:00:19.519Z",
+  "fetched_at": "2026-09-25T22:00:20.122Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-09-25T15:00:13.599Z",
+    "as_of": "2026-09-25T22:00:14.391Z",
     "version": "v1",
     "start_date": "2026-08-26",
     "end_date": "2026-09-24"
   },
   "rankings_meta": {
-    "as_of": "2026-09-25T15:00:14.869Z",
+    "as_of": "2026-09-25T22:00:15.640Z",
     "version": "v1",
     "start_date": "2026-09-24",
     "end_date": "2026-09-24"
@@ -568,6 +568,53 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "typesafe/jev-router",
+        "slug": "typesafe/jev-router",
+        "name": "TypeSafe: Jev Router",
+        "description": "Jev Router picks the best model and reasoning effort for each request, balancing quality, speed, and cost. It runs on [Jev](https://openrouter.ai/~typesafe/jev-latest), TypeSafe's first System One model, and adapts as your...",
+        "context_length": 1000000,
+        "modalities": [
+          "audio",
+          "file",
+          "image",
+          "text",
+          "video",
+          "→text"
+        ],
+        "n_inputs": 5,
+        "n_outputs": 1,
+        "created_ts": 1790363560,
+        "created_human": "2026-09-25",
+        "pricing_prompt": -1,
+        "pricing_completion": -1,
+        "score": 1790363560,
+        "url": "https://openrouter.ai/models/typesafe/jev-router"
+      },
+      {
+        "rank": 2,
+        "id": "perceptron/perceptron-mk1.5",
+        "slug": "perceptron/perceptron-mk1.5-20260925",
+        "name": "Perceptron: Perceptron Mk1.5",
+        "description": "Perceptron Mk1.5 is Perceptron's embodied reasoning model for physical agents. It accepts text, image, video, and audio input, and answers with text plus optional structured annotations: points, boxes, polygons, tracks,...",
+        "context_length": 36864,
+        "modalities": [
+          "text",
+          "image",
+          "video",
+          "audio",
+          "→text"
+        ],
+        "n_inputs": 4,
+        "n_outputs": 1,
+        "created_ts": 1790352661,
+        "created_human": "2026-09-25",
+        "pricing_prompt": 1.5e-7,
+        "pricing_completion": 0.0000015,
+        "score": 1790352661,
+        "url": "https://openrouter.ai/models/perceptron/perceptron-mk1.5-20260925"
+      },
+      {
+        "rank": 3,
         "id": "fireworks/ember-1",
         "slug": "fireworks/ember-1-20260923",
         "name": "Fireworks: Ember-1",
@@ -588,7 +635,7 @@
         "url": "https://openrouter.ai/models/fireworks/ember-1-20260923"
       },
       {
-        "rank": 2,
+        "rank": 4,
         "id": "z-ai/glm-5.3-prime",
         "slug": "z-ai/glm-5.3-prime-20260921",
         "name": "Z.ai: GLM 5.3 Prime",
@@ -608,7 +655,7 @@
         "url": "https://openrouter.ai/models/z-ai/glm-5.3-prime-20260921"
       },
       {
-        "rank": 3,
+        "rank": 5,
         "id": "qwen/qwen3.8-max-prime",
         "slug": "qwen/qwen3.8-max-prime-20260923",
         "name": "Qwen: Qwen3.8 Max Prime",
@@ -630,7 +677,7 @@
         "url": "https://openrouter.ai/models/qwen/qwen3.8-max-prime-20260923"
       },
       {
-        "rank": 4,
+        "rank": 6,
         "id": "stealth/space-bunny-alpha",
         "slug": "stealth/space-bunny-alpha",
         "name": "Space Bunny Alpha",
@@ -652,7 +699,7 @@
         "url": "https://openrouter.ai/models/stealth/space-bunny-alpha"
       },
       {
-        "rank": 5,
+        "rank": 7,
         "id": "aion-labs/aion-3.5-mini",
         "slug": "aion-labs/aion-3.5-mini-20260923",
         "name": "AionLabs: Aion 3.5 Mini",
@@ -672,7 +719,7 @@
         "url": "https://openrouter.ai/models/aion-labs/aion-3.5-mini-20260923"
       },
       {
-        "rank": 6,
+        "rank": 8,
         "id": "aion-labs/aion-3.5",
         "slug": "aion-labs/aion-3.5-20260923",
         "name": "AionLabs: Aion 3.5",
@@ -692,7 +739,7 @@
         "url": "https://openrouter.ai/models/aion-labs/aion-3.5-20260923"
       },
       {
-        "rank": 7,
+        "rank": 9,
         "id": "upstage/solar-mini4",
         "slug": "upstage/solar-mini4-20260922",
         "name": "Upstage: Solar Mini 4",
@@ -712,7 +759,7 @@
         "url": "https://openrouter.ai/models/upstage/solar-mini4-20260922"
       },
       {
-        "rank": 8,
+        "rank": 10,
         "id": "cohere/command-a-plus",
         "slug": "cohere/command-a-plus-05-2026",
         "name": "Cohere: Command A+",
@@ -733,7 +780,7 @@
         "url": "https://openrouter.ai/models/cohere/command-a-plus-05-2026"
       },
       {
-        "rank": 9,
+        "rank": 11,
         "id": "openai/gpt-6-luna-pro",
         "slug": "openai/gpt-6-luna-pro-20260922",
         "name": "OpenAI: GPT-6 Luna Pro",
@@ -755,7 +802,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-luna-pro-20260922"
       },
       {
-        "rank": 10,
+        "rank": 12,
         "id": "openai/gpt-6-luna-pro:batch",
         "slug": "openai/gpt-6-luna-pro-20260922",
         "name": "OpenAI: GPT-6 Luna Pro (batch)",
@@ -777,7 +824,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-luna-pro-20260922"
       },
       {
-        "rank": 11,
+        "rank": 13,
         "id": "openai/gpt-6-luna",
         "slug": "openai/gpt-6-luna-20260922",
         "name": "OpenAI: GPT-6 Luna",
@@ -799,7 +846,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-luna-20260922"
       },
       {
-        "rank": 12,
+        "rank": 14,
         "id": "openai/gpt-6-luna:batch",
         "slug": "openai/gpt-6-luna-20260922",
         "name": "OpenAI: GPT-6 Luna (batch)",
@@ -821,7 +868,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-luna-20260922"
       },
       {
-        "rank": 13,
+        "rank": 15,
         "id": "openai/gpt-6-sol-pro",
         "slug": "openai/gpt-6-sol-pro-20260922",
         "name": "OpenAI: GPT-6 Sol Pro",
@@ -843,7 +890,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-sol-pro-20260922"
       },
       {
-        "rank": 14,
+        "rank": 16,
         "id": "openai/gpt-6-sol-pro:batch",
         "slug": "openai/gpt-6-sol-pro-20260922",
         "name": "OpenAI: GPT-6 Sol Pro (batch)",
@@ -865,7 +912,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-sol-pro-20260922"
       },
       {
-        "rank": 15,
+        "rank": 17,
         "id": "openai/gpt-6-sol",
         "slug": "openai/gpt-6-sol-20260922",
         "name": "OpenAI: GPT-6 Sol",
@@ -887,7 +934,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-sol-20260922"
       },
       {
-        "rank": 16,
+        "rank": 18,
         "id": "openai/gpt-6-sol:batch",
         "slug": "openai/gpt-6-sol-20260922",
         "name": "OpenAI: GPT-6 Sol (batch)",
@@ -909,7 +956,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-sol-20260922"
       },
       {
-        "rank": 17,
+        "rank": 19,
         "id": "anthropic/claude-opus-5.5",
         "slug": "anthropic/claude-opus-5.5-20260921",
         "name": "Anthropic: Claude Opus 5.5",
@@ -931,7 +978,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-opus-5.5-20260921"
       },
       {
-        "rank": 18,
+        "rank": 20,
         "id": "anthropic/claude-opus-5.5:batch",
         "slug": "anthropic/claude-opus-5.5-20260921",
         "name": "Anthropic: Claude Opus 5.5 (batch)",
@@ -951,52 +998,6 @@
         "pricing_completion": 0.00001,
         "score": 1790094732,
         "url": "https://openrouter.ai/models/anthropic/claude-opus-5.5-20260921"
-      },
-      {
-        "rank": 19,
-        "id": "xiaomi/mimo-v2.6-pro-ultraspeed",
-        "slug": "xiaomi/mimo-v2.6-pro-ultraspeed-20260921",
-        "name": "Xiaomi: MiMo-V2.6-Pro-UltraSpeed",
-        "description": "MiMo-V2.6-Pro-UltraSpeed is the fast speed edition of Xiaomi's flagship foundation model, MiMo-V2.6-Pro. Built from the same 1T MiMo-V2.6-Pro checkpoint, it matches the original model in quality while delivering roughly 10x...",
-        "context_length": 1048576,
-        "modalities": [
-          "text",
-          "image",
-          "video",
-          "audio",
-          "→text"
-        ],
-        "n_inputs": 4,
-        "n_outputs": 1,
-        "created_ts": 1790021267,
-        "created_human": "2026-09-21",
-        "pricing_prompt": 0.00000435,
-        "pricing_completion": 0.0000087,
-        "score": 1790021267,
-        "url": "https://openrouter.ai/models/xiaomi/mimo-v2.6-pro-ultraspeed-20260921"
-      },
-      {
-        "rank": 20,
-        "id": "xiaomi/mimo-v2.6-flash",
-        "slug": "xiaomi/mimo-v2.6-flash-20260921",
-        "name": "Xiaomi: MiMo-V2.6-Flash",
-        "description": "MiMo-V2.6-Flash is an open-source foundation model developed by Xiaomi. Built on a Mixture-of-Experts architecture with 309B total parameters and 15B activated per token, it employs a hybrid attention mechanism for...",
-        "context_length": 1048576,
-        "modalities": [
-          "text",
-          "image",
-          "video",
-          "audio",
-          "→text"
-        ],
-        "n_inputs": 4,
-        "n_outputs": 1,
-        "created_ts": 1790021264,
-        "created_human": "2026-09-21",
-        "pricing_prompt": 1.4e-7,
-        "pricing_completion": 2.8e-7,
-        "score": 1790021264,
-        "url": "https://huggingface.co/XiaomiMiMo/MiMo-V2.6-Flash-RL"
       }
     ],
     "today": [
@@ -1050,7 +1051,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 1590323627782,
+        "total_tokens": 1590323674643,
         "total_tokens_human": "1.59T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1352,7 +1353,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 9131177891098,
+        "total_tokens": 9131177937959,
         "total_tokens_human": "9.13T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1669,7 +1670,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 32574777884008,
+        "total_tokens": 32574777930869,
         "total_tokens_human": "32.57T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -2022,7 +2023,7 @@
         "perma": "xiaomi/mimo-v2.6-pro-20260921",
         "url": "https://openrouter.ai/models/xiaomi/mimo-v2.6-pro-20260921",
         "modalities": [],
-        "context_length": 1048576,
+        "context_length": 1050000,
         "window": "trending"
       },
       {
@@ -2180,7 +2181,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-09-25T15:00:14.869Z",
+      "as_of": "2026-09-25T22:00:15.640Z",
       "version": "v1",
       "start_date": "2026-09-24",
       "end_date": "2026-09-24"
@@ -2188,26 +2189,65 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-09-25T15:00:10.948Z",
+      "as_of": "2026-09-25T22:00:10.231Z",
       "version": "v1",
       "start_date": "2026-09-24",
       "end_date": "2026-09-24"
     },
     "week": {
-      "as_of": "2026-09-25T15:00:12.134Z",
+      "as_of": "2026-09-25T22:00:11.643Z",
       "version": "v1",
       "start_date": "2026-09-18",
       "end_date": "2026-09-24"
     },
     "month": {
-      "as_of": "2026-09-25T15:00:13.599Z",
+      "as_of": "2026-09-25T22:00:14.391Z",
       "version": "v1",
       "start_date": "2026-08-26",
       "end_date": "2026-09-24"
     }
   },
-  "models_total": 458,
+  "models_total": 459,
   "catalog": [
+    {
+      "id": "typesafe/jev-router",
+      "canonical_slug": "typesafe/jev-router",
+      "name": "TypeSafe: Jev Router",
+      "context_length": 1000000,
+      "modalities": [
+        "audio",
+        "file",
+        "image",
+        "text",
+        "video",
+        "→text"
+      ],
+      "n_inputs": 5,
+      "n_outputs": 1,
+      "pricing_prompt": -1,
+      "pricing_completion": -1,
+      "created_human": "2026-09-25",
+      "url": "https://openrouter.ai/models/typesafe/jev-router"
+    },
+    {
+      "id": "perceptron/perceptron-mk1.5",
+      "canonical_slug": "perceptron/perceptron-mk1.5-20260925",
+      "name": "Perceptron: Perceptron Mk1.5",
+      "context_length": 36864,
+      "modalities": [
+        "text",
+        "image",
+        "video",
+        "audio",
+        "→text"
+      ],
+      "n_inputs": 4,
+      "n_outputs": 1,
+      "pricing_prompt": 1.5e-7,
+      "pricing_completion": 0.0000015,
+      "created_human": "2026-09-25",
+      "url": "https://openrouter.ai/models/perceptron/perceptron-mk1.5-20260925"
+    },
     {
       "id": "fireworks/ember-1",
       "canonical_slug": "fireworks/ember-1-20260923",
@@ -2564,7 +2604,7 @@
       "id": "xiaomi/mimo-v2.6-pro",
       "canonical_slug": "xiaomi/mimo-v2.6-pro-20260921",
       "name": "Xiaomi: MiMo-V2.6-Pro",
-      "context_length": 1048576,
+      "context_length": 1050000,
       "modalities": [
         "text",
         "image",
@@ -2679,8 +2719,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 2.528e-7,
-      "pricing_completion": 0.0000019584,
+      "pricing_prompt": 2.5e-7,
+      "pricing_completion": 0.0000035,
       "created_human": "2026-09-14",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-pro-latest"
     },
@@ -2696,8 +2736,8 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 4e-8,
-      "pricing_completion": 4.9e-7,
+      "pricing_prompt": 9.9e-8,
+      "pricing_completion": 6e-7,
       "created_human": "2026-09-14",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-flash-latest"
     },
@@ -2871,7 +2911,7 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 1.5e-7,
+      "pricing_prompt": 9.9e-8,
       "pricing_completion": 6e-7,
       "created_human": "2026-09-10",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash"
@@ -3556,8 +3596,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 3.4848e-7,
-      "pricing_completion": 0.00000104544,
+      "pricing_prompt": 2.64e-7,
+      "pricing_completion": 7.92e-7,
       "created_human": "2026-08-12",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
     },
@@ -3709,8 +3749,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 3e-8,
-      "pricing_completion": 3.2e-7,
+      "pricing_prompt": 2.25e-8,
+      "pricing_completion": 4.2e-7,
       "created_human": "2026-08-01",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-v4-flash-latest"
     },
@@ -4388,8 +4428,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -4561,22 +4601,6 @@
       "n_outputs": 1,
       "pricing_prompt": 6.496e-7,
       "pricing_completion": 0.0000020416,
-      "created_human": "2026-06-16",
-      "url": "https://huggingface.co/zai-org/GLM-5.2"
-    },
-    {
-      "id": "z-ai/glm-5.2:free",
-      "canonical_slug": "z-ai/glm-5.2-20260616",
-      "name": "Z.ai: GLM 5.2 (free)",
-      "context_length": 32768,
-      "modalities": [
-        "text",
-        "→text"
-      ],
-      "n_inputs": 1,
-      "n_outputs": 1,
-      "pricing_prompt": null,
-      "pricing_completion": null,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -5132,7 +5156,7 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 8.845e-7,
+      "pricing_prompt": 0.0000012,
       "pricing_completion": 0.0000105346,
       "created_human": "2026-04-27",
       "url": "https://openrouter.ai/models/~moonshotai/kimi-latest"
@@ -5346,8 +5370,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 7.63686e-7,
-      "pricing_completion": 0.000001527372,
+      "pricing_prompt": 5.40618e-7,
+      "pricing_completion": 0.000001081236,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
     },
@@ -5362,8 +5386,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 4.872e-8,
-      "pricing_completion": 9.744e-8,
+      "pricing_prompt": 4.704e-8,
+      "pricing_completion": 9.408e-8,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Flash"
     },
