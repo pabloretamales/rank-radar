@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-09-29T15:00:20.493Z",
+  "fetched_at": "2026-09-29T22:00:21.470Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-09-29T15:00:15.259Z",
+    "as_of": "2026-09-29T22:00:16.427Z",
     "version": "v1",
     "start_date": "2026-08-30",
     "end_date": "2026-09-28"
   },
   "rankings_meta": {
-    "as_of": "2026-09-29T15:00:16.343Z",
+    "as_of": "2026-09-29T22:00:17.508Z",
     "version": "v1",
     "start_date": "2026-09-28",
     "end_date": "2026-09-28"
@@ -568,6 +568,94 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "openai/gpt-6.1-sol-pro",
+        "slug": "openai/gpt-6.1-sol-pro-20260929",
+        "name": "OpenAI: GPT-6.1 Sol Pro",
+        "description": "GPT-6.1 Sol Pro is the same underlying model as [GPT-6.1 Sol](https://openrouter.ai/openai/gpt-6.1-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+        "context_length": 1050000,
+        "modalities": [
+          "file",
+          "image",
+          "text",
+          "→text"
+        ],
+        "n_inputs": 3,
+        "n_outputs": 1,
+        "created_ts": 1790702886,
+        "created_human": "2026-09-29",
+        "pricing_prompt": 0.000002,
+        "pricing_completion": 0.00001,
+        "score": 1790702886,
+        "url": "https://openrouter.ai/models/openai/gpt-6.1-sol-pro-20260929"
+      },
+      {
+        "rank": 2,
+        "id": "openai/gpt-6.1-sol-pro:batch",
+        "slug": "openai/gpt-6.1-sol-pro-20260929",
+        "name": "OpenAI: GPT-6.1 Sol Pro (batch)",
+        "description": "GPT-6.1 Sol Pro is the same underlying model as [GPT-6.1 Sol](https://openrouter.ai/openai/gpt-6.1-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
+        "context_length": 1050000,
+        "modalities": [
+          "file",
+          "image",
+          "text",
+          "→text"
+        ],
+        "n_inputs": 3,
+        "n_outputs": 1,
+        "created_ts": 1790702886,
+        "created_human": "2026-09-29",
+        "pricing_prompt": 0.000001,
+        "pricing_completion": 0.000005,
+        "score": 1790702886,
+        "url": "https://openrouter.ai/models/openai/gpt-6.1-sol-pro-20260929"
+      },
+      {
+        "rank": 3,
+        "id": "openai/gpt-6.1-sol",
+        "slug": "openai/gpt-6.1-sol-20260929",
+        "name": "OpenAI: GPT-6.1 Sol",
+        "description": "GPT-6.1 Sol is an upgrade to GPT-6 Sol from OpenAI, positioned below the flagship GPT-6 Astra in the GPT-6 series. It is suited for agentic coding, computer use, document-heavy professional...",
+        "context_length": 1050000,
+        "modalities": [
+          "file",
+          "image",
+          "text",
+          "→text"
+        ],
+        "n_inputs": 3,
+        "n_outputs": 1,
+        "created_ts": 1790702882,
+        "created_human": "2026-09-29",
+        "pricing_prompt": 0.000002,
+        "pricing_completion": 0.00001,
+        "score": 1790702882,
+        "url": "https://openrouter.ai/models/openai/gpt-6.1-sol-20260929"
+      },
+      {
+        "rank": 4,
+        "id": "openai/gpt-6.1-sol:batch",
+        "slug": "openai/gpt-6.1-sol-20260929",
+        "name": "OpenAI: GPT-6.1 Sol (batch)",
+        "description": "GPT-6.1 Sol is an upgrade to GPT-6 Sol from OpenAI, positioned below the flagship GPT-6 Astra in the GPT-6 series. It is suited for agentic coding, computer use, document-heavy professional...",
+        "context_length": 1050000,
+        "modalities": [
+          "file",
+          "image",
+          "text",
+          "→text"
+        ],
+        "n_inputs": 3,
+        "n_outputs": 1,
+        "created_ts": 1790702882,
+        "created_human": "2026-09-29",
+        "pricing_prompt": 0.000001,
+        "pricing_completion": 0.000005,
+        "score": 1790702882,
+        "url": "https://openrouter.ai/models/openai/gpt-6.1-sol-20260929"
+      },
+      {
+        "rank": 5,
         "id": "anthropic/claude-sonnet-5.5",
         "slug": "anthropic/claude-sonnet-5.5-20260928",
         "name": "Anthropic: Claude Sonnet 5.5",
@@ -589,7 +677,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-sonnet-5.5-20260928"
       },
       {
-        "rank": 2,
+        "rank": 6,
         "id": "anthropic/claude-sonnet-5.5:batch",
         "slug": "anthropic/claude-sonnet-5.5-20260928",
         "name": "Anthropic: Claude Sonnet 5.5 (batch)",
@@ -611,7 +699,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-sonnet-5.5-20260928"
       },
       {
-        "rank": 3,
+        "rank": 7,
         "id": "typesafe/jev-router",
         "slug": "typesafe/jev-router",
         "name": "TypeSafe: Jev Router",
@@ -635,7 +723,7 @@
         "url": "https://openrouter.ai/models/typesafe/jev-router"
       },
       {
-        "rank": 4,
+        "rank": 8,
         "id": "perceptron/perceptron-mk1.5",
         "slug": "perceptron/perceptron-mk1.5-20260925",
         "name": "Perceptron: Perceptron Mk1.5",
@@ -658,7 +746,7 @@
         "url": "https://openrouter.ai/models/perceptron/perceptron-mk1.5-20260925"
       },
       {
-        "rank": 5,
+        "rank": 9,
         "id": "fireworks/ember-1",
         "slug": "fireworks/ember-1-20260923",
         "name": "Fireworks: Ember-1",
@@ -679,7 +767,7 @@
         "url": "https://openrouter.ai/models/fireworks/ember-1-20260923"
       },
       {
-        "rank": 6,
+        "rank": 10,
         "id": "z-ai/glm-5.3-prime",
         "slug": "z-ai/glm-5.3-prime-20260921",
         "name": "Z.ai: GLM 5.3 Prime",
@@ -699,7 +787,7 @@
         "url": "https://openrouter.ai/models/z-ai/glm-5.3-prime-20260921"
       },
       {
-        "rank": 7,
+        "rank": 11,
         "id": "qwen/qwen3.8-max-prime",
         "slug": "qwen/qwen3.8-max-prime-20260923",
         "name": "Qwen: Qwen3.8 Max Prime",
@@ -721,7 +809,7 @@
         "url": "https://openrouter.ai/models/qwen/qwen3.8-max-prime-20260923"
       },
       {
-        "rank": 8,
+        "rank": 12,
         "id": "stealth/space-bunny-alpha",
         "slug": "stealth/space-bunny-alpha",
         "name": "Space Bunny Alpha",
@@ -743,7 +831,7 @@
         "url": "https://openrouter.ai/models/stealth/space-bunny-alpha"
       },
       {
-        "rank": 9,
+        "rank": 13,
         "id": "aion-labs/aion-3.5-mini",
         "slug": "aion-labs/aion-3.5-mini-20260923",
         "name": "AionLabs: Aion 3.5 Mini",
@@ -763,7 +851,7 @@
         "url": "https://openrouter.ai/models/aion-labs/aion-3.5-mini-20260923"
       },
       {
-        "rank": 10,
+        "rank": 14,
         "id": "aion-labs/aion-3.5",
         "slug": "aion-labs/aion-3.5-20260923",
         "name": "AionLabs: Aion 3.5",
@@ -783,7 +871,7 @@
         "url": "https://openrouter.ai/models/aion-labs/aion-3.5-20260923"
       },
       {
-        "rank": 11,
+        "rank": 15,
         "id": "upstage/solar-mini4",
         "slug": "upstage/solar-mini4-20260922",
         "name": "Upstage: Solar Mini 4",
@@ -803,7 +891,7 @@
         "url": "https://openrouter.ai/models/upstage/solar-mini4-20260922"
       },
       {
-        "rank": 12,
+        "rank": 16,
         "id": "cohere/command-a-plus",
         "slug": "cohere/command-a-plus-05-2026",
         "name": "Cohere: Command A+",
@@ -824,7 +912,7 @@
         "url": "https://openrouter.ai/models/cohere/command-a-plus-05-2026"
       },
       {
-        "rank": 13,
+        "rank": 17,
         "id": "openai/gpt-6-luna-pro",
         "slug": "openai/gpt-6-luna-pro-20260922",
         "name": "OpenAI: GPT-6 Luna Pro",
@@ -846,7 +934,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-luna-pro-20260922"
       },
       {
-        "rank": 14,
+        "rank": 18,
         "id": "openai/gpt-6-luna-pro:batch",
         "slug": "openai/gpt-6-luna-pro-20260922",
         "name": "OpenAI: GPT-6 Luna Pro (batch)",
@@ -868,7 +956,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-luna-pro-20260922"
       },
       {
-        "rank": 15,
+        "rank": 19,
         "id": "openai/gpt-6-luna",
         "slug": "openai/gpt-6-luna-20260922",
         "name": "OpenAI: GPT-6 Luna",
@@ -890,7 +978,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-luna-20260922"
       },
       {
-        "rank": 16,
+        "rank": 20,
         "id": "openai/gpt-6-luna:batch",
         "slug": "openai/gpt-6-luna-20260922",
         "name": "OpenAI: GPT-6 Luna (batch)",
@@ -910,94 +998,6 @@
         "pricing_completion": 2.5e-7,
         "score": 1790100786,
         "url": "https://openrouter.ai/models/openai/gpt-6-luna-20260922"
-      },
-      {
-        "rank": 17,
-        "id": "openai/gpt-6-sol-pro",
-        "slug": "openai/gpt-6-sol-pro-20260922",
-        "name": "OpenAI: GPT-6 Sol Pro",
-        "description": "GPT-6 Sol Pro is the same underlying model as [GPT-6 Sol](https://openrouter.ai/openai/gpt-6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
-        "context_length": 1050000,
-        "modalities": [
-          "file",
-          "image",
-          "text",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1790100781,
-        "created_human": "2026-09-22",
-        "pricing_prompt": 0.000002,
-        "pricing_completion": 0.00001,
-        "score": 1790100781,
-        "url": "https://openrouter.ai/models/openai/gpt-6-sol-pro-20260922"
-      },
-      {
-        "rank": 18,
-        "id": "openai/gpt-6-sol-pro:batch",
-        "slug": "openai/gpt-6-sol-pro-20260922",
-        "name": "OpenAI: GPT-6 Sol Pro (batch)",
-        "description": "GPT-6 Sol Pro is the same underlying model as [GPT-6 Sol](https://openrouter.ai/openai/gpt-6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
-        "context_length": 1050000,
-        "modalities": [
-          "file",
-          "image",
-          "text",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1790100781,
-        "created_human": "2026-09-22",
-        "pricing_prompt": 0.000001,
-        "pricing_completion": 0.000005,
-        "score": 1790100781,
-        "url": "https://openrouter.ai/models/openai/gpt-6-sol-pro-20260922"
-      },
-      {
-        "rank": 19,
-        "id": "openai/gpt-6-sol",
-        "slug": "openai/gpt-6-sol-20260922",
-        "name": "OpenAI: GPT-6 Sol",
-        "description": "GPT-6 Sol is the cost-efficient high-end model in OpenAI's GPT-6 series, positioned below the flagship GPT-6 Astra and above the fast GPT-6 Luna tier. It is suited for demanding professional...",
-        "context_length": 1050000,
-        "modalities": [
-          "file",
-          "image",
-          "text",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1790100775,
-        "created_human": "2026-09-22",
-        "pricing_prompt": 0.000002,
-        "pricing_completion": 0.00001,
-        "score": 1790100775,
-        "url": "https://openrouter.ai/models/openai/gpt-6-sol-20260922"
-      },
-      {
-        "rank": 20,
-        "id": "openai/gpt-6-sol:batch",
-        "slug": "openai/gpt-6-sol-20260922",
-        "name": "OpenAI: GPT-6 Sol (batch)",
-        "description": "GPT-6 Sol is the cost-efficient high-end model in OpenAI's GPT-6 series, positioned below the flagship GPT-6 Astra and above the fast GPT-6 Luna tier. It is suited for demanding professional...",
-        "context_length": 1050000,
-        "modalities": [
-          "file",
-          "image",
-          "text",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1790100775,
-        "created_human": "2026-09-22",
-        "pricing_prompt": 0.000001,
-        "pricing_completion": 0.000005,
-        "score": 1790100775,
-        "url": "https://openrouter.ai/models/openai/gpt-6-sol-20260922"
       }
     ],
     "today": [
@@ -1036,7 +1036,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 1474880036206,
+        "total_tokens": 1474880153497,
         "total_tokens_human": "1.47T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1353,7 +1353,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 10152138039844,
+        "total_tokens": 10152138157135,
         "total_tokens_human": "10.15T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1685,7 +1685,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 34597858925582,
+        "total_tokens": 34597859042873,
         "total_tokens_human": "34.60T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -2096,7 +2096,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-09-29T15:00:16.343Z",
+      "as_of": "2026-09-29T22:00:17.508Z",
       "version": "v1",
       "start_date": "2026-09-28",
       "end_date": "2026-09-28"
@@ -2104,26 +2104,98 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-09-29T15:00:12.186Z",
+      "as_of": "2026-09-29T22:00:13.062Z",
       "version": "v1",
       "start_date": "2026-09-28",
       "end_date": "2026-09-28"
     },
     "week": {
-      "as_of": "2026-09-29T15:00:13.315Z",
+      "as_of": "2026-09-29T22:00:15.320Z",
       "version": "v1",
       "start_date": "2026-09-22",
       "end_date": "2026-09-28"
     },
     "month": {
-      "as_of": "2026-09-29T15:00:15.259Z",
+      "as_of": "2026-09-29T22:00:16.427Z",
       "version": "v1",
       "start_date": "2026-08-30",
       "end_date": "2026-09-28"
     }
   },
-  "models_total": 460,
+  "models_total": 464,
   "catalog": [
+    {
+      "id": "openai/gpt-6.1-sol-pro",
+      "canonical_slug": "openai/gpt-6.1-sol-pro-20260929",
+      "name": "OpenAI: GPT-6.1 Sol Pro",
+      "context_length": 1050000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000002,
+      "pricing_completion": 0.00001,
+      "created_human": "2026-09-29",
+      "url": "https://openrouter.ai/models/openai/gpt-6.1-sol-pro-20260929"
+    },
+    {
+      "id": "openai/gpt-6.1-sol-pro:batch",
+      "canonical_slug": "openai/gpt-6.1-sol-pro-20260929",
+      "name": "OpenAI: GPT-6.1 Sol Pro (batch)",
+      "context_length": 1050000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000001,
+      "pricing_completion": 0.000005,
+      "created_human": "2026-09-29",
+      "url": "https://openrouter.ai/models/openai/gpt-6.1-sol-pro-20260929"
+    },
+    {
+      "id": "openai/gpt-6.1-sol",
+      "canonical_slug": "openai/gpt-6.1-sol-20260929",
+      "name": "OpenAI: GPT-6.1 Sol",
+      "context_length": 1050000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000002,
+      "pricing_completion": 0.00001,
+      "created_human": "2026-09-29",
+      "url": "https://openrouter.ai/models/openai/gpt-6.1-sol-20260929"
+    },
+    {
+      "id": "openai/gpt-6.1-sol:batch",
+      "canonical_slug": "openai/gpt-6.1-sol-20260929",
+      "name": "OpenAI: GPT-6.1 Sol (batch)",
+      "context_length": 1050000,
+      "modalities": [
+        "file",
+        "image",
+        "text",
+        "→text"
+      ],
+      "n_inputs": 3,
+      "n_outputs": 1,
+      "pricing_prompt": 0.000001,
+      "pricing_completion": 0.000005,
+      "created_human": "2026-09-29",
+      "url": "https://openrouter.ai/models/openai/gpt-6.1-sol-20260929"
+    },
     {
       "id": "anthropic/claude-sonnet-5.5",
       "canonical_slug": "anthropic/claude-sonnet-5.5-20260928",
@@ -3353,8 +3425,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.849e-7,
-      "pricing_completion": 0.0000044,
+      "pricing_prompt": 1.2e-7,
+      "pricing_completion": 0.000004,
       "created_human": "2026-08-19",
       "url": "https://openrouter.ai/models/~z-ai/glm-latest"
     },
@@ -3385,7 +3457,7 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.849e-7,
+      "pricing_prompt": 0.0000014,
       "pricing_completion": 0.0000044,
       "created_human": "2026-08-18",
       "url": "https://huggingface.co/zai-org/GLM-5.3"
@@ -3420,7 +3492,7 @@
       "n_inputs": 3,
       "n_outputs": 1,
       "pricing_prompt": 2.49e-8,
-      "pricing_completion": 0.0000044,
+      "pricing_completion": 0.00000435,
       "created_human": "2026-08-14",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
     },
@@ -3562,8 +3634,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 4.749e-7,
-      "pricing_completion": 0.0000042,
+      "pricing_prompt": 3.942e-7,
+      "pricing_completion": 0.00000349,
       "created_human": "2026-08-12",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro-0813"
     },
@@ -4392,8 +4464,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -4564,7 +4636,7 @@
       "n_inputs": 1,
       "n_outputs": 1,
       "pricing_prompt": 2.339e-7,
-      "pricing_completion": 0.0000044,
+      "pricing_completion": 0.00000399,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
     },
@@ -5121,7 +5193,7 @@
       "n_inputs": 3,
       "n_outputs": 1,
       "pricing_prompt": 4e-7,
-      "pricing_completion": 0.00001,
+      "pricing_completion": 0.000009,
       "created_human": "2026-04-27",
       "url": "https://openrouter.ai/models/~moonshotai/kimi-latest"
     },
@@ -5334,8 +5406,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 9.36294e-7,
-      "pricing_completion": 0.000001872588,
+      "pricing_prompt": 9.15936e-7,
+      "pricing_completion": 0.000001831872,
       "created_human": "2026-04-24",
       "url": "https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro"
     },
@@ -5541,8 +5613,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 9e-8,
-      "pricing_completion": 3e-7,
+      "pricing_prompt": 7.65e-8,
+      "pricing_completion": 2.55e-7,
       "created_human": "2026-04-03",
       "url": "https://huggingface.co/google/gemma-4-26B-A4B-it"
     },
