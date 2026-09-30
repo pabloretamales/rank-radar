@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-09-30T15:00:20.366Z",
+  "fetched_at": "2026-09-30T22:00:22.451Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-09-30T15:00:14.901Z",
+    "as_of": "2026-09-30T22:00:14.143Z",
     "version": "v1",
     "start_date": "2026-08-31",
     "end_date": "2026-09-29"
   },
   "rankings_meta": {
-    "as_of": "2026-09-30T15:00:16.379Z",
+    "as_of": "2026-09-30T22:00:15.886Z",
     "version": "v1",
     "start_date": "2026-09-29",
     "end_date": "2026-09-29"
@@ -1036,7 +1036,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 1529151243118,
+        "total_tokens": 1529222072207,
         "total_tokens_human": "1.53T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1353,7 +1353,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 10115071409511,
+        "total_tokens": 10115142238600,
         "total_tokens_human": "10.12T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1685,7 +1685,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 35411686711789,
+        "total_tokens": 35411757540878,
         "total_tokens_human": "35.41T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -2130,7 +2130,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-09-30T15:00:16.379Z",
+      "as_of": "2026-09-30T22:00:15.886Z",
       "version": "v1",
       "start_date": "2026-09-29",
       "end_date": "2026-09-29"
@@ -2138,19 +2138,19 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-09-30T15:00:11.847Z",
+      "as_of": "2026-09-30T22:00:11.557Z",
       "version": "v1",
       "start_date": "2026-09-29",
       "end_date": "2026-09-29"
     },
     "week": {
-      "as_of": "2026-09-30T15:00:13.307Z",
+      "as_of": "2026-09-30T22:00:12.992Z",
       "version": "v1",
       "start_date": "2026-09-23",
       "end_date": "2026-09-29"
     },
     "month": {
-      "as_of": "2026-09-30T15:00:14.901Z",
+      "as_of": "2026-09-30T22:00:14.143Z",
       "version": "v1",
       "start_date": "2026-08-31",
       "end_date": "2026-09-29"
@@ -3287,8 +3287,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8.34e-7,
-      "pricing_completion": 0.000002501,
+      "pricing_prompt": 7.506e-7,
+      "pricing_completion": 0.0000022509,
       "created_human": "2026-08-28",
       "url": "https://huggingface.co/tencent/Hy4-preview"
     },
@@ -3525,8 +3525,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 2.49e-8,
-      "pricing_completion": 0.00000435,
+      "pricing_prompt": 4.2e-7,
+      "pricing_completion": 0.000003,
       "created_human": "2026-08-14",
       "url": "https://huggingface.co/Qwen/Qwen3.8-27B"
     },
@@ -4498,8 +4498,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -4669,7 +4669,7 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 4.1e-7,
+      "pricing_prompt": 6.24e-7,
       "pricing_completion": 0.00000399,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
@@ -5226,8 +5226,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 3.177e-7,
-      "pricing_completion": 0.0000079431,
+      "pricing_prompt": 1.941e-7,
+      "pricing_completion": 0.0000073625,
       "created_human": "2026-04-27",
       "url": "https://openrouter.ai/models/~moonshotai/kimi-latest"
     },
@@ -5647,8 +5647,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 9e-8,
-      "pricing_completion": 3e-7,
+      "pricing_prompt": 7.65e-8,
+      "pricing_completion": 2.55e-7,
       "created_human": "2026-04-03",
       "url": "https://huggingface.co/google/gemma-4-26B-A4B-it"
     },
@@ -8694,8 +8694,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.3e-7,
-      "pricing_completion": 5.2e-7,
+      "pricing_prompt": 1.2e-7,
+      "pricing_completion": 5e-7,
       "created_human": "2025-04-28",
       "url": "https://huggingface.co/Qwen/Qwen3-30B-A3B"
     },
