@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-30T22:00:10.490Z",
+  "fetched_at": "2026-10-01T15:00:09.334Z",
   "source": "Artificial Analysis",
   "api": {
     "data": "https://artificialanalysis.ai/api/v2/data/llms/models",
@@ -7,7 +7,7 @@
   },
   "tier": "free",
   "models_with_agentic": 163,
-  "total_models": 687,
+  "total_models": 688,
   "rankings": {
     "by_intelligence": [
       {
@@ -25,9 +25,9 @@
           "blended": 8
         },
         "perf": {
-          "tokens_per_sec": 95.679,
-          "ttft_seconds": 482.463,
-          "ttfa_seconds": 482.463
+          "tokens_per_sec": 95.995,
+          "ttft_seconds": 481.193,
+          "ttfa_seconds": 481.193
         }
       },
       {
@@ -45,9 +45,9 @@
           "blended": 8
         },
         "perf": {
-          "tokens_per_sec": 79.354,
-          "ttft_seconds": 46.198,
-          "ttfa_seconds": 46.198
+          "tokens_per_sec": 80.078,
+          "ttft_seconds": 41.938,
+          "ttfa_seconds": 41.938
         }
       },
       {
@@ -65,9 +65,9 @@
           "blended": 4
         },
         "perf": {
-          "tokens_per_sec": 145.124,
-          "ttft_seconds": 279.471,
-          "ttfa_seconds": 279.471
+          "tokens_per_sec": 145.16,
+          "ttft_seconds": 265.2,
+          "ttfa_seconds": 265.2
         }
       },
       {
@@ -85,9 +85,9 @@
           "blended": 8
         },
         "perf": {
-          "tokens_per_sec": 74.417,
-          "ttft_seconds": 15.529,
-          "ttfa_seconds": 15.529
+          "tokens_per_sec": 78.925,
+          "ttft_seconds": 16.404,
+          "ttfa_seconds": 16.404
         }
       },
       {
@@ -105,9 +105,9 @@
           "blended": 20
         },
         "perf": {
-          "tokens_per_sec": 68.541,
-          "ttft_seconds": 113.701,
-          "ttfa_seconds": 113.701
+          "tokens_per_sec": 69.669,
+          "ttft_seconds": 118.169,
+          "ttfa_seconds": 118.169
         }
       },
       {
@@ -125,9 +125,9 @@
           "blended": 20
         },
         "perf": {
-          "tokens_per_sec": 59.636,
-          "ttft_seconds": 37.367,
-          "ttfa_seconds": 37.367
+          "tokens_per_sec": 62.658,
+          "ttft_seconds": 37.608,
+          "ttfa_seconds": 37.608
         }
       },
       {
@@ -145,9 +145,9 @@
           "blended": 20
         },
         "perf": {
-          "tokens_per_sec": 53.673,
-          "ttft_seconds": 192.987,
-          "ttfa_seconds": 192.987
+          "tokens_per_sec": 52.341,
+          "ttft_seconds": 192.954,
+          "ttfa_seconds": 192.954
         }
       },
       {
@@ -186,8 +186,8 @@
         },
         "perf": {
           "tokens_per_sec": 51.622,
-          "ttft_seconds": 75.87,
-          "ttfa_seconds": 75.87
+          "ttft_seconds": 75.384,
+          "ttfa_seconds": 75.384
         }
       },
       {
@@ -205,9 +205,9 @@
           "blended": 4
         },
         "perf": {
-          "tokens_per_sec": 108.626,
-          "ttft_seconds": 14.559,
-          "ttfa_seconds": 14.559
+          "tokens_per_sec": 112.626,
+          "ttft_seconds": 14.801,
+          "ttfa_seconds": 14.801
         }
       },
       {
@@ -225,9 +225,9 @@
           "blended": 4
         },
         "perf": {
-          "tokens_per_sec": 67.797,
-          "ttft_seconds": 142.598,
-          "ttfa_seconds": 142.598
+          "tokens_per_sec": 73.384,
+          "ttft_seconds": 129.809,
+          "ttfa_seconds": 129.809
         }
       },
       {
@@ -245,9 +245,9 @@
           "blended": 8
         },
         "perf": {
-          "tokens_per_sec": 73.504,
-          "ttft_seconds": 12.573,
-          "ttfa_seconds": 12.573
+          "tokens_per_sec": 74.631,
+          "ttft_seconds": 13.143,
+          "ttfa_seconds": 13.143
         }
       },
       {
@@ -265,9 +265,9 @@
           "blended": 20
         },
         "perf": {
-          "tokens_per_sec": 51.949,
-          "ttft_seconds": 6.344,
-          "ttfa_seconds": 6.344
+          "tokens_per_sec": 53.522,
+          "ttft_seconds": 6.8,
+          "ttfa_seconds": 6.8
         }
       },
       {
@@ -285,9 +285,9 @@
           "blended": 4
         },
         "perf": {
-          "tokens_per_sec": 65.263,
-          "ttft_seconds": 51.195,
-          "ttfa_seconds": 51.195
+          "tokens_per_sec": 62.138,
+          "ttft_seconds": 50.489,
+          "ttfa_seconds": 50.489
         }
       },
       {
@@ -305,9 +305,9 @@
           "blended": 20
         },
         "perf": {
-          "tokens_per_sec": 49.138,
-          "ttft_seconds": 31.407,
-          "ttfa_seconds": 31.407
+          "tokens_per_sec": 49.272,
+          "ttft_seconds": 29.184,
+          "ttfa_seconds": 29.184
         }
       },
       {
@@ -345,9 +345,9 @@
           "blended": 4
         },
         "perf": {
-          "tokens_per_sec": 67.2,
-          "ttft_seconds": 17.658,
-          "ttfa_seconds": 17.658
+          "tokens_per_sec": 59.313,
+          "ttft_seconds": 19.878,
+          "ttfa_seconds": 19.878
         }
       },
       {
@@ -405,9 +405,9 @@
           "blended": 20
         },
         "perf": {
-          "tokens_per_sec": 48.516,
-          "ttft_seconds": 3.986,
-          "ttfa_seconds": 3.986
+          "tokens_per_sec": 50.692,
+          "ttft_seconds": 4.544,
+          "ttfa_seconds": 4.544
         }
       }
     ],
@@ -427,9 +427,9 @@
           "blended": 20
         },
         "perf": {
-          "tokens_per_sec": 68.541,
-          "ttft_seconds": 113.701,
-          "ttfa_seconds": 113.701
+          "tokens_per_sec": 69.669,
+          "ttft_seconds": 118.169,
+          "ttfa_seconds": 118.169
         }
       },
       {
@@ -447,9 +447,9 @@
           "blended": 20
         },
         "perf": {
-          "tokens_per_sec": 59.636,
-          "ttft_seconds": 37.367,
-          "ttfa_seconds": 37.367
+          "tokens_per_sec": 62.658,
+          "ttft_seconds": 37.608,
+          "ttfa_seconds": 37.608
         }
       },
       {
@@ -467,9 +467,9 @@
           "blended": 20
         },
         "perf": {
-          "tokens_per_sec": 51.949,
-          "ttft_seconds": 6.344,
-          "ttfa_seconds": 6.344
+          "tokens_per_sec": 53.522,
+          "ttft_seconds": 6.8,
+          "ttfa_seconds": 6.8
         }
       },
       {
@@ -567,9 +567,9 @@
           "blended": 20
         },
         "perf": {
-          "tokens_per_sec": 49.138,
-          "ttft_seconds": 31.407,
-          "ttfa_seconds": 31.407
+          "tokens_per_sec": 49.272,
+          "ttft_seconds": 29.184,
+          "ttfa_seconds": 29.184
         }
       },
       {
@@ -587,7 +587,7 @@
           "blended": 20
         },
         "perf": {
-          "tokens_per_sec": 49.475,
+          "tokens_per_sec": 48.817,
           "ttft_seconds": 5.42,
           "ttfa_seconds": 5.42
         }
@@ -627,9 +627,9 @@
           "blended": 20
         },
         "perf": {
-          "tokens_per_sec": 53.673,
-          "ttft_seconds": 192.987,
-          "ttfa_seconds": 192.987
+          "tokens_per_sec": 52.341,
+          "ttft_seconds": 192.954,
+          "ttfa_seconds": 192.954
         }
       },
       {
@@ -647,9 +647,9 @@
           "blended": 3
         },
         "perf": {
-          "tokens_per_sec": 69.637,
-          "ttft_seconds": 27.853,
-          "ttfa_seconds": 27.853
+          "tokens_per_sec": 59.141,
+          "ttft_seconds": 30.733,
+          "ttfa_seconds": 30.733
         }
       },
       {
@@ -667,9 +667,9 @@
           "blended": 20
         },
         "perf": {
-          "tokens_per_sec": 48.516,
-          "ttft_seconds": 3.986,
-          "ttfa_seconds": 3.986
+          "tokens_per_sec": 50.692,
+          "ttft_seconds": 4.544,
+          "ttfa_seconds": 4.544
         }
       },
       {
@@ -688,8 +688,8 @@
         },
         "perf": {
           "tokens_per_sec": 107.685,
-          "ttft_seconds": 91.796,
-          "ttfa_seconds": 91.796
+          "ttft_seconds": 101.636,
+          "ttfa_seconds": 101.636
         }
       },
       {
@@ -747,9 +747,9 @@
           "blended": 2
         },
         "perf": {
-          "tokens_per_sec": 162.293,
+          "tokens_per_sec": 216.642,
           "ttft_seconds": 30.774,
-          "ttfa_seconds": 43.098
+          "ttfa_seconds": 40.006
         }
       },
       {
@@ -767,9 +767,9 @@
           "blended": 1.5
         },
         "perf": {
-          "tokens_per_sec": 230.001,
-          "ttft_seconds": 13.065,
-          "ttfa_seconds": 13.065
+          "tokens_per_sec": 237.734,
+          "ttft_seconds": 13.377,
+          "ttfa_seconds": 13.377
         }
       },
       {
@@ -808,8 +808,8 @@
         },
         "perf": {
           "tokens_per_sec": 39.279,
-          "ttft_seconds": 1.814,
-          "ttfa_seconds": 52.732
+          "ttft_seconds": 1.772,
+          "ttfa_seconds": 52.691
         }
       }
     ],
@@ -829,9 +829,9 @@
           "blended": 20
         },
         "perf": {
-          "tokens_per_sec": 68.541,
-          "ttft_seconds": 113.701,
-          "ttfa_seconds": 113.701
+          "tokens_per_sec": 69.669,
+          "ttft_seconds": 118.169,
+          "ttfa_seconds": 118.169
         }
       },
       {
@@ -849,9 +849,9 @@
           "blended": 20
         },
         "perf": {
-          "tokens_per_sec": 59.636,
-          "ttft_seconds": 37.367,
-          "ttfa_seconds": 37.367
+          "tokens_per_sec": 62.658,
+          "ttft_seconds": 37.608,
+          "ttfa_seconds": 37.608
         }
       },
       {
@@ -890,8 +890,8 @@
         },
         "perf": {
           "tokens_per_sec": 39.279,
-          "ttft_seconds": 1.814,
-          "ttfa_seconds": 52.732
+          "ttft_seconds": 1.772,
+          "ttfa_seconds": 52.691
         }
       },
       {
@@ -929,9 +929,9 @@
           "blended": 2
         },
         "perf": {
-          "tokens_per_sec": 195.622,
-          "ttft_seconds": 25.685,
-          "ttfa_seconds": 35.909
+          "tokens_per_sec": 172.206,
+          "ttft_seconds": 35.106,
+          "ttfa_seconds": 46.72
         }
       },
       {
@@ -949,9 +949,9 @@
           "blended": 0.23
         },
         "perf": {
-          "tokens_per_sec": 53.101,
-          "ttft_seconds": 1.492,
-          "ttfa_seconds": 39.156
+          "tokens_per_sec": 52.897,
+          "ttft_seconds": 1.45,
+          "ttfa_seconds": 39.26
         }
       },
       {
@@ -969,9 +969,9 @@
           "blended": 20
         },
         "perf": {
-          "tokens_per_sec": 51.949,
-          "ttft_seconds": 6.344,
-          "ttfa_seconds": 6.344
+          "tokens_per_sec": 53.522,
+          "ttft_seconds": 6.8,
+          "ttfa_seconds": 6.8
         }
       },
       {
@@ -989,9 +989,9 @@
           "blended": 2.15
         },
         "perf": {
-          "tokens_per_sec": 69.619,
-          "ttft_seconds": 3.012,
-          "ttfa_seconds": 31.74
+          "tokens_per_sec": 69.965,
+          "ttft_seconds": 2.829,
+          "ttfa_seconds": 31.415
         }
       },
       {
@@ -1009,9 +1009,9 @@
           "blended": 3
         },
         "perf": {
-          "tokens_per_sec": 69.637,
-          "ttft_seconds": 27.853,
-          "ttfa_seconds": 27.853
+          "tokens_per_sec": 59.141,
+          "ttft_seconds": 30.733,
+          "ttfa_seconds": 30.733
         }
       },
       {
@@ -1029,9 +1029,9 @@
           "blended": 3
         },
         "perf": {
-          "tokens_per_sec": 69.211,
-          "ttft_seconds": 28.847,
-          "ttfa_seconds": 28.847
+          "tokens_per_sec": 64.52,
+          "ttft_seconds": 34.532,
+          "ttfa_seconds": 34.532
         }
       },
       {
@@ -1069,9 +1069,9 @@
           "blended": 2
         },
         "perf": {
-          "tokens_per_sec": 162.293,
+          "tokens_per_sec": 216.642,
           "ttft_seconds": 30.774,
-          "ttfa_seconds": 43.098
+          "ttfa_seconds": 40.006
         }
       },
       {
@@ -1089,9 +1089,9 @@
           "blended": 20
         },
         "perf": {
-          "tokens_per_sec": 53.673,
-          "ttft_seconds": 192.987,
-          "ttfa_seconds": 192.987
+          "tokens_per_sec": 52.341,
+          "ttft_seconds": 192.954,
+          "ttfa_seconds": 192.954
         }
       },
       {
@@ -1109,9 +1109,9 @@
           "blended": 0.237
         },
         "perf": {
-          "tokens_per_sec": 47.201,
-          "ttft_seconds": 3.195,
-          "ttfa_seconds": 45.568
+          "tokens_per_sec": 48.181,
+          "ttft_seconds": 3.256,
+          "ttfa_seconds": 44.766
         }
       },
       {
@@ -1149,9 +1149,9 @@
           "blended": 3
         },
         "perf": {
-          "tokens_per_sec": 63.226,
-          "ttft_seconds": 21.148,
-          "ttfa_seconds": 21.148
+          "tokens_per_sec": 62.37,
+          "ttft_seconds": 20.724,
+          "ttfa_seconds": 20.724
         }
       },
       {
@@ -1170,8 +1170,8 @@
         },
         "perf": {
           "tokens_per_sec": 51.622,
-          "ttft_seconds": 75.87,
-          "ttfa_seconds": 75.87
+          "ttft_seconds": 75.384,
+          "ttfa_seconds": 75.384
         }
       },
       {
@@ -1189,7 +1189,7 @@
           "blended": 20
         },
         "perf": {
-          "tokens_per_sec": 49.475,
+          "tokens_per_sec": 48.817,
           "ttft_seconds": 5.42,
           "ttfa_seconds": 5.42
         }
@@ -1228,8 +1228,8 @@
       "coding": null,
       "price_input": 4,
       "price_output": 20,
-      "tokens_per_sec": 95.679,
-      "ttft_seconds": 482.463
+      "tokens_per_sec": 95.995,
+      "ttft_seconds": 481.193
     },
     {
       "id": "df5bf99d-d228-4715-b41b-19ca86118777",
@@ -1242,8 +1242,8 @@
       "coding": null,
       "price_input": 4,
       "price_output": 20,
-      "tokens_per_sec": 79.354,
-      "ttft_seconds": 46.198
+      "tokens_per_sec": 80.078,
+      "ttft_seconds": 41.938
     },
     {
       "id": "b171d979-5ec1-45de-b8b9-db1ee65e77ec",
@@ -1256,8 +1256,8 @@
       "coding": null,
       "price_input": 2,
       "price_output": 10,
-      "tokens_per_sec": 145.124,
-      "ttft_seconds": 279.471
+      "tokens_per_sec": 145.16,
+      "ttft_seconds": 265.2
     },
     {
       "id": "f314eade-2232-44bf-a3ab-9b326bc67de6",
@@ -1270,8 +1270,8 @@
       "coding": null,
       "price_input": 4,
       "price_output": 20,
-      "tokens_per_sec": 74.417,
-      "ttft_seconds": 15.529
+      "tokens_per_sec": 78.925,
+      "ttft_seconds": 16.404
     },
     {
       "id": "3e87c73e-a257-495e-9730-367a66229811",
@@ -1285,8 +1285,8 @@
       "agentic": 57.9,
       "price_input": 10,
       "price_output": 50,
-      "tokens_per_sec": 68.541,
-      "ttft_seconds": 113.701
+      "tokens_per_sec": 69.669,
+      "ttft_seconds": 118.169
     },
     {
       "id": "9b166bf3-42db-4f63-8338-1c4a1244ffe8",
@@ -1300,8 +1300,8 @@
       "agentic": 57.2,
       "price_input": 10,
       "price_output": 50,
-      "tokens_per_sec": 59.636,
-      "ttft_seconds": 37.367
+      "tokens_per_sec": 62.658,
+      "ttft_seconds": 37.608
     },
     {
       "id": "2f339a97-9a0d-499a-9cb5-e0db665bfa25",
@@ -1315,8 +1315,8 @@
       "agentic": 51,
       "price_input": 10,
       "price_output": 50,
-      "tokens_per_sec": 53.673,
-      "ttft_seconds": 192.987
+      "tokens_per_sec": 52.341,
+      "ttft_seconds": 192.954
     },
     {
       "id": "d366dfa1-d940-4788-aa73-d298c45699b3",
@@ -1345,7 +1345,7 @@
       "price_input": 10,
       "price_output": 50,
       "tokens_per_sec": 51.622,
-      "ttft_seconds": 75.87
+      "ttft_seconds": 75.384
     },
     {
       "id": "975aeaef-50bd-4a65-9c73-f1015adcd4d4",
@@ -1358,8 +1358,8 @@
       "coding": null,
       "price_input": 2,
       "price_output": 10,
-      "tokens_per_sec": 108.626,
-      "ttft_seconds": 14.559
+      "tokens_per_sec": 112.626,
+      "ttft_seconds": 14.801
     },
     {
       "id": "b25ac058-1e33-4c31-bbc9-a20c3ad0717a",
@@ -1372,8 +1372,8 @@
       "coding": null,
       "price_input": 2,
       "price_output": 10,
-      "tokens_per_sec": 67.797,
-      "ttft_seconds": 142.598
+      "tokens_per_sec": 73.384,
+      "ttft_seconds": 129.809
     },
     {
       "id": "ea9e0da6-169f-43c6-92f5-730a10d6ff8d",
@@ -1386,8 +1386,8 @@
       "coding": null,
       "price_input": 4,
       "price_output": 20,
-      "tokens_per_sec": 73.504,
-      "ttft_seconds": 12.573
+      "tokens_per_sec": 74.631,
+      "ttft_seconds": 13.143
     },
     {
       "id": "9d7d72cd-d95d-45a0-b109-4ad292c9aabd",
@@ -1401,8 +1401,8 @@
       "agentic": 53.1,
       "price_input": 10,
       "price_output": 50,
-      "tokens_per_sec": 51.949,
-      "ttft_seconds": 6.344
+      "tokens_per_sec": 53.522,
+      "ttft_seconds": 6.8
     },
     {
       "id": "092a3b0e-c5c8-45dc-bf1b-53673c8ff352",
@@ -1415,8 +1415,8 @@
       "coding": null,
       "price_input": 2,
       "price_output": 10,
-      "tokens_per_sec": 65.263,
-      "ttft_seconds": 51.195
+      "tokens_per_sec": 62.138,
+      "ttft_seconds": 50.489
     },
     {
       "id": "e05a4828-0536-4876-870d-a235023f992b",
@@ -1430,8 +1430,8 @@
       "agentic": 48.2,
       "price_input": 10,
       "price_output": 50,
-      "tokens_per_sec": 49.138,
-      "ttft_seconds": 31.407
+      "tokens_per_sec": 49.272,
+      "ttft_seconds": 29.184
     },
     {
       "id": "b8fc61f7-5e9a-49e6-8547-6ac56db24627",
@@ -1459,8 +1459,8 @@
       "coding": null,
       "price_input": 2,
       "price_output": 10,
-      "tokens_per_sec": 67.2,
-      "ttft_seconds": 17.658
+      "tokens_per_sec": 59.313,
+      "ttft_seconds": 19.878
     },
     {
       "id": "1305c921-7aaa-4d6d-99b5-99b3acf15e19",
@@ -1504,8 +1504,8 @@
       "agentic": 46,
       "price_input": 10,
       "price_output": 50,
-      "tokens_per_sec": 48.516,
-      "ttft_seconds": 3.986
+      "tokens_per_sec": 50.692,
+      "ttft_seconds": 4.544
     },
     {
       "id": "3b7de71c-e034-4591-8ca6-6b6be2fa471f",
@@ -1519,7 +1519,7 @@
       "agentic": 50.2,
       "price_input": 10,
       "price_output": 50,
-      "tokens_per_sec": 49.475,
+      "tokens_per_sec": 48.817,
       "ttft_seconds": 5.42
     },
     {
@@ -1549,8 +1549,8 @@
       "agentic": 55.5,
       "price_input": 1.25,
       "price_output": 4.25,
-      "tokens_per_sec": 195.622,
-      "ttft_seconds": 25.685
+      "tokens_per_sec": 172.206,
+      "ttft_seconds": 35.106
     },
     {
       "id": "a2e51d62-ea4e-4f15-8be0-be9dc1fb489d",
@@ -1563,8 +1563,8 @@
       "coding": null,
       "price_input": 2,
       "price_output": 10,
-      "tokens_per_sec": 66.437,
-      "ttft_seconds": 3.534
+      "tokens_per_sec": 64.947,
+      "ttft_seconds": 3.69
     },
     {
       "id": "c50ea08c-88c0-4eb7-85b8-27f2bbf6d527",
@@ -1573,12 +1573,12 @@
       "creator": "OpenAI",
       "creator_slug": "openai",
       "release_date": "2026-09-22",
-      "intelligence": 47.5,
+      "intelligence": 47.6,
       "coding": null,
       "price_input": 2,
       "price_output": 10,
-      "tokens_per_sec": 79.832,
-      "ttft_seconds": 120.762
+      "tokens_per_sec": 83.804,
+      "ttft_seconds": 113.231
     },
     {
       "id": "d93edfe8-bf35-49ad-b56e-b18116142a1c",
@@ -1607,8 +1607,8 @@
       "agentic": 47.1,
       "price_input": 10,
       "price_output": 50,
-      "tokens_per_sec": 51.59,
-      "ttft_seconds": 2.887
+      "tokens_per_sec": 52.334,
+      "ttft_seconds": 2.951
     },
     {
       "id": "268525e2-f873-4178-bc07-e6a0ee1f002d",
@@ -1621,8 +1621,8 @@
       "coding": null,
       "price_input": 2,
       "price_output": 10,
-      "tokens_per_sec": 103.982,
-      "ttft_seconds": 7.074
+      "tokens_per_sec": 106.449,
+      "ttft_seconds": 7.293
     },
     {
       "id": "59627802-1546-422c-9a65-65b61c022d36",
@@ -1635,8 +1635,8 @@
       "coding": null,
       "price_input": 2,
       "price_output": 6,
-      "tokens_per_sec": 82.607,
-      "ttft_seconds": 19.282
+      "tokens_per_sec": 83.076,
+      "ttft_seconds": 19.787
     },
     {
       "id": "272f5f03-aea9-4675-a244-2b753b618cdf",
@@ -1649,8 +1649,8 @@
       "coding": null,
       "price_input": 2,
       "price_output": 6,
-      "tokens_per_sec": 78.595,
-      "ttft_seconds": 11.847
+      "tokens_per_sec": 83.388,
+      "ttft_seconds": 13.682
     },
     {
       "id": "24d8fdfe-6241-424e-b7b7-1b6efb06e4fb",
@@ -1663,8 +1663,8 @@
       "coding": null,
       "price_input": 0.435,
       "price_output": 0.87,
-      "tokens_per_sec": 44.954,
-      "ttft_seconds": 3.251
+      "tokens_per_sec": 49.19,
+      "ttft_seconds": 3.417
     },
     {
       "id": "a3f8100d-e38f-408b-b0fa-0085dae18dc1",
@@ -1679,7 +1679,7 @@
       "price_input": 10,
       "price_output": 50,
       "tokens_per_sec": 45.873,
-      "ttft_seconds": 2.098
+      "ttft_seconds": 1.897
     },
     {
       "id": "b112af07-3bd5-4647-b09f-b23204361bb2",
@@ -1694,7 +1694,7 @@
       "price_input": 2,
       "price_output": 6,
       "tokens_per_sec": 39.279,
-      "ttft_seconds": 1.814
+      "ttft_seconds": 1.772
     },
     {
       "id": "d5170215-69be-4129-849b-26d8d8825bfc",
@@ -1708,7 +1708,7 @@
       "agentic": 51.5,
       "price_input": 1.25,
       "price_output": 4.25,
-      "tokens_per_sec": 162.293,
+      "tokens_per_sec": 216.642,
       "ttft_seconds": 30.774
     },
     {
@@ -1738,8 +1738,8 @@
       "agentic": 53.1,
       "price_input": 1.4,
       "price_output": 4.4,
-      "tokens_per_sec": 69.619,
-      "ttft_seconds": 3.012
+      "tokens_per_sec": 69.965,
+      "ttft_seconds": 2.829
     },
     {
       "id": "c8adc5cf-fd5a-407b-af51-dc3bede3e49c",
@@ -1753,8 +1753,22 @@
       "agentic": 53,
       "price_input": 2,
       "price_output": 6,
-      "tokens_per_sec": 69.637,
-      "ttft_seconds": 27.853
+      "tokens_per_sec": 59.141,
+      "ttft_seconds": 30.733
+    },
+    {
+      "id": "da2642fe-9f73-4788-b5af-24edcd55b37e",
+      "name": "GPT-6 Sol (Xhigh)",
+      "slug": "gpt-6-sol-xhigh",
+      "creator": "OpenAI",
+      "creator_slug": "openai",
+      "release_date": "2026-09-22",
+      "intelligence": 44.2,
+      "coding": null,
+      "price_input": 2,
+      "price_output": 10,
+      "tokens_per_sec": 73.18,
+      "ttft_seconds": 37.396
     },
     {
       "id": "d6f43d0a-e8c4-447c-9ff7-5cf0a9d59aa3",
@@ -1768,22 +1782,8 @@
       "agentic": 52.5,
       "price_input": 2,
       "price_output": 6,
-      "tokens_per_sec": 69.211,
-      "ttft_seconds": 28.847
-    },
-    {
-      "id": "da2642fe-9f73-4788-b5af-24edcd55b37e",
-      "name": "GPT-6 Sol (Xhigh)",
-      "slug": "gpt-6-sol-xhigh",
-      "creator": "OpenAI",
-      "creator_slug": "openai",
-      "release_date": "2026-09-22",
-      "intelligence": 44.1,
-      "coding": null,
-      "price_input": 2,
-      "price_output": 10,
-      "tokens_per_sec": 72.464,
-      "ttft_seconds": 33.86
+      "tokens_per_sec": 64.52,
+      "ttft_seconds": 34.532
     },
     {
       "id": "d998db47-9b67-4727-a2bb-2e1261020ac0",
@@ -1811,8 +1811,8 @@
       "coding": null,
       "price_input": 1,
       "price_output": 2.7,
-      "tokens_per_sec": 87.558,
-      "ttft_seconds": 2.08
+      "tokens_per_sec": 87.402,
+      "ttft_seconds": 2.218
     },
     {
       "id": "f7d2fc3e-1f7b-405f-818c-07952a4af78f",
@@ -1826,8 +1826,8 @@
       "agentic": 50,
       "price_input": 3,
       "price_output": 15,
-      "tokens_per_sec": 38.459,
-      "ttft_seconds": 2.906
+      "tokens_per_sec": 39.44,
+      "ttft_seconds": 3.013
     },
     {
       "id": "26614164-6840-4e17-a65a-2deb2fe7e87b",
@@ -1841,8 +1841,8 @@
       "agentic": 50.6,
       "price_input": 2,
       "price_output": 6,
-      "tokens_per_sec": 63.226,
-      "ttft_seconds": 21.148
+      "tokens_per_sec": 62.37,
+      "ttft_seconds": 20.724
     },
     {
       "id": "52eebe3e-6ede-4e46-92db-c5dea49fc410",
@@ -1851,12 +1851,12 @@
       "creator": "OpenAI",
       "creator_slug": "openai",
       "release_date": "2026-09-22",
-      "intelligence": 42.8,
+      "intelligence": 42.4,
       "coding": null,
       "price_input": 2,
       "price_output": 10,
-      "tokens_per_sec": 69.762,
-      "ttft_seconds": 14.075
+      "tokens_per_sec": 72.224,
+      "ttft_seconds": 15.287
     },
     {
       "id": "8afc250d-b538-45a2-812a-4605f4ffd87e",
@@ -1884,8 +1884,8 @@
       "coding": null,
       "price_input": 4,
       "price_output": 20,
-      "tokens_per_sec": 75.255,
-      "ttft_seconds": 5.588
+      "tokens_per_sec": 76.126,
+      "ttft_seconds": 6.286
     },
     {
       "id": "e76e0fe5-93ca-4272-9359-2eb1740467d1",
@@ -1898,8 +1898,8 @@
       "coding": null,
       "price_input": 2,
       "price_output": 10,
-      "tokens_per_sec": 60.963,
-      "ttft_seconds": 1.677
+      "tokens_per_sec": 55.576,
+      "ttft_seconds": 1.996
     },
     {
       "id": "bcf8db0a-3bb6-4d82-9516-0f57370c85a6",
@@ -1914,7 +1914,7 @@
       "price_input": 2,
       "price_output": 12,
       "tokens_per_sec": 107.685,
-      "ttft_seconds": 91.796
+      "ttft_seconds": 101.636
     },
     {
       "id": "19496b81-9f41-4214-a77a-1df803b3c5ae",
@@ -1928,8 +1928,8 @@
       "agentic": 50.9,
       "price_input": 0.15,
       "price_output": 0.5,
-      "tokens_per_sec": 47.201,
-      "ttft_seconds": 3.195
+      "tokens_per_sec": 48.181,
+      "ttft_seconds": 3.256
     },
     {
       "id": "992b7b84-5069-4c6a-9295-834252553d50",
@@ -1958,8 +1958,8 @@
       "agentic": 40.2,
       "price_input": 0.75,
       "price_output": 3.75,
-      "tokens_per_sec": 230.001,
-      "ttft_seconds": 13.065
+      "tokens_per_sec": 237.734,
+      "ttft_seconds": 13.377
     },
     {
       "id": "042e8a37-fcd0-40f4-8f41-99215fb68eda",
@@ -1972,8 +1972,8 @@
       "coding": null,
       "price_input": 2,
       "price_output": 10,
-      "tokens_per_sec": 88.169,
-      "ttft_seconds": 0.855
+      "tokens_per_sec": 105.481,
+      "ttft_seconds": 0.924
     },
     {
       "id": "e9a09db3-8fd6-41dd-ba2f-20e0a2bff7f2",
@@ -2017,8 +2017,8 @@
       "agentic": 50.1,
       "price_input": 2,
       "price_output": 6,
-      "tokens_per_sec": 39.895,
-      "ttft_seconds": 2.075
+      "tokens_per_sec": 39.994,
+      "ttft_seconds": 1.887
     },
     {
       "id": "9ac3908c-9eb2-44db-8c01-3ec7da6fc2ae",
@@ -2032,8 +2032,8 @@
       "agentic": 53.6,
       "price_input": 0.15,
       "price_output": 0.47,
-      "tokens_per_sec": 53.101,
-      "ttft_seconds": 1.492
+      "tokens_per_sec": 52.897,
+      "ttft_seconds": 1.45
     },
     {
       "id": "780a4a85-17ff-4175-a8dd-ebca4823e61b",
@@ -2104,7 +2104,7 @@
       "coding": null,
       "price_input": 0.3,
       "price_output": 1.2,
-      "tokens_per_sec": 219.837,
+      "tokens_per_sec": 226.71,
       "ttft_seconds": 0.836
     },
     {
@@ -2208,8 +2208,22 @@
       "agentic": 43.6,
       "price_input": 2,
       "price_output": 10,
-      "tokens_per_sec": 89.992,
-      "ttft_seconds": 123.046
+      "tokens_per_sec": 93.163,
+      "ttft_seconds": 123.366
+    },
+    {
+      "id": "6fb13851-40ce-4bda-ad3f-6b38e0c5daa7",
+      "name": "GPT-6 Luna (Max)",
+      "slug": "gpt-6-luna",
+      "creator": "OpenAI",
+      "creator_slug": "openai",
+      "release_date": "2026-09-22",
+      "intelligence": 38.1,
+      "coding": null,
+      "price_input": 0.1,
+      "price_output": 0.5,
+      "tokens_per_sec": 133.241,
+      "ttft_seconds": 83.735
     },
     {
       "id": "9e30696f-16fa-4b4f-ba53-161895a85fed",
@@ -2224,7 +2238,7 @@
       "price_input": 2,
       "price_output": 12,
       "tokens_per_sec": 88.268,
-      "ttft_seconds": 8.911
+      "ttft_seconds": 9.848
     },
     {
       "id": "127de816-57d3-4037-8484-480a613cd413",
@@ -2237,8 +2251,8 @@
       "coding": null,
       "price_input": 0.14,
       "price_output": 0.28,
-      "tokens_per_sec": 50.422,
-      "ttft_seconds": 3.654
+      "tokens_per_sec": 53.198,
+      "ttft_seconds": 3.38
     },
     {
       "id": "426d24c8-49ae-482a-b4a8-20f1c53f21c1",
@@ -2254,20 +2268,6 @@
       "price_output": 1.2,
       "tokens_per_sec": 0,
       "ttft_seconds": 0
-    },
-    {
-      "id": "6fb13851-40ce-4bda-ad3f-6b38e0c5daa7",
-      "name": "GPT-6 Luna (Max)",
-      "slug": "gpt-6-luna",
-      "creator": "OpenAI",
-      "creator_slug": "openai",
-      "release_date": "2026-09-22",
-      "intelligence": 37.3,
-      "coding": null,
-      "price_input": 0.1,
-      "price_output": 0.5,
-      "tokens_per_sec": 129.064,
-      "ttft_seconds": 76.752
     },
     {
       "id": "b13c1257-d746-4027-8fc8-4892dc14701c",
@@ -2310,8 +2310,8 @@
       "agentic": 41.3,
       "price_input": 1.32,
       "price_output": 3.96,
-      "tokens_per_sec": 79.336,
-      "ttft_seconds": 1.16
+      "tokens_per_sec": 87.145,
+      "ttft_seconds": 1.156
     },
     {
       "id": "c07e65e6-32fc-451e-938d-7477a1c3ffcc",
@@ -2325,8 +2325,8 @@
       "agentic": 41.2,
       "price_input": 2,
       "price_output": 6,
-      "tokens_per_sec": 63.192,
-      "ttft_seconds": 2.549
+      "tokens_per_sec": 61.391,
+      "ttft_seconds": 2.055
     },
     {
       "id": "7707a46f-895f-4247-b7a8-ddab87c9a11d",
@@ -2340,8 +2340,22 @@
       "agentic": 47.5,
       "price_input": 0.44,
       "price_output": 1.32,
-      "tokens_per_sec": 222.109,
-      "ttft_seconds": 0.708
+      "tokens_per_sec": 227.466,
+      "ttft_seconds": 0.853
+    },
+    {
+      "id": "19813eb2-460a-475c-af65-810bb8660fec",
+      "name": "GPT-6 Luna (Xhigh)",
+      "slug": "gpt-6-luna-xhigh",
+      "creator": "OpenAI",
+      "creator_slug": "openai",
+      "release_date": "2026-09-22",
+      "intelligence": 34.6,
+      "coding": null,
+      "price_input": 0.1,
+      "price_output": 0.5,
+      "tokens_per_sec": 125.21,
+      "ttft_seconds": 20.021
     },
     {
       "id": "87110ff0-1f79-41b4-9976-eda250597317",
@@ -2369,8 +2383,8 @@
       "coding": null,
       "price_input": 2,
       "price_output": 10,
-      "tokens_per_sec": 78.766,
-      "ttft_seconds": 18.899
+      "tokens_per_sec": 76.441,
+      "ttft_seconds": 17.961
     },
     {
       "id": "fe4c0848-e284-4e52-a79d-cdc28392f1a9",
@@ -2398,8 +2412,8 @@
       "coding": null,
       "price_input": 1.4,
       "price_output": 4.4,
-      "tokens_per_sec": 74.73,
-      "ttft_seconds": 3.238
+      "tokens_per_sec": 71.972,
+      "ttft_seconds": 3.261
     },
     {
       "id": "81972fba-1219-477e-bbfb-18c656a63ff7",
@@ -2413,8 +2427,22 @@
       "agentic": 36.7,
       "price_input": 2,
       "price_output": 12,
-      "tokens_per_sec": 88.367,
-      "ttft_seconds": 2.549
+      "tokens_per_sec": 85.905,
+      "ttft_seconds": 2.334
+    },
+    {
+      "id": "01459872-433a-4ab2-8e99-7083162172eb",
+      "name": "GPT-6 Sol (Low)",
+      "slug": "gpt-6-sol-low",
+      "creator": "OpenAI",
+      "creator_slug": "openai",
+      "release_date": "2026-09-22",
+      "intelligence": 34.2,
+      "coding": null,
+      "price_input": 2,
+      "price_output": 10,
+      "tokens_per_sec": 69.594,
+      "ttft_seconds": 1.81
     },
     {
       "id": "78332c88-fe60-42c8-af9d-3617e44cf1f5",
@@ -2433,7 +2461,7 @@
     },
     {
       "id": "46f11cdf-1725-4abb-b39b-bd6bd948149c",
-      "name": "JT-4.1 Flash 236B A21B",
+      "name": "JT-4.1 Flash 236B A21B (Reasoning)",
       "slug": "jt236b",
       "creator": "China Mobile",
       "creator_slug": "china-mobile",
@@ -2444,34 +2472,6 @@
       "price_output": 0,
       "tokens_per_sec": 0,
       "ttft_seconds": 0
-    },
-    {
-      "id": "01459872-433a-4ab2-8e99-7083162172eb",
-      "name": "GPT-6 Sol (Low)",
-      "slug": "gpt-6-sol-low",
-      "creator": "OpenAI",
-      "creator_slug": "openai",
-      "release_date": "2026-09-22",
-      "intelligence": 33.9,
-      "coding": null,
-      "price_input": 2,
-      "price_output": 10,
-      "tokens_per_sec": 65.903,
-      "ttft_seconds": 1.81
-    },
-    {
-      "id": "19813eb2-460a-475c-af65-810bb8660fec",
-      "name": "GPT-6 Luna (Xhigh)",
-      "slug": "gpt-6-luna-xhigh",
-      "creator": "OpenAI",
-      "creator_slug": "openai",
-      "release_date": "2026-09-22",
-      "intelligence": 33.9,
-      "coding": null,
-      "price_input": 0.1,
-      "price_output": 0.5,
-      "tokens_per_sec": 133.645,
-      "ttft_seconds": 15.085
     },
     {
       "id": "6b79f899-e3c0-45f6-923c-243faccdb2fc",
@@ -2530,8 +2530,8 @@
       "agentic": 45.8,
       "price_input": 0.5,
       "price_output": 3,
-      "tokens_per_sec": 44.541,
-      "ttft_seconds": 1.246
+      "tokens_per_sec": 44.979,
+      "ttft_seconds": 1.238
     },
     {
       "id": "5016ea75-7b0e-4737-a7e6-1062c6d90fd4",
@@ -2593,6 +2593,20 @@
       "ttft_seconds": 0
     },
     {
+      "id": "7d1229bc-deea-4717-ba5b-f59a35d991e3",
+      "name": "GPT-6 Luna (High)",
+      "slug": "gpt-6-luna-high",
+      "creator": "OpenAI",
+      "creator_slug": "openai",
+      "release_date": "2026-09-22",
+      "intelligence": 32.9,
+      "coding": null,
+      "price_input": 0.1,
+      "price_output": 0.5,
+      "tokens_per_sec": 131.134,
+      "ttft_seconds": 7.109
+    },
+    {
       "id": "0097ebf5-124f-42f6-9463-33b00e711f03",
       "name": "Gemini 3.5 Flash (High)",
       "slug": "gemini-3-5-flash",
@@ -2618,8 +2632,8 @@
       "coding": null,
       "price_input": 1.75,
       "price_output": 14,
-      "tokens_per_sec": 95.829,
-      "ttft_seconds": 39.134
+      "tokens_per_sec": 96.414,
+      "ttft_seconds": 46.568
     },
     {
       "id": "a3043d4f-9b92-4261-8ea2-a2d391b09cf4",
@@ -2634,20 +2648,6 @@
       "price_output": 0,
       "tokens_per_sec": 0,
       "ttft_seconds": 0
-    },
-    {
-      "id": "7d1229bc-deea-4717-ba5b-f59a35d991e3",
-      "name": "GPT-6 Luna (High)",
-      "slug": "gpt-6-luna-high",
-      "creator": "OpenAI",
-      "creator_slug": "openai",
-      "release_date": "2026-09-22",
-      "intelligence": 32.1,
-      "coding": null,
-      "price_input": 0.1,
-      "price_output": 0.5,
-      "tokens_per_sec": 132.981,
-      "ttft_seconds": 7.572
     },
     {
       "id": "aa55297e-8fbf-4372-b4ab-9b068dc6396c",
@@ -2689,8 +2689,8 @@
       "coding": null,
       "price_input": 2,
       "price_output": 10,
-      "tokens_per_sec": 63.204,
-      "ttft_seconds": 4.119
+      "tokens_per_sec": 61.462,
+      "ttft_seconds": 3.812
     },
     {
       "id": "ebf3b39f-0be6-43a1-a37a-f9b2978c9916",
@@ -2804,8 +2804,8 @@
       "agentic": 30.4,
       "price_input": 2,
       "price_output": 12,
-      "tokens_per_sec": 92.652,
-      "ttft_seconds": 1.867
+      "tokens_per_sec": 91.912,
+      "ttft_seconds": 1.924
     },
     {
       "id": "512d17ef-13d2-4f65-bf9b-154b0dec7e8d",
@@ -2819,8 +2819,8 @@
       "agentic": 29.3,
       "price_input": 3,
       "price_output": 15,
-      "tokens_per_sec": 35.685,
-      "ttft_seconds": 3.624
+      "tokens_per_sec": 37.961,
+      "ttft_seconds": 3.578
     },
     {
       "id": "df8d14e0-3997-4e4d-b4ad-9c047acc9c69",
@@ -2838,6 +2838,20 @@
       "ttft_seconds": 0
     },
     {
+      "id": "36667da0-9222-4967-adbb-f7efa15ad213",
+      "name": "GPT-6 Luna (Medium)",
+      "slug": "gpt-6-luna-medium",
+      "creator": "OpenAI",
+      "creator_slug": "openai",
+      "release_date": "2026-09-22",
+      "intelligence": 29.9,
+      "coding": null,
+      "price_input": 0.1,
+      "price_output": 0.5,
+      "tokens_per_sec": 0,
+      "ttft_seconds": 0
+    },
+    {
       "id": "bbd93ebe-80da-4594-bb19-61e69d0331df",
       "name": "Gemini 3.1 Pro Preview",
       "slug": "gemini-3-1-pro-preview",
@@ -2849,22 +2863,8 @@
       "agentic": 8.2,
       "price_input": 2,
       "price_output": 12,
-      "tokens_per_sec": 126.44,
-      "ttft_seconds": 22.837
-    },
-    {
-      "id": "36667da0-9222-4967-adbb-f7efa15ad213",
-      "name": "GPT-6 Luna (Medium)",
-      "slug": "gpt-6-luna-medium",
-      "creator": "OpenAI",
-      "creator_slug": "openai",
-      "release_date": "2026-09-22",
-      "intelligence": 29.5,
-      "coding": null,
-      "price_input": 0.1,
-      "price_output": 0.5,
-      "tokens_per_sec": 0,
-      "ttft_seconds": 0
+      "tokens_per_sec": 127.145,
+      "ttft_seconds": 25.822
     },
     {
       "id": "69534bed-2ffd-4235-832b-e20a810333ab",
@@ -2893,8 +2893,8 @@
       "agentic": 29.5,
       "price_input": 0.3,
       "price_output": 1.2,
-      "tokens_per_sec": 117.984,
-      "ttft_seconds": 0.739
+      "tokens_per_sec": 94.698,
+      "ttft_seconds": 0.764
     },
     {
       "id": "2660d74f-ce79-48a8-8b53-6e668e2071a2",
@@ -2923,6 +2923,20 @@
       "price_output": 0,
       "tokens_per_sec": 0,
       "ttft_seconds": 0
+    },
+    {
+      "id": "d3e20e76-9e1a-45b6-b809-ad6aa37430cf",
+      "name": "GPT-6 Sol (Non-reasoning)",
+      "slug": "gpt-6-sol-non-reasoning",
+      "creator": "OpenAI",
+      "creator_slug": "openai",
+      "release_date": "2026-09-22",
+      "intelligence": 28.5,
+      "coding": null,
+      "price_input": 2,
+      "price_output": 10,
+      "tokens_per_sec": 72.364,
+      "ttft_seconds": 1.172
     },
     {
       "id": "019e86f6-e66b-42d8-8a50-235a06b53003",
@@ -2993,22 +3007,8 @@
       "coding": 52.7,
       "price_input": 0.3,
       "price_output": 1.2,
-      "tokens_per_sec": 95.966,
-      "ttft_seconds": 1.089
-    },
-    {
-      "id": "d3e20e76-9e1a-45b6-b809-ad6aa37430cf",
-      "name": "GPT-6 Sol (Non-reasoning)",
-      "slug": "gpt-6-sol-non-reasoning",
-      "creator": "OpenAI",
-      "creator_slug": "openai",
-      "release_date": "2026-09-22",
-      "intelligence": 28.1,
-      "coding": null,
-      "price_input": 2,
-      "price_output": 10,
-      "tokens_per_sec": 72.364,
-      "ttft_seconds": 1.067
+      "tokens_per_sec": 83.93,
+      "ttft_seconds": 1.175
     },
     {
       "id": "effcd151-7c31-4437-af3d-e88daeae9385",
@@ -3021,8 +3021,8 @@
       "coding": null,
       "price_input": 2,
       "price_output": 10,
-      "tokens_per_sec": 61.802,
-      "ttft_seconds": 1.573
+      "tokens_per_sec": 56.64,
+      "ttft_seconds": 1.724
     },
     {
       "id": "d1122eff-ee85-4fdc-8a9f-23bee6590667",
@@ -3078,8 +3078,8 @@
       "agentic": 44.4,
       "price_input": 0.5,
       "price_output": 3,
-      "tokens_per_sec": 46.307,
-      "ttft_seconds": 1.209
+      "tokens_per_sec": 49.268,
+      "ttft_seconds": 1.205
     },
     {
       "id": "cc4a20cd-09fe-4962-a430-119c815e85fa",
@@ -3094,7 +3094,7 @@
       "price_input": 2,
       "price_output": 12,
       "tokens_per_sec": 86.9,
-      "ttft_seconds": 1.495
+      "ttft_seconds": 1.549
     },
     {
       "id": "901ec71b-51ec-4f53-b807-06ee17b890b4",
@@ -3140,7 +3140,7 @@
     },
     {
       "id": "0de67206-4d36-4d10-b8f6-cf37fa747a03",
-      "name": "Kimi K2.6",
+      "name": "Kimi K2.6 (Reasoning)",
       "slug": "kimi-k2-6",
       "creator": "Kimi",
       "creator_slug": "kimi",
@@ -3165,7 +3165,7 @@
       "agentic": 31.4,
       "price_input": 0.6,
       "price_output": 1.8,
-      "tokens_per_sec": 150.56,
+      "tokens_per_sec": 152.496,
       "ttft_seconds": 0.466
     },
     {
@@ -3251,8 +3251,8 @@
       "agentic": 38.9,
       "price_input": 0.5,
       "price_output": 3,
-      "tokens_per_sec": 47.715,
-      "ttft_seconds": 1.221
+      "tokens_per_sec": 48.358,
+      "ttft_seconds": 1.211
     },
     {
       "id": "5aa1c578-af76-4b91-8699-cdd43582b3af",
@@ -3281,12 +3281,12 @@
       "agentic": 16.6,
       "price_input": 5,
       "price_output": 30,
-      "tokens_per_sec": 128.385,
-      "ttft_seconds": 0.917
+      "tokens_per_sec": 138.141,
+      "ttft_seconds": 0.866
     },
     {
       "id": "00f1248e-78e3-4230-8dc8-5e13ba8645e2",
-      "name": "MiMo-V2.5-Pro",
+      "name": "MiMo-V2.5-Pro (Reasoning)",
       "slug": "mimo-v2-5-pro",
       "creator": "Xiaomi",
       "creator_slug": "xiaomi",
@@ -3296,8 +3296,8 @@
       "agentic": 21.3,
       "price_input": 0.435,
       "price_output": 0.87,
-      "tokens_per_sec": 25.989,
-      "ttft_seconds": 1.956
+      "tokens_per_sec": 26.313,
+      "ttft_seconds": 1.36
     },
     {
       "id": "8d0cb231-7303-452c-9923-a9620b948475",
@@ -3311,8 +3311,8 @@
       "agentic": 21,
       "price_input": 0.95,
       "price_output": 4,
-      "tokens_per_sec": 63.579,
-      "ttft_seconds": 1.034
+      "tokens_per_sec": 71.362,
+      "ttft_seconds": 1.159
     },
     {
       "id": "7261504e-503c-4a66-a9d3-a3272cdf9ad6",
@@ -3326,8 +3326,8 @@
       "agentic": 23.5,
       "price_input": 0.3,
       "price_output": 1.2,
-      "tokens_per_sec": 199.506,
-      "ttft_seconds": 1.867
+      "tokens_per_sec": 176.903,
+      "ttft_seconds": 1.976
     },
     {
       "id": "c72cb85a-18a4-4235-b455-77dff2f16c50",
@@ -3370,8 +3370,8 @@
       "agentic": 24.1,
       "price_input": 0.136,
       "price_output": 0.555,
-      "tokens_per_sec": 90.6,
-      "ttft_seconds": 2.046
+      "tokens_per_sec": 87.744,
+      "ttft_seconds": 2.078
     },
     {
       "id": "04787c2b-0751-4269-8029-075b727d7aed",
@@ -3399,8 +3399,8 @@
       "agentic": 15.8,
       "price_input": 0.14,
       "price_output": 0.28,
-      "tokens_per_sec": 44.823,
-      "ttft_seconds": 2.048
+      "tokens_per_sec": 46.375,
+      "ttft_seconds": 1.827
     },
     {
       "id": "a87fce42-eea3-4e45-a96d-fe057814f371",
@@ -3414,8 +3414,8 @@
       "agentic": 17.5,
       "price_input": 0.4,
       "price_output": 1.6,
-      "tokens_per_sec": 56.227,
-      "ttft_seconds": 1.709
+      "tokens_per_sec": 55.863,
+      "ttft_seconds": 1.672
     },
     {
       "id": "296ace9b-0815-43b2-bafa-fd6cec5cce36",
@@ -3458,8 +3458,8 @@
       "agentic": 22.5,
       "price_input": 1,
       "price_output": 4.05,
-      "tokens_per_sec": 167.598,
-      "ttft_seconds": 2.314
+      "tokens_per_sec": 185.692,
+      "ttft_seconds": 2.282
     },
     {
       "id": "5d11e7a1-4f70-4e5a-9364-e193761d6757",
@@ -3557,8 +3557,8 @@
       "coding": null,
       "price_input": 0.3,
       "price_output": 1.2,
-      "tokens_per_sec": 229.001,
-      "ttft_seconds": 0.831
+      "tokens_per_sec": 257.455,
+      "ttft_seconds": 0.795
     },
     {
       "id": "433d5c5d-3092-4026-9727-1587ca07915d",
@@ -3572,8 +3572,8 @@
       "agentic": 28.7,
       "price_input": 0.075,
       "price_output": 0.22,
-      "tokens_per_sec": 149.172,
-      "ttft_seconds": 2.033
+      "tokens_per_sec": 150.441,
+      "ttft_seconds": 2.092
     },
     {
       "id": "89a2c945-1fab-4ee4-9f45-83a9f46cb221",
@@ -3615,8 +3615,8 @@
       "coding": null,
       "price_input": 2,
       "price_output": 10,
-      "tokens_per_sec": 62.124,
-      "ttft_seconds": 1.122
+      "tokens_per_sec": 59.035,
+      "ttft_seconds": 1.286
     },
     {
       "id": "92f245a7-43b4-4ffd-8bfb-866746bf824d",
@@ -3661,6 +3661,20 @@
       "price_output": 4.5,
       "tokens_per_sec": 0,
       "ttft_seconds": 0
+    },
+    {
+      "id": "62ea3198-9866-4d9f-8406-a79ee78c7164",
+      "name": "Solar Mini 4",
+      "slug": "solar-mini4",
+      "creator": "Upstage",
+      "creator_slug": "upstage",
+      "release_date": "2026-09-22",
+      "intelligence": 24.1,
+      "coding": null,
+      "price_input": 0.1,
+      "price_output": 0.4,
+      "tokens_per_sec": 199.238,
+      "ttft_seconds": 1.075
     },
     {
       "id": "94d09368-9035-47cf-963a-b4310b433a16",
@@ -3785,8 +3799,8 @@
       "coding": 66.4,
       "price_input": 2,
       "price_output": 10,
-      "tokens_per_sec": 66.482,
-      "ttft_seconds": 0.938
+      "tokens_per_sec": 57.499,
+      "ttft_seconds": 0.952
     },
     {
       "id": "6f1a7562-6e96-46ac-af4f-6ba5a7a3da96",
@@ -3828,8 +3842,8 @@
       "agentic": 20.1,
       "price_input": 0.6,
       "price_output": 2.5,
-      "tokens_per_sec": 188.896,
-      "ttft_seconds": 0.876
+      "tokens_per_sec": 172.663,
+      "ttft_seconds": 0.794
     },
     {
       "id": "169e47f5-3d4d-4ad4-8f8b-ab46f0c73f67",
@@ -3956,8 +3970,8 @@
       "agentic": 27.9,
       "price_input": 0.075,
       "price_output": 0.22,
-      "tokens_per_sec": 304.57,
-      "ttft_seconds": 1.271
+      "tokens_per_sec": 316.216,
+      "ttft_seconds": 1.286
     },
     {
       "id": "5ea94a4a-55ac-4ea1-8898-2b3971e94af6",
@@ -4041,8 +4055,8 @@
       "agentic": 14.3,
       "price_input": 0.3,
       "price_output": 2.5,
-      "tokens_per_sec": 329.142,
-      "ttft_seconds": 7.888
+      "tokens_per_sec": 334.567,
+      "ttft_seconds": 6.972
     },
     {
       "id": "bddebfd3-0a8d-47f5-b722-bc4c2ca5a5dc",
@@ -4115,6 +4129,20 @@
       "ttft_seconds": 0
     },
     {
+      "id": "bf9708d8-933d-44f6-affa-b696a7a650c9",
+      "name": "GPT-6 Luna (Low)",
+      "slug": "gpt-6-luna-low",
+      "creator": "OpenAI",
+      "creator_slug": "openai",
+      "release_date": "2026-09-22",
+      "intelligence": 21.5,
+      "coding": null,
+      "price_input": 0.1,
+      "price_output": 0.5,
+      "tokens_per_sec": 125.946,
+      "ttft_seconds": 2.142
+    },
+    {
       "id": "d621247c-d47e-458c-82cb-a166bc3b37e5",
       "name": "DeepSeek V3.2 (Reasoning)",
       "slug": "deepseek-v3-2-reasoning",
@@ -4139,8 +4167,8 @@
       "coding": null,
       "price_input": 0.6,
       "price_output": 3.6,
-      "tokens_per_sec": 85.789,
-      "ttft_seconds": 1.605
+      "tokens_per_sec": 85.428,
+      "ttft_seconds": 1.593
     },
     {
       "id": "8c29d66d-bf98-4ea3-8572-5409353ecc66",
@@ -4201,20 +4229,6 @@
       "ttft_seconds": 0
     },
     {
-      "id": "bf9708d8-933d-44f6-affa-b696a7a650c9",
-      "name": "GPT-6 Luna (Low)",
-      "slug": "gpt-6-luna-low",
-      "creator": "OpenAI",
-      "creator_slug": "openai",
-      "release_date": "2026-09-22",
-      "intelligence": 20.9,
-      "coding": null,
-      "price_input": 0.1,
-      "price_output": 0.5,
-      "tokens_per_sec": 125.946,
-      "ttft_seconds": 2.276
-    },
-    {
       "id": "6e2a2572-ed8d-4616-8d7d-68d125fc8ee7",
       "name": "DeepSeek V4 Pro 0424 (Non-reasoning)",
       "slug": "deepseek-v4-pro-0424-non-reasoning",
@@ -4269,7 +4283,7 @@
       "price_input": 2,
       "price_output": 12,
       "tokens_per_sec": 81.676,
-      "ttft_seconds": 0.78
+      "ttft_seconds": 0.809
     },
     {
       "id": "d4fc3f33-f2b0-4da1-88ee-f1f82bd4de31",
@@ -4355,8 +4369,8 @@
       "coding": null,
       "price_input": 0.4,
       "price_output": 4.8,
-      "tokens_per_sec": 82.968,
-      "ttft_seconds": 1.217
+      "tokens_per_sec": 87.232,
+      "ttft_seconds": 1.246
     },
     {
       "id": "fd4454ff-e703-46c0-a7f5-fa69af09486d",
@@ -4397,8 +4411,8 @@
       "coding": null,
       "price_input": 1.32,
       "price_output": 3.96,
-      "tokens_per_sec": 179.863,
-      "ttft_seconds": 1.035
+      "tokens_per_sec": 168.305,
+      "ttft_seconds": 0.97
     },
     {
       "id": "16c5b637-8bce-4252-81f2-1b87a36a4e4c",
@@ -4411,8 +4425,8 @@
       "coding": null,
       "price_input": 2,
       "price_output": 8,
-      "tokens_per_sec": 129.058,
-      "ttft_seconds": 5.893
+      "tokens_per_sec": 117.213,
+      "ttft_seconds": 8.356
     },
     {
       "id": "353c92f3-2148-4c2d-9231-aa7e1322a1fd",
@@ -4426,8 +4440,8 @@
       "agentic": 22.4,
       "price_input": 0.5,
       "price_output": 3,
-      "tokens_per_sec": 50.509,
-      "ttft_seconds": 1.227
+      "tokens_per_sec": 50.999,
+      "ttft_seconds": 1.2
     },
     {
       "id": "e33dc369-ae81-40e0-8c4e-28b002d02197",
@@ -4441,8 +4455,8 @@
       "agentic": 19.3,
       "price_input": 0.075,
       "price_output": 0.22,
-      "tokens_per_sec": 328.759,
-      "ttft_seconds": 1.79
+      "tokens_per_sec": 319.377,
+      "ttft_seconds": 1.791
     },
     {
       "id": "8869f28a-a6ff-487f-8d32-93fe335fdda5",
@@ -4511,8 +4525,8 @@
       "coding": 39.6,
       "price_input": 0.2,
       "price_output": 1.15,
-      "tokens_per_sec": 200.021,
-      "ttft_seconds": 1.359
+      "tokens_per_sec": 195.362,
+      "ttft_seconds": 1.352
     },
     {
       "id": "ba04694d-326a-4a6a-8f1b-46316f872a7f",
@@ -4684,6 +4698,20 @@
       "ttft_seconds": 0
     },
     {
+      "id": "63cb48ea-0b0c-4e07-8ded-6d28dec4fa28",
+      "name": "GPT-6 Luna (Non-reasoning)",
+      "slug": "gpt-6-luna-non-reasoning",
+      "creator": "OpenAI",
+      "creator_slug": "openai",
+      "release_date": "2026-09-22",
+      "intelligence": 18.5,
+      "coding": null,
+      "price_input": 0.1,
+      "price_output": 0.5,
+      "tokens_per_sec": 131.975,
+      "ttft_seconds": 0.851
+    },
+    {
       "id": "0e66bae9-41f1-42fc-9276-ce8cb6f72919",
       "name": "Qwen3.5 397B A17B (Reasoning)",
       "slug": "qwen3-5-397b-a17b",
@@ -4695,8 +4723,8 @@
       "agentic": 8.3,
       "price_input": 0.6,
       "price_output": 3.6,
-      "tokens_per_sec": 88.317,
-      "ttft_seconds": 1.69
+      "tokens_per_sec": 88.258,
+      "ttft_seconds": 1.723
     },
     {
       "id": "4764d31d-f4af-4297-8bd1-e993f26bcb64",
@@ -4709,22 +4737,8 @@
       "coding": null,
       "price_input": 0.435,
       "price_output": 0.87,
-      "tokens_per_sec": 23.214,
-      "ttft_seconds": 1.308
-    },
-    {
-      "id": "63cb48ea-0b0c-4e07-8ded-6d28dec4fa28",
-      "name": "GPT-6 Luna (Non-reasoning)",
-      "slug": "gpt-6-luna-non-reasoning",
-      "creator": "OpenAI",
-      "creator_slug": "openai",
-      "release_date": "2026-09-22",
-      "intelligence": 18.3,
-      "coding": null,
-      "price_input": 0.1,
-      "price_output": 0.5,
-      "tokens_per_sec": 127.005,
-      "ttft_seconds": 0.785
+      "tokens_per_sec": 24.317,
+      "ttft_seconds": 1.254
     },
     {
       "id": "8665ca00-c687-44c7-875c-22618cb31c4f",
@@ -4738,8 +4752,8 @@
       "agentic": 13.1,
       "price_input": 0.375,
       "price_output": 2.25,
-      "tokens_per_sec": 134.622,
-      "ttft_seconds": 1.144
+      "tokens_per_sec": 138.811,
+      "ttft_seconds": 1.175
     },
     {
       "id": "493f6a1e-7717-4e98-9d6f-548b92c4702d",
@@ -4794,8 +4808,8 @@
       "coding": 43.3,
       "price_input": 0.4,
       "price_output": 3.2,
-      "tokens_per_sec": 144.441,
-      "ttft_seconds": 1.011
+      "tokens_per_sec": 142.822,
+      "ttft_seconds": 1.032
     },
     {
       "id": "13358187-4584-479c-ab43-5bcdf8f297a4",
@@ -4823,8 +4837,8 @@
       "agentic": 8.5,
       "price_input": 0.325,
       "price_output": 1.35,
-      "tokens_per_sec": 165.107,
-      "ttft_seconds": 0.503
+      "tokens_per_sec": 164.426,
+      "ttft_seconds": 0.54
     },
     {
       "id": "81b6ddfc-111e-4422-bd44-42ee6165b699",
@@ -4922,7 +4936,7 @@
       "agentic": 8,
       "price_input": 1,
       "price_output": 5,
-      "tokens_per_sec": 120.134,
+      "tokens_per_sec": 125.146,
       "ttft_seconds": 13.08
     },
     {
@@ -4980,8 +4994,8 @@
       "agentic": 10.7,
       "price_input": 0.3,
       "price_output": 2.5,
-      "tokens_per_sec": 110.851,
-      "ttft_seconds": 2.2
+      "tokens_per_sec": 116.677,
+      "ttft_seconds": 1.944
     },
     {
       "id": "c8158c23-6fff-4c31-911d-954c32d80c28",
@@ -5195,7 +5209,7 @@
       "coding": null,
       "price_input": 1,
       "price_output": 5,
-      "tokens_per_sec": 92.823,
+      "tokens_per_sec": 102.644,
       "ttft_seconds": 0.493
     },
     {
@@ -5237,8 +5251,8 @@
       "coding": 28.1,
       "price_input": 0.375,
       "price_output": 2.25,
-      "tokens_per_sec": 141.459,
-      "ttft_seconds": 1.108
+      "tokens_per_sec": 142.024,
+      "ttft_seconds": 1.116
     },
     {
       "id": "5ad2f60f-ee05-49fd-85a0-cef69aa7cb7b",
@@ -5321,8 +5335,8 @@
       "coding": 29.9,
       "price_input": 0.16,
       "price_output": 0.65,
-      "tokens_per_sec": 77.846,
-      "ttft_seconds": 0.294
+      "tokens_per_sec": 77.497,
+      "ttft_seconds": 0.302
     },
     {
       "id": "0a7dda4d-cc9c-4a90-abc1-abb5772c901b",
@@ -5351,8 +5365,8 @@
       "agentic": 4.2,
       "price_input": 0,
       "price_output": 0,
-      "tokens_per_sec": 35.045,
-      "ttft_seconds": 0.977
+      "tokens_per_sec": 34.905,
+      "ttft_seconds": 0.974
     },
     {
       "id": "ff9bc5e5-a02f-4270-983e-4b3f834f3363",
@@ -5464,8 +5478,8 @@
       "agentic": 7,
       "price_input": 1.5,
       "price_output": 7.5,
-      "tokens_per_sec": 163.901,
-      "ttft_seconds": 0.621
+      "tokens_per_sec": 164.384,
+      "ttft_seconds": 0.645
     },
     {
       "id": "feb02d3b-ff8d-4ed4-b165-13f8d4a7192c",
@@ -5479,7 +5493,7 @@
       "price_input": 0.1,
       "price_output": 0.3,
       "tokens_per_sec": 147.832,
-      "ttft_seconds": 1.356
+      "ttft_seconds": 1.425
     },
     {
       "id": "0d94dc87-12c8-4d4a-8d99-804ce3f17bc2",
@@ -5492,8 +5506,8 @@
       "coding": 34,
       "price_input": 1.25,
       "price_output": 10,
-      "tokens_per_sec": 126.882,
-      "ttft_seconds": 18.753
+      "tokens_per_sec": 123.377,
+      "ttft_seconds": 20.419
     },
     {
       "id": "a06bd3fc-86db-4a8e-ae6d-7459444d08c9",
@@ -5549,8 +5563,8 @@
       "coding": 33.2,
       "price_input": 0.14,
       "price_output": 0.4,
-      "tokens_per_sec": 39.562,
-      "ttft_seconds": 0.993
+      "tokens_per_sec": 37.748,
+      "ttft_seconds": 0.912
     },
     {
       "id": "07c35e00-2b12-44c8-91cc-408629cd569e",
@@ -5676,7 +5690,7 @@
       "coding": 23,
       "price_input": 0.3,
       "price_output": 2.5,
-      "tokens_per_sec": 205.574,
+      "tokens_per_sec": 197.528,
       "ttft_seconds": 11.995
     },
     {
@@ -5704,12 +5718,12 @@
       "coding": 23.5,
       "price_input": 0.17,
       "price_output": 0.25,
-      "tokens_per_sec": 0,
-      "ttft_seconds": 0
+      "tokens_per_sec": 69.135,
+      "ttft_seconds": 1.277
     },
     {
       "id": "508943e4-e9e1-4d10-9c0e-a7650e9d7315",
-      "name": "EXAONE 4.5 33B",
+      "name": "EXAONE 4.5 33B (Reasoning)",
       "slug": "exaone-4-5-33b",
       "creator": "LG AI Research",
       "creator_slug": "lg",
@@ -5733,8 +5747,8 @@
       "agentic": 1,
       "price_input": 0,
       "price_output": 0,
-      "tokens_per_sec": 227.433,
-      "ttft_seconds": 0.192
+      "tokens_per_sec": 213.594,
+      "ttft_seconds": 0.197
     },
     {
       "id": "70882ec6-914c-41f0-9754-5e8f75005f77",
@@ -5747,8 +5761,8 @@
       "coding": null,
       "price_input": 0.13,
       "price_output": 0.4,
-      "tokens_per_sec": 113.793,
-      "ttft_seconds": 0.695
+      "tokens_per_sec": 120.471,
+      "ttft_seconds": 0.691
     },
     {
       "id": "651ef7ae-9a8f-477e-9c8e-460aa156ba02",
@@ -5761,8 +5775,8 @@
       "coding": 22.6,
       "price_input": 0.03,
       "price_output": 0.15,
-      "tokens_per_sec": 28.248,
-      "ttft_seconds": 0.52
+      "tokens_per_sec": 21.834,
+      "ttft_seconds": 0.538
     },
     {
       "id": "a83f84b3-473a-4276-9ae1-8909da723159",
@@ -5816,10 +5830,10 @@
       "intelligence": 12.9,
       "coding": 26.8,
       "agentic": 3.5,
-      "price_input": 0.07,
-      "price_output": 0.22,
+      "price_input": 0.06,
+      "price_output": 0.2,
       "tokens_per_sec": 290.707,
-      "ttft_seconds": 0.451
+      "ttft_seconds": 0.413
     },
     {
       "id": "63872e9c-3377-4a6b-b477-7bba244c38e9",
@@ -5833,8 +5847,8 @@
       "agentic": 1.7,
       "price_input": 0.3,
       "price_output": 0.9,
-      "tokens_per_sec": 160.809,
-      "ttft_seconds": 0.846
+      "tokens_per_sec": 158.676,
+      "ttft_seconds": 0.853
     },
     {
       "id": "f4274721-ef28-4121-aa88-8e97267a5a82",
@@ -5847,8 +5861,8 @@
       "coding": 25.9,
       "price_input": 1.25,
       "price_output": 10,
-      "tokens_per_sec": 130.558,
-      "ttft_seconds": 4.605
+      "tokens_per_sec": 128.864,
+      "ttft_seconds": 4.21
     },
     {
       "id": "1cf439b8-0cfd-47b2-9de2-9a2157e6762b",
@@ -5933,7 +5947,7 @@
       "price_input": 0.3,
       "price_output": 2.5,
       "tokens_per_sec": 195.274,
-      "ttft_seconds": 10.594
+      "ttft_seconds": 13.496
     },
     {
       "id": "8eb02396-f231-4189-ae15-05f7facebd9b",
@@ -6243,8 +6257,8 @@
       "agentic": 3.7,
       "price_input": 0.15,
       "price_output": 0.595,
-      "tokens_per_sec": 172.523,
-      "ttft_seconds": 0.561
+      "tokens_per_sec": 161.414,
+      "ttft_seconds": 0.553
     },
     {
       "id": "5a49ef80-3af5-404b-8ac0-e1b230ae95de",
@@ -6357,8 +6371,8 @@
       "agentic": 0.8,
       "price_input": 0.15,
       "price_output": 0.6,
-      "tokens_per_sec": 169.832,
-      "ttft_seconds": 0.587
+      "tokens_per_sec": 173.192,
+      "ttft_seconds": 0.582
     },
     {
       "id": "d2d7dd95-770f-4cb0-9bbc-d275ac19c265",
@@ -6399,8 +6413,8 @@
       "coding": 17.4,
       "price_input": 0.15,
       "price_output": 1.2,
-      "tokens_per_sec": 168.548,
-      "ttft_seconds": 1.18
+      "tokens_per_sec": 170.636,
+      "ttft_seconds": 1.174
     },
     {
       "id": "2d28a13a-096e-475a-beb8-26bbd1c7d51c",
@@ -6414,8 +6428,8 @@
       "agentic": 1.2,
       "price_input": 0.135,
       "price_output": 0.2,
-      "tokens_per_sec": 29.959,
-      "ttft_seconds": 1.134
+      "tokens_per_sec": 30.818,
+      "ttft_seconds": 1.117
     },
     {
       "id": "ae447455-940d-4d30-9139-a664fa896eaf",
@@ -6471,8 +6485,8 @@
       "agentic": 1.3,
       "price_input": 0.06,
       "price_output": 0.25,
-      "tokens_per_sec": 66.645,
-      "ttft_seconds": 0.307
+      "tokens_per_sec": 66.839,
+      "ttft_seconds": 0.305
     },
     {
       "id": "2dbb6dc7-8c40-4b6d-af9c-cf805f83b79a",
@@ -6500,8 +6514,8 @@
       "agentic": 4.4,
       "price_input": 0,
       "price_output": 0,
-      "tokens_per_sec": 56.455,
-      "ttft_seconds": 1.648
+      "tokens_per_sec": 56.98,
+      "ttft_seconds": 1.63
     },
     {
       "id": "df4c5a29-4b5c-4fef-9f7f-5e24e118ab65",
@@ -6572,8 +6586,8 @@
       "agentic": 1,
       "price_input": 0.25,
       "price_output": 0.8,
-      "tokens_per_sec": 346.62,
-      "ttft_seconds": 1.085
+      "tokens_per_sec": 352.819,
+      "ttft_seconds": 0.991
     },
     {
       "id": "30c9ba61-d0a1-4794-938e-35865f379d15",
@@ -6586,8 +6600,8 @@
       "coding": 20.3,
       "price_input": 0.03,
       "price_output": 0.15,
-      "tokens_per_sec": 25.451,
-      "ttft_seconds": 0.699
+      "tokens_per_sec": 20.576,
+      "ttft_seconds": 0.708
     },
     {
       "id": "369329e4-629f-425d-975a-e8980aec2965",
@@ -6684,8 +6698,8 @@
       "coding": 13.8,
       "price_input": 0.195,
       "price_output": 1.095,
-      "tokens_per_sec": 265.979,
-      "ttft_seconds": 0.247
+      "tokens_per_sec": 265.316,
+      "ttft_seconds": 0.246
     },
     {
       "id": "c99f3bde-7c08-4de8-bd5c-8ee9123ebffa",
@@ -6698,8 +6712,8 @@
       "coding": 21.2,
       "price_input": 0.15,
       "price_output": 0.545,
-      "tokens_per_sec": 180.707,
-      "ttft_seconds": 0.535
+      "tokens_per_sec": 166.334,
+      "ttft_seconds": 0.55
     },
     {
       "id": "9f7c7566-a704-49a2-a383-cb3181da33a4",
@@ -6727,8 +6741,8 @@
       "agentic": 0.6,
       "price_input": 0.26,
       "price_output": 0.91,
-      "tokens_per_sec": 87.026,
-      "ttft_seconds": 0.592
+      "tokens_per_sec": 84.964,
+      "ttft_seconds": 0.594
     },
     {
       "id": "385376b1-9815-47dd-83cc-85aac34f247d",
@@ -6755,7 +6769,7 @@
       "coding": 20.9,
       "price_input": 1.25,
       "price_output": 10,
-      "tokens_per_sec": 121.316,
+      "tokens_per_sec": 120.708,
       "ttft_seconds": 0.69
     },
     {
@@ -6769,8 +6783,8 @@
       "coding": null,
       "price_input": 0.07,
       "price_output": 0.215,
-      "tokens_per_sec": 209.497,
-      "ttft_seconds": 0.527
+      "tokens_per_sec": 211.135,
+      "ttft_seconds": 0.493
     },
     {
       "id": "d58cf573-1bd3-4d1f-9182-5482a460f570",
@@ -6798,8 +6812,8 @@
       "agentic": 1.1,
       "price_input": 0,
       "price_output": 0,
-      "tokens_per_sec": 72.361,
-      "ttft_seconds": 0.27
+      "tokens_per_sec": 68.498,
+      "ttft_seconds": 0.321
     },
     {
       "id": "bc26bfdb-4923-4442-a6ca-e77392923581",
@@ -6912,8 +6926,8 @@
       "coding": null,
       "price_input": 0.15,
       "price_output": 1.2,
-      "tokens_per_sec": 160.767,
-      "ttft_seconds": 1.08
+      "tokens_per_sec": 171.439,
+      "ttft_seconds": 1.022
     },
     {
       "id": "60cff809-05fb-4439-afe7-8b1476439f49",
@@ -7038,8 +7052,8 @@
       "coding": null,
       "price_input": 0.1,
       "price_output": 0.3,
-      "tokens_per_sec": 148.392,
-      "ttft_seconds": 1.411
+      "tokens_per_sec": 145.214,
+      "ttft_seconds": 1.377
     },
     {
       "id": "71f51ea9-94fe-4635-a80d-4cfffbb685f4",
@@ -7067,8 +7081,8 @@
       "agentic": 1,
       "price_input": 0.5,
       "price_output": 1.5,
-      "tokens_per_sec": 76.03,
-      "ttft_seconds": 0.697
+      "tokens_per_sec": 75.237,
+      "ttft_seconds": 0.721
     },
     {
       "id": "fc92f822-04b7-420d-9c07-a21af5e9aac7",
@@ -7082,8 +7096,8 @@
       "agentic": 0.9,
       "price_input": 0.35,
       "price_output": 1.2,
-      "tokens_per_sec": 113.109,
-      "ttft_seconds": 0.903
+      "tokens_per_sec": 111.165,
+      "ttft_seconds": 0.863
     },
     {
       "id": "666eb13f-0d22-4438-8eb0-01876e1a8604",
@@ -7168,8 +7182,8 @@
       "agentic": 0.9,
       "price_input": 0.03,
       "price_output": 0.12,
-      "tokens_per_sec": 232.022,
-      "ttft_seconds": 0.23
+      "tokens_per_sec": 231.694,
+      "ttft_seconds": 0.237
     },
     {
       "id": "660965b2-66d2-49ee-a6b9-79a6ac47d3c0",
@@ -7252,8 +7266,8 @@
       "coding": null,
       "price_input": 0.15,
       "price_output": 0.6,
-      "tokens_per_sec": 152.429,
-      "ttft_seconds": 0.559
+      "tokens_per_sec": 149.959,
+      "ttft_seconds": 0.543
     },
     {
       "id": "5d891609-fe1c-4e8d-b9f0-5b0ff6d9f439",
@@ -7281,8 +7295,8 @@
       "agentic": 1.2,
       "price_input": 0.07,
       "price_output": 0.18,
-      "tokens_per_sec": 171.862,
-      "ttft_seconds": 0.426
+      "tokens_per_sec": 180.275,
+      "ttft_seconds": 0.421
     },
     {
       "id": "575498d6-60ec-466b-9372-fea19911fd07",
@@ -7351,8 +7365,8 @@
       "coding": 9.4,
       "price_input": 0.02,
       "price_output": 0.1,
-      "tokens_per_sec": 80.951,
-      "ttft_seconds": 0.326
+      "tokens_per_sec": 82.286,
+      "ttft_seconds": 0.328
     },
     {
       "id": "76dcf6ef-39ea-4be0-b693-b88da25b4caf",
@@ -7366,8 +7380,8 @@
       "agentic": 1,
       "price_input": 0.05,
       "price_output": 0.2,
-      "tokens_per_sec": 161.822,
-      "ttft_seconds": 0.588
+      "tokens_per_sec": 151.276,
+      "ttft_seconds": 0.592
     },
     {
       "id": "2aacdc07-5f4e-4ab9-8ea5-5f7ab93f9eeb",
@@ -7436,8 +7450,8 @@
       "coding": null,
       "price_input": 0.3,
       "price_output": 2.5,
-      "tokens_per_sec": 221.123,
-      "ttft_seconds": 0.817
+      "tokens_per_sec": 215.132,
+      "ttft_seconds": 0.884
     },
     {
       "id": "cc1fa238-1a76-486d-a997-22309275eadd",
@@ -7806,8 +7820,8 @@
       "agentic": 0.5,
       "price_input": 0.19,
       "price_output": 0.68,
-      "tokens_per_sec": 131.888,
-      "ttft_seconds": 0.669
+      "tokens_per_sec": 120.748,
+      "ttft_seconds": 0.663
     },
     {
       "id": "b9dc72c6-7bea-4936-a55a-4b0c835fc755",
@@ -8003,8 +8017,8 @@
       "coding": null,
       "price_input": 0.25,
       "price_output": 0.97,
-      "tokens_per_sec": 110.818,
-      "ttft_seconds": 0.95
+      "tokens_per_sec": 109.925,
+      "ttft_seconds": 0.944
     },
     {
       "id": "8c1be908-67b6-4cf4-ba08-83ddbe44fde3",
@@ -8073,8 +8087,8 @@
       "coding": 11.9,
       "price_input": 0.71,
       "price_output": 0.72,
-      "tokens_per_sec": 87.267,
-      "ttft_seconds": 0.639
+      "tokens_per_sec": 81.585,
+      "ttft_seconds": 0.649
     },
     {
       "id": "3e6cf518-a1f4-42d3-8fcf-827c9bd8e6d5",
@@ -8228,8 +8242,8 @@
       "coding": null,
       "price_input": 1,
       "price_output": 3,
-      "tokens_per_sec": 41.635,
-      "ttft_seconds": 0.756
+      "tokens_per_sec": 40.73,
+      "ttft_seconds": 0.774
     },
     {
       "id": "eb689f7a-f210-4a87-b407-f249897f2764",
@@ -8270,8 +8284,8 @@
       "coding": null,
       "price_input": 0.02,
       "price_output": 0.1,
-      "tokens_per_sec": 81.064,
-      "ttft_seconds": 0.286
+      "tokens_per_sec": 79.759,
+      "ttft_seconds": 0.292
     },
     {
       "id": "d4be6393-8915-436c-a3a8-4e59bd5c89a9",
@@ -8298,8 +8312,8 @@
       "coding": null,
       "price_input": 0.04,
       "price_output": 0.16,
-      "tokens_per_sec": 96.047,
-      "ttft_seconds": 7.324
+      "tokens_per_sec": 101.143,
+      "ttft_seconds": 5.74
     },
     {
       "id": "d3968fd3-97d8-4693-8d26-19cefc6f5d5f",
@@ -8312,8 +8326,8 @@
       "coding": null,
       "price_input": 1,
       "price_output": 3,
-      "tokens_per_sec": 42.883,
-      "ttft_seconds": 0.715
+      "tokens_per_sec": 38.642,
+      "ttft_seconds": 0.713
     },
     {
       "id": "7b269763-ecc0-41ef-aa29-47ef632ac065",
@@ -8734,8 +8748,8 @@
       "coding": null,
       "price_input": 2.5,
       "price_output": 10,
-      "tokens_per_sec": 64.831,
-      "ttft_seconds": 0.362
+      "tokens_per_sec": 64.777,
+      "ttft_seconds": 0.383
     },
     {
       "id": "5d4acc80-7a88-4e84-bfe7-99071b84e6a4",
@@ -8818,8 +8832,8 @@
       "coding": null,
       "price_input": 0.05,
       "price_output": 0.2,
-      "tokens_per_sec": 221.323,
-      "ttft_seconds": 0.373
+      "tokens_per_sec": 219.143,
+      "ttft_seconds": 0.363
     },
     {
       "id": "2e8694f9-7782-47a6-a6ba-fdce89d939c8",
@@ -8832,7 +8846,7 @@
       "coding": null,
       "price_input": 0.05,
       "price_output": 0.195,
-      "tokens_per_sec": 155.151,
+      "tokens_per_sec": 156.52,
       "ttft_seconds": 1.324
     },
     {
@@ -9268,7 +9282,7 @@
       "price_input": 0.2,
       "price_output": 0.7,
       "tokens_per_sec": 2157.61,
-      "ttft_seconds": 0.455
+      "ttft_seconds": 0.489
     },
     {
       "id": "4c111fbc-d13a-42b4-858c-1dc17fe3c1d1",
@@ -9309,8 +9323,8 @@
       "coding": 3.8,
       "price_input": 0,
       "price_output": 0,
-      "tokens_per_sec": 44.999,
-      "ttft_seconds": 0.331
+      "tokens_per_sec": 44.919,
+      "ttft_seconds": 0.334
     },
     {
       "id": "2f60d80d-c3d3-4a43-bded-0557898c4618",
@@ -9422,8 +9436,8 @@
       "agentic": 1.1,
       "price_input": 0.2,
       "price_output": 0.2,
-      "tokens_per_sec": 82.596,
-      "ttft_seconds": 0.598
+      "tokens_per_sec": 73.353,
+      "ttft_seconds": 0.66
     },
     {
       "id": "b4ddb4c8-1400-44ab-8c2b-e2472088e7ff",
@@ -9450,8 +9464,8 @@
       "coding": null,
       "price_input": 0.25,
       "price_output": 0.97,
-      "tokens_per_sec": 108.047,
-      "ttft_seconds": 0.887
+      "tokens_per_sec": 107.294,
+      "ttft_seconds": 0.881
     },
     {
       "id": "1dcea4f7-7e8b-49f8-abe2-5860ff9f349e",
@@ -9562,8 +9576,8 @@
       "coding": null,
       "price_input": 0.125,
       "price_output": 0.5,
-      "tokens_per_sec": 42.798,
-      "ttft_seconds": 0.94
+      "tokens_per_sec": 41.458,
+      "ttft_seconds": 0.983
     },
     {
       "id": "b2e68f0a-8f66-4e4c-9821-2b786cea601b",
@@ -9590,8 +9604,8 @@
       "coding": null,
       "price_input": 0.035,
       "price_output": 0.14,
-      "tokens_per_sec": 232.104,
-      "ttft_seconds": 0.579
+      "tokens_per_sec": 223.487,
+      "ttft_seconds": 0.591
     },
     {
       "id": "91e3b45f-3f52-4511-8c15-8948854bebc5",
@@ -9660,7 +9674,7 @@
       "coding": null,
       "price_input": 0.2,
       "price_output": 0.6,
-      "tokens_per_sec": 204.401,
+      "tokens_per_sec": 199.892,
       "ttft_seconds": 0.781
     },
     {
@@ -9688,8 +9702,8 @@
       "coding": null,
       "price_input": 0,
       "price_output": 0,
-      "tokens_per_sec": 17.213,
-      "ttft_seconds": 0.361
+      "tokens_per_sec": 17.221,
+      "ttft_seconds": 0.353
     },
     {
       "id": "e410e854-104d-4b35-a171-899ff9d974bb",
@@ -9828,8 +9842,8 @@
       "coding": null,
       "price_input": 0.2,
       "price_output": 0.8,
-      "tokens_per_sec": 96.334,
-      "ttft_seconds": 0.825
+      "tokens_per_sec": 94.545,
+      "ttft_seconds": 0.834
     },
     {
       "id": "338216fb-62c2-48f1-898a-9166d12fb35e",
@@ -10011,7 +10025,7 @@
       "agentic": 0.6,
       "price_input": 0.15,
       "price_output": 0.15,
-      "tokens_per_sec": 99.384,
+      "tokens_per_sec": 99.189,
       "ttft_seconds": 0.487
     },
     {
@@ -10629,8 +10643,8 @@
       "agentic": 0.8,
       "price_input": 0.1,
       "price_output": 0.1,
-      "tokens_per_sec": 242.615,
-      "ttft_seconds": 0.563
+      "tokens_per_sec": 230.321,
+      "ttft_seconds": 0.559
     },
     {
       "id": "891bcdf2-8dd2-4dc3-829b-d963fde25876",
@@ -10825,8 +10839,8 @@
       "coding": null,
       "price_input": 0,
       "price_output": 0,
-      "tokens_per_sec": 131.672,
-      "ttft_seconds": 0.213
+      "tokens_per_sec": 131.627,
+      "ttft_seconds": 0.216
     },
     {
       "id": "2e6400f5-85ca-4ebc-ba8f-c2811a631138",
@@ -10869,8 +10883,8 @@
       "coding": null,
       "price_input": 2,
       "price_output": 10,
-      "tokens_per_sec": 90.718,
-      "ttft_seconds": 0.942
+      "tokens_per_sec": 104.341,
+      "ttft_seconds": 1.03
     },
     {
       "id": "ea5d2c10-1051-437d-95c2-18d5e4d14ff3",
