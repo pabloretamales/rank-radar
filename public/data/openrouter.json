@@ -1,18 +1,18 @@
 {
-  "fetched_at": "2026-10-01T15:00:23.024Z",
+  "fetched_at": "2026-10-01T22:00:17.888Z",
   "source": "OpenRouter",
   "api": {
     "apps": "https://openrouter.ai/api/v1/datasets/app-rankings",
     "models": "https://openrouter.ai/api/v1/models"
   },
   "apps_meta": {
-    "as_of": "2026-10-01T15:00:17.556Z",
+    "as_of": "2026-10-01T22:00:12.662Z",
     "version": "v1",
     "start_date": "2026-09-01",
     "end_date": "2026-09-30"
   },
   "rankings_meta": {
-    "as_of": "2026-10-01T15:00:19.124Z",
+    "as_of": "2026-10-01T22:00:13.725Z",
     "version": "v1",
     "start_date": "2026-09-30",
     "end_date": "2026-09-30"
@@ -568,6 +568,26 @@
     "by_recent": [
       {
         "rank": 1,
+        "id": "apodex/apodex-1.1-mini:free",
+        "slug": "apodex/apodex-1.1-mini-20261001",
+        "name": "Apodex: Apodex 1.1 Mini (free)",
+        "description": "Apodex 1.1 Mini is a reasoning-first model from Apodex, built for complex, long-horizon research and forecasting tasks. It works directly with files, data, code, and tools to produce verifiable results,...",
+        "context_length": 262144,
+        "modalities": [
+          "text",
+          "→text"
+        ],
+        "n_inputs": 1,
+        "n_outputs": 1,
+        "created_ts": 1790875335,
+        "created_human": "2026-10-01",
+        "pricing_prompt": 0,
+        "pricing_completion": 0,
+        "score": 1790875335,
+        "url": "https://openrouter.ai/models/apodex/apodex-1.1-mini-20261001"
+      },
+      {
+        "rank": 2,
         "id": "unbiased/pareto-26.10-preview",
         "slug": "unbiased/pareto-26.10-preview-20260929",
         "name": "Pareto 26.10 Preview",
@@ -588,7 +608,7 @@
         "url": "https://openrouter.ai/models/unbiased/pareto-26.10-preview-20260929"
       },
       {
-        "rank": 2,
+        "rank": 3,
         "id": "openai/gpt-6.1-sol-pro",
         "slug": "openai/gpt-6.1-sol-pro-20260929",
         "name": "OpenAI: GPT-6.1 Sol Pro",
@@ -610,7 +630,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6.1-sol-pro-20260929"
       },
       {
-        "rank": 3,
+        "rank": 4,
         "id": "openai/gpt-6.1-sol",
         "slug": "openai/gpt-6.1-sol-20260929",
         "name": "OpenAI: GPT-6.1 Sol",
@@ -632,7 +652,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6.1-sol-20260929"
       },
       {
-        "rank": 4,
+        "rank": 5,
         "id": "anthropic/claude-sonnet-5.5",
         "slug": "anthropic/claude-sonnet-5.5-20260928",
         "name": "Anthropic: Claude Sonnet 5.5",
@@ -654,7 +674,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-sonnet-5.5-20260928"
       },
       {
-        "rank": 5,
+        "rank": 6,
         "id": "anthropic/claude-sonnet-5.5:batch",
         "slug": "anthropic/claude-sonnet-5.5-20260928",
         "name": "Anthropic: Claude Sonnet 5.5 (batch)",
@@ -676,7 +696,7 @@
         "url": "https://openrouter.ai/models/anthropic/claude-sonnet-5.5-20260928"
       },
       {
-        "rank": 6,
+        "rank": 7,
         "id": "typesafe/jev-router",
         "slug": "typesafe/jev-router",
         "name": "TypeSafe: Jev Router",
@@ -700,7 +720,7 @@
         "url": "https://openrouter.ai/models/typesafe/jev-router"
       },
       {
-        "rank": 7,
+        "rank": 8,
         "id": "perceptron/perceptron-mk1.5",
         "slug": "perceptron/perceptron-mk1.5-20260925",
         "name": "Perceptron: Perceptron Mk1.5",
@@ -723,7 +743,7 @@
         "url": "https://openrouter.ai/models/perceptron/perceptron-mk1.5-20260925"
       },
       {
-        "rank": 8,
+        "rank": 9,
         "id": "fireworks/ember-1",
         "slug": "fireworks/ember-1-20260923",
         "name": "Fireworks: Ember-1",
@@ -744,7 +764,7 @@
         "url": "https://openrouter.ai/models/fireworks/ember-1-20260923"
       },
       {
-        "rank": 9,
+        "rank": 10,
         "id": "z-ai/glm-5.3-prime",
         "slug": "z-ai/glm-5.3-prime-20260921",
         "name": "Z.ai: GLM 5.3 Prime",
@@ -764,7 +784,7 @@
         "url": "https://openrouter.ai/models/z-ai/glm-5.3-prime-20260921"
       },
       {
-        "rank": 10,
+        "rank": 11,
         "id": "qwen/qwen3.8-max-prime",
         "slug": "qwen/qwen3.8-max-prime-20260923",
         "name": "Qwen: Qwen3.8 Max Prime",
@@ -786,7 +806,7 @@
         "url": "https://openrouter.ai/models/qwen/qwen3.8-max-prime-20260923"
       },
       {
-        "rank": 11,
+        "rank": 12,
         "id": "stealth/space-bunny-alpha",
         "slug": "stealth/space-bunny-alpha",
         "name": "Space Bunny Alpha",
@@ -808,7 +828,7 @@
         "url": "https://openrouter.ai/models/stealth/space-bunny-alpha"
       },
       {
-        "rank": 12,
+        "rank": 13,
         "id": "aion-labs/aion-3.5-mini",
         "slug": "aion-labs/aion-3.5-mini-20260923",
         "name": "AionLabs: Aion 3.5 Mini",
@@ -828,7 +848,7 @@
         "url": "https://openrouter.ai/models/aion-labs/aion-3.5-mini-20260923"
       },
       {
-        "rank": 13,
+        "rank": 14,
         "id": "aion-labs/aion-3.5",
         "slug": "aion-labs/aion-3.5-20260923",
         "name": "AionLabs: Aion 3.5",
@@ -848,7 +868,7 @@
         "url": "https://openrouter.ai/models/aion-labs/aion-3.5-20260923"
       },
       {
-        "rank": 14,
+        "rank": 15,
         "id": "upstage/solar-mini4",
         "slug": "upstage/solar-mini4-20260922",
         "name": "Upstage: Solar Mini 4",
@@ -868,7 +888,7 @@
         "url": "https://openrouter.ai/models/upstage/solar-mini4-20260922"
       },
       {
-        "rank": 15,
+        "rank": 16,
         "id": "cohere/command-a-plus",
         "slug": "cohere/command-a-plus-05-2026",
         "name": "Cohere: Command A+",
@@ -889,7 +909,7 @@
         "url": "https://openrouter.ai/models/cohere/command-a-plus-05-2026"
       },
       {
-        "rank": 16,
+        "rank": 17,
         "id": "openai/gpt-6-luna-pro",
         "slug": "openai/gpt-6-luna-pro-20260922",
         "name": "OpenAI: GPT-6 Luna Pro",
@@ -911,7 +931,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-luna-pro-20260922"
       },
       {
-        "rank": 17,
+        "rank": 18,
         "id": "openai/gpt-6-luna-pro:batch",
         "slug": "openai/gpt-6-luna-pro-20260922",
         "name": "OpenAI: GPT-6 Luna Pro (batch)",
@@ -933,7 +953,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-luna-pro-20260922"
       },
       {
-        "rank": 18,
+        "rank": 19,
         "id": "openai/gpt-6-luna",
         "slug": "openai/gpt-6-luna-20260922",
         "name": "OpenAI: GPT-6 Luna",
@@ -955,7 +975,7 @@
         "url": "https://openrouter.ai/models/openai/gpt-6-luna-20260922"
       },
       {
-        "rank": 19,
+        "rank": 20,
         "id": "openai/gpt-6-luna:batch",
         "slug": "openai/gpt-6-luna-20260922",
         "name": "OpenAI: GPT-6 Luna (batch)",
@@ -975,28 +995,6 @@
         "pricing_completion": 2.5e-7,
         "score": 1790100786,
         "url": "https://openrouter.ai/models/openai/gpt-6-luna-20260922"
-      },
-      {
-        "rank": 20,
-        "id": "openai/gpt-6-sol-pro",
-        "slug": "openai/gpt-6-sol-pro-20260922",
-        "name": "OpenAI: GPT-6 Sol Pro",
-        "description": "GPT-6 Sol Pro is the same underlying model as [GPT-6 Sol](https://openrouter.ai/openai/gpt-6-sol), served with `reasoning.mode` set to `pro` for higher-quality responses on complex tasks. **Cost note:** pro mode spends far more...",
-        "context_length": 1050000,
-        "modalities": [
-          "file",
-          "image",
-          "text",
-          "→text"
-        ],
-        "n_inputs": 3,
-        "n_outputs": 1,
-        "created_ts": 1790100781,
-        "created_human": "2026-09-22",
-        "pricing_prompt": 0.000002,
-        "pricing_completion": 0.00001,
-        "score": 1790100781,
-        "url": "https://openrouter.ai/models/openai/gpt-6-sol-pro-20260922"
       }
     ],
     "today": [
@@ -1035,7 +1033,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 1499930923309,
+        "total_tokens": 1499932137741,
         "total_tokens_human": "1.50T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1352,7 +1350,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 9963357705712,
+        "total_tokens": 9963358920144,
         "total_tokens_human": "9.96T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -1684,7 +1682,7 @@
         "id": "other",
         "name": "other",
         "slug": null,
-        "total_tokens": 36001793706594,
+        "total_tokens": 36001794921026,
         "total_tokens_human": "36.00T",
         "perma": "other",
         "url": "https://openrouter.ai/models/other",
@@ -2129,7 +2127,7 @@
       }
     ],
     "meta": {
-      "as_of": "2026-10-01T15:00:19.124Z",
+      "as_of": "2026-10-01T22:00:13.725Z",
       "version": "v1",
       "start_date": "2026-09-30",
       "end_date": "2026-09-30"
@@ -2137,26 +2135,42 @@
   },
   "apps_meta_windowed": {
     "today": {
-      "as_of": "2026-10-01T15:00:10.274Z",
+      "as_of": "2026-10-01T22:00:10.564Z",
       "version": "v1",
       "start_date": "2026-09-30",
       "end_date": "2026-09-30"
     },
     "week": {
-      "as_of": "2026-10-01T15:00:16.223Z",
+      "as_of": "2026-10-01T22:00:11.769Z",
       "version": "v1",
       "start_date": "2026-09-24",
       "end_date": "2026-09-30"
     },
     "month": {
-      "as_of": "2026-10-01T15:00:17.556Z",
+      "as_of": "2026-10-01T22:00:12.662Z",
       "version": "v1",
       "start_date": "2026-09-01",
       "end_date": "2026-09-30"
     }
   },
-  "models_total": 463,
+  "models_total": 464,
   "catalog": [
+    {
+      "id": "apodex/apodex-1.1-mini:free",
+      "canonical_slug": "apodex/apodex-1.1-mini-20261001",
+      "name": "Apodex: Apodex 1.1 Mini (free)",
+      "context_length": 262144,
+      "modalities": [
+        "text",
+        "→text"
+      ],
+      "n_inputs": 1,
+      "n_outputs": 1,
+      "pricing_prompt": null,
+      "pricing_completion": null,
+      "created_human": "2026-10-01",
+      "url": "https://openrouter.ai/models/apodex/apodex-1.1-mini-20261001"
+    },
     {
       "id": "unbiased/pareto-26.10-preview",
       "canonical_slug": "unbiased/pareto-26.10-preview-20260929",
@@ -2756,8 +2770,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.748e-7,
-      "pricing_completion": 0.0000035,
+      "pricing_prompt": 1.5312e-7,
+      "pricing_completion": 4.5936e-7,
       "created_human": "2026-09-14",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-pro-latest"
     },
@@ -2773,7 +2787,7 @@
       ],
       "n_inputs": 2,
       "n_outputs": 1,
-      "pricing_prompt": 2.5e-8,
+      "pricing_prompt": 2.64e-8,
       "pricing_completion": 6e-7,
       "created_human": "2026-09-14",
       "url": "https://openrouter.ai/models/~deepseek/deepseek-flash-latest"
@@ -3267,8 +3281,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 8.34e-7,
-      "pricing_completion": 0.000002501,
+      "pricing_prompt": 7.506e-7,
+      "pricing_completion": 0.0000022509,
       "created_human": "2026-08-28",
       "url": "https://huggingface.co/tencent/Hy4-preview"
     },
@@ -3439,8 +3453,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 6e-8,
-      "pricing_completion": 0.000002694,
+      "pricing_prompt": 1.06e-7,
+      "pricing_completion": 0.000002653,
       "created_human": "2026-08-19",
       "url": "https://openrouter.ai/models/~z-ai/glm-latest"
     },
@@ -4125,7 +4139,7 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 6.572e-7,
+      "pricing_prompt": 4.15e-7,
       "pricing_completion": 0.00001,
       "created_human": "2026-07-16",
       "url": "https://huggingface.co/moonshotai/Kimi-K3"
@@ -4478,8 +4492,8 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 1.32e-7,
-      "pricing_completion": 5.28e-7,
+      "pricing_prompt": 8.25e-8,
+      "pricing_completion": 3.3e-7,
       "created_human": "2026-07-06",
       "url": "https://huggingface.co/tencent/Hy3"
     },
@@ -4649,7 +4663,7 @@
       ],
       "n_inputs": 1,
       "n_outputs": 1,
-      "pricing_prompt": 4.1e-7,
+      "pricing_prompt": 1.4e-7,
       "pricing_completion": 0.00000399,
       "created_human": "2026-06-16",
       "url": "https://huggingface.co/zai-org/GLM-5.2"
@@ -5206,7 +5220,7 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 6.572e-7,
+      "pricing_prompt": 4.15e-7,
       "pricing_completion": 0.00001,
       "created_human": "2026-04-27",
       "url": "https://openrouter.ai/models/~moonshotai/kimi-latest"
@@ -5627,8 +5641,8 @@
       ],
       "n_inputs": 3,
       "n_outputs": 1,
-      "pricing_prompt": 9e-8,
-      "pricing_completion": 3e-7,
+      "pricing_prompt": 7.65e-8,
+      "pricing_completion": 2.55e-7,
       "created_human": "2026-04-03",
       "url": "https://huggingface.co/google/gemma-4-26B-A4B-it"
     },
